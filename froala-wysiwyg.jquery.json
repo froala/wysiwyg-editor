@@ -19,7 +19,7 @@
             "url": "http://opensource.org/licenses/MIT"
         }
     ],
-    "homepage": "https://github.com/stefanneculai/froala-wysiwyg",
+    "homepage": "http://editor.froala.com",
     "dependencies": {
         "jquery": ">=1.10.2"
     }
