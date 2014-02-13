@@ -1,0 +1,26 @@
+{
+    "name": "froala-wysiwyg",
+    "title": "Froala WYSIWYG Editor",
+    "description": "jQuery plugin for Froala WYSIWYG Editor.",
+    "keywords": [
+        "froala",
+        "editor",
+        "wysiwig",
+        "text"
+    ],
+    "version": "1.0.5",
+    "author": {
+        "name": "froala_editor",
+        "url": "https://twitter.com/froala_editor"
+    },
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "http://opensource.org/licenses/MIT"
+        }
+    ],
+    "homepage": "https://github.com/stefanneculai/froala-wysiwyg",
+    "dependencies": {
+        "jquery": ">=1.10.2"
+    }
+}
