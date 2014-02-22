@@ -6,9 +6,7 @@
         "froala",
         "editor",
         "wysiwig",
-        "text",
-		"wysiwyg editor",
-		"text editor"
+        "text"
     ],
     "version": "1.0.6",
     "author": {
