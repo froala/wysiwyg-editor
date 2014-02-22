@@ -6,9 +6,11 @@
         "froala",
         "editor",
         "wysiwig",
-        "text"
+        "text",
+		"wysiwyg editor",
+		"text editor"
     ],
-    "version": "1.0.5",
+    "version": "1.0.6",
     "author": {
         "name": "froala_editor",
         "url": "https://twitter.com/froala_editor"
