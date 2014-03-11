@@ -577,7 +577,7 @@
 }
 .froala-editor .fr-dropdown .fr-dropdown-menu li a.format_blockquote {
   font-style: italic;
-  color: #888;
+  color: #353535;
 }
 .froala-editor .fr-dropdown .fr-dropdown-menu li a.format_pre {
   font-family: monospace, sans-serif;
@@ -644,6 +644,7 @@
   display: inline;
   width: 18px;
   height: 18px;
+  padding: 0;
   border: solid 1px #FFF;
   position: relative;
   z-index: 100;
