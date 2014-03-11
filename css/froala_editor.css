@@ -141,9 +141,9 @@
   margin-right: 0;
   margin-top: 0;
   padding-left: 40px;
-  overflow: auto;
   position: relative;
   font-style: italic;
+  border: 0;
 }
 .froala-element blockquote:before {
   position: absolute;
@@ -444,11 +444,11 @@
   color: #FFF;
 }
 .froala-editor.f-inverse .fr-dropdown .fr-dropdown-menu a {
-  color: #FFF;
+  color: #FFF !important;
 }
 .froala-editor.f-inverse .fr-dropdown .fr-dropdown-menu a:hover {
-  color: #353535;
-  background: #FFF;
+  color: #353535 !important;
+  background: #FFF !important;
 }
 .froala-editor.f-inverse .f-image-editor > div label,
 .froala-editor.f-inverse .image-wrapper ul li.url-upload label,
@@ -572,8 +572,8 @@
   line-height: 130%;
 }
 .froala-editor .fr-dropdown .fr-dropdown-menu li a:hover {
-  background: #353535;
-  color: #FFF;
+  background: #353535 !important;
+  color: #FFF !important;
 }
 .froala-editor .fr-dropdown .fr-dropdown-menu li a.format_blockquote {
   font-style: italic;
