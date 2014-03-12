@@ -35,7 +35,14 @@
 
   <script>
       $(function(){
-          $('#edit').editable({inlineMode: true, direction: 'rtl'})
+          $('#edit').editable({
+            inlineMode: false,
+            
+            // Set content changed callback.
+            contentChangedCallback: function () {
+              console.log ('content has been changed');
+            }
+          })
       });
   </script>
 </body>

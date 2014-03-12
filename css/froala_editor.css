@@ -1,5 +1,5 @@
 /*!
- * froala_editor v1.1.0 (http://editor.froala.com)
+ * froala_editor v1.1.1 (http://editor.froala.com)
  * Copyright 2014-2014 Froala
  */
 [contenteditable],
@@ -45,7 +45,6 @@
   position: relative;
   word-wrap: break-word;
   line-height: 120%;
-  font-size: 14px;
 }
 .froala-element * {
   -webkit-box-sizing: content-box;
