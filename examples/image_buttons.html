@@ -35,41 +35,7 @@
 
   <script>
       $(function(){
-          $('#edit').editable({inlineMode: false, buttons: ['bold', 'italic', 'formatBlock', 'alert', 'clear', 'image'], blockTags: ['p'], customButtons: {
-            alert: {
-              title: 'Alert',
-              icon: {
-                type: 'font',
-                value: 'fa fa-info'
-              },
-              callback: function (editor){
-                alert ('Hello!')
-              }
-            },
-            
-            clear: {
-              title: 'Remove HTML',
-              icon: {
-                type: 'txt',
-                value: 'x'
-              },
-              callback: function (editor){
-                editor.setHTML('');
-              }
-            },
-            
-            image: {
-              title: 'Save',
-              icon: {
-                type: 'img', // Recommended size: 40 x 35
-                value: 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiBmaWxsPSIjZWVlIi8+PHRleHQgdGV4dC1hbmNob3I9Im1pZGRsZSIgeD0iMzIiIHk9IjMyIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjEycHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9zdmc+'
-              },
-              callback: function (editor){
-                alert('This is an image button');
-              }
-            }
-          }
-          })
+          $('#edit').editable({inlineMode: false, imageButtons: ["removeImage", "replaceImage", "linkImage"]})
       });
   </script>
 </body>

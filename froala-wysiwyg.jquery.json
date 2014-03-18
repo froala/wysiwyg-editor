@@ -8,15 +8,27 @@
         "wysiwig",
         "text"
     ],
-    "version": "1.1.1",
+    "version": "1.1.2",
     "author": {
         "name": "froala_editor",
         "url": "https://twitter.com/froala_editor"
     },
     "licenses": [
         {
-            "type": "MIT",
-            "url": "http://opensource.org/licenses/MIT"
+            "type": "CC",
+            "url": "http://creativecommons.org/licenses/by-nc-nd/4.0/"
+        },
+        {
+          "type": "Single Website",
+          "url": "http://editor.froala.com/download"
+        },
+        {
+          "type": "Developer",
+          "url": "http://editor.froala.com/download"
+        },
+        {
+          "type": "Business",
+          "url": "http://editor.froala.com/download"
         }
     ],
     "homepage": "http://editor.froala.com",

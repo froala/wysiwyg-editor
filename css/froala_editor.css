@@ -1,5 +1,5 @@
 /*!
- * froala_editor v1.1.1 (http://editor.froala.com)
+ * froala_editor v1.1.2 (http://editor.froala.com)
  * Copyright 2014-2014 Froala
  */
 [contenteditable],
@@ -51,9 +51,35 @@
   -moz-box-sizing: content-box;
   box-sizing: content-box;
 }
+.froala-element.f-tni span.f-img-wrap {
+  display: block;
+  text-align: center;
+}
+.froala-element.f-tni span.f-img-wrap:after {
+  clear: both;
+  display: block;
+  content: "";
+}
+.froala-element.f-tni span.f-img-editor {
+  display: inline-block;
+}
+.froala-element.f-tni img {
+  display: block;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+.froala-element.f-tni img:after {
+  clear: both;
+  display: block;
+  content: "";
+}
 .froala-element.f-rtl {
   direction: rtl;
   text-align: right;
+}
+.froala-element.f-rtl.f-placeholder:before {
+  left: auto;
+  right: 10px;
 }
 .froala-element span {
   line-height: 120%;
@@ -154,6 +180,11 @@
   content: '\201C';
   font-style: normal;
 }
+.froala-element span.f-img-wrap {
+  line-height: 0;
+  display: block;
+  text-align: center;
+}
 .froala-element span.f-img-editor {
   display: inline-block;
   position: relative;
@@ -161,6 +192,7 @@
   text-align: center;
   border: solid 1px #1A2D35;
   padding: 2px;
+  line-height: 0;
 }
 .froala-element span.f-img-editor img {
   border: 0;
@@ -278,6 +310,15 @@
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
   box-sizing: content-box;
+}
+.froala-editor input[type="text"],
+.froala-editor textarea {
+  border-radius: 0;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
 }
 .froala-editor.f-rtl {
   direction: rtl;
@@ -784,6 +825,7 @@
   list-style-type: none;
   padding: 0 5px;
   margin: 0 0 10px 0;
+  min-width: 320px;
 }
 .froala-editor .image-wrapper ul li {
   padding: 0;
@@ -904,6 +946,7 @@ button.f-ok {
   border: 0;
   color: #FFF;
   padding: 2px 5px;
+  margin: 0;
   font-size: 12px;
   line-height: 19px;
   font-weight: bold;
