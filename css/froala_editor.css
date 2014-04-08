@@ -97,6 +97,8 @@
   font-style: italic;
   content: attr(data-placeholder);
   position: absolute;
+}
+.froala-element.f-placeholder:before.f-basic {
   top: 10px;
   left: 10px;
 }
