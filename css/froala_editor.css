@@ -1,5 +1,5 @@
 /*!
- * froala_editor v1.1.3 (http://editor.froala.com)
+ * froala_editor v1.1.4 (http://editor.froala.com)
  * Copyright 2014-2014 Froala
  */
 [contenteditable],
@@ -30,7 +30,7 @@
   -webkit-user-select: none;
   -ms-user-select: none;
 }
-.froala-editor *:not(input) {
+.froala-editor *:not(input):not(textarea) {
   user-select: none;
   -o-user-select: none;
   -moz-user-select: none;
