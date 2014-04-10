@@ -975,3 +975,12 @@ button.f-ok.f-unlink {
   font-size: 12px;
   line-height: 160%;
 }
+.f-font-sizes li.active {
+  background: #353535;
+}
+.f-font-sizes li.active:before {
+  content: "" !important;
+}
+.f-font-sizes li.active a {
+  color: #FFF !important;
+}
