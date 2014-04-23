@@ -46,6 +46,12 @@
   word-wrap: break-word;
   line-height: 120%;
 }
+.froala-element hr {
+  height: 1px;
+  background: #CCC;
+  border: 0;
+  clear: both;
+}
 .froala-element * {
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
@@ -560,6 +566,15 @@
 }
 .froala-editor .fr-dropdown.active .fr-dropdown-menu {
   display: block;
+}
+.froala-editor .fr-dropdown.fr-family .fr-trigger {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 22px;
+  height: 35px;
+  overflow: hidden;
+}
+.froala-editor .fr-dropdown.fr-family .fr-trigger i {
+  margin-left: 3px;
 }
 .froala-editor .fr-dropdown .fr-trigger {
   border: 0;

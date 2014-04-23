@@ -35,14 +35,9 @@
 
   <script>
       $(function(){
-          $('#edit').editable({
-            inlineMode: false,
-
-            // Set content changed callback.
-            contentChangedCallback: function () {
-              console.log ('content has been changed');
-            }
-          })
+          $('#edit').editable({inlineMode: false, buttons: ['bold', 'italic', 'underline', 'fontFamily', 'fontSize', 'color', 'sep', 'formatBlock', 'align',
+      'insertOrderedList', 'insertUnorderedList', 'outdent', 'indent', 'sep', 'createLink', 'insertImage',
+      'insertVideo', 'undo', 'redo', 'html']})
       });
   </script>
 </body>
