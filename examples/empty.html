@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="../css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href="../css/froala_editor.min.css" rel="stylesheet" type="text/css">
+
+    <style>
+        body {
+            text-align: center;
+        }
+
+        section {
+            width: 80%;
+            margin: auto;
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+  <section id="editor">
+      <div id='edit' style="margin-top: 30px;">
+
+      </div>
+  </section>
+
+  <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="../js/froala_editor.min.js"></script>
+
+  <script>
+      $(function(){
+          $('#edit').editable({inlineMode: false})
+      });
+  </script>
+</body>
+</html>
