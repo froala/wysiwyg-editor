@@ -6,6 +6,9 @@
 [contenteditable]:focus {
   outline: 0px solid transparent;
 }
+button {
+  outline: none;
+}
 .f-non-selectable {
   user-select: none;
   -o-user-select: none;
@@ -296,6 +299,130 @@
 .froala-box.f-html .html-switch {
   display: inline-block;
 }
+.froala-modal {
+  position: absolute;
+  z-index: 1001;
+  overflow-x: auto;
+  overflow-y: scroll;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  text-align: center;
+}
+.froala-modal .f-modal-wrapper {
+  margin: 50px auto;
+  display: inline-block;
+  background: #FFF;
+  min-width: 300px;
+  text-align: center;
+  border: solid 1px #000;
+  border-top: solid 5px #000;
+}
+.froala-modal .f-modal-wrapper .f-preloader {
+  margin: 50px 0;
+}
+.froala-modal .f-modal-wrapper h4 {
+  margin: 0;
+  font-size: 18px;
+  color: #444444;
+  margin: 10px 10px;
+  text-align: left;
+}
+.froala-modal .f-modal-wrapper h4:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+.froala-modal .f-modal-wrapper h4 i {
+  float: right;
+  cursor: pointer;
+  color: #cccccc;
+}
+.froala-modal .f-modal-wrapper h4 i:hover {
+  color: #777;
+}
+.froala-modal .f-modal-wrapper div.f-image-list {
+  list-style-type: none;
+  margin: 10px;
+  padding: 0;
+  -moz-column-count: 3;
+  -moz-column-gap: 10px;
+  -webkit-column-count: 3;
+  -webkit-column-gap: 10px;
+  column-count: 3;
+  column-gap: 10px;
+  width: 600px;
+}
+.froala-modal .f-modal-wrapper div.f-image-list div {
+  position: relative;
+  width: 100%;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+.froala-modal .f-modal-wrapper div.f-image-list div.f-empty {
+  width: 100%;
+  height: 200px;
+  background: #cccccc;
+  position: relative;
+  margin-bottom: 10px;
+}
+.froala-modal .f-modal-wrapper div.f-image-list div.f-empty:after {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  content: "Loading..";
+  display: inline-block;
+  height: 20px;
+}
+.froala-modal .f-modal-wrapper div.f-image-list div img {
+  width: 100%;
+  -webkit-opacity: 0.75;
+  -moz-opacity: 0.75;
+  opacity: 0.75;
+  vertical-align: middle;
+}
+.froala-modal .f-modal-wrapper div.f-image-list div .f-delete-img {
+  display: none;
+  bottom: 0px;
+  left: 0;
+  background: #353535;
+  color: #FFF;
+  font-family: Arial, Helvetica;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 5px;
+  position: absolute;
+  -webkit-transition: background 0.2s;
+  -moz-transition: background 0.2s;
+  -ms-transition: background 0.2s;
+  -o-transition: background 0.2s;
+  cursor: pointer;
+}
+.froala-modal .f-modal-wrapper div.f-image-list div .f-delete-img {
+  display: inline-block;
+}
+.froala-modal .f-modal-wrapper div.f-image-list:not(.f-touch) .f-delete-img {
+  display: none;
+}
+.froala-modal .f-modal-wrapper div.f-image-list:not(.f-touch) div:hover .f-delete-img {
+  display: inline-block;
+}
+.froala-modal .f-modal-wrapper div.f-image-list:not(.f-touch) div:hover .f-delete-img:hover {
+  background: #B8312F;
+}
+.froala-modal .f-modal-wrapper div.f-image-list:not(.f-touch) div:hover img {
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1;
+}
 .froala-editor {
   text-align: left;
   background: #FFF;
@@ -371,7 +498,7 @@
 .froala-editor.f-rtl .image-wrapper ul li.url-upload * {
   float: right;
 }
-.froala-editor:before {
+.froala-editor:not(.froala-modal):before {
   width: 0;
   height: 0;
   border-left: 7px solid transparent;
@@ -907,10 +1034,27 @@
 }
 .froala-editor .image-wrapper ul li.url-upload input {
   font-size: 13px;
-  width: 200px;
-  border: solid 1px #cccccc;
-  margin: 0 5px;
+  width: 170px;
+  border: solid 1px #777;
+  margin: 0 0 0 5px;
   height: 19px;
+  padding: 1px 5px;
+}
+.froala-editor .image-wrapper ul li.url-upload input + .f-browse {
+  margin: 0 5px 0 0;
+  height: 19px;
+  padding: 2px 7px;
+  font-size: 13px;
+  border: none;
+  background: #777;
+  color: #FFF;
+  cursor: pointer;
+}
+.froala-editor .image-wrapper ul li.url-upload input + .f-browse:hover {
+  background: #353535;
+}
+.froala-editor .image-wrapper ul li.url-upload input + .f-ok {
+  margin-left: 5px;
 }
 .froala-editor .image-wrapper ul li.url-upload input:focus {
   border-color: #66afe9;
@@ -998,4 +1142,16 @@ button.f-ok.f-unlink {
 }
 .f-font-sizes li.active a {
   color: #FFF !important;
+}
+.froala-overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #000;
+  z-index: 1000;
+  -webkit-opacity: 0.5;
+  -moz-opacity: 0.5;
+  opacity: 0.5;
 }
