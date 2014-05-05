@@ -55,7 +55,11 @@ $.Editable.LANGS['ko'] = {
     "Open in new tab": "\uc0c8 \ud0ed\uc5d0\uc11c \uc5f4\uae30",
     "Type something": "\ubb54\uac00\ub97c \uc785\ub825",
     "Cancel": "\ucde8\uc18c",
-    "OK": "\uc2b9\uc778"
+    "OK": "\uc2b9\uc778",
+    "Manage images": "\uc774\ubbf8\uc9c0 \uad00\ub9ac",
+    "Delete": "\uc0ad\uc81c",
+    "Font Family": "\uae00\uaf34",
+    "Insert Horizontal Line": "\uc218\ud3c9\uc120\uc744 \uc0bd\uc785"
   },
   direction: "ltr"
 };

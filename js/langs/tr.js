@@ -55,7 +55,11 @@ $.Editable.LANGS['tr'] = {
     "Open in new tab": "Yeni sekmede a\u00e7",
     "Type something": "Bir \u015fey yaz\u0131n",
     "Cancel": "\u0130ptal",
-    "OK": "Tamam"
+    "OK": "Tamam",
+    "Manage images": "G\u00f6r\u00fcnt\u00fcleri y\u00f6netin",
+    "Delete": "Silmek",
+    "Font Family": "Yaz\u0131tipi Ailesi",
+    "Insert Horizontal Line": "Yatay \u00e7izgi ekleme"
   },
   direction: "ltr"
 };

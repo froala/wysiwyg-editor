@@ -55,7 +55,11 @@ $.Editable.LANGS['da'] = {
     "Open in new tab": "\u00c5bn i ny fane",
     "Type something": "Skriv noget",
     "Cancel": "Fortryd",
-    "OK": "Ok"
+    "OK": "Ok",
+    "Manage images": "Administrer billeder",
+    "Delete": "Slet",
+    "Font Family": "Skrifttype",
+    "Insert Horizontal Line": "Inds\u00e6t vandret linie"
   },
   direction: "ltr"
 };

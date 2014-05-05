@@ -55,7 +55,11 @@ $.Editable.LANGS['zh_cn'] = {
     "Open in new tab": "\u5f00\u542f\u5728\u65b0\u6807\u7b7e\u9875",
     "Type something": "\u8f93\u5165\u4e00\u4e9b\u5185\u5bb9",
     "Cancel": "\u53d6\u6d88",
-    "OK": "\u786e\u5b9a"
+    "OK": "\u786e\u5b9a",
+    "Manage images": "\u7ba1\u7406\u56fe\u50cf",
+    "Delete": "\u5220\u9664",
+    "Font Family": "\u5b57\u4f53",
+    "Insert Horizontal Line": "\u63d2\u5165\u6c34\u5e73\u7ebf"
   },
   direction: "ltr"
 };

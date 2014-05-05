@@ -55,7 +55,11 @@ $.Editable.LANGS['ro'] = {
     "Open in new tab": "Deschide \u00EEn tab nou",
     "Type something": "Tasteaz\u0103 ceva",
     "Cancel": "Anulare",
-    "OK": "Ok"
+    "OK": "Ok",
+    "Manage images": "Gestionare imagini",
+    "Delete": "\u015eterge",
+    "Font Family": "Font",
+    "Insert Horizontal Line": "Inserare linie orizontal\u0103"
   },
   direction: "ltr"
 };

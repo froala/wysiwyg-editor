@@ -55,7 +55,11 @@ $.Editable.LANGS['sv'] = {
     "Open in new tab": "\u00d6ppna i ny flik",
     "Type something": "Ange n\u00e5got",
     "Cancel": "Avbryt",
-    "OK": "Ok"
+    "OK": "Ok",
+    "Manage images": "Hantera bilder",
+    "Delete": "Radera",
+    "Font Family": "Teckensnitt",
+    "Insert Horizontal Line": "Infoga horisontell linje"
   },
   direction: "ltr"
 };

@@ -55,7 +55,11 @@ $.Editable.LANGS['id'] = {
     "Open in new tab": "Buka di tab baru",
     "Type something": "Ketik sesuatu",
     "Cancel": "Batal",
-    "OK": "Ok"
+    "OK": "Ok",
+    "Manage images": "Mengelola gambar",
+    "Delete": "Hapus",
+    "Font Family": "Jenis Huruf",
+    "Insert Horizontal Line": "Sisipkan Garis Horizontal"
   },
   direction: "ltr"
 };

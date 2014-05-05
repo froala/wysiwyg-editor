@@ -55,7 +55,11 @@ $.Editable.LANGS['fi'] = {
     "Open in new tab": "Avaa uudessa v\u00e4lilehdess\u00e4",
     "Type something": "Kirjoita jotain",
     "Cancel": "Peruuta",
-    "OK": "Ok"
+    "OK": "Ok",
+    "Manage images": "Hallita kuvia",
+    "Delete": "Poistaa",
+    "Font Family": "Fontti",
+    "Insert Horizontal Line": "Lis\u00e4\u00e4 vaakasuora viiva"
   },
   direction: "ltr"
 };

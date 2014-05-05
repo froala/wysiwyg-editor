@@ -55,7 +55,11 @@ $.Editable.LANGS['ja'] = {
     "Open in new tab": "\u65b0\u3057\u3044\u30bf\u30d6\u3067\u958b\u304f",
     "Type something": "\u4f55\u304b\u5165\u529b",
     "Cancel": "\u30ad\u30e3\u30f3\u30bb\u30eb",
-    "OK": "OK"
+    "OK": "OK",
+    "Manage images": "\u30a4\u30e1\u30fc\u30b8\u3092\u7ba1\u7406\u3059\u308b",
+    "Delete": "\u524a\u9664",
+    "Font Family": "\u30d5\u30a9\u30f3\u30c8\u30d5\u30a1\u30df\u30ea\u30fc",
+    "Insert Horizontal Line": "\u6c34\u5e73\u7dda\u3092\u633f\u5165\u3057\u307e\u3059"
   },
   direction: "ltr"
 };

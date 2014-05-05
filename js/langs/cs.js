@@ -55,7 +55,11 @@ $.Editable.LANGS['cs'] = {
     "Open in new tab": "Otev\u0159\u00edt v nov\u00e9 z\u00e1lo\u017ece",
     "Type something": "Napi\u0161te n\u011bco",
     "Cancel": "Zru\u0161it",
-    "OK": "OK"
+    "OK": "OK",
+    "Manage images": "Spr\u00e1va obr\u00e1zk\u016f",
+    "Delete": "Vymazat",
+    "Font Family": "Typ p\u00edsma",
+    "Insert Horizontal Line": "Vlo\u017eit vodorovnou \u010d\u00e1ru"
   },
   direction: "ltr"
 };

@@ -55,7 +55,11 @@ $.Editable.LANGS['de'] = {
     "Open in new tab": "In neuer Registerkarte \u00f6ffnen",
     "Type something": "Schreiben Sie etwas",
     "Cancel": "Abbrechen",
-    "OK": "Ok"
+    "OK": "Ok",
+    "Manage images": "Bilder verwalten",
+    "Delete": "L\u00f6schen",
+    "Font Family": "Schriftart",
+    "Insert Horizontal Line": "Legen Horizontale Linie"
   },
   direction: "ltr"
 };

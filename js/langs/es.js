@@ -55,7 +55,11 @@ $.Editable.LANGS['es'] = {
     "Open in new tab": "Abrir en una nueva pesta\u00F1a",
     "Type something": "Escriba algo",
     "Cancel": "Cancelar",
-    "OK": "Ok"
+    "OK": "Ok",
+    "Manage images": "Administrar im\u00e1genes",
+    "Delete": "Borrar",
+    "Font Family": "Familia de fuentes",
+    "Insert Horizontal Line": "Insertar l\u00ednea horizontal"
   },
   direction: "ltr"
 };

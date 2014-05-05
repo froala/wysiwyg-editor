@@ -55,7 +55,11 @@ $.Editable.LANGS['nl'] = {
     "Open in new tab": "Openen in nieuw tabblad",
     "Type something": "Typ iets",
     "Cancel": "Annuleren",
-    "OK": "Ok\u00e9"
+    "OK": "Ok\u00e9",
+    "Manage images": "Beheren van beelden",
+    "Delete": "Verwijder",
+    "Font Family": "Lettertype",
+    "Insert Horizontal Line": "Plaats horizontale lijn"
   },
   direction: "ltr"
 };

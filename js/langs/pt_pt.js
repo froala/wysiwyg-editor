@@ -55,7 +55,11 @@ $.Editable.LANGS['pt_pt'] = {
     "Open in new tab": "Abrir em uma nova aba",
     "Type something": "Digite algo",
     "Cancel": "Cancelar",
-    "OK": "Ok"
+    "OK": "Ok",
+    "Manage images": "Gerenciar as imagens",
+    "Delete": "Apagar",
+    "Font Family": "Fonte",
+    "Insert Horizontal Line": "Inserir linha horizontal"
   },
   direction: "ltr"
 };

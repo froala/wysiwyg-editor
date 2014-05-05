@@ -55,7 +55,11 @@ $.Editable.LANGS['hu'] = {
     "Open in new tab": "Megnyit\u00e1s \u00faj lapon",
     "Type something": "T\u00edpus valami",
     "Cancel": "M\u00e9gse",
-    "OK": "Rendben"
+    "OK": "Rendben",
+    "Manage images": "K\u00e9pek kezel\u00e9se",
+    "Delete": "T\u00f6r\u00f6l",
+    "Font Family": "Bet\u0171t\u00edpus",
+    "Insert Horizontal Line": "Helyezze v\u00edzszintes vonal"
   },
   direction: "ltr"
 };
