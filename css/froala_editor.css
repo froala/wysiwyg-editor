@@ -300,7 +300,7 @@ button {
   display: inline-block;
 }
 .froala-modal {
-  position: absolute;
+  position: fixed;
   z-index: 1001;
   overflow-x: auto;
   overflow-y: scroll;
@@ -969,7 +969,7 @@ button {
   list-style-type: none;
   padding: 0 5px;
   margin: 0 0 10px 0;
-  min-width: 320px;
+  min-width: 290px;
 }
 .froala-editor .image-wrapper ul li {
   padding: 0;
