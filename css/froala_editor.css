@@ -106,10 +106,9 @@ button {
   font-style: italic;
   content: attr(data-placeholder);
   position: absolute;
-}
-.froala-element.f-placeholder:before.f-basic {
-  top: 10px;
+  margin: auto;
   left: 10px;
+  right: 10px;
 }
 .froala-element img {
   max-width: 100% !important;
