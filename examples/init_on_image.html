@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="../css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href="../css/froala_editor.min.css" rel="stylesheet" type="text/css">
+
+    <style>
+        body {
+            text-align: center;
+        }
+
+        section {
+            width: 80%;
+            margin: auto;
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+  <section id="editor">
+    <img class='edit' src="../img/cute_cat.jpg" alt="Cute cat" width="300" style="float: right; margin-right: 10px; margin-bottom: 10px; margin-top: 10px;"/>
+
+    <div class="edit">Hello people. Here we are on the moon.</div>
+  </section>
+
+  <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="../js/froala_editor.min.js"></script>
+
+  <script>
+      $(function(){
+          $('.edit').editable({})
+      });
+  </script>
+</body>
+</html>
