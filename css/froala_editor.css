@@ -44,8 +44,8 @@ button {
 .f-italic {
   font-style: italic;
 }
-.f-highlight {
-  background: #F7DA64 !important;
+.f-spaced {
+  letter-spacing: 3px;
 }
 .f-uppercase {
   text-transform: uppercase;
@@ -175,6 +175,10 @@ button {
   line-height: 120%;
   font-weight: bolder;
 }
+.froala-element.not-msie pre,
+.froala-element.not-msie blockquote {
+  overflow: hidden;
+}
 .froala-element pre {
   white-space: pre-wrap;
   /* CSS3 */
@@ -192,26 +196,15 @@ button {
   border: solid 1px #cccccc;
   background: #FCFCFC;
   padding: 10px;
-  overflow: auto;
 }
 .froala-element blockquote {
-  margin-left: 0;
+  margin-left: 20px;
   margin-right: 0;
   margin-top: 0;
-  padding-left: 40px;
+  padding-left: 20px;
   position: relative;
   font-style: italic;
-  border: 0;
-}
-.froala-element blockquote:before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  font-size: 80px;
-  line-height: 75px;
-  color: #353535;
-  content: '\201C';
-  font-style: normal;
+  border-left: solid 5px #CCC;
 }
 .froala-element span.f-img-wrap {
   line-height: 0;
@@ -818,6 +811,9 @@ button {
   clear: both;
   content: "";
   display: block;
+}
+.froala-editor .fr-dropdown.fr-color-picker i {
+  padding-left: 3px;
 }
 .froala-editor .fr-dropdown.fr-color-picker .fr-dropdown-menu {
   padding: 10px 10px 10px;
