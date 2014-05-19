@@ -716,15 +716,6 @@ button {
 .froala-editor .fr-dropdown.active .fr-dropdown-menu {
   display: block;
 }
-.froala-editor .fr-dropdown.fr-family .fr-trigger {
-  font-family: "Courier New", Courier, monospace;
-  font-size: 22px;
-  height: 35px;
-  overflow: hidden;
-}
-.froala-editor .fr-dropdown.fr-family .fr-trigger i {
-  margin-left: 3px;
-}
 .froala-editor .fr-dropdown .fr-trigger {
   border: 0;
   margin: 0;
