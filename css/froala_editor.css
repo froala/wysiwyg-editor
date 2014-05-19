@@ -41,6 +41,20 @@ button {
   -webkit-user-select: none;
   -ms-user-select: none;
 }
+.f-italic {
+  font-style: italic;
+}
+.f-highlight {
+  background: #F7DA64 !important;
+}
+.f-uppercase {
+  text-transform: uppercase;
+}
+.f-typewriter {
+  font-family: 'Lucida Console', monospace;
+  line-height: 160%;
+  font-size: 14px;
+}
 .froala-element {
   min-height: 20px;
   overflow-y: auto;
@@ -48,6 +62,15 @@ button {
   position: relative;
   word-wrap: break-word;
   line-height: 120%;
+}
+.froala-element ul,
+.froala-element ol {
+  padding-left: 20px;
+}
+.froala-element ul li,
+.froala-element ol li {
+  position: relative;
+  left: 20px;
 }
 .froala-element hr {
   height: 1px;
