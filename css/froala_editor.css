@@ -42,17 +42,17 @@ button {
   -ms-user-select: none;
 }
 .f-italic {
-  font-style: italic;
+  font-style: italic !important;
 }
 .f-spaced {
-  letter-spacing: 3px;
+  letter-spacing: 3px !important;
 }
 .f-uppercase {
-  text-transform: uppercase;
+  text-transform: uppercase !important;
 }
 .f-typewriter {
-  font-family: 'Lucida Console', monospace;
-  line-height: 160%;
+  font-family: 'Lucida Console', monospace !important;
+  line-height: 160% !important;
   font-size: 14px;
 }
 .froala-element {
