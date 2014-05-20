@@ -71,11 +71,12 @@ button {
 .froala-element ol li {
   position: relative;
   left: 20px;
+  margin-right: 20px;
 }
 .froala-element hr {
-  height: 1px;
-  background: #CCC;
+  height: 0px;
   border: 0;
+  border-top: solid 1px #CCC;
   clear: both;
 }
 .froala-element * {
