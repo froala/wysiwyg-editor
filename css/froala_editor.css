@@ -1,5 +1,5 @@
 /*!
- * froala_editor v1.1.5 (http://editor.froala.com)
+ * froala_editor v1.1.6 (http://editor.froala.com)
  * Copyright 2014-2014 Froala
  */
 [contenteditable],
@@ -513,6 +513,7 @@ button {
 }
 .froala-editor.f-rtl .image-wrapper ul li.url-upload * {
   float: right;
+  margin-bottom: 0;
 }
 .froala-editor:not(.froala-modal):before {
   width: 0;
@@ -754,6 +755,7 @@ button {
 }
 .froala-editor .fr-dropdown .fr-dropdown-menu li a {
   padding: 5px 25px;
+  margin: 0;
   display: block;
   text-decoration: none;
   color: #353535;
@@ -966,7 +968,7 @@ button {
   font-size: 13px;
   width: 250px;
   border: solid 1px #cccccc;
-  margin: 0 5px;
+  margin: 0 5px !important;
   height: 21px;
 }
 .froala-editor .link-wrapper button {
@@ -975,40 +977,40 @@ button {
 .froala-editor .image-wrapper h4 {
   margin-bottom: 15px;
 }
-.froala-editor .image-wrapper ul {
+.froala-editor .image-wrapper h4 + ul {
   list-style-type: none;
   padding: 0 5px;
-  margin: 0 0 10px 0;
+  margin: 0 0 10px 0 !important;
   min-width: 290px;
 }
-.froala-editor .image-wrapper ul li {
+.froala-editor .image-wrapper h4 + ul li {
   padding: 0;
   margin: 0;
   position: relative;
   white-space: nowrap;
 }
-.froala-editor .image-wrapper ul li + li {
+.froala-editor .image-wrapper h4 + ul li + li {
   border-top: solid 1px #EEE;
   margin-top: 8px;
   padding-top: 8px;
 }
-.froala-editor .image-wrapper ul li.drop-upload div.f-upload {
+.froala-editor .image-wrapper h4 + ul li.drop-upload div.f-upload {
   border: dashed 2px #cccccc;
   color: #777;
   font-weight: normal;
   text-align: center;
   padding: 10px 0;
 }
-.froala-editor .image-wrapper ul li.drop-upload div.f-upload:hover {
+.froala-editor .image-wrapper h4 + ul li.drop-upload div.f-upload:hover {
   border: dashed 2px #555;
 }
-.froala-editor .image-wrapper ul li.drop-upload div.f-upload.f-hover {
+.froala-editor .image-wrapper h4 + ul li.drop-upload div.f-upload.f-hover {
   border: 2px dashed #0c0;
 }
-.froala-editor .image-wrapper ul li.drop-upload div.f-upload strong {
+.froala-editor .image-wrapper h4 + ul li.drop-upload div.f-upload strong {
   font-size: 14px;
 }
-.froala-editor .image-wrapper ul li.drop-upload form {
+.froala-editor .image-wrapper h4 + ul li.drop-upload form {
   width: 100%;
   height: 100%;
   background: #000;
@@ -1019,7 +1021,7 @@ button {
   cursor: pointer;
   overflow: hidden;
 }
-.froala-editor .image-wrapper ul li.drop-upload form input {
+.froala-editor .image-wrapper h4 + ul li.drop-upload form input {
   display: inline-block;
   width: 400%;
   margin-left: -300%;
@@ -1027,10 +1029,11 @@ button {
   cursor: pointer;
   font-size: 1000px !important;
 }
-.froala-editor .image-wrapper ul li.url-upload * {
+.froala-editor .image-wrapper h4 + ul li.url-upload * {
   float: left;
+  margin-bottom: 0;
 }
-.froala-editor .image-wrapper ul li.url-upload:after {
+.froala-editor .image-wrapper h4 + ul li.url-upload:after {
   content: ".";
   display: block;
   clear: both;
@@ -1038,11 +1041,11 @@ button {
   line-height: 0;
   height: 0;
 }
-.froala-editor .image-wrapper ul li.url-upload label {
+.froala-editor .image-wrapper h4 + ul li.url-upload label {
   padding: 3px 0;
   line-height: 120%;
 }
-.froala-editor .image-wrapper ul li.url-upload input {
+.froala-editor .image-wrapper h4 + ul li.url-upload input {
   font-size: 13px;
   width: 170px;
   border: solid 1px #777;
@@ -1050,7 +1053,7 @@ button {
   height: 19px;
   padding: 1px 5px;
 }
-.froala-editor .image-wrapper ul li.url-upload input + .f-browse {
+.froala-editor .image-wrapper h4 + ul li.url-upload input + .f-browse {
   margin: 0 5px 0 0;
   height: 19px;
   padding: 2px 7px;
@@ -1060,13 +1063,13 @@ button {
   color: #FFF;
   cursor: pointer;
 }
-.froala-editor .image-wrapper ul li.url-upload input + .f-browse:hover {
+.froala-editor .image-wrapper h4 + ul li.url-upload input + .f-browse:hover {
   background: #353535;
 }
-.froala-editor .image-wrapper ul li.url-upload input + .f-ok {
+.froala-editor .image-wrapper h4 + ul li.url-upload input + .f-ok {
   margin-left: 5px;
 }
-.froala-editor .image-wrapper ul li.url-upload input:focus {
+.froala-editor .image-wrapper h4 + ul li.url-upload input:focus {
   border-color: #66afe9;
   outline: 0;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 2px rgba(102, 175, 233, 0.6);
