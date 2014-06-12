@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="../css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href="../css/froala_editor.min.css" rel="stylesheet" type="text/css">
+  <link href="../css/froala_reset.min.css" rel="stylesheet" type="text/css">
+
+    <style>
+        body {
+            text-align: center;
+        }
+
+        section {
+            width: 80%;
+            margin: auto;
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+  <section id="editor">
+    <a href="#" class="edit">Link To Test on</a>
+
+    <div class="edit2">Hello people. Here we are on the moon.</div>
+  </section>
+
+  <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="../js/froala_editor.min.js"></script>
+
+  <script>
+      $(function(){
+        $('.edit').editable({linkList: [
+            {
+            body: 'Google',
+            title: 'An awesome search engine',
+            href: 'http://google.com',
+            nofollow: true,
+            blank: true
+          },
+          {
+            body: 'Froala',
+            title: 'An website builder for everyone',
+            href: 'http://froala.com',
+            nofollow: false,
+            blank: false
+          }
+        ]})
+
+        $('.edit2').editable()
+      });
+  </script>
+</body>
+</html>

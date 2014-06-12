@@ -62,6 +62,7 @@ button {
   position: relative;
   word-wrap: break-word;
   line-height: 120%;
+  vertical-align: top;
 }
 .froala-element ul,
 .froala-element ol {
@@ -83,6 +84,9 @@ button {
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
   box-sizing: content-box;
+}
+.froala-element.f-image {
+  overflow: visible;
 }
 .froala-element.f-tni span.f-img-wrap {
   display: block;
@@ -138,10 +142,10 @@ button {
   max-width: 100% !important;
   min-width: 32px !important;
   min-height: 32px !important;
-  border: solid 3px transparent;
   cursor: pointer;
   z-index: 1;
   position: relative;
+  vertical-align: top;
 }
 .froala-element.not-msie pre,
 .froala-element.not-msie blockquote {
@@ -184,12 +188,22 @@ button {
   position: relative;
   max-width: 100% !important;
   text-align: center;
-  border: solid 1px #1A2D35;
-  padding: 2px;
+  padding: 0px;
   line-height: 0;
+  overflow: visible;
+  z-index: 2;
+  vertical-align: top;
 }
-.froala-element span.f-img-editor img {
-  border: 0;
+.froala-element span.f-img-editor:after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  bottom: -2px;
+  right: -2px;
+  display: block;
+  border: 2px solid #FFF;
+  outline: solid 1px #1A2D35;
 }
 .froala-element span.f-img-handle {
   position: absolute;
@@ -201,29 +215,29 @@ button {
   margin: auto;
 }
 .froala-element span.f-img-handle.f-h-ne {
-  top: -1px;
+  top: -3px;
   left: auto;
-  right: -1px;
+  right: -3px;
   bottom: auto;
   cursor: ne-resize;
 }
 .froala-element span.f-img-handle.f-h-se {
   top: auto;
   left: auto;
-  right: -1px;
-  bottom: -1px;
+  right: -3px;
+  bottom: -3px;
   cursor: se-resize;
 }
 .froala-element span.f-img-handle.f-h-sw {
   top: auto;
-  left: -1px;
+  left: -3px;
   right: auto;
-  bottom: -1px;
+  bottom: -3px;
   cursor: sw-resize;
 }
 .froala-element span.f-img-handle.f-h-nw {
-  top: -1px;
-  left: -1px;
+  top: -3px;
+  left: -3px;
   right: auto;
   bottom: auto;
   cursor: nw-resize;
@@ -231,6 +245,10 @@ button {
 .froala-element.f-basic {
   border: solid 1px #353535;
   padding: 10px;
+}
+.froala-element.f-basic span.f-img-editor {
+  left: 0;
+  right: 0;
 }
 .froala-element a {
   cursor: pointer;
@@ -346,6 +364,33 @@ button {
   display: inline-block;
   margin-bottom: 10px;
 }
+.froala-modal .f-modal-wrapper div.f-image-list div.f-img-deleting:after {
+  position: absolute;
+  -webkit-opacity: 0.75;
+  -moz-opacity: 0.75;
+  opacity: 0.75;
+  background: #000;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  color: #FFF;
+  z-index: 2;
+}
+.froala-modal .f-modal-wrapper div.f-image-list div.f-img-deleting:before {
+  content: "Deleting...";
+  color: #FFF;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  position: absolute;
+  z-index: 3;
+  font-size: 15px;
+  height: 20px;
+}
 .froala-modal .f-modal-wrapper div.f-image-list div.f-empty {
   width: 100%;
   height: 200px;
@@ -388,6 +433,8 @@ button {
   -ms-transition: background 0.2s;
   -o-transition: background 0.2s;
   cursor: pointer;
+  margin: 0;
+  text-decoration: none;
 }
 .froala-modal .f-modal-wrapper div.f-image-list div .f-delete-img {
   display: inline-block;
@@ -872,12 +919,34 @@ button {
   line-height: 0;
   height: 0;
 }
+.froala-editor .link-wrapper h4 span,
+.froala-editor .image-wrapper h4 span,
+.froala-editor .video-wrapper h4 span {
+  float: left;
+}
 .froala-editor .link-wrapper h4 i,
 .froala-editor .image-wrapper h4 i,
 .froala-editor .video-wrapper h4 i {
   float: right;
   cursor: pointer;
   color: #cccccc;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+}
+.froala-editor .link-wrapper h4 i.fa-external-link,
+.froala-editor .image-wrapper h4 i.fa-external-link,
+.froala-editor .video-wrapper h4 i.fa-external-link {
+  float: left;
+  margin-left: 5px;
+  margin-top: 1px;
+  color: #444;
+}
+.froala-editor .link-wrapper h4 i.fa-external-link:hover,
+.froala-editor .image-wrapper h4 i.fa-external-link:hover,
+.froala-editor .video-wrapper h4 i.fa-external-link:hover {
+  color: #1189D9;
 }
 .froala-editor .link-wrapper h4 i:hover,
 .froala-editor .image-wrapper h4 i:hover,
@@ -923,7 +992,7 @@ button {
 }
 .froala-editor .link-wrapper p input[type="checkbox"] {
   float: left;
-  margin-top: 5px;
+  margin-top: 3px;
   margin-left: 0;
 }
 .froala-editor .link-wrapper p label {
@@ -931,12 +1000,80 @@ button {
   margin: 5px 5px 0;
   line-height: 120%;
 }
+.froala-editor .link-wrapper .f-input-wrapper {
+  position: relative;
+  width: 260px;
+}
+.froala-editor .link-wrapper .f-input-wrapper button.f-browse-links {
+  position: absolute;
+  right: 5px;
+  top: 0;
+  height: 21px;
+  background: #777777;
+  border: 0;
+  color: #FFF;
+  padding: 2px 7px;
+  width: 16px;
+  margin: 0;
+  font-size: 12px;
+  line-height: 21px;
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-transition: background linear 0.2s, box-shadow linear 0.2s;
+  -moz-transition: background linear 0.2s, box-shadow linear 0.2s;
+  -o-transition: background linear 0.2s, box-shadow linear 0.2s;
+  transition: background linear 0.2s, box-shadow linear 0.2s;
+  z-index: 2;
+}
+.froala-editor .link-wrapper .f-input-wrapper button.f-browse-links:hover {
+  background: #353535 !important;
+  color: #FFF;
+}
+.froala-editor .link-wrapper .f-input-wrapper button.f-browse-links + input[type="text"] {
+  width: 220px;
+}
+.froala-editor .link-wrapper .f-input-wrapper ul {
+  background: #FFF;
+  display: block;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 24px;
+  left: 5px;
+  right: 5px;
+  border: solid 1px #CCC;
+  display: none;
+  max-height: 100px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.froala-editor .link-wrapper .f-input-wrapper ul li {
+  padding: 2px 5px;
+  cursor: pointer;
+}
+.froala-editor .link-wrapper .f-input-wrapper ul li + li {
+  border-top: solid 1px #CCC;
+}
+.froala-editor .link-wrapper .f-input-wrapper ul li:hover {
+  background: #353535;
+  color: #FFF;
+}
 .froala-editor .link-wrapper input[type="text"] {
   font-size: 13px;
   width: 250px;
   border: solid 1px #cccccc;
   margin: 0 5px !important;
-  height: 21px;
+  height: 25px;
+  line-height: 21px;
+  display: block;
+  padding: 2px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.froala-editor .link-wrapper input[type="text"] + div.f-input-wrapper {
+  margin-top: 5px !important;
 }
 .froala-editor .link-wrapper button {
   float: right;
@@ -948,7 +1085,7 @@ button {
   list-style-type: none;
   padding: 0 5px;
   margin: 0 0 10px 0 !important;
-  min-width: 290px;
+  min-width: 320px;
 }
 .froala-editor .image-wrapper h4 + ul li {
   padding: 0;
