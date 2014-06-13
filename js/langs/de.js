@@ -46,11 +46,11 @@ $.Editable.LANGS['de'] = {
     "Remove Image": "Bild entfernen",
     "Title": "Titel",
     "Insert image": "Bild einf\u00fcgen",
-    "Drop image": "Drop-Bild",
+    "Drop image": "Ziehen Sie ein Bild hierhin",
     "or click": "oder klicken Sie auf",
     "Enter URL": "URL eingeben",
     "Please wait!": "Bitte warten Sie!",
-    "Are you sure? Image will be deleted.": "Sind Sie sicher? Bild wird gel\u00f6scht.",
+    "Are you sure? Image will be deleted.": "Sind Sie sicher? Das Bild wird gel\u00f6scht.",
     "UNLINK": "Link entfernen",
     "Open in new tab": "In neuer Registerkarte \u00f6ffnen",
     "Type something": "Schreiben Sie etwas",
@@ -59,7 +59,7 @@ $.Editable.LANGS['de'] = {
     "Manage images": "Bilder verwalten",
     "Delete": "L\u00f6schen",
     "Font Family": "Schriftart",
-    "Insert Horizontal Line": "Legen Horizontale Linie"
+    "Insert Horizontal Line": "Horizontale Linie einfügen"
   },
   direction: "ltr"
 };
