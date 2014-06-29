@@ -1,13 +1,13 @@
-.froala-box .html-switch {
+.dark-theme.froala-box .html-switch {
   border-color: #aaaaaa;
 }
-.froala-element hr {
+.dark-theme.froala-box .froala-element hr {
   border-top-color: #aaaaaa;
 }
-.froala-element.f-placeholder:before {
+.dark-theme.froala-box .froala-element.f-placeholder:before {
   color: #aaaaaa;
 }
-.froala-element pre {
+.dark-theme.froala-box .froala-element pre {
   border: solid 1px #aaaaaa;
   background: #fcfcfc;
   border-radius: 4px;
@@ -17,238 +17,238 @@
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
 }
-.froala-element blockquote {
+.dark-theme.froala-box .froala-element blockquote {
   border-left: solid 5px #aaaaaa;
 }
-.froala-element img {
+.dark-theme.froala-box .froala-element img {
   min-width: 32px !important;
   min-height: 32px !important;
 }
-.froala-element span.f-img-editor:after {
+.dark-theme.froala-box .froala-element span.f-img-editor:after {
   border: solid 2px #ffffff;
   outline: solid 1px #252525;
 }
-.froala-element span.f-img-editor span.f-img-handle {
+.dark-theme.froala-box .froala-element span.f-img-editor span.f-img-handle {
   height: 15px;
   width: 15px;
   border: solid 1px #252525;
   background: #ffffff;
 }
-.froala-element.f-basic {
+.dark-theme.froala-box .froala-element.f-basic {
   border: solid 1px #ffffff;
 }
-.froala-editor {
-  background: #353535;
-  border: solid 1px #252525;
-  border-top: solid 5px #252525;
-}
-.froala-editor hr {
-  border-top-color: #aaaaaa;
-}
-.froala-editor span.f-sep {
-  border-right: solid 1px #aaaaaa;
-}
-.froala-editor button.fr-bttn,
-.froala-editor button.fr-trigger {
-  background: transparent;
-  color: #ffffff;
-}
-.froala-editor button.fr-bttn:disabled,
-.froala-editor button.fr-trigger:disabled {
-  color: #aaaaaa !important;
-}
-.froala-editor button.fr-bttn[data-disabled="true"] button,
-.froala-editor button.fr-trigger[data-disabled="true"] button,
-.froala-editor button.fr-bttn[data-disabled="true"] i.for-text,
-.froala-editor button.fr-trigger[data-disabled="true"] i.for-text {
-  color: #aaaaaa !important;
-}
-.froala-editor button.fr-bttn[data-disabled="true"]:after,
-.froala-editor button.fr-trigger[data-disabled="true"]:after {
-  border-top-color: #aaaaaa !important;
-}
-.froala-editor button.fr-bttn.active,
-.froala-editor button.fr-trigger.active {
-  color: #2c82c9;
-  background: transparent;
-}
-.froala-editor button.fr-bttn:hover,
-.froala-editor button.fr-trigger:hover {
-  background: #2c82c9;
-  color: #ffffff;
-}
-.froala-editor .fr-dropdown:after {
-  border-top: 3px solid #ffffff;
-}
-.froala-editor .fr-dropdown:hover:after,
-.froala-editor .fr-dropdown.active:after {
-  border-top-color: #ffffff;
-}
-.froala-editor .fr-dropdown.active button.fr-trigger {
-  color: #ffffff;
-  background: #2c82c9;
-}
-.froala-editor .fr-dropdown .fr-dropdown-menu {
-  background: #353535;
-  border: solid 1px #cccccc;
-}
-.froala-editor .fr-dropdown .fr-dropdown-menu li.active:before {
-  color: #ffffff;
-}
-.froala-editor .fr-dropdown .fr-dropdown-menu li a {
-  color: #ffffff;
-}
-.froala-editor .fr-dropdown .fr-dropdown-menu li a:hover {
-  background: #ffffff !important;
-  color: #353535 !important;
-}
-.froala-editor .fr-dropdown .fr-dropdown-menu.f-font-sizes li.active {
-  background: #ffffff;
-  color: #353535;
-}
-.froala-editor .fr-dropdown .fr-dropdown-menu.f-font-sizes li.active a {
-  color: #353535;
-}
-.froala-editor .fr-dropdown.fr-color-picker .fr-dropdown-menu p {
-  color: #ffffff;
-}
-.froala-editor .fr-dropdown.fr-color-picker .fr-dropdown-menu .fr-color-bttn {
-  border: solid 1px #353535;
-}
-.froala-editor .fr-dropdown.fr-color-picker .fr-dropdown-menu .fr-color-bttn.active {
-  border: solid 1px #353535;
-  outline: solid 1px #ffffff;
-}
-.froala-editor .fr-dropdown.fr-color-picker .fr-dropdown-menu .fr-color-bttn.active:after {
-  color: #ffffff;
-}
-.froala-editor .fr-dropdown.fr-color-picker .fr-dropdown-menu .fr-color-bttn:hover:not(:focus):not(:active) {
-  border: solid 1px #ffffff;
-}
-.froala-editor .froala-popup h4 {
-  color: #ffffff;
-}
-.froala-editor .froala-popup h4 i {
-  color: #aaaaaa;
-}
-.froala-editor .froala-popup h4 i.fa-external-link {
-  color: #ffffff;
-}
-.froala-editor .froala-popup h4 i.fa-external-link:hover {
-  color: #2c82c9;
-}
-.froala-editor .froala-popup h4 i:hover {
-  color: #ffffff;
-}
-.froala-editor .froala-popup button {
-  color: #ffffff;
-}
-.froala-editor .froala-popup button.f-ok {
-  background: #2c82c9;
-  color: #ffffff;
-}
-.froala-editor .froala-popup button.f-unlink {
-  background: #b8312f;
-}
-.froala-editor .froala-popup button:hover {
-  background: #353535;
-  color: #ffffff;
-}
-.froala-editor .froala-popup div.f-popup-line input[type="text"],
-.froala-editor .froala-popup div.f-popup-line textarea {
-  border: solid 1px #aaaaaa;
-}
-.froala-editor .froala-popup div.f-popup-line input[type="text"]:focus,
-.froala-editor .froala-popup div.f-popup-line textarea:focus {
-  border-color: #54acd2;
-}
-.froala-editor .froala-popup div.f-popup-line label {
-  color: #ffffff;
-}
-.froala-editor .froala-popup.froala-image-editor-popup div.f-popup-line + div.f-popup-line {
-  border-top: solid 1px #cccccc;
-}
-.froala-editor .froala-popup.froala-video-popup p.or {
-  color: #ffffff;
-}
-.froala-editor .froala-popup.froala-image-popup div.f-popup-line.drop-upload div.f-upload {
-  color: #ffffff;
-  border: dashed 2px #aaaaaa;
-}
-.froala-editor .froala-popup.froala-image-popup div.f-popup-line.drop-upload div.f-upload:hover {
-  border: dashed 2px #eeeeee;
-}
-.froala-editor .froala-popup.froala-image-popup div.f-popup-line.drop-upload div.f-upload.f-hover {
-  border: dashed 2px #61bd6d;
-}
-.froala-editor .froala-popup.froala-image-popup div.f-popup-line + div.f-popup-line {
-  border-top: solid 1px #cccccc;
-}
-.froala-editor .froala-popup.froala-image-popup button.f-browse {
-  background: #475577;
-  color: #ffffff;
-}
-.froala-editor .froala-popup.froala-image-popup button.f-browse:hover {
-  background: #353535;
-  color: #ffffff;
-}
-.froala-editor .froala-popup.froala-image-popup p.f-progress {
-  background-color: #61bd6d;
-}
-.froala-editor .froala-popup.froala-image-popup p.f-progress span {
-  background-color: #61bd6d;
-  color: #ffffff;
-}
-.froala-editor .froala-popup.froala-link-popup div.f-popup-line .f-browse-links {
-  background: #475577;
-  color: #ffffff;
-}
-.froala-editor .froala-popup.froala-link-popup div.f-popup-line .f-browse-links:hover {
-  background: #353535;
-  color: #ffffff;
-}
-.froala-editor .froala-popup.froala-link-popup div.f-popup-line ul {
-  background: #ffffff;
-  border: solid 1px #cccccc;
-}
-.froala-editor .froala-popup.froala-link-popup div.f-popup-line ul li {
-  color: #ffffff;
-}
-.froala-editor .froala-popup.froala-link-popup div.f-popup-line ul li + li {
-  border-top: solid 1px #cccccc;
-}
-.froala-editor .froala-popup.froala-link-popup div.f-popup-line ul li:hover {
-  background: #ffffff;
-  color: #ffffff;
-}
-.froala-modal .f-modal-wrapper {
-  background: #353535;
-  border: solid 1px #252525;
-  border-top: solid 5px #252525;
-}
-.froala-modal .f-modal-wrapper h4 {
-  color: #ffffff;
-}
-.froala-modal .f-modal-wrapper h4 i {
-  color: #aaaaaa;
-}
-.froala-modal .f-modal-wrapper h4 i:hover {
-  color: #ffffff;
-}
-.froala-modal .f-modal-wrapper div.f-image-list div.f-empty {
-  background: #aaaaaa;
-}
-.froala-modal .f-modal-wrapper div.f-image-list div .f-delete-img {
-  background: #252525;
-  color: #ffffff;
-}
-.froala-modal .f-modal-wrapper div.f-image-list:not(.f-touch) div:hover .f-delete-img:hover {
-  background: #d14841;
-  color: #ffffff;
-}
-.f-html .froala-element {
-  background: #ffffff;
+.dark-theme.froala-box.f-html .froala-element {
+  background: #444444;
   color: #ffffff;
   font-family: "Courier New", Courier, monospace;
   font-size: 13px;
+}
+.dark-theme.froala-editor {
+  background: #353535;
+  border: solid 1px #252525;
+  border-top: solid 5px #252525;
+}
+.dark-theme.froala-editor hr {
+  border-top-color: #aaaaaa;
+}
+.dark-theme.froala-editor span.f-sep {
+  border-right: solid 1px #aaaaaa;
+}
+.dark-theme.froala-editor button.fr-bttn,
+.dark-theme.froala-editor button.fr-trigger {
+  background: transparent;
+  color: #ffffff;
+}
+.dark-theme.froala-editor button.fr-bttn:disabled,
+.dark-theme.froala-editor button.fr-trigger:disabled {
+  color: #aaaaaa !important;
+}
+.dark-theme.froala-editor button.fr-bttn[data-disabled="true"] button,
+.dark-theme.froala-editor button.fr-trigger[data-disabled="true"] button,
+.dark-theme.froala-editor button.fr-bttn[data-disabled="true"] i.for-text,
+.dark-theme.froala-editor button.fr-trigger[data-disabled="true"] i.for-text {
+  color: #aaaaaa !important;
+}
+.dark-theme.froala-editor button.fr-bttn[data-disabled="true"]:after,
+.dark-theme.froala-editor button.fr-trigger[data-disabled="true"]:after {
+  border-top-color: #aaaaaa !important;
+}
+.dark-theme.froala-editor button.fr-bttn.active,
+.dark-theme.froala-editor button.fr-trigger.active {
+  color: #2c82c9;
+  background: transparent;
+}
+.dark-theme.froala-editor button.fr-bttn:hover,
+.dark-theme.froala-editor button.fr-trigger:hover {
+  background: #2c82c9;
+  color: #ffffff;
+}
+.dark-theme.froala-editor .fr-dropdown:after {
+  border-top: 3px solid #ffffff;
+}
+.dark-theme.froala-editor .fr-dropdown:hover:after,
+.dark-theme.froala-editor .fr-dropdown.active:after {
+  border-top-color: #ffffff;
+}
+.dark-theme.froala-editor .fr-dropdown.active button.fr-trigger {
+  color: #ffffff;
+  background: #2c82c9;
+}
+.dark-theme.froala-editor .fr-dropdown .fr-dropdown-menu {
+  background: #353535;
+  border: solid 1px #cccccc;
+}
+.dark-theme.froala-editor .fr-dropdown .fr-dropdown-menu li.active:before {
+  color: #ffffff;
+}
+.dark-theme.froala-editor .fr-dropdown .fr-dropdown-menu li a {
+  color: #ffffff;
+}
+.dark-theme.froala-editor .fr-dropdown .fr-dropdown-menu li a:hover {
+  background: #ffffff !important;
+  color: #353535 !important;
+}
+.dark-theme.froala-editor .fr-dropdown .fr-dropdown-menu.f-font-sizes li.active {
+  background: #ffffff;
+  color: #353535;
+}
+.dark-theme.froala-editor .fr-dropdown .fr-dropdown-menu.f-font-sizes li.active a {
+  color: #353535;
+}
+.dark-theme.froala-editor .fr-dropdown.fr-color-picker .fr-dropdown-menu p {
+  color: #ffffff;
+}
+.dark-theme.froala-editor .fr-dropdown.fr-color-picker .fr-dropdown-menu .fr-color-bttn {
+  border: solid 1px #353535;
+}
+.dark-theme.froala-editor .fr-dropdown.fr-color-picker .fr-dropdown-menu .fr-color-bttn.active {
+  border: solid 1px #353535;
+  outline: solid 1px #ffffff;
+}
+.dark-theme.froala-editor .fr-dropdown.fr-color-picker .fr-dropdown-menu .fr-color-bttn.active:after {
+  color: #ffffff;
+}
+.dark-theme.froala-editor .fr-dropdown.fr-color-picker .fr-dropdown-menu .fr-color-bttn:hover:not(:focus):not(:active) {
+  border: solid 1px #ffffff;
+}
+.dark-theme.froala-editor .froala-popup h4 {
+  color: #ffffff;
+}
+.dark-theme.froala-editor .froala-popup h4 i {
+  color: #aaaaaa;
+}
+.dark-theme.froala-editor .froala-popup h4 i.fa-external-link {
+  color: #ffffff;
+}
+.dark-theme.froala-editor .froala-popup h4 i.fa-external-link:hover {
+  color: #2c82c9;
+}
+.dark-theme.froala-editor .froala-popup h4 i:hover {
+  color: #ffffff;
+}
+.dark-theme.froala-editor .froala-popup button {
+  color: #ffffff;
+}
+.dark-theme.froala-editor .froala-popup button.f-ok {
+  background: #2c82c9;
+  color: #ffffff;
+}
+.dark-theme.froala-editor .froala-popup button.f-unlink {
+  background: #b8312f;
+}
+.dark-theme.froala-editor .froala-popup button:hover {
+  background: #353535;
+  color: #ffffff;
+}
+.dark-theme.froala-editor .froala-popup div.f-popup-line input[type="text"],
+.dark-theme.froala-editor .froala-popup div.f-popup-line textarea {
+  border: solid 1px #aaaaaa;
+}
+.dark-theme.froala-editor .froala-popup div.f-popup-line input[type="text"]:focus,
+.dark-theme.froala-editor .froala-popup div.f-popup-line textarea:focus {
+  border-color: #54acd2;
+}
+.dark-theme.froala-editor .froala-popup div.f-popup-line label {
+  color: #ffffff;
+}
+.dark-theme.froala-editor .froala-popup.froala-image-editor-popup div.f-popup-line + div.f-popup-line {
+  border-top: solid 1px #cccccc;
+}
+.dark-theme.froala-editor .froala-popup.froala-video-popup p.or {
+  color: #ffffff;
+}
+.dark-theme.froala-editor .froala-popup.froala-image-popup div.f-popup-line.drop-upload div.f-upload {
+  color: #ffffff;
+  border: dashed 2px #aaaaaa;
+}
+.dark-theme.froala-editor .froala-popup.froala-image-popup div.f-popup-line.drop-upload div.f-upload:hover {
+  border: dashed 2px #eeeeee;
+}
+.dark-theme.froala-editor .froala-popup.froala-image-popup div.f-popup-line.drop-upload div.f-upload.f-hover {
+  border: dashed 2px #61bd6d;
+}
+.dark-theme.froala-editor .froala-popup.froala-image-popup div.f-popup-line + div.f-popup-line {
+  border-top: solid 1px #cccccc;
+}
+.dark-theme.froala-editor .froala-popup.froala-image-popup button.f-browse {
+  background: #475577;
+  color: #ffffff;
+}
+.dark-theme.froala-editor .froala-popup.froala-image-popup button.f-browse:hover {
+  background: #353535;
+  color: #ffffff;
+}
+.dark-theme.froala-editor .froala-popup.froala-image-popup p.f-progress {
+  background-color: #61bd6d;
+}
+.dark-theme.froala-editor .froala-popup.froala-image-popup p.f-progress span {
+  background-color: #61bd6d;
+  color: #ffffff;
+}
+.dark-theme.froala-editor .froala-popup.froala-link-popup div.f-popup-line .f-browse-links {
+  background: #475577;
+  color: #ffffff;
+}
+.dark-theme.froala-editor .froala-popup.froala-link-popup div.f-popup-line .f-browse-links:hover {
+  background: #353535;
+  color: #ffffff;
+}
+.dark-theme.froala-editor .froala-popup.froala-link-popup div.f-popup-line ul {
+  background: #ffffff;
+  border: solid 1px #cccccc;
+}
+.dark-theme.froala-editor .froala-popup.froala-link-popup div.f-popup-line ul li {
+  color: #ffffff;
+}
+.dark-theme.froala-editor .froala-popup.froala-link-popup div.f-popup-line ul li + li {
+  border-top: solid 1px #cccccc;
+}
+.dark-theme.froala-editor .froala-popup.froala-link-popup div.f-popup-line ul li:hover {
+  background: #ffffff;
+  color: #ffffff;
+}
+.dark-theme.froala-modal .f-modal-wrapper {
+  background: #353535;
+  border: solid 1px #252525;
+  border-top: solid 5px #252525;
+}
+.dark-theme.froala-modal .f-modal-wrapper h4 {
+  color: #ffffff;
+}
+.dark-theme.froala-modal .f-modal-wrapper h4 i {
+  color: #aaaaaa;
+}
+.dark-theme.froala-modal .f-modal-wrapper h4 i:hover {
+  color: #ffffff;
+}
+.dark-theme.froala-modal .f-modal-wrapper div.f-image-list div.f-empty {
+  background: #aaaaaa;
+}
+.dark-theme.froala-modal .f-modal-wrapper div.f-image-list div .f-delete-img {
+  background: #252525;
+  color: #ffffff;
+}
+.dark-theme.froala-modal .f-modal-wrapper div.f-image-list:not(.f-touch) div:hover .f-delete-img:hover {
+  background: #d14841;
+  color: #ffffff;
 }
