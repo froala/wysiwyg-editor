@@ -59,7 +59,7 @@ $.Editable.LANGS['fr'] = {
     "Manage images": "Gestion des images",
     "Delete": "Effacer",
     "Font Family": "Polices de caract\u00e8res",
-    "Insert Horizontal Line": "Ins\u00e9rez la ligne horizontale"
+    "Insert Horizontal Line": "Ins\u00e9rez une ligne horizontale"
   },
   direction: "ltr"
 };
