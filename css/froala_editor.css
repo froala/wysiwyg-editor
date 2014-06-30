@@ -365,28 +365,7 @@ button {
   -webkit-user-select: none;
   -ms-user-select: none;
 }
-.froala-editor .fr-dropdown:after {
-  width: 0;
-  height: 0;
-  border-left: 3px solid transparent;
-  border-right: 3px solid transparent;
-  border-top: 3px solid #444444;
-  content: '';
-  position: absolute;
-  top: 15px;
-  right: 8px;
-  color: inherit;
-  cursor: pointer;
-}
-.froala-editor .fr-dropdown:hover:after,
-.froala-editor .fr-dropdown.active:after {
-  border-top-color: #ffffff;
-}
-.froala-editor .fr-dropdown.active button.fr-trigger {
-  color: #ffffff;
-  background: #2c82c9;
-}
-.froala-editor .fr-dropdown.active .fr-dropdown-menu {
+.froala-editor .fr-dropdown .fr-trigger.active + .fr-dropdown-menu {
   display: block;
 }
 .froala-editor .fr-dropdown .fr-trigger {
@@ -606,15 +585,36 @@ button {
   -moz-outline: 0;
   outline: 0;
 }
-.froala-editor button.fr-bttn.active,
-.froala-editor button.fr-trigger.active {
-  color: #2c82c9;
-  background: transparent;
-}
 .froala-editor button.fr-bttn:hover,
 .froala-editor button.fr-trigger:hover {
   background: #2c82c9;
   color: #ffffff;
+}
+.froala-editor .fr-bttn.active {
+  color: #2c82c9;
+  background: transparent;
+}
+.froala-editor .fr-trigger:after {
+  width: 0;
+  height: 0;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  border-top: 3px solid #444444;
+  content: '';
+  position: absolute;
+  top: 15px;
+  right: 8px;
+  color: inherit;
+  cursor: pointer;
+}
+.froala-editor .fr-trigger:hover,
+.froala-editor .fr-trigger.active {
+  color: #ffffff;
+  background: #2c82c9;
+}
+.froala-editor .fr-trigger:hover:after,
+.froala-editor .fr-trigger.active:after {
+  border-top-color: #ffffff;
 }
 .froala-editor .froala-popup {
   font-size: 13px;
