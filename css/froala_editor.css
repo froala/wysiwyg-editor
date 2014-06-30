@@ -753,6 +753,7 @@ button {
   font-weight: normal;
   text-align: center;
   padding: 10px 0;
+  min-width: 300px;
 }
 .froala-popup.froala-image-popup div.f-popup-line.drop-upload div.f-upload:hover {
   border: dashed 2px #353535;
