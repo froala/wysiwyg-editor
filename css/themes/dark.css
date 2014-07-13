@@ -1,3 +1,7 @@
+/*!
+ * froala_editor v1.1.6 (http://editor.froala.com)
+ * Copyright 2014-2014 Froala
+ */
 .dark-theme.froala-box .html-switch {
   border-color: #aaaaaa;
 }
@@ -36,6 +40,9 @@
 }
 .dark-theme.froala-box .froala-element.f-basic {
   border: solid 1px #ffffff;
+}
+.dark-theme.froala-box .froala-element table td {
+  border: solid 1px #cccccc;
 }
 .dark-theme.froala-box.f-html .froala-element {
   background: #444444;
@@ -107,13 +114,6 @@
 .dark-theme.froala-editor .fr-dropdown .fr-dropdown-menu li a:hover {
   background: #ffffff !important;
   color: #353535 !important;
-}
-.dark-theme.froala-editor .fr-dropdown .fr-dropdown-menu.f-font-sizes li.active {
-  background: #ffffff;
-  color: #353535;
-}
-.dark-theme.froala-editor .fr-dropdown .fr-dropdown-menu.f-font-sizes li.active a {
-  color: #353535;
 }
 .dark-theme.froala-editor .fr-dropdown.fr-color-picker .fr-dropdown-menu p {
   color: #ffffff;

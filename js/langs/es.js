@@ -1,3 +1,8 @@
+/*!
+ * froala_editor v1.1.6 (http://editor.froala.com)
+ * Copyright 2014-2014 Froala
+ */
+
 /**
  * Spanish
  */

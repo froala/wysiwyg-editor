@@ -64,6 +64,7 @@ button {
   word-wrap: break-word;
   line-height: 120%;
   vertical-align: top;
+  text-align: left;
 }
 .froala-element ul,
 .froala-element ol {
@@ -122,6 +123,7 @@ button {
   margin: auto;
   left: 10px;
   right: 10px;
+  top: 10px;
 }
 .froala-element.not-msie pre,
 .froala-element.not-msie blockquote {
@@ -157,17 +159,32 @@ button {
   font-style: italic;
   border-left: solid 5px #cccccc;
 }
+.froala-element table {
+  border-collapse: collapse;
+  empty-cells: show;
+}
+.froala-element table > span,
+.froala-element table tr > span {
+  display: none;
+  visibility: hidden;
+}
+.froala-element table td {
+  border: solid 1px #cccccc;
+  padding: 5px;
+}
 .froala-element a {
   cursor: pointer;
 }
 .froala-element img {
-  max-width: 100% !important;
   min-width: 32px !important;
   min-height: 32px !important;
   cursor: pointer;
   z-index: 1;
   position: relative;
   vertical-align: top;
+}
+.froala-element:not(.ie8) img {
+  max-width: 100% !important;
 }
 .froala-element img::selection {
   color: #ffffff;
@@ -193,8 +210,8 @@ button {
   z-index: 2;
   vertical-align: top;
 }
-.froala-element span.f-img-editor:after {
-  content: "";
+.froala-element span.f-img-editor:before {
+  content: " ";
   position: absolute;
   top: -2px;
   left: -2px;
@@ -203,6 +220,11 @@ button {
   display: block;
   border: solid 2px #ffffff;
   outline: solid 1px #252525;
+}
+.froala-element span.f-img-editor:after {
+  content: "";
+  display: block;
+  clear: both;
 }
 .froala-element span.f-img-handle {
   position: absolute;
@@ -271,14 +293,6 @@ button {
   resize: none;
   min-height: 100px;
 }
-.froala-editor {
-  user-select: none;
-  -o-user-select: none;
-  -moz-user-select: none;
-  -khtml-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-}
 .froala-editor *:not(input):not(textarea) {
   user-select: none;
   -o-user-select: none;
@@ -294,12 +308,12 @@ button {
   border-top: solid 5px #252525;
   padding: 0;
   position: absolute;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
+  -o-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
   font-size: 15px;
   z-index: 1000;
   font-family: Arial, Helvetica, sans-serif;
@@ -394,23 +408,17 @@ button {
 .froala-editor .fr-dropdown .fr-dropdown-menu li button.fr-bttn {
   margin: 5px 5px;
 }
-.froala-editor .fr-dropdown .fr-dropdown-menu li.active:before {
-  position: absolute;
-  left: 6px;
-  top: 5px;
-  content: "\f00c";
-  font-family: 'FontAwesome';
-  font-weight: normal;
-  font-size: 12px;
-  color: #353535;
+.froala-editor .fr-dropdown .fr-dropdown-menu li.active a {
+  background: #444444 !important;
+  color: #ffffff !important;
 }
 .froala-editor .fr-dropdown .fr-dropdown-menu li a {
   padding: 5px 25px;
   margin: 0;
   display: block;
   text-decoration: none;
-  color: #353535;
   outline: 0;
+  color: #353535;
   white-space: nowrap;
   font-size: 14px;
   line-height: 130%;
@@ -461,6 +469,12 @@ button {
   position: relative;
   z-index: 100;
   line-height: 16px !important;
+  border-radius: 0;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
 }
 .froala-editor .fr-dropdown.fr-color-picker .fr-dropdown-menu .fr-color-bttn.active {
   border: solid 1px #ffffff;
@@ -527,15 +541,89 @@ button {
   font-size: 12px;
   line-height: 160%;
 }
-.froala-editor .fr-dropdown .fr-dropdown-menu.f-font-sizes li.active {
+.froala-editor .fr-dropdown .fr-dropdown-menu.fr-table > li > a {
+  padding-left: 10px;
+  position: relative;
+}
+.froala-editor .fr-dropdown .fr-dropdown-menu.fr-table > li > a i {
+  bottom: 0;
+  font-size: 12px;
+  height: 10px;
+  margin: auto;
+  position: absolute;
+  right: 5px;
+  top: 0;
+}
+.froala-editor .fr-dropdown .fr-dropdown-menu.fr-table > li:hover > a {
   background: #444444;
   color: #ffffff;
 }
-.froala-editor .fr-dropdown .fr-dropdown-menu.f-font-sizes li.active:before {
-  content: "" !important;
+.froala-editor .fr-dropdown .fr-dropdown-menu.fr-table > li:hover > div,
+.froala-editor .fr-dropdown .fr-dropdown-menu.fr-table > li:hover > ul {
+  display: block !important;
 }
-.froala-editor .fr-dropdown .fr-dropdown-menu.f-font-sizes li.active a {
-  color: #ffffff;
+.froala-editor .fr-dropdown .fr-dropdown-menu.fr-table > li > ul {
+  display: none;
+  position: absolute;
+  left: 100%;
+  top: 0;
+  background: #ffffff;
+  color: #353535;
+  border: solid 1px #cccccc;
+  line-height: 0;
+  padding: 0;
+  margin: 0;
+}
+.froala-editor .fr-dropdown .fr-dropdown-menu.fr-table > li > ul a {
+  padding-left: 10px;
+}
+.froala-editor .fr-dropdown .fr-dropdown-menu.fr-table > li > div {
+  display: none;
+  position: absolute;
+  left: 100%;
+  top: 0;
+  background: #ffffff;
+  color: #353535;
+  border: solid 1px #cccccc;
+  line-height: 0;
+  padding: 5px;
+}
+.froala-editor .fr-dropdown .fr-dropdown-menu.fr-table > li > div > div.fr-t-info {
+  line-height: 140%;
+  text-align: center;
+  font-size: 13px;
+  padding-bottom: 5px;
+}
+.froala-editor .fr-dropdown .fr-dropdown-menu.fr-table > li > div > span {
+  display: inline-block;
+  padding: 0px 4px 4px 0;
+  line-height: 0;
+  float: none;
+}
+.froala-editor .fr-dropdown .fr-dropdown-menu.fr-table > li > div > span > span {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border: solid 1px #cccccc;
+}
+.froala-editor .fr-dropdown .fr-dropdown-menu.fr-table > li > div > span:hover > span,
+.froala-editor .fr-dropdown .fr-dropdown-menu.fr-table > li > div > span.hover > span {
+  background: rgba(61, 142, 185, 0.3);
+  border: solid 1px #3d8eb9;
+}
+.froala-editor .fr-dropdown .fr-dropdown-menu.fr-table > li > div .new-line {
+  content: "";
+  display: block;
+  clear: both;
+}
+.froala-editor .fr-dropdown .fr-dropdown-menu.fr-table > hr {
+  border-top: solid 1px #cccccc;
+}
+.froala-editor .fr-dropdown .fr-dropdown-menu.f-align a {
+  padding: 5px 0px !important;
+  width: 40px;
+  text-align: center;
+  font-size: 16px;
 }
 .froala-editor button.fr-bttn,
 .froala-editor button.fr-trigger {
@@ -556,6 +644,13 @@ button {
   -moz-transition: background linear 0.2s;
   -ms-transition: background linear 0.2s;
   -o-transition: background linear 0.2s;
+  border-radius: 0;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  z-index: 2;
 }
 .froala-editor button.fr-bttn img,
 .froala-editor button.fr-trigger img {
@@ -568,6 +663,10 @@ button {
   color: #aaaaaa !important;
   background: transparent !important;
   cursor: default;
+}
+.froala-editor button.fr-bttn:disabled:after,
+.froala-editor button.fr-trigger:disabled:after {
+  border-top-color: #aaaaaa !important;
 }
 .froala-editor button.fr-bttn[data-disabled="true"] button,
 .froala-editor button.fr-trigger[data-disabled="true"] button,
@@ -585,10 +684,14 @@ button {
   -moz-outline: 0;
   outline: 0;
 }
-.froala-editor button.fr-bttn:hover,
-.froala-editor button.fr-trigger:hover {
+.froala-editor .bttn-wrapper:not(.touch) button.fr-bttn:hover,
+.froala-editor .bttn-wrapper:not(.touch) button.fr-trigger:hover {
   background: #2c82c9;
   color: #ffffff;
+}
+.froala-editor .bttn-wrapper:not(.touch) button.fr-bttn:hover:after,
+.froala-editor .bttn-wrapper:not(.touch) button.fr-trigger:hover:after {
+  border-top-color: #ffffff;
 }
 .froala-editor .fr-bttn.active {
   color: #2c82c9;
@@ -599,22 +702,24 @@ button {
   height: 0;
   border-left: 3px solid transparent;
   border-right: 3px solid transparent;
-  border-top: 3px solid #444444;
-  content: '';
+  border-top-width: 3px;
+  border-top-style: solid;
+  border-top-color: #353535;
+  content: ' ';
   position: absolute;
   top: 15px;
   right: 8px;
   color: inherit;
   cursor: pointer;
+  z-index: 3;
+  zoom: 1;
 }
-.froala-editor .fr-trigger:hover,
 .froala-editor .fr-trigger.active {
   color: #ffffff;
   background: #2c82c9;
 }
-.froala-editor .fr-trigger:hover:after,
 .froala-editor .fr-trigger.active:after {
-  border-top-color: #ffffff;
+  border-top-color: #ffffff !important;
 }
 .froala-editor .froala-popup {
   font-size: 13px;
@@ -754,6 +859,8 @@ button {
   text-align: center;
   padding: 10px 0;
   min-width: 300px;
+  position: relative;
+  overflow: hidden;
 }
 .froala-popup.froala-image-popup div.f-popup-line.drop-upload div.f-upload:hover {
   border: dashed 2px #353535;
@@ -774,10 +881,12 @@ button {
   -webkit-opacity: 0;
   -moz-opacity: 0;
   opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   cursor: pointer;
   overflow: hidden;
 }
 .froala-popup.froala-image-popup div.f-popup-line.drop-upload form input {
+  background: transparent;
   display: inline-block;
   width: 400%;
   margin-left: -300%;
@@ -785,7 +894,11 @@ button {
   cursor: pointer;
   font-size: 1000px !important;
 }
+.froala-popup.froala-image-popup div.f-popup-line.drop-upload form button {
+  background: transparent;
+}
 .froala-popup.froala-image-popup div.f-popup-line button.f-browse {
+  display: none;
   margin: 0 5px 0 -1px;
   padding: 2px 7px;
   background: #475577;
@@ -997,6 +1110,7 @@ button {
   -webkit-opacity: 0.75;
   -moz-opacity: 0.75;
   opacity: 0.75;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   background: #000;
   content: "";
   top: 0;
@@ -1042,6 +1156,7 @@ button {
   -webkit-opacity: 0.75;
   -moz-opacity: 0.75;
   opacity: 0.75;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   vertical-align: middle;
 }
 .froala-modal .f-modal-wrapper div.f-image-list div .f-delete-img {
@@ -1081,6 +1196,7 @@ button {
   -webkit-opacity: 1;
   -moz-opacity: 1;
   opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
 }
 .froala-overlay {
   position: fixed;
@@ -1093,6 +1209,7 @@ button {
   -webkit-opacity: 0.5;
   -moz-opacity: 0.5;
   opacity: 0.5;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
 }
 .froala-editor.f-rtl {
   direction: rtl;
@@ -1210,4 +1327,28 @@ button {
 .froala-element.f-basic span.f-img-editor {
   left: 0;
   right: 0;
+}
+.ie8 .froala-popup.froala-image-popup div.f-popup-line.drop-upload div.f-upload {
+  min-width: 350px;
+}
+.ie8 .froala-popup.froala-image-editor-popup div.f-popup-line + div.f-popup-line {
+  min-width: 250px;
+}
+.froala-element.ie8.f-placeholder:before {
+  display: none;
+}
+.froala-editor.ie8 button.fr-bttn,
+.froala-editor.ie8 button.fr-trigger {
+  zoom: 1;
+  position: relative;
+}
+.froala-editor.ie8 button.fr-bttn:hover,
+.froala-editor.ie8 button.fr-trigger:hover {
+  background: #2c82c9;
+  color: #ffffff;
+}
+.froala-editor.ie8 button.fr-bttn:hover:after,
+.froala-editor.ie8 button.fr-trigger:hover:after {
+  border-top-color: #ffffff;
+  z-index: 3;
 }
