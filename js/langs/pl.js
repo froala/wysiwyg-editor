@@ -64,7 +64,25 @@ $.Editable.LANGS['pl'] = {
     "Manage images": "Zarz\u0105dzanie zdj\u0119ciami",
     "Delete": "Usun\u0105\u0107",
     "Font Family": "Kr\u00f3j czcionki",
-    "Insert Horizontal Line": "Wstaw lini\u0119 poziom\u0105"
+    "Insert Horizontal Line": "Wstaw lini\u0119 poziom\u0105",
+    "Table": "",
+    "Insert table": "",
+    "Cell": "",
+    "Row": "",
+    "Column": "",
+    "Delete table": "",
+    "Insert cell before": "",
+    "Insert cell after": "",
+    "Delete cell": "",
+    "Merge cells": "",
+    "Horizontal split": "",
+    "Vertical split": "",
+    "Insert row above": "",
+    "Insert row below": "",
+    "Delete row": "",
+    "Insert column before": "",
+    "Insert column after": "",
+    "Delete column": ""
   },
   direction: "ltr"
 };

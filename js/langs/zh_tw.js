@@ -64,7 +64,25 @@ $.Editable.LANGS['zh_tw'] = {
     "Manage images": "\u7ba1\u7406\u5716\u50cf",
     "Delete": "\u522a\u9664",
     "Font Family": "\u5b57\u9ad4",
-    "Insert Horizontal Line": "\u63d2\u5165\u6c34\u5e73\u7dda"
+    "Insert Horizontal Line": "\u63d2\u5165\u6c34\u5e73\u7dda",
+    "Table": "\u8868\u683c",
+    "Insert table": "\u63d2\u5165\u8868\u683c",
+    "Cell": "\u5355\u5143\u683c",
+    "Row": "\u884c",
+    "Column": "\u5217",
+    "Delete table": "\u5220\u9664\u8868\u683c",
+    "Insert cell before": "\u524d\u63d2\u5165\u55ae\u5143\u683c",
+    "Insert cell after": "\u5f8c\u63d2\u5165\u96fb\u6c60",
+    "Delete cell": "\u522a\u9664\u55ae\u5143\u683c",
+    "Merge cells": "\u5408\u4f75\u55ae\u5143\u683c",
+    "Horizontal split": "\u6c34\u5e73\u5206\u5272",
+    "Vertical split": "\u5782\u76f4\u5206\u5272",
+    "Insert row above": "\u5728\u4e0a\u65b9\u63d2\u5165",
+    "Insert row below": "\u5728\u4e0b\u65b9\u63d2\u5165",
+    "Delete row": "\u5220\u9664\u884c",
+    "Insert column before": "\u5728\u5de6\u4fa7\u63d2\u5165",
+    "Insert column after": "\u5728\u53f3\u4fa7\u63d2\u5165",
+    "Delete column": "\u5220\u9664\u5217"
   },
   direction: "ltr"
 };

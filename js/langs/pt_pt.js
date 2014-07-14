@@ -64,7 +64,25 @@ $.Editable.LANGS['pt_pt'] = {
     "Manage images": "Gerenciar as imagens",
     "Delete": "Apagar",
     "Font Family": "Fonte",
-    "Insert Horizontal Line": "Inserir linha horizontal"
+    "Insert Horizontal Line": "Inserir linha horizontal",
+    "Table": "",
+    "Insert table": "",
+    "Cell": "",
+    "Row": "",
+    "Column": "",
+    "Delete table": "",
+    "Insert cell before": "",
+    "Insert cell after": "",
+    "Delete cell": "",
+    "Merge cells": "",
+    "Horizontal split": "",
+    "Vertical split": "",
+    "Insert row above": "",
+    "Insert row below": "",
+    "Delete row": "",
+    "Insert column before": "",
+    "Insert column after": "",
+    "Delete column": ""
   },
   direction: "ltr"
 };

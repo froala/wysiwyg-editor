@@ -64,7 +64,25 @@ $.Editable.LANGS['cs'] = {
     "Manage images": "Spr\u00e1va obr\u00e1zk\u016f",
     "Delete": "Vymazat",
     "Font Family": "Typ p\u00edsma",
-    "Insert Horizontal Line": "Vlo\u017eit vodorovnou \u010d\u00e1ru"
+    "Insert Horizontal Line": "Vlo\u017eit vodorovnou \u010d\u00e1ru",
+    "Table": "Tabulka",
+    "Insert table": "Vlo\u017eit tabulku",
+    "Cell": "Bu\u0148ka",
+    "Row": "\u0158\u00e1dek",
+    "Column": "Sloupec",
+    "Delete table": "Smazat tabulku",
+    "Insert cell before": "Vlo\u017eit bu\u0148ka vlevo",
+    "Insert cell after": "Vlo\u017eit bu\u0148ka vpravo",
+    "Delete cell": "Smazat bu\u0148ky",
+    "Merge cells": "Slou\u010dit bu\u0148ky",
+    "Horizontal split": "Horizont\u00e1ln\u00ed rozd\u011blen\u00ed",
+    "Vertical split": "Vertik\u00e1ln\u00ed rozd\u011blen\u00ed",
+    "Insert row above": "Vlo\u017eit \u0159\u00e1dek nad",
+    "Insert row below": "Vlo\u017eit \u0159\u00e1dek pod",
+    "Delete row": "Smazat \u0159\u00e1dek",
+    "Insert column before": "Vlo\u017eit sloupec vlevo",
+    "Insert column after": "Vlo\u017eit sloupec vpravo",
+    "Delete column": "Smazat sloupec"
   },
   direction: "ltr"
 };

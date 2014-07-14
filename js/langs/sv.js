@@ -64,7 +64,25 @@ $.Editable.LANGS['sv'] = {
     "Manage images": "Hantera bilder",
     "Delete": "Radera",
     "Font Family": "Teckensnitt",
-    "Insert Horizontal Line": "Infoga horisontell linje"
+    "Insert Horizontal Line": "Infoga horisontell linje",
+    "Table": "",
+    "Insert table": "",
+    "Cell": "",
+    "Row": "",
+    "Column": "",
+    "Delete table": "",
+    "Insert cell before": "",
+    "Insert cell after": "",
+    "Delete cell": "",
+    "Merge cells": "",
+    "Horizontal split": "",
+    "Vertical split": "",
+    "Insert row above": "",
+    "Insert row below": "",
+    "Delete row": "",
+    "Insert column before": "",
+    "Insert column after": "",
+    "Delete column": ""
   },
   direction: "ltr"
 };

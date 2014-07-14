@@ -64,7 +64,25 @@ $.Editable.LANGS['fr'] = {
     "Manage images": "Gestion des images",
     "Delete": "Effacer",
     "Font Family": "Polices de caract\u00e8res",
-    "Insert Horizontal Line": "Ins\u00e9rez une ligne horizontale"
+    "Insert Horizontal Line": "Ins\u00e9rez une ligne horizontale",
+    "Table": "Tableau",
+    "Insert table": "Ins\u00e9rer un tableau",
+    "Cell": "Cellule",
+    "Row": "Ligne",
+    "Column": "Colonne",
+    "Delete table": "Supprimer le tableau",
+    "Insert cell before": "Ins\u00e9rer cellule avant",
+    "Insert cell after": "Ins\u00e9rer cellule apr\u00e8s",
+    "Delete cell": "Effacer la cellule",
+    "Merge cells": "Fusionner les cellules",
+    "Horizontal split": "Diviser horizontale",
+    "Vertical split": "Diviser verticale",
+    "Insert row above": "Ins\u00e9rer une ligne avant",
+    "Insert row below": "Ins\u00e9rer une ligne apr\u00e8s",
+    "Delete row": "Effacer la ligne",
+    "Insert column before": "Ins\u00e9rer une colonne avant",
+    "Insert column after": "Ins\u00e9rer une colonne apr\u00e8s",
+    "Delete column": "Effacer la colonne"
   },
   direction: "ltr"
 };

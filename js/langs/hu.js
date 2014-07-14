@@ -64,7 +64,25 @@ $.Editable.LANGS['hu'] = {
     "Manage images": "K\u00e9pek kezel\u00e9se",
     "Delete": "T\u00f6r\u00f6l",
     "Font Family": "Bet\u0171t\u00edpus",
-    "Insert Horizontal Line": "Helyezze v\u00edzszintes vonal"
+    "Insert Horizontal Line": "Helyezze v\u00edzszintes vonal",
+    "Table": "T\u00e1bl\u00e1zat",
+    "Insert table": "T\u00e1bl\u00e1zat beilleszt\u00e9se",
+    "Cell": "Cella",
+    "Row": "Sor",
+    "Column": "Oszlop",
+    "Delete table": "T\u00e1bl\u00e1zat t\u00f6rl\u00e9se",
+    "Insert cell before": "Cella besz\u00far\u00e1sa el\u00e9",
+    "Insert cell after": "Cella besz\u00far\u00e1sa m\u00f6g\u00e9",
+    "Delete cell": "Cella t\u00f6rl\u00e9se",
+    "Merge cells": "Cell\u00e1k egyes\u00edt\u00e9se",
+    "Horizontal split": "V\u00edzszintes osztott",
+    "Vertical split": "F\u00fcgg\u0151leges osztott",
+    "Insert row above": "Sor besz\u00far\u00e1sa el\u00e9",
+    "Insert row below": "Sor besz\u00far\u00e1sa m\u00f6g\u00e9",
+    "Delete row": "Sor t\u00f6rl\u00e9se",
+    "Insert column before": "Oszlop besz\u00far\u00e1sa el\u00e9",
+    "Insert column after": "Oszlop besz\u00far\u00e1sa m\u00f6g\u00e9",
+    "Delete column": "Oszlop t\u00f6rl\u00e9se"
   },
   direction: "ltr"
 };

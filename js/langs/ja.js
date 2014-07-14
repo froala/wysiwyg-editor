@@ -64,7 +64,25 @@ $.Editable.LANGS['ja'] = {
     "Manage images": "\u30a4\u30e1\u30fc\u30b8\u3092\u7ba1\u7406\u3059\u308b",
     "Delete": "\u524a\u9664",
     "Font Family": "\u30d5\u30a9\u30f3\u30c8\u30d5\u30a1\u30df\u30ea\u30fc",
-    "Insert Horizontal Line": "\u6c34\u5e73\u7dda\u3092\u633f\u5165\u3057\u307e\u3059"
+    "Insert Horizontal Line": "\u6c34\u5e73\u7dda\u3092\u633f\u5165\u3057\u307e\u3059",
+    "Table": "\u8868",
+    "Insert table": "\u8868\u306e\u633f\u5165",
+    "Cell": "\u30bb\u30eb",
+    "Row": "\u884c",
+    "Column": "\u5217",
+    "Delete table": "\u8868\u306e\u524a\u9664",
+    "Insert cell before": "\u524d\u306b\u30bb\u30eb\u3092\u633f\u5165",
+    "Insert cell after": "\u5f8c\u306b\u30bb\u30eb\u3092\u633f\u5165",
+    "Delete cell": "\u30bb\u30eb\u3092\u524a\u9664\u3059\u308b",
+    "Merge cells": "\u30bb\u30eb\u306e\u7d50\u5408",
+    "Horizontal split": "\u6c34\u5e73\u5206\u5272",
+    "Vertical split": "\u5782\u76f4\u5206\u5272",
+    "Insert row above": "\u4e0a\u5074\u306b\u884c\u3092\u633f\u5165",
+    "Insert row below": "\u4e0b\u5074\u306b\u884c\u3092\u633f\u5165",
+    "Delete row": "\u884c\u306e\u524a\u9664",
+    "Insert column before": "\u5de6\u5074\u306b\u5217\u3092\u633f\u5165",
+    "Insert column after": "\u53f3\u5074\u306b\u5217\u3092\u633f\u5165",
+    "Delete column": "\u5217\u306e\u524a\u9664"
   },
   direction: "ltr"
 };

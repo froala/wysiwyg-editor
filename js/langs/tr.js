@@ -64,7 +64,25 @@ $.Editable.LANGS['tr'] = {
     "Manage images": "G\u00f6r\u00fcnt\u00fcleri y\u00f6netin",
     "Delete": "Silmek",
     "Font Family": "Yaz\u0131tipi Ailesi",
-    "Insert Horizontal Line": "Yatay \u00e7izgi ekleme"
+    "Insert Horizontal Line": "Yatay \u00e7izgi ekleme",
+    "Table": "",
+    "Insert table": "",
+    "Cell": "",
+    "Row": "",
+    "Column": "",
+    "Delete table": "",
+    "Insert cell before": "",
+    "Insert cell after": "",
+    "Delete cell": "",
+    "Merge cells": "",
+    "Horizontal split": "",
+    "Vertical split": "",
+    "Insert row above": "",
+    "Insert row below": "",
+    "Delete row": "",
+    "Insert column before": "",
+    "Insert column after": "",
+    "Delete column": ""
   },
   direction: "ltr"
 };

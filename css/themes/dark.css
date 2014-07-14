@@ -28,7 +28,13 @@
   min-width: 32px !important;
   min-height: 32px !important;
 }
-.dark-theme.froala-box .froala-element span.f-img-editor:after {
+.dark-theme.froala-box .froala-element img::selection {
+  color: #ffffff;
+}
+.dark-theme.froala-box .froala-element img::-moz-selection {
+  color: #ffffff;
+}
+.dark-theme.froala-box .froala-element span.f-img-editor:before {
   border: solid 2px #ffffff;
   outline: solid 1px #252525;
 }
@@ -70,16 +76,6 @@
 .dark-theme.froala-editor button.fr-trigger:disabled {
   color: #aaaaaa !important;
 }
-.dark-theme.froala-editor button.fr-bttn[data-disabled="true"] button,
-.dark-theme.froala-editor button.fr-trigger[data-disabled="true"] button,
-.dark-theme.froala-editor button.fr-bttn[data-disabled="true"] i.for-text,
-.dark-theme.froala-editor button.fr-trigger[data-disabled="true"] i.for-text {
-  color: #aaaaaa !important;
-}
-.dark-theme.froala-editor button.fr-bttn[data-disabled="true"]:after,
-.dark-theme.froala-editor button.fr-trigger[data-disabled="true"]:after {
-  border-top-color: #aaaaaa !important;
-}
 .dark-theme.froala-editor button.fr-bttn.active,
 .dark-theme.froala-editor button.fr-trigger.active {
   color: #2c82c9;
@@ -90,23 +86,42 @@
   background: #2c82c9;
   color: #ffffff;
 }
+.dark-theme.froala-editor.ie8 button.fr-bttn:hover,
+.dark-theme.froala-editor.ie8 button.fr-trigger:hover {
+  background: #2c82c9;
+  color: #ffffff;
+}
+.dark-theme.froala-editor.ie8 button.fr-bttn:hover:after,
+.dark-theme.froala-editor.ie8 button.fr-trigger:hover:after {
+  border-top-color: #ffffff;
+}
+.dark-theme.froala-editor .bttn-wrapper:not(.touch) button.fr-bttn:hover,
+.dark-theme.froala-editor .bttn-wrapper:not(.touch) button.fr-trigger:hover {
+  background: #2c82c9;
+  color: #ffffff;
+}
+.dark-theme.froala-editor .bttn-wrapper:not(.touch) button.fr-bttn:hover:after,
+.dark-theme.froala-editor .bttn-wrapper:not(.touch) button.fr-trigger:hover:after {
+  border-top-color: #ffffff;
+}
 .dark-theme.froala-editor .fr-dropdown .fr-trigger:after {
   border-top: 3px solid #ffffff;
+}
+.dark-theme.froala-editor .fr-dropdown .fr-trigger.active {
+  color: #ffffff;
+  background: #2c82c9;
 }
 .dark-theme.froala-editor .fr-dropdown:hover .fr-trigger:after,
 .dark-theme.froala-editor .fr-dropdown.active .fr-trigger:after {
   border-top-color: #ffffff;
 }
-.dark-theme.froala-editor .fr-dropdown.active button.fr-trigger {
-  color: #ffffff;
-  background: #2c82c9;
-}
 .dark-theme.froala-editor .fr-dropdown .fr-dropdown-menu {
   background: #353535;
   border: solid 1px #252525;
 }
-.dark-theme.froala-editor .fr-dropdown .fr-dropdown-menu li.active:before {
-  color: #ffffff;
+.dark-theme.froala-editor .fr-dropdown .fr-dropdown-menu li.active a {
+  background: #ffffff !important;
+  color: #353535 !important;
 }
 .dark-theme.froala-editor .fr-dropdown .fr-dropdown-menu li a {
   color: #ffffff;
@@ -114,6 +129,28 @@
 .dark-theme.froala-editor .fr-dropdown .fr-dropdown-menu li a:hover {
   background: #ffffff !important;
   color: #353535 !important;
+}
+.dark-theme.froala-editor .fr-dropdown .fr-dropdown-menu.fr-table > li:hover > a {
+  background: #ffffff;
+  color: #353535;
+}
+.dark-theme.froala-editor .fr-dropdown .fr-dropdown-menu.fr-table > li > ul {
+  background: #353535;
+  color: #ffffff;
+  border: solid 1px #252525;
+}
+.dark-theme.froala-editor .fr-dropdown .fr-dropdown-menu.fr-table > li > div {
+  background: #353535;
+  color: #ffffff;
+  border: solid 1px #252525;
+}
+.dark-theme.froala-editor .fr-dropdown .fr-dropdown-menu.fr-table > li > div > span > span {
+  border: solid 1px #252525;
+}
+.dark-theme.froala-editor .fr-dropdown .fr-dropdown-menu.fr-table > li > div > span:hover > span,
+.dark-theme.froala-editor .fr-dropdown .fr-dropdown-menu.fr-table > li > div > span.hover > span {
+  background: rgba(61, 142, 185, 0.3);
+  border: solid 1px #3d8eb9;
 }
 .dark-theme.froala-editor .fr-dropdown.fr-color-picker .fr-dropdown-menu p {
   color: #ffffff;
@@ -157,8 +194,8 @@
   background: #b8312f;
 }
 .dark-theme.froala-editor .froala-popup button:hover {
-  background: #353535;
-  color: #ffffff;
+  background: #ffffff;
+  color: #353535;
 }
 .dark-theme.froala-editor .froala-popup div.f-popup-line input[type="text"],
 .dark-theme.froala-editor .froala-popup div.f-popup-line textarea {

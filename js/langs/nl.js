@@ -64,7 +64,25 @@ $.Editable.LANGS['nl'] = {
     "Manage images": "Beheren van beelden",
     "Delete": "Verwijder",
     "Font Family": "Lettertype",
-    "Insert Horizontal Line": "Plaats horizontale lijn"
+    "Insert Horizontal Line": "Plaats horizontale lijn",
+    "Table": "",
+    "Insert table": "",
+    "Cell": "",
+    "Row": "",
+    "Column": "",
+    "Delete table": "",
+    "Insert cell before": "",
+    "Insert cell after": "",
+    "Delete cell": "",
+    "Merge cells": "",
+    "Horizontal split": "",
+    "Vertical split": "",
+    "Insert row above": "",
+    "Insert row below": "",
+    "Delete row": "",
+    "Insert column before": "",
+    "Insert column after": "",
+    "Delete column": ""
   },
   direction: "ltr"
 };

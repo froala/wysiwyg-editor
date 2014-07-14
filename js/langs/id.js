@@ -64,7 +64,25 @@ $.Editable.LANGS['id'] = {
     "Manage images": "Mengelola gambar",
     "Delete": "Hapus",
     "Font Family": "Jenis Huruf",
-    "Insert Horizontal Line": "Sisipkan Garis Horizontal"
+    "Insert Horizontal Line": "Sisipkan Garis Horizontal",
+    "Table": "Tabel",
+    "Insert table": "Sisipkan tabel",
+    "Cell": "Sel",
+    "Row": "Baris",
+    "Column": "Kolom",
+    "Delete table": "Hapus table",
+    "Insert cell before": "Sisipkan sel sebelum",
+    "Insert cell after": "Sisipkan sel setelah",
+    "Delete cell": "Hapus sel",
+    "Merge cells": "Menggabungkan sel",
+    "Horizontal split": "Perpecahan horisontal",
+    "Vertical split": "perpecahan vertikal",
+    "Insert row above": "Sisipkan baris di atas",
+    "Insert row below": "Sisipkan baris di bawah",
+    "Delete row": "Hapus baris",
+    "Insert column before": "Sisipkan kolom sebelum",
+    "Insert column after": "Sisipkan kolom setelah",
+    "Delete column": "Hapus kolom"
   },
   direction: "ltr"
 };

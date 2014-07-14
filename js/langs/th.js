@@ -64,7 +64,25 @@ $.Editable.LANGS['th'] = {
     "Manage images": "\u0e08\u0e31\u0e14\u0e01\u0e32\u0e23\u0e20\u0e32\u0e1e",
     "Delete": "\u0e25\u0e1a",
     "Font Family": "\u0e15\u0e23\u0e30\u0e01\u0e39\u0e25\u0e41\u0e1a\u0e1a\u0e2d\u0e31\u0e01\u0e29\u0e23",
-    "Insert Horizontal Line": "\u0e41\u0e17\u0e23\u0e01\u0e40\u0e2a\u0e49\u0e19\u0e41\u0e19\u0e27\u0e19\u0e2d\u0e19"
+    "Insert Horizontal Line": "\u0e41\u0e17\u0e23\u0e01\u0e40\u0e2a\u0e49\u0e19\u0e41\u0e19\u0e27\u0e19\u0e2d\u0e19",
+    "Table": "",
+    "Insert table": "",
+    "Cell": "",
+    "Row": "",
+    "Column": "",
+    "Delete table": "",
+    "Insert cell before": "",
+    "Insert cell after": "",
+    "Delete cell": "",
+    "Merge cells": "",
+    "Horizontal split": "",
+    "Vertical split": "",
+    "Insert row above": "",
+    "Insert row below": "",
+    "Delete row": "",
+    "Insert column before": "",
+    "Insert column after": "",
+    "Delete column": ""
   },
   direction: "ltr"
 };

@@ -64,7 +64,25 @@ $.Editable.LANGS['fi'] = {
     "Manage images": "Hallita kuvia",
     "Delete": "Poistaa",
     "Font Family": "Fontti",
-    "Insert Horizontal Line": "Lis\u00e4\u00e4 vaakasuora viiva"
+    "Insert Horizontal Line": "Lis\u00e4\u00e4 vaakasuora viiva",
+    "Table": "Taulukko",
+    "Insert table": "Lis\u00e4\u00e4 taulukko",
+    "Cell": "Solu",
+    "Row": "Rivi",
+    "Column": "Sarake",
+    "Delete table": "Poista taulukko",
+    "Insert cell before": "Lis\u00e4\u00e4 solu ennen",
+    "Insert cell after": "Lis\u00e4\u00e4 solu j\u00e4lkeen",
+    "Delete cell": "Poista solu",
+    "Merge cells": "Yhdist\u00e4 solut",
+    "Horizontal split": "Jaa vaakasuora",
+    "Vertical split": "Jaa pystysuora",
+    "Insert row above": "Lis\u00e4\u00e4 rivi ennen",
+    "Insert row below": "Lis\u00e4\u00e4 rivi j\u00e4lkeen",
+    "Delete row": "Poista rivi",
+    "Insert column before": "Lis\u00e4\u00e4 sarake ennen",
+    "Insert column after": "Lis\u00e4\u00e4 sarake j\u00e4lkeen",
+    "Delete column": "Poista sarake"
   },
   direction: "ltr"
 };

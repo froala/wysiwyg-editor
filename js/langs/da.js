@@ -64,7 +64,25 @@ $.Editable.LANGS['da'] = {
     "Manage images": "Administrer billeder",
     "Delete": "Slet",
     "Font Family": "Skrifttype",
-    "Insert Horizontal Line": "Inds\u00e6t vandret linie"
+    "Insert Horizontal Line": "Inds\u00e6t vandret linie",
+    "Table": "Tabel",
+    "Insert table": "Inds\u00e6t tabel",
+    "Cell": "Celle",
+    "Row": "R\u00e6kke",
+    "Column": "Kolonne",
+    "Delete table": "Slet tabel",
+    "Insert cell before": "Inds\u00e6t celle f\u00f8r",
+    "Insert cell after": "Inds\u00e6t celle efter",
+    "Delete cell": "Slet celle",
+    "Merge cells": "Flet celler",
+    "Horizontal split": "Vandret split",
+    "Vertical split": "Lodret split",
+    "Insert row above": "Inds\u00e6t r\u00e6kke over",
+    "Insert row below": "Inds\u00e6t r\u00e6kke under",
+    "Delete row": "Slet r\u00e6kke",
+    "Insert column before": "Inds\u00e6t kolonne f\u00f8r",
+    "Insert column after": "Inds\u00e6t kolonne efter",
+    "Delete column": "Slet kolonne"
   },
   direction: "ltr"
 };

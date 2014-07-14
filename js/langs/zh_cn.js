@@ -64,7 +64,25 @@ $.Editable.LANGS['zh_cn'] = {
     "Manage images": "\u7ba1\u7406\u56fe\u50cf",
     "Delete": "\u5220\u9664",
     "Font Family": "\u5b57\u4f53",
-    "Insert Horizontal Line": "\u63d2\u5165\u6c34\u5e73\u7ebf"
+    "Insert Horizontal Line": "\u63d2\u5165\u6c34\u5e73\u7ebf",
+    "Table": "",
+    "Insert table": "",
+    "Cell": "",
+    "Row": "",
+    "Column": "",
+    "Delete table": "",
+    "Insert cell before": "",
+    "Insert cell after": "",
+    "Delete cell": "",
+    "Merge cells": "",
+    "Horizontal split": "",
+    "Vertical split": "",
+    "Insert row above": "",
+    "Insert row below": "",
+    "Delete row": "",
+    "Insert column before": "",
+    "Insert column after": "",
+    "Delete column": ""
   },
   direction: "ltr"
 };

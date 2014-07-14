@@ -64,7 +64,25 @@ $.Editable.LANGS['ko'] = {
     "Manage images": "\uc774\ubbf8\uc9c0 \uad00\ub9ac",
     "Delete": "\uc0ad\uc81c",
     "Font Family": "\uae00\uaf34",
-    "Insert Horizontal Line": "\uc218\ud3c9\uc120\uc744 \uc0bd\uc785"
+    "Insert Horizontal Line": "\uc218\ud3c9\uc120\uc744 \uc0bd\uc785",
+    "Table": "\ud14c\uc774\ube14",
+    "Insert table": "\ud14c\uc774\ube14 \uc0bd\uc785",
+    "Cell": "\uc140",
+    "Row": "\uc5f4",
+    "Column": "\ud589",
+    "Delete table": "\ud14c\uc774\ube14 \uc0ad\uc81c",
+    "Insert cell before": "\uc804\uc5d0 \uc140\uc744 \uc0bd\uc785",
+    "Insert cell after": "\ud6c4 \uc140\uc744 \uc0bd\uc785",
+    "Delete cell": "\uc140\uc744 \uc0ad\uc81c",
+    "Merge cells": "\uc140 \ud569\uce58\uae30",
+    "Horizontal split": "\uc218\ud3c9 \ubd84\ud560",
+    "Vertical split": "\uc218\uc9c1 \ubd84\ud560",
+    "Insert row above": "\uc774\uc804\uc5d0 \ud589 \uc0bd\uc785",
+    "Insert row below": "\ub2e4\uc74c\uc5d0 \ud589 \uc0bd\uc785",
+    "Delete row": "\ud589 \uc9c0\uc6b0\uae30",
+    "Insert column before": "\uc774\uc804\uc5d0 \ud589 \uc0bd\uc785",
+    "Insert column after": "\ub2e4\uc74c\uc5d0 \uc5f4 \uc0bd\uc785",
+    "Delete column": "\uc5f4 \uc9c0\uc6b0\uae30"
   },
   direction: "ltr"
 };
