@@ -1,6 +1,6 @@
 {
     "name": "FroalaWysiwygEditor",
-    "version": "1.1.6",
+    "version": "2.0.0",
     "description": "Simple and yet the most complete WYSIWYG text editor with awesome functionality such as inline editing and autosave.",
     "main": "js/froala_editor.min.js",
     "ignore": [
