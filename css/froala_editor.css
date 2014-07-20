@@ -115,15 +115,20 @@ button {
 .froala-element span {
   line-height: 120%;
 }
+.froala-element.f-basic.f-placeholder:before {
+  left: 10px;
+  right: 10px;
+  top: 10px;
+}
 .froala-element.f-placeholder:before {
   color: #cccccc;
   font-style: italic;
   content: attr(data-placeholder);
   position: absolute;
   margin: auto;
-  left: 10px;
-  right: 10px;
-  top: 10px;
+  left: 0;
+  top: 0;
+  right: 0;
 }
 .froala-element.not-msie pre,
 .froala-element.not-msie blockquote {
