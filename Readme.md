@@ -6,6 +6,7 @@ A lightweight JavaScript text editing library.
 * Official documentation:  [editor.froala.com/docs](http://editor.froala.com/docs)
 * Changelog:  [editor.froala.com/changelog](http://editor.froala.com/changelog)
 * Licensing: [editor.froala.com/download](http://editor.froala.com/download)
+* FAQ: [editor.froala.com/faq](http://editor.froala.com/faq)
 * Support: [editor.froala.com/contact](http://editor.froala.com/contact)
 
 ## Reporting issues
