@@ -1021,7 +1021,7 @@ button {
   margin: 0;
   font-size: 12px;
   line-height: 21px;
-  font-weight: bold;
+  font-weight: 400;
   cursor: pointer;
   float: left;
   -webkit-transition: background linear 0.2s;
