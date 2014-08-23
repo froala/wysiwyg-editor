@@ -3,7 +3,6 @@
 <head>
 	<link href="../../css/font-awesome.min.css" rel="stylesheet" type="text/css">
 	<link href="../../css/froala_editor.min.css" rel="stylesheet" type="text/css">
-  <link href="../../css/froala_reset.min.css" rel="stylesheet" type="text/css">
 
     <style>
         body {
@@ -38,13 +37,10 @@
         "paths": {
           "app": "../app",
           "jquery": "//code.jquery.com/jquery-1.10.2",
-          "beautify": "../../../../js/libs/beautify/beautify",
-          "beautify-css": "../../../../js/libs/beautify/beautify-css",
-          "beautify-html": "../../../../js/libs/beautify/beautify-html",
-          "froala_editor": "../../../../js/froala_editor.min",
+          "froala_editor": "../../../../js/froala_editor.min"
         },
         shim: {
-          'froala_editor': {deps: ['jquery', 'beautify-html']}
+          'froala_editor': {deps: ['jquery']}
         }
     });
 

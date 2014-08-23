@@ -1,3 +1,4 @@
+@import url('froala_page.css');
 /*!
  * froala_editor v1.1.8 (http://editor.froala.com)
  * Copyright 2014-2014 Froala
@@ -56,6 +57,22 @@ button {
 .froala-box.f-html .html-switch {
   display: inline-block;
 }
+.f-html ::selection {
+  background: #6d90ba;
+  color: #FFF;
+}
+.f-html ::-moz-selection {
+  background: #6d90ba;
+  color: #FFF;
+}
+::selection {
+  background: #b5d6fd;
+  color: #000;
+}
+::-moz-selection {
+  background: #b5d6fd;
+  color: #000;
+}
 .froala-element {
   min-height: 30px;
   overflow-y: auto;
@@ -65,18 +82,6 @@ button {
   line-height: 140%;
   vertical-align: top;
   text-align: left;
-  font-family: sans-serif, Arial, Verdana, "Trebuchet MS";
-  font-size: 13px;
-}
-.froala-element ul,
-.froala-element ol {
-  padding-left: 20px;
-}
-.froala-element hr {
-  height: 0px;
-  border: 0;
-  border-top: solid 1px #cccccc;
-  clear: both;
 }
 .froala-element * {
   -webkit-box-sizing: content-box;
@@ -130,50 +135,10 @@ button {
 .froala-element.not-msie blockquote {
   overflow: hidden;
 }
-.froala-element pre {
-  white-space: pre-wrap;
-  /* CSS3 */
-  white-space: -moz-pre-wrap;
-  /* Mozilla, post millennium */
-  white-space: -pre-wrap;
-  /* Opera 4-6 */
-  white-space: -o-pre-wrap;
-  /* Opera 7 */
-  word-wrap: break-word;
-  /* Internet Explorer 5.5+ */
-  border: solid 1px #cccccc;
-  background: #fcfcfc;
-  padding: 10px;
-  border-radius: 4px;
-  -moz-border-radius: 4px;
-  -webkit-border-radius: 4px;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-}
-.froala-element blockquote {
-  margin-left: 20px;
-  margin-right: 0;
-  margin-top: 0;
-  padding-left: 20px;
-  position: relative;
-  font-style: italic;
-  border-left: solid 5px #cccccc;
-}
-.froala-element table {
-  border-collapse: collapse;
-  empty-cells: show;
-  width: 100%;
-  margin-bottom: 10px;
-}
 .froala-element table > span,
 .froala-element table tr > span {
   display: none;
   visibility: hidden;
-}
-.froala-element table td {
-  border: solid 1px #cccccc;
-  padding: 5px;
 }
 .froala-element a {
   cursor: pointer;
@@ -202,8 +167,12 @@ button {
 }
 .froala-element span.f-img-wrap {
   line-height: 0;
-  display: block;
   text-align: center;
+  border: 0;
+  outline: 0;
+}
+.froala-element span.f-img-wrap.fr-fin {
+  display: block;
 }
 .froala-element span.f-img-editor {
   display: inline-block;
@@ -215,28 +184,49 @@ button {
   overflow: visible;
   z-index: 2;
   vertical-align: top;
+  border: 0;
+  outline: 0;
+  outline-color: transparent;
+  border-color: transparent;
 }
 .froala-element span.f-img-editor:before {
-  content: " ";
+  content: "";
   position: absolute;
   top: -2px;
   left: -2px;
   bottom: -2px;
   right: -2px;
   display: block;
-  border: solid 2px #ffffff;
-  outline: solid 1px #252525;
+  border: solid 2px #ffffff !important;
+  outline: solid 1px #252525 !important;
+  z-index: 1;
 }
 .froala-element span.f-img-editor:after {
   content: "";
   display: block;
   clear: both;
 }
+.froala-element span.f-img-editor.fr-fil {
+  margin: 10px 10px 10px 3px;
+  float: left;
+}
+.froala-element span.f-img-editor.fr-fir {
+  margin: 10px 3px 10px 10px;
+  float: right;
+}
+.froala-element span.f-img-editor.fr-fin {
+  margin: 10px 0;
+  float: none;
+}
+.froala-element span.f-img-editor img {
+  padding: 0 !important;
+  margin: auto;
+}
 .froala-element span.f-img-handle {
   position: absolute;
-  height: 15px;
-  width: 15px;
-  border: solid 1px #252525;
+  height: 13px;
+  width: 13px;
+  border: solid 1px #252525 !important;
   background: #ffffff;
   z-index: 2;
   margin: auto;
@@ -269,10 +259,41 @@ button {
   bottom: auto;
   cursor: nw-resize;
 }
+.froala-element .f-video-editor {
+  display: inline-block;
+  position: relative;
+  line-height: 0;
+  cursor: pointer;
+  padding: 3px;
+}
+.froala-element .f-video-editor:after {
+  position: absolute;
+  content: '';
+  z-index: 2;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  cursor: pointer;
+}
+.froala-element .f-video-editor.active:after {
+  border: solid 1px #252525;
+}
+.froala-element .f-video-editor.fr-fvn {
+  float: none;
+  display: block;
+  text-align: center;
+}
+.froala-element .f-video-editor.fr-fvl {
+  float: left;
+}
+.froala-element .f-video-editor.fr-fvr {
+  float: right;
+}
 .f-html .froala-element {
-  background: #444444;
+  background: #202020;
   color: #ffffff;
-  font-family: "Courier New", Courier, monospace;
+  font-family: 'Courier New', Monospace;
   font-size: 13px;
   overflow-y: auto;
   padding: 0;
@@ -298,6 +319,10 @@ button {
   box-sizing: border-box;
   resize: none;
   min-height: 100px;
+  font-size: inherit;
+  font-family: inherit;
+  outline: 0;
+  margin: 0;
 }
 .froala-editor *:not(input):not(textarea) {
   user-select: none;
@@ -511,33 +536,34 @@ button {
   font-family: monospace, sans-serif;
 }
 .froala-editor .fr-dropdown .fr-dropdown-menu li a.format-h1 {
-  font-size: 2em;
-  line-height: 120%;
-  font-weight: bolder;
+  font-size: 36px;
+  line-height: 1.1;
+  font-weight: 400;
 }
 .froala-editor .fr-dropdown .fr-dropdown-menu li a.format-h2 {
-  font-size: 1.5em;
-  line-height: 120%;
-  font-weight: bolder;
+  font-size: 30px;
+  line-height: 1.1;
+  font-weight: 400;
 }
 .froala-editor .fr-dropdown .fr-dropdown-menu li a.format-h3 {
-  font-size: 1.17em;
-  line-height: 120%;
-  font-weight: bolder;
+  font-size: 24px;
+  line-height: 1.1;
+  font-weight: 400;
 }
 .froala-editor .fr-dropdown .fr-dropdown-menu li a.format-h4 {
-  line-height: 120%;
-  font-weight: bolder;
+  font-size: 18px;
+  line-height: 1.1;
+  font-weight: 400;
 }
 .froala-editor .fr-dropdown .fr-dropdown-menu li a.format-h5 {
-  font-size: .83em;
-  line-height: 120%;
-  font-weight: bolder;
+  font-size: 14px;
+  line-height: 1.1;
+  font-weight: 400;
 }
 .froala-editor .fr-dropdown .fr-dropdown-menu li a.format-h6 {
-  font-size: .75em;
-  line-height: 120%;
-  font-weight: bolder;
+  font-size: 12px;
+  line-height: 1.1;
+  font-weight: 400;
 }
 .froala-editor .fr-dropdown .fr-dropdown-menu.f-font-sizes {
   max-height: 200px;
@@ -647,10 +673,10 @@ button {
   width: 40px;
   text-align: center;
   margin: 0px;
-  -webkit-transition: background linear 0.2s;
-  -moz-transition: background linear 0.2s;
-  -ms-transition: background linear 0.2s;
-  -o-transition: background linear 0.2s;
+  -webkit-transition: background linear 0.1s;
+  -moz-transition: background linear 0.1s;
+  -ms-transition: background linear 0.1s;
+  -o-transition: background linear 0.1s;
   border-radius: 0;
   -moz-border-radius: 0;
   -webkit-border-radius: 0;
@@ -682,12 +708,16 @@ button {
   outline: 0;
 }
 .froala-editor .bttn-wrapper:not(.touch) button.fr-bttn:hover,
-.froala-editor .bttn-wrapper:not(.touch) button.fr-trigger:hover {
+.froala-editor .froala-popup button.fr-bttn:hover,
+.froala-editor .bttn-wrapper:not(.touch) button.fr-trigger:hover,
+.froala-editor .froala-popup button.fr-trigger:hover {
   background: #2c82c9;
   color: #ffffff;
 }
 .froala-editor .bttn-wrapper:not(.touch) button.fr-bttn:hover:after,
-.froala-editor .bttn-wrapper:not(.touch) button.fr-trigger:hover:after {
+.froala-editor .froala-popup button.fr-bttn:hover:after,
+.froala-editor .bttn-wrapper:not(.touch) button.fr-trigger:hover:after,
+.froala-editor .froala-popup button.fr-trigger:hover:after {
   border-top-color: #ffffff;
 }
 .froala-editor .fr-bttn.active {
@@ -815,7 +845,7 @@ button {
   float: left;
   margin-right: 0;
   margin-left: 0;
-  margin-top: 3px;
+  margin-top: 5px;
 }
 .froala-editor .froala-popup div.f-popup-line textarea {
   padding: 5px;
@@ -1011,10 +1041,14 @@ button {
 .froala-popup.froala-video-popup p.or {
   color: #444444;
 }
+.froala-popup.froala-video-editor-popup div.f-popup-line {
+  padding: 0;
+  margin: 0;
+}
 .froala-popup.froala-text-popup div.f-popup-line input {
   margin-left: 0 !important;
 }
-.froala-popup button {
+.froala-popup button:not(.fr-bttn):not(.fr-trigger) {
   border: 0;
   color: #ffffff;
   padding: 2px 5px;
@@ -1030,15 +1064,15 @@ button {
   -o-transition: background linear 0.2s;
   min-width: 16px;
 }
-.froala-popup button.f-ok {
+.froala-popup button:not(.fr-bttn):not(.fr-trigger).f-ok {
   background: #2c82c9;
   color: #ffffff;
 }
-.froala-popup button.f-unlink {
+.froala-popup button:not(.fr-bttn):not(.fr-trigger).f-unlink {
   background: #b8312f;
   margin: 0 5px;
 }
-.froala-popup button:hover {
+.froala-popup button:not(.fr-bttn):not(.fr-trigger):hover {
   background: #353535;
   color: #ffffff;
 }

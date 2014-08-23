@@ -28,6 +28,15 @@
   min-width: 32px !important;
   min-height: 32px !important;
 }
+.dark-theme.froala-box .froala-element img.fr-fil {
+  padding: 10px 10px 10px 3px;
+}
+.dark-theme.froala-box .froala-element img.fr-fir {
+  padding: 10px 3px 10px 10px;
+}
+.dark-theme.froala-box .froala-element img.fr-fin {
+  padding: 10px 0;
+}
 .dark-theme.froala-box .froala-element img::selection {
   color: #ffffff;
 }
@@ -38,11 +47,23 @@
   border: solid 2px #ffffff;
   outline: solid 1px #252525;
 }
+.dark-theme.froala-box .froala-element span.f-img-editor.fr-fil {
+  margin: 10px 10px 10px 3px;
+}
+.dark-theme.froala-box .froala-element span.f-img-editor.fr-fir {
+  margin: 10px 3px 10px 10px;
+}
+.dark-theme.froala-box .froala-element span.f-img-editor.fr-fin {
+  margin: 10px 0;
+}
 .dark-theme.froala-box .froala-element span.f-img-editor span.f-img-handle {
-  height: 15px;
-  width: 15px;
+  height: 13px;
+  width: 13px;
   border: solid 1px #252525;
   background: #ffffff;
+}
+.dark-theme.froala-box .froala-element span.f-video-editor.active:after {
+  border: solid 1px #252525;
 }
 .dark-theme.froala-box .froala-element.f-basic {
   border: solid 1px #ffffff;
@@ -51,9 +72,9 @@
   border: solid 1px #cccccc;
 }
 .dark-theme.froala-box.f-html .froala-element {
-  background: #444444;
+  background: #202020;
   color: #ffffff;
-  font-family: "Courier New", Courier, monospace;
+  font-family: 'Courier New', Monospace;
   font-size: 13px;
 }
 .dark-theme.froala-editor {

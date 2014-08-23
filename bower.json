@@ -9,16 +9,14 @@
       "fonts/fontawesome-webfont.svg",
       "fonts/fontawesome-webfont.ttf",
       "fonts/fontawesome-webfont.woff",
-      "js/libs/beautify-html.js",
       "js/froala_editor.min.js",
       "js/plugins/block_styles.min.js",
       "js/plugins/colors.min.js",
       "js/plugins/media_manager.min.js",
       "js/plugins/tables.min.js",
       "js/plugins/video.min.js",
-      "js/plugins/fonts/fonts.min.js",
-      "js/plugins/fonts/font_family.min.js",
-      "js/plugins/fonts/font_size.min.js"
+      "js/plugins/font_family.min.js",
+      "js/plugins/font_size.min.js"
     ],
     "ignore": [
         "examples",
