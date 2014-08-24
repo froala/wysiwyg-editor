@@ -490,6 +490,7 @@ button {
 .froala-editor .fr-dropdown.fr-color-picker .fr-dropdown-menu p {
   margin: 6px 0px 12px 0px;
   font-size: 13px;
+  line-height: 0;
   color: #444444;
 }
 .froala-editor .fr-dropdown.fr-color-picker .fr-dropdown-menu .fr-color-bttn {

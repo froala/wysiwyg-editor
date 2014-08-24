@@ -18,6 +18,12 @@
       "js/plugins/font_family.min.js",
       "js/plugins/font_size.min.js"
     ],
+    "keywords": [
+      "froala",
+      "text",
+      "editor",
+      "wysiwyg"
+    ],
     "ignore": [
         "examples",
         "img",
