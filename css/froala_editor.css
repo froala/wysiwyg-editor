@@ -298,6 +298,9 @@ button {
   overflow-y: auto;
   padding: 0;
 }
+.f-html .froala-element.f-placeholder:before {
+  content: '';
+}
 .f-html .froala-element:after {
   clear: both;
   display: block;
