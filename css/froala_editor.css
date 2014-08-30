@@ -491,10 +491,32 @@ button {
   margin-left: 12px;
 }
 .froala-editor .fr-dropdown.fr-color-picker .fr-dropdown-menu p {
-  margin: 6px 0px 12px 0px;
+  margin: 0 0px 10px;
   font-size: 13px;
-  line-height: 0;
+  line-height: 1;
   color: #444444;
+  cursor: pointer;
+}
+.froala-editor .fr-dropdown.fr-color-picker .fr-dropdown-menu p span {
+  float: left;
+}
+.froala-editor .fr-dropdown.fr-color-picker .fr-dropdown-menu p a.fr-bttn {
+  display: inline;
+  float: right;
+  padding: 0;
+  color: #444444;
+  -webkit-transition: color linear 0.1s;
+  -moz-transition: color linear 0.1s;
+  -ms-transition: color linear 0.1s;
+  -o-transition: color linear 0.1s;
+}
+.froala-editor .fr-dropdown.fr-color-picker .fr-dropdown-menu p a.fr-bttn:hover {
+  color: #2c82c9;
+}
+.froala-editor .fr-dropdown.fr-color-picker .fr-dropdown-menu p:after {
+  content: "";
+  display: block;
+  clear: both;
 }
 .froala-editor .fr-dropdown.fr-color-picker .fr-dropdown-menu .fr-color-bttn {
   display: inline;
@@ -879,11 +901,13 @@ button {
   border-color: #54acd2;
   outline: 0;
 }
-.froala-popup.froala-image-popup div.f-popup-line.drop-upload {
+.froala-popup.froala-image-popup div.f-popup-line.drop-upload,
+.froala-popup.froala-file-popup div.f-popup-line.drop-upload {
   overflow: hidden;
   position: relative;
 }
-.froala-popup.froala-image-popup div.f-popup-line.drop-upload div.f-upload {
+.froala-popup.froala-image-popup div.f-popup-line.drop-upload div.f-upload,
+.froala-popup.froala-file-popup div.f-popup-line.drop-upload div.f-upload {
   border: dashed 2px #cccccc;
   color: #444444;
   font-weight: normal;
@@ -893,16 +917,20 @@ button {
   position: relative;
   overflow: hidden;
 }
-.froala-popup.froala-image-popup div.f-popup-line.drop-upload div.f-upload:hover {
+.froala-popup.froala-image-popup div.f-popup-line.drop-upload div.f-upload:hover,
+.froala-popup.froala-file-popup div.f-popup-line.drop-upload div.f-upload:hover {
   border: dashed 2px #353535;
 }
-.froala-popup.froala-image-popup div.f-popup-line.drop-upload div.f-upload.f-hover {
+.froala-popup.froala-image-popup div.f-popup-line.drop-upload div.f-upload.f-hover,
+.froala-popup.froala-file-popup div.f-popup-line.drop-upload div.f-upload.f-hover {
   border: dashed 2px #61bd6d;
 }
-.froala-popup.froala-image-popup div.f-popup-line.drop-upload div.f-upload strong {
+.froala-popup.froala-image-popup div.f-popup-line.drop-upload div.f-upload strong,
+.froala-popup.froala-file-popup div.f-popup-line.drop-upload div.f-upload strong {
   font-size: 14px;
 }
-.froala-popup.froala-image-popup div.f-popup-line.drop-upload form {
+.froala-popup.froala-image-popup div.f-popup-line.drop-upload form,
+.froala-popup.froala-file-popup div.f-popup-line.drop-upload form {
   width: 100%;
   height: 100%;
   background: transparent;
@@ -916,7 +944,8 @@ button {
   cursor: pointer;
   overflow: hidden;
 }
-.froala-popup.froala-image-popup div.f-popup-line.drop-upload form input {
+.froala-popup.froala-image-popup div.f-popup-line.drop-upload form input,
+.froala-popup.froala-file-popup div.f-popup-line.drop-upload form input {
   background: transparent;
   display: inline-block;
   width: 400%;
@@ -925,28 +954,34 @@ button {
   cursor: pointer;
   font-size: 1000px !important;
 }
-.froala-popup.froala-image-popup div.f-popup-line.drop-upload form button {
+.froala-popup.froala-image-popup div.f-popup-line.drop-upload form button,
+.froala-popup.froala-file-popup div.f-popup-line.drop-upload form button {
   background: transparent;
 }
-.froala-popup.froala-image-popup div.f-popup-line button.f-browse {
+.froala-popup.froala-image-popup div.f-popup-line button.f-browse,
+.froala-popup.froala-file-popup div.f-popup-line button.f-browse {
   display: none;
   margin: 0 5px 0 -1px;
   padding: 2px 7px;
   background: #475577;
   color: #ffffff;
 }
-.froala-popup.froala-image-popup div.f-popup-line button.f-browse:hover {
+.froala-popup.froala-image-popup div.f-popup-line button.f-browse:hover,
+.froala-popup.froala-file-popup div.f-popup-line button.f-browse:hover {
   background: #353535;
   color: #ffffff;
 }
-.froala-popup.froala-image-popup div.f-popup-line + div.f-popup-line {
+.froala-popup.froala-image-popup div.f-popup-line + div.f-popup-line,
+.froala-popup.froala-file-popup div.f-popup-line + div.f-popup-line {
   border-top: solid 1px #cccccc;
 }
-.froala-popup.froala-image-popup div.f-popup-line input[type="text"] {
+.froala-popup.froala-image-popup div.f-popup-line input[type="text"],
+.froala-popup.froala-file-popup div.f-popup-line input[type="text"] {
   margin-right: 0 !important;
   width: 200px;
 }
-.froala-popup.froala-image-popup p.f-progress {
+.froala-popup.froala-image-popup p.f-progress,
+.froala-popup.froala-file-popup p.f-progress {
   width: 100%;
   display: none;
   background-color: #61bd6d;
@@ -955,7 +990,8 @@ button {
   margin: 5px 0;
   width: 250px;
 }
-.froala-popup.froala-image-popup p.f-progress span {
+.froala-popup.froala-image-popup p.f-progress span,
+.froala-popup.froala-file-popup p.f-progress span {
   display: inline-block;
   height: 100%;
   background-color: #61bd6d;

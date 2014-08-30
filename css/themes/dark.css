@@ -87,11 +87,20 @@
 }
 .dark-theme.froala-editor span.f-sep {
   border-right: solid 1px #aaaaaa;
+  height: 35px;
 }
 .dark-theme.froala-editor button.fr-bttn,
 .dark-theme.froala-editor button.fr-trigger {
   background: transparent;
   color: #ffffff;
+  font-size: 16px;
+  line-height: 35px;
+  width: 40px;
+}
+.dark-theme.froala-editor button.fr-bttn img,
+.dark-theme.froala-editor button.fr-trigger img {
+  max-width: 40px;
+  max-height: 35px;
 }
 .dark-theme.froala-editor button.fr-bttn:disabled,
 .dark-theme.froala-editor button.fr-trigger:disabled {
