@@ -30,7 +30,7 @@
       </div>
   </section>
 
-  <script src="../../js/libs/jquery-1.10.2.min.js"></script>
+  <script src="../../js/libs/jquery-1.11.1.min.js"></script>
   <script src="../../js/froala_editor.min.js"></script>
   <!--[if lt IE 9]>
     <script src="../../js/froala_editor_ie8.min.js"></script>
@@ -50,11 +50,11 @@
           });
 
           $('#edit').on({
-            'editable.afterRemoveImage': function(editor, $img) {
+            'editable.afterRemoveImage': function(e, editor, $img) {
               // Make delete image request.
               console.log ($img);
             },
-            'editable.beforeRemoveImage': function (editor, $img) {
+            'editable.beforeRemoveImage': function (e, editor, $img) {
               console.log ($img);
               alert('Image cannot be deleted!');
 
