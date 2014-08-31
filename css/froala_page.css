@@ -178,3 +178,14 @@ h6[class="fr-tag"] {
   margin-top: 10px;
   margin-bottom: 10px;
 }
+.fr-fvn {
+  float: none;
+  display: block !important;
+  text-align: center;
+}
+.fr-fvl {
+  float: left;
+}
+.fr-fvr {
+  float: right;
+}

@@ -279,17 +279,6 @@ button {
 .froala-element .f-video-editor.active:after {
   border: solid 1px #252525;
 }
-.froala-element .f-video-editor.fr-fvn {
-  float: none;
-  display: block;
-  text-align: center;
-}
-.froala-element .f-video-editor.fr-fvl {
-  float: left;
-}
-.froala-element .f-video-editor.fr-fvr {
-  float: right;
-}
 .f-html .froala-element {
   background: #202020;
   color: #ffffff;
