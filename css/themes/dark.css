@@ -66,10 +66,10 @@
   border: solid 1px #252525;
 }
 .dark-theme.froala-box .froala-element.f-basic {
-  border: solid 1px #ffffff;
+  border: solid 1px #252525;
 }
 .dark-theme.froala-box .froala-element table td {
-  border: solid 1px #cccccc;
+  border: solid 1px #aaaaaa;
 }
 .dark-theme.froala-box.f-html .froala-element {
   background: #202020;
@@ -141,6 +141,9 @@
   color: #ffffff;
   background: #2c82c9;
 }
+.dark-theme.froala-editor .fr-dropdown .fr-trigger.active:after {
+  border-top-color: #ffffff !important;
+}
 .dark-theme.froala-editor .fr-dropdown:hover .fr-trigger:after,
 .dark-theme.froala-editor .fr-dropdown.active .fr-trigger:after {
   border-top-color: #ffffff;
@@ -185,6 +188,12 @@
 .dark-theme.froala-editor .fr-dropdown.fr-color-picker .fr-dropdown-menu p {
   color: #ffffff;
 }
+.dark-theme.froala-editor .fr-dropdown.fr-color-picker .fr-dropdown-menu a.fr-bttn {
+  color: #ffffff;
+}
+.dark-theme.froala-editor .fr-dropdown.fr-color-picker .fr-dropdown-menu a.fr-bttn:hover {
+  color: #2c82c9;
+}
 .dark-theme.froala-editor .fr-dropdown.fr-color-picker .fr-dropdown-menu .fr-color-bttn {
   border: solid 1px #353535;
 }
@@ -197,6 +206,9 @@
 }
 .dark-theme.froala-editor .fr-dropdown.fr-color-picker .fr-dropdown-menu .fr-color-bttn:hover:not(:focus):not(:active) {
   border: solid 1px #ffffff;
+}
+.dark-theme.froala-editor .froala-popup {
+  background: #353535;
 }
 .dark-theme.froala-editor .froala-popup h4 {
   color: #ffffff;
@@ -222,10 +234,14 @@
 }
 .dark-theme.froala-editor .froala-popup button.f-unlink {
   background: #b8312f;
+  color: #ffffff;
 }
 .dark-theme.froala-editor .froala-popup button:hover {
   background: #ffffff;
   color: #353535;
+}
+.dark-theme.froala-editor .froala-popup div.f-popup-line.f-popup-toolbar {
+  background: #353535;
 }
 .dark-theme.froala-editor .froala-popup div.f-popup-line input[type="text"],
 .dark-theme.froala-editor .froala-popup div.f-popup-line textarea {
@@ -239,7 +255,7 @@
   color: #ffffff;
 }
 .dark-theme.froala-editor .froala-popup.froala-image-editor-popup div.f-popup-line + div.f-popup-line {
-  border-top: solid 1px #cccccc;
+  border-top: solid 1px #aaaaaa;
 }
 .dark-theme.froala-editor .froala-popup.froala-video-popup p.or {
   color: #ffffff;
@@ -255,7 +271,7 @@
   border: dashed 2px #61bd6d;
 }
 .dark-theme.froala-editor .froala-popup.froala-image-popup div.f-popup-line + div.f-popup-line {
-  border-top: solid 1px #cccccc;
+  border-top: solid 1px #aaaaaa;
 }
 .dark-theme.froala-editor .froala-popup.froala-image-popup button.f-browse {
   background: #475577;
@@ -281,7 +297,7 @@
   color: #ffffff;
 }
 .dark-theme.froala-editor .froala-popup.froala-link-popup div.f-popup-line ul {
-  background: #ffffff;
+  background: #353535;
   border: solid 1px #252525;
 }
 .dark-theme.froala-editor .froala-popup.froala-link-popup div.f-popup-line ul li {
@@ -292,7 +308,7 @@
 }
 .dark-theme.froala-editor .froala-popup.froala-link-popup div.f-popup-line ul li:hover {
   background: #ffffff;
-  color: #ffffff;
+  color: #353535;
 }
 .dark-theme.froala-modal .f-modal-wrapper {
   background: #353535;
@@ -312,10 +328,10 @@
   background: #aaaaaa;
 }
 .dark-theme.froala-modal .f-modal-wrapper div.f-image-list div .f-delete-img {
-  background: #252525;
+  background: #b8312f;
   color: #ffffff;
 }
 .dark-theme.froala-modal .f-modal-wrapper div.f-image-list:not(.f-touch) div:hover .f-delete-img:hover {
-  background: #d14841;
+  background: #2c82c9;
   color: #ffffff;
 }

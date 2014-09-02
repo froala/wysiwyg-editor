@@ -442,7 +442,7 @@ button {
   display: block;
   text-decoration: none;
   outline: 0;
-  color: #353535;
+  color: #444444;
   white-space: nowrap;
   font-size: 14px;
   line-height: 130%;
@@ -484,7 +484,6 @@ button {
   font-size: 13px;
   line-height: 1;
   color: #444444;
-  cursor: pointer;
 }
 .froala-editor .fr-dropdown.fr-color-picker .fr-dropdown-menu p span {
   float: left;
@@ -498,6 +497,7 @@ button {
   -moz-transition: color linear 0.1s;
   -ms-transition: color linear 0.1s;
   -o-transition: color linear 0.1s;
+  cursor: pointer;
 }
 .froala-editor .fr-dropdown.fr-color-picker .fr-dropdown-menu p a.fr-bttn:hover {
   color: #2c82c9;
@@ -616,7 +616,7 @@ button {
   left: 100%;
   top: 0;
   background: #ffffff;
-  color: #353535;
+  color: #444444;
   border: solid 1px #cccccc;
   line-height: 0;
   padding: 0;
@@ -631,7 +631,7 @@ button {
   left: 100%;
   top: 0;
   background: #ffffff;
-  color: #353535;
+  color: #444444;
   border: solid 1px #cccccc;
   line-height: 0;
   padding: 5px;
@@ -765,6 +765,7 @@ button {
 }
 .froala-editor .froala-popup {
   font-size: 13px;
+  background: #ffffff;
 }
 .froala-editor .froala-popup *:not(input):not(textarea) {
   -webkit-touch-callout: none;
@@ -778,7 +779,7 @@ button {
   margin: 0;
   font-size: 14px;
   color: #444444;
-  margin: 7px 7px 0;
+  padding: 7px 7px 0;
 }
 .froala-editor .froala-popup h4:after {
   content: ".";
@@ -817,6 +818,9 @@ button {
   padding: 10px 0;
   display: block;
   position: relative;
+}
+.froala-editor .froala-popup div.f-popup-line.f-popup-toolbar {
+  background: #ffffff;
 }
 .froala-editor .froala-popup div.f-popup-line:after {
   content: "";
@@ -1099,6 +1103,7 @@ button {
 }
 .froala-popup button:not(.fr-bttn):not(.fr-trigger).f-unlink {
   background: #b8312f;
+  color: #ffffff;
   margin: 0 5px;
 }
 .froala-popup button:not(.fr-bttn):not(.fr-trigger):hover {
@@ -1227,7 +1232,7 @@ button {
   display: none;
   bottom: 0px;
   left: 0;
-  background: #252525;
+  background: #b8312f;
   color: #ffffff;
   font-family: Arial, Helvetica;
   font-size: 12px;
@@ -1253,7 +1258,7 @@ button {
   display: inline-block;
 }
 .froala-modal .f-modal-wrapper div.f-image-list:not(.f-touch) div:hover .f-delete-img:hover {
-  background: #d14841;
+  background: #2c82c9;
   color: #ffffff;
 }
 .froala-modal .f-modal-wrapper div.f-image-list:not(.f-touch) div:hover img {
@@ -1374,7 +1379,7 @@ button {
   padding: 0px;
   z-index: 999;
   position: relative;
-  border-bottom: 0;
+  border-bottom: 0 !important;
 }
 .froala-editor.f-basic:before {
   display: none;
@@ -1400,7 +1405,7 @@ button {
   display: none;
 }
 .froala-element.f-basic {
-  border: solid 1px #444444;
+  border: solid 1px #252525;
   padding: 10px;
 }
 .froala-element.f-basic span.f-img-editor {
