@@ -1,7 +1,7 @@
 {
     "name": "froala-wysiwyg",
     "title": "Froala WYSIWYG Editor",
-    "description": "Simple and yet the most complete WYSIWYG text editor with awesome functionality such as inline editing and autosave!",
+    "description": "A beautiful jQuery WYSIWYG text editor based on HTML5 technology. Cross browser, with mobile support, high performance and Retina Ready flat design.",
     "keywords": [
         "froala",
         "editor",
@@ -29,10 +29,14 @@
         {
           "type": "Business",
           "url": "http://editor.froala.com/download"
+        },
+        {
+          "type": "OEM",
+          "url": "http://editor.froala.com/download"
         }
     ],
     "homepage": "http://editor.froala.com",
     "dependencies": {
-        "jquery": ">=1.10.2"
+        "jquery": ">=1.11.0"
     }
 }
