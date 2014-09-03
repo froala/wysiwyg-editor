@@ -73,6 +73,9 @@ button {
   background: #b5d6fd;
   color: #000;
 }
+.fr-hidden {
+  display: none !important;
+}
 .froala-element {
   min-height: 30px;
   overflow-y: auto;
@@ -173,6 +176,12 @@ button {
 }
 .froala-element span.f-img-wrap.fr-fin {
   display: block;
+}
+.froala-element span.f-img-wrap.fr-fir {
+  float: right;
+}
+.froala-element span.f-img-wrap.fr-fil {
+  float: left;
 }
 .froala-element span.f-img-editor {
   display: inline-block;
@@ -422,7 +431,7 @@ button {
   top: 35px;
   margin-top: 0;
   padding: 0;
-  border: solid 1px #cccccc;
+  border: solid 1px #252525;
   z-index: 1000;
 }
 .froala-editor .fr-dropdown .fr-dropdown-menu li {
@@ -602,12 +611,15 @@ button {
   right: 5px;
   top: 0;
 }
-.froala-editor .fr-dropdown .fr-dropdown-menu.fr-table > li:hover > a {
+.froala-editor .fr-dropdown .fr-dropdown-menu.fr-table > li:hover > a,
+.froala-editor .fr-dropdown .fr-dropdown-menu.fr-table > li.hover > a {
   background: #444444;
   color: #ffffff;
 }
 .froala-editor .fr-dropdown .fr-dropdown-menu.fr-table > li:hover > div,
-.froala-editor .fr-dropdown .fr-dropdown-menu.fr-table > li:hover > ul {
+.froala-editor .fr-dropdown .fr-dropdown-menu.fr-table > li.hover > div,
+.froala-editor .fr-dropdown .fr-dropdown-menu.fr-table > li:hover > ul,
+.froala-editor .fr-dropdown .fr-dropdown-menu.fr-table > li.hover > ul {
   display: block !important;
 }
 .froala-editor .fr-dropdown .fr-dropdown-menu.fr-table > li > ul {
@@ -617,7 +629,7 @@ button {
   top: 0;
   background: #ffffff;
   color: #444444;
-  border: solid 1px #cccccc;
+  border: solid 1px #252525;
   line-height: 0;
   padding: 0;
   margin: 0;
@@ -632,7 +644,7 @@ button {
   top: 0;
   background: #ffffff;
   color: #444444;
-  border: solid 1px #cccccc;
+  border: solid 1px #252525;
   line-height: 0;
   padding: 5px;
 }
@@ -665,7 +677,7 @@ button {
   clear: both;
 }
 .froala-editor .fr-dropdown .fr-dropdown-menu.fr-table > hr {
-  border-top: solid 1px #cccccc;
+  border-top: solid 1px #252525;
 }
 .froala-editor .fr-dropdown .fr-dropdown-menu.f-align a {
   padding: 5px 0px !important;
@@ -858,7 +870,7 @@ button {
   outline: 0;
 }
 .froala-editor .froala-popup div.f-popup-line input[type="text"]:focus {
-  border-color: #54acd2;
+  border: solid 1px #54acd2;
 }
 .froala-editor .froala-popup div.f-popup-line input[type="checkbox"] {
   float: left;
@@ -891,7 +903,7 @@ button {
   outline: 0;
 }
 .froala-editor .froala-popup div.f-popup-line textarea:focus {
-  border-color: #54acd2;
+  border: solid 1px #54acd2;
   outline: 0;
 }
 .froala-popup.froala-image-popup div.f-popup-line.drop-upload,
@@ -1017,7 +1029,8 @@ button {
   background: #FFF;
   color: #000;
 }
-.froala-popup.froala-link-popup div.f-popup-line + div.f-popup-line {
+.froala-popup.froala-link-popup div.f-popup-line:not(.fr-hidden) + div.f-popup-line,
+.froala-popup.froala-link-popup div.f-popup-line + div.f-popup-line:last-child {
   padding-top: 0;
 }
 .froala-popup.froala-link-popup div.f-popup-line .f-browse-links {
@@ -1039,7 +1052,7 @@ button {
   top: 25px;
   left: 0px;
   right: 0px;
-  border: solid 1px #cccccc;
+  border: solid 1px #252525;
   border-top: 0;
   display: none;
   max-height: 100px;
@@ -1053,7 +1066,7 @@ button {
   color: #444444;
 }
 .froala-popup.froala-link-popup div.f-popup-line ul li + li {
-  border-top: solid 1px #cccccc;
+  border-top: solid 1px #252525;
 }
 .froala-popup.froala-link-popup div.f-popup-line ul li:hover {
   background: #444444;
@@ -1106,7 +1119,8 @@ button {
   color: #ffffff;
   margin: 0 5px;
 }
-.froala-popup button:not(.fr-bttn):not(.fr-trigger):hover {
+.froala-popup button:not(.fr-bttn):not(.fr-trigger):hover,
+.froala-popup button:not(.fr-bttn):not(.fr-trigger):focus {
   background: #353535;
   color: #ffffff;
 }
@@ -1258,7 +1272,7 @@ button {
   display: inline-block;
 }
 .froala-modal .f-modal-wrapper div.f-image-list:not(.f-touch) div:hover .f-delete-img:hover {
-  background: #2c82c9;
+  background: #353535;
   color: #ffffff;
 }
 .froala-modal .f-modal-wrapper div.f-image-list:not(.f-touch) div:hover img {
@@ -1273,7 +1287,7 @@ button {
   bottom: 0;
   left: 0;
   right: 0;
-  background: #000;
+  background: #000000;
   z-index: 1000;
   -webkit-opacity: 0.5;
   -moz-opacity: 0.5;

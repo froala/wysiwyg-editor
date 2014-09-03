@@ -51,12 +51,11 @@ img.fr-tag.fr-fin {
 }
 .froala-element a.fr-file,
 a.fr-file {
-  padding-left: 17px;
   position: relative;
 }
 .froala-element a.fr-file:before,
 a.fr-file:before {
-  position: absolute;
+  position: relative;
   display: inline-block;
   font-family: FontAwesome;
   font-style: normal;
@@ -65,8 +64,8 @@ a.fr-file:before {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   content: "\f0c6";
-  left: 3px;
   top: 0;
+  padding-right: 3px;
 }
 .froala-element hr,
 hr.fr-tag {
@@ -111,7 +110,7 @@ blockquote.fr-tag {
 .froala-element ol,
 ul.fr-tag,
 ol.fr-tag {
-  padding-left: 20px;
+  padding-left: 25px;
 }
 .froala-element table,
 table.fr-tag {
