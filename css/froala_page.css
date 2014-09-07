@@ -130,8 +130,7 @@ table.fr-tag td {
 }
 .froala-element p,
 p.fr-tag {
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin: 0 0 10px;
 }
 .froala-element h1,
 h1[class="fr-tag"] {
