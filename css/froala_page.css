@@ -11,13 +11,11 @@ img.fr-tag.fr-fil {
   margin: auto;
   overflow: auto;
   padding: 10px 10px 10px 3px;
-}
-.froala-element img.fr-fil:not(.fr-tni),
-img.fr-tag.fr-fil:not(.fr-tni) {
-  float: left;
+  float: left !important;
 }
 .froala-element img.fr-fil.fr-tni,
 img.fr-tag.fr-fil.fr-tni {
+  float: none !important;
   margin-left: 0 !important;
 }
 .froala-element img.fr-fir,
@@ -29,13 +27,11 @@ img.fr-tag.fr-fir {
   margin: auto;
   overflow: auto;
   padding: 10px 3px 10px 10px;
-}
-.froala-element img.fr-fir:not(.fr-tni),
-img.fr-tag.fr-fir:not(.fr-tni) {
-  float: right;
+  float: right !important;
 }
 .froala-element img.fr-fir.fr-tni,
 img.fr-tag.fr-fir.fr-tni {
+  float: none !important;
   margin-right: 0 !important;
 }
 .froala-element img.fr-fin,
