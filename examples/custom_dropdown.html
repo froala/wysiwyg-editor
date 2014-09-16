@@ -47,12 +47,15 @@
 
   <script>
       $(function(){
-          $('#edit').editable({inlineMode: false, buttons: ['bold', 'italic', 'formatBlock', 'my_dropdown'], blockTags: ['p'], customDropdowns: {
+          $('#edit').editable({inlineMode: false, buttons: ['bold', 'italic', 'formatBlock', 'my_dropdown'], blockTags: ['p', 'h1', 'h2', 'h3'], customDropdowns: {
             my_dropdown: {
               title: 'Taxi Dropdown',
               icon: {
                 type: 'font',
                 value: 'fa fa-taxi'
+              },
+              refresh: function () {
+                console.log ('do refresh');
               },
               options: {
                 'Call taxi': function () {
