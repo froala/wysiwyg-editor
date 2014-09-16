@@ -1427,7 +1427,7 @@ button {
 .froala-editor.f-basic {
   padding: 0px;
   z-index: 999;
-  position: relative;
+  position: initial;
   border-bottom: 0 !important;
 }
 .froala-editor.f-basic:before {
