@@ -359,7 +359,6 @@ button {
   border: solid 1px #252525;
   border-top: solid 5px #252525;
   padding: 0;
-  position: absolute;
   user-select: none;
   -o-user-select: none;
   -moz-user-select: none;
@@ -370,6 +369,9 @@ button {
   z-index: 1000;
   font-family: Arial, Helvetica, sans-serif;
   line-height: 140%;
+}
+.froala-editor:not(.f-basic) {
+  position: absolute;
 }
 .froala-editor * {
   -webkit-box-sizing: content-box;
@@ -1427,8 +1429,11 @@ button {
 .froala-editor.f-basic {
   padding: 0px;
   z-index: 999;
-  position: initial;
+  width: 100%;
   border-bottom: 0 !important;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 .froala-editor.f-basic:before {
   display: none;
