@@ -1063,8 +1063,8 @@ button {
   width: 225px;
 }
 .froala-popup.froala-link-popup div.f-popup-line input[type="text"]:disabled {
-  background: #FFF;
-  color: #000;
+  background: #ffffff;
+  color: #aaaaaa;
 }
 .froala-popup.froala-link-popup div.f-popup-line:not(.fr-hidden) + div.f-popup-line,
 .froala-popup.froala-link-popup div.f-popup-line + div.f-popup-line:last-child {

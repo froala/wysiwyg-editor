@@ -255,6 +255,10 @@
 .dark-theme.froala-editor .froala-popup div.f-popup-line input[type="text"]:focus {
   border: solid 1px #54acd2;
 }
+.dark-theme.froala-editor .froala-popup div.f-popup-line input[type="text"]:disabled {
+  background: #ffffff;
+  color: #aaaaaa;
+}
 .dark-theme.froala-editor .froala-popup div.f-popup-line textarea {
   border: solid 1px #aaaaaa;
 }
