@@ -97,7 +97,7 @@ button {
   display: none !important;
 }
 .froala-element {
-  min-height: 30px;
+  min-height: 35px;
   overflow-y: auto;
   overflow-x: hidden;
   position: relative;
