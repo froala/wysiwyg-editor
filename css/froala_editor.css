@@ -370,7 +370,7 @@ button {
   font-family: Arial, Helvetica, sans-serif;
   line-height: 140%;
 }
-.froala-editor:not(.f-basic) {
+.froala-editor.f-inline {
   position: absolute;
 }
 .froala-editor * {
@@ -520,7 +520,7 @@ button {
   float: left;
 }
 .froala-editor .fr-dropdown.fr-color-picker .fr-dropdown-menu p a.fr-bttn {
-  display: inline;
+  display: inline-block;
   float: right;
   padding: 0;
   color: #444444;
