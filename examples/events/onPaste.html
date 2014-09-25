@@ -52,7 +52,8 @@
           inlineMode: false
         });
 
-        $('.edit').on('editable.onPaste', function (e, editor) {
+        $('.edit').on('editable.onPaste', function (e, editor, original_html) {
+          console.log (original_html);
           return '<strong>my custom html</strong>';
         })
       });
