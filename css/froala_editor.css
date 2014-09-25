@@ -1066,6 +1066,9 @@ button {
   background: #ffffff;
   color: #aaaaaa;
 }
+.froala-popup.froala-link-popup div.f-popup-line input[type="text"].fr-error {
+  border-color: #b8312f;
+}
 .froala-popup.froala-link-popup div.f-popup-line:not(.fr-hidden) + div.f-popup-line,
 .froala-popup.froala-link-popup div.f-popup-line + div.f-popup-line:last-child {
   padding-top: 0;
