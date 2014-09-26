@@ -455,6 +455,7 @@ button {
   padding: 0;
   border: solid 1px #252525;
   z-index: 1000;
+  -webkit-overflow-scrolling: touch;
 }
 .froala-editor .fr-dropdown .fr-dropdown-menu li {
   list-style-type: none;
