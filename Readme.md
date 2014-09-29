@@ -1,5 +1,16 @@
 #Froala WYSIWYG Editor
-A lightweight JavaScript text editing library.
+A beautiful jQuery WYSIWYG text editor based on HTML5 technology. Cross browser, with mobile support, high performance and Retina Ready flat design.
+
+## Licensing
+
+The editor can be used for free only for personal and non-profit projects under the [CC NC-ND license](http://creativecommons.org/licenses/by-nc-nd/4.0/). For commercial applications you have to purchase one of the following licenses according to your needs. You can find more about that on our website on the [pricing plan page.](http://editor.froala.com/download).
+
+1. Single Website - $49
+* Developer - $79
+* Business - $159
+* OEM - $299
+
+## Useful links
 
 * Official website:  [editor.froala.com](http://editor.froala.com)
 * Official download: [editor.froala.com/latest.zip](http://editor.froala.com/latest.zip)
