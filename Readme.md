@@ -14,4 +14,4 @@ We use GitHub Issues as our official bug tracker. We strive to keep this a clean
 1. Make sure the report is accompanied by a reproducible demo.
 * Always add information on what browser it applies to, and other information needed for us to debug.
 * It may be that the bug is already fixed. Try your editor with our latest work from https://github.com/stefanneculai/froala-wysiwyg/tree/master/js before reporting.
-* For feature requests, tech support and general discussion, don't use GitHub Issues. See [http://editor.froala.com/contact](editor.froala.com/contact) for the appropriate channels.
+* For feature requests, tech support and general discussion, don't use GitHub Issues. See [http://editor.froala.com/contact](htp://editor.froala.com/contact) for the appropriate channels.
