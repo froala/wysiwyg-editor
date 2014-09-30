@@ -106,6 +106,15 @@ button {
   vertical-align: top;
   text-align: left;
 }
+.froala-element:after {
+  position: absolute;
+  bottom: 0px;
+  right: 5px;
+  color: #CCC;
+  content: attr(data-chars);
+  font-size: 15px;
+  font-family: "Times New Roman", Georgia, Serif;
+}
 .froala-element * {
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
