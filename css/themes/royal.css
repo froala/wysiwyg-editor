@@ -1,5 +1,5 @@
 /*!
- * froala_editor v1.2.2 (http://editor.froala.com)
+ * froala_editor v1.2.3 (http://editor.froala.com)
  * Copyright 2014-2014 Froala
  */
 .royal-theme.froala-box .html-switch {
@@ -145,6 +145,9 @@
 }
 .royal-theme.froala-editor .fr-trigger.active:after {
   border-top-color: #ffffff !important;
+}
+.royal-theme.froala-editor .fr-dropdown .fr-trigger {
+  width: calc(40px - 2px);
 }
 .royal-theme.froala-editor .fr-dropdown .fr-dropdown-menu {
   background: #ffffff;
