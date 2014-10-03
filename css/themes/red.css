@@ -67,6 +67,11 @@
 }
 .red-theme.froala-box .froala-element.f-basic {
   border: solid 1px #252525;
+  background: transparent;
+  color: #444444;
+}
+.red-theme.froala-box .froala-element.f-basic a {
+  color: inherit;
 }
 .red-theme.froala-box .froala-element table td {
   border: solid 1px #cccccc;
@@ -241,6 +246,10 @@
   background: #353535;
   color: #ffffff;
 }
+.red-theme.froala-editor .froala-popup button:not(.fr-bttn):not(.fr-trigger).f-unlink:hover {
+  background: #f7da64;
+  color: #b8312f;
+}
 .red-theme.froala-editor .froala-popup button:not(.fr-bttn):not(.fr-trigger):hover,
 .red-theme.froala-editor .froala-popup button:not(.fr-bttn):not(.fr-trigger):focus {
   background: #f7da64;
@@ -344,6 +353,10 @@
 .red-theme.froala-modal .f-modal-wrapper div.f-image-list div .f-delete-img {
   background: #353535;
   color: #ffffff;
+}
+.red-theme.froala-modal .f-modal-wrapper div.f-image-list div .f-delete-img:hover {
+  background: #f7da64;
+  color: #b8312f;
 }
 .red-theme.froala-modal .f-modal-wrapper div.f-image-list:not(.f-touch) div:hover .f-delete-img:hover {
   background: #f7da64;

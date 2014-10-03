@@ -1169,6 +1169,10 @@ button {
   color: #ffffff;
   margin: 0 5px;
 }
+.froala-popup button:not(.fr-bttn):not(.fr-trigger).f-unlink:hover {
+  background: #353535;
+  color: #ffffff;
+}
 .froala-popup button:not(.fr-bttn):not(.fr-trigger):hover,
 .froala-popup button:not(.fr-bttn):not(.fr-trigger):focus {
   background: #353535;
@@ -1311,6 +1315,10 @@ button {
   cursor: pointer;
   margin: 0;
   text-decoration: none;
+}
+.froala-modal .f-modal-wrapper div.f-image-list div .f-delete-img:hover {
+  background: #353535;
+  color: #ffffff;
 }
 .froala-modal .f-modal-wrapper div.f-image-list div .f-delete-img {
   display: inline-block;

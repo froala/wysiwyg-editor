@@ -45,7 +45,7 @@
 }
 .royal-theme.froala-box .froala-element span.f-img-editor:before {
   border: solid 2px #ffffff !important;
-  outline: solid 1px #252525 !important;
+  outline: solid 1px #553982 !important;
 }
 .royal-theme.froala-box .froala-element span.f-img-editor.fr-fil {
   margin: 10px 10px 10px 3px;
@@ -59,14 +59,19 @@
 .royal-theme.froala-box .froala-element span.f-img-handle {
   height: 13px;
   width: 13px;
-  border: solid 1px #252525 !important;
+  border: solid 1px #553982 !important;
   background: #ffffff;
 }
 .royal-theme.froala-box .froala-element span.f-video-editor.active:after {
-  border: solid 1px #252525;
+  border: solid 1px #553982;
 }
 .royal-theme.froala-box .froala-element.f-basic {
   border: solid 1px #553982;
+  background: transparent;
+  color: #553982;
+}
+.royal-theme.froala-box .froala-element.f-basic a {
+  color: inherit;
 }
 .royal-theme.froala-box .froala-element table td {
   border: solid 1px #cccccc;
@@ -241,6 +246,10 @@
   background: #b8312f;
   color: #ffffff;
 }
+.royal-theme.froala-editor .froala-popup button:not(.fr-bttn):not(.fr-trigger).f-unlink:hover {
+  background: #9365b8;
+  color: #ffffff;
+}
 .royal-theme.froala-editor .froala-popup button:not(.fr-bttn):not(.fr-trigger):hover,
 .royal-theme.froala-editor .froala-popup button:not(.fr-bttn):not(.fr-trigger):focus {
   background: #9365b8;
@@ -343,6 +352,10 @@
 }
 .royal-theme.froala-modal .f-modal-wrapper div.f-image-list div .f-delete-img {
   background: #b8312f;
+  color: #ffffff;
+}
+.royal-theme.froala-modal .f-modal-wrapper div.f-image-list div .f-delete-img:hover {
+  background: #9365b8;
   color: #ffffff;
 }
 .royal-theme.froala-modal .f-modal-wrapper div.f-image-list:not(.f-touch) div:hover .f-delete-img:hover {
