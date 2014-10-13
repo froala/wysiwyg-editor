@@ -145,6 +145,12 @@ button {
   display: block;
   content: "";
 }
+.froala-element .btn {
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+}
 .froala-element span {
   line-height: 120%;
 }
