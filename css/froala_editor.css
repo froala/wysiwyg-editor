@@ -178,6 +178,9 @@ button {
   display: none;
   visibility: hidden;
 }
+.froala-element table th {
+  font-weight: normal;
+}
 .froala-element a {
   cursor: pointer;
 }
@@ -309,6 +312,9 @@ button {
   line-height: 0;
   cursor: pointer;
   padding: 3px;
+}
+.froala-element .f-video-editor > * {
+  max-width: 100%;
 }
 .froala-element .f-video-editor:after {
   position: absolute;
@@ -1021,7 +1027,7 @@ button {
 .froala-popup.froala-image-popup div.f-popup-line input[type="text"],
 .froala-popup.froala-file-popup div.f-popup-line input[type="text"] {
   margin-right: 0 !important;
-  width: 200px;
+  width: 160px;
 }
 .froala-popup.froala-image-popup h4 span + span,
 .froala-popup.froala-file-popup h4 span + span {
@@ -1105,10 +1111,10 @@ button {
   margin: 0;
   padding: 0;
   position: absolute;
-  top: 25px;
+  top: 35px;
   left: 0px;
   right: 0px;
-  border: solid 1px #252525;
+  border: solid 1px #cccccc;
   border-top: 0;
   display: none;
   max-height: 100px;
@@ -1122,7 +1128,7 @@ button {
   color: #444444;
 }
 .froala-popup.froala-link-popup div.f-popup-line ul li + li {
-  border-top: solid 1px #252525;
+  border-top: solid 1px #cccccc;
 }
 .froala-popup.froala-link-popup div.f-popup-line ul li:hover {
   background: #444444;
@@ -1194,6 +1200,7 @@ button {
   bottom: 0;
   right: 0;
   text-align: center;
+  width: 100%;
 }
 .froala-modal .f-modal-wrapper {
   margin: 50px auto;
@@ -1296,10 +1303,6 @@ button {
 }
 .froala-modal .f-modal-wrapper div.f-image-list div img {
   width: 100%;
-  -webkit-opacity: 0.75;
-  -moz-opacity: 0.75;
-  opacity: 0.75;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   vertical-align: middle;
 }
 .froala-modal .f-modal-wrapper div.f-image-list div .f-delete-img {
@@ -1328,6 +1331,12 @@ button {
 }
 .froala-modal .f-modal-wrapper div.f-image-list div .f-delete-img {
   display: inline-block;
+}
+.froala-modal .f-modal-wrapper div.f-image-list:not(.f-touch) img {
+  -webkit-opacity: 0.75;
+  -moz-opacity: 0.75;
+  opacity: 0.75;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
 }
 .froala-modal .f-modal-wrapper div.f-image-list:not(.f-touch) .f-delete-img {
   display: none;
@@ -1478,9 +1487,17 @@ button {
   position: absolute;
   left: 0;
   right: 0;
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-bottom-color: inherit;
+  border-bottom-width: 1px !important;
+  border-bottom-style: solid !important;
+  border-bottom-color: inherit !important;
+}
+.froala-editor.f-basic.f-scroll-abs {
+  position: absolute;
+  left: 0;
+  right: 0;
+  border-bottom-width: 1px !important;
+  border-bottom-style: solid !important;
+  border-bottom-color: inherit !important;
 }
 .froala-editor.f-basic hr {
   display: none;

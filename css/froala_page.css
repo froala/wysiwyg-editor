@@ -124,6 +124,12 @@ table.fr-tag td {
   border: solid 1px #cccccc;
   padding: 5px;
 }
+.froala-element table th,
+table.fr-tag th {
+  background: #e6e6e6;
+  border: solid 1px #cccccc;
+  padding: 5px;
+}
 .froala-element p,
 p.fr-tag {
   margin: 0 0 10px;
