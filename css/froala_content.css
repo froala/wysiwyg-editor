@@ -63,12 +63,27 @@ a.fr-file:before {
   top: 0;
   padding-right: 3px;
 }
-.froala-element hr,
-hr.fr-tag {
-  height: 0px;
-  border: 0;
-  border-top: solid 1px #cccccc;
-  clear: both;
+.froala-element table,
+table.fr-tag {
+  border-collapse: collapse;
+  empty-cells: show;
+  width: 100%;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.froala-element table td,
+table.fr-tag td {
+  border: solid 1px #cccccc;
+  padding: 5px;
+}
+.froala-element table th,
+table.fr-tag th {
+  background: #e6e6e6;
+  border: solid 1px #cccccc;
+  padding: 5px;
 }
 .froala-element pre,
 pre.fr-tag {
@@ -102,85 +117,12 @@ blockquote.fr-tag {
   font-style: italic;
   border-left: solid 5px #cccccc;
 }
-.froala-element ul,
-.froala-element ol,
-ul.fr-tag,
-ol.fr-tag {
-  padding-left: 25px;
-}
-.froala-element table,
-table.fr-tag {
-  border-collapse: collapse;
-  empty-cells: show;
-  width: 100%;
-  margin-bottom: 10px;
-  margin-top: 10px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-.froala-element table td,
-table.fr-tag td {
-  border: solid 1px #cccccc;
-  padding: 5px;
-}
-.froala-element table th,
-table.fr-tag th {
-  background: #e6e6e6;
-  border: solid 1px #cccccc;
-  padding: 5px;
-}
-.froala-element p,
-p.fr-tag {
-  margin: 0 0 10px;
-}
-.froala-element h1,
-h1[class="fr-tag"] {
-  font-size: 36px;
-  line-height: 1.1;
-  font-weight: 400;
-  margin-top: 20px;
-  margin-bottom: 10px;
-}
-.froala-element h2,
-h2[class="fr-tag"] {
-  font-size: 30px;
-  line-height: 1.1;
-  font-weight: 400;
-  margin-top: 20px;
-  margin-bottom: 10px;
-}
-.froala-element h3,
-h3[class="fr-tag"] {
-  font-size: 24px;
-  line-height: 1.1;
-  font-weight: 400;
-  margin-top: 20px;
-  margin-bottom: 10px;
-}
-.froala-element h4,
-h4[class="fr-tag"] {
-  font-size: 18px;
-  line-height: 1.1;
-  font-weight: 400;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-.froala-element h5,
-h5[class="fr-tag"] {
-  font-size: 14px;
-  line-height: 1.1;
-  font-weight: 400;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-.froala-element h6,
-h6[class="fr-tag"] {
-  font-size: 12px;
-  line-height: 1.1;
-  font-weight: 400;
-  margin-top: 10px;
-  margin-bottom: 10px;
+.froala-element hr,
+hr.fr-tag {
+  height: 0px;
+  border: 0;
+  border-top: solid 1px #cccccc;
+  clear: both;
 }
 .fr-fvn {
   float: none;
