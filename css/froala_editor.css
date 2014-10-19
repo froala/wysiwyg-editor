@@ -237,7 +237,6 @@ hr.fr-tag {
   position: relative;
   word-wrap: break-word;
   vertical-align: top;
-  text-align: left;
 }
 .froala-element:after {
   position: absolute;
