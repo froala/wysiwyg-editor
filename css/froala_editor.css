@@ -299,6 +299,12 @@ hr.fr-tag {
   top: 0;
   display: inline-block;
   cursor: text;
+  user-select: none;
+  -o-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
 .froala-element.f-basic.f-placeholder + span.fr-placeholder {
   left: 10px;
@@ -346,6 +352,7 @@ hr.fr-tag {
   text-align: center;
   border: 0;
   outline: 0;
+  max-width: 100% !important;
 }
 .froala-element span.f-img-wrap.fr-fin {
   display: block;
