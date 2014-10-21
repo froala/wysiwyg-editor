@@ -295,12 +295,14 @@ hr.fr-tag {
   position: absolute;
   margin: auto;
   left: 0;
+  right: 0;
   top: 0;
   display: inline-block;
   cursor: text;
 }
 .froala-element.f-basic.f-placeholder + span.fr-placeholder {
   left: 10px;
+  right: 10px;
 }
 .froala-element.not-msie pre,
 .froala-element.not-msie blockquote {
