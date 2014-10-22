@@ -305,6 +305,7 @@ hr.fr-tag {
   -khtml-user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none;
+  line-height: 13px;
 }
 .froala-element.f-basic.f-placeholder + span.fr-placeholder {
   left: 10px;
@@ -479,8 +480,8 @@ hr.fr-tag {
   overflow-y: auto;
   padding: 0;
 }
-.f-html .froala-element.f-placeholder:before {
-  content: '';
+.f-html .froala-element + .fr-placeholder {
+  display: none !important;
 }
 .f-html .froala-element:after {
   clear: both;
@@ -1251,12 +1252,19 @@ hr.fr-tag {
   background: #ffffff;
   color: #aaaaaa;
 }
+.froala-popup.froala-link-popup div.f-popup-line input[type="text"]:disabled.f-bi {
+  color: inherit;
+}
 .froala-popup.froala-link-popup div.f-popup-line input[type="text"].fr-error {
   border-color: #b8312f;
 }
 .froala-popup.froala-link-popup div.f-popup-line:not(.fr-hidden) + div.f-popup-line,
 .froala-popup.froala-link-popup div.f-popup-line + div.f-popup-line:last-child {
   padding-top: 0;
+}
+.froala-popup.froala-link-popup div.f-popup-line:not(.fr-hidden) + div.f-popup-line ul,
+.froala-popup.froala-link-popup div.f-popup-line + div.f-popup-line:last-child ul {
+  top: 25px;
 }
 .froala-popup.froala-link-popup div.f-popup-line .f-browse-links {
   background: #475577;
@@ -1266,6 +1274,11 @@ hr.fr-tag {
 .froala-popup.froala-link-popup div.f-popup-line .f-browse-links:hover {
   background: #353535;
   color: #ffffff;
+}
+.froala-popup.froala-link-popup div.f-popup-line .f-browse-links:after {
+  content: "";
+  display: block;
+  clear: both;
 }
 .froala-popup.froala-link-popup div.f-popup-line ul {
   background: #ffffff;
@@ -1621,9 +1634,15 @@ hr.fr-tag {
   direction: rtl;
   text-align: right;
 }
-.froala-element.f-rtl.f-placeholder:before {
+.froala-element.f-rtl:after {
+  left: 5px;
+  right: auto;
+}
+.froala-element.f-rtl + .fr-placeholder {
   left: auto;
   right: 10px;
+  direction: rtl;
+  text-align: right;
 }
 .froala-editor.f-basic {
   padding: 0px;
