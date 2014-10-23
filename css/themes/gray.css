@@ -204,18 +204,14 @@
 .gray-theme.froala-editor .fr-dropdown.fr-color-picker .fr-dropdown-menu p a.fr-bttn:hover {
   color: #28324e;
 }
-.gray-theme.froala-editor .fr-dropdown.fr-color-picker .fr-dropdown-menu .fr-color-bttn {
-  border: solid 1px #ffffff;
-}
 .gray-theme.froala-editor .fr-dropdown.fr-color-picker .fr-dropdown-menu .fr-color-bttn.active {
-  border: solid 1px #ffffff;
   outline: solid 1px #75706b;
 }
 .gray-theme.froala-editor .fr-dropdown.fr-color-picker .fr-dropdown-menu .fr-color-bttn.active:after {
   color: #ffffff;
 }
 .gray-theme.froala-editor .fr-dropdown.fr-color-picker .fr-dropdown-menu .fr-color-bttn:hover:not(:focus):not(:active) {
-  border: solid 1px #75706b;
+  outline: solid 1px #75706b;
 }
 .gray-theme.froala-editor .froala-popup {
   background: #ffffff;
