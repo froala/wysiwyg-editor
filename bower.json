@@ -1,9 +1,11 @@
 {
     "name": "FroalaWysiwygEditor",
     "version": "1.2.3",
-    "description": "A beautiful jQuery WYSIWYG text editor based on HTML5 technology. Cross browser, with mobile support, high performance and Retina Ready flat design.",
+    "description": "A beautiful jQuery WYSIWYG HTML text editor. High performance and modern design make it easy to use for developers and loved by users.",
     "main": [
       "css/froala_editor.min.css",
+      "css/froala_content.min.css",
+      "css/froala_style.min.css",
       "css/font-awesome.min.css",
       "fonts/fontawesome-webfont.eot",
       "fonts/fontawesome-webfont.svg",
@@ -16,19 +18,21 @@
       "js/plugins/tables.min.js",
       "js/plugins/video.min.js",
       "js/plugins/font_family.min.js",
-      "js/plugins/font_size.min.js"
+      "js/plugins/font_size.min.js",
+      "js/plugins/char_counter.min.js"
     ],
     "keywords": [
       "froala",
       "text",
       "editor",
-      "wysiwyg"
+      "wysiwyg",
+      "html"
     ],
     "ignore": [
-        "examples",
-        "img",
-        "froala-wysiwyg.jquery.json",
-        "bower.json"
+      "examples",
+      "img",
+      "froala-wysiwyg.jquery.json",
+      "bower.json"
     ],
     "licenses": [
         {

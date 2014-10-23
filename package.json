@@ -10,24 +10,26 @@
         "js/froala_editor.min.js",
         "js/froala_editor_ie8.min.js",
         "css/froala_editor.min.css",
-        "css/froala_page.min.css",
+        "css/froala_style.min.css",
+        "css/froala_content.min.css",
         "css/themes/*.min.css"
       ]
     }
   ],
   "version": "1.2.3",
-  "description": "A beautiful jQuery WYSIWYG text editor based on HTML5 technology. Cross browser, with mobile support, high performance and Retina Ready flat design.",
+  "description": "A beautiful jQuery WYSIWYG HTML text editor. High performance and modern design make it easy to use for developers and loved by users.",
   "homepage": "http://editor.froala.com/",
   "keywords": [
     "froala",
     "html",
     "text",
     "editor",
-    "wysiwyg"
+    "wysiwyg",
+    "jquery-plugin"
   ],
   "maintainers": [
     {
-      "name": "Froala"
+      "name": "Froala Labs"
     }
   ],
   "repositories": [
@@ -43,19 +45,19 @@
     },
     {
       "type": "Single Website",
-      "url": "http://editor.froala.com/download"
+      "url": "http://editor.froala.com/pricing"
     },
     {
       "type": "Developer",
-      "url": "http://editor.froala.com/download"
+      "url": "http://editor.froala.com/pricing"
     },
     {
       "type": "Business",
-      "url": "http://editor.froala.com/download"
+      "url": "http://editor.froala.com/pricing"
     },
     {
       "type": "OEM",
-      "url": "http://editor.froala.com/download"
+      "url": "http://editor.froala.com/pricing"
     }
   ]
 }
