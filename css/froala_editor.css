@@ -306,6 +306,7 @@ hr.fr-tag {
   -webkit-user-select: none;
   -ms-user-select: none;
   line-height: 13px;
+  padding-left: 3px;
 }
 .froala-element.f-basic.f-placeholder + span.fr-placeholder {
   left: 10px;
