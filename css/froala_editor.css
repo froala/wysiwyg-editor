@@ -311,6 +311,7 @@ hr.fr-tag {
 .froala-element.f-basic.f-placeholder + span.fr-placeholder {
   left: 10px;
   right: 10px;
+  top: 55px;
 }
 .froala-element.not-msie pre,
 .froala-element.not-msie blockquote {
