@@ -305,7 +305,6 @@ hr.fr-tag {
   -khtml-user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none;
-  line-height: 13px;
   padding-left: 3px;
 }
 .froala-element.f-basic.f-placeholder + span.fr-placeholder {
@@ -1645,6 +1644,7 @@ hr.fr-tag {
   right: 10px;
   direction: rtl;
   text-align: right;
+  padding-right: 3px;
 }
 .froala-editor.f-basic {
   padding: 0px;
