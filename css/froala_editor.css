@@ -9,6 +9,9 @@
 button {
   outline: none;
 }
+.fr-visible {
+  display: block !important;
+}
 .f-non-selectable {
   user-select: none;
   -o-user-select: none;
