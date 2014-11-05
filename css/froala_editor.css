@@ -271,6 +271,7 @@ hr.fr-tag {
 .froala-element.f-tni span.f-img-wrap {
   display: block;
   text-align: center;
+  float: none !important;
 }
 .froala-element.f-tni span.f-img-wrap:after {
   clear: both;
