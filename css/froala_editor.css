@@ -233,6 +233,15 @@ hr.fr-tag {
   float: right;
   margin: 10px 1px 10px 10px;
 }
+.fr-wrapper:after {
+  position: absolute;
+  bottom: 5px;
+  right: 7px;
+  color: #CCC;
+  content: attr(data-chars);
+  font-size: 15px;
+  font-family: "Times New Roman", Georgia, Serif;
+}
 .froala-element {
   min-height: 35px;
   overflow-y: auto;
@@ -240,11 +249,12 @@ hr.fr-tag {
   position: relative;
   word-wrap: break-word;
   vertical-align: top;
+  cursor: text;
 }
-.froala-element:after {
+.froala-element.f-inline:after {
   position: absolute;
-  bottom: 0px;
-  right: 5px;
+  bottom: 5px;
+  right: 7px;
   color: #CCC;
   content: attr(data-chars);
   font-size: 15px;
@@ -296,10 +306,10 @@ hr.fr-tag {
   color: #cccccc;
   font-style: italic;
   position: absolute;
-  margin: auto;
+  margin: 0;
   left: 0;
   right: 0;
-  top: 0;
+  top: 2px;
   display: inline-block;
   cursor: text;
   user-select: none;
@@ -308,12 +318,10 @@ hr.fr-tag {
   -khtml-user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none;
-  padding-left: 3px;
+  padding-left: 2px;
 }
 .froala-element.f-basic.f-placeholder + span.fr-placeholder {
-  left: 10px;
-  right: 10px;
-  top: 55px;
+  margin: 10px;
 }
 .froala-element.not-msie pre,
 .froala-element.not-msie blockquote {
@@ -1688,8 +1696,11 @@ hr.fr-tag {
 .froala-editor.f-basic hr {
   display: none;
 }
-.froala-element.f-basic {
+.froala-wrapper.f-basic {
   border: solid 1px #252525;
+  position: relative;
+}
+.froala-element.f-basic {
   padding: 10px;
 }
 .froala-element.f-basic span.f-img-editor {
