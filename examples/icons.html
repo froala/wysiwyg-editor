@@ -50,7 +50,13 @@
 
   <script>
       $(function(){
-        $('#edit').editable({inlineMode: false, icons: {bold: {type: "font", value: "fa fa-star"}}})
+        $('#edit').editable({
+          inlineMode: false,
+          icons: {
+            bold: {type: "font", value: "fa fa-star"},
+            blockStyle: {type: "font", value: "fa fa-bank"}
+          }
+        })
       });
   </script>
 </body>
