@@ -353,6 +353,9 @@ hr.fr-tag {
 .froala-element:not(.ie8) img {
   max-width: 100% !important;
 }
+.froala-element td img {
+  max-width: auto !important;
+}
 .froala-element img::selection {
   color: #ffffff;
   background-color: transparent !important;
