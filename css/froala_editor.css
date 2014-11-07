@@ -233,7 +233,10 @@ hr.fr-tag {
   float: right;
   margin: 10px 1px 10px 10px;
 }
-.fr-wrapper:after {
+.froala-wrapper {
+  position: relative;
+}
+.froala-wrapper:after {
   position: absolute;
   bottom: 5px;
   right: 7px;
