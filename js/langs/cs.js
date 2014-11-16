@@ -83,7 +83,10 @@ $.Editable.LANGS['cs'] = {
     "Delete row": "Smazat \u0159\u00e1dek",
     "Insert column before": "Vlo\u017eit sloupec vlevo",
     "Insert column after": "Vlo\u017eit sloupec vpravo",
-    "Delete column": "Smazat sloupec"
+    "Delete column": "Smazat sloupec",
+    "Uploading image": "Nahr\u00e1v\u00e1n\u00ed obrazu",
+    "Upload File": "Nahr\u00e1t soubor",
+    "Drop File": "Drop soubor"
   },
   direction: "ltr"
 };

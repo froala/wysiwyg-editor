@@ -48,10 +48,10 @@ $.Editable.LANGS['bs'] = {
     "Float Left": "Prebaci lijevo",
     "Float None": "Bez prebacivanja",
     "Float Right": "Prebaci desno",
-    "Replace Image": "Zamijeni ilustraciju",
-    "Remove Image": "Ukloni ilustraciju",
+    "Replace Image": "Zamijenite slike",
+    "Remove Image": "Ukloni sliku",
     "Title": "Naslov",
-    "Drop image": "Izbaci ilustraciju",
+    "Drop image": "Izbaci sliku",
     "or click": "ili odaberi",
     "or": "ili",
     "Enter URL": "Enter URL",
@@ -83,7 +83,10 @@ $.Editable.LANGS['bs'] = {
     "Delete row": "Obri\u0161i red",
     "Insert column before": "Umetni kolonu prije",
     "Insert column after": "Umetni kolonu poslije",
-    "Delete column": "Obri\u0161i kolonu"
+    "Delete column": "Obri\u0161i kolonu",
+    "Uploading image": "Upload slika",
+    "Upload File": "Upload datoteke",
+    "Drop File": "Drop datoteke"
   },
   direction: "ltr"
 };

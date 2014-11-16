@@ -83,7 +83,10 @@ $.Editable.LANGS['nb'] = {
     "Delete row": "Slett rad",
     "Insert column before": "Sett inn kolonne f\u00f8r",
     "Insert column after": "Sett inn kolonne etter",
-    "Delete column": "Slett kolonne"
+    "Delete column": "Slett kolonne",
+    "Uploading image": "Opplasting bilde",
+    "Upload File": "Opplastingsfil",
+    "Drop File": "Slippe fil"
   },
   direction: "ltr"
 };

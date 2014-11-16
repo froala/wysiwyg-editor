@@ -83,7 +83,10 @@ $.Editable.LANGS['fa'] = {
     "Delete row": "\u062d\u0630\u0641 \u0633\u0637\u0631",
     "Insert column before": "\u062f\u0631\u062c \u0633\u062a\u0648\u0646 \u0642\u0628\u0644",
     "Insert column after": "\u062f\u0631\u062c \u0633\u062a\u0648\u0646 \u0628\u0639\u062f",
-    "Delete column": "\u062d\u0630\u0641 \u0633\u062a\u0648\u0646"
+    "Delete column": "\u062d\u0630\u0641 \u0633\u062a\u0648\u0646",
+    "Uploading image": "\u0622\u067e\u0644\u0648\u062f \u062a\u0635\u0648\u06cc\u0631",
+    "Upload File": "\u0622\u067e\u0644\u0648\u062f \u0641\u0627\u06cc\u0644",
+    "Drop File": "\u0627\u0641\u062a \u0641\u0627\u06cc\u0644"
   },
   direction : "rtl"
 };

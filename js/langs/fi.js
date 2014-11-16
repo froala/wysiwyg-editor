@@ -83,7 +83,10 @@ $.Editable.LANGS['fi'] = {
     "Delete row": "Poista rivi",
     "Insert column before": "Lis\u00e4\u00e4 sarake ennen",
     "Insert column after": "Lis\u00e4\u00e4 sarake j\u00e4lkeen",
-    "Delete column": "Poista sarake"
+    "Delete column": "Poista sarake",
+    "Uploading image": "Lataaminen kuva",
+    "Upload File": "Lataa tiedosto",
+    "Drop File": "Pudota tiedosto"
   },
   direction: "ltr"
 };

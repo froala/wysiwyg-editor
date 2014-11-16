@@ -83,7 +83,10 @@ $.Editable.LANGS['de'] = {
     "Delete row": "Zeile l\u00f6schen",
     "Insert column before": "Neue Spalte davor einf\u00fcgen",
     "Insert column after": "Neue Spalte danach einf\u00fcgen",
-    "Delete column": "Spalte l\u00f6schen"
+    "Delete column": "Spalte l\u00f6schen",
+    "Uploading image": "Bild hochladen",
+    "Upload File": "Datei Hochladen",
+    "Drop File": "Tropfen Datei"
   },
   direction: "ltr"
 };

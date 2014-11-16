@@ -83,7 +83,10 @@ $.Editable.LANGS['pl'] = {
     "Delete row": "Usu\u0144 wiersz",
     "Insert column before": "Wstaw kolumn\u0119 przed",
     "Insert column after": "Wstaw kolumn\u0119 po",
-    "Delete column": "Usu\u0144 kolumn\u0119"
+    "Delete column": "Usu\u0144 kolumn\u0119",
+    "Uploading image": "Przesy\u0142anie obrazu",
+    "Upload File": "Prze\u015blij plik",
+    "Drop File": "Upu\u015bci\u0107 plik"
   },
   direction: "ltr"
 };

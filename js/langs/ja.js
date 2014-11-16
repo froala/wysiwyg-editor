@@ -83,7 +83,10 @@ $.Editable.LANGS['ja'] = {
     "Delete row": "\u884c\u306e\u524a\u9664",
     "Insert column before": "\u5de6\u5074\u306b\u5217\u3092\u633f\u5165",
     "Insert column after": "\u53f3\u5074\u306b\u5217\u3092\u633f\u5165",
-    "Delete column": "\u5217\u306e\u524a\u9664"
+    "Delete column": "\u5217\u306e\u524a\u9664",
+    "Uploading image": "\u30a2\u30c3\u30d7\u30ed\u30fc\u30c9\u753b\u50cf",
+    "Upload File": "\u30d5\u30a1\u30a4\u30eb\u306e\u30a2\u30c3\u30d7\u30ed\u30fc\u30c9",
+    "Drop File": "\u30c9\u30ed\u30c3\u30d7\u30d5\u30a1\u30a4\u30eb"
   },
   direction: "ltr"
 };
