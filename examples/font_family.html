@@ -48,9 +48,14 @@
 
   <script>
       $(function(){
-          $('#edit').editable({inlineMode: false, buttons: ['bold', 'italic', 'underline', 'fontFamily', 'fontSize', 'color', 'sep', 'formatBlock', 'align',
-      'insertOrderedList', 'insertUnorderedList', 'outdent', 'indent', 'sep', 'createLink', 'insertImage',
-      'insertVideo', 'undo', 'redo', 'html']})
+          $('#edit').editable({
+            inlineMode: false,
+            fontList: {
+              'Arial,Helvetica': 'Font 1',
+              'Courier,Courier New': 'Font 2',
+              'Georgia': 'Font 3'
+            }
+          })
       });
   </script>
 </body>
