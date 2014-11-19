@@ -5,6 +5,12 @@
 .dark-theme.froala-box .html-switch {
   border-color: #aaaaaa;
 }
+.dark-theme.froala-box .froala-wrapper.f-basic {
+  border: solid 1px #252525;
+}
+.dark-theme.froala-box .froala-wrapper.f-basic.f-placeholder + span.fr-placeholder {
+  margin: 10px;
+}
 .dark-theme.froala-box .froala-element hr {
   border-top-color: #aaaaaa;
 }
@@ -66,9 +72,9 @@
   border: solid 1px #252525;
 }
 .dark-theme.froala-box .froala-element.f-basic {
-  border: solid 1px #252525;
   background: transparent;
   color: '#444';
+  padding: 10px;
 }
 .dark-theme.froala-box .froala-element.f-basic a {
   color: inherit;
