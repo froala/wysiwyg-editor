@@ -295,10 +295,21 @@ hr.fr-tag {
   content: "";
 }
 .froala-element .btn {
-  -webkit-user-select: text;
-  -moz-user-select: text;
-  -ms-user-select: text;
   user-select: text;
+  -o-user-select: text;
+  -moz-user-select: text;
+  -khtml-user-select: text;
+  -webkit-user-select: text;
+  -ms-user-select: text;
+}
+.froala-element [contenteditable="false"],
+.froala-element [contenteditable="false"] * {
+  user-select: none;
+  -o-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
 .froala-element span {
   line-height: 120%;
