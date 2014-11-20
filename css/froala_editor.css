@@ -491,6 +491,11 @@ hr.fr-tag {
 .froala-element .f-video-editor.active:after {
   border: solid 1px #252525;
 }
+.f-html .froala-wrapper:after {
+  clear: both;
+  display: block;
+  content: "";
+}
 .f-html .froala-element {
   background: #202020;
   color: #ffffff;
@@ -507,12 +512,15 @@ hr.fr-tag {
   display: block;
   content: "";
 }
+.f-html .froala-element.f-inline textarea {
+  padding: 0 0 0 10px;
+}
 .f-html .froala-element textarea {
   direction: ltr !important;
   text-align: left;
   width: 100%;
   word-wrap: break-word;
-  padding: 0 0 0 10px;
+  padding: 0;
   background: transparent;
   border: 0 transparent;
   color: #FFF;
