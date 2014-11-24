@@ -237,23 +237,23 @@
 .red-theme.froala-editor .froala-popup h4 i:hover {
   color: #444444;
 }
-.red-theme.froala-editor .froala-popup button:not(.fr-bttn):not(.fr-trigger) {
+.red-theme.froala-editor .froala-popup button.fr-p-bttn {
   color: #ffffff;
 }
-.red-theme.froala-editor .froala-popup button:not(.fr-bttn):not(.fr-trigger).f-ok {
+.red-theme.froala-editor .froala-popup button.fr-p-bttn.f-ok {
   background: #b8312f;
   color: #ffffff;
 }
-.red-theme.froala-editor .froala-popup button:not(.fr-bttn):not(.fr-trigger).f-unlink {
+.red-theme.froala-editor .froala-popup button.fr-p-bttn.f-unlink {
   background: #353535;
   color: #ffffff;
 }
-.red-theme.froala-editor .froala-popup button:not(.fr-bttn):not(.fr-trigger).f-unlink:hover {
+.red-theme.froala-editor .froala-popup button.fr-p-bttn.f-unlink:hover {
   background: #f7da64;
   color: #b8312f;
 }
-.red-theme.froala-editor .froala-popup button:not(.fr-bttn):not(.fr-trigger):hover,
-.red-theme.froala-editor .froala-popup button:not(.fr-bttn):not(.fr-trigger):focus {
+.red-theme.froala-editor .froala-popup button.fr-p-bttn:hover,
+.red-theme.froala-editor .froala-popup button.fr-p-bttn:focus {
   background: #f7da64;
   color: #b8312f;
 }

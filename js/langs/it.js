@@ -86,7 +86,8 @@ $.Editable.LANGS['it'] = {
     "Delete column": "Cancella Colonna",
     "Uploading image": "Caricamento dell'immagine",
     "Upload File": "Carica File",
-    "Drop File": "Rilascia File"
+    "Drop File": "Rilascia File",
+    "Clear formatting": "Cancella formattazione"
   },
   direction: "ltr"
 };

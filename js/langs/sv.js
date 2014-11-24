@@ -86,7 +86,8 @@ $.Editable.LANGS['sv'] = {
     "Delete column": "Radera kolumn",
     "Uploading image": "Uppladdning bild",
     "Upload File": "Ladda upp fil",
-    "Drop File": "Sl\u00e4ppa fil"
+    "Drop File": "Sl\u00e4ppa fil",
+    "Clear formatting": "Ta bort formatering"
   },
   direction: "ltr"
 };

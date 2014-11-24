@@ -86,7 +86,8 @@ $.Editable.LANGS['ko'] = {
     "Delete column": "\ud589 \uc0ad\uc81c",
     "Uploading image": "\uc774\ubbf8\uc9c0 \uc5c5\ub85c\ub4dc\uc911",
     "Upload File": "\ud30c\uc77c \ucca8\ubd80",
-    "Drop File": "\ud30c\uc77c\uc744 \ub4dc\ub86d"
+    "Drop File": "\ud30c\uc77c\uc744 \ub4dc\ub86d",
+    "Clear formatting": "\uc11c\uc2dd \uc81c\uac70"
   },
   direction: "ltr"
 };

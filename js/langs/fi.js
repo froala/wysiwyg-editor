@@ -86,7 +86,8 @@ $.Editable.LANGS['fi'] = {
     "Delete column": "Poista sarake",
     "Uploading image": "Lataaminen kuva",
     "Upload File": "Lataa tiedosto",
-    "Drop File": "Pudota tiedosto"
+    "Drop File": "Pudota tiedosto",
+    "Clear formatting": "Poista muotoilu"
   },
   direction: "ltr"
 };

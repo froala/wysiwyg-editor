@@ -17,7 +17,7 @@ $.Editable.LANGS['hr'] = {
     "Color": "Boja",
     "Background": "Pozadine",
     "Text": "Teksta",
-    "Format Block": "Formatiranje bloka",
+    "Format Block": "Format bloka",
     "Normal": "Normalno",
     "Paragraph": "Paragraf",
     "Code": "Izvorni kod",
@@ -86,7 +86,8 @@ $.Editable.LANGS['hr'] = {
     "Delete column": "Obri\u0161i stupac",
     "Uploading image": "Prijenos slike",
     "Upload File": "Prijenos datoteke",
-    "Drop File": "Izbaci datoteke"
+    "Drop File": "Izbaci datoteke",
+    "Clear formatting": "Ukloniti oblikovanje"
   },
   direction: "ltr"
 };

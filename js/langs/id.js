@@ -86,7 +86,8 @@ $.Editable.LANGS['id'] = {
     "Delete column": "Hapus kolom",
     "Uploading image": "Meng-upload gambar",
     "Upload File": "Meng-upload berkas",
-    "Drop File": "Jatuhkan berkas"
+    "Drop File": "Jatuhkan berkas",
+    "Clear formatting": "Menghapus format"
   },
   direction: "ltr"
 };

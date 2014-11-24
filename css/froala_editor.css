@@ -327,13 +327,13 @@ hr.fr-tag {
   top: 2px;
   display: inline-block;
   cursor: text;
+  padding-left: 2px;
   user-select: none;
   -o-user-select: none;
   -moz-user-select: none;
   -khtml-user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none;
-  padding-left: 2px;
 }
 .froala-element.f-basic.f-placeholder + span.fr-placeholder {
   margin: 10px;
@@ -489,7 +489,7 @@ hr.fr-tag {
 .froala-element .f-video-editor > * {
   max-width: 100%;
 }
-.froala-element .f-video-editor:after {
+.froala-box .froala-element .f-video-editor:after {
   position: absolute;
   content: '';
   z-index: 2;
@@ -499,7 +499,7 @@ hr.fr-tag {
   bottom: 0;
   cursor: pointer;
 }
-.froala-element .f-video-editor.active:after {
+.froala-box .froala-element .f-video-editor.active:after {
   border: solid 1px #252525;
 }
 .f-html .froala-wrapper:after {
@@ -1216,6 +1216,8 @@ hr.fr-tag {
   padding: 2px 7px;
   background: #475577;
   color: #ffffff;
+  border: 0;
+  vertical-align: top;
 }
 .froala-popup.froala-image-popup div.f-popup-line button.f-browse:hover,
 .froala-popup.froala-file-popup div.f-popup-line button.f-browse:hover {
@@ -1308,6 +1310,7 @@ hr.fr-tag {
   background: #475577;
   color: #ffffff;
   margin-left: -1px;
+  border: 0;
 }
 .froala-popup.froala-link-popup div.f-popup-line .f-browse-links:hover {
   background: #353535;
@@ -1370,7 +1373,7 @@ hr.fr-tag {
 .froala-popup.froala-text-popup div.f-popup-line input {
   margin-left: 0 !important;
 }
-.froala-popup button:not(.fr-bttn):not(.fr-trigger) {
+.froala-popup button.fr-p-bttn {
   border: 0;
   color: #ffffff;
   padding: 2px 5px;
@@ -1386,21 +1389,21 @@ hr.fr-tag {
   -o-transition: background linear 0.2s;
   min-width: 16px;
 }
-.froala-popup button:not(.fr-bttn):not(.fr-trigger).f-ok {
+.froala-popup button.fr-p-bttn.f-ok {
   background: #2c82c9;
   color: #ffffff;
 }
-.froala-popup button:not(.fr-bttn):not(.fr-trigger).f-unlink {
+.froala-popup button.fr-p-bttn.f-unlink {
   background: #b8312f;
   color: #ffffff;
   margin: 0 5px;
 }
-.froala-popup button:not(.fr-bttn):not(.fr-trigger).f-unlink:hover {
+.froala-popup button.fr-p-bttn.f-unlink:hover {
   background: #353535;
   color: #ffffff;
 }
-.froala-popup button:not(.fr-bttn):not(.fr-trigger):hover,
-.froala-popup button:not(.fr-bttn):not(.fr-trigger):focus {
+.froala-popup button.fr-p-bttn:hover,
+.froala-popup button.fr-p-bttn:focus {
   background: #353535;
   color: #ffffff;
 }

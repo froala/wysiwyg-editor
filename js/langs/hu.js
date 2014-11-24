@@ -86,7 +86,8 @@ $.Editable.LANGS['hu'] = {
     "Delete column": "Oszlop t\u00f6rl\u00e9se",
     "Uploading image": "Felt\u00f6lt\u00e9s k\u00e9p",
     "Upload File": "F\u00e1jl felt\u00f6lt\u00e9se",
-    "Drop File": "Csepp f\u00e1jl"
+    "Drop File": "Csepp f\u00e1jl",
+    "Clear formatting": "Form\u00e1z\u00e1s elt\u00e1vol\u00edt\u00e1sa"
   },
   direction: "ltr"
 };

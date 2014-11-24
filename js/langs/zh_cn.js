@@ -86,7 +86,8 @@ $.Editable.LANGS['zh_cn'] = {
     "Delete column": "\u5220\u9664\u5217",
     "Uploading image": "\u4e0a\u4f20\u56fe\u50cf",
     "Upload File": "\u4e0a\u4f20\u6587\u4ef6",
-    "Drop File": "\u6587\u4ef6\u62d6\u653e"
+    "Drop File": "\u6587\u4ef6\u62d6\u653e",
+    "Clear formatting": "\u683c\u5f0f\u5316\u5220\u9664"
   },
   direction: "ltr"
 };

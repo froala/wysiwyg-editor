@@ -86,7 +86,8 @@ $.Editable.LANGS['fr'] = {
     "Delete column": "Effacer la colonne",
     "Uploading image": "De t\u00e9l\u00e9chargement d'images",
     "Upload File": "T\u00e9l\u00e9charger le fichier",
-    "Drop File": "D\u00e9posez le fichier"
+    "Drop File": "D\u00e9posez le fichier",
+    "Clear formatting": "Effacer formatage"
   },
   direction: "ltr"
 };

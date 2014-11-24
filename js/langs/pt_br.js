@@ -45,7 +45,7 @@ $.Editable.LANGS['pt_br'] = {
     "Undo": "Desfazer",
     "Redo": "Refazer",
     "Show HTML": "Mostrar HTML",
-    "Float Left": "Esquerdo",
+    "Float Left": "Esquerda",
     "Float None": "Nenhum",
     "Float Right": "Direita",
     "Replace Image": "Substituir imagem",
@@ -62,7 +62,7 @@ $.Editable.LANGS['pt_br'] = {
     "Type something": "Digite algo",
     "Cancel": "Cancelar",
     "OK": "Ok",
-    "Manage images": "Manejar imagens",
+    "Manage images": "Gerenciar imagens",
     "Delete": "Apagar",
     "Font Family": "Fonte",
     "Insert Horizontal Line": "Inserir linha horizontal",
@@ -74,7 +74,7 @@ $.Editable.LANGS['pt_br'] = {
     "Delete table": "Excluir tabela",
     "Insert cell before": "Inserir c\u00e9lula antes",
     "Insert cell after": "Inserir c\u00e9lula depois",
-    "Delete cell": "Excluir celular",
+    "Delete cell": "Excluir c\u00e9lula",
     "Merge cells": "Agrupar c\u00e9lulas",
     "Horizontal split": "Divis\u00e3o horizontal",
     "Vertical split": "Divis\u00e3o vertical",
@@ -86,7 +86,8 @@ $.Editable.LANGS['pt_br'] = {
     "Delete column": "Excluir coluna",
     "Uploading image": "Upload de imagens",
     "Upload File": "Upload de arquivo",
-    "Drop File": "Arraste sua arquivo aqui"
+    "Drop File": "Arraste seu arquivo aqui",
+    "Clear formatting": "Remover formata\u00e7\u00e3o"
   },
   direction: "ltr"
 };

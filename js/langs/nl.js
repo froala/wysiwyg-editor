@@ -86,7 +86,8 @@ $.Editable.LANGS['nl'] = {
     "Delete column": "Verwijder kolom",
     "Uploading image": "Afbeelding uploaden",
     "Upload File": "Upload bestand",
-    "Drop File": "Drop bestand"
+    "Drop File": "Drop bestand",
+    "Clear formatting": "Verwijder opmaak"
   },
   direction: "ltr"
 };

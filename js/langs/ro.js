@@ -86,7 +86,8 @@ $.Editable.LANGS['ro'] = {
     "Delete column": "\u015eterge coloana",
     "Uploading image": "Imaginea se \u00eencarc\u0103",
     "Upload File": "\u00cenc\u0103rca\u021bi fi\u0219ier",
-    "Drop File": "Trage fi\u0219ier"
+    "Drop File": "Trage fi\u0219ier",
+    "Clear formatting": "Elimina\u021bi formatarea"
   },
   direction: "ltr"
 };
