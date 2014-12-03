@@ -9,7 +9,7 @@
 
 $.Editable.LANGS['nb'] = {
   translation: {
-    "Bold": "Halvfet",
+    "Bold": "Fet",
     "Italic": "Kursiv",
     "Underline": "Understreket",
     "Strikethrough": "Gjennomstreket",
