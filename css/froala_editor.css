@@ -76,6 +76,14 @@ button {
   color: #ffffff;
   background: #2c82c9;
 }
+.froala-box.fr-fullscreen {
+  margin: 0 !important;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
 .froala-box.f-html .html-switch {
   display: inline-block;
 }
