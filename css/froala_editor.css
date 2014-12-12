@@ -45,6 +45,18 @@ button {
 .froala-box {
   position: relative;
 }
+.froala-box:after {
+  position: absolute;
+  bottom: 5px;
+  right: 7px;
+  color: #CCC;
+  content: attr(data-chars);
+  font-size: 15px;
+  font-family: "Times New Roman", Georgia, Serif;
+}
+.froala-box .froala-wrapper {
+  overflow: scroll;
+}
 .froala-box .html-switch {
   position: absolute;
   left: 1px;
@@ -241,18 +253,6 @@ hr.fr-tag {
   float: right;
   margin: 10px 1px 10px 10px;
 }
-.froala-wrapper {
-  position: relative;
-}
-.froala-wrapper:after {
-  position: absolute;
-  bottom: 5px;
-  right: 7px;
-  color: #CCC;
-  content: attr(data-chars);
-  font-size: 15px;
-  font-family: "Times New Roman", Georgia, Serif;
-}
 .froala-element {
   min-height: 35px;
   overflow-y: auto;
@@ -261,15 +261,6 @@ hr.fr-tag {
   word-wrap: break-word;
   vertical-align: top;
   cursor: text;
-}
-.froala-element.f-inline:after {
-  position: absolute;
-  bottom: 5px;
-  right: 7px;
-  color: #CCC;
-  content: attr(data-chars);
-  font-size: 15px;
-  font-family: "Times New Roman", Georgia, Serif;
 }
 .froala-element * {
   -webkit-box-sizing: content-box;
