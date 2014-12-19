@@ -55,7 +55,7 @@ button {
   font-family: "Times New Roman", Georgia, Serif;
 }
 .froala-box .froala-wrapper {
-  overflow: scroll;
+  overflow: auto;
 }
 .froala-box .html-switch {
   position: absolute;
