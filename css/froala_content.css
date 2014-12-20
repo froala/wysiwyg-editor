@@ -2,8 +2,7 @@
  * froala_editor v1.2.5 (http://editor.froala.com)
  * Copyright 2014-2014 Froala
  */
-.froala-element img.fr-fil,
-img.fr-tag.fr-fil {
+img.fr-fil {
   z-index: 1;
   position: relative;
   vertical-align: top;
@@ -13,13 +12,11 @@ img.fr-tag.fr-fil {
   padding: 10px 10px 10px 3px;
   float: left !important;
 }
-.froala-element img.fr-fil.fr-tni,
-img.fr-tag.fr-fil.fr-tni {
+img.fr-fil.fr-tni {
   float: none !important;
   margin-left: 0 !important;
 }
-.froala-element img.fr-fir,
-img.fr-tag.fr-fir {
+img.fr-fir {
   z-index: 1;
   position: relative;
   vertical-align: top;
@@ -29,13 +26,11 @@ img.fr-tag.fr-fir {
   padding: 10px 3px 10px 10px;
   float: right !important;
 }
-.froala-element img.fr-fir.fr-tni,
-img.fr-tag.fr-fir.fr-tni {
+img.fr-fir.fr-tni {
   float: none !important;
   margin-right: 0 !important;
 }
-.froala-element img.fr-fin,
-img.fr-tag.fr-fin {
+img.fr-fin {
   z-index: 1;
   position: relative;
   vertical-align: top;
@@ -45,11 +40,9 @@ img.fr-tag.fr-fin {
   padding: 10px 0;
   float: none;
 }
-.froala-element a.fr-file,
 a.fr-file {
   position: relative;
 }
-.froala-element a.fr-file:before,
 a.fr-file:before {
   position: relative;
   display: inline-block;
@@ -64,6 +57,7 @@ a.fr-file:before {
   padding-right: 3px;
 }
 .froala-element table,
+.froala-view table,
 table.fr-tag {
   border-collapse: collapse;
   empty-cells: show;
@@ -75,17 +69,20 @@ table.fr-tag {
   box-sizing: border-box;
 }
 .froala-element table td,
+.froala-view table td,
 table.fr-tag td {
   border: solid 1px #cccccc;
   padding: 5px;
 }
 .froala-element table th,
+.froala-view table th,
 table.fr-tag th {
   background: #e6e6e6;
   border: solid 1px #cccccc;
   padding: 5px;
 }
 .froala-element pre,
+.froala-view pre,
 pre.fr-tag {
   white-space: pre-wrap;
   /* CSS3 */
@@ -108,6 +105,7 @@ pre.fr-tag {
   background-clip: padding-box;
 }
 .froala-element blockquote,
+.froala-view blockquote,
 blockquote.fr-tag {
   margin-left: 20px;
   margin-right: 0;
@@ -118,6 +116,7 @@ blockquote.fr-tag {
   border-left: solid 5px #cccccc;
 }
 .froala-element hr,
+.froala-view hr,
 hr.fr-tag {
   height: 0px;
   border: 0;

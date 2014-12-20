@@ -2,21 +2,26 @@
  * froala_editor v1.2.5 (http://editor.froala.com)
  * Copyright 2014-2014 Froala
  */
-.froala-element {
+.froala-element,
+.froala-view {
   line-height: 140%;
 }
 .froala-element ul,
 .froala-element ol,
+.froala-view ol,
+.froala-view ol,
 ul.fr-tag,
 ol.fr-tag {
   padding-left: 25px;
 }
 .froala-element p,
+.froala-view p,
 p.fr-tag {
   margin: 0 0 10px;
 }
 .froala-element h1,
-h1[class="fr-tag"] {
+.froala-view h1,
+h1.fr-tag {
   font-size: 36px;
   line-height: 1.1;
   font-weight: 400;
@@ -24,7 +29,8 @@ h1[class="fr-tag"] {
   margin-bottom: 10px;
 }
 .froala-element h2,
-h2[class="fr-tag"] {
+.froala-view h2,
+h2.fr-tag {
   font-size: 30px;
   line-height: 1.1;
   font-weight: 400;
@@ -32,7 +38,8 @@ h2[class="fr-tag"] {
   margin-bottom: 10px;
 }
 .froala-element h3,
-h3[class="fr-tag"] {
+.froala-view h3,
+h3.fr-tag {
   font-size: 24px;
   line-height: 1.1;
   font-weight: 400;
@@ -40,7 +47,8 @@ h3[class="fr-tag"] {
   margin-bottom: 10px;
 }
 .froala-element h4,
-h4[class="fr-tag"] {
+.froala-view h4,
+h4.fr-tag {
   font-size: 18px;
   line-height: 1.1;
   font-weight: 400;
@@ -48,7 +56,8 @@ h4[class="fr-tag"] {
   margin-bottom: 10px;
 }
 .froala-element h5,
-h5[class="fr-tag"] {
+.froala-view h5,
+h5.fr-tag {
   font-size: 14px;
   line-height: 1.1;
   font-weight: 400;
@@ -56,7 +65,8 @@ h5[class="fr-tag"] {
   margin-bottom: 10px;
 }
 .froala-element h6,
-h6[class="fr-tag"] {
+.froala-view h6,
+h6.fr-tag {
   font-size: 12px;
   line-height: 1.1;
   font-weight: 400;
