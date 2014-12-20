@@ -2,24 +2,19 @@
  * froala_editor v1.2.5 (http://editor.froala.com)
  * Copyright 2014-2014 Froala
  */
-.froala-element,
 .froala-view {
   line-height: 140%;
 }
-.froala-element ul,
-.froala-element ol,
 .froala-view ol,
 .froala-view ol,
 ul.fr-tag,
 ol.fr-tag {
   padding-left: 25px;
 }
-.froala-element p,
 .froala-view p,
 p.fr-tag {
   margin: 0 0 10px;
 }
-.froala-element h1,
 .froala-view h1,
 h1.fr-tag {
   font-size: 36px;
@@ -28,7 +23,6 @@ h1.fr-tag {
   margin-top: 20px;
   margin-bottom: 10px;
 }
-.froala-element h2,
 .froala-view h2,
 h2.fr-tag {
   font-size: 30px;
@@ -37,7 +31,6 @@ h2.fr-tag {
   margin-top: 20px;
   margin-bottom: 10px;
 }
-.froala-element h3,
 .froala-view h3,
 h3.fr-tag {
   font-size: 24px;
@@ -46,7 +39,6 @@ h3.fr-tag {
   margin-top: 20px;
   margin-bottom: 10px;
 }
-.froala-element h4,
 .froala-view h4,
 h4.fr-tag {
   font-size: 18px;
@@ -55,7 +47,6 @@ h4.fr-tag {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-.froala-element h5,
 .froala-view h5,
 h5.fr-tag {
   font-size: 14px;
@@ -64,7 +55,6 @@ h5.fr-tag {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-.froala-element h6,
 .froala-view h6,
 h6.fr-tag {
   font-size: 12px;

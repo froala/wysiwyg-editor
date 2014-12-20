@@ -172,7 +172,6 @@ a.fr-file:before {
   top: 0;
   padding-right: 3px;
 }
-.froala-element table,
 .froala-view table,
 table.fr-tag {
   border-collapse: collapse;
@@ -184,20 +183,17 @@ table.fr-tag {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-.froala-element table td,
 .froala-view table td,
 table.fr-tag td {
   border: solid 1px #cccccc;
   padding: 5px;
 }
-.froala-element table th,
 .froala-view table th,
 table.fr-tag th {
   background: #e6e6e6;
   border: solid 1px #cccccc;
   padding: 5px;
 }
-.froala-element pre,
 .froala-view pre,
 pre.fr-tag {
   white-space: pre-wrap;
@@ -220,7 +216,6 @@ pre.fr-tag {
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
 }
-.froala-element blockquote,
 .froala-view blockquote,
 blockquote.fr-tag {
   margin-left: 20px;
@@ -231,7 +226,6 @@ blockquote.fr-tag {
   font-style: italic;
   border-left: solid 5px #cccccc;
 }
-.froala-element hr,
 .froala-view hr,
 hr.fr-tag {
   height: 0px;
