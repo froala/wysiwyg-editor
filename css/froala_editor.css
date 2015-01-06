@@ -1,7 +1,7 @@
 /*!
  * froala_editor v1.2.5 (http://editor.froala.com)
  * License http://editor.froala.com/license
- * Copyright 2014 Froala Labs
+ * Copyright 2014-2015 Froala Labs
  */
 [contenteditable],
 [contenteditable]:focus {
@@ -714,7 +714,6 @@ hr.fr-tag {
 }
 .froala-editor .fr-dropdown.fr-color-picker .fr-dropdown-menu p span.fr-choose-color {
   padding: 5px 10px;
-  width: 50%;
   text-align: center;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -722,6 +721,10 @@ hr.fr-tag {
   border-top: solid 4px transparent;
   border-bottom: solid 4px transparent;
   cursor: pointer;
+  width: 100%;
+}
+.froala-editor .fr-dropdown.fr-color-picker .fr-dropdown-menu p span.fr-choose-color.fr-50 {
+  width: 50%;
 }
 .froala-editor .fr-dropdown.fr-color-picker .fr-dropdown-menu p span.fr-choose-color.active,
 .froala-editor .fr-dropdown.fr-color-picker .fr-dropdown-menu p span.fr-choose-color:hover {
