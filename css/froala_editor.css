@@ -304,9 +304,6 @@ hr.fr-tag {
   -webkit-user-select: none;
   -ms-user-select: none;
 }
-.froala-element span {
-  line-height: 120%;
-}
 .froala-element + span.fr-placeholder {
   display: none;
 }
@@ -346,7 +343,9 @@ hr.fr-tag {
 .froala-element a {
   cursor: pointer;
 }
-.froala-element img {
+.froala-element img.fr-fil,
+.froala-element img.fr-fir,
+.froala-element img.fr-fin {
   min-width: 32px !important;
   min-height: 32px !important;
   cursor: pointer;
@@ -494,6 +493,9 @@ hr.fr-tag {
 }
 .froala-box .froala-element .f-video-editor.active:after {
   border: solid 1px #252525;
+}
+.f-html:after {
+  display: none;
 }
 .f-html .froala-wrapper:after {
   clear: both;
