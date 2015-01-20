@@ -55,6 +55,10 @@ button {
   font-size: 15px;
   font-family: "Times New Roman", Georgia, Serif;
 }
+.froala-box.f-rtl:after {
+  left: 7px;
+  right: auto;
+}
 .froala-box .froala-wrapper {
   overflow: auto;
 }
