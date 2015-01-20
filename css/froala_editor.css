@@ -64,7 +64,7 @@ button {
 }
 .froala-box .html-switch {
   position: absolute;
-  left: 1px;
+  right: 1px;
   top: 1px;
   z-index: 1000;
   display: none;
