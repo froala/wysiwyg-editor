@@ -100,6 +100,7 @@ button {
   left: 0;
   bottom: 0;
   right: 0;
+  z-index: 3000;
 }
 .froala-box.f-html .html-switch {
   display: inline-block;
@@ -122,6 +123,9 @@ button {
 }
 .fr-hidden {
   display: none !important;
+}
+body.fr-fullscreen {
+  overflow: hidden;
 }
 img.fr-fil {
   z-index: 1;
@@ -1730,6 +1734,7 @@ hr.fr-tag {
 .froala-wrapper.f-basic {
   border: solid 1px #252525;
   position: relative;
+  background: #ffffff;
 }
 .froala-element.f-basic {
   padding: 10px;

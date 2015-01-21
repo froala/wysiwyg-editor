@@ -73,8 +73,8 @@
   border: solid 1px #252525;
 }
 .dark-theme.froala-box .froala-element.f-basic {
-  background: transparent;
-  color: '#444';
+  background: #ffffff;
+  color: #444444;
   padding: 10px;
 }
 .dark-theme.froala-box .froala-element.f-basic a {
