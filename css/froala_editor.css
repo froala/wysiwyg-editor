@@ -130,40 +130,45 @@ body.fr-fullscreen {
 img.fr-fil {
   z-index: 1;
   position: relative;
-  vertical-align: top;
-  display: block;
   margin: auto;
   overflow: auto;
   padding: 10px 10px 10px 3px;
   float: left !important;
 }
-img.fr-fil.fr-tni {
+img.fr-fil.fr-dib {
   float: none !important;
   margin-left: 0 !important;
 }
 img.fr-fir {
   z-index: 1;
   position: relative;
-  vertical-align: top;
-  display: block;
   margin: auto;
   overflow: auto;
   padding: 10px 3px 10px 10px;
   float: right !important;
 }
-img.fr-fir.fr-tni {
+img.fr-fir.fr-dib {
   float: none !important;
   margin-right: 0 !important;
 }
 img.fr-fin {
   z-index: 1;
   position: relative;
-  vertical-align: top;
-  display: block;
   margin: auto;
   overflow: auto;
-  padding: 10px 0;
   float: none;
+}
+img.fr-fin.fr-dib {
+  padding: 10px 0;
+}
+img.fr-dib {
+  vertical-align: top;
+  display: block;
+}
+img.fr-dib:after {
+  clear: both;
+  display: block;
+  content: "";
 }
 a.fr-file {
   position: relative;
@@ -272,29 +277,6 @@ hr.fr-tag {
 .froala-element.f-image {
   overflow: visible;
 }
-.froala-element.f-tni span.f-img-wrap {
-  display: block;
-  text-align: center;
-  float: none !important;
-}
-.froala-element.f-tni span.f-img-wrap:after {
-  clear: both;
-  display: block;
-  content: "";
-}
-.froala-element.f-tni span.f-img-editor {
-  display: inline-block;
-}
-.froala-element.f-tni img {
-  display: block;
-  margin-left: auto !important;
-  margin-right: auto !important;
-}
-.froala-element.f-tni img:after {
-  clear: both;
-  display: block;
-  content: "";
-}
 .froala-element .btn {
   user-select: text;
   -o-user-select: text;
@@ -351,16 +333,16 @@ hr.fr-tag {
 .froala-element a {
   cursor: pointer;
 }
+.froala-element img {
+  min-width: 32px !important;
+  min-height: 32px !important;
+}
 .froala-element img.fr-fil,
 .froala-element img.fr-fir,
 .froala-element img.fr-fin {
-  min-width: 32px !important;
-  min-height: 32px !important;
   cursor: pointer;
   z-index: 1;
   position: relative;
-  vertical-align: top;
-  display: block;
   margin: auto;
   overflow: auto;
 }
@@ -385,7 +367,7 @@ hr.fr-tag {
   outline: 0;
   max-width: 100% !important;
 }
-.froala-element span.f-img-wrap.fr-fin {
+.froala-element span.f-img-wrap.fr-fin.fr-dib {
   display: block;
 }
 .froala-element span.f-img-wrap.fr-fir {
@@ -393,6 +375,16 @@ hr.fr-tag {
 }
 .froala-element span.f-img-wrap.fr-fil {
   float: left;
+}
+.froala-element span.f-img-wrap.fr-dib {
+  display: block;
+  text-align: center;
+  float: none !important;
+}
+.froala-element span.f-img-wrap.fr-dib:after {
+  clear: both;
+  display: block;
+  content: "";
 }
 .froala-element span.f-img-editor {
   display: inline-block;
@@ -403,7 +395,6 @@ hr.fr-tag {
   line-height: 0;
   overflow: visible;
   z-index: 2;
-  vertical-align: top;
   border: 0;
   outline: 0;
   outline-color: transparent;
@@ -435,12 +426,17 @@ hr.fr-tag {
   float: right;
 }
 .froala-element span.f-img-editor.fr-fin {
-  margin: 10px 0;
   float: none;
+}
+.froala-element span.f-img-editor.fr-fin.fr-dib {
+  margin: 10px 0;
 }
 .froala-element span.f-img-editor img {
   padding: 0 !important;
   margin: auto;
+}
+.froala-element span.f-img-editor.fr-dib {
+  display: inline-block;
 }
 .froala-element span.f-img-handle {
   position: absolute;
