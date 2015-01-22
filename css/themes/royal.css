@@ -51,8 +51,8 @@
   color: #ffffff;
 }
 .royal-theme.froala-box .froala-element span.f-img-editor:before {
-  border: solid 2px #ffffff !important;
-  outline: solid 1px #553982 !important;
+  border: none !important;
+  outline: solid 1px #2c82c9 !important;
 }
 .royal-theme.froala-box .froala-element span.f-img-editor.fr-fil {
   margin: 10px 10px 10px 3px;
@@ -64,10 +64,10 @@
   margin: 10px 0;
 }
 .royal-theme.froala-box .froala-element span.f-img-handle {
-  height: 13px;
-  width: 13px;
-  border: solid 1px #553982 !important;
-  background: #ffffff;
+  height: 8px;
+  width: 8px;
+  border: solid 1px #ffffff !important;
+  background: #2c82c9;
 }
 .royal-theme.froala-box .froala-element span.f-video-editor.active:after {
   border: solid 1px #553982;

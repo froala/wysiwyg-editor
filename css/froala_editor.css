@@ -412,13 +412,13 @@ hr.fr-tag {
 .froala-element span.f-img-editor:before {
   content: "";
   position: absolute;
-  top: -2px;
-  left: -2px;
-  bottom: -2px;
-  right: -2px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
   display: block;
-  border: solid 2px #ffffff !important;
-  outline: solid 1px #252525 !important;
+  border: none !important;
+  outline: solid 1px #2c82c9 !important;
   z-index: 1;
 }
 .froala-element span.f-img-editor:after {
@@ -444,40 +444,62 @@ hr.fr-tag {
 }
 .froala-element span.f-img-handle {
   position: absolute;
-  height: 13px;
-  width: 13px;
-  border: solid 1px #252525 !important;
-  background: #ffffff;
+  height: 8px;
+  width: 8px;
+  border: solid 1px #ffffff !important;
+  background: #2c82c9;
   z-index: 2;
   margin: auto;
 }
 .froala-element span.f-img-handle.f-h-ne {
-  top: -3px;
+  top: -4px;
   left: auto;
-  right: -3px;
+  right: -4px;
   bottom: auto;
   cursor: ne-resize;
 }
 .froala-element span.f-img-handle.f-h-se {
   top: auto;
   left: auto;
-  right: -3px;
-  bottom: -3px;
+  right: -4px;
+  bottom: -4px;
   cursor: se-resize;
 }
 .froala-element span.f-img-handle.f-h-sw {
   top: auto;
-  left: -3px;
+  left: -4px;
   right: auto;
-  bottom: -3px;
+  bottom: -4px;
   cursor: sw-resize;
 }
 .froala-element span.f-img-handle.f-h-nw {
-  top: -3px;
-  left: -3px;
+  top: -4px;
+  left: -4px;
   right: auto;
   bottom: auto;
   cursor: nw-resize;
+}
+@media (max-width: 991px) {
+  .froala-element span.f-img-handle {
+    height: 12px;
+    width: 12px;
+  }
+  .froala-element span.f-img-handle.f-h-ne {
+    top: -6px;
+    right: -6px;
+  }
+  .froala-element span.f-img-handle.f-h-se {
+    right: -6px;
+    bottom: -6px;
+  }
+  .froala-element span.f-img-handle.f-h-sw {
+    left: -6px;
+    bottom: -6px;
+  }
+  .froala-element span.f-img-handle.f-h-nw {
+    top: -6px;
+    left: -6px;
+  }
 }
 .froala-element .f-video-editor {
   display: inline-block;
