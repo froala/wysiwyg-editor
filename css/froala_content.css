@@ -41,11 +41,6 @@ img.fr-dib {
   vertical-align: top;
   display: block;
 }
-img.fr-dib:after {
-  clear: both;
-  display: block;
-  content: "";
-}
 a.fr-file {
   position: relative;
 }
