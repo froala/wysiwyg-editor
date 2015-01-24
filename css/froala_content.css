@@ -131,3 +131,15 @@ hr.fr-tag {
   float: right;
   margin: 10px 1px 10px 10px;
 }
+.fr-tnv {
+  float: none !important;
+  margin: auto;
+  text-align: center;
+  display: block !important;
+}
+.fr-tnv.fr-fvl {
+  text-align: left;
+}
+.fr-tnv.fr-fvr {
+  text-align: right;
+}
