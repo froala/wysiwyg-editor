@@ -44,8 +44,12 @@
 
   <script>
       $(function(){
-          $('#edit')
-            .editable({inlineMode: false})
+        $('#edit').editable({inlineMode: false})
+
+        $('form').submit(function () {
+          console.log($(this).find('textarea').val());
+          return false;
+        })
       });
   </script>
 </body>
