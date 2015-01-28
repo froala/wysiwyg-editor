@@ -388,10 +388,11 @@ hr.fr-tag {
   text-align: center;
   float: none !important;
 }
-.froala-element span.f-img-wrap.fr-dib:after {
-  clear: both;
-  display: block;
+.froala-element span.f-img-wrap.fr-dib.fr-fil:after,
+.froala-element span.f-img-wrap.fr-dib.fr-fir:after {
   content: "";
+  display: block;
+  clear: both;
 }
 .froala-element span.f-img-editor {
   display: inline-block;
@@ -407,6 +408,11 @@ hr.fr-tag {
   outline-color: transparent;
   border-color: transparent;
 }
+.froala-element span.f-img-editor:after {
+  content: "";
+  display: block;
+  clear: both;
+}
 .froala-element span.f-img-editor:before {
   content: "";
   position: absolute;
@@ -418,11 +424,6 @@ hr.fr-tag {
   border: none !important;
   outline: solid 1px #2c82c9 !important;
   z-index: 1;
-}
-.froala-element span.f-img-editor:after {
-  content: "";
-  display: block;
-  clear: both;
 }
 .froala-element span.f-img-editor.fr-fil {
   margin: 10px 10px 10px 3px;
