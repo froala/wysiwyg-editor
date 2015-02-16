@@ -3,8 +3,19 @@
  * License http://editor.froala.com/license
  * Copyright 2014-2015 Froala Labs
  */
+.dark-theme.froala-box.fr-disabled .froala-element {
+  color: #999999;
+}
+.dark-theme.froala-box.fr-disabled button.fr-bttn,
+.dark-theme.froala-box.fr-disabled button.fr-trigger {
+  color: #999999 !important;
+}
+.dark-theme.froala-box.fr-disabled button.fr-bttn:after,
+.dark-theme.froala-box.fr-disabled button.fr-trigger:after {
+  border-top-color: #999999 !important;
+}
 .dark-theme.froala-box .html-switch {
-  border-color: #aaaaaa;
+  border-color: #999999;
 }
 .dark-theme.froala-box .froala-wrapper.f-basic {
   border: solid 1px #252525;
@@ -116,11 +127,11 @@
 }
 .dark-theme.froala-editor button.fr-bttn:disabled,
 .dark-theme.froala-editor button.fr-trigger:disabled {
-  color: #aaaaaa !important;
+  color: #999999 !important;
 }
 .dark-theme.froala-editor button.fr-bttn:disabled:after,
 .dark-theme.froala-editor button.fr-trigger:disabled:after {
-  border-top-color: #aaaaaa !important;
+  border-top-color: #999999 !important;
 }
 .dark-theme.froala-editor.ie8 button.fr-bttn:hover,
 .dark-theme.froala-editor.ie8 button.fr-trigger:hover {
@@ -272,7 +283,7 @@
 }
 .dark-theme.froala-editor .froala-popup div.f-popup-line input[type="text"]:disabled {
   background: #ffffff;
-  color: #aaaaaa;
+  color: #999999;
 }
 .dark-theme.froala-editor .froala-popup div.f-popup-line textarea {
   border: solid 1px #aaaaaa;

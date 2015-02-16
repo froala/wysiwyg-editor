@@ -59,6 +59,15 @@ button {
   left: 7px;
   right: auto;
 }
+.froala-box.fr-disabled .froala-element {
+  color: #999999;
+}
+.froala-box.fr-disabled .froala-element img {
+  -webkit-opacity: 0.5;
+  -moz-opacity: 0.5;
+  opacity: 0.5;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+}
 .froala-box .froala-wrapper {
   overflow: auto;
 }
@@ -967,6 +976,20 @@ hr.fr-tag {
   text-align: center;
   font-size: 16px;
 }
+.froala-editor button.fr-bttn:disabled,
+.froala-editor button.fr-trigger:disabled,
+.froala-box.fr-disabled button.fr-bttn,
+.froala-box.fr-disabled button.fr-trigger {
+  color: #999999 !important;
+  background: transparent !important;
+  cursor: default;
+}
+.froala-editor button.fr-bttn:disabled:after,
+.froala-editor button.fr-trigger:disabled:after,
+.froala-box.fr-disabled button.fr-bttn:after,
+.froala-box.fr-disabled button.fr-trigger:after {
+  border-top-color: #999999 !important;
+}
 .froala-editor button.fr-bttn,
 .froala-editor button.fr-trigger {
   padding: 0;
@@ -999,16 +1022,6 @@ hr.fr-tag {
   max-width: 40px;
   max-height: 35px;
   display: block;
-}
-.froala-editor button.fr-bttn:disabled,
-.froala-editor button.fr-trigger:disabled {
-  color: #aaaaaa !important;
-  background: transparent !important;
-  cursor: default;
-}
-.froala-editor button.fr-bttn:disabled:after,
-.froala-editor button.fr-trigger:disabled:after {
-  border-top-color: #aaaaaa !important;
 }
 .froala-editor button.fr-bttn i,
 .froala-editor button.fr-trigger i {
@@ -1326,7 +1339,7 @@ hr.fr-tag {
 }
 .froala-popup.froala-link-popup div.f-popup-line input[type="text"]:disabled {
   background: #ffffff;
-  color: #aaaaaa;
+  color: #999999;
 }
 .froala-popup.froala-link-popup div.f-popup-line input[type="text"]:disabled.f-bi {
   color: inherit;
