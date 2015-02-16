@@ -518,7 +518,7 @@ hr.fr-tag {
 .froala-box .froala-element .f-video-editor:after {
   position: absolute;
   content: '';
-  z-index: 2;
+  z-index: 1;
   top: 0;
   left: 0;
   right: 0;
@@ -527,6 +527,10 @@ hr.fr-tag {
 }
 .froala-box .froala-element .f-video-editor.active:after {
   border: solid 1px #252525;
+}
+.froala-box .froala-element .f-video-editor.active > * {
+  z-index: 2;
+  position: relative;
 }
 .f-html:after {
   display: none;
