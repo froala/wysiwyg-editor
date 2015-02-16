@@ -233,6 +233,7 @@ pre.fr-tag {
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
+  font-family: "Courier New", Courier, monospace;
 }
 .froala-view blockquote,
 blockquote.fr-tag {
@@ -315,7 +316,6 @@ hr.fr-tag {
 }
 .froala-element.f-placeholder + span.fr-placeholder {
   color: #cccccc;
-  font-style: italic;
   position: absolute;
   margin: 0;
   left: 0;
@@ -330,6 +330,8 @@ hr.fr-tag {
   -khtml-user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 .froala-element.f-basic.f-placeholder + span.fr-placeholder {
   margin: 10px;
@@ -848,7 +850,7 @@ hr.fr-tag {
   font-style: italic;
 }
 .froala-editor .fr-dropdown .fr-dropdown-menu li a.format-pre {
-  font-family: monospace, sans-serif;
+  font-family: "Courier New", Courier, monospace;
 }
 .froala-editor .fr-dropdown .fr-dropdown-menu li a.format-h1 {
   font-size: 36px;
@@ -1016,6 +1018,8 @@ hr.fr-tag {
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
   z-index: 2;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 .froala-editor button.fr-bttn img,
 .froala-editor button.fr-trigger img {

@@ -100,6 +100,7 @@ pre.fr-tag {
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
+  font-family: "Courier New", Courier, monospace;
 }
 .froala-view blockquote,
 blockquote.fr-tag {
