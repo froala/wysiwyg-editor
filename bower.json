@@ -23,10 +23,16 @@
     ],
     "keywords": [
       "froala",
+      "html",
       "text",
       "editor",
       "wysiwyg",
-      "html"
+      "jquery-plugin",
+      "rich editor",
+      "rich text editor",
+      "rte",
+      "javascript",
+      "jquery"
     ],
     "ignore": [
       "examples",

@@ -25,7 +25,12 @@
     "text",
     "editor",
     "wysiwyg",
-    "jquery-plugin"
+    "jquery-plugin",
+    "rich editor",
+    "rich text editor",
+    "rte",
+    "javascript",
+    "jquery"
   ],
   "maintainers": [
     {
