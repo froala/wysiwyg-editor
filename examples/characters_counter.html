@@ -43,7 +43,11 @@
 
   <script>
       $(function(){
-        $('#edit').editable({inlineMode: false, maxCharacters: 140})
+        $('#edit')
+          .editable({inlineMode: false, maxCharacters: 140})
+          .on('editable.maxCharNumberExceeded', function () {
+            alert('Character number was exceeded.')
+          })
       });
   </script>
 </body>
