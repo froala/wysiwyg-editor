@@ -286,11 +286,6 @@ hr.fr-tag {
   vertical-align: top;
   cursor: text;
 }
-.froala-element * {
-  -webkit-box-sizing: content-box;
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
-}
 .froala-element.f-image {
   overflow: visible;
 }
@@ -384,6 +379,9 @@ hr.fr-tag {
   border: 0;
   outline: 0;
   max-width: 100% !important;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 .froala-element span.f-img-wrap.fr-fin.fr-dib {
   display: block;
