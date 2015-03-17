@@ -51,21 +51,10 @@
 
   <script>
       $(function(){
-        $('#edit').editable({inlineMode: false,
-          linkList: [
-          {
-            body: "Google",
-            title: "An awesome search engine",
-            href: "http://google.com",
-            blank: true
-          },
-          {
-            body: "Froala",
-            title: "A website builder for everyone",
-            href: "http://froala.com",
-            blank: false
-          }
-        ]})
+        $('#edit').editable({
+          inlineMode: false,
+          linkText: true
+        })
       });
   </script>
 </body>
