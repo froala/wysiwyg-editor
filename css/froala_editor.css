@@ -111,6 +111,18 @@ button {
   right: 0;
   z-index: 3000;
 }
+.froala-box.fr-fullscreen .froala-editor {
+  width: 100% !important;
+  position: relative !important;
+  left: 0 !important;
+  right: 0 !important;
+}
+.froala-box.fr-fullscreen .froala-editor.f-basic.f-scroll {
+  border-bottom: 0 !important;
+}
+.froala-box.fr-fullscreen .froala-element {
+  padding-top: 10px !important;
+}
 .froala-box.f-html .html-switch {
   display: inline-block;
 }
