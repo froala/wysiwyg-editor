@@ -1039,7 +1039,7 @@ hr.fr-tag {
 }
 .froala-editor button.fr-bttn i,
 .froala-editor button.fr-trigger i {
-  line-height: 170%;
+  line-height: 35px;
   -moz-outline: 0;
   outline: 0;
 }
