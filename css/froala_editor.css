@@ -297,6 +297,7 @@ hr.fr-tag {
   word-wrap: break-word;
   vertical-align: top;
   cursor: text;
+  z-index: 2;
 }
 .froala-element.f-image {
   overflow: visible;
@@ -339,6 +340,7 @@ hr.fr-tag {
   -ms-user-select: none;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  z-index: 1;
 }
 .froala-element.f-basic.f-placeholder + span.fr-placeholder {
   margin: 10px;

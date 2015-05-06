@@ -19,6 +19,7 @@
 }
 .gray-theme.froala-box .froala-wrapper.f-basic {
   border: solid 1px #75706b;
+  background: #ffffff;
 }
 .gray-theme.froala-box .froala-wrapper.f-basic.f-placeholder + span.fr-placeholder {
   margin: 10px;
@@ -84,7 +85,6 @@
   border: solid 1px #75706b;
 }
 .gray-theme.froala-box .froala-element.f-basic {
-  background: #ffffff;
   color: #444444;
   padding: 10px;
 }
