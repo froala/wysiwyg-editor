@@ -72,12 +72,14 @@ table.fr-tag {
 table.fr-tag td {
   border: solid 1px #cccccc;
   padding: 5px;
+  vertical-align: top;
 }
 .froala-view table th,
 table.fr-tag th {
   background: #e6e6e6;
   border: solid 1px #cccccc;
   padding: 5px;
+  vertical-align: top;
 }
 .froala-view pre,
 pre.fr-tag {
