@@ -300,6 +300,7 @@ hr.fr-tag {
   vertical-align: top;
   cursor: text;
   z-index: 2;
+  -webkit-user-select: auto;
 }
 .froala-element.f-image {
   overflow: visible;
