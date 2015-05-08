@@ -952,6 +952,7 @@ hr.fr-tag {
   border: solid 1px #252525;
   line-height: 0;
   padding: 5px;
+  white-space: nowrap;
 }
 .froala-editor .fr-dropdown .fr-dropdown-menu.fr-table > li > div > div.fr-t-info {
   line-height: 140%;
