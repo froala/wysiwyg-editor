@@ -6,9 +6,9 @@ A beautiful jQuery WYSIWYG text editor based on HTML5 technology. Cross browser,
 The editor can be used for free only for educational and non-profit projects under the [CC NC-ND license](http://creativecommons.org/licenses/by-nc-nd/4.0/). For commercial applications you have to purchase one of the following licenses according to your needs. You can find more about that on our website on the [pricing plan page](http://froala.com/wysiwyg-editor/download).
 
 1. Single Website - $49
-* Developer - $79
-* Business - $159
-* OEM - $299
+* Developer - $89
+* Business - $199
+* OEM - $399
 
 ## Useful links
 
