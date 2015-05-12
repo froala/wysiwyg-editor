@@ -3,7 +3,7 @@ A beautiful jQuery WYSIWYG text editor based on HTML5 technology. Cross browser,
 
 ## Licensing
 
-The editor can be used for free only for personal and non-profit projects under the [CC NC-ND license](http://creativecommons.org/licenses/by-nc-nd/4.0/). For commercial applications you have to purchase one of the following licenses according to your needs. You can find more about that on our website on the [pricing plan page](http://editor.froala.com/download).
+The editor can be used for free only for educational and non-profit projects under the [CC NC-ND license](http://creativecommons.org/licenses/by-nc-nd/4.0/). For commercial applications you have to purchase one of the following licenses according to your needs. You can find more about that on our website on the [pricing plan page](http://froala.com/wysiwyg-editor/download).
 
 1. Single Website - $49
 * Developer - $79
@@ -12,12 +12,12 @@ The editor can be used for free only for personal and non-profit projects under 
 
 ## Useful links
 
-* Official website:  [editor.froala.com](http://editor.froala.com)
-* Official download: [editor.froala.com/latest.zip](http://editor.froala.com/latest.zip)
-* Official documentation:  [editor.froala.com/docs](http://editor.froala.com/docs)
-* Changelog:  [editor.froala.com/changelog](http://editor.froala.com/changelog)
-* Licensing: [editor.froala.com/download](http://editor.froala.com/download)
-* Support: [editor.froala.com/contact](http://editor.froala.com/contact)
+* Official website:  [froala.com/wysiwyg-editor](https://froala.com/wysiwyg-editor)
+* Official download: [froala.com/wysiwyg-editor/pricing](https://froala.com/wysiwyg-editor/pricing)
+* Official documentation:  [froala.com/wysiwyg-editor/docs](https://froala.com/wysiwyg-editor/docs)
+* Changelog:  [froala.com/wysiwyg-editor/changelog](https://froala.com/wysiwyg-editor/changelog)
+* Licensing: [froala.com/wysiwyg-editor/terms](https://froala.com/wysiwyg-editor/terms)
+* Support: [froala.com/wysiwyg-editor/contact](https://froala.com/wysiwyg-editor/contact)
 
 ## Reporting issues
 We use GitHub Issues as our official bug tracker. We strive to keep this a clean, maintainable and searchable record of our open and closed bugs, therefore we kindly ask you to obey some rules before reporting an issue:
@@ -27,4 +27,4 @@ We use GitHub Issues as our official bug tracker. We strive to keep this a clean
 * Make sure the report is accompanied by a reproducible demo.
 * We are trying to fix all issues ASAP. This means a lot of work and all we are asking is for you to be polite and use appropriate language.
 * DO NOT SPAM! We are reading every single issue opened. Please do not open 2 different issues for the same thing.
-* For feature requests, tech support and general discussion, don't use GitHub Issues. See [http://editor.froala.com/contact](htp://editor.froala.com/contact) for the appropriate channels.
+* For feature requests, tech support and general discussion, don't use GitHub Issues. See [https://froala.com/wysiwyg-editor/terms](https://froala.com/wysiwyg-editor/terms) for the appropriate channels.
