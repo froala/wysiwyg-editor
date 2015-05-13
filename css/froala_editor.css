@@ -369,6 +369,9 @@ hr.fr-tag {
 .froala-element img {
   min-width: 32px !important;
   min-height: 32px !important;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
 }
 .froala-element img.fr-fil,
 .froala-element img.fr-fir,
