@@ -59,6 +59,9 @@ button {
   left: 7px;
   right: auto;
 }
+.froala-box.fr-disabled .froala-wrapper {
+  overflow: hidden;
+}
 .froala-box.fr-disabled .froala-element {
   color: #999999;
 }
