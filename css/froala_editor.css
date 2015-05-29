@@ -1098,6 +1098,15 @@ hr.fr-tag {
   font-size: 13px;
   background: #ffffff;
 }
+.froala-editor .froala-popup input,
+.froala-editor .froala-popup textarea {
+  -webkit-touch-callout: auto;
+  -webkit-user-select: auto;
+  -khtml-user-select: auto;
+  -moz-user-select: auto;
+  -ms-user-select: auto;
+  user-select: auto;
+}
 .froala-editor .froala-popup *:not(input):not(textarea) {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
