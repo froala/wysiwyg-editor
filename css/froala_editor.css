@@ -120,7 +120,8 @@ button {
   left: 0 !important;
   right: 0 !important;
 }
-.froala-box.fr-fullscreen .froala-editor.f-basic.f-scroll {
+.froala-box.fr-fullscreen .froala-editor:not(.f-scroll) {
+  top: 0 !important;
   border-bottom: 0 !important;
 }
 .froala-box.fr-fullscreen .froala-element {
