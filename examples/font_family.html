@@ -55,6 +55,8 @@
               'Courier,Courier New': 'Font 2',
               'Georgia': 'Font 3'
             }
+          }).on('editable.fontFamily', function (e, editor) {
+            console.log ('font family applied');
           })
       });
   </script>
