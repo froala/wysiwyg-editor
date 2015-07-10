@@ -22,9 +22,8 @@ If you have questions or need help integrating the editor please [contact us](ht
 
 In order to use the Froala Editor you have to purchase one of the following licenses according to your needs. You can find more about that on our website on the [pricing plan page](https://www.froala.com/wysiwyg-editor/pricing).
 
-1. Single Website - $49
-2. Developer - $89
-3. Business - $199
+1. Single Website - $59
+2. Advanced - $119
 4. OEM - $399
 
 ## Useful links

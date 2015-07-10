@@ -16,7 +16,7 @@
       ]
     }
   ],
-  "version": "1.2.7",
+  "version": "1.2.8",
   "description": "A beautiful jQuery WYSIWYG HTML rich text editor. High performance and modern design make it easy to use for developers and loved by users.",
   "homepage": "https://www.froala.com/wysiwyg-editor",
   "keywords": [
@@ -49,11 +49,7 @@
       "url": "https://www.froala.com/wysiwyg-editor/pricing"
     },
     {
-      "type": "Developer",
-      "url": "https://www.froala.com/wysiwyg-editor/pricing"
-    },
-    {
-      "type": "Business",
+      "type": "Advanced",
       "url": "https://www.froala.com/wysiwyg-editor/pricing"
     },
     {
