@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0"/>
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../../css/froala_editor.css">
+  <link rel="stylesheet" href="../../css/froala_style.css">
+  <link rel="stylesheet" href="../../css/plugins/code_view.css">
+  <link rel="stylesheet" href="../../css/plugins/colors.css">
+  <link rel="stylesheet" href="../../css/plugins/emoticons.css">
+  <link rel="stylesheet" href="../../css/plugins/image_manager.css">
+  <link rel="stylesheet" href="../../css/plugins/image.css">
+  <link rel="stylesheet" href="../../css/plugins/line_breaker.css">
+  <link rel="stylesheet" href="../../css/plugins/link.css">
+  <link rel="stylesheet" href="../../css/plugins/table.css">
+  <link rel="stylesheet" href="../../css/plugins/char_counter.css">
+  <link rel="stylesheet" href="../../css/plugins/video.css">
+  <link rel="stylesheet" href="../../css/plugins/fullscreen.css">
+  <link rel="stylesheet" href="../../css/plugins/file.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/codemirror.min.css">
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+  <style>
+      body {
+          text-align: center;
+      }
+
+      div#editor {
+          width: 80%;
+          margin: auto;
+          text-align: left;
+      }
+
+      .fr-inner:not(.row) {
+        border: solid 1px #CCC;
+      }
+  </style>
+</head>
+
+<body>
+  <div id="editor">
+      <textarea id='edit'><div style="margin: 0 15px;">
+          <div class="row fr-inner">
+            <div class="col-xs-12 col-md-8 fr-inner">.col-xs-12 .col-md-8</div>
+            <div class="col-xs-6 col-md-4 fr-inner">.col-xs-6 .col-md-4</div>
+          </div>
+          <div class="row fr-inner">
+            <div class="col-xs-6 col-md-4 fr-inner">.col-xs-6 .col-md-4</div>
+            <div class="col-xs-6 col-md-4 fr-inner">.col-xs-6 .col-md-4</div>
+            <div class="col-xs-6 col-md-4 fr-inner">.col-xs-6 .col-md-4</div>
+          </div>
+          <div class="row fr-inner">
+            <div class="col-xs-6 fr-inner">.col-xs-6</div>
+            <div class="col-xs-6 fr-inner">.col-xs-6</div>
+          </div>
+        </div></textarea>
+  </div>
+
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/codemirror.min.js"></script>
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/mode/xml/xml.min.js"></script>
+  <script type="text/javascript" src="../../js/froala_editor.js" ></script>
+  <script type="text/javascript" src="../../js/plugins/align.js"></script>
+  <script type="text/javascript" src="../../js/plugins/code_view.js"></script>
+  <script type="text/javascript" src="../../js/plugins/colors.js"></script>
+  <script type="text/javascript" src="../../js/plugins/emoticons.js"></script>
+  <script type="text/javascript" src="../../js/plugins/font_size.js"></script>
+  <script type="text/javascript" src="../../js/plugins/font_family.js"></script>
+  <script type="text/javascript" src="../../js/plugins/image.js"></script>
+  <script type="text/javascript" src="../../js/plugins/file.js"></script>
+  <script type="text/javascript" src="../../js/plugins/image_manager.js"></script>
+  <script type="text/javascript" src="../../js/plugins/line_breaker.js"></script>
+  <script type="text/javascript" src="../../js/plugins/link.js"></script>
+  <script type="text/javascript" src="../../js/plugins/lists.js"></script>
+  <script type="text/javascript" src="../../js/plugins/paragraph_format.js"></script>
+  <script type="text/javascript" src="../../js/plugins/paragraph_style.js"></script>
+  <script type="text/javascript" src="../../js/plugins/video.js"></script>
+  <script type="text/javascript" src="../../js/plugins/table.js"></script>
+  <script type="text/javascript" src="../../js/plugins/url.js"></script>
+  <script type="text/javascript" src="../../js/plugins/entities.js"></script>
+  <script type="text/javascript" src="../../js/plugins/char_counter.js"></script>
+  <script type="text/javascript" src="../../js/plugins/inline_style.js"></script>
+  <script type="text/javascript" src="../../js/plugins/save.js"></script>
+  <script type="text/javascript" src="../../js/plugins/fullscreen.js"></script>
+  <script type="text/javascript" src="../../js/plugins/quote.js"></script>
+  <script type="text/javascript" src="../../js/languages/ro.js"></script>
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+  <script>
+    $(function(){
+      $('#edit').froalaEditor({
+        enter: $.FroalaEditor.ENTER_BR
+      })
+
+      $('#x').click(function (e) {
+        $('#edit').data('froala.editor').html.set('<p>foo<a href="s">' + $.FroalaEditor.MARKERS + 'bar</a></p>');
+      })
+    });
+  </script>
+</body>
+</html>

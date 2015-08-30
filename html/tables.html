@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.0.2/css/material-design-iconic-font.min.css">
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../css/froala_editor.css">
+  <link rel="stylesheet" href="../css/froala_style.css">
+  <link rel="stylesheet" href="../css/plugins/table.css">
+  <link href='http://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+
+  <style>
+      body {
+          text-align: center;
+      }
+
+      section {
+          width: 80%;
+          margin: auto;
+          text-align: left;
+      }
+  </style>
+</head>
+
+<body>
+  <section id="editor">
+      <!-- <button id="x">x</button> -->
+      <div id='edit' style="margin-top: 30px;">
+        <h1>Click and edit</h1>
+
+        <img class="fr-fir" src="../img/photo1.jpg" alt="Old Clock" width="300"/>Lorem <strong>ipsum</strong> dolor sit amet, consectetur <strong>adipiscing <em>elit.</em> Donec</strong> facilisis diam in odio iaculis blandit. Nunc eu mauris sit amet purus <strong>viverra</strong><em> gravida</em> ut a dui.<br/>
+
+        <table style="width: 100%;">
+          <tr>
+            <td>asdasd</td>
+            <td>
+              <table style="width: 100%;">
+                <tr><td>asdasd</td><td>asdasdasd</td></tr>
+                <tr><td>asdasd</td><td>asdasdasd</td></tr>
+                <tr><td>asdasd</td><td>asdasdasd</td></tr>
+              </table>
+            </td>
+            <td>asdasdasd</td>
+            <td>asdasdasd</td>
+          </tr>
+          <tr><td>asdasd</td><td>asdasdasd</td><td>asdasdasd</td><td>asdasdasd</td></tr>
+        </table>
+
+        <table style="width: 100%;">
+          <tr><th>asdasd</th><th>asdasdasd</th><th>asdasdasd</th><th>asdasdasd</th></tr>
+          <tr><td>asdasd</td><td>asdasdasd</td><td>asdasdasd</td><td>asdasdasd</td></tr>
+          <tr><td>asdasd</td><td>asdasdasd</td><td>asdasdasd</td><td>asdasdasd</td></tr>
+          <tr><td>asdasd</td><td>asdasdasd</td><td>asdasdasd</td><td>asdasdasd</td></tr>
+          <tr><td>asdasd</td><td>asdasdasd</td><td>asdasdasd</td><td>asdasdasd</td></tr>
+        </table>
+
+        <table style="width: 100%;">
+          <tr>
+            <td rowspan="2">a</td>
+            <td>b</td>
+            <td>c</td>
+            <td>d</td>
+            <td>e</td>
+            <td>f</td>
+            <td>g</td>
+            <td>h</td>
+            <td>i</td>
+            <td rowspan="3">j</td>
+            <td>k</td>
+          </tr>
+          <tr>
+            <td rowspan="2">l</td>
+            <td colspan="2">m</td>
+            <td>n</td>
+            <td>o</td>
+            <td>p</td>
+            <td rowspan="2" colspan="2">q</td>
+            <td>r</td>
+          </tr>
+          <tr>
+            <td>s</td>
+            <td>t</td>
+            <td colspan="2">u</td>
+            <td>v</td>
+            <td>w</td>
+            <td>x</td>
+          </tr>
+          <tr>
+            <td>y</td>
+            <td>z</td>
+            <td>za</td>
+            <td><ul><li>zb</li></ul></td>
+            <td>zc</td>
+            <td>zd</td>
+            <td>ze</td>
+            <td>zf</td>
+            <td colspan="2">zg</td>
+            <td>zh</td>
+          </tr>
+        </table>
+
+        Sed dictum dictum tristique. Proin eros turpis, ultricies eu sapien eget, ornare rutrum ipsum. Pellentesque eros nisl, ornare nec ipsum sed, aliquet sollicitudin erat. Nulla tincidunt porta <strong>vehicula.</strong><br/>
+
+
+      </div>
+  </section>
+
+  <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="../js/froala_editor.min.js"></script>
+  <script src="../js/plugins/table.min.js"></script>
+
+  <script>
+    $(function(){
+      $('#edit').froalaEditor({
+        enter: $.FroalaEditor.ENTER_P,
+        tabSpaces: 0
+      })
+    });
+  </script>
+</body>
+</html>
