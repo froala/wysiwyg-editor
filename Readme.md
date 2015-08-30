@@ -1,5 +1,10 @@
-#Froala WYSIWYG HTML Editor
+# Froala WYSIWYG HTML Editor
 > One of the most powerful WYSIWYG HTML text editors ever and designed to stay that way. A simple to use rich text editor, with mobile support, lots of examples, high performance and inline editing.
+
+## Version 2
+This repository contains the latest version of the Froala Editor (version 2). We have migrated the version 1 repository to https://github.com/froala/wysiwyg-editor-v1, in order to keep distinct issue lists for each of them. We will continue to maintain version 1 by the end of November.
+
+If you have any issues related to the Froala WYSIWYG Editor Version 1 please don't report them on this repository, and use https://github.com/froala/wysiwyg-editor-v1 instead.
 
 ## Code of Conduct
 We promise to extend courtesy and respect to everyone opening an issue. We expect anyone using this bug tracker to do the same.
