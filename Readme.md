@@ -37,9 +37,9 @@ In order to use the Froala Editor you have to purchase one of the following lice
 
 ## Useful links
 
-* Official website v2:  [froala.com/wysiwyg-editor/v2.0](https://www.froala.com/wysiwyg-editor)
-* Official download v2: [froala.com/wysiwyg-editor/v2.0/pricing](https://www.froala.com/wysiwyg-editor/pricing)
-* Official documentation v2:  [froala.com/wysiwyg-editor/v2.0/docs](https://www.froala.com/wysiwyg-editor/docs)
+* Official website v2:  [froala.com/wysiwyg-editor/v2.0](https://www.froala.com/wysiwyg-editor/v2.0)
+* Official download v2: [froala.com/wysiwyg-editor/v2.0/pricing](https://www.froala.com/wysiwyg-editor/v2.0/pricing)
+* Official documentation v2:  [froala.com/wysiwyg-editor/v2.0/docs](https://www.froala.com/wysiwyg-editor/v2.0/docs)
 * Changelog:  [froala.com/wysiwyg-editor/changelog](https://www.froala.com/wysiwyg-editor/changelog)
 * Licensing: [froala.com/wysiwyg-editor/terms](https://www.froala.com/wysiwyg-editor/terms)
 * FAQ: [froala.com/wysiwyg-editor/faq](https://www.froala.com/wysiwyg-editor/faq)
