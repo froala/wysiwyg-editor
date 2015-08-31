@@ -29,7 +29,7 @@ If you have questions or need help integrating the editor please [contact us](ht
 
 ## Licensing
 
-In order to use the Froala Editor you have to purchase one of the following licenses according to your needs. You can find more about that on our website on the [pricing plan page](https://www.froala.com/wysiwyg-editor/pricing).
+In order to use the Froala Editor you have to purchase one of the following licenses according to your needs. You can find more about that on our website on the [pricing plan page](https://www.froala.com/wysiwyg-editor/v2.0/pricing).
 
 1. Single Website - $59
 2. Advanced - $119
@@ -37,9 +37,9 @@ In order to use the Froala Editor you have to purchase one of the following lice
 
 ## Useful links
 
-* Official website:  [froala.com/wysiwyg-editor](https://www.froala.com/wysiwyg-editor)
-* Official download: [froala.com/wysiwyg-editor/pricing](https://www.froala.com/wysiwyg-editor/pricing)
-* Official documentation:  [froala.com/wysiwyg-editor/docs](https://www.froala.com/wysiwyg-editor/docs)
+* Official website v2:  [froala.com/wysiwyg-editor/v2.0](https://www.froala.com/wysiwyg-editor)
+* Official download v2: [froala.com/wysiwyg-editor/v2.0/pricing](https://www.froala.com/wysiwyg-editor/pricing)
+* Official documentation v2:  [froala.com/wysiwyg-editor/v2.0/docs](https://www.froala.com/wysiwyg-editor/docs)
 * Changelog:  [froala.com/wysiwyg-editor/changelog](https://www.froala.com/wysiwyg-editor/changelog)
 * Licensing: [froala.com/wysiwyg-editor/terms](https://www.froala.com/wysiwyg-editor/terms)
 * FAQ: [froala.com/wysiwyg-editor/faq](https://www.froala.com/wysiwyg-editor/faq)
