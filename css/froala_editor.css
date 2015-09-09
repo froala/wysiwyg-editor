@@ -276,8 +276,31 @@ iframe.fr-iframe {
 .fr-rtl .fr-separator {
   float: right;
 }
-.fr-toolbar.fr-inline .fr-separator {
+.fr-toolbar.fr-inline .fr-separator.fr-hs {
   float: none;
+}
+.fr-toolbar.fr-inline .fr-separator.fr-vs {
+  float: none;
+}
+@media (max-width: 767px) {
+  .fr-toolbar.fr-inline .fr-separator.fr-vs.fr-visible-xs {
+    display: inline-block;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .fr-toolbar.fr-inline .fr-separator.fr-vs.fr-visible-sm {
+    display: inline-block;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .fr-toolbar.fr-inline .fr-separator.fr-vs.fr-visible-md {
+    display: inline-block;
+  }
+}
+@media (min-width: 1200px) {
+  .fr-toolbar.fr-inline .fr-separator.fr-vs {
+    display: inline-block;
+  }
 }
 .fr-toolbar .fr-command.fr-btn,
 .fr-popup .fr-command.fr-btn {
