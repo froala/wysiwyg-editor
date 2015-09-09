@@ -31,6 +31,9 @@
   background: #1e88e5;
   border: solid 1px #ffffff;
   z-index: 4;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 .fr-image-resizer .fr-handler.fr-hnw {
   cursor: nw-resize;

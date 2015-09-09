@@ -22,6 +22,11 @@
   z-index: 2;
   position: relative;
 }
+.fr-video > * {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
 .fr-box .fr-video-resizer {
   position: absolute;
   border: solid 1px #1e88e5;
@@ -44,6 +49,9 @@
   background: #1e88e5;
   border: solid 1px #ffffff;
   z-index: 4;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 .fr-box .fr-video-resizer .fr-handler.fr-hnw {
   left: -5px;
