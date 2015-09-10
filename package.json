@@ -1,0 +1,35 @@
+{
+  "name": "froala_editor",
+  "description": "Froala WYSIWYG Editor.",
+  "license": "http://editor.froala.com/license",
+  "version": "2.0.0-rc.2",
+  "startYear": "2014",
+  "keywords": [
+    "froala",
+    "css",
+    "html",
+    "js"
+  ],
+  "homepage": "https://www.froala.com/wysiwyg-editor/v2.0",
+  "author": "Froala Labs",
+  "devDependencies": {
+    "assemble-less": "~0.7.0",
+    "grunt": "^0.4.5",
+    "grunt-banner": "~0.2.0",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-compress": "~0.6.0",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-connect": "~0.10.1",
+    "grunt-contrib-copy": "~0.5.0",
+    "grunt-contrib-jshint": "~0.10.0",
+    "grunt-contrib-qunit": "~0.7.0",
+    "grunt-contrib-uglify": "~0.7.0",
+    "grunt-jscs-checker": "~0.8.1",
+    "grunt-obfuscator": "~0.1.0",
+    "grunt-saucelabs": "~8.6.1",
+    "grunt-slim": "~0.1.0",
+    "grunt-shell": "~0.2.2",
+    "slimerjs": "~0.9.5",
+    "load-grunt-tasks": "~0.2.1"
+  }
+}
