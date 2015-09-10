@@ -1,5 +1,5 @@
 /*!
- * froala_editor v2.0.0-rc.2 (https://www.froala.com/wysiwyg-editor/v2.0)
+ * froala-editor v2.0.0-rc.2 (https://www.froala.com/wysiwyg-editor/v2.0)
  * License http://editor.froala.com/license
  * Copyright 2014-2015 Froala Labs
  */
