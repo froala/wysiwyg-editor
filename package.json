@@ -35,12 +35,6 @@
       "name": "Froala Labs"
     }
   ],
-  "repositories": [
-    {
-      "type": "git",
-      "url": "https://github.com/froala/wysiwyg-editor"
-    }
-  ],
   "licenses": [
     {
       "type": "Single Website",
@@ -54,5 +48,9 @@
       "type": "OEM",
       "url": "https://www.froala.com/wysiwyg-editor/v2.0/pricing"
     }
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/froala/wysiwyg-editor"
+  }
 }
