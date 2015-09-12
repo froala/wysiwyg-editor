@@ -25,7 +25,7 @@
       }
 
       div#editor {
-          width: 80%;
+          width: 81%;
           margin: auto;
           text-align: left;
       }
@@ -34,7 +34,6 @@
 
 <body>
   <div id="editor">
-      <!-- <button id="x">x</button> -->
       <div style="margin-top: 30px; text-align: center;">
         <img id="edit" class="fr-fir fr-dii" src="../img/photo1.jpg" alt="Old Clock" width="300"/>
       </div>
@@ -119,10 +118,6 @@
     $(function(){
       $('#edit').froalaEditor({
         enter: $.FroalaEditor.ENTER_P
-      })
-
-      $('#x').click(function (e) {
-        $('#edit').data('froala.editor').html.set('<p>foo<a href="s">' + $.FroalaEditor.MARKERS + 'bar</a></p>');
       })
     });
   </script>

@@ -25,7 +25,7 @@
       }
 
       div#editor {
-          width: 80%;
+          width: 81%;
           margin: auto;
           text-align: left;
       }
@@ -93,7 +93,6 @@
 
       Curabitur sem purus, sagittis quis lorem ac, iaculis laoreet lacus. Fusce eleifend congue massa a ornare. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sodales, tortor ut hendrerit lacinia, velit metus commodo libero, eu consequat est metus sit amet odio. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque eu sem vehicula, vulputate est sit amet, mattis nisi. Nullam consequat at turpis vitae pretium. Nulla risus velit, pharetra ac sollicitudin sed, volutpat nec felis.
 
-        <!-- <button id="x">x</button> -->
         <div id='edit' style="margin-bottom: 200px;">
           <h1>Click and edit</h1>
 
@@ -147,10 +146,6 @@
         enter: $.FroalaEditor.ENTER_P,
         toolbarStickyOffset: 100,
         toolbarBottom: true
-      })
-
-      $('#x').click(function (e) {
-        $('#edit').data('froala.editor').html.set('<p>foo<a href="s">' + $.FroalaEditor.MARKERS + 'bar</a></p>');
       })
     });
   </script>

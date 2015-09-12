@@ -7,7 +7,7 @@
   position: absolute;
   bottom: 5px;
   right: 7px;
-  color: #CCC;
+  color: #cccccc;
   content: attr(data-chars);
   font-size: 15px;
   font-family: "Times New Roman", Georgia, Serif;

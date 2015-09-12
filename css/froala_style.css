@@ -57,18 +57,18 @@
   word-wrap: break-word;
 }
 .fr-view blockquote {
-  border-left: solid 2px #5E35B1;
+  border-left: solid 2px #5e35b1;
   margin-left: 0;
   padding-left: 5px;
-  color: #5E35B1;
+  color: #5e35b1;
 }
 .fr-view blockquote blockquote {
-  border-color: #00BCD4;
-  color: #00BCD4;
+  border-color: #00bcd4;
+  color: #00bcd4;
 }
 .fr-view blockquote blockquote blockquote {
-  border-color: #43A047;
-  color: #43A047;
+  border-color: #43a047;
+  color: #43a047;
 }
 .fr-view a.fr-strong {
   font-weight: 700;

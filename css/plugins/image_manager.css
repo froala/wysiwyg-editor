@@ -39,8 +39,11 @@ body.prevent-scroll.fr-mobile {
   background: #ffffff;
   min-width: 300px;
   text-align: center;
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-  border-top: solid 5px #222222;
+  border: 0px;
+  border-top: 5px solid #222222;
   overflow: hidden;
   width: 90%;
   padding-bottom: 10px;
@@ -64,7 +67,10 @@ body.prevent-scroll.fr-mobile {
 }
 .fr-modal .fr-modal-wrapper .fr-modal-title {
   background: #ffffff;
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  border-bottom: 0px;
   overflow: hidden;
   position: absolute;
   width: 100%;
@@ -81,7 +87,7 @@ body.prevent-scroll.fr-mobile {
 }
 .fr-modal .fr-modal-wrapper .fr-modal-title .fr-modal-title-line h4 {
   font-size: 18px;
-  color: #444444;
+  color: #222222;
   padding: 12px 10px;
   margin: 0;
   font-weight: 400;
@@ -95,7 +101,7 @@ body.prevent-scroll.fr-mobile {
   font-size: 16px;
   cursor: pointer;
   line-height: 18px;
-  color: #444444;
+  color: #222222;
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
   box-sizing: content-box;
@@ -143,6 +149,7 @@ body.prevent-scroll.fr-mobile {
   -moz-transition: opacity 0.2s ease 0s, background 0.2s ease 0s;
   -ms-transition: opacity 0.2s ease 0s, background 0.2s ease 0s;
   -o-transition: opacity 0.2s ease 0s, background 0.2s ease 0s;
+  cursor: pointer;
 }
 .fr-modal .fr-modal-wrapper .fr-modal-title .fr-modal-tags a:focus {
   outline: none;
@@ -185,6 +192,8 @@ body.prevent-scroll.fr-mobile {
   position: relative;
   width: 100%;
   display: block;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   border-radius: 2px;
   -moz-border-radius: 2px;
@@ -289,6 +298,8 @@ body.prevent-scroll.fr-mobile {
   -moz-transition: background 0.2s ease 0s, color 0.2s ease 0s;
   -ms-transition: background 0.2s ease 0s, color 0.2s ease 0s;
   -o-transition: background 0.2s ease 0s, color 0.2s ease 0s;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   position: absolute;
   cursor: pointer;
@@ -309,7 +320,7 @@ body.prevent-scroll.fr-mobile {
   -o-transform: translateY(-50%) translateX(25%);
 }
 .fr-modal .fr-modal-wrapper div.fr-scroller div.fr-image-list div.fr-image-container .fr-insert-img {
-  background: #ebebeb;
+  background: #ffffff;
   color: #1e88e5;
   left: 50%;
   -webkit-transform: translateY(-50%) translateX(-125%);
@@ -341,7 +352,7 @@ body.prevent-scroll.fr-mobile {
   color: #ffffff;
 }
 .fr-modal.fr-desktop .fr-modal-wrapper div.fr-scroller div.fr-image-list div.fr-image-container .fr-insert-img:hover {
-  background: #d6d6d6;
+  background: #ebebeb;
 }
 .fr-overlay {
   position: fixed;

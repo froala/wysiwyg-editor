@@ -142,7 +142,7 @@ table th {
 }
 .fr-popup .fr-table-colors > span:hover,
 .fr-popup .fr-table-colors > span.fr-selected-color {
-  outline: 1px solid #444444;
+  outline: 1px solid #222222;
   z-index: 2;
 }
 .fr-popup.fr-desktop .fr-table-size .fr-select-table-size > span > span {

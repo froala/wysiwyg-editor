@@ -79,10 +79,10 @@
   height: 100%;
   width: 0%;
   background: #1e88e5;
-  -webkit-transition: width 0.2s;
-  -moz-transition: width 0.2s;
-  -ms-transition: width 0.2s;
-  -o-transition: width 0.2s;
+  -webkit-transition: width 0.2s ease 0s;
+  -moz-transition: width 0.2s ease 0s;
+  -ms-transition: width 0.2s ease 0s;
+  -o-transition: width 0.2s ease 0s;
 }
 .fr-file-progress-bar-layer > div.fr-loader.fr-indeterminate span {
   width: 30% !important;

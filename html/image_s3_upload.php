@@ -53,7 +53,7 @@
       }
 
       div#editor {
-          width: 80%;
+          width: 81%;
           margin: auto;
           text-align: left;
       }
@@ -62,7 +62,6 @@
 
 <body>
   <div id="editor">
-      <!-- <button id="x">x</button> -->
       <div id='edit' style="margin-top: 30px;">
         <h1>Click and edit</h1>
 
@@ -172,10 +171,6 @@
       .on('froala.image.uploadedToS3', function (e, editor, link, key, response) {
         console.log ('S3 Link:', link);
         console.log ('S3 Key:', key);
-      })
-
-      $('#x').click(function (e) {
-        $('#edit').data('froala.editor').html.set('<p>foo<a href="s">' + $.FroalaEditor.MARKERS + 'bar</a></p>');
       })
     });
   </script>

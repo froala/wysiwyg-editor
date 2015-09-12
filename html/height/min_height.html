@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
@@ -13,7 +14,7 @@
       }
 
       section {
-          width: 80%;
+          width: 81%;
           margin: auto;
           text-align: left;
       }
@@ -22,7 +23,6 @@
 
 <body>
   <section id="editor">
-      <button id="x">x</button>
       <div id='edit' style="margin-top: 30px;">
         <h1>Click and edit</h1>
 
@@ -42,17 +42,13 @@
   </section>
 
   <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  <script src="../../js/froala_editor.js"></script>
+  <script src="../../js/froala_editor.min.js"></script>
 
   <script>
     $(function(){
       $('#edit').froalaEditor({
         enter: $.FroalaEditor.ENTER_P,
         heightMin: 200
-      })
-
-      $('#x').click(function (e) {
-        $('#edit').data('froala.editor').html.set('<p>foo<a href="s">' + $.FroalaEditor.MARKERS + 'bar</a></p>');
       })
     });
   </script>

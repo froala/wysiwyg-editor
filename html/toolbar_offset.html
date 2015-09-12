@@ -25,7 +25,7 @@
       }
 
       div#editor {
-          width: 80%;
+          width: 81%;
           margin: auto;
           text-align: left;
       }
@@ -47,7 +47,6 @@
       <header>
       </header>
 
-      <!-- <button id="x">x</button> -->
       <div id='edit' style="margin-top: 200px;">
         <h1>Click and edit</h1>
 
@@ -146,10 +145,6 @@
       $('#edit').froalaEditor({
         enter: $.FroalaEditor.ENTER_P,
         toolbarStickyOffset: 100
-      })
-
-      $('#x').click(function (e) {
-        $('#edit').data('froala.editor').html.set('<p>foo<a href="s">' + $.FroalaEditor.MARKERS + 'bar</a></p>');
       })
     });
   </script>

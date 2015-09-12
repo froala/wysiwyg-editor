@@ -9,6 +9,8 @@
   content: "";
 }
 .fr-popup .fr-colors-tabs {
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   margin-bottom: 5px;
 }
@@ -17,7 +19,7 @@
   width: 50%;
   cursor: pointer;
   text-align: center;
-  color: #444444;
+  color: #222222;
   font-size: 13px;
   padding: 8px 0;
   position: relative;
@@ -89,7 +91,7 @@
 }
 .fr-popup .fr-color-set > span:hover,
 .fr-popup .fr-color-set > span.fr-selected-color {
-  outline: 1px solid #444444;
+  outline: 1px solid #222222;
   z-index: 2;
 }
 .fr-rtl .fr-popup .fr-colors-tabs .fr-colors-tab.fr-selected-tab[data-param1="text"] ~ [data-param1="background"]:after {
