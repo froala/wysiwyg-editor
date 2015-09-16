@@ -72,7 +72,7 @@
       $(function(){
         $('#edit').froalaEditor({
           enter: $.FroalaEditor.ENTER_P
-        }).on('froala.editor.contentChanged', function (e, editor) {
+        }).on('froalaEditor.contentChanged', function (e, editor) {
           $('#preview').html(editor.html.get());
         })
       });
