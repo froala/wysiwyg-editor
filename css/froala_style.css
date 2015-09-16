@@ -76,6 +76,10 @@
 .fr-view a.fr-green {
   color: green;
 }
+.fr-view span.fr-emoticon {
+  font-weight: normal;
+  font-family: "Apple Color Emoji", "Segoe UI Emoji", "NotoColorEmoji", "Segoe UI Symbol", "Android Emoji", "EmojiSymbols";
+}
 /**
  * Image style.
  */
