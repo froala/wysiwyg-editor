@@ -873,6 +873,7 @@ iframe.fr-iframe {
   margin-top: 10px;
 }
 .fr-popup .fr-checkbox-line label {
+  cursor: pointer;
   margin: 0 5px;
   vertical-align: middle;
 }
