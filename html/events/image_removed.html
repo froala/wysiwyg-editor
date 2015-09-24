@@ -121,6 +121,7 @@
       })
       .on ('froalaEditor.image.removed', function (e, editor, $img) {
         console.log ('image removed', $img);
+        console.log ('image src', $img.attr('src'))
       })
     });
   </script>
