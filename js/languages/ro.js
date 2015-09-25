@@ -37,10 +37,10 @@ $.FroalaEditor.LANGUAGE['ro'] = {
     "Paragraph Format": "Format paragraf",
     "Normal": "Normal",
     "Code": "Cod",
-    "Heading 1": "Antent 1",
-    "Heading 2": "Antent 2",
-    "Heading 3": "Antent 3",
-    "Heading 4": "Antent 4",
+    "Heading 1": "Antet 1",
+    "Heading 2": "Antet 2",
+    "Heading 3": "Antet 3",
+    "Heading 4": "Antet 4",
 
     // Style
     "Paragraph Style": "Stil paragraf",
