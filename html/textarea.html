@@ -56,7 +56,7 @@
   <script>
       $(function(){
         $('#edit')
-          .on('froala.editor.initialized', function (e, editor) {
+          .on('froalaEditor.initialized', function (e, editor) {
             $('#edit').parents('form').on('submit', function () {
               console.log($('#edit').val());
               return false;
