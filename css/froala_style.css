@@ -80,6 +80,20 @@
   font-weight: normal;
   font-family: "Apple Color Emoji", "Segoe UI Emoji", "NotoColorEmoji", "Segoe UI Symbol", "Android Emoji", "EmojiSymbols";
 }
+.text-gray {
+  color: #AAA !important;
+}
+.text-bordered {
+  border-top: solid 1px #222;
+  border-bottom: solid 1px #222;
+  padding: 10px 0;
+}
+.text-spaced {
+  letter-spacing: 1px;
+}
+.text-uppercase {
+  text-transform: uppercase;
+}
 /**
  * Image style.
  */
