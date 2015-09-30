@@ -20,35 +20,26 @@
     }
 
     div#editor {
-      width: 100%;
+      width: 81%;
       margin: auto;
       text-align: left;
-    }
-
-    .col {
-      padding: 10px;
-      float: left;
-      width: calc(50% - 20px);
     }
   </style>
 </head>
 
 <body>
   <div id="editor">
-    <div class="col">
-      <div id='edit' style="margin-top: 30px;">
-        <h1>Click and edit</h1>
+    <div id='edit' style="margin-top: 30px;">
+      <img class="fr-fir fr-dii" src="../img/photo1.jpg" alt="Old Clock" width="200"/>
 
-        <img class="fr-fir fr-dii" src="../img/photo1.jpg" alt="Old Clock" width="300"/>Lorem <strong>ipsum</strong> dolor sit amet, consectetur <strong>adipiscing <em>elit.</em> Donec</strong> facilisis diam in odio iaculis blandit. Nunc eu mauris sit amet purus <strong>viverra</strong><em> gravida</em> ut a dui.<br/>
-        <ul><li>Vivamus nec rutrum augue, pharetra faucibus purus. Maecenas non orci sagittis, vehicula lorem et, dignissim nunc.</li> <li>Suspendisse suscipit, diam non varius facilisis, enim libero tincidunt magna, sit amet iaculis eros libero sit amet eros. Vestibulum a rhoncus felis.</li></ul>
+      <h1>Live Content Preview</h1>
 
-        <a href="http://google.com" title="Aenean sed hendrerit">Aenean sed hendrerit</a> velit. Nullam eu mi dolor. Maecenas et erat risus. Nulla ac auctor diam, non aliquet ante. Fusce ullamcorper, ipsum id tempor lacinia, sem tellus malesuada libero, quis ornare sem massa in orci. Sed dictum dictum tristique. Proin eros turpis, ultricies eu sapien eget, ornare rutrum ipsum. Pellentesque eros nisl, ornare nec ipsum sed, aliquet sollicitudin erat. Nulla tincidunt porta <strong>vehicula.</strong><br/>
-      </div>
+      <p>This example allows you to see when the <a href="https://www.froala.com/wysiwyg-editor/v2.0/docs/events#contentChanged" title="contentChanged event" target="_blank">contentChanged</a> event is triggered and how the rich text editor's content appears outside the editable area.</p>
+
+      <p>Start typing and you can preview the content of the WYSIWYG HTML editor as you type below the editing box.</p>
     </div>
 
-    <div class="col">
-      <div id="preview" class="fr-view"></div>
-    </div>
+    <div id="preview" class="fr-view"></div>
   </div>
 
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
@@ -70,9 +61,7 @@
 
   <script>
       $(function(){
-        $('#edit').froalaEditor({
-          enter: $.FroalaEditor.ENTER_P
-        }).on('froalaEditor.contentChanged', function (e, editor) {
+        $('#edit').froalaEditor().on('froalaEditor.contentChanged', function (e, editor) {
           $('#preview').html(editor.html.get());
         })
       });

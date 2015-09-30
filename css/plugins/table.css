@@ -41,12 +41,11 @@ table th {
 .fr-table-resizer {
   cursor: col-resize;
   position: fixed;
-  z-index: 2;
+  z-index: 3;
   display: none;
-  padding: 0 5px;
 }
 .fr-table-resizer.fr-moving {
-  z-index: 1;
+  z-index: 2;
 }
 .fr-table-resizer div {
   -webkit-opacity: 0;

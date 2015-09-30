@@ -26,24 +26,63 @@
 <body>
   <section id="editor">
       <div id='edit' style="margin-top: 30px;">
-        <h1>Click and edit</h1>
+        <h1>Line Breaker</h1>
 
-        <img class="fr-fir fr-dii" src="../img/photo1.jpg" alt="Old Clock" width="300"/>Lorem <strong>ipsum</strong> dolor sit amet, consectetur <strong>adipiscing <em>elit.</em> Donec</strong> facilisis diam in odio iaculis blandit. Nunc eu mauris sit amet purus <strong>viverra</strong><em> gravida</em> ut a dui.<br/>
-        <ul><li>Vivamus nec rutrum augue, pharetra faucibus purus. Maecenas non orci sagittis, vehicula lorem et, dignissim nunc.</li> <li>Suspendisse suscipit, diam non varius facilisis, enim libero tincidunt magna, sit amet iaculis eros libero sit amet eros. Vestibulum a rhoncus felis.<ol><li>Nam lacus nulla, consequat ac lacus sit amet, accumsan pellentesque risus. Aenean viverra mi at urna mattis fermentum.</li> <li>Curabitur porta metus in tortor elementum, in semper nulla ullamcorper. Vestibulum mattis tempor tortor quis gravida. In rhoncus risus nibh. Nullam condimentum dapibus massa vel fringilla. Sed hendrerit sed est quis facilisis. Ut sit amet nibh sem. Pellentesque imperdiet mollis libero.</li></ol></li></ul>
+        <p>Using the <code>line_breaker.min.js</code> plugin it is possible to insert a new paragraph between HTML elements where the cursor cannot be placed.</p>
+
+        <p>There are 2 options related to the line breaker:</p>
+        <ul>
+          <li><a href="https://www.froala.com/wysiwyg-editor/v2.0/docs/options#lineBreakerTags" title="lineBreakerTags option" target="_blank">lineBreakerTags</a> - the list of HTML tags between which the line-breaker should appear..</li>
+          <li><a href="https://www.froala.com/wysiwyg-editor/v2.0/docs/options#lineBreakerOffset" title="lineBreakerOffset option" target="_blank">lineBreakerOffset</a> - the distance in pixels from the top or bottom of an element at which to show the line-breaker.</li>
+        </ul>
 
         <table style="width: 100%;">
-          <tr><td>asdasd</td><td>asdasdasd</td></tr>
+          <tbody>
+            <tr>
+              <td style="width: 25%;"></td>
+              <td style="width: 25%;">
+                <table style="width: 100%;">
+                  <tbody>
+                    <tr>
+                      <td style="width: 50%;"></td>
+                      <td style="width: 50%;"></td>
+                    </tr>
+                    <tr>
+                      <td style="width: 50%;"></td>
+                      <td style="width: 50%;"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+              <td style="width: 25%;"></td>
+              <td style="width: 25%;"></td>
+            </tr>
+            <tr>
+              <td style="width: 25%;"></td>
+              <td style="width: 25%;"></td>
+              <td style="width: 25%;"></td>
+              <td style="width: 25%;"></td>
+            </tr>
+          </tbody>
         </table>
 
+        <hr/>
+
         <table style="width: 100%;">
-          <tr>
-            <td>asdasd</td>
-            <td>
-              <table style="width: 100%;">
-                <tr><td>asdasd</td><td>asdasdasd</td></tr>
-              </table>
-            </td>
-          </tr>
+          <tbody>
+            <tr>
+              <td style="width: 25%;"></td>
+              <td style="width: 25%;"></td>
+              <td style="width: 25%;"></td>
+              <td style="width: 25%;"></td>
+            </tr>
+            <tr>
+              <td style="width: 25%;"></td>
+              <td style="width: 25%;"></td>
+              <td style="width: 25%;"></td>
+              <td style="width: 25%;"></td>
+            </tr>
+          </tbody>
         </table>
 </div>
   </section>
@@ -55,9 +94,7 @@
 
   <script>
     $(function() {
-      $('#edit').froalaEditor({
-        enter: $.FroalaEditor.ENTER_P
-      })
+      $('#edit').froalaEditor()
     });
   </script>
 </body>
