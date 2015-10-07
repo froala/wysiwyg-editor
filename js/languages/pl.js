@@ -210,7 +210,12 @@ $.FroalaEditor.LANGUAGE['pl'] = {
     "Select All": "Zaznacz wszystko",
 
     // Code view
-    "Code View": "Widok kod"
+    "Code View": "Widok kod",
+
+    // Quote
+    "Quote": "Cytat",
+    "Increase": "Wzrost",
+    "Decrease": "Zmniejszenie"
   },
   direction: "ltr"
 };

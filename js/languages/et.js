@@ -210,7 +210,12 @@ $.FroalaEditor.LANGUAGE['et'] = {
     "Select All": "Vali k\u00f5ik",
 
     // Code view
-    "Code View": "Koodi vaadata"
+    "Code View": "Koodi vaadata",
+
+    // Quote
+    "Quote": "Tsitaat",
+    "Increase": "Suurendama",
+    "Decrease": "V\u00e4henda"
   },
   direction: "ltr"
 };

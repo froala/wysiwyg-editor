@@ -210,7 +210,12 @@ $.FroalaEditor.LANGUAGE['zh_tw'] = {
     "Select All": "\u5168\u9078",
 
     // Code view
-    "Code View": "\u4ee3\u78bc\u8996\u5716"
+    "Code View": "\u4ee3\u78bc\u8996\u5716",
+
+    // Quote
+    "Quote": "\u5831\u50f9",
+    "Increase": "\u52a0",
+    "Decrease": "\u6e1b\u5c11"
   },
   direction: "ltr"
 };

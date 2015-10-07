@@ -210,7 +210,12 @@ $.FroalaEditor.LANGUAGE['sr'] = {
     "Select All": "Izaberi sve",
 
     // Code view
-    "Code View": "Prikaz koda"
+    "Code View": "Prikaz koda",
+
+    // Quote
+    "Quote": "Ponude",
+    "Increase": "Pove\u0107anje",
+    "Decrease": "Smanjivanje"
   },
   direction: "ltr"
 };

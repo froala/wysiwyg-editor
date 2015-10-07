@@ -154,7 +154,12 @@ $.FroalaEditor.LANGUAGE['en_gb'] = {
     "Select All": "Select All",
 
     // Code view
-    "Code View": "Code View"
+    "Code View": "Code View",
+
+    // Quote
+    "Quote": "Quote",
+    "Increase": "Increase",
+    "Decrease": "Decrease"
   },
   direction: "ltr"
 };

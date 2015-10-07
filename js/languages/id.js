@@ -211,6 +211,11 @@ $.FroalaEditor.LANGUAGE['id'] = {
 
     // Code view
     "Code View": "Melihat kode",
+
+    // Quote
+    "Quote": "Kutipan",
+    "Increase": "Meningkat",
+    "Decrease": "Penurunan"
   },
   direction: "ltr"
 };

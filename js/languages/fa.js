@@ -210,7 +210,12 @@ $.FroalaEditor.LANGUAGE['fa'] = {
     "Select All": "\u0627\u0646\u062a\u062e\u0627\u0628 \u0647\u0645\u0647",
 
     // Code view
-    "Code View": "\u0645\u0634\u0627\u0647\u062f\u0647 \u06a9\u062f"
+    "Code View": "\u0645\u0634\u0627\u0647\u062f\u0647 \u06a9\u062f",
+
+    // Quote
+    "Quote": "\u0646\u0642\u0644 \u0642\u0648\u0644",
+    "Increase": "\u0627\u0641\u0632\u0627\u06cc\u0634 \u062f\u0627\u062f\u0646",
+    "Decrease": "\u0646\u0632\u0648\u0644 \u06a9\u0631\u062f\u0646"
   },
   direction: "rtl"
 };

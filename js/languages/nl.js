@@ -210,7 +210,12 @@ $.FroalaEditor.LANGUAGE['nl'] = {
     "Select All": "Alles selecteren",
 
     // Code view
-    "Code View": "Codeweergave"
+    "Code View": "Codeweergave",
+
+    // Quote
+    "Quote": "Citaat",
+    "Increase": "Toenemen",
+    "Decrease": "Daling"
   },
   direction: "ltr"
 };

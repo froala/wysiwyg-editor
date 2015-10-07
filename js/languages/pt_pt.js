@@ -187,7 +187,7 @@ $.FroalaEditor.LANGUAGE['pt_pt'] = {
     "Face with medical mask": "Rosto com m\u00e1scara m\u00e9dica",
 
     // Line breaker
-    "Break": "Quebrar",
+    "Break": "Partir",
 
     // Math
     "Subscript": "Subscrito",
@@ -210,7 +210,12 @@ $.FroalaEditor.LANGUAGE['pt_pt'] = {
     "Select All": "Seleccionar tudo",
 
     // Code view
-    "Code View": "Exibi\u00e7\u00e3o de c\u00f3digo"
+    "Code View": "Exibi\u00e7\u00e3o de c\u00f3digo",
+
+    // Quote
+    "Quote": "Cita\u00e7\u00e3o",
+    "Increase": "Aumentar",
+    "Decrease": "Diminuir"
   },
   direction: "ltr"
 };

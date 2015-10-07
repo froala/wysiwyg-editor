@@ -210,7 +210,12 @@ $.FroalaEditor.LANGUAGE['fi'] = {
     "Select All": "Valitse kaikki",
 
     // Code view
-    "Code View": "Koodi n\u00e4kym\u00e4"
+    "Code View": "Koodi n\u00e4kym\u00e4",
+
+    // Quote
+    "Quote": "Lainaus",
+    "Increase": "Lis\u00e4t\u00e4",
+    "Decrease": "Pienenn\u00e4"
   },
   direction: "ltr"
 };

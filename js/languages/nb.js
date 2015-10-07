@@ -210,7 +210,12 @@ $.FroalaEditor.LANGUAGE['nb'] = {
     "Select All": "Marker alt",
 
     // Code view
-    "Code View": "Kodevisning"
+    "Code View": "Kodevisning",
+
+    // Quote
+    "Quote": "Sitat",
+    "Increase": "\u00d8ke",
+    "Decrease": "Nedgang"
   },
   direction: "ltr"
 };

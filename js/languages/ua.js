@@ -2,7 +2,7 @@
  * Ukrainian
  */
 
-$.FroalaEditor.LANGUAGE['uk'] = {
+$.FroalaEditor.LANGUAGE['ua'] = {
   translation: {
     // Place holder
     "Type something": "\u041d\u0430\u043f\u0438\u0448\u0456\u0442\u044c \u0431\u0443\u0434\u044c-\u0449\u043e",
@@ -210,7 +210,12 @@ $.FroalaEditor.LANGUAGE['uk'] = {
     "Select All": "\u0412\u0438\u0431\u0440\u0430\u0442\u0438 \u0432\u0441\u0435",
 
     // Code view
-    "Code View": "\u041f\u0435\u0440\u0435\u0433\u043b\u044f\u0434 \u043a\u043e\u0434\u0443"
+    "Code View": "\u041f\u0435\u0440\u0435\u0433\u043b\u044f\u0434 \u043a\u043e\u0434\u0443",
+
+    // Quote
+    "Quote": "\u0426\u0438\u0442\u0430\u0442\u0430",
+    "Increase": "\u0417\u0431\u0456\u043b\u044c\u0448\u0438\u0442\u0438",
+    "Decrease": "\u0437\u043d\u0438\u0436\u0435\u043d\u043d\u044f"
   },
   direction: "ltr"
 };

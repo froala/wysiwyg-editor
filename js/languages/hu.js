@@ -210,7 +210,12 @@ $.FroalaEditor.LANGUAGE['hu'] = {
     "Select All": "Minden kijel\u00f6l\u00e9se",
 
     // Code view
-    "Code View": "K\u00f3d n\u00e9zet"
+    "Code View": "K\u00f3d n\u00e9zet",
+
+    // Quote
+    "Quote": "Id\u00e9zet",
+    "Increase": "N\u00f6veked\u00e9s",
+    "Decrease": "Cs\u00f6kkent"
   },
   direction: "ltr"
 };
