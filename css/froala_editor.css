@@ -31,6 +31,14 @@
   -webkit-user-select: none;
   -ms-user-select: none;
 }
+.fr-element [contenteditable="false"] {
+  user-select: none;
+  -o-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
 .fr-box.fr-basic .fr-element {
   padding: 10px;
 }
