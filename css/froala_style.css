@@ -148,6 +148,12 @@ img.fr-bordered {
   text-align: center;
   position: relative;
 }
+.fr-video > * {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  max-width: 100%;
+}
 .fr-video.fr-dvb {
   display: block;
   clear: both;
