@@ -153,6 +153,7 @@ img.fr-bordered {
   -moz-box-sizing: content-box;
   box-sizing: content-box;
   max-width: 100%;
+  border: none;
 }
 .fr-video.fr-dvb {
   display: block;
