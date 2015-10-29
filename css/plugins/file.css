@@ -45,13 +45,13 @@
 .fr-file-upload-layer form input {
   cursor: pointer;
   position: absolute;
-  left: 0px;
   right: 0px;
   top: 0px;
   bottom: 0px;
-  width: 100%;
-  margin: 0px;
+  width: 500%;
   height: 100%;
+  margin: 0px;
+  font-size: 400px;
 }
 .fr-file-progress-bar-layer {
   -webkit-box-sizing: border-box;
