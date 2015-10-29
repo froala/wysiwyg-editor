@@ -37,6 +37,7 @@
   -moz-transition: background 0.2s ease 0s, color 0.2s ease 0s;
   -ms-transition: background 0.2s ease 0s, color 0.2s ease 0s;
   -o-transition: background 0.2s ease 0s, color 0.2s ease 0s;
+  outline: none;
 }
 .fr-line-breaker a:hover {
   background: #222222;
