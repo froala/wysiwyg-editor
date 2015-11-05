@@ -3,7 +3,7 @@
  * License http://editor.froala.com/license
  * Copyright 2014-2015 Froala Labs
  */
-.clearfix:after {
+.clearfix::after {
   clear: both;
   display: block;
   content: "";

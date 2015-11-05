@@ -3,7 +3,7 @@
  * License http://editor.froala.com/license
  * Copyright 2014-2015 Froala Labs
  */
-.clearfix:after {
+.clearfix::after {
   clear: both;
   display: block;
   content: "";
@@ -181,7 +181,7 @@ iframe.fr-iframe {
   border: 0px;
   border-top: 5px solid #222222;
 }
-.fr-toolbar:after {
+.fr-toolbar::after {
   clear: both;
   display: block;
   content: "";
@@ -197,7 +197,7 @@ iframe.fr-iframe {
   position: absolute;
   margin-top: 10px;
 }
-.fr-toolbar.fr-inline.fr-desktop:before {
+.fr-toolbar.fr-inline.fr-desktop::before {
   width: 0;
   height: 0;
   border-left: 5px solid transparent;
@@ -217,7 +217,7 @@ iframe.fr-iframe {
   border-bottom: 5px solid #222222;
   border-top: 0;
 }
-.fr-toolbar.fr-inline.fr-desktop.fr-above:before {
+.fr-toolbar.fr-inline.fr-desktop.fr-above::before {
   top: auto;
   bottom: -9px;
   border-bottom: 0;
@@ -443,14 +443,14 @@ iframe.fr-iframe {
   background: #d6d6d6 !important;
   color: #222222 !important;
 }
-.fr-toolbar .fr-command.fr-btn.fr-dropdown.fr-active:hover:after,
-.fr-popup .fr-command.fr-btn.fr-dropdown.fr-active:hover:after,
-.fr-toolbar .fr-command.fr-btn.fr-dropdown.fr-active:focus:after,
-.fr-popup .fr-command.fr-btn.fr-dropdown.fr-active:focus:after {
+.fr-toolbar .fr-command.fr-btn.fr-dropdown.fr-active:hover::after,
+.fr-popup .fr-command.fr-btn.fr-dropdown.fr-active:hover::after,
+.fr-toolbar .fr-command.fr-btn.fr-dropdown.fr-active:focus::after,
+.fr-popup .fr-command.fr-btn.fr-dropdown.fr-active:focus::after {
   border-top-color: #222222 !important;
 }
-.fr-toolbar .fr-command.fr-btn.fr-dropdown:after,
-.fr-popup .fr-command.fr-btn.fr-dropdown:after {
+.fr-toolbar .fr-command.fr-btn.fr-dropdown::after,
+.fr-popup .fr-command.fr-btn.fr-dropdown::after {
   position: absolute;
   width: 0;
   height: 0;
@@ -466,8 +466,8 @@ iframe.fr-iframe {
   color: #bdbdbd;
   cursor: default;
 }
-.fr-toolbar .fr-command.fr-btn.fr-disabled:after,
-.fr-popup .fr-command.fr-btn.fr-disabled:after {
+.fr-toolbar .fr-command.fr-btn.fr-disabled::after,
+.fr-popup .fr-command.fr-btn.fr-disabled::after {
   border-top-color: #bdbdbd !important;
 }
 .fr-toolbar .fr-command.fr-btn.fr-hidden,
@@ -480,10 +480,10 @@ iframe.fr-iframe {
 .fr-popup.fr-disabled .fr-btn.fr-active {
   color: #bdbdbd;
 }
-.fr-toolbar.fr-disabled .fr-btn.fr-dropdown:after,
-.fr-popup.fr-disabled .fr-btn.fr-dropdown:after,
-.fr-toolbar.fr-disabled .fr-btn.fr-active.fr-dropdown:after,
-.fr-popup.fr-disabled .fr-btn.fr-active.fr-dropdown:after {
+.fr-toolbar.fr-disabled .fr-btn.fr-dropdown::after,
+.fr-popup.fr-disabled .fr-btn.fr-dropdown::after,
+.fr-toolbar.fr-disabled .fr-btn.fr-active.fr-dropdown::after,
+.fr-popup.fr-disabled .fr-btn.fr-active.fr-dropdown::after {
   border-top-color: #bdbdbd;
 }
 .fr-toolbar.fr-rtl .fr-command.fr-btn,
@@ -498,8 +498,8 @@ iframe.fr-iframe {
   color: #222222;
   background: #ebebeb;
 }
-.fr-desktop .fr-command:hover:after,
-.fr-desktop .fr-command:focus:after {
+.fr-desktop .fr-command:hover::after,
+.fr-desktop .fr-command:focus::after {
   border-top-color: #222222 !important;
 }
 .fr-desktop .fr-command.fr-selected {
@@ -742,7 +742,7 @@ iframe.fr-iframe {
   line-height: 0;
   border-bottom: 0px;
 }
-.fr-popup .fr-buttons:after {
+.fr-popup .fr-buttons::after {
   clear: both;
   display: block;
   content: "";
@@ -897,7 +897,7 @@ iframe.fr-iframe {
   left: auto;
   right: 0;
 }
-.fr-popup.fr-desktop:before {
+.fr-popup.fr-desktop::before {
   width: 0;
   height: 0;
   border-left: 5px solid transparent;
@@ -909,7 +909,7 @@ iframe.fr-iframe {
   left: 50%;
   margin-left: -5px;
 }
-.fr-popup.fr-desktop.fr-above:before {
+.fr-popup.fr-desktop.fr-above::before {
   top: auto;
   bottom: -9px;
   border-bottom: 0;

@@ -3,7 +3,7 @@
  * License http://editor.froala.com/license
  * Copyright 2014-2015 Froala Labs
  */
-.clearfix:after {
+.clearfix::after {
   clear: both;
   display: block;
   content: "";
@@ -27,7 +27,7 @@
 .fr-popup .fr-colors-tabs .fr-colors-tab:hover {
   color: #1e88e5;
 }
-.fr-popup .fr-colors-tabs .fr-colors-tab[data-param1="background"]:after {
+.fr-popup .fr-colors-tabs .fr-colors-tab[data-param1="background"]::after {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -43,7 +43,7 @@
 .fr-popup .fr-colors-tabs .fr-colors-tab.fr-selected-tab {
   color: #1e88e5;
 }
-.fr-popup .fr-colors-tabs .fr-colors-tab.fr-selected-tab[data-param1="text"] ~ [data-param1="background"]:after {
+.fr-popup .fr-colors-tabs .fr-colors-tab.fr-selected-tab[data-param1="text"] ~ [data-param1="background"]::after {
   -webkit-transform: translate3d(-100%, 0, 0);
   -moz-transform: translate3d(-100%, 0, 0);
   -ms-transform: translate3d(-100%, 0, 0);
@@ -74,7 +74,7 @@
   cursor: default;
   left: 0;
 }
-.fr-popup .fr-color-set > span.fr-selected-color:after {
+.fr-popup .fr-color-set > span.fr-selected-color::after {
   color: #ffffff;
   content: "\f00c";
   font-family: FontAwesome;
@@ -94,7 +94,7 @@
   outline: 1px solid #222222;
   z-index: 2;
 }
-.fr-rtl .fr-popup .fr-colors-tabs .fr-colors-tab.fr-selected-tab[data-param1="text"] ~ [data-param1="background"]:after {
+.fr-rtl .fr-popup .fr-colors-tabs .fr-colors-tab.fr-selected-tab[data-param1="text"] ~ [data-param1="background"]::after {
   -webkit-transform: translate3d(100%, 0, 0);
   -moz-transform: translate3d(100%, 0, 0);
   -ms-transform: translate3d(100%, 0, 0);

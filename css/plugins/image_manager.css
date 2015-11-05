@@ -3,7 +3,7 @@
  * License http://editor.froala.com/license
  * Copyright 2014-2015 Froala Labs
  */
-.clearfix:after {
+.clearfix::after {
   clear: both;
   display: block;
   content: "";
@@ -80,7 +80,7 @@ body.prevent-scroll.fr-mobile {
   -ms-transition: height 0.2s ease 0s;
   -o-transition: height 0.2s ease 0s;
 }
-.fr-modal .fr-modal-wrapper .fr-modal-title .fr-modal-title-line:after {
+.fr-modal .fr-modal-wrapper .fr-modal-title .fr-modal-title-line::after {
   clear: both;
   display: block;
   content: "";
@@ -166,7 +166,7 @@ body.prevent-scroll.fr-mobile {
   margin: 0 10px;
   padding: 0;
 }
-.fr-modal .fr-modal-wrapper div.fr-scroller div.fr-image-list:after {
+.fr-modal .fr-modal-wrapper div.fr-scroller div.fr-image-list::after {
   clear: both;
   display: block;
   content: "";
@@ -203,13 +203,13 @@ body.prevent-scroll.fr-mobile {
   background-clip: padding-box;
   overflow: hidden;
 }
-.fr-modal .fr-modal-wrapper div.fr-scroller div.fr-image-list div.fr-image-container:first-child {
+.fr-modal .fr-modal-wrapper div.fr-scroller div.fr-image-list div.fr-image-container::first-child {
   margin-top: 10px;
 }
 .fr-modal .fr-modal-wrapper div.fr-scroller div.fr-image-list div.fr-image-container + div {
   margin-top: 10px;
 }
-.fr-modal .fr-modal-wrapper div.fr-scroller div.fr-image-list div.fr-image-container.fr-image-deleting:after {
+.fr-modal .fr-modal-wrapper div.fr-scroller div.fr-image-list div.fr-image-container.fr-image-deleting::after {
   position: absolute;
   -webkit-opacity: 0.5;
   -moz-opacity: 0.5;
@@ -227,7 +227,7 @@ body.prevent-scroll.fr-mobile {
   right: 0;
   z-index: 2;
 }
-.fr-modal .fr-modal-wrapper div.fr-scroller div.fr-image-list div.fr-image-container.fr-image-deleting:before {
+.fr-modal .fr-modal-wrapper div.fr-scroller div.fr-image-list div.fr-image-container.fr-image-deleting::before {
   content: attr(data-deleting);
   color: #ffffff;
   top: 0;
@@ -245,7 +245,7 @@ body.prevent-scroll.fr-mobile {
   background: #cccccc;
   z-index: 1;
 }
-.fr-modal .fr-modal-wrapper div.fr-scroller div.fr-image-list div.fr-image-container.fr-empty:after {
+.fr-modal .fr-modal-wrapper div.fr-scroller div.fr-image-list div.fr-image-container.fr-empty::after {
   position: absolute;
   margin: auto;
   top: 0;

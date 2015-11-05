@@ -3,7 +3,7 @@
  * License http://editor.froala.com/license
  * Copyright 2014-2015 Froala Labs
  */
-.clearfix:after {
+.clearfix::after {
   clear: both;
   display: block;
   content: "";
@@ -171,14 +171,14 @@
   background: #2e2e2e !important;
   color: #ffffff !important;
 }
-.dark-theme.fr-toolbar .fr-command.fr-btn.fr-dropdown.fr-active:hover:after,
-.dark-theme.fr-popup .fr-command.fr-btn.fr-dropdown.fr-active:hover:after,
-.dark-theme.fr-toolbar .fr-command.fr-btn.fr-dropdown.fr-active:focus:after,
-.dark-theme.fr-popup .fr-command.fr-btn.fr-dropdown.fr-active:focus:after {
+.dark-theme.fr-toolbar .fr-command.fr-btn.fr-dropdown.fr-active:hover::after,
+.dark-theme.fr-popup .fr-command.fr-btn.fr-dropdown.fr-active:hover::after,
+.dark-theme.fr-toolbar .fr-command.fr-btn.fr-dropdown.fr-active:focus::after,
+.dark-theme.fr-popup .fr-command.fr-btn.fr-dropdown.fr-active:focus::after {
   border-top-color: #ffffff !important;
 }
-.dark-theme.fr-toolbar .fr-command.fr-btn.fr-dropdown:after,
-.dark-theme.fr-popup .fr-command.fr-btn.fr-dropdown:after {
+.dark-theme.fr-toolbar .fr-command.fr-btn.fr-dropdown::after,
+.dark-theme.fr-popup .fr-command.fr-btn.fr-dropdown::after {
   border-left: 4px solid transparent;
   border-right: 4px solid transparent;
   border-top: 4px solid #ffffff;
@@ -189,8 +189,8 @@
 .dark-theme.fr-popup .fr-command.fr-btn.fr-disabled {
   color: #808080;
 }
-.dark-theme.fr-toolbar .fr-command.fr-btn.fr-disabled:after,
-.dark-theme.fr-popup .fr-command.fr-btn.fr-disabled:after {
+.dark-theme.fr-toolbar .fr-command.fr-btn.fr-disabled::after,
+.dark-theme.fr-popup .fr-command.fr-btn.fr-disabled::after {
   border-top-color: #808080;
 }
 .dark-theme.fr-toolbar.fr-disabled .fr-btn,
@@ -199,10 +199,10 @@
 .dark-theme.fr-popup.fr-disabled .fr-btn.fr-active {
   color: #808080;
 }
-.dark-theme.fr-toolbar.fr-disabled .fr-btn.fr-dropdown:after,
-.dark-theme.fr-popup.fr-disabled .fr-btn.fr-dropdown:after,
-.dark-theme.fr-toolbar.fr-disabled .fr-btn.fr-active.fr-dropdown:after,
-.dark-theme.fr-popup.fr-disabled .fr-btn.fr-active.fr-dropdown:after {
+.dark-theme.fr-toolbar.fr-disabled .fr-btn.fr-dropdown::after,
+.dark-theme.fr-popup.fr-disabled .fr-btn.fr-dropdown::after,
+.dark-theme.fr-toolbar.fr-disabled .fr-btn.fr-active.fr-dropdown::after,
+.dark-theme.fr-popup.fr-disabled .fr-btn.fr-active.fr-dropdown::after {
   border-top-color: #808080;
 }
 .dark-theme.fr-desktop .fr-command:hover,
@@ -210,8 +210,8 @@
   color: #ffffff;
   background: #3d3d3d;
 }
-.dark-theme.fr-desktop .fr-command:hover:after,
-.dark-theme.fr-desktop .fr-command:focus:after {
+.dark-theme.fr-desktop .fr-command:hover::after,
+.dark-theme.fr-desktop .fr-command:focus::after {
   border-top-color: #ffffff !important;
 }
 .dark-theme.fr-desktop .fr-command.fr-selected {
@@ -374,14 +374,14 @@
 .dark-theme.fr-popup .fr-checkbox input:focus + span {
   border-color: #42a5f5;
 }
-.dark-theme.fr-popup.fr-desktop:before {
+.dark-theme.fr-popup.fr-desktop::before {
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
   border-bottom: 5px solid #222222;
   top: -9px;
   margin-left: -5px;
 }
-.dark-theme.fr-popup.fr-desktop.fr-above:before {
+.dark-theme.fr-popup.fr-desktop.fr-above::before {
   bottom: -9px;
   border-top-width: 5px;
 }
@@ -402,7 +402,7 @@
   border: 0px;
   border-top: 5px solid #222222;
 }
-.dark-theme.fr-toolbar.fr-inline.fr-desktop:before {
+.dark-theme.fr-toolbar.fr-inline.fr-desktop::before {
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
   border-bottom: 5px solid #222222;
@@ -415,7 +415,7 @@
   -moz-box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
-.dark-theme.fr-toolbar.fr-inline.fr-desktop.fr-above:before {
+.dark-theme.fr-toolbar.fr-inline.fr-desktop.fr-above::before {
   bottom: -9px;
   border-top-width: 5px;
 }
@@ -496,7 +496,7 @@
 .dark-theme.fr-popup .fr-colors-tabs .fr-colors-tab:hover {
   color: #42a5f5;
 }
-.dark-theme.fr-popup .fr-colors-tabs .fr-colors-tab[data-param1="background"]:after {
+.dark-theme.fr-popup .fr-colors-tabs .fr-colors-tab[data-param1="background"]::after {
   background: #42a5f5;
   -webkit-transition: transform 0.2s ease 0s;
   -moz-transition: transform 0.2s ease 0s;
@@ -506,7 +506,7 @@
 .dark-theme.fr-popup .fr-colors-tabs .fr-colors-tab.fr-selected-tab {
   color: #42a5f5;
 }
-.dark-theme.fr-popup .fr-color-set > span.fr-selected-color:after {
+.dark-theme.fr-popup .fr-color-set > span.fr-selected-color::after {
   color: #ffffff;
 }
 .dark-theme.fr-popup .fr-color-set > span:hover,
@@ -641,7 +641,7 @@
   background: rgba(66, 165, 245, 0.3);
   border: solid 1px #42a5f5;
 }
-.dark-theme.fr-popup .fr-table-colors > span.fr-selected-color:after {
+.dark-theme.fr-popup .fr-table-colors > span.fr-selected-color::after {
   color: #ffffff;
 }
 .dark-theme.fr-popup .fr-table-colors > span:hover,
@@ -767,14 +767,14 @@
   -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
-.dark-theme.fr-modal .fr-modal-wrapper div.fr-scroller div.fr-image-list div.fr-image-container.fr-image-deleting:after {
+.dark-theme.fr-modal .fr-modal-wrapper div.fr-scroller div.fr-image-list div.fr-image-container.fr-image-deleting::after {
   -webkit-transition: opacity 0.2s ease 0s;
   -moz-transition: opacity 0.2s ease 0s;
   -ms-transition: opacity 0.2s ease 0s;
   -o-transition: opacity 0.2s ease 0s;
   background: #000000;
 }
-.dark-theme.fr-modal .fr-modal-wrapper div.fr-scroller div.fr-image-list div.fr-image-container.fr-image-deleting:before {
+.dark-theme.fr-modal .fr-modal-wrapper div.fr-scroller div.fr-image-list div.fr-image-container.fr-image-deleting::before {
   color: #ffffff;
 }
 .dark-theme.fr-modal .fr-modal-wrapper div.fr-scroller div.fr-image-list div.fr-image-container.fr-empty {

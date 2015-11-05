@@ -3,7 +3,7 @@
  * License http://editor.froala.com/license
  * Copyright 2014-2015 Froala Labs
  */
-.clearfix:after {
+.clearfix::after {
   clear: both;
   display: block;
   content: "";
@@ -171,14 +171,14 @@
   background: #d48382 !important;
   color: #ffffff !important;
 }
-.red-theme.fr-toolbar .fr-command.fr-btn.fr-dropdown.fr-active:hover:after,
-.red-theme.fr-popup .fr-command.fr-btn.fr-dropdown.fr-active:hover:after,
-.red-theme.fr-toolbar .fr-command.fr-btn.fr-dropdown.fr-active:focus:after,
-.red-theme.fr-popup .fr-command.fr-btn.fr-dropdown.fr-active:focus:after {
+.red-theme.fr-toolbar .fr-command.fr-btn.fr-dropdown.fr-active:hover::after,
+.red-theme.fr-popup .fr-command.fr-btn.fr-dropdown.fr-active:hover::after,
+.red-theme.fr-toolbar .fr-command.fr-btn.fr-dropdown.fr-active:focus::after,
+.red-theme.fr-popup .fr-command.fr-btn.fr-dropdown.fr-active:focus::after {
   border-top-color: #ffffff !important;
 }
-.red-theme.fr-toolbar .fr-command.fr-btn.fr-dropdown:after,
-.red-theme.fr-popup .fr-command.fr-btn.fr-dropdown:after {
+.red-theme.fr-toolbar .fr-command.fr-btn.fr-dropdown::after,
+.red-theme.fr-popup .fr-command.fr-btn.fr-dropdown::after {
   border-left: 4px solid transparent;
   border-right: 4px solid transparent;
   border-top: 4px solid #ffffff;
@@ -189,8 +189,8 @@
 .red-theme.fr-popup .fr-command.fr-btn.fr-disabled {
   color: #edc9c9;
 }
-.red-theme.fr-toolbar .fr-command.fr-btn.fr-disabled:after,
-.red-theme.fr-popup .fr-command.fr-btn.fr-disabled:after {
+.red-theme.fr-toolbar .fr-command.fr-btn.fr-disabled::after,
+.red-theme.fr-popup .fr-command.fr-btn.fr-disabled::after {
   border-top-color: #edc9c9;
 }
 .red-theme.fr-toolbar.fr-disabled .fr-btn,
@@ -199,10 +199,10 @@
 .red-theme.fr-popup.fr-disabled .fr-btn.fr-active {
   color: #edc9c9;
 }
-.red-theme.fr-toolbar.fr-disabled .fr-btn.fr-dropdown:after,
-.red-theme.fr-popup.fr-disabled .fr-btn.fr-dropdown:after,
-.red-theme.fr-toolbar.fr-disabled .fr-btn.fr-active.fr-dropdown:after,
-.red-theme.fr-popup.fr-disabled .fr-btn.fr-active.fr-dropdown:after {
+.red-theme.fr-toolbar.fr-disabled .fr-btn.fr-dropdown::after,
+.red-theme.fr-popup.fr-disabled .fr-btn.fr-dropdown::after,
+.red-theme.fr-toolbar.fr-disabled .fr-btn.fr-active.fr-dropdown::after,
+.red-theme.fr-popup.fr-disabled .fr-btn.fr-active.fr-dropdown::after {
   border-top-color: #edc9c9;
 }
 .red-theme.fr-desktop .fr-command:hover,
@@ -210,8 +210,8 @@
   color: #ffffff;
   background: #c65a59;
 }
-.red-theme.fr-desktop .fr-command:hover:after,
-.red-theme.fr-desktop .fr-command:focus:after {
+.red-theme.fr-desktop .fr-command:hover::after,
+.red-theme.fr-desktop .fr-command:focus::after {
   border-top-color: #ffffff !important;
 }
 .red-theme.fr-desktop .fr-command.fr-selected {
@@ -374,14 +374,14 @@
 .red-theme.fr-popup .fr-checkbox input:focus + span {
   border-color: #ffca28;
 }
-.red-theme.fr-popup.fr-desktop:before {
+.red-theme.fr-popup.fr-desktop::before {
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
   border-bottom: 5px solid #671b1a;
   top: -9px;
   margin-left: -5px;
 }
-.red-theme.fr-popup.fr-desktop.fr-above:before {
+.red-theme.fr-popup.fr-desktop.fr-above::before {
   bottom: -9px;
   border-top-width: 5px;
 }
@@ -402,7 +402,7 @@
   border: solid 1px #671b1a;
   border-top: 5px solid #671b1a;
 }
-.red-theme.fr-toolbar.fr-inline.fr-desktop:before {
+.red-theme.fr-toolbar.fr-inline.fr-desktop::before {
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
   border-bottom: 5px solid #671b1a;
@@ -415,7 +415,7 @@
   -moz-box-shadow: none;
   box-shadow: none;
 }
-.red-theme.fr-toolbar.fr-inline.fr-desktop.fr-above:before {
+.red-theme.fr-toolbar.fr-inline.fr-desktop.fr-above::before {
   bottom: -9px;
   border-top-width: 5px;
 }
@@ -496,7 +496,7 @@
 .red-theme.fr-popup .fr-colors-tabs .fr-colors-tab:hover {
   color: #ffca28;
 }
-.red-theme.fr-popup .fr-colors-tabs .fr-colors-tab[data-param1="background"]:after {
+.red-theme.fr-popup .fr-colors-tabs .fr-colors-tab[data-param1="background"]::after {
   background: #ffca28;
   -webkit-transition: transform 0.2s ease 0s;
   -moz-transition: transform 0.2s ease 0s;
@@ -506,7 +506,7 @@
 .red-theme.fr-popup .fr-colors-tabs .fr-colors-tab.fr-selected-tab {
   color: #ffca28;
 }
-.red-theme.fr-popup .fr-color-set > span.fr-selected-color:after {
+.red-theme.fr-popup .fr-color-set > span.fr-selected-color::after {
   color: #ffffff;
 }
 .red-theme.fr-popup .fr-color-set > span:hover,
@@ -641,7 +641,7 @@
   background: rgba(255, 202, 40, 0.3);
   border: solid 1px #ffca28;
 }
-.red-theme.fr-popup .fr-table-colors > span.fr-selected-color:after {
+.red-theme.fr-popup .fr-table-colors > span.fr-selected-color::after {
   color: #ffffff;
 }
 .red-theme.fr-popup .fr-table-colors > span:hover,
@@ -767,14 +767,14 @@
   -moz-box-shadow: none;
   box-shadow: none;
 }
-.red-theme.fr-modal .fr-modal-wrapper div.fr-scroller div.fr-image-list div.fr-image-container.fr-image-deleting:after {
+.red-theme.fr-modal .fr-modal-wrapper div.fr-scroller div.fr-image-list div.fr-image-container.fr-image-deleting::after {
   -webkit-transition: opacity 0.2s ease 0s;
   -moz-transition: opacity 0.2s ease 0s;
   -ms-transition: opacity 0.2s ease 0s;
   -o-transition: opacity 0.2s ease 0s;
   background: #000000;
 }
-.red-theme.fr-modal .fr-modal-wrapper div.fr-scroller div.fr-image-list div.fr-image-container.fr-image-deleting:before {
+.red-theme.fr-modal .fr-modal-wrapper div.fr-scroller div.fr-image-list div.fr-image-container.fr-image-deleting::before {
   color: #ffffff;
 }
 .red-theme.fr-modal .fr-modal-wrapper div.fr-scroller div.fr-image-list div.fr-image-container.fr-empty {

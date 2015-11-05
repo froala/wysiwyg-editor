@@ -3,7 +3,7 @@
  * License http://editor.froala.com/license
  * Copyright 2014-2015 Froala Labs
  */
-.clearfix:after {
+.clearfix::after {
   clear: both;
   display: block;
   content: "";
@@ -91,7 +91,7 @@ table th {
   background: rgba(30, 136, 229, 0.3);
   border: solid 1px #1e88e5;
 }
-.fr-popup .fr-table-size .fr-select-table-size .new-line:after {
+.fr-popup .fr-table-size .fr-select-table-size .new-line::after {
   clear: both;
   display: block;
   content: "";
@@ -124,7 +124,7 @@ table th {
   cursor: default;
   left: 0;
 }
-.fr-popup .fr-table-colors > span.fr-selected-color:after {
+.fr-popup .fr-table-colors > span.fr-selected-color::after {
   color: #ffffff;
   content: "\f00c";
   font-family: FontAwesome;

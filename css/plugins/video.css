@@ -3,7 +3,7 @@
  * License http://editor.froala.com/license
  * Copyright 2014-2015 Froala Labs
  */
-.clearfix:after {
+.clearfix::after {
   clear: both;
   display: block;
   content: "";
@@ -16,7 +16,7 @@
   -webkit-user-select: none;
   -ms-user-select: none;
 }
-.fr-element .fr-video:after {
+.fr-element .fr-video::after {
   position: absolute;
   content: '';
   z-index: 1;
@@ -25,6 +25,8 @@
   right: 0;
   bottom: 0;
   cursor: pointer;
+  display: block;
+  background: rgba(0, 0, 0, 0);
 }
 .fr-element .fr-video.fr-active > * {
   z-index: 2;
