@@ -468,7 +468,7 @@ iframe.fr-iframe {
 }
 .fr-toolbar .fr-command.fr-btn.fr-disabled:after,
 .fr-popup .fr-command.fr-btn.fr-disabled:after {
-  border-top-color: #bdbdbd;
+  border-top-color: #bdbdbd !important;
 }
 .fr-toolbar .fr-command.fr-btn.fr-hidden,
 .fr-popup .fr-command.fr-btn.fr-hidden {
