@@ -41,7 +41,7 @@
   overflow: hidden;
   margin: 0 !important;
   padding: 0 !important;
-  width: 100% important;
+  width: 100% !important;
 }
 .fr-file-upload-layer form input {
   cursor: pointer;
