@@ -52,6 +52,7 @@
 .fr-view .fr-file::after {
   position: relative;
   content: "\1F4CE";
+  font-weight: normal;
 }
 .fr-view pre {
   white-space: pre-wrap;
