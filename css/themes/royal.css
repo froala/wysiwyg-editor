@@ -456,6 +456,24 @@
 }
 .royal-theme.fr-box .fr-counter {
   color: #cccccc;
+  background: #ffffff;
+  border-top: solid 1px #ebebeb;
+  border-left: solid 1px #ebebeb;
+  border-radius: 2px 0 0 0;
+  -moz-border-radius: 2px 0 0 0;
+  -webkit-border-radius: 2px 0 0 0;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+.royal-theme.fr-box.fr-rtl .fr-counter {
+  border-right: solid 1px #ebebeb;
+  border-radius: 0 2px 0 0;
+  -moz-border-radius: 0 2px 0 0;
+  -webkit-border-radius: 0 2px 0 0;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
 }
 .royal-theme textarea.fr-code {
   background: #ffffff;

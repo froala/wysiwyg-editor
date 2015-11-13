@@ -456,6 +456,24 @@
 }
 .dark-theme.fr-box .fr-counter {
   color: #aaaaaa;
+  background: #ffffff;
+  border-top: solid 1px #595959;
+  border-left: solid 1px #595959;
+  border-radius: 2px 0 0 0;
+  -moz-border-radius: 2px 0 0 0;
+  -webkit-border-radius: 2px 0 0 0;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+.dark-theme.fr-box.fr-rtl .fr-counter {
+  border-right: solid 1px #595959;
+  border-radius: 0 2px 0 0;
+  -moz-border-radius: 0 2px 0 0;
+  -webkit-border-radius: 0 2px 0 0;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
 }
 .dark-theme textarea.fr-code {
   background: #ffffff;
