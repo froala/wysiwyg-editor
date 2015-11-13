@@ -64,34 +64,34 @@ $.FroalaEditor.LANGUAGE['de'] = {
 
     // Links
     "Insert Link": "Link einf\u00fcgen",
-    "Open in new tab": "In neuer Registerkarte \u00f6ffnen",
+    "Open in new tab": "In neuem Tab \u00f6ffnen",
     "Open Link": "Link \u00d6ffnen",
     "Edit Link": "Link Bearbeiten",
     "Unlink": "Link entfernen",
-    "Choose Link": "W\u00e4hlen Sie Link",
+    "Choose Link": "Einen Link ausw\u00e4hlen",
 
     // Images
     "Insert Image": "Bild Einf\u00fcgen",
     "Upload Image": "Bild Hochladen",
     "By URL": "Von URL",
-    "Browse": "Bl\u00e4ttern",
+    "Browse": "Ordner",
     "Drop image": "Ziehen Sie ein Bild hierhin",
-    "or click": "oder klicken Sie auf",
+    "or click": "oder klicken Sie hier",
     "Manage Images": "Bilder Verwalten",
     "Loading": "Geladen",
     "Deleting": "L\u00f6schen",
-    "Tags": "Etikett",
+    "Tags": "Tags",
     "Are you sure? Image will be deleted.": "Sind Sie sicher? Das Bild wird gel\u00f6scht.",
     "Replace": "Ersetzen",
     "Uploading": "Hochladen",
     "Loading image": "Das Bild wird geladen",
-    "Display": "Anzeige",
-    "Inline": "Im Einklang",
-    "Break Text": "Unterbrechen Text",
+    "Display": "Textausrichtung",
+    "Inline": "Mit Text in einer Zeile",
+    "Break Text": "Text umbrechen",
     "Alternate Text": "Alternativtext",
     "Change Size": "Gr\u00f6\u00dfe \u00e4ndern",
-    "Width": "Weite",
-    "Height": "Gr\u00f6\u00dfe",
+    "Width": "Breite",
+    "Height": "H\u00f6he",
     "Something went wrong. Please try again.": "Etwas ist schief gelaufen. Bitte versuche es erneut.",
 
     // Video
@@ -111,21 +111,21 @@ $.FroalaEditor.LANGUAGE['de'] = {
     "Delete column": "Spalte l\u00f6schen",
     "Cell": "Zelle",
     "Merge cells": "Zelle verschmelzen",
-    "Horizontal split": "Horizontal aufteilung",
-    "Vertical split": "Vertikal aufteilung",
+    "Horizontal split": "Horizontal teilen",
+    "Vertical split": "Vertikal teilen",
     "Cell Background": "Zellenhintergrund",
     "Vertical Align": "Vertikale Ausrichtung",
-    "Top": "Obere",
-    "Middle": "Mitte",
-    "Bottom": "Boden",
+    "Top": "Oben",
+    "Middle": "Zentriert",
+    "Bottom": "Unten",
     "Align Top": "Oben Ausrichten",
-    "Align Middle": "a\Ausrichten Mitte",
+    "Align Middle": "Zentriert ausrichten"",
     "Align Bottom": "Unten Ausrichten",
-    "Cell Style": "Zelle-Stil",
+    "Cell Style": "Zellen-Stil",
 
     // Files
     "Upload File": "Datei Hochladen",
-    "Drop file": "Tropfen Datei",
+    "Drop file": "Ziehen Sie eine Datei hierhin",
 
     // Emoticons
     "Emoticons": "Emoticons",
@@ -187,7 +187,7 @@ $.FroalaEditor.LANGUAGE['de'] = {
     "Face with medical mask": "Gesicht  mit medizinischer Schablone",
 
     // Line breaker
-    "Break": "Unterbrechen",
+    "Break": "Zeilenumbruch",
 
     // Math
     "Subscript": "Tiefgestellt",
@@ -214,7 +214,7 @@ $.FroalaEditor.LANGUAGE['de'] = {
 
     // Quote
     "Quote": "Zitieren",
-    "Increase": "Erh\u00f6hen",
+    "Increase": "Vergr\u00f6\u00dfern",
     "Decrease": "Verkleinern"
   },
   direction: "ltr"
