@@ -8,6 +8,14 @@
   display: block;
   content: "";
 }
+.fr-view {
+  /**
+   * Image style.
+   */
+  /**
+   * Video style
+   */
+}
 .fr-view table {
   border: none;
   border-collapse: collapse;
@@ -29,12 +37,6 @@
 .fr-view table td.fr-thick,
 .fr-view table th.fr-thick {
   border-width: 2px;
-}
-.fr-view img {
-  z-index: 3;
-  position: relative;
-  overflow: auto;
-  cursor: pointer;
 }
 .fr-view hr {
   clear: both;
@@ -84,24 +86,27 @@
   display: inline;
   line-height: 0;
 }
-.text-gray {
+.fr-view .text-gray {
   color: #AAA !important;
 }
-.text-bordered {
+.fr-view .text-bordered {
   border-top: solid 1px #222;
   border-bottom: solid 1px #222;
   padding: 10px 0;
 }
-.text-spaced {
+.fr-view .text-spaced {
   letter-spacing: 1px;
 }
-.text-uppercase {
+.fr-view .text-uppercase {
   text-transform: uppercase;
 }
-/**
- * Image style.
- */
-img.fr-dib {
+.fr-view img {
+  z-index: 3;
+  position: relative;
+  overflow: auto;
+  cursor: pointer;
+}
+.fr-view img.fr-dib {
   margin: auto;
   display: block;
   float: none;
@@ -109,32 +114,32 @@ img.fr-dib {
   margin-top: 5px;
   margin-bottom: 5px;
 }
-img.fr-dib.fr-fil {
+.fr-view img.fr-dib.fr-fil {
   margin: 5px auto 5px 0;
   left: 5px;
 }
-img.fr-dib.fr-fir {
+.fr-view img.fr-dib.fr-fir {
   margin: 5px 0 5px auto;
   right: 5px;
 }
-img.fr-dii {
+.fr-view img.fr-dii {
   margin: auto;
   display: inline-block;
   float: none;
   margin-top: 5px;
   margin-bottom: 5px;
 }
-img.fr-dii.fr-fil {
+.fr-view img.fr-dii.fr-fil {
   margin: 5px 10px 5px 0;
   left: 5px;
   float: left;
 }
-img.fr-dii.fr-fir {
+.fr-view img.fr-dii.fr-fir {
   margin: 5px 0 5px 10px;
   right: 5px;
   float: right;
 }
-img.fr-rounded {
+.fr-view img.fr-rounded {
   border-radius: 100%;
   -moz-border-radius: 100%;
   -webkit-border-radius: 100%;
@@ -142,39 +147,36 @@ img.fr-rounded {
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
 }
-img.fr-bordered {
+.fr-view img.fr-bordered {
   border: solid 10px #CCC;
 }
-/**
- * Video style
- */
-.fr-video {
+.fr-view .fr-video {
   text-align: center;
   position: relative;
 }
-.fr-video > * {
+.fr-view .fr-video > * {
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
   box-sizing: content-box;
   max-width: 100%;
   border: none;
 }
-.fr-video.fr-dvb {
+.fr-view .fr-video.fr-dvb {
   display: block;
   clear: both;
 }
-.fr-video.fr-dvb.fr-fvl {
+.fr-view .fr-video.fr-dvb.fr-fvl {
   text-align: left;
 }
-.fr-video.fr-dvb.fr-fvr {
+.fr-view .fr-video.fr-dvb.fr-fvr {
   text-align: right;
 }
-.fr-video.fr-dvi {
+.fr-view .fr-video.fr-dvi {
   display: inline-block;
 }
-.fr-video.fr-dvi.fr-fvl {
+.fr-view .fr-video.fr-dvi.fr-fvl {
   float: left;
 }
-.fr-video.fr-dvi.fr-fvr {
+.fr-view .fr-video.fr-dvi.fr-fvr {
   float: right;
 }
