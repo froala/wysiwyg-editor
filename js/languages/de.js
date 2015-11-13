@@ -118,9 +118,9 @@ $.FroalaEditor.LANGUAGE['de'] = {
     "Top": "Oben",
     "Middle": "Zentriert",
     "Bottom": "Unten",
-    "Align Top": "Oben Ausrichten",
-    "Align Middle": "Zentriert ausrichten"",
-    "Align Bottom": "Unten Ausrichten",
+    "Align Top": "Oben ausrichten",
+    "Align Middle": "Zentriert ausrichten",
+    "Align Bottom": "Unten ausrichten",
     "Cell Style": "Zellen-Stil",
 
     // Files
