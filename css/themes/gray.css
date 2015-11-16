@@ -648,8 +648,6 @@
 .gray-theme table td.fr-selected-cell,
 .gray-theme table th.fr-selected-cell {
   border: 1px double #0097a7;
-  background: #b5d6fd !important;
-  color: #000000 !important;
 }
 .gray-theme .fr-table-resizer div {
   border-right: 1px solid #0097a7;

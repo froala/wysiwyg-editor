@@ -648,8 +648,6 @@
 .red-theme table td.fr-selected-cell,
 .red-theme table th.fr-selected-cell {
   border: 1px double #ffca28;
-  background: #b5d6fd !important;
-  color: #000000 !important;
 }
 .red-theme .fr-table-resizer div {
   border-right: 1px solid #ffca28;

@@ -648,8 +648,6 @@
 .royal-theme table td.fr-selected-cell,
 .royal-theme table th.fr-selected-cell {
   border: 1px double #553982;
-  background: #b5d6fd !important;
-  color: #000000 !important;
 }
 .royal-theme .fr-table-resizer div {
   border-right: 1px solid #553982;

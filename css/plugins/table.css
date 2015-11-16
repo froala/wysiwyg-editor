@@ -12,8 +12,6 @@
 table td.fr-selected-cell,
 table th.fr-selected-cell {
   border: 1px double #1e88e5;
-  background: #b5d6fd !important;
-  color: #000000 !important;
 }
 table tr {
   user-select: none;
