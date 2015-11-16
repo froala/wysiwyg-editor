@@ -23,11 +23,9 @@
   empty-cells: show;
   max-width: 100%;
 }
-.fr-view table.fr-blue-header th {
-  background: #d5e9fa;
-}
-.fr-view table.fr-blue-header th:not(.fr-selected-cell) {
-  border-color: #79b8f0;
+.fr-view table.fr-dashed-borders td,
+.fr-view table.fr-dashed-borders th {
+  border-style: dashed;
 }
 .fr-view table.fr-alternate-rows tbody tr:nth-child(2n) {
   background: #f5f5f5;
@@ -47,6 +45,9 @@
 .fr-view table td.fr-thick,
 .fr-view table th.fr-thick {
   border-width: 2px;
+}
+.fr-view table th {
+  background: #e6e6e6;
 }
 .fr-view hr {
   clear: both;

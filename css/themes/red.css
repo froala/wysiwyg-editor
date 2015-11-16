@@ -375,14 +375,14 @@
 .red-theme.fr-popup .fr-checkbox input:focus + span {
   border-color: #ffca28;
 }
-.red-theme.fr-popup.fr-desktop::before {
+.red-theme.fr-popup.fr-desktop .fr-arrow {
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
   border-bottom: 5px solid #671b1a;
   top: -9px;
   margin-left: -5px;
 }
-.red-theme.fr-popup.fr-desktop.fr-above::before {
+.red-theme.fr-popup.fr-desktop.fr-above .fr-arrow {
   bottom: -9px;
   border-top-width: 5px;
 }
@@ -403,7 +403,7 @@
   border: solid 1px #671b1a;
   border-top: 5px solid #671b1a;
 }
-.red-theme.fr-toolbar.fr-inline.fr-desktop::before {
+.red-theme.fr-toolbar.fr-inline.fr-desktop .fr-arrow {
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
   border-bottom: 5px solid #671b1a;
@@ -416,7 +416,7 @@
   -moz-box-shadow: none;
   box-shadow: none;
 }
-.red-theme.fr-toolbar.fr-inline.fr-desktop.fr-above::before {
+.red-theme.fr-toolbar.fr-inline.fr-desktop.fr-above .fr-arrow {
   bottom: -9px;
   border-top-width: 5px;
 }
@@ -648,6 +648,8 @@
 .red-theme table td.fr-selected-cell,
 .red-theme table th.fr-selected-cell {
   border: 1px double #ffca28;
+  background: #b5d6fd !important;
+  color: #000000 !important;
 }
 .red-theme .fr-table-resizer div {
   border-right: 1px solid #ffca28;
