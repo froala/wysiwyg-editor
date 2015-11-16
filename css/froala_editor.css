@@ -22,7 +22,7 @@
   -webkit-user-select: auto;
 }
 .fr-element img {
-  max-width: 100%;
+  max-width: calc(100% - (2 * 5px));
 }
 .fr-element.fr-disabled {
   user-select: none;
