@@ -1,6 +1,6 @@
 {
     "name": "froala-wysiwyg-editor",
-    "version": "2.0.0",
+    "version": "2.0.1",
     "description": "A beautiful jQuery WYSIWYG HTML rich text editor. High performance and modern design make it easy to use for developers and loved by users.",
     "main": [
       "css/froala_editor.min.css",
@@ -19,6 +19,7 @@
       "js/froala_editor.min.js",
       "js/plugins/align.min.js",
       "js/plugins/char_counter.min.js",
+      "js/plugins/code_beautifier.min.js",
       "js/plugins/code_view.min.js",
       "js/plugins/colors.min.js",
       "js/plugins/emoticons.min.js",
