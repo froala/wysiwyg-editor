@@ -1,3 +1,9 @@
+/*!
+ * froala_editor v2.0.1 (https://www.froala.com/wysiwyg-editor)
+ * License https://froala.com/wysiwyg-editor/terms
+ * Copyright 2014-2015 Froala Labs
+ */
+
 /**
  * English spoken in Great Britain
  */
