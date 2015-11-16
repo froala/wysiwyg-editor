@@ -78,6 +78,10 @@ iframe.fr-iframe {
   background: #b5d6fd;
   color: #000000;
 }
+.fr-box.fr-rtl .fr-wrapper .fr-placeholder {
+  right: 0;
+  left: auto;
+}
 .fr-box.fr-basic .fr-wrapper {
   background: #ffffff;
   border: 0px;
@@ -86,6 +90,10 @@ iframe.fr-iframe {
 .fr-box.fr-basic .fr-wrapper .fr-placeholder {
   top: 10px;
   left: 10px;
+}
+.fr-box.fr-basic.fr-rtl .fr-wrapper .fr-placeholder {
+  right: 10px;
+  left: auto;
 }
 .fr-box.fr-basic.fr-top .fr-wrapper {
   border-top: 0;
