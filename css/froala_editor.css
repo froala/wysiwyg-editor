@@ -206,17 +206,17 @@ iframe.fr-iframe {
   position: absolute;
   margin-top: 10px;
 }
-.fr-toolbar.fr-inline.fr-desktop::before {
+.fr-toolbar.fr-inline.fr-desktop .fr-arrow {
   width: 0;
   height: 0;
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
   border-bottom: 5px solid #222222;
-  content: '';
   position: absolute;
   top: -9px;
   left: 50%;
   margin-left: -5px;
+  display: inline-block;
 }
 .fr-toolbar.fr-inline.fr-desktop.fr-above {
   margin-top: -10px;
@@ -226,7 +226,7 @@ iframe.fr-iframe {
   border-bottom: 5px solid #222222;
   border-top: 0;
 }
-.fr-toolbar.fr-inline.fr-desktop.fr-above::before {
+.fr-toolbar.fr-inline.fr-desktop.fr-above .fr-arrow {
   top: auto;
   bottom: -9px;
   border-bottom: 0;
@@ -906,19 +906,19 @@ iframe.fr-iframe {
   left: auto;
   right: 0;
 }
-.fr-popup.fr-desktop::before {
+.fr-popup.fr-desktop .fr-arrow {
   width: 0;
   height: 0;
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
   border-bottom: 5px solid #222222;
-  content: '';
   position: absolute;
   top: -9px;
   left: 50%;
   margin-left: -5px;
+  display: inline-block;
 }
-.fr-popup.fr-desktop.fr-above::before {
+.fr-popup.fr-desktop.fr-above .fr-arrow {
   top: auto;
   bottom: -9px;
   border-bottom: 0;
