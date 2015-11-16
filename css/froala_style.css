@@ -96,18 +96,18 @@
   display: inline;
   line-height: 0;
 }
-.fr-view .text-gray {
+.fr-view .fr-text-gray {
   color: #AAA !important;
 }
-.fr-view .text-bordered {
+.fr-view .fr-text-bordered {
   border-top: solid 1px #222;
   border-bottom: solid 1px #222;
   padding: 10px 0;
 }
-.fr-view .text-spaced {
+.fr-view .fr-text-spaced {
   letter-spacing: 1px;
 }
-.fr-view .text-uppercase {
+.fr-view .fr-text-uppercase {
   text-transform: uppercase;
 }
 .fr-view img {
