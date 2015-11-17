@@ -28,7 +28,7 @@
   background: #ebebeb;
   border-color: #1e88e5;
 }
-.fr-file-upload-layer form {
+.fr-file-upload-layer .fr-form {
   -webkit-opacity: 0;
   -moz-opacity: 0;
   opacity: 0;
@@ -44,7 +44,7 @@
   padding: 0 !important;
   width: 100% !important;
 }
-.fr-file-upload-layer form input {
+.fr-file-upload-layer .fr-form input {
   cursor: pointer;
   position: absolute;
   right: 0px;
