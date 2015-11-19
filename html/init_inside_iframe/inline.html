@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../../css/froala_editor.css">
+  <link rel="stylesheet" href="../../css/froala_style.css">
+  <link rel="stylesheet" href="../../css/plugins/code_view.css">
+  <link rel="stylesheet" href="../../css/plugins/colors.css">
+  <link rel="stylesheet" href="../../css/plugins/emoticons.css">
+  <link rel="stylesheet" href="../../css/plugins/image_manager.css">
+  <link rel="stylesheet" href="../../css/plugins/image.css">
+  <link rel="stylesheet" href="../../css/plugins/line_breaker.css">
+  <link rel="stylesheet" href="../../css/plugins/table.css">
+  <link rel="stylesheet" href="../../css/plugins/file.css">
+  <link rel="stylesheet" href="../../css/plugins/char_counter.css">
+  <link rel="stylesheet" href="../../css/plugins/video.css">
+  <link rel="stylesheet" href="../../css/plugins/emoticons.css">
+  <link rel="stylesheet" href="../../css/plugins/fullscreen.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/codemirror.min.css">
+
+  <style>
+      body {
+        text-align: center;
+      }
+
+      section {
+        width: 80%;
+        margin: auto;
+        text-align: left;
+      }
+
+      iframe {
+        width: 100%;
+        height: 400px;
+      }
+  </style>
+</head>
+
+<body>
+  <section id="editor">
+    <iframe id="content" src="content.html">
+      <p>Your browser does not support iframes.</p>
+    </iframe>
+  </section>
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/codemirror.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/mode/xml/xml.min.js"></script>
+  <script type="text/javascript" src="../../js/froala_editor.min.js"></script>
+  <script type="text/javascript" src="../../js/plugins/align.min.js"></script>
+  <script type="text/javascript" src="../../js/plugins/code_beautifier.min.js"></script>
+  <script type="text/javascript" src="../../js/plugins/code_view.min.js"></script>
+  <script type="text/javascript" src="../../js/plugins/colors.min.js"></script>
+  <script type="text/javascript" src="../../js/plugins/emoticons.min.js"></script>
+  <script type="text/javascript" src="../../js/plugins/font_size.min.js"></script>
+  <script type="text/javascript" src="../../js/plugins/font_family.min.js"></script>
+  <script type="text/javascript" src="../../js/plugins/image.min.js"></script>
+  <script type="text/javascript" src="../../js/plugins/image_manager.min.js"></script>
+  <script type="text/javascript" src="../../js/plugins/line_breaker.min.js"></script>
+  <script type="text/javascript" src="../../js/plugins/link.min.js"></script>
+  <script type="text/javascript" src="../../js/plugins/lists.min.js"></script>
+  <script type="text/javascript" src="../../js/plugins/paragraph_format.min.js"></script>
+  <script type="text/javascript" src="../../js/plugins/paragraph_style.min.js"></script>
+  <script type="text/javascript" src="../../js/plugins/video.min.js"></script>
+  <script type="text/javascript" src="../../js/plugins/table.min.js"></script>
+  <script type="text/javascript" src="../../js/plugins/url.min.js"></script>
+  <script type="text/javascript" src="../../js/plugins/emoticons.min.js"></script>
+  <script type="text/javascript" src="../../js/plugins/file.min.js"></script>
+  <script type="text/javascript" src="../../js/plugins/entities.min.js"></script>
+  <script type="text/javascript" src="../../js/plugins/char_counter.min.js"></script>
+  <script type="text/javascript" src="../../js/plugins/inline_style.min.js"></script>
+  <script type="text/javascript" src="../../js/plugins/save.min.js"></script>
+  <script type="text/javascript" src="../../js/plugins/fullscreen.min.js"></script>
+
+  <script>
+    $(function () {
+      // Chrome loading workaround.
+      var timer = setInterval(function () {
+        var iframe = document.getElementById('content');
+        var iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
+
+        // Check if loading is complete
+        if (iframeDoc.readyState == 'complete' || iframeDoc.readyState == 'interactive') {
+          $(iframe).contents().find('#edit').froalaEditor({
+            toolbarInline: true,
+            toolbarButtons: ['bold', 'italic', 'underline', 'strikeThrough', 'color', 'emoticons', '-', 'paragraphFormat', 'align', 'formatOL', 'formatUL', 'indent', 'outdent', '-', 'insertImage', 'insertLink', 'insertFile', 'insertVideo', 'undo', 'redo'],
+            toolbarButtonsMD: null,
+            toolbarButtonsSM: null,
+            toolbarButtonsXS: null,
+            scrollableContainer: $(iframe).contents().find('body')
+          })
+
+          clearInterval(timer);
+          return;
+        }
+      }, 100);
+    })
+  </script>
+</body>
+</html>
