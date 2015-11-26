@@ -160,6 +160,9 @@
 }
 .fr-view img.fr-bordered {
   border: solid 10px #CCC;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
 }
 .fr-view .fr-video {
   text-align: center;
