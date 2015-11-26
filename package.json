@@ -53,5 +53,9 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/froala/wysiwyg-editor"
+  },
+  "dependencies" : {
+    "jquery": ">=1.11.0",
+    "font-awesome": ">=4.4.0"
   }
 }
