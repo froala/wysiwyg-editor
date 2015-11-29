@@ -84,7 +84,7 @@ $.FroalaEditor.LANGUAGE['fr'] = {
     "Drop image": "D\u00e9posez l'image",
     "or click": "ou cliquez",
     "Manage Images": "Gestion des images",
-    "Loading": "En chargeant",
+    "Loading": "Chargement",
     "Deleting": "Suppression",
     "Tags": "\u00c9tiquettes",
     "Are you sure? Image will be deleted.": "Etes-vous s\u00fbr? Image sera supprim\u00e9e.",
