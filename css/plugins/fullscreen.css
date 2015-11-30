@@ -18,6 +18,7 @@ body.fr-fullscreen {
   bottom: 0;
   right: 0;
   z-index: 9990 !important;
+  width: auto !important;
 }
 .fr-box.fr-fullscreen .fr-toolbar.fr-top {
   top: 0 !important;
