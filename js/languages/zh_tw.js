@@ -11,7 +11,7 @@
 $.FroalaEditor.LANGUAGE['zh_tw'] = {
   translation: {
     // Place holder
-    "Type something": "\u8f93\u5165\u4e00\u4e9b\u5185\u5bb9",
+    "Type something": "\u8f38\u5165\u4e00\u4e9b\u5167\u5bb9",
 
     // Basic formatting
     "Bold": "\u7c97\u9ad4",
@@ -25,10 +25,10 @@ $.FroalaEditor.LANGUAGE['zh_tw'] = {
     "Cancel": "\u53d6\u6d88",
     "OK": "\u78ba\u5b9a",
     "Back": "\u5f8c",
-    "Remove": "\u53bb\u6389",
+    "Remove": "\u79fb\u9664",
     "More": "\u66f4\u591a",
     "Update": "\u66f4\u65b0",
-    "Style": "\u98a8\u683c",
+    "Style": "\u6a23\u5f0f",
 
     // Font
     "Font Family": "\u5b57\u9ad4",
@@ -70,68 +70,68 @@ $.FroalaEditor.LANGUAGE['zh_tw'] = {
 
     // Links
     "Insert Link": "\u63d2\u5165\u9023\u7d50",
-    "Open in new tab": "\u5728\u65b0\u6a19\u7c64\u9801\u958b\u555f",
-    "Open Link": "\u6253\u958b\u93c8\u63a5",
-    "Edit Link": "\u7de8\u8f2f\u93c8\u63a5",
+    "Open in new tab": "\u5728\u65b0\u5206\u9801\u958b\u555f",
+    "Open Link": "\u958b\u555f\u9023\u7d50",
+    "Edit Link": "\u7de8\u8f2f\u9023\u7d50",
     "Unlink": "\u79fb\u9664\u9023\u7d50",
     "Choose Link": "\u9078\u64c7\u9023\u7d50",
 
     // Images
     "Insert Image": "\u63d2\u5165\u5716\u7247",
     "Upload Image": "\u4e0a\u50b3\u5716\u7247",
-    "By URL": "\u901a\u904e\u7db2\u5740",
+    "By URL": "\u7db2\u5740\u4e0a\u50b3",
     "Browse": "\u700f\u89bd",
-    "Drop image": "\u5716\u7247\u7e2e\u653e",
+    "Drop image": "\u5716\u7247\u62d6\u66f3",
     "or click": "\u6216\u9ede\u64ca",
-    "Manage Images": "\u7ba1\u7406\u5716\u50cf",
+    "Manage Images": "\u7ba1\u7406\u5716\u7247",
     "Loading": "\u8f09\u5165\u4e2d",
     "Deleting": "\u522a\u9664",
     "Tags": "\u6a19\u7c64",
-    "Are you sure? Image will be deleted.": "\u4f60\u786e\u5b9a\u5417\uff1f\u56fe\u50cf\u5c06\u88ab\u5220\u9664\u3002",
+    "Are you sure? Image will be deleted.": "\u78ba\u5b9a\u522a\u9664\u5716\u7247\uff1f",
     "Replace": "\u66f4\u63db",
     "Uploading": "\u4e0a\u50b3",
-    "Loading image": "\u5c0e\u5165\u5716\u50cf",
+    "Loading image": "\u4e0a\u50b3\u4e2d",
     "Display": "\u986f\u793a",
-    "Inline": "\u4e00\u81f4",
-    "Break Text": "\u65b7\u958b\u6587\u672c",
-    "Alternate Text": "\u5099\u7528\u6587\u672c",
-    "Change Size": "\u5c3a\u5bf8\u8b8a\u5316",
+    "Inline": "\u5d4c\u5165",
+    "Break Text": "\u8207\u6587\u5b57\u5206\u96e2",
+    "Alternate Text": "\u6587\u5b57\u74b0\u7e5e",
+    "Change Size": "\u8abf\u6574\u5927\u5c0f",
     "Width": "\u5bec\u5ea6",
     "Height": "\u9ad8\u5ea6",
-    "Something went wrong. Please try again.": "\u51fa\u4e8b\u4e86\u3002\u8acb\u91cd\u8a66\u3002",
+    "Something went wrong. Please try again.": "\u932f\u8aa4\uff0c\u8acb\u518d\u8a66\u4e00\u6b21\u3002",
 
     // Video
-    "Insert Video": "\u63d2\u5165\u5f71\u97f3",
-    "Embedded Code": "\u5d4c\u5165\u5f0f\u4ee3\u78bc",
+    "Insert Video": "\u63d2\u5165\u5f71\u7247",
+    "Embedded Code": "\u5d4c\u5165\u7a0b\u5f0f\u78bc",
 
     // Tables
     "Insert Table": "\u63d2\u5165\u8868\u683c",
-    "Header": "\u982d",
+    "Header": "\u6a19\u984c",
     "Row": "\u884c",
-    "Insert row above": "\u5728\u4e0a\u65b9\u63d2\u5165",
-    "Insert row below": "\u5728\u4e0b\u65b9\u63d2\u5165",
-    "Delete row": "\u5220\u9664\u884c",
+    "Insert row above": "\u5411\u4e0a\u63d2\u5165\u4e00\u884c",
+    "Insert row below": "\u5411\u4e0b\u63d2\u5165\u4e00\u884c",
+    "Delete row": "\u522a\u9664\u884c",
     "Column": "\u5217",
-    "Insert column before": "\u5728\u5de6\u4fa7\u63d2\u5165",
-    "Insert column after": "\u5728\u53f3\u4fa7\u63d2\u5165",
-    "Delete column": "\u5220\u9664\u5217",
-    "Cell": "\u5355\u5143\u683c",
-    "Merge cells": "\u5408\u4f75\u55ae\u5143\u683c",
+    "Insert column before": "\u5411\u5de6\u63d2\u5165\u4e00\u5217",
+    "Insert column after": "\u5411\u53f3\u63d2\u5165\u4e00\u5217",
+    "Delete column": "\u522a\u9664\u884c",
+    "Cell": "\u5132\u5b58\u683c",
+    "Merge cells": "\u5408\u4f75\u5132\u5b58\u683c",
     "Horizontal split": "\u6c34\u5e73\u5206\u5272",
     "Vertical split": "\u5782\u76f4\u5206\u5272",
-    "Cell Background": "\u55ae\u5143\u683c\u80cc\u666f",
+    "Cell Background": "\u5132\u5b58\u683c\u80cc\u666f",
     "Vertical Align": "\u5782\u76f4\u5c0d\u9f4a",
-    "Top": "\u9802",
-    "Middle": "\u4e2d\u9593",
-    "Bottom": "\u5e95\u90e8",
-    "Align Top": "\u9802\u90e8\u5c0d\u9f4a",
+    "Top": "\u4e0a",
+    "Middle": "\u4e2d",
+    "Bottom": "\u4e0b",
+    "Align Top": "\u5411\u4e0a\u5c0d\u9f4a",
     "Align Middle": "\u4e2d\u9593\u5c0d\u9f4a",
     "Align Bottom": "\u5e95\u90e8\u5c0d\u9f4a",
-    "Cell Style": "\u55ae\u5143\u683c\u6a23\u5f0f",
+    "Cell Style": "\u5132\u5b58\u683c\u6a23\u5f0f",
 
     // Files
     "Upload File": "\u4e0a\u50b3\u6587\u4ef6",
-    "Drop file": "\u6587\u4ef6\u62d6\u653e",
+    "Drop file": "\u6587\u4ef6\u62d6\u66f3",
 
     // Emoticons
     "Emoticons": "\u8868\u60c5",
@@ -193,20 +193,20 @@ $.FroalaEditor.LANGUAGE['zh_tw'] = {
     "Face with medical mask": "\u9762\u5c0d\u91ab\u7642\u53e3\u7f69",
 
     // Line breaker
-    "Break": "\u7834",
+    "Break": "\u63db\u884c",
 
     // Math
     "Subscript": "\u4e0b\u6a19",
     "Superscript": "\u4e0a\u6a19",
 
     // Full screen
-    "Fullscreen": "\u5168\u5c4f",
+    "Fullscreen": "\u5168\u87a2\u5e55",
 
     // Horizontal line
     "Insert Horizontal Line": "\u63d2\u5165\u6c34\u5e73\u7dda",
 
     // Clear formatting
-    "Clear Formatting": "\u683c\u5f0f\u5316\u522a\u9664",
+    "Clear Formatting": "\u6e05\u9664\u683c\u5f0f",
 
     // Undo, redo
     "Undo": "\u5fa9\u539f",
@@ -216,12 +216,12 @@ $.FroalaEditor.LANGUAGE['zh_tw'] = {
     "Select All": "\u5168\u9078",
 
     // Code view
-    "Code View": "\u4ee3\u78bc\u8996\u5716",
+    "Code View": "\u539f\u59cb\u78bc",
 
     // Quote
-    "Quote": "\u5831\u50f9",
-    "Increase": "\u52a0",
-    "Decrease": "\u6e1b\u5c11"
+    "Quote": "\u5f15\u6587",
+    "Increase": "\u7e2e\u6392",
+    "Decrease": "\u53bb\u9664\u7e2e\u6392"
   },
   direction: "ltr"
 };
