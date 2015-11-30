@@ -204,7 +204,7 @@ body.prevent-scroll.fr-mobile {
   background-clip: padding-box;
   overflow: hidden;
 }
-.fr-modal .fr-modal-wrapper div.fr-scroller div.fr-image-list div.fr-image-container::first-child {
+.fr-modal .fr-modal-wrapper div.fr-scroller div.fr-image-list div.fr-image-container:first-child {
   margin-top: 10px;
 }
 .fr-modal .fr-modal-wrapper div.fr-scroller div.fr-image-list div.fr-image-container + div {
