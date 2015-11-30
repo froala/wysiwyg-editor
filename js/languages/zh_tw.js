@@ -70,19 +70,19 @@ $.FroalaEditor.LANGUAGE['zh_tw'] = {
 
     // Links
     "Insert Link": "\u63d2\u5165\u9023\u7d50",
-    "Open in new tab": "\u5f00\u542f\u5728\u65b0\u6807\u7b7e\u9875",
+    "Open in new tab": "\u5728\u65b0\u6a19\u7c64\u9801\u958b\u555f",
     "Open Link": "\u6253\u958b\u93c8\u63a5",
     "Edit Link": "\u7de8\u8f2f\u93c8\u63a5",
     "Unlink": "\u79fb\u9664\u9023\u7d50",
-    "Choose Link": "\u9078\u64c7\u93c8\u63a5",
+    "Choose Link": "\u9078\u64c7\u9023\u7d50",
 
     // Images
     "Insert Image": "\u63d2\u5165\u5716\u7247",
     "Upload Image": "\u4e0a\u50b3\u5716\u7247",
     "By URL": "\u901a\u904e\u7db2\u5740",
     "Browse": "\u700f\u89bd",
-    "Drop image": "\u56fe\u50cf\u62d6\u653e",
-    "or click": "\u6216\u70b9\u51fb",
+    "Drop image": "\u5716\u7247\u7e2e\u653e",
+    "or click": "\u6216\u9ede\u64ca",
     "Manage Images": "\u7ba1\u7406\u5716\u50cf",
     "Loading": "\u8f09\u5165\u4e2d",
     "Deleting": "\u522a\u9664",
