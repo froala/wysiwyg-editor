@@ -46,6 +46,10 @@
 .fr-view table th.fr-thick {
   border-width: 2px;
 }
+.fr-view table td.fr-borderless,
+.fr-view table th.fr-borderless {
+  border: none;
+}
 .fr-view table th {
   background: #e6e6e6;
 }
