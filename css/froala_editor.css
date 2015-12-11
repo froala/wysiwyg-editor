@@ -265,7 +265,7 @@ iframe.fr-iframe {
 }
 .fr-separator {
   background: #ebebeb;
-  display: none;
+  display: block;
   vertical-align: top;
   float: left;
 }
@@ -283,26 +283,6 @@ iframe.fr-iframe {
   width: calc(100% - (2 * 2px));
   margin: 0 2px;
 }
-@media (max-width: 767px) {
-  .fr-separator.fr-visible-xs {
-    display: block;
-  }
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  .fr-separator.fr-visible-sm {
-    display: block;
-  }
-}
-@media (min-width: 992px) and (max-width: 1199px) {
-  .fr-separator.fr-visible-md {
-    display: block;
-  }
-}
-@media (min-width: 1200px) {
-  .fr-separator {
-    display: block;
-  }
-}
 .fr-separator.fr-hidden {
   display: none !important;
 }
@@ -314,26 +294,7 @@ iframe.fr-iframe {
 }
 .fr-toolbar.fr-inline .fr-separator.fr-vs {
   float: none;
-}
-@media (max-width: 767px) {
-  .fr-toolbar.fr-inline .fr-separator.fr-vs.fr-visible-xs {
-    display: inline-block;
-  }
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  .fr-toolbar.fr-inline .fr-separator.fr-vs.fr-visible-sm {
-    display: inline-block;
-  }
-}
-@media (min-width: 992px) and (max-width: 1199px) {
-  .fr-toolbar.fr-inline .fr-separator.fr-vs.fr-visible-md {
-    display: inline-block;
-  }
-}
-@media (min-width: 1200px) {
-  .fr-toolbar.fr-inline .fr-separator.fr-vs {
-    display: inline-block;
-  }
+  display: inline-block;
 }
 .fr-toolbar .fr-command.fr-btn,
 .fr-popup .fr-command.fr-btn {
@@ -343,7 +304,6 @@ iframe.fr-iframe {
   outline: 0;
   border: 0;
   line-height: 1;
-  display: none;
   cursor: pointer;
   text-align: left;
   margin: 0px 2px;
@@ -371,30 +331,6 @@ iframe.fr-iframe {
   -ms-user-select: none;
   float: left;
   padding: 0;
-}
-@media (max-width: 767px) {
-  .fr-toolbar .fr-command.fr-btn.fr-visible-xs,
-  .fr-popup .fr-command.fr-btn.fr-visible-xs {
-    display: inline-block;
-  }
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  .fr-toolbar .fr-command.fr-btn.fr-visible-sm,
-  .fr-popup .fr-command.fr-btn.fr-visible-sm {
-    display: inline-block;
-  }
-}
-@media (min-width: 992px) and (max-width: 1199px) {
-  .fr-toolbar .fr-command.fr-btn.fr-visible-md,
-  .fr-popup .fr-command.fr-btn.fr-visible-md {
-    display: inline-block;
-  }
-}
-@media (min-width: 1200px) {
-  .fr-toolbar .fr-command.fr-btn,
-  .fr-popup .fr-command.fr-btn {
-    display: inline-block;
-  }
 }
 .fr-toolbar .fr-command.fr-btn i,
 .fr-popup .fr-command.fr-btn i {
@@ -935,21 +871,21 @@ iframe.fr-iframe {
 }
 .fr-visibility-helper {
   display: none;
-  margin-left: 0px;
+  margin-left: 0px !important;
 }
 @media (min-width: 768px) {
   .fr-visibility-helper {
-    margin-left: 1px;
+    margin-left: 1px !important;
   }
 }
 @media (min-width: 992px) {
   .fr-visibility-helper {
-    margin-left: 2px;
+    margin-left: 2px !important;
   }
 }
 @media (min-width: 1200px) {
   .fr-visibility-helper {
-    margin-left: 3px;
+    margin-left: 3px !important;
   }
 }
 .fr-opacity-0 {
