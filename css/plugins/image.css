@@ -22,7 +22,7 @@
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
   box-sizing: content-box;
-  z-index: 9999;
+  z-index: 9998;
 }
 .fr-image-resizer.fr-active {
   display: block;
@@ -97,7 +97,7 @@
   left: 0;
   bottom: 0;
   right: 0;
-  z-index: 9998;
+  z-index: 9999;
   display: none;
 }
 .fr-image-upload-layer {
