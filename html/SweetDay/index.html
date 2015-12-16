@@ -86,7 +86,7 @@
     <section class="content-24" style="padding: 50px 0;">
       <div class="container">
         <h1 class="text-large text-thin"><span class="text-normal">SweetDay</span> Bakery</h1>
-        <h3 class="text-light">We exist to delight your senses with carefully baked sweets.</h3>
+        <h3 class="text-light">We exist to delight your <a href="foo">senses</a> with carefully baked sweets.</h3>
         <a class="bg-btn" href="location.html" title="Visit Us">Visit Us</a>
         <a class="bg-btn" href="products.html" title="Products">Menu</a>
         <img alt="Image Title" class="img-responsive img-xs-75 img-sm-50 img-md-25" src="img/macaroon.png"/>
@@ -233,7 +233,11 @@
         enter: $.FroalaEditor.ENTER_BR
       };
 
-      $('.container').find('h1, h2, h3, p, a, img, button, input').froalaEditor(opts);
+      $('.container').find('h1, h2, h3, p, a.bg-btn, img, button, input').froalaEditor(opts);
+
+      window.getHTML = function () {
+        return $('.content-24').html();
+      }
     </script>
   </body>
 </html>
