@@ -21,6 +21,14 @@
   text-align: inherit;
   -webkit-user-select: auto;
 }
+.fr-element a {
+  user-select: auto;
+  -o-user-select: auto;
+  -moz-user-select: auto;
+  -khtml-user-select: auto;
+  -webkit-user-select: auto;
+  -ms-user-select: auto;
+}
 .fr-element img {
   max-width: calc(100% - (2 * 5px));
 }
