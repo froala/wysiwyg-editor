@@ -1,7 +1,7 @@
 /*!
  * froala_editor v2.0.6 (https://www.froala.com/wysiwyg-editor)
  * License https://froala.com/wysiwyg-editor/terms
- * Copyright 2014-2015 Froala Labs
+ * Copyright 2014-2016 Froala Labs
  */
 
 .clearfix::after {
@@ -13,12 +13,15 @@
 .fr-element:focus {
   outline: 0px solid transparent;
 }
+.fr-inline .fr-element {
+  text-align: inherit;
+}
 .fr-element {
   background: transparent;
   color: #000000;
   position: relative;
   z-index: 2;
-  text-align: inherit;
+  text-align: initial;
   -webkit-user-select: auto;
 }
 .fr-element a {
