@@ -12,6 +12,7 @@
 .fr-popup .fr-emoticon {
   display: inline-block;
   font-size: 20px;
+  width: 20px;
   padding: 5px;
   line-height: 1;
   cursor: default;

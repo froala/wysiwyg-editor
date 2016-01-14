@@ -97,6 +97,17 @@
   display: inline;
   line-height: 0;
 }
+.fr-view span.fr-emoticon.fr-emoticon-img {
+  font-size: inherit;
+  height: 1em;
+  width: 1em;
+  min-height: 20px;
+  min-width: 20px;
+  display: inline-block;
+  margin: -0.2em 0.15em 0.2em;
+  line-height: normal;
+  vertical-align: middle;
+}
 .fr-view .fr-text-gray {
   color: #AAA !important;
 }
