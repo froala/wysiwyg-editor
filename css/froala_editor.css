@@ -933,6 +933,7 @@ iframe.fr-iframe {
 .fr-sticky-dummy {
   display: none;
 }
-.fr-sticky-on + .fr-sticky-dummy {
+.fr-sticky-on + .fr-sticky-dummy,
+.fr-sticky-box > .fr-sticky-dummy {
   display: block;
 }
