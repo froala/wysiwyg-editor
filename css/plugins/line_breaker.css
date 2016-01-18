@@ -30,7 +30,7 @@
   width: 24px;
   text-align: center;
   position: absolute;
-  left: 50%;
+  left: calc(50% - (24px / 2));
   top: -12px;
   background: #1e88e5;
   color: #ffffff;
