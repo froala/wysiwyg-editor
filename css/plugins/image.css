@@ -22,7 +22,6 @@
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
   box-sizing: content-box;
-  z-index: 9998;
 }
 .fr-image-resizer.fr-active {
   display: block;
@@ -190,6 +189,12 @@
 }
 .fr-image-size-layer .fr-image-group .fr-input-line + .fr-input-line {
   margin-left: 10px;
+}
+.fr-uploading {
+  -webkit-opacity: 0.4;
+  -moz-opacity: 0.4;
+  opacity: 0.4;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
 }
 @keyframes loading {
   from {

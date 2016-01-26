@@ -9,11 +9,11 @@
   display: block;
   content: "";
 }
-table td.fr-selected-cell,
-table th.fr-selected-cell {
+.fr-element table td.fr-selected-cell,
+.fr-element table th.fr-selected-cell {
   border: 1px double #1e88e5;
 }
-table tr {
+.fr-element table tr {
   user-select: none;
   -o-user-select: none;
   -moz-user-select: none;
@@ -21,8 +21,8 @@ table tr {
   -webkit-user-select: none;
   -ms-user-select: none;
 }
-table td,
-table th {
+.fr-element table td,
+.fr-element table th {
   user-select: text;
   -o-user-select: text;
   -moz-user-select: text;
@@ -30,8 +30,8 @@ table th {
   -webkit-user-select: text;
   -ms-user-select: text;
 }
-.fr-no-selection table td,
-.fr-no-selection table th {
+.fr-element .fr-no-selection table td,
+.fr-element .fr-no-selection table th {
   user-select: none;
   -o-user-select: none;
   -moz-user-select: none;
@@ -148,4 +148,12 @@ table th {
 .fr-popup.fr-desktop .fr-table-size .fr-select-table-size > span > span {
   width: 12px;
   height: 12px;
+}
+.fr-insert-helper {
+  position: fixed;
+  z-index: 9999;
+  white-space: nowrap;
+}
+.fr-insert-helper a.fr-floating-btn {
+  position: absolute;
 }

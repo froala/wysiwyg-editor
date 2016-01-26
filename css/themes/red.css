@@ -628,22 +628,22 @@
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
-  height: 24px;
-  width: 24px;
-  top: -12px;
+  height: 32px;
+  width: 32px;
+  top: -16px;
   background: #ffca28;
-  color: #000000;
+  color: #ffca28;
   -webkit-transition: background 0.2s ease 0s, color 0.2s ease 0s;
   -moz-transition: background 0.2s ease 0s, color 0.2s ease 0s;
   -ms-transition: background 0.2s ease 0s, color 0.2s ease 0s;
   -o-transition: background 0.2s ease 0s, color 0.2s ease 0s;
 }
 .red-theme .fr-line-breaker a:hover {
-  background: #671b1a;
-  color: #ffffff;
+  background: #c65a59;
+  color: #ffca28;
 }
 .red-theme .fr-line-breaker a i {
-  line-height: 24px;
+  line-height: 32px;
 }
 .red-theme table td.fr-selected-cell,
 .red-theme table th.fr-selected-cell {
