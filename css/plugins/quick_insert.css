@@ -11,7 +11,7 @@
 }
 .fr-quick-insert {
   position: fixed;
-  z-index: 9999;
+  z-index: 9998;
   white-space: nowrap;
   padding-right: 5px;
   margin-left: -5px;
