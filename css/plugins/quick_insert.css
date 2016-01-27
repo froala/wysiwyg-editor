@@ -16,10 +16,6 @@
   padding-right: 5px;
   margin-left: -5px;
 }
-.fr-quick-insert.fr-v-center a.floating-button {
-  position: absolute;
-  top: calc(50% - (32px / 2));
-}
 .fr-quick-insert.fr-on a.fr-floating-btn svg {
   -webkit-transform: rotate(135deg);
   -moz-transform: rotate(135deg);
