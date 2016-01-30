@@ -1,40 +1,40 @@
 {
-    "name": "froala-wysiwyg-editor",
-    "description": "A beautiful jQuery WYSIWYG HTML rich text editor. High performance and modern design make it easy to use for developers and loved by users.",
-    "homepage": "https://www.froala.com/wysiwyg-editor",
-    "license": "https://www.froala.com/wysiwyg-editor/pricing",
-    "repository": {
-        "type": "git",
-        "url": "git://github.com/froala/wysiwyg-editor.git"
-    },
-    "keywords": [
-      "froala",
-      "froala-editor",
-      "froala-wysiwyg",
-      "html",
-      "text",
-      "editor",
-      "wysiwyg",
-      "jquery-plugin",
-      "rich editor",
-      "rich text editor",
-      "rte",
-      "javascript",
-      "jquery"
-    ],
-    "moduleType": "globals",
-    "main": [
-      "css/froala_editor.min.css",
-      "css/froala_style.min.css",
-      "js/froala_editor.min.js"
-    ],
-    "ignore": [
-      "html",
-      "img",
-      "package.json"
-    ],
-    "dependencies": {
-      "jquery": ">=1.11.0",
-      "font-awesome": ">=4.4.0"
-    }
+  "name": "froala-wysiwyg-editor",
+  "description": "A beautiful jQuery WYSIWYG HTML rich text editor. High performance and modern design make it easy to use for developers and loved by users.",
+  "homepage": "https://www.froala.com/wysiwyg-editor",
+  "license": "https://www.froala.com/wysiwyg-editor/pricing",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/froala/wysiwyg-editor.git"
+  },
+  "keywords": [
+    "froala",
+    "froala-editor",
+    "froala-wysiwyg",
+    "html",
+    "text",
+    "editor",
+    "wysiwyg",
+    "jquery-plugin",
+    "rich editor",
+    "rich text editor",
+    "rte",
+    "javascript",
+    "jquery"
+  ],
+  "moduleType": "globals",
+  "main": [
+    "css/froala_editor.min.css",
+    "css/froala_style.min.css",
+    "js/froala_editor.min.js"
+  ],
+  "ignore": [
+    "html",
+    "img",
+    "package.json"
+  ],
+  "dependencies": {
+    "jquery": ">=1.11.0",
+    "font-awesome": ">=4.4.0"
+  }
 }
