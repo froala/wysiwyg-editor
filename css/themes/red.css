@@ -458,8 +458,8 @@
 .red-theme.fr-box .fr-counter {
   color: #cccccc;
   background: #ffffff;
-  border-top: solid 1px rgba(255, 255, 255, 0.3);
-  border-left: solid 1px rgba(255, 255, 255, 0.3);
+  border-top: solid 1px #ebebeb;
+  border-left: solid 1px #ebebeb;
   border-radius: 2px 0 0 0;
   -moz-border-radius: 2px 0 0 0;
   -webkit-border-radius: 2px 0 0 0;
@@ -468,7 +468,7 @@
   background-clip: padding-box;
 }
 .red-theme.fr-box.fr-rtl .fr-counter {
-  border-right: solid 1px rgba(255, 255, 255, 0.3);
+  border-right: solid 1px #ebebeb;
   border-radius: 0 2px 0 0;
   -moz-border-radius: 0 2px 0 0;
   -webkit-border-radius: 0 2px 0 0;
