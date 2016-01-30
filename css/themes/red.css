@@ -25,6 +25,40 @@
   border-color: #43a047;
   color: #43a047;
 }
+.red-theme a.fr-floating-btn {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  height: 32px;
+  width: 32px;
+  background: #ffffff;
+  color: #ffca28;
+  -webkit-transition: background 0.2s ease 0s, color 0.2s ease 0s, transform 0.2s ease 0s;
+  -moz-transition: background 0.2s ease 0s, color 0.2s ease 0s, transform 0.2s ease 0s;
+  -ms-transition: background 0.2s ease 0s, color 0.2s ease 0s, transform 0.2s ease 0s;
+  -o-transition: background 0.2s ease 0s, color 0.2s ease 0s, transform 0.2s ease 0s;
+  line-height: 32px;
+  border: solid 1px #cccccc;
+}
+.red-theme a.fr-floating-btn svg {
+  -webkit-transition: transform 0.2s ease 0s;
+  -moz-transition: transform 0.2s ease 0s;
+  -ms-transition: transform 0.2s ease 0s;
+  -o-transition: transform 0.2s ease 0s;
+  fill: #ffca28;
+}
+.red-theme a.fr-floating-btn:hover {
+  background: #ebebeb;
+}
+.red-theme a.fr-floating-btn:hover svg {
+  fill: #ffca28;
+}
+.red-theme .fr-visible a.fr-floating-btn {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+}
 .red-theme img.fr-dib {
   margin-top: 5px;
   margin-bottom: 5px;
@@ -624,26 +658,9 @@
 .red-theme .fr-line-breaker {
   border-top: 1px solid #ffca28;
 }
-.red-theme .fr-line-breaker a {
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-  height: 32px;
-  width: 32px;
+.red-theme .fr-line-breaker a.fr-floating-btn {
+  left: calc(50% - (32px / 2));
   top: -16px;
-  background: #ffca28;
-  color: #ffca28;
-  -webkit-transition: background 0.2s ease 0s, color 0.2s ease 0s;
-  -moz-transition: background 0.2s ease 0s, color 0.2s ease 0s;
-  -ms-transition: background 0.2s ease 0s, color 0.2s ease 0s;
-  -o-transition: background 0.2s ease 0s, color 0.2s ease 0s;
-}
-.red-theme .fr-line-breaker a:hover {
-  background: #c65a59;
-  color: #ffca28;
-}
-.red-theme .fr-line-breaker a i {
-  line-height: 32px;
 }
 .red-theme table td.fr-selected-cell,
 .red-theme table th.fr-selected-cell {
