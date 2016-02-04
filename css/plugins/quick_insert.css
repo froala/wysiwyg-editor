@@ -15,6 +15,9 @@
   white-space: nowrap;
   padding-right: 5px;
   margin-left: -5px;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
 }
 .fr-quick-insert.fr-on a.fr-floating-btn svg {
   -webkit-transform: rotate(135deg);
