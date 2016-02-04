@@ -13,15 +13,14 @@
 .fr-element:focus {
   outline: 0px solid transparent;
 }
-.fr-inline .fr-element {
-  text-align: inherit;
+.fr-basic .fr-element {
+  text-align: initial;
 }
 .fr-element {
   background: transparent;
   color: #000000;
   position: relative;
   z-index: 2;
-  text-align: initial;
   -webkit-user-select: auto;
 }
 .fr-element a {
