@@ -121,7 +121,6 @@ iframe.fr-iframe {
 }
 .fr-wrapper {
   position: relative;
-  overflow: auto;
   z-index: 1;
 }
 .fr-wrapper .fr-placeholder {
