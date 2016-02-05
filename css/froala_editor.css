@@ -123,6 +123,11 @@ iframe.fr-iframe {
   position: relative;
   z-index: 1;
 }
+.fr-wrapper::after {
+  clear: both;
+  display: block;
+  content: "";
+}
 .fr-wrapper .fr-placeholder {
   position: absolute;
   font-size: 12px;
