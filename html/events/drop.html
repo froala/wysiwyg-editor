@@ -32,6 +32,10 @@
         display: inline-block;
         padding: 10px;
       }
+
+      [draggable=true] {
+        -khtml-user-drag: element;
+      }
   </style>
 </head>
 
@@ -116,8 +120,6 @@
   <script type="text/javascript" src="../../js/plugins/emoticons.min.js"></script>
   <script type="text/javascript" src="../../js/plugins/font_size.min.js"></script>
   <script type="text/javascript" src="../../js/plugins/font_family.min.js"></script>
-  <script type="text/javascript" src="../../js/plugins/image.min.js"></script>
-  <script type="text/javascript" src="../../js/plugins/image_manager.min.js"></script>
   <script type="text/javascript" src="../../js/plugins/line_breaker.min.js"></script>
   <script type="text/javascript" src="../../js/plugins/link.min.js"></script>
   <script type="text/javascript" src="../../js/plugins/lists.min.js"></script>
@@ -141,6 +143,16 @@
 
         // Insert HTML.
         editor.html.insert('Element dropped here.')
+
+
+        dropEvent.preventDefault();
+        dropEvent.stopPropagation();
+        return false;
+      })
+
+      // For Firefox to work.
+      $('#dragme').on('dragstart', function (e) {
+        e.originalEvent.dataTransfer.setData('Text', this.id);
       })
     });
   </script>
