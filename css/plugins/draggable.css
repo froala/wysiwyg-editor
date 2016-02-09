@@ -17,7 +17,7 @@
   -moz-opacity: 0.2;
   opacity: 0.2;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-  position: fixed;
+  position: absolute;
   z-index: 9999;
   display: none;
 }
