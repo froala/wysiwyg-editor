@@ -10,13 +10,17 @@
   content: "";
 }
 .fr-drag-helper {
-  width: 30px;
-  background: #d2e7fa;
-  height: 10px;
-  border: solid 1px #1e88e5;
-  margin: 5px 0;
+  background: #1e88e5;
+  height: 2px;
+  margin-top: -1px;
   -webkit-opacity: 0.2;
   -moz-opacity: 0.2;
   opacity: 0.2;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  position: fixed;
+  z-index: 9999;
+  display: none;
+}
+.fr-drag-helper.fr-visible {
+  display: block;
 }
