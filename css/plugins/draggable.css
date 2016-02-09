@@ -24,3 +24,9 @@
 .fr-drag-helper.fr-visible {
   display: block;
 }
+.fr-dragging {
+  -webkit-opacity: 0.4;
+  -moz-opacity: 0.4;
+  opacity: 0.4;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+}
