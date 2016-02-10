@@ -221,7 +221,10 @@ $.FroalaEditor.LANGUAGE['sr'] = {
     // Quote
     "Quote": "Ponude",
     "Increase": "Pove\u0107anje",
-    "Decrease": "Smanjivanje"
+    "Decrease": "Smanjivanje",
+
+    // Quick Insert
+    "Quick Insert": "Brzo umetanje"
   },
   direction: "ltr"
 };

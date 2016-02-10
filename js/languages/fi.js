@@ -221,7 +221,10 @@ $.FroalaEditor.LANGUAGE['fi'] = {
     // Quote
     "Quote": "Lainaus",
     "Increase": "Lis\u00e4t\u00e4",
-    "Decrease": "Pienenn\u00e4"
+    "Decrease": "Pienenn\u00e4",
+
+    // Quick Insert
+    "Quick Insert": "Nopea insertti"
   },
   direction: "ltr"
 };

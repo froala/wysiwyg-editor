@@ -221,7 +221,10 @@ $.FroalaEditor.LANGUAGE['zh_cn'] = {
     // Quote
     "Quote": "\u62a5\u4ef7",
     "Increase": "\u589e\u52a0",
-    "Decrease": "\u51cf\u5c11"
+    "Decrease": "\u51cf\u5c11",
+
+    // Quick Insert
+    "Quick Insert": "\u5feb\u63d2"
   },
   direction: "ltr"
 };

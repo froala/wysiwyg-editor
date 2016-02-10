@@ -221,7 +221,10 @@ $.FroalaEditor.LANGUAGE['sv'] = {
     // Quote
     "Quote": "Citerar",
     "Increase": "\u00d6ka",
-    "Decrease": "Minska"
+    "Decrease": "Minska",
+
+    // Quick Insert
+    "Quick Insert": "Snabb insats"
   },
   direction: "ltr"
 };

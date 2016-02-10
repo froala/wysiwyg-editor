@@ -47,6 +47,10 @@
   -o-transition: transform 0.2s ease 0s;
   fill: #553982;
 }
+.royal-theme a.fr-floating-btn i {
+  font-size: 14px;
+  line-height: 32px;
+}
 .royal-theme a.fr-floating-btn:hover {
   background: #9365b8;
 }

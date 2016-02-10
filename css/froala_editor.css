@@ -93,6 +93,10 @@
   -o-transition: transform 0.2s ease 0s;
   fill: #1e88e5;
 }
+.fr-box a.fr-floating-btn i {
+  font-size: 14px;
+  line-height: 32px;
+}
 .fr-box a.fr-floating-btn.fr-btn + .fr-btn {
   margin-left: 10px;
 }

@@ -221,7 +221,10 @@ $.FroalaEditor.LANGUAGE['ja'] = {
     // Quote
     "Quote": "\u5f15\u7528",
     "Increase": "\u5897\u52a0",
-    "Decrease": "\u6e1b\u5c11"
+    "Decrease": "\u6e1b\u5c11",
+
+    // Quick Insert
+    "Quick Insert": "\u30af\u30a4\u30c3\u30af\u30a4\u30f3\u30b5\u30fc\u30c8"
   },
   direction: "ltr"
 };

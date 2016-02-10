@@ -221,7 +221,10 @@ $.FroalaEditor.LANGUAGE['ko'] = {
     // Quote
     "Quote": "\uc778\uc6a9",
     "Increase": "\uc99d\uac00",
-    "Decrease": "\uac10\uc18c"
+    "Decrease": "\uac10\uc18c",
+
+    // Quick Insert
+    "Quick Insert": "\ube60\ub978 \uc0bd\uc785"
   },
   direction: "ltr"
 };

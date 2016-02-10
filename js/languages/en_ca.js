@@ -165,7 +165,10 @@ $.FroalaEditor.LANGUAGE['en_ca'] = {
     // Quote
     "Quote": "Quote",
     "Increase": "Increase",
-    "Decrease": "Decrease"
+    "Decrease": "Decrease",
+
+    // Quick Insert
+    "Quick Insert": "Quick Insert"
   },
   direction: "ltr"
 };

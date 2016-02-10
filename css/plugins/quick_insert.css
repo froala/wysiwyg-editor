@@ -28,20 +28,12 @@
 .fr-qi-helper {
   position: absolute;
   z-index: 9998;
-  padding-left: 5px;
+  padding-left: 10px;
 }
-.fr-qi-helper a {
-  background: #ffffff;
-  height: 37px;
-  width: 38px;
-  -webkit-transition: background 0.2s ease 0s, color 0.2s ease 0s, transform 0.2s ease 0s, opacity 0.2s ease 0s;
-  -moz-transition: background 0.2s ease 0s, color 0.2s ease 0s, transform 0.2s ease 0s, opacity 0.2s ease 0s;
-  -ms-transition: background 0.2s ease 0s, color 0.2s ease 0s, transform 0.2s ease 0s, opacity 0.2s ease 0s;
-  -o-transition: background 0.2s ease 0s, color 0.2s ease 0s, transform 0.2s ease 0s, opacity 0.2s ease 0s;
-  outline: none;
-  display: inline-block;
+.fr-qi-helper a.fr-btn.fr-floating-btn {
   text-align: center;
-  color: #777;
+  display: inline-block;
+  color: #222222;
   -webkit-opacity: 0;
   -moz-opacity: 0;
   opacity: 0;
@@ -51,11 +43,7 @@
   -ms-transform: scale(0);
   -o-transform: scale(0);
 }
-.fr-qi-helper a:hover {
-  color: #1e88e5;
-  cursor: pointer;
-}
-.fr-qi-helper a.fr-size-1 {
+.fr-qi-helper a.fr-btn.fr-floating-btn.fr-size-1 {
   -webkit-opacity: 1;
   -moz-opacity: 1;
   opacity: 1;
@@ -64,9 +52,4 @@
   -moz-transform: scale(1);
   -ms-transform: scale(1);
   -o-transform: scale(1);
-}
-.fr-qi-helper a i {
-  font-size: 18px;
-  margin: 8.5px 8.5px 8.5px 0;
-  line-height: 1;
 }

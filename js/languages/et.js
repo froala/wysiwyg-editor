@@ -221,7 +221,10 @@ $.FroalaEditor.LANGUAGE['et'] = {
     // Quote
     "Quote": "Tsitaat",
     "Increase": "Suurendama",
-    "Decrease": "V\u00e4henda"
+    "Decrease": "V\u00e4henda",
+
+    // Quick Insert
+    "Quick Insert": "Kiire sisestada"
   },
   direction: "ltr"
 };

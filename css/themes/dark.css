@@ -47,6 +47,10 @@
   -o-transition: transform 0.2s ease 0s;
   fill: #42a5f5;
 }
+.dark-theme a.fr-floating-btn i {
+  font-size: 14px;
+  line-height: 32px;
+}
 .dark-theme a.fr-floating-btn:hover {
   background: #3d3d3d;
 }

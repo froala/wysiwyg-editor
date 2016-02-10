@@ -221,7 +221,10 @@ $.FroalaEditor.LANGUAGE['fr'] = {
     // Quote
     "Quote": "Citer",
     "Increase": "Augmentation",
-    "Decrease": "Diminution"
+    "Decrease": "Diminution",
+
+    // Quick Insert
+    "Quick Insert": "Ins\u00e9rez rapide"
   },
   direction: "ltr"
 };

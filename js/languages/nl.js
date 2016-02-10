@@ -221,7 +221,10 @@ $.FroalaEditor.LANGUAGE['nl'] = {
     // Quote
     "Quote": "Citaat",
     "Increase": "Toenemen",
-    "Decrease": "Daling"
+    "Decrease": "Daling",
+
+    // Quick Insert
+    "Quick Insert": "Snel invoegen"
   },
   direction: "ltr"
 };

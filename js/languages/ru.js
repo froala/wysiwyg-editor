@@ -221,7 +221,10 @@ $.FroalaEditor.LANGUAGE['ru'] = {
     // Quote
     "Quote": "\u0446\u0438\u0442\u0430\u0442\u0430",
     "Increase": "\u0423\u0432\u0435\u043b\u0438\u0447\u0435\u043d\u0438\u0435",
-    "Decrease": "\u0421\u043d\u0438\u0436\u0435\u043d\u0438\u0435"
+    "Decrease": "\u0421\u043d\u0438\u0436\u0435\u043d\u0438\u0435",
+
+    // Quick Insert
+    "Quick Insert": "\u0411\u044b\u0441\u0442\u0440\u044b\u0439 \u0432\u0441\u0442\u0430\u0432\u043a\u0430"
   },
   direction: "ltr"
 };

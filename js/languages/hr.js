@@ -223,7 +223,10 @@ $.FroalaEditor.LANGUAGE['hr'] = {
     // Quote
     "Quote": "Citat",
     "Increase": "Pove\u0107aj",
-    "Decrease": "Smanji"
+    "Decrease": "Smanji",
+
+    // Quick Insert
+    "Quick Insert": "Brzo umetak"
   },
   direction: "ltr"
 };

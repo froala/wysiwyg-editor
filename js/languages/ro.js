@@ -222,7 +222,10 @@ $.FroalaEditor.LANGUAGE['ro'] = {
     // Quote
     "Quote": "Citat",
     "Increase": "Indenteaz\u0103",
-    "Decrease": "De-indenteaz\u0103"
+    "Decrease": "De-indenteaz\u0103",
+
+    // Quick Insert
+    "Quick Insert": "Inserare rapid\u0103"
   },
   direction: "ltr"
 };

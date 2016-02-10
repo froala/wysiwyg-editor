@@ -221,7 +221,10 @@ $.FroalaEditor.LANGUAGE['id'] = {
     // Quote
     "Quote": "Kutipan",
     "Increase": "Meningkat",
-    "Decrease": "Penurunan"
+    "Decrease": "Penurunan",
+
+    // Quick Insert
+    "Quick Insert": "Memasukkan cepat"
   },
   direction: "ltr"
 };
