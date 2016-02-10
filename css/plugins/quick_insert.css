@@ -27,7 +27,7 @@
 }
 .fr-qi-helper {
   position: absolute;
-  z-index: 9998;
+  z-index: 3;
   padding-left: 10px;
 }
 .fr-qi-helper a.fr-btn.fr-floating-btn {
