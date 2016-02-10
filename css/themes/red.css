@@ -107,11 +107,9 @@
   -ms-transition: opacity 0.2s ease 0s;
   -o-transition: opacity 0.2s ease 0s;
 }
-.red-theme .fr-element {
-  color: #000000;
-}
 .red-theme.fr-box.fr-basic .fr-element {
   padding: 10px;
+  color: #000000;
 }
 .red-theme .fr-wrapper .fr-placeholder {
   font-size: 12px;

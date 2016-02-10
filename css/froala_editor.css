@@ -15,10 +15,11 @@
 }
 .fr-basic .fr-element {
   text-align: initial;
+  color: #000000;
+  padding: 10px;
 }
 .fr-element {
   background: transparent;
-  color: #000000;
   position: relative;
   z-index: 2;
   -webkit-user-select: auto;
@@ -49,9 +50,6 @@
   -khtml-user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none;
-}
-.fr-box.fr-basic .fr-element {
-  padding: 10px;
 }
 .fr-box a.fr-floating-btn {
   -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
