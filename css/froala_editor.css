@@ -17,6 +17,9 @@
   text-align: initial;
   color: #000000;
   padding: 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 .fr-element {
   background: transparent;
