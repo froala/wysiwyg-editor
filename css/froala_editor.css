@@ -25,6 +25,7 @@
   background: transparent;
   position: relative;
   z-index: 2;
+  overflow-x: auto;
   -webkit-user-select: auto;
 }
 .fr-element a {
