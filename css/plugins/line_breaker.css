@@ -16,6 +16,9 @@
   z-index: 2;
   display: none;
 }
+.fr-line-breaker.fr-visible {
+  display: block;
+}
 .fr-line-breaker a.fr-floating-btn {
   position: absolute;
   left: calc(50% - (32px / 2));

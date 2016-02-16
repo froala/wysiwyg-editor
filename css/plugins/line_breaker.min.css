@@ -4,4 +4,4 @@
  * Copyright 2014-2016 Froala Labs
  */
 
-.clearfix::after{clear:both;display:block;content:""}.fr-line-breaker{cursor:text;border-top:1px solid #1e88e5;position:fixed;z-index:2;display:none}.fr-line-breaker a.fr-floating-btn{position:absolute;left:calc(50% - (32px / 2));top:-16px}
+.clearfix::after{clear:both;display:block;content:""}.fr-line-breaker{cursor:text;border-top:1px solid #1e88e5;position:fixed;z-index:2;display:none}.fr-line-breaker.fr-visible{display:block}.fr-line-breaker a.fr-floating-btn{position:absolute;left:calc(50% - (32px / 2));top:-16px}
