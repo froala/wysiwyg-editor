@@ -8,7 +8,7 @@
  * Swedish
  */
 
-$.FroalaEditor.LANGUAGE['sv'] = {
+$.FE.LANGUAGE['sv'] = {
   translation: {
     // Place holder
     "Type something": "Ange n\u00e5got",

@@ -8,7 +8,7 @@
  * Traditional Chinese spoken in Taiwan.
  */
 
-$.FroalaEditor.LANGUAGE['zh_tw'] = {
+$.FE.LANGUAGE['zh_tw'] = {
   translation: {
     // Place holder
     "Type something": "\u8f38\u5165\u4e00\u4e9b\u5167\u5bb9",

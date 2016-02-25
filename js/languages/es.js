@@ -8,7 +8,7 @@
  * Spanish
  */
 
-$.FroalaEditor.LANGUAGE['es'] = {
+$.FE.LANGUAGE['es'] = {
   translation: {
     // Place holder
     "Type something": "Escriba algo",

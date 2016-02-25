@@ -8,7 +8,7 @@
  * Arabic
  */
 
-$.FroalaEditor.LANGUAGE['ar'] = {
+$.FE.LANGUAGE['ar'] = {
   translation: {
     // Place holder
     "Type something": "\u0627\u0643\u062a\u0628 \u0634\u064a\u0626\u0627",

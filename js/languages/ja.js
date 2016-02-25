@@ -8,7 +8,7 @@
  * Japanese
  */
 
-$.FroalaEditor.LANGUAGE['ja'] = {
+$.FE.LANGUAGE['ja'] = {
   translation: {
     // Place holder
     "Type something": "\u4f55\u304b\u5165\u529b",

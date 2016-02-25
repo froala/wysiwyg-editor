@@ -8,7 +8,7 @@
  * Romanian
  */
 
-$.FroalaEditor.LANGUAGE['ro'] = {
+$.FE.LANGUAGE['ro'] = {
   translation: {
     // Place holder
     "Type something": "Tasteaz\u0103 ceva",

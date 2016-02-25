@@ -8,7 +8,7 @@
  * Norwegian
  */
 
-$.FroalaEditor.LANGUAGE['nb'] = {
+$.FE.LANGUAGE['nb'] = {
   translation: {
     // Place holder
     "Type something": "Skriv noe",

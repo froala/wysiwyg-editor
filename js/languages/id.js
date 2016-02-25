@@ -8,7 +8,7 @@
  * Indonesian
  */
 
-$.FroalaEditor.LANGUAGE['id'] = {
+$.FE.LANGUAGE['id'] = {
   translation: {
     // Place holder
     "Type something": "Ketik sesuatu",

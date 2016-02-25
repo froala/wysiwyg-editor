@@ -8,7 +8,7 @@
  * Portuguese spoken in Portugal
  */
 
-$.FroalaEditor.LANGUAGE['pt_pt'] = {
+$.FE.LANGUAGE['pt_pt'] = {
   translation: {
     // Place holder
     "Type something": "Digite algo",

@@ -8,7 +8,7 @@
  * Korean
  */
 
-$.FroalaEditor.LANGUAGE['ko'] = {
+$.FE.LANGUAGE['ko'] = {
   translation: {
     // Place holder
     "Type something": "\ub0b4\uc6a9\uc744 \uc785\ub825\ud558\uc138\uc694",

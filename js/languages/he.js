@@ -8,7 +8,7 @@
  * Hebrew
  */
 
-$.FroalaEditor.LANGUAGE['he'] = {
+$.FE.LANGUAGE['he'] = {
   translation: {
     // Place holder
     "Type something": "\u05d4\u05e7\u05dc\u05d3 \u05db\u05d0\u05df",

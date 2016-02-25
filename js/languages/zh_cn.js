@@ -8,7 +8,7 @@
  * Simplified Chinese spoken in China.
  */
 
-$.FroalaEditor.LANGUAGE['zh_cn'] = {
+$.FE.LANGUAGE['zh_cn'] = {
   translation: {
     // Place holder
     "Type something": "\u8f93\u5165\u4e00\u4e9b\u5185\u5bb9",

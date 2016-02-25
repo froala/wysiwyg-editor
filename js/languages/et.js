@@ -8,7 +8,7 @@
  * Estonian
  */
 
-$.FroalaEditor.LANGUAGE['et'] = {
+$.FE.LANGUAGE['et'] = {
   translation: {
     // Place holder
     "Type something": "Kirjuta midagi",

@@ -8,7 +8,7 @@
  * English spoken in Canada
  */
 
-$.FroalaEditor.LANGUAGE['en_ca'] = {
+$.FE.LANGUAGE['en_ca'] = {
   translation: {
     // Place holder
     "Type something": "Type something",

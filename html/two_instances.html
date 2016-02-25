@@ -18,6 +18,7 @@
   <link rel="stylesheet" href="../css/plugins/video.css">
   <link rel="stylesheet" href="../css/plugins/fullscreen.css">
   <link rel="stylesheet" href="../css/plugins/file.css">
+  <link rel="stylesheet" href="../css/plugins/quick_insert.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/codemirror.min.css">
 
   <style>
@@ -46,6 +47,12 @@
     </div>
 
     <div id='edit' style="margin-top: 30px;">
+      <img class="fr-fir fr-dii" src="../img/photo1.jpg" alt="Old Clock" width="150"/>
+      <h3>This is the second editor instance</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis diam in odio iaculis blandit. Nunc eu mauris sit amet purus viverra gravida ut a dui.</p>
+    </div>
+
+    <div id='edit3' style="margin-top: 30px;">
       <img class="fr-fir fr-dii" src="../img/photo1.jpg" alt="Old Clock" width="150"/>
       <h3>This is the second editor instance</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis diam in odio iaculis blandit. Nunc eu mauris sit amet purus viverra gravida ut a dui.</p>
@@ -83,16 +90,13 @@
   <script type="text/javascript" src="../js/plugins/save.min.js"></script>
   <script type="text/javascript" src="../js/plugins/fullscreen.min.js"></script>
   <script type="text/javascript" src="../js/plugins/quote.min.js"></script>
+  <script type="text/javascript" src="../js/plugins/quick_insert.min.js"></script>
 
   <script>
     $(function(){
-      $('#edit').froalaEditor({
-        zIndex: 4000
-      })
+      $('#edit, #edit1').froalaEditor({});
 
-      $('#edit1').froalaEditor({
-        zIndex: 4001
-      })
+      $('#edit3').froalaEditor({});
     });
   </script>
 </body>

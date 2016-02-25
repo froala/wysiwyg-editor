@@ -8,7 +8,7 @@
  * Finnish
  */
 
-$.FroalaEditor.LANGUAGE['fi'] = {
+$.FE.LANGUAGE['fi'] = {
   translation: {
     // Place holder
     "Type something": "Kirjoita jotain",

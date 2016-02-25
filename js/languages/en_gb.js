@@ -8,7 +8,7 @@
  * English spoken in Great Britain
  */
 
-$.FroalaEditor.LANGUAGE['en_gb'] = {
+$.FE.LANGUAGE['en_gb'] = {
   translation: {
     // Place holder
     "Type something": "Type something",

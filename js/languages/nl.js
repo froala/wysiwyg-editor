@@ -8,7 +8,7 @@
  * Dutch
  */
 
-$.FroalaEditor.LANGUAGE['nl'] = {
+$.FE.LANGUAGE['nl'] = {
   translation: {
     // Place holder
     "Type something": "Typ iets",

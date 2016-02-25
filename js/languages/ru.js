@@ -8,7 +8,7 @@
  * Russian
  */
 
-$.FroalaEditor.LANGUAGE['ru'] = {
+$.FE.LANGUAGE['ru'] = {
   translation: {
     // Place holder
     "Type something": "\u041d\u0430\u043f\u0438\u0448\u0438\u0442\u0435 \u0447\u0442\u043e\u002d\u043d\u0438\u0431\u0443\u0434\u044c",

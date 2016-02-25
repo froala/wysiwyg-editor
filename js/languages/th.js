@@ -8,7 +8,7 @@
  * Thai
  */
 
-$.FroalaEditor.LANGUAGE['th'] = {
+$.FE.LANGUAGE['th'] = {
   translation: {
     // Place holder
     "Type something": "\u0e1e\u0e34\u0e21\u0e1e\u0e4c\u0e1a\u0e32\u0e07\u0e2a\u0e34\u0e48\u0e07\u0e1a\u0e32\u0e07\u0e2d\u0e22\u0e48\u0e32\u0e07",

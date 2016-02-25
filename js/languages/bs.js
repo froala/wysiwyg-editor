@@ -8,7 +8,7 @@
  * Bosnian
  */
 
-$.FroalaEditor.LANGUAGE['bs'] = {
+$.FE.LANGUAGE['bs'] = {
   translation: {
     // Place holder
     "Type something": "Ukucajte ne\u0161tp",

@@ -8,7 +8,7 @@
  * Czech
  */
 
-$.FroalaEditor.LANGUAGE['cs'] = {
+$.FE.LANGUAGE['cs'] = {
   translation: {
     // Place holder
     "Type something": "Napi\u0161te n\u011bco",

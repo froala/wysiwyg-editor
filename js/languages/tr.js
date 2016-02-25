@@ -8,7 +8,7 @@
  * Turkish
  */
 
-$.FroalaEditor.LANGUAGE['tr'] = {
+$.FE.LANGUAGE['tr'] = {
   translation: {
     // Place holder
     "Type something": "Bir \u015fey yaz\u0131n",

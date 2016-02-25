@@ -8,7 +8,7 @@
  * Hungarian
  */
 
-$.FroalaEditor.LANGUAGE['hu'] = {
+$.FE.LANGUAGE['hu'] = {
   translation: {
     // Place holder
     "Type something": "T\u00edpus valami",

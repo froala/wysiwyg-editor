@@ -8,7 +8,7 @@
  * German
  */
 
-$.FroalaEditor.LANGUAGE['de'] = {
+$.FE.LANGUAGE['de'] = {
   translation: {
     // Place holder
     "Type something": "Schreiben Sie etwas",

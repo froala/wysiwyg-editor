@@ -8,7 +8,7 @@
  * Serbian (Latin)
  */
 
-$.FroalaEditor.LANGUAGE['sr'] = {
+$.FE.LANGUAGE['sr'] = {
   translation: {
     // Place holder
     "Type something": "Ukucajte ne\u0161tp",
