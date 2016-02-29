@@ -85,12 +85,6 @@
   border-color: #43a047;
   color: #43a047;
 }
-.fr-view a.fr-strong {
-  font-weight: 700;
-}
-.fr-view a.fr-green {
-  color: green;
-}
 .fr-view span.fr-emoticon {
   font-weight: normal;
   font-family: "Apple Color Emoji", "Segoe UI Emoji", "NotoColorEmoji", "Segoe UI Symbol", "Android Emoji", "EmojiSymbols";
@@ -204,4 +198,72 @@
 }
 .fr-view .fr-video.fr-dvi.fr-fvr {
   float: right;
+}
+.fr-view a.fr-strong {
+  font-weight: 700;
+}
+.fr-view a.fr-green {
+  color: green;
+}
+a.fr-view.fr-strong {
+  font-weight: 700;
+}
+a.fr-view.fr-green {
+  color: green;
+}
+/**
+   * Image style.
+   */
+img.fr-view {
+  z-index: 3;
+  position: relative;
+  overflow: auto;
+  cursor: pointer;
+}
+img.fr-view.fr-dib {
+  margin: auto;
+  display: block;
+  float: none;
+  vertical-align: top;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+img.fr-view.fr-dib.fr-fil {
+  margin: 5px auto 5px 0;
+  left: 5px;
+}
+img.fr-view.fr-dib.fr-fir {
+  margin: 5px 0 5px auto;
+  right: 5px;
+}
+img.fr-view.fr-dii {
+  margin: auto;
+  display: inline-block;
+  float: none;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+img.fr-view.fr-dii.fr-fil {
+  margin: 5px 10px 5px 0;
+  left: 5px;
+  float: left;
+}
+img.fr-view.fr-dii.fr-fir {
+  margin: 5px 0 5px 10px;
+  right: 5px;
+  float: right;
+}
+img.fr-view.fr-rounded {
+  border-radius: 100%;
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+img.fr-view.fr-bordered {
+  border: solid 10px #CCC;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
 }
