@@ -22,3 +22,6 @@
   -moz-box-sizing: content-box;
   box-sizing: content-box;
 }
+.fr-popup .fr-emoticon img {
+  height: 20px;
+}
