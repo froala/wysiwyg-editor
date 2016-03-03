@@ -67,25 +67,19 @@
   margin-top: 5px;
   margin-bottom: 5px;
 }
-.gray-theme img.fr-dib.fr-fil {
-  margin: 5px auto 5px 0;
-  left: 5px;
-}
-.gray-theme img.fr-dib.fr-fir {
-  margin: 5px 0 5px auto;
-  right: 5px;
-}
 .gray-theme img.fr-dii {
-  margin-top: 5px;
-  margin-bottom: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 .gray-theme img.fr-dii.fr-fil {
-  margin: 5px 10px 5px 0;
-  left: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-right: 5px;
 }
 .gray-theme img.fr-dii.fr-fir {
-  margin: 5px 0 5px 10px;
-  right: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 5px;
 }
 .gray-theme.fr-tooltip {
   border-radius: 2px;
