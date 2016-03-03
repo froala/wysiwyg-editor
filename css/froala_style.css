@@ -14,7 +14,10 @@
    * Image style.
    */
   /**
-   * Video style
+   * Video style.
+   */
+  /**
+   * Link style.
    */
 }
 .fr-view table {
@@ -205,6 +208,9 @@
 .fr-view a.fr-green {
   color: green;
 }
+/**
+ * Image style.
+ */
 a.fr-view.fr-strong {
   font-weight: 700;
 }
@@ -212,8 +218,8 @@ a.fr-view.fr-green {
   color: green;
 }
 /**
-   * Image style.
-   */
+ * Link style.
+ */
 img.fr-view {
   z-index: 3;
   position: relative;
