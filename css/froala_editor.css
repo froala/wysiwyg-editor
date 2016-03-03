@@ -20,12 +20,12 @@
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  overflow-x: auto;
 }
 .fr-element {
   background: transparent;
   position: relative;
   z-index: 2;
-  overflow-x: auto;
   -webkit-user-select: auto;
 }
 .fr-element a {
