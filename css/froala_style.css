@@ -90,8 +90,8 @@
   min-height: 20px;
   min-width: 20px;
   display: inline-block;
-  margin: -0.2em 0.15em 0.2em;
-  line-height: normal;
+  margin: -0.1em 0.1em 0.1em;
+  line-height: 1;
   vertical-align: middle;
 }
 .fr-view .fr-text-gray {
