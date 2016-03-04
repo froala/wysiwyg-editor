@@ -197,6 +197,17 @@
 .fr-view a.fr-green {
   color: green;
 }
+.fr-view button.fr-rounded {
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+.fr-view button.fr-large {
+  font-size: 24px;
+}
 /**
  * Image style.
  */
