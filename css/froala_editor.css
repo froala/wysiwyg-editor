@@ -695,6 +695,9 @@ iframe.fr-iframe {
 .fr-popup .fr-hs {
   display: block !important;
 }
+.fr-popup .fr-hs.fr-hidden {
+  display: none !important;
+}
 .fr-popup .fr-input-line {
   position: relative;
   padding: 8px 0;
