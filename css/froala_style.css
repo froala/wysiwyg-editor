@@ -197,7 +197,9 @@
 .fr-view a.fr-green {
   color: green;
 }
-.fr-view button.fr-rounded {
+.fr-view button.fr-rounded,
+.fr-view input.fr-rounded,
+.fr-view textarea.fr-rounded {
   border-radius: 10px;
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -205,7 +207,9 @@
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
 }
-.fr-view button.fr-large {
+.fr-view button.fr-large,
+.fr-view input.fr-large,
+.fr-view textarea.fr-large {
   font-size: 24px;
 }
 /**
