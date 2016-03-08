@@ -21,6 +21,7 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   overflow-x: auto;
+  min-height: 40px;
 }
 .fr-element {
   background: transparent;
