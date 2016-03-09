@@ -280,13 +280,11 @@ iframe.fr-iframe {
 }
 .fr-toolbar.fr-inline {
   display: none;
-}
-.fr-toolbar.fr-inline.fr-desktop {
   white-space: nowrap;
   position: absolute;
   margin-top: 10px;
 }
-.fr-toolbar.fr-inline.fr-desktop .fr-arrow {
+.fr-toolbar.fr-inline .fr-arrow {
   width: 0;
   height: 0;
   border-left: 5px solid transparent;
@@ -298,7 +296,7 @@ iframe.fr-iframe {
   margin-left: -5px;
   display: inline-block;
 }
-.fr-toolbar.fr-inline.fr-desktop.fr-above {
+.fr-toolbar.fr-inline.fr-above {
   margin-top: -10px;
   -webkit-box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.12), 0 -1px 2px rgba(0, 0, 0, 0.24);
   -moz-box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.12), 0 -1px 2px rgba(0, 0, 0, 0.24);
@@ -306,18 +304,13 @@ iframe.fr-iframe {
   border-bottom: 5px solid #222222;
   border-top: 0;
 }
-.fr-toolbar.fr-inline.fr-desktop.fr-above .fr-arrow {
+.fr-toolbar.fr-inline.fr-above .fr-arrow {
   top: auto;
   bottom: -9px;
   border-bottom: 0;
   border-top-color: inherit;
   border-top-style: solid;
   border-top-width: 5px;
-}
-.fr-toolbar.fr-inline.fr-mobile {
-  left: 0;
-  right: 0;
-  width: auto !important;
 }
 .fr-toolbar.fr-top {
   top: 0;
