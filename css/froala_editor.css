@@ -404,9 +404,12 @@ iframe.fr-iframe {
   -ms-user-select: none;
   float: left;
   padding: 0;
+  width: 38px;
+  height: 37px;
 }
 .fr-toolbar .fr-command.fr-btn i,
 .fr-popup .fr-command.fr-btn i {
+  display: block;
   font-size: 15px;
   width: 15px;
   margin: 11px 11.5px;
@@ -436,8 +439,8 @@ iframe.fr-iframe {
   color: #1e88e5;
   background: transparent;
 }
-.fr-toolbar .fr-command.fr-btn.fr-dropdown,
-.fr-popup .fr-command.fr-btn.fr-dropdown {
+.fr-toolbar .fr-command.fr-btn.fr-dropdown.fr-selection,
+.fr-popup .fr-command.fr-btn.fr-dropdown.fr-selection {
   width: auto;
 }
 .fr-toolbar .fr-command.fr-btn.fr-dropdown i,
