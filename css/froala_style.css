@@ -116,6 +116,7 @@
   position: relative;
   overflow: auto;
   cursor: pointer;
+  max-width: 100%;
 }
 .fr-view img.fr-dib {
   margin: 5px auto;
@@ -135,20 +136,17 @@
   vertical-align: bottom;
   margin-left: 5px;
   margin-right: 5px;
+  max-width: calc(100% - (2 * 5px));
 }
 .fr-view img.fr-dii.fr-fil {
   float: left;
-  margin-left: 0;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  margin-right: 5px;
+  margin: 5px 5px 5px 0;
+  max-width: calc(100% - 5px);
 }
 .fr-view img.fr-dii.fr-fir {
   float: right;
-  margin-left: 0;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  margin-left: 5px;
+  margin: 5px 0 5px 5px;
+  max-width: calc(100% - 5px);
 }
 .fr-view img.fr-rounded {
   border-radius: 100%;
@@ -232,6 +230,7 @@ img.fr-view {
   position: relative;
   overflow: auto;
   cursor: pointer;
+  max-width: 100%;
 }
 img.fr-view.fr-dib {
   margin: 5px auto;
@@ -251,20 +250,17 @@ img.fr-view.fr-dii {
   vertical-align: bottom;
   margin-left: 5px;
   margin-right: 5px;
+  max-width: calc(100% - (2 * 5px));
 }
 img.fr-view.fr-dii.fr-fil {
   float: left;
-  margin-left: 0;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  margin-right: 5px;
+  margin: 5px 5px 5px 0;
+  max-width: calc(100% - 5px);
 }
 img.fr-view.fr-dii.fr-fir {
   float: right;
-  margin-left: 0;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  margin-left: 5px;
+  margin: 5px 0 5px 5px;
+  max-width: calc(100% - 5px);
 }
 img.fr-view.fr-rounded {
   border-radius: 100%;

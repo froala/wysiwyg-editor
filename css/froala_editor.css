@@ -37,9 +37,6 @@
   -webkit-user-select: auto;
   -ms-user-select: auto;
 }
-.fr-element img {
-  max-width: calc(100% - (2 * 5px));
-}
 .fr-element.fr-disabled {
   user-select: none;
   -o-user-select: none;
