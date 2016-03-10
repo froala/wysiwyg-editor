@@ -9,6 +9,9 @@
   display: block;
   content: "";
 }
+.fr-view strong {
+  font-weight: 700;
+}
 .fr-view table {
   border: none;
   border-collapse: collapse;
