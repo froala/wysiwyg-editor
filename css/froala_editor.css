@@ -418,13 +418,13 @@ iframe.fr-iframe {
   font-size: 14px;
   display: block;
   line-height: 14px;
-  margin: 11px 11.5px;
-  min-width: 15px;
+  min-width: 38px;
   float: left;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
   height: 15px;
+  font-weight: bold;
 }
 .fr-toolbar .fr-command.fr-btn img,
 .fr-popup .fr-command.fr-btn img {
@@ -439,6 +439,10 @@ iframe.fr-iframe {
 .fr-toolbar .fr-command.fr-btn.fr-dropdown.fr-selection,
 .fr-popup .fr-command.fr-btn.fr-dropdown.fr-selection {
   width: auto;
+}
+.fr-toolbar .fr-command.fr-btn.fr-dropdown.fr-selection span,
+.fr-popup .fr-command.fr-btn.fr-dropdown.fr-selection span {
+  font-weight: normal;
 }
 .fr-toolbar .fr-command.fr-btn.fr-dropdown i,
 .fr-popup .fr-command.fr-btn.fr-dropdown i,
