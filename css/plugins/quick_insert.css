@@ -29,6 +29,7 @@
   position: absolute;
   z-index: 3;
   padding-left: 10px;
+  white-space: nowrap;
 }
 .fr-qi-helper a.fr-btn.fr-floating-btn {
   text-align: center;
