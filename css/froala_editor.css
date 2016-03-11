@@ -922,7 +922,7 @@ iframe.fr-iframe {
   left: auto;
   right: 0;
 }
-.fr-popup.fr-desktop .fr-arrow {
+.fr-popup .fr-arrow {
   width: 0;
   height: 0;
   border-left: 5px solid transparent;
@@ -934,7 +934,7 @@ iframe.fr-iframe {
   margin-left: -5px;
   display: inline-block;
 }
-.fr-popup.fr-desktop.fr-above .fr-arrow {
+.fr-popup.fr-above .fr-arrow {
   top: auto;
   bottom: -9px;
   border-bottom: 0;
