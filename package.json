@@ -40,7 +40,9 @@
       "files": [
         "js/plugins/*.min.js",
         "js/froala_editor.min.js",
+        "js/froala_editor.pkgd.min.js",
         "css/froala_editor.min.css",
+        "css/froala_editor.pkgd.min.css",
         "css/froala_style.min.css",
         "css/plugins/*.min.css",
         "css/themes/*.min.css"
