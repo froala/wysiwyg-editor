@@ -1460,6 +1460,9 @@ body.fr-fullscreen {
   display: block;
   content: "";
 }
+.fr-element img {
+  cursor: pointer;
+}
 .fr-image-resizer {
   position: absolute;
   border: solid 1px #1e88e5;

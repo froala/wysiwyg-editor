@@ -115,7 +115,6 @@
   z-index: 3;
   position: relative;
   overflow: auto;
-  cursor: pointer;
   max-width: 100%;
 }
 .fr-view img.fr-dib {
@@ -229,7 +228,6 @@ img.fr-view {
   z-index: 3;
   position: relative;
   overflow: auto;
-  cursor: pointer;
   max-width: 100%;
 }
 img.fr-view.fr-dib {
