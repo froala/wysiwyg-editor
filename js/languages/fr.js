@@ -106,7 +106,7 @@ $.FE.LANGUAGE['fr'] = {
 
     // Tables
     "Insert Table": "Ins\u00e9rer un tableau",
-    "Header": "Ent\u00eate",
+    "Table Header": "Ent\u00eate de tableau",
     "Row": "Ligne",
     "Insert row above": "Ins\u00e9rer une ligne avant",
     "Insert row below": "Ins\u00e9rer une ligne apr\u00e8s",
@@ -128,6 +128,7 @@ $.FE.LANGUAGE['fr'] = {
     "Align Middle": "Aligner au milieu",
     "Align Bottom": "Aligner en bas",
     "Cell Style": "Style de cellule",
+    "Remove Table": "Effacer le tableau",
 
     // Files
     "Upload File": "T\u00e9l\u00e9charger le fichier",
