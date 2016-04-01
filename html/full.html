@@ -35,31 +35,10 @@
 
 <body>
   <div id="editor">
-      <div id='edit' style="margin-top: 30px;">
-        <h1>Full Featured</h1>
-
-        <p>This is the full featured Froala WYSIWYG HTML editor.</p>
-
-        <img class="fr-fir fr-dii" src="../img/photo1.jpg" alt="Old Clock" width="300"/>Lorem  <strong>ipsum</strong> dolor sit amet, consectetur <strong>adipiscing <em>elit.</em> Donec</strong> facilisis diam in odio iaculis blandit. Nunc eu mauris sit amet purus <strong>viverra</strong><em> gravida</em> ut a dui.<br/>
-        <ul><li>Vivamus nec rutrum augue, pharetra faucibus purus. Maecenas non orci sagittis, vehicula lorem et, dignissim nunc.</li> <li>Suspendisse suscipit, diam non varius facilisis, enim libero tincidunt magna, sit amet iaculis eros libero sit amet eros. Vestibulum a rhoncus felis.<ol><li>Nam lacus nulla, consequat ac lacus sit amet, accumsan pellentesque risus. Aenean viverra mi at urna mattis fermentum.</li> <li>Curabitur porta metus in tortor elementum, in semper nulla ullamcorper. Vestibulum mattis tempor tortor quis gravida. In rhoncus risus nibh. Nullam condimentum dapibus massa vel fringilla. Sed hendrerit sed est quis facilisis. Ut sit amet nibh sem. Pellentesque imperdiet mollis libero.</li></ol></li></ul>
-
-        <table style="width: 100%;">
-          <tr>
-            <td style="width: 25%;"></td>
-            <td style="width: 25%;"></td>
-            <td style="width: 25%;"></td>
-            <td style="width: 25%;"></td>
-          </tr>
-          <tr>
-            <td style="width: 25%;"></td>
-            <td style="width: 25%;"></td>
-            <td style="width: 25%;"></td>
-            <td style="width: 25%;"></td>
-          </tr>
-        </table>
-
-        <a href="http://google.com" title="Aenean sed hendrerit">Aenean sed hendrerit</a> velit. Nullam eu mi dolor. Maecenas et erat risus. Nulla ac auctor diam, non aliquet ante. Fusce ullamcorper, ipsum id tempor lacinia, sem tellus malesuada libero, quis ornare sem massa in orci. Sed dictum dictum tristique. Proin eros turpis, ultricies eu sapien eget, ornare rutrum ipsum. Pellentesque eros nisl, ornare nec ipsum sed, aliquet sollicitudin erat. Nulla tincidunt porta <strong>vehicula.</strong><br/>
-      </div>
+      <div id='edit' style="margin-top: 30px;"><p>
+<span style="font-size: 18px;"><strong>Title 1<br>Title 2</strong><br>
+<strong style="font-size: 16px; line-height: 16.8px;">Date</strong></span></p>
+<p><span style="font-size: 16px;"><strong>Content 1</strong></span></p><p><span style="font-size: 16px; font-weight: bold;">Content 2</span></p></div>
 
       <p><strong>This is some dummy text so you can see the sticky toolbar in action.</strong></p>
 
@@ -144,7 +123,14 @@
 
   <script>
     $(function(){
-      $('#edit').froalaEditor()
+      $('#edit').froalaEditor({
+height:300,
+  useClasses: false,
+  codeBeautifier: true,
+  toolbarButtonsSM: ['bold', 'italic', 'underline', 'strikeThrough', 'subscript', 'superscript', 'fontFamily', 'fontSize', 'color', 'formatBlock', 'removeFormat', 'align', 'insertOrderedList', 'insertUnorderedList', 'outdent', 'indent', 'selectAll', 'createLink', 'insertTable', 'undo', 'redo', 'html', 'insertHorizontalRule', , 'image', 'paragraphFormat', 'clearFormatting', 'formatOL', 'formatUL', 'insertHR', 'insertLink'],
+  iframe: true,
+enter: $.FroalaEditor.ENTER_BR
+      })
     });
   </script>
 </body>
