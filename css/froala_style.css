@@ -112,9 +112,7 @@
   text-transform: uppercase;
 }
 .fr-view img {
-  z-index: 3;
   position: relative;
-  overflow: auto;
   max-width: 100%;
 }
 .fr-view img.fr-dib {
@@ -225,9 +223,7 @@ a.fr-view.fr-green {
  * Link style.
  */
 img.fr-view {
-  z-index: 3;
   position: relative;
-  overflow: auto;
   max-width: 100%;
 }
 img.fr-view.fr-dib {
