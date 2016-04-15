@@ -219,9 +219,9 @@ $.FE.LANGUAGE['zh_cn'] = {
     "Code View": "\u4ee3\u7801\u89c6\u56fe",
 
     // Quote
-    "Quote": "\u62a5\u4ef7",
-    "Increase": "\u589e\u52a0",
-    "Decrease": "\u51cf\u5c11",
+    "Quote": "\u5f15\u7528",
+    "Increase": "\u589e\u52a0\u5f15\u7528",
+    "Decrease": "\u5220\u9664\u5f15\u7528",
 
     // Quick Insert
     "Quick Insert": "\u5feb\u63d2"
