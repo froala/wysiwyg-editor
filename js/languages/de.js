@@ -65,25 +65,25 @@ $.FE.LANGUAGE['de'] = {
     "Unordered List": "Ungeordnete Liste",
 
     // Indent
-    "Decrease Indent": "Einzug Verkleinern",
-    "Increase Indent": "Einzug Vergr\u00f6\u00dfern",
+    "Decrease Indent": "Einzug verkleinern",
+    "Increase Indent": "Einzug vergr\u00f6\u00dfern",
 
     // Links
     "Insert Link": "Link einf\u00fcgen",
     "Open in new tab": "In neuem Tab \u00f6ffnen",
     "Open Link": "Link \u00d6ffnen",
-    "Edit Link": "Link Bearbeiten",
+    "Edit Link": "Link bearbeiten",
     "Unlink": "Link entfernen",
     "Choose Link": "Einen Link ausw\u00e4hlen",
 
     // Images
-    "Insert Image": "Bild Einf\u00fcgen",
-    "Upload Image": "Bild Hochladen",
+    "Insert Image": "Bild einf\u00fcgen",
+    "Upload Image": "Bild hochladen",
     "By URL": "Von URL",
     "Browse": "Ordner",
-    "Drop image": "Ziehen Sie ein Bild hierhin",
+    "Drop image": "Ziehen Sie ein Bild hierher",
     "or click": "oder klicken Sie hier",
-    "Manage Images": "Bilder Verwalten",
+    "Manage Images": "Bilder verwalten",
     "Loading": "Laden",
     "Deleting": "L\u00f6schen",
     "Tags": "Tags",
@@ -203,10 +203,10 @@ $.FE.LANGUAGE['de'] = {
     "Fullscreen": "Vollbild",
 
     // Horizontal line
-    "Insert Horizontal Line": "Horizontale Linie Einf\u00fcgen",
+    "Insert Horizontal Line": "Horizontale Linie einf\u00fcgen",
 
     // Clear formatting
-    "Clear Formatting": "Formatierung L\u00f6schen",
+    "Clear Formatting": "Formatierung l\u00f6schen",
 
     // Undo, redo
     "Undo": "R\u00fcckg\u00e4ngig",
