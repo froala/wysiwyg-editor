@@ -106,7 +106,10 @@ $.FE.LANGUAGE['me'] = {
 
     // Tables
     "Insert Table": "Umetni tabelu",
-    "Header": "Zaglavlje",
+    "Table Header": "Zaglavlje tabelu",
+    "Remove Table": "Izbri\u0161i tabelu",
+    "Table Style": "Tabelu stil",
+    "Horizontal Align": "Horizontalna poravnanje",
     "Row": "Red",
     "Insert row above": "Umetni red iznad",
     "Insert row below": "Umetni red ispod",

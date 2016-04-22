@@ -106,7 +106,10 @@ $.FE.LANGUAGE['cs'] = {
 
     // Tables
     "Insert Table": "Vlo\u017eit tabulku",
-    "Header": "Hlavi\u010dka",
+    "Table Header": "Hlavi\u010dka tabulky",
+    "Remove Table": "Odstranit tabulku",
+    "Table Style": "Styl tabulky",
+    "Horizontal Align": "Horizont\u00e1ln\u00ed zarovn\u00e1n\u00ed",
     "Row": "\u0158\u00e1dek",
     "Insert row above": "Vlo\u017eit \u0159\u00e1dek nad",
     "Insert row below": "Vlo\u017eit \u0159\u00e1dek pod",

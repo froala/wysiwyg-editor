@@ -106,7 +106,10 @@ $.FE.LANGUAGE['hu'] = {
 
     // Tables
     "Insert Table": "T\u00e1bl\u00e1zat beilleszt\u00e9se",
-    "Header": "Fejl\u00e9c",
+    "Table Header": "T\u00e1bl\u00e1zat fejl\u00e9ce",
+    "Remove Table": "T\u00e1bla elt\u00e1vol\u00edt\u00e1sa",
+    "Table Style": "T\u00e1bl\u00e1zat st\u00edlus",
+    "Horizontal Align": "V\u00edzszintes igaz\u00edt\u00e1s",
     "Row": "Sor",
     "Insert row above": "Sor besz\u00far\u00e1sa el\u00e9",
     "Insert row below": "Sor besz\u00far\u00e1sa m\u00f6g\u00e9",

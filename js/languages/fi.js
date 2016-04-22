@@ -106,7 +106,10 @@ $.FE.LANGUAGE['fi'] = {
 
     // Tables
     "Insert Table": "Lis\u00e4\u00e4 taulukko",
-    "Header": "Yl\u00e4tunniste",
+    "Table Header": "Taulukko yl\u00e4tunniste",
+    "Remove Table": "Poista taulukko",
+    "Table Style": "Taulukko tyyli",
+    "Horizontal Align": "Vaakasuora tasaa",
     "Row": "Rivi",
     "Insert row above": "Lis\u00e4\u00e4 rivi ennen",
     "Insert row below": "Lis\u00e4\u00e4 rivi j\u00e4lkeen",
@@ -127,7 +130,7 @@ $.FE.LANGUAGE['fi'] = {
     "Align Top": "Tasaa alkuun",
     "Align Middle": "Tasaa keskimm\u00e4inen",
     "Align Bottom": "Tasaa pohja",
-    "Cell Style": "",
+    "Cell Style": "Solun tyyli",
 
     // Files
     "Upload File": "Lataa tiedosto",

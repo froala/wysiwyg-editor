@@ -106,7 +106,10 @@ $.FE.LANGUAGE['ja'] = {
 
     // Tables
     "Insert Table": "\u8868\u306e\u633f\u5165",
-    "Header": "\u30d8\u30c3\u30c0",
+    "Table Header": "\u8868\u306e\u30d8\u30c3\u30c0\u30fc",
+    "Remove Table": "\u30c6\u30fc\u30d6\u30eb\u3092\u524a\u9664\u3057\u307e\u3059",
+    "Table Style": "\u8868\u306e\u30b9\u30bf\u30a4\u30eb",
+    "Horizontal Align": "\u5e73\u9762\u7dda\u5f62",
     "Row": "\u884c",
     "Insert row above": "\u4e0a\u5074\u306b\u884c\u3092\u633f\u5165",
     "Insert row below": "\u4e0b\u5074\u306b\u884c\u3092\u633f\u5165",

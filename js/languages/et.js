@@ -106,7 +106,10 @@ $.FE.LANGUAGE['et'] = {
 
     // Tables
     "Insert Table": "Sisesta tabel",
-    "Header": "P\u00e4ise kaudu",
+    "Table Header": "Tabel p\u00e4ise kaudu",
+    "Remove Table": "Eemalda tabel",
+    "Table Style": "Tabel stiili",
+    "Horizontal Align": "Horisontaalne joonda",
     "Row": "Rida",
     "Insert row above": "Sisesta rida \u00fcles",
     "Insert row below": "Sisesta rida alla",

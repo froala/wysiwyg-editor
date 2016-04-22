@@ -106,7 +106,10 @@ $.FE.LANGUAGE['de'] = {
 
     // Tables
     "Insert Table": "Tabelle einf\u00fcgen",
-    "Header": "Kopfzeile",
+    "Table Header": "Tabellenkopf",
+    "Remove Table": "Tabelle entfernen",
+    "Table Style": "Tabelle Stil",
+    "Horizontal Align": "Horizontal Ausrichtung",
     "Row": "Zeile",
     "Insert row above": "Neue Zeile davor einf\u00fcgen",
     "Insert row below": "Neue Zeile danach einf\u00fcgen",

@@ -106,7 +106,10 @@ $.FE.LANGUAGE['sv'] = {
 
     // Tables
     "Insert Table": "Infoga tabell",
-    "Header": "Header",
+    "Table Header": "Tabell huvud",
+    "Remove Table": "Ta bort tabellen",
+    "Table Style": "Tabellformat",
+    "Horizontal Align": "Horisontell justering",
     "Row": "Rad",
     "Insert row above": "Infoga rad f\u00f6re",
     "Insert row below": "Infoga rad efter",

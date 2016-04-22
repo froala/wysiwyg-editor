@@ -106,7 +106,10 @@ $.FE.LANGUAGE['tr'] = {
 
     // Tables
     "Insert Table": "Tablo ekle",
-    "Header": "\u00dcstbilgi",
+    "Table Header": "Tablo \u00fcstbilgisi",
+    "Remove Table": "Tablo kald\u0131rma",
+    "Table Style": "Tablo stili",
+    "Horizontal Align": "Yatay hizalama",
     "Row": "Sat\u0131r",
     "Insert row above": "\u00d6ncesine yeni sat\u0131r ekle",
     "Insert row below": "Sonras\u0131na yeni sat\u0131r ekle",

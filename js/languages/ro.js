@@ -107,7 +107,10 @@ $.FE.LANGUAGE['ro'] = {
 
     // Tables
     "Insert Table": "Inserare tabel",
-    "Header": "Antet",
+    "Table Header": "Antet tabel",
+    "Remove Table": "\u0218terge tabel",
+    "Table Style": "Stil tabel",
+    "Horizontal Align": "Aliniere orizontal\u0103",
     "Row": "Linie",
     "Insert row above": "Insereaz\u0103 linie \u00eenainte",
     "Insert row below": "Insereaz\u0103 linie dup\u0103",
@@ -121,7 +124,7 @@ $.FE.LANGUAGE['ro'] = {
     "Horizontal split": "\u00cemparte orizontal",
     "Vertical split": "\u00cemparte vertical",
     "Cell Background": "Fundal celul\u0103",
-    "Vertical Align": "Aliniere verticl\u0103",
+    "Vertical Align": "Aliniere vertical\u0103",
     "Top": "Sus",
     "Middle": "Mijloc",
     "Bottom": "Jos",

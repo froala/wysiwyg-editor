@@ -106,7 +106,10 @@ $.FE.LANGUAGE['da'] = {
 
     // Tables
     "Insert Table": "Inds\u00e6t tabel",
-    "Header": "Header",
+    "Table Header": "Tabel header",
+    "Remove Table": "Fjern tabel",
+    "Table Style": "Tabel stil",
+    "Horizontal Align": "Vandret tilpasning",
     "Row": "R\u00e6kke",
     "Insert row above": "Inds\u00e6t r\u00e6kke over",
     "Insert row below": "Inds\u00e6t r\u00e6kke under",

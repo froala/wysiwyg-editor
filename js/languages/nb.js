@@ -106,7 +106,10 @@ $.FE.LANGUAGE['nb'] = {
 
     // Tables
     "Insert Table": "Sett inn tabell",
-    "Header": "Header",
+    "Table Header": "Tabell header",
+    "Remove Table": "Fjern tabell",
+    "Table Style": "Tabell stil",
+    "Horizontal Align": "Horisontal justering",
     "Row": "Rad",
     "Insert row above": "Sett inn rad f\u00f8r",
     "Insert row below": "Sett in rad etter",
@@ -120,7 +123,7 @@ $.FE.LANGUAGE['nb'] = {
     "Horizontal split": "Horisontalt delt",
     "Vertical split": "Vertikal split",
     "Cell Background": "Celle bakgrunn",
-    "Vertical Align": "Vertikal sluttar",
+    "Vertical Align": "Vertikal justering",
     "Top": "Topp",
     "Middle": "Midten",
     "Bottom": "Bunn",

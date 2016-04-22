@@ -106,7 +106,10 @@ $.FE.LANGUAGE['zh_cn'] = {
 
     // Tables
     "Insert Table": "\u63d2\u5165\u8868\u683c",
-    "Header": "\u5934",
+    "Table Header": "\u8868\u5934",
+    "Remove Table": "\u5220\u9664\u8868",
+    "Table Style": "\u8868\u683c\u6837\u5f0f",
+    "Horizontal Align": "\u6c34\u5e73\u5bf9\u9f50\u65b9\u5f0f",
     "Row": "\u884c",
     "Insert row above": "\u5728\u4e0a\u65b9\u63d2\u5165",
     "Insert row below": "\u5728\u4e0b\u65b9\u63d2\u5165",
@@ -120,7 +123,7 @@ $.FE.LANGUAGE['zh_cn'] = {
     "Horizontal split": "\u6c34\u5e73\u5206\u5272",
     "Vertical split": "\u5782\u76f4\u5206\u5272",
     "Cell Background": "\u5355\u5143\u683c\u80cc\u666f",
-    "Vertical Align": "\u5782\u76f4\u5bf9\u9f50",
+    "Vertical Align": "\u5782\u76f4\u5bf9\u9f50\u65b9\u5f0f",
     "Top": "\u6700\u4f73",
     "Middle": "\u4e2d\u95f4",
     "Bottom": "\u5e95\u90e8",

@@ -106,7 +106,10 @@ $.FE.LANGUAGE['pt_br'] = {
 
     // Tables
     "Insert Table": "Inserir tabela",
-    "Header": "Cabe\u00e7alho",
+    "Table Header": "Cabe\u00e7alho da tabela",
+    "Remove Table": "Remover mesa",
+    "Table Style": "estilo de tabela",
+    "Horizontal Align": "Alinhamento horizontal",
     "Row": "Linha",
     "Insert row above": "Inserir linha antes",
     "Insert row below": "Inserir linha depois",
@@ -120,7 +123,7 @@ $.FE.LANGUAGE['pt_br'] = {
     "Horizontal split": "Divis\u00e3o horizontal",
     "Vertical split": "Divis\u00e3o vertical",
     "Cell Background": "Fundo da c\u00e9lula",
-    "Vertical Align": "Alinhar vertical",
+    "Vertical Align": "Alinhamento vertical",
     "Top": "Topo",
     "Middle": "Meio",
     "Bottom": "Fundo",

@@ -106,7 +106,10 @@ $.FE.LANGUAGE['en_ca'] = {
 
     // Tables
     "Insert Table": "Insert Table",
-    "Header": "Header",
+    "Table Header": "Table Header",
+    "Remove Table": "Remove Table",
+    "Table Style": "Table Style",
+    "Horizontal Align": "Horizontal Align",
     "Row": "Row",
     "Insert row above": "Insert row above",
     "Insert row below": "Insert row below",
