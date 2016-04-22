@@ -106,8 +106,8 @@ $.FE.LANGUAGE['fr'] = {
 
     // Tables
     "Insert Table": "Ins\u00e9rer un tableau",
-    "Table Header": "En-t\u00eate de la table",
-    "Remove Table": "Enlever la table",
+    "Table Header": "Ent\u00eate de tableau",
+    "Remove Table": "Effacer le tableau",
     "Table Style": "Style de tableau",
     "Horizontal Align": "Aligner horizontale",
     "Row": "Ligne",
