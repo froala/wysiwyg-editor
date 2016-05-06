@@ -87,6 +87,7 @@
   line-height: 0;
 }
 .fr-view span.fr-emoticon.fr-emoticon-img {
+  background-repeat: no-repeat !important;
   font-size: inherit;
   height: 1em;
   width: 1em;
