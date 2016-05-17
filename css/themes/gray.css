@@ -340,19 +340,19 @@
 .gray-theme.fr-popup .fr-input-line textarea:focus {
   border-bottom: solid 2px #0097a7;
 }
-.gray-theme.fr-popup .fr-input-line input + span,
-.gray-theme.fr-popup .fr-input-line textarea + span {
+.gray-theme.fr-popup .fr-input-line input + label,
+.gray-theme.fr-popup .fr-input-line textarea + label {
   -webkit-transition: color 0.2s ease 0s;
   -moz-transition: color 0.2s ease 0s;
   -ms-transition: color 0.2s ease 0s;
   -o-transition: color 0.2s ease 0s;
 }
-.gray-theme.fr-popup .fr-input-line input.fr-not-empty:focus + span,
-.gray-theme.fr-popup .fr-input-line textarea.fr-not-empty:focus + span {
+.gray-theme.fr-popup .fr-input-line input.fr-not-empty:focus + label,
+.gray-theme.fr-popup .fr-input-line textarea.fr-not-empty:focus + label {
   color: #0097a7;
 }
-.gray-theme.fr-popup .fr-input-line input.fr-not-empty + span,
-.gray-theme.fr-popup .fr-input-line textarea.fr-not-empty + span {
+.gray-theme.fr-popup .fr-input-line input.fr-not-empty + label,
+.gray-theme.fr-popup .fr-input-line textarea.fr-not-empty + label {
   color: #808080;
 }
 .gray-theme.fr-popup .fr-buttons {

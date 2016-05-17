@@ -712,14 +712,17 @@ iframe.fr-iframe {
   background: rgba(0, 0, 0, 0);
   position: relative;
   z-index: 2;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 .fr-popup .fr-input-line input[type="text"]:focus,
 .fr-popup .fr-input-line textarea:focus {
   border-bottom: solid 2px #1e88e5;
   margin-bottom: 0px;
 }
-.fr-popup .fr-input-line input + span,
-.fr-popup .fr-input-line textarea + span {
+.fr-popup .fr-input-line input + label,
+.fr-popup .fr-input-line textarea + label {
   position: absolute;
   top: 0;
   left: 0;
@@ -731,12 +734,12 @@ iframe.fr-iframe {
   -o-transition: color 0.2s ease 0s;
   z-index: 1;
 }
-.fr-popup .fr-input-line input.fr-not-empty:focus + span,
-.fr-popup .fr-input-line textarea.fr-not-empty:focus + span {
+.fr-popup .fr-input-line input.fr-not-empty:focus + label,
+.fr-popup .fr-input-line textarea.fr-not-empty:focus + label {
   color: #1e88e5;
 }
-.fr-popup .fr-input-line input.fr-not-empty + span,
-.fr-popup .fr-input-line textarea.fr-not-empty + span {
+.fr-popup .fr-input-line input.fr-not-empty + label,
+.fr-popup .fr-input-line textarea.fr-not-empty + label {
   color: #808080;
 }
 .fr-popup input,
@@ -917,8 +920,8 @@ iframe.fr-iframe {
 .fr-popup.fr-rtl .fr-action-buttons {
   text-align: left;
 }
-.fr-popup.fr-rtl .fr-input-line input + span,
-.fr-popup.fr-rtl .fr-input-line textarea + span {
+.fr-popup.fr-rtl .fr-input-line input + label,
+.fr-popup.fr-rtl .fr-input-line textarea + label {
   left: auto;
   right: 0;
 }

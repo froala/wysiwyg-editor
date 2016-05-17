@@ -340,19 +340,19 @@
 .red-theme.fr-popup .fr-input-line textarea:focus {
   border-bottom: solid 2px #ffca28;
 }
-.red-theme.fr-popup .fr-input-line input + span,
-.red-theme.fr-popup .fr-input-line textarea + span {
+.red-theme.fr-popup .fr-input-line input + label,
+.red-theme.fr-popup .fr-input-line textarea + label {
   -webkit-transition: color 0.2s ease 0s;
   -moz-transition: color 0.2s ease 0s;
   -ms-transition: color 0.2s ease 0s;
   -o-transition: color 0.2s ease 0s;
 }
-.red-theme.fr-popup .fr-input-line input.fr-not-empty:focus + span,
-.red-theme.fr-popup .fr-input-line textarea.fr-not-empty:focus + span {
+.red-theme.fr-popup .fr-input-line input.fr-not-empty:focus + label,
+.red-theme.fr-popup .fr-input-line textarea.fr-not-empty:focus + label {
   color: #ffca28;
 }
-.red-theme.fr-popup .fr-input-line input.fr-not-empty + span,
-.red-theme.fr-popup .fr-input-line textarea.fr-not-empty + span {
+.red-theme.fr-popup .fr-input-line input.fr-not-empty + label,
+.red-theme.fr-popup .fr-input-line textarea.fr-not-empty + label {
   color: #808080;
 }
 .red-theme.fr-popup .fr-buttons {
