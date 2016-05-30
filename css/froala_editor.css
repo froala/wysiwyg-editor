@@ -143,6 +143,8 @@ iframe.fr-iframe {
   display: none;
   top: 0;
   left: 0;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .fr-wrapper.show-placeholder .fr-placeholder {
   display: block;
