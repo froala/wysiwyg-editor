@@ -74,13 +74,11 @@
   background: #ffffff;
   border: solid 1px #671b1a;
   border-top: 0;
-}
-.red-theme.fr-box.fr-basic .fr-wrapper .fr-placeholder {
-  top: 10px;
-  left: 10px;
+  top: 0;
+  left: 0;
 }
 .red-theme.fr-box.fr-basic.fr-rtl .fr-wrapper .fr-placeholder {
-  right: 10px;
+  right: 0;
   left: auto;
 }
 .red-theme.fr-box.fr-basic.fr-top .fr-wrapper {

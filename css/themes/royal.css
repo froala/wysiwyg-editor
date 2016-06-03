@@ -74,13 +74,11 @@
   background: #ffffff;
   border: 0px;
   border-top: 0;
-}
-.royal-theme.fr-box.fr-basic .fr-wrapper .fr-placeholder {
-  top: 10px;
-  left: 10px;
+  top: 0;
+  left: 0;
 }
 .royal-theme.fr-box.fr-basic.fr-rtl .fr-wrapper .fr-placeholder {
-  right: 10px;
+  right: 0;
   left: auto;
 }
 .royal-theme.fr-box.fr-basic.fr-top .fr-wrapper {
