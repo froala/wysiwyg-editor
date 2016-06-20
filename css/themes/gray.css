@@ -9,7 +9,7 @@
   display: block;
   content: "";
 }
-.gray-theme .fr-basic .fr-element {
+.gray-theme.fr-box.fr-basic .fr-element {
   color: #000000;
   padding: 10px;
   overflow-x: auto;
