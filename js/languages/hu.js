@@ -89,7 +89,7 @@ $.FE.LANGUAGE['hu'] = {
     "Tags": "C\u00edmk\u00e9k",
     "Are you sure? Image will be deleted.": "Biztos benne? K\u00e9p t\u00f6rl\u00e9sre ker\u00fcl.",
     "Replace": "Cser\u00e9je",
-    "Uploading" ;: "Felt\u00f6lt\u00e9s",
+    "Uploading": "Felt\u00f6lt\u00e9s",
     "Loading image": "K\u00e9pfelt\u00f6lt\u00e9s",
     "Display": "Kijelz\u0151",
     "Inline": "Sorban",
