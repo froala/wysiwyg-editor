@@ -645,6 +645,16 @@
 .red-theme .fr-view table th {
   background: #e6e6e6;
 }
+.red-theme .fr-view[dir="rtl"] blockquote {
+  border-right: solid 2px #5e35b1;
+  margin-right: 0;
+}
+.red-theme .fr-view[dir="rtl"] blockquote blockquote {
+  border-color: #00bcd4;
+}
+.red-theme .fr-view[dir="rtl"] blockquote blockquote blockquote {
+  border-color: #43a047;
+}
 .red-theme .fr-view blockquote {
   border-left: solid 2px #5e35b1;
   margin-left: 0;

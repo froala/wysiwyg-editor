@@ -66,6 +66,19 @@
   white-space: pre-wrap;
   word-wrap: break-word;
 }
+.fr-view[dir="rtl"] blockquote {
+  border-left: none;
+  border-right: solid 2px #5e35b1;
+  margin-right: 0;
+  padding-right: 5px;
+  padding-left: 0px;
+}
+.fr-view[dir="rtl"] blockquote blockquote {
+  border-color: #00bcd4;
+}
+.fr-view[dir="rtl"] blockquote blockquote blockquote {
+  border-color: #43a047;
+}
 .fr-view blockquote {
   border-left: solid 2px #5e35b1;
   margin-left: 0;
