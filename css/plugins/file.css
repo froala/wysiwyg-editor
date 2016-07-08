@@ -8,6 +8,7 @@
   clear: both;
   display: block;
   content: "";
+  height: 0;
 }
 .fr-file-upload-layer {
   border: dashed 2px #bdbdbd;

@@ -8,6 +8,7 @@
   clear: both;
   display: block;
   content: "";
+  height: 0;
 }
 .red-theme.fr-box.fr-basic .fr-element {
   color: #000000;

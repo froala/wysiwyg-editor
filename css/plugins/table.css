@@ -8,6 +8,7 @@
   clear: both;
   display: block;
   content: "";
+  height: 0;
 }
 .fr-element table td.fr-selected-cell,
 .fr-element table th.fr-selected-cell {
@@ -96,6 +97,7 @@
   clear: both;
   display: block;
   content: "";
+  height: 0;
 }
 .fr-popup.fr-above .fr-table-size .fr-select-table-size > span {
   display: inline-block !important;
