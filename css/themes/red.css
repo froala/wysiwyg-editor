@@ -777,25 +777,25 @@
 .red-theme.fr-popup.fr-disabled .fr-btn.fr-active.fr-dropdown::after {
   border-top-color: #edc9c9;
 }
-.red-theme .fr-desktop .fr-command:hover,
-.red-theme .fr-desktop .fr-command:focus {
+.red-theme.fr-desktop .fr-command:hover,
+.red-theme.fr-desktop .fr-command:focus {
   color: #ffffff;
   background: #c65a59;
 }
-.red-theme .fr-desktop .fr-command:hover::after,
-.red-theme .fr-desktop .fr-command:focus::after {
+.red-theme.fr-desktop .fr-command:hover::after,
+.red-theme.fr-desktop .fr-command:focus::after {
   border-top-color: #ffffff !important;
 }
-.red-theme .fr-desktop .fr-command.fr-selected {
+.red-theme.fr-desktop .fr-command.fr-selected {
   color: #ffffff;
   background: #d48382;
 }
-.red-theme .fr-desktop .fr-command.fr-active:hover,
-.red-theme .fr-desktop .fr-command.fr-active:focus {
+.red-theme.fr-desktop .fr-command.fr-active:hover,
+.red-theme.fr-desktop .fr-command.fr-active:focus {
   color: #ffca28;
   background: #c65a59;
 }
-.red-theme .fr-desktop .fr-command.fr-active.fr-selected {
+.red-theme.fr-desktop .fr-command.fr-active.fr-selected {
   color: #ffca28;
   background: #d48382;
 }

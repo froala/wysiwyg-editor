@@ -777,25 +777,25 @@
 .royal-theme.fr-popup.fr-disabled .fr-btn.fr-active.fr-dropdown::after {
   border-top-color: #b7bdc0;
 }
-.royal-theme .fr-desktop .fr-command:hover,
-.royal-theme .fr-desktop .fr-command:focus {
+.royal-theme.fr-desktop .fr-command:hover,
+.royal-theme.fr-desktop .fr-command:focus {
   color: #553982;
   background: #e6e6e6;
 }
-.royal-theme .fr-desktop .fr-command:hover::after,
-.royal-theme .fr-desktop .fr-command:focus::after {
+.royal-theme.fr-desktop .fr-command:hover::after,
+.royal-theme.fr-desktop .fr-command:focus::after {
   border-top-color: #553982 !important;
 }
-.royal-theme .fr-desktop .fr-command.fr-selected {
+.royal-theme.fr-desktop .fr-command.fr-selected {
   color: #553982;
   background: #d6d6d6;
 }
-.royal-theme .fr-desktop .fr-command.fr-active:hover,
-.royal-theme .fr-desktop .fr-command.fr-active:focus {
+.royal-theme.fr-desktop .fr-command.fr-active:hover,
+.royal-theme.fr-desktop .fr-command.fr-active:focus {
   color: #553982;
   background: #e6e6e6;
 }
-.royal-theme .fr-desktop .fr-command.fr-active.fr-selected {
+.royal-theme.fr-desktop .fr-command.fr-active.fr-selected {
   color: #553982;
   background: #d6d6d6;
 }
