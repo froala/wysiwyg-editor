@@ -1,0 +1,163 @@
+@import '../mixins.less';
+@import '../variables.less';
+
+.fr-element {
+  table {
+    td.fr-selected-cell, th.fr-selected-cell {
+      border: 1px double @ui-color;
+    }
+
+    // Prevent Firefox selection.
+    tr {
+      .user-select(none);
+    }
+
+    td, th {
+      .user-select(text);
+    }
+  }
+
+  // Prevent Firefox selection.
+  .fr-no-selection {
+    table {
+      td, th {
+        .user-select(none);
+      }
+    }
+  }
+}
+
+.fr-table-resizer {
+  cursor: col-resize;
+  position: fixed;
+  z-index: 3;
+  display: none;
+
+  &.fr-moving {
+    z-index: 2;
+  }
+
+  div {
+    .opacity(0);
+    border-right: @table-resizer;
+  }
+}
+
+.fr-no-selection {
+  .user-select(none);
+}
+
+// Table popups.
+.fr-popup {
+  // Insert table.
+  .fr-table-size {
+    .fr-table-size-info {
+      text-align: center;
+      font-size: 14px;
+      padding: 8px;
+    }
+
+    .fr-select-table-size {
+      line-height: 0;
+      padding: 0 5px 5px;
+      white-space: nowrap;
+
+      > span {
+        display: inline-block;
+        padding: 0px 4px 4px 0;
+
+        > span {
+          display: inline-block;
+          width: 18px;
+          height: 18px;
+          border: @insert-table-grid;
+        }
+
+        &:hover, &.hover {
+          background: transparent;
+
+          > span {
+            background: rgba(red(@ui-color), green(@ui-color), blue(@ui-color), 0.3);
+            border: solid 1px @ui-color;
+          }
+        }
+      }
+
+      .new-line {
+        .clearfix();
+      }
+    }
+  }
+
+  &.fr-above {
+    .fr-table-size {
+      .fr-select-table-size {
+        > span {
+          display: inline-block !important;
+        }
+      }
+    }
+  }
+
+  // Table colors.
+  .fr-table-colors-buttons {
+    margin-bottom: 5px;
+  }
+
+  .fr-table-colors {
+    line-height: 0;
+    display: block;
+
+    > span {
+      display: inline-block;
+      width: 32px;
+      height: 32px;
+      position: relative;
+      z-index: 1;
+
+      > i {
+        text-align: center;
+        line-height: 32px;
+        height: 32px;
+        width: 32px;
+        font-size: 13px;
+        position: absolute;
+        bottom: 0;
+        cursor: default;
+        left: 0;
+      }
+
+      &.fr-selected-color::after {
+        color: @white;
+        content: "\f00c";
+        font-family: FontAwesome;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 32px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        text-align: center;
+        cursor: default;
+      }
+
+      &:hover, &.fr-selected-color {
+        outline: 1px solid @ui-text;
+        z-index: 2;
+      }
+    }
+  }
+}
+
+.fr-popup.fr-desktop .fr-table-size .fr-select-table-size > span > span {
+  width: 12px;
+  height: 12px;
+}
+
+.fr-insert-helper {
+  position: fixed;
+  z-index: 9999;
+  white-space: nowrap;
+}

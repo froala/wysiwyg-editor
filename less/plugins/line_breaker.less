@@ -1,0 +1,20 @@
+@import '../mixins.less';
+@import '../variables.less';
+
+.fr-line-breaker {
+  cursor: text;
+  border-top: 1px solid @ui-color;
+  position: fixed;
+  z-index: 2;
+  display: none;
+
+  &.fr-visible {
+    display: block;
+  }
+
+  a.fr-floating-btn {
+    position: absolute;
+    left: calc(50% - (@floating-btn-size / 2));
+    top: (-@floating-btn-size / 2);
+  }
+}

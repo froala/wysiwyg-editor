@@ -1,0 +1,110 @@
+.fr-toolbar {
+  color: @ui-text;
+  background: @ui-bg;
+  position: relative;
+  z-index: 4;
+  font-family: @font-family;
+  .clearfix();
+  .box-sizing(border-box);
+  .user-select(none);
+  padding: 0 @btn-margin;
+  .border-radius(@border-radius);
+  .material-box-shadow(@editor-shadow-level);
+  text-align: left;
+  border: @editor-border;
+  border-top: @ui-border-top;
+
+  &.fr-rtl {
+    text-align: right;
+  }
+
+  &.fr-inline {
+    display: none;
+
+    white-space: nowrap;
+    position: absolute;
+    margin-top: 10px;
+
+    .fr-arrow {
+      width: 0;
+      height: 0;
+      border-left: @arrow-size solid transparent;
+      border-right: @arrow-size solid transparent;
+      border-bottom: @arrow-size solid @ui-border-color;
+      position: absolute;
+      top: ((-@arrow-size * 2) + 1);
+      left: 50%;
+      margin-left: (-@arrow-size);
+      display: inline-block;
+    }
+
+    &.fr-above {
+      margin-top: -10px;
+      .material-box-shadow(@editor-shadow-level, -1);
+      border-bottom: @ui-border-top;
+      border-top: 0;
+
+      .fr-arrow {
+        top: auto;
+        bottom: ((-@arrow-size * 2) + 1);
+        border-bottom: 0;
+        border-top-color: inherit;
+        border-top-style: solid;
+        border-top-width: @arrow-size;
+      }
+    }
+  }
+
+  &.fr-top {
+    top: 0;
+    .border-radius(@border-radius @border-radius 0 0);
+    .material-box-shadow(@editor-shadow-level);
+  }
+
+  &.fr-bottom {
+    bottom: 0;
+    .border-radius(0 0 @border-radius @border-radius);
+    .material-box-shadow(@editor-shadow-level);
+  }
+}
+
+.fr-separator {
+  background: @separator-color;
+  display: block;
+  vertical-align: top;
+  float: left;
+
+  + .fr-separator {
+    display: none;
+  }
+
+  &.fr-vs {
+    height: (@btn-height - 2 * @btn-margin);
+    width: @separator-size;
+    margin: @btn-margin;
+  }
+
+  &.fr-hs {
+    clear: both;
+    height: @separator-size;
+    width: calc(100% - (2 * @btn-margin));
+    margin: 0 @btn-margin;
+  }
+
+  &.fr-hidden {
+    display: none !important;
+  }
+}
+
+.fr-rtl .fr-separator {
+  float: right;
+}
+
+.fr-toolbar.fr-inline .fr-separator.fr-hs {
+  float: none;
+}
+
+.fr-toolbar.fr-inline .fr-separator.fr-vs {
+  float: none;
+  display: inline-block;
+}

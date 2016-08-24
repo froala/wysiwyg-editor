@@ -1,0 +1,22 @@
+.fr-tooltip {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0 8px;
+  .border-radius(@border-radius);
+  .material-box-shadow(((@editor-shadow-level + 1) * min(@editor-shadow-level, 1)));
+  background: @tooltip-bg;
+  color: @tooltip-text;
+  font-size: @tooltip-font-size;
+  line-height: @tooltip-line-height;
+  font-family: @font-family;
+  .transition(opacity @transition-timing);
+  .opacity(0);
+  left: -3000px;
+  .user-select(none);
+  z-index: 9997;
+
+  &.fr-visible {
+    .opacity(1);
+  }
+}

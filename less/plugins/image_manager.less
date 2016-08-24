@@ -1,0 +1,340 @@
+@import '../mixins.less';
+@import '../variables.less';
+
+body.prevent-scroll {
+  overflow: hidden;
+
+  &.fr-mobile {
+    position: fixed;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+.fr-modal {
+  position: fixed;
+  overflow-x: auto;
+  overflow-y: scroll;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  text-align: center;
+  width: 100%;
+  z-index: 9999;
+
+  .fr-modal-wrapper {
+    .border-radius(@border-radius);
+    margin: 20px auto;
+    display: inline-block;
+    background: @modal-bg;
+    min-width: 300px;
+    text-align: center;
+    .material-box-shadow(((@editor-shadow-level + 2) * min(@editor-shadow-level, 1)));
+    border: @editor-border;
+    border-top: @ui-border-top;
+    overflow: hidden;
+    width: 90%;
+    padding-bottom: 10px;
+    position: relative;
+
+    @media (min-width: @screen-sm) and (max-width: @screen-sm-max) {
+      margin: 30px auto;
+      width: 70%;
+    }
+
+    @media (min-width: @screen-md) {
+      margin: 50px auto;
+      width: 600px;
+    }
+
+    .fr-preloader {
+      display: block;
+      margin: 50px auto;
+    }
+
+    // Title and close button.
+    .fr-modal-title {
+      background: @ui-bg;
+      .material-box-shadow(((@editor-shadow-level + 1) * min(@editor-shadow-level, 1)));
+      border-bottom: @editor-border;
+      overflow: hidden;
+      position: absolute;
+      width: 100%;
+      z-index: 3;
+      .transition(height @transition-timing);
+
+      .fr-modal-title-line {
+        .clearfix();
+
+        h4 {
+          font-size: 18px;
+          color: @ui-text;
+          padding: 12px 10px;
+          margin: 0;
+          font-weight: 400;
+          line-height: 18px;
+          display: inline-block;
+          float: left;
+        }
+
+        i {
+          padding: 12px;
+          width: 20px;
+          font-size: 16px;
+          cursor: pointer;
+          line-height: 18px;
+          color: @ui-text;
+          .box-sizing(content-box);
+
+          &.fr-modal-more {
+            float: left;
+            opacity: 1;
+            .transition(padding @transition-timing, width @transition-timing, opacity @transition-timing;);
+
+            &.fr-not-available {
+              opacity: 0;
+              width: 0;
+              padding: 12px 0;
+            }
+          }
+
+          &.fr-modal-close {
+            position: absolute;
+            top: 0;
+            right: 0;
+            .transition(color @transition-timing);
+
+          }
+        }
+      }
+
+      .fr-modal-tags {
+        text-align: left;
+        display: none;
+
+        a {
+          display: inline-block;
+          opacity: 0;
+          padding: 6px 8px;
+          margin: 8px 0 8px 8px;
+          text-decoration: none;
+          .border-radius(@border-radius);
+          color: @ui-color;
+          .transition(opacity @transition-timing, background @transition-timing;);
+          cursor: pointer;
+
+          &:focus {
+            outline: none;
+          }
+
+          &.fr-selected-tag {
+            background: @ui-focused-color;
+          }
+        }
+      }
+    }
+
+    div.fr-scroller {
+      height: 100%;
+      min-height: 150px;
+      overflow-y: scroll;
+
+      // The images list.
+      div.fr-image-list {
+        .clearfix();
+        margin: 0 10px;
+        padding: 0;
+
+        .fr-list-column {
+          float: left;
+          // 1 columns, 1 gap1 of 10px;
+          width: calc((100% - 10px) / 2);
+
+          @media (min-width: @screen-sm) and (max-width: @screen-md-max) {
+            // 3 columns, 2 gaps of 10px each;
+            width: calc((100% - 20px) / 3);
+          }
+
+          @media (min-width: @screen-lg) {
+            // 4 columns, 3 gaps of 10px each;
+            width: calc((100% - 30px) / 4);
+          }
+
+          + .fr-list-column {
+            margin-left: 10px;
+          }
+        }
+
+        // The image container.
+        div.fr-image-container {
+          position: relative;
+          width: 100%;
+          display: block;
+          .material-box-shadow(@editor-shadow-level);
+          .border-radius(@border-radius);
+          overflow: hidden;
+
+          &:first-child {
+            margin-top: 10px;
+          }
+
+          + div {
+            margin-top: 10px;
+          }
+
+          &.fr-image-deleting{
+            &::after {
+              position: absolute;
+              .opacity(0.5);
+              .transition(opacity @transition-timing);
+              background: @black;
+              content: "";
+              top: 0;
+              left: 0;
+              bottom: 0;
+              right: 0;
+              z-index: 2;
+            }
+
+            &::before {
+              content: attr(data-deleting);
+              color: @white;
+              top: 0;
+              left: 0;
+              bottom: 0;
+              right: 0;
+              margin: auto;
+              position: absolute;
+              z-index: 3;
+              font-size: 15px;
+              height: 20px;
+            }
+          }
+
+          // Empty box displayed before loading an image.
+          &.fr-empty {
+            height: 95px;
+            background: @gray;
+            z-index: 1;
+
+            &::after {
+              position: absolute;
+              margin: auto;
+              top: 0;
+              bottom: 0;
+              left: 0;
+              right: 0;
+              content: attr(data-loading);
+              display: inline-block;
+              height: 20px;
+            }
+          }
+
+          img {
+            width: 100%;
+            vertical-align: middle;
+            position: relative;
+            z-index: 2;
+            .opacity(1);
+            .transition(opacity @transition-timing, filter @transition-timing;);
+            .transform(translateZ(0));
+          }
+
+          &.fr-mobile-selected {
+            img {
+              .opacity(0.75);
+            }
+
+            .fr-delete-img, .fr-insert-img {
+              display: inline-block;
+            }
+          }
+
+          // Delete image button.
+          .fr-delete-img, .fr-insert-img {
+            display: none;
+            top: 50%;
+            .border-radius(100%);
+            .transition(background @transition-timing, color @transition-timing;);
+            .material-box-shadow(@editor-shadow-level);
+            position: absolute;
+            cursor: pointer;
+            margin: 0;
+            width: 36px;
+            height: 36px;
+            line-height: 36px;
+            text-decoration: none;
+            z-index: 3;
+          }
+
+          .fr-delete-img {
+            background: @modal-destroy-btn-bg;
+            color: @modal-destroy-btn-text;
+            left: 50%;
+            .transform(translateY(-50%) translateX(25%));
+          }
+
+          .fr-insert-img {
+            background: @ui-bg;
+            color: @ui-color;
+            left: 50%;
+            .transform(translateY(-50%) translateX(-125%));
+          }
+        }
+      }
+    }
+  }
+
+  &.fr-desktop .fr-modal-wrapper {
+    .fr-modal-title {
+      .fr-modal-title-line {
+        i:hover {
+          background: @ui-hover-color;
+        }
+      }
+
+      .fr-modal-tags a {
+        &:hover {
+          background: @ui-hover-color;
+        }
+
+        &.fr-selected-tag {
+          background: @ui-focused-color;
+        }
+      }
+    }
+
+    div.fr-scroller div.fr-image-list div.fr-image-container {
+      &:hover {
+        img {
+          .opacity(0.75);
+        }
+
+        .fr-delete-img, .fr-insert-img {
+          display: inline-block;
+        }
+      }
+
+      .fr-delete-img:hover {
+        background: @modal-destroy-btn-hover-bg;
+        color: @modal-destroy-btn-hover-text;
+      }
+
+      .fr-insert-img:hover {
+        background: @ui-hover-color;
+      }
+    }
+  }
+}
+
+// Overlay that appears with modal.
+.fr-overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: @modal-overlay-color;
+  .opacity(0.5);
+  z-index: 9998;
+}

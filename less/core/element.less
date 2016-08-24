@@ -1,0 +1,89 @@
+.fr-element, .fr-element:focus {
+  outline: 0px solid transparent;
+}
+
+.fr-box.fr-basic .fr-element {
+  text-align: initial;
+  color: @editor-text;
+  padding: @editor-padding;
+  .box-sizing(border-box);
+  overflow-x: auto;
+  min-height: (20px + (2 * @editor-padding));
+}
+
+.fr-element {
+  background: transparent;
+  position: relative;
+  z-index: 2;
+
+  // CSS rule for iPad not being able to select sometimes.
+  -webkit-user-select: auto;
+
+  // Fix bootstrap select.
+  a {
+    .user-select(auto);
+  }
+
+  &.fr-disabled {
+    .user-select(none);
+  }
+
+  [contenteditable="false"] {
+    .user-select(none);
+  }
+
+  [contenteditable="true"] {
+    outline: 0px solid transparent;
+  }
+}
+
+.fr-box {
+  a.fr-floating-btn {
+    .material-box-shadow (@editor-shadow-level);
+    .border-radius(100%);
+    height: @floating-btn-size;
+    width: @floating-btn-size;
+    text-align: center;
+    background: @floating-btn-bg;
+    color: @floating-btn-text;
+    .transition(background @transition-timing, color @transition-timing, transform @transition-timing;);
+    outline: none;
+    left: 0;
+    top: 0;
+    line-height: (@floating-btn-size);
+    .transform(scale(0));
+    text-align: center;
+    display: block;
+    .box-sizing(border-box);
+    border: @floating-btn-border;
+
+    svg {
+      .transition(transform @transition-timing;);
+      fill: @floating-btn-text;
+    }
+
+    i {
+      font-size: @floating-btn-font-size;
+      line-height: @floating-btn-size;
+    }
+
+    &.fr-btn + .fr-btn {
+      margin-left: 10px;
+    }
+
+    &:hover {
+      background: @floating-btn-hover-bg;
+      cursor: pointer;
+
+      svg {
+        fill: @floating-btn-hover-text;
+      }
+    }
+  }
+
+  .fr-visible {
+    a.fr-floating-btn {
+      .transform(scale(1));
+    }
+  }
+}

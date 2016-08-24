@@ -1,0 +1,119 @@
+@import '../variables.less';
+@import '../mixins.less';
+
+.fr-file-upload-layer {
+  border: dashed 2px @ui-disabled-color;
+  padding: 25px 0;
+  position: relative;
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 140%;
+  .box-sizing(border-box);
+  text-align: center;
+
+  &:hover {
+    background: @ui-hover-color;
+  }
+
+  &.fr-drop {
+    background: @ui-hover-color;
+    border-color: @ui-color;
+  }
+
+  .fr-form {
+    .opacity(0);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    overflow: hidden;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+
+    input {
+      cursor: pointer;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+      bottom: 0px;
+      width: 500%;
+      height: 100%;
+      margin: 0px;
+      font-size: 400px;
+    }
+  }
+}
+
+.fr-file-progress-bar-layer {
+  .box-sizing(border-box);
+
+  > h3 {
+    font-size: 16px;
+    margin: 10px 0;
+    font-weight: normal;
+  }
+
+  > div.fr-action-buttons {
+    display: none;
+  }
+
+  > div.fr-loader {
+    background: mix(@white, @ui-color, 70%);
+    height: 10px;
+    width: 100%;
+    margin-top: 20px;
+    overflow: hidden;
+    position: relative;
+
+    span {
+      display: block;
+      height: 100%;
+      width: 0%;
+      background: @ui-color;
+      .transition(width @transition-timing);
+    }
+
+    &.fr-indeterminate {
+      span {
+        width: 30% !important;
+        position: absolute;
+        top: 0;
+        .animation(loading 2s linear infinite);
+      }
+    }
+  }
+
+  &.fr-error {
+    > div.fr-loader {
+      display: none;
+    }
+
+    > div.fr-action-buttons {
+      display: block;
+    }
+  }
+}
+
+
+@keyframes loading {
+  from {left: -25%;}
+  to {left: 100%}
+}
+
+@-webkit-keyframes loading {
+  from {left: -25%;}
+  to {left: 100%}
+}
+
+@-moz-keyframes loading {
+  from {left: -25%;}
+  to {left: 100%}
+}
+
+@-o-keyframes loading {
+  from {left: -25%;}
+  to {left: 100%}
+}

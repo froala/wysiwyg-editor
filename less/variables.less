@@ -1,0 +1,140 @@
+// Theme Name.
+@theme: 'theme';
+
+// UI colors
+@ui-color: #1E88E5;
+@ui-text: #222222;
+@ui-hover-color: mix(@white, #999, 80%);
+@ui-focused-color: mix(@white, #999, 60%);
+@ui-disabled-color: mix(@white, #000, 74%);
+@ui-bg: @white;
+@ui-font-size: 14px;
+@ui-border-color: #222222;
+@ui-border-top: 5px solid @ui-border-color;
+
+// Separator
+@separator-size: 1px;
+@separator-color: mix(@white, #999, 80%);
+
+// Generic.
+@white: #FFF;
+@black: #000;
+@gray: #CCCCCC;
+@font-family: Arial, Helvetica, sans-serif;
+@border-radius: 2px;
+@arrow-size: 5px;
+@transition-timing: 0.2s ease 0s;
+
+// Screen sizes.
+@screen-xs: 480px;
+@screen-sm: 768px;
+@screen-md: 992px;
+@screen-lg: 1200px;
+@screen-xs-max: (@screen-sm - 1);
+@screen-sm-max: (@screen-md - 1);
+@screen-md-max: (@screen-lg - 1);
+@screen-lg-max: 'auto';
+
+// Tooltip
+@tooltip-bg: #222222;
+@tooltip-text: #FFFFFF;
+@tooltip-font-size: 11px;
+@tooltip-line-height: 22px;
+
+// Editor properties.
+@editor-padding: 10px;
+@editor-bg: #FFF;
+@editor-text: #000;
+@editor-shadow-level: 1;
+@editor-border: 0px;
+
+// Text selection colors.
+@selection-bg: #b5d6fd;
+@selection-text: #000;
+
+// Placeholder properties.
+@placeholder-size: 12px;
+@placeholder-color: #AAA;
+
+// Button colors.
+@btn-text: #222222;
+@btn-hover-text: #222222;
+@btn-hover-bg: @ui-hover-color;
+
+@btn-active-text: @ui-color;
+@btn-active-bg: transparent;
+@btn-active-hover-text: @ui-color;
+@btn-active-hover-bg: @btn-hover-bg;
+
+@btn-selected-text: @btn-text;
+@btn-selected-bg: @ui-focused-color;
+@btn-active-selected-text: @ui-color;
+@btn-active-selected-bg: @btn-selected-bg;
+
+@btn-disabled-color: @ui-disabled-color;
+
+// Button size.
+@btn-width: 38px;
+@btn-height: 37px;
+@btn-margin: 2px;
+@btn-font-size: 15px;
+
+// Image.
+@image-margin: 5px;
+
+// Image and Video
+@handler-size: 12px;
+@handler-size-lg: 10px;
+
+// Code View
+@code-view-bg: #FFF;
+@code-view-text: #000;
+
+// Table properties.
+@table-border: 1px solid #DDD;
+@table-resizer: 1px solid @ui-color;
+
+// Insert table grid.
+@insert-table-grid: @table-border;
+
+// Quick insert.
+@floating-btn-bg: #FFF;
+@floating-btn-text: @ui-color;
+@floating-btn-hover-bg: @ui-hover-color;
+@floating-btn-hover-text: @ui-color;
+@floating-btn-size: 32px;
+@floating-btn-font-size: 14px;
+@floating-btn-border: none;
+
+// List menu.
+@dropdown-arrow-width: 4px;
+@dropdown-item-active-bg: @ui-focused-color;
+@dropdown-max-height: 275px;
+
+// Image manager.
+@modal-bg: @white;
+@modal-overlay-color: #000;
+
+// Destroy buttons (delete in image manager).
+@modal-destroy-btn-bg: #B8312F;
+@modal-destroy-btn-text: @white;
+@modal-destroy-btn-hover-bg: mix(contrast(@modal-destroy-btn-bg, @black, @white, 50%), @modal-destroy-btn-bg, 10%);
+@modal-destroy-btn-hover-text: @white;
+
+// Popups.
+@popup-layer-width: 300px;
+
+// Inputs.
+@input-border-color: mix(@white, #000, 74%);
+@input-label-color: mix(@white, #000, 50%);
+
+// Quote.
+@blockquote-level1-color: #5E35B1;
+@blockquote-level2-color: #00BCD4;
+@blockquote-level3-color: #43A047;
+
+// Char counter.
+@char-counter-border: solid 1px mix(@white, #999, 80%);
+
+@drag-helper-border: solid 1px @ui-color;
+@drag-helper-bg: @ui-color;

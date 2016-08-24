@@ -1,0 +1,20 @@
+@import '../mixins.less';
+@import '../variables.less';
+
+.fr-drag-helper {
+  background: @drag-helper-bg;
+  height: 2px;
+  margin-top: -1px;
+  .opacity(0.2);
+  position: absolute;
+  z-index: 9999;
+  display: none;
+
+  &.fr-visible {
+    display: block;
+  }
+}
+
+.fr-dragging {
+  .opacity(0.4);
+}

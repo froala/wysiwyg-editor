@@ -1,0 +1,187 @@
+// Command button.
+.fr-toolbar, .fr-popup {
+  .fr-command.fr-btn {
+    background: transparent;
+    color: @btn-text;
+  	-moz-outline: 0;
+  	outline: 0;
+    border: 0;
+    line-height: 1;
+  	cursor: pointer;
+    text-align: left;
+  	margin: 0px @btn-margin;
+    .transition(background @transition-timing);
+    .border-radius(0);
+    z-index: 2;
+    position: relative;
+    .box-sizing(border-box);
+    text-decoration: none;
+    .user-select(none);
+    float: left;
+    padding: 0;
+    width: @btn-width;
+    height: @btn-height;
+
+    i {
+      display: block;
+      font-size: @btn-font-size;
+      width: @btn-font-size;
+      margin: ((@btn-height - @btn-font-size) / 2) ((@btn-width - @btn-font-size) / 2);
+      text-align: center;
+      float: none;
+    }
+
+    span {
+      font-size: @ui-font-size;
+      display: block;
+      line-height:  @ui-font-size;
+      min-width: @btn-width;
+      float: left;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+      height: @btn-font-size;
+      font-weight: bold;
+    }
+
+    img {
+      margin: ((@btn-height - @btn-font-size) / 2) ((@btn-width - @btn-font-size) / 2);
+      width: @btn-font-size;
+    }
+
+    // Button is active.
+    &.fr-active {
+      color: @btn-active-text;
+      background: @btn-active-bg;
+    }
+
+    &.fr-dropdown {
+      &.fr-selection {
+        width: auto;
+
+        span {
+          font-weight: normal;
+        }
+      }
+
+      i, span, img {
+        margin-left: (((@btn-width - @btn-font-size) / 2) - @dropdown-arrow-width);
+        margin-right: (((@btn-width - @btn-font-size) / 2) + @dropdown-arrow-width);
+      }
+
+      // Dropdown is visible.
+      &.fr-active {
+        color: @btn-text;
+        background: @btn-selected-bg;
+
+        &:hover, &:focus {
+          background: @btn-selected-bg !important;
+          color: @btn-selected-text !important;
+
+          &::after {
+            border-top-color: @btn-selected-text !important;
+          }
+        }
+      }
+
+      &::after {
+        position: absolute;
+        width: 0;
+      	height: 0;
+      	border-left: @dropdown-arrow-width solid transparent;
+      	border-right: @dropdown-arrow-width solid transparent;
+      	border-top: @dropdown-arrow-width solid @btn-text;
+        right: (((@btn-width - @btn-font-size) / 2 - @dropdown-arrow-width) / 2);
+        top: ((@btn-height - @dropdown-arrow-width) / 2);
+        content: "";
+      }
+    }
+
+    &.fr-disabled {
+      color: @btn-disabled-color;
+      cursor: default;
+
+      &::after {
+        border-top-color: @btn-disabled-color !important;
+      }
+    }
+
+    &.fr-hidden {
+      display: none;
+    }
+  }
+
+  &.fr-disabled {
+    .fr-btn, .fr-btn.fr-active {
+      color: @btn-disabled-color;
+
+      &.fr-dropdown::after {
+        border-top-color: @btn-disabled-color;
+      }
+    }
+  }
+
+  &.fr-rtl {
+    .fr-command.fr-btn {
+      float: right;
+    }
+  }
+}
+
+.fr-toolbar.fr-inline {
+  .fr-command.fr-btn {
+    float: none;
+  }
+}
+
+.fr-desktop {
+  .fr-command {
+    // Hover.
+    &:hover, &:focus {
+      color: @btn-hover-text;
+      background: @btn-hover-bg;
+
+      &::after {
+        border-top-color: @btn-hover-text !important;
+      }
+    }
+
+    // Button is selected.
+    &.fr-selected {
+      color: @btn-selected-text;
+      background: @btn-selected-bg;
+    }
+
+    &.fr-active {
+      &:hover, &:focus {
+        color: @btn-active-hover-text;
+        background: @btn-active-hover-bg;
+      }
+
+      &.fr-selected {
+        color: @btn-active-selected-text;
+        background: @btn-active-selected-bg;
+      }
+    }
+
+    &.fr-disabled {
+      &:hover, &:focus, &.fr-selected {
+        background: transparent;
+      }
+    }
+  }
+
+  &.fr-disabled {
+    .fr-command {
+      &:hover, &:focus, &.fr-selected {
+        background: transparent;
+      }
+    }
+  }
+}
+
+.fr-toolbar.fr-mobile, .fr-popup.fr-mobile {
+  .fr-command.fr-blink {
+    background: @btn-active-bg;
+  }
+}

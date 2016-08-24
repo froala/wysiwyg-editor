@@ -1,0 +1,36 @@
+@import '../variables.less';
+@import '../mixins.less';
+
+.fr-box {
+  .fr-counter {
+    position: absolute;
+    bottom: 0px;
+    padding: 5px;
+    right: 0px;
+    color: @gray;
+    content: attr(data-chars);
+    font-size: 15px;
+    font-family: "Times New Roman", Georgia, Serif;
+    z-index: 1;
+    background: @editor-bg;
+    border-top: @char-counter-border;
+    border-left: @char-counter-border;
+    .border-radius(@border-radius 0 0 0);
+  }
+
+  &.fr-rtl {
+    .fr-counter {
+      left: 0px;
+      right: auto;
+      border-left: none;
+      border-right: @char-counter-border;
+      .border-radius(0 @border-radius 0 0);
+    }
+  }
+}
+
+.fr-box.fr-code-view {
+  .fr-counter {
+    display: none;
+  }
+}

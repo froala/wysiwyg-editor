@@ -1,0 +1,37 @@
+@import '../mixins.less';
+@import '../variables.less';
+
+.fr-quick-insert {
+  position: absolute;
+  z-index: 9998;
+  white-space: nowrap;
+  padding-right: 5px;
+  margin-left: -5px;
+  .box-sizing(content-box);
+
+  &.fr-on {
+    a.fr-floating-btn svg {
+      .transform(rotate(135deg));
+    }
+  }
+}
+
+.fr-qi-helper {
+  position: absolute;
+  z-index: 3;
+  padding-left: @editor-padding;
+  white-space: nowrap;
+
+  a.fr-btn.fr-floating-btn {
+    text-align: center;
+    display: inline-block;
+    color: @ui-text;
+    .opacity(0);
+    .transform(scale(0));
+
+    &.fr-size-1 {
+      .opacity(1);
+      .transform(scale(1));
+    }
+  }
+}
