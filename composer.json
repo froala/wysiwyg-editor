@@ -3,7 +3,7 @@
   "description": "A beautiful jQuery WYSIWYG HTML rich text editor. High performance and modern design make it easy to use for developers and loved by users.",
   "type": "component",
   "homepage": "https://www.froala.com/wysiwyg-editor",
-  "license": "https://www.froala.com/wysiwyg-editor/pricing",
+  "license": "proprietary",
   "support": {
     "issues": "https://www.froala.com/wysiwyg-editor/contact"
   },
