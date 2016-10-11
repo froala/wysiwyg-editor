@@ -2105,6 +2105,9 @@ body.prevent-scroll.fr-mobile {
   -ms-transform: rotate(135deg);
   -o-transform: rotate(135deg);
 }
+.fr-quick-insert.fr-hidden {
+  display: none;
+}
 .fr-qi-helper {
   position: absolute;
   z-index: 3;
