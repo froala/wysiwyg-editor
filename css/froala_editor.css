@@ -406,6 +406,10 @@ iframe.fr-iframe {
   width: 38px;
   height: 37px;
 }
+.fr-toolbar .fr-command.fr-btn.fr-btn-text,
+.fr-popup .fr-command.fr-btn.fr-btn-text {
+  width: auto;
+}
 .fr-toolbar .fr-command.fr-btn i,
 .fr-popup .fr-command.fr-btn i {
   display: block;
@@ -427,6 +431,7 @@ iframe.fr-iframe {
   white-space: nowrap;
   height: 15px;
   font-weight: bold;
+  padding: 0 2px;
 }
 .fr-toolbar .fr-command.fr-btn img,
 .fr-popup .fr-command.fr-btn img {

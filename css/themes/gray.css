@@ -693,6 +693,10 @@
   width: 38px;
   height: 37px;
 }
+.gray-theme.fr-toolbar .fr-command.fr-btn.fr-btn-text,
+.gray-theme.fr-popup .fr-command.fr-btn.fr-btn-text {
+  width: auto;
+}
 .gray-theme.fr-toolbar .fr-command.fr-btn i,
 .gray-theme.fr-popup .fr-command.fr-btn i {
   font-size: 15px;
@@ -705,6 +709,7 @@
   line-height: 14px;
   min-width: 38px;
   height: 15px;
+  padding: 0 2px;
 }
 .gray-theme.fr-toolbar .fr-command.fr-btn img,
 .gray-theme.fr-popup .fr-command.fr-btn img {
