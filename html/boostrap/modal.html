@@ -26,8 +26,9 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
 
   <style>
-      body {
+      html, body {
           text-align: center;
+          height: 100%;
       }
 
       div#editor {
@@ -56,7 +57,7 @@
       </button>
 
       <!-- Modal -->
-      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="myModalLabel">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header">
@@ -128,7 +129,8 @@
     $(function(){
       $('#edit').froalaEditor({
         enter: $.FroalaEditor.ENTER_P,
-        height: 350
+        height: 350,
+        zIndex: 8000
       })
     });
   </script>
