@@ -933,6 +933,9 @@ iframe.fr-iframe {
   left: auto;
   right: 0;
 }
+.fr-popup.fr-rtl .fr-buttons .fr-separator.fr-vs {
+  float: right;
+}
 .fr-popup .fr-arrow {
   width: 0;
   height: 0;
