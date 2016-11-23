@@ -69,7 +69,7 @@ textarea.fr-code {
   line-height: 1;
   cursor: pointer;
   text-align: left;
-  padding: 11px 11.5px;
+  padding: 12px 12px;
   -webkit-transition: background 0.2s ease 0s;
   -moz-transition: background 0.2s ease 0s;
   -ms-transition: background 0.2s ease 0s;
@@ -93,8 +93,8 @@ textarea.fr-code {
   -ms-user-select: none;
 }
 .fr-box.fr-inline .fr-command.fr-btn.html-switch i {
-  font-size: 15px;
-  width: 15px;
+  font-size: 14px;
+  width: 14px;
   text-align: center;
 }
 .fr-box.fr-inline .fr-command.fr-btn.html-switch.fr-desktop:hover {

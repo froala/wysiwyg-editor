@@ -345,7 +345,7 @@ iframe.fr-iframe {
   display: none;
 }
 .fr-separator.fr-vs {
-  height: 33px;
+  height: 34px;
   width: 1px;
   margin: 2px;
 }
@@ -404,7 +404,12 @@ iframe.fr-iframe {
   float: left;
   padding: 0;
   width: 38px;
-  height: 37px;
+  height: 38px;
+}
+.fr-toolbar .fr-command.fr-btn::-moz-focus-inner,
+.fr-popup .fr-command.fr-btn::-moz-focus-inner {
+  border: 0;
+  padding: 0;
 }
 .fr-toolbar .fr-command.fr-btn.fr-btn-text,
 .fr-popup .fr-command.fr-btn.fr-btn-text {
@@ -413,9 +418,9 @@ iframe.fr-iframe {
 .fr-toolbar .fr-command.fr-btn i,
 .fr-popup .fr-command.fr-btn i {
   display: block;
-  font-size: 15px;
-  width: 15px;
-  margin: 11px 11.5px;
+  font-size: 14px;
+  width: 14px;
+  margin: 12px 12px;
   text-align: center;
   float: none;
 }
@@ -429,14 +434,14 @@ iframe.fr-iframe {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
-  height: 15px;
+  height: 14px;
   font-weight: bold;
   padding: 0 2px;
 }
 .fr-toolbar .fr-command.fr-btn img,
 .fr-popup .fr-command.fr-btn img {
-  margin: 11px 11.5px;
-  width: 15px;
+  margin: 12px 12px;
+  width: 14px;
 }
 .fr-toolbar .fr-command.fr-btn.fr-active,
 .fr-popup .fr-command.fr-btn.fr-active {
@@ -457,8 +462,8 @@ iframe.fr-iframe {
 .fr-popup .fr-command.fr-btn.fr-dropdown span,
 .fr-toolbar .fr-command.fr-btn.fr-dropdown img,
 .fr-popup .fr-command.fr-btn.fr-dropdown img {
-  margin-left: 7.5px;
-  margin-right: 15.5px;
+  margin-left: 8px;
+  margin-right: 16px;
 }
 .fr-toolbar .fr-command.fr-btn.fr-dropdown.fr-active,
 .fr-popup .fr-command.fr-btn.fr-dropdown.fr-active {
@@ -486,8 +491,8 @@ iframe.fr-iframe {
   border-left: 4px solid transparent;
   border-right: 4px solid transparent;
   border-top: 4px solid #222222;
-  right: 3.75px;
-  top: 16.5px;
+  right: 4px;
+  top: 17px;
   content: "";
 }
 .fr-toolbar .fr-command.fr-btn.fr-disabled,

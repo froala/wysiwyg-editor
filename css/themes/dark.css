@@ -152,15 +152,15 @@
   -moz-outline: 0;
   outline: 0;
   border: 0;
-  padding: 11px 11.5px;
+  padding: 12px 12px;
   -webkit-transition: background 0.2s ease 0s;
   -moz-transition: background 0.2s ease 0s;
   -ms-transition: background 0.2s ease 0s;
   -o-transition: background 0.2s ease 0s;
 }
 .dark-theme.fr-box.fr-inline .fr-command.fr-btn.html-switch i {
-  font-size: 15px;
-  width: 15px;
+  font-size: 14px;
+  width: 14px;
 }
 .dark-theme.fr-box.fr-inline .fr-command.fr-btn.html-switch.fr-desktop:hover {
   background: #3d3d3d;
@@ -691,7 +691,11 @@
   -o-transition: background 0.2s ease 0s;
   padding: 0;
   width: 38px;
-  height: 37px;
+  height: 38px;
+}
+.dark-theme.fr-toolbar .fr-command.fr-btn::-moz-focus-inner,
+.dark-theme.fr-popup .fr-command.fr-btn::-moz-focus-inner {
+  border: 0;
 }
 .dark-theme.fr-toolbar .fr-command.fr-btn.fr-btn-text,
 .dark-theme.fr-popup .fr-command.fr-btn.fr-btn-text {
@@ -699,22 +703,22 @@
 }
 .dark-theme.fr-toolbar .fr-command.fr-btn i,
 .dark-theme.fr-popup .fr-command.fr-btn i {
-  font-size: 15px;
-  width: 15px;
-  margin: 11px 11.5px;
+  font-size: 14px;
+  width: 14px;
+  margin: 12px 12px;
 }
 .dark-theme.fr-toolbar .fr-command.fr-btn span,
 .dark-theme.fr-popup .fr-command.fr-btn span {
   font-size: 14px;
   line-height: 14px;
   min-width: 38px;
-  height: 15px;
+  height: 14px;
   padding: 0 2px;
 }
 .dark-theme.fr-toolbar .fr-command.fr-btn img,
 .dark-theme.fr-popup .fr-command.fr-btn img {
-  margin: 11px 11.5px;
-  width: 15px;
+  margin: 12px 12px;
+  width: 14px;
 }
 .dark-theme.fr-toolbar .fr-command.fr-btn.fr-active,
 .dark-theme.fr-popup .fr-command.fr-btn.fr-active {
@@ -731,8 +735,8 @@
 .dark-theme.fr-popup .fr-command.fr-btn.fr-dropdown span,
 .dark-theme.fr-toolbar .fr-command.fr-btn.fr-dropdown img,
 .dark-theme.fr-popup .fr-command.fr-btn.fr-dropdown img {
-  margin-left: 7.5px;
-  margin-right: 15.5px;
+  margin-left: 8px;
+  margin-right: 16px;
 }
 .dark-theme.fr-toolbar .fr-command.fr-btn.fr-dropdown.fr-active,
 .dark-theme.fr-popup .fr-command.fr-btn.fr-dropdown.fr-active {
@@ -759,8 +763,8 @@
   border-left: 4px solid transparent;
   border-right: 4px solid transparent;
   border-top: 4px solid #ffffff;
-  right: 3.75px;
-  top: 16.5px;
+  right: 4px;
+  top: 17px;
 }
 .dark-theme.fr-toolbar .fr-command.fr-btn.fr-disabled,
 .dark-theme.fr-popup .fr-command.fr-btn.fr-disabled {
@@ -1070,7 +1074,7 @@
   background: #595959;
 }
 .dark-theme .fr-separator.fr-vs {
-  height: 33px;
+  height: 34px;
   width: 1px;
   margin: 2px;
 }
