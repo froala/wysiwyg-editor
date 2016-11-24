@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../../css/froala_editor.css">
+  <link rel="stylesheet" href="../../css/froala_style.css">
+
+  <style>
+      body {
+          text-align: center;
+      }
+
+      section {
+          width: 81%;
+          margin: auto;
+          text-align: left;
+      }
+  </style>
+</head>
+
+<body>
+  <section id="editor">
+      <div id='edit' style="margin-top: 30px;">
+        <h1>Inline Styles</h1>
+
+        <p>Using the <code>inline_style.min.js</code> plugin it is possible to add custom style on the selected text inside the WYSIWYG HTML editor.</p>
+
+        <p>Use the Inline Style dropdown to select the desired inline style for the selected text inside the rich text editor.</p>
+
+        <p>Make sure that the <code>inlineStyle</code> button is included in the <a href="https://www.froala.com/wysiwyg-editor/docs/options#toolbarButtons" title="toolbarButtons">toolbarButtons</a> list. By default the inlineStyle button is already in the list, but if you changed the buttons list just make sure you don't omit the inlineStyle button.</p>
+
+        <p>You can define your own inline styles using the <a href="https://www.froala.com/wysiwyg-editor/docs/options#inlineStyles" title="inlineStyles">inlineStyles</a> option. This option is an Object where the key of each property represents the name of the new style and its value specifies the CSS properties for it. It is important to have unique names for the styles or they will not work properly.</p>
+      </div>
+  </section>
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script type="text/javascript" src="../../js/froala_editor.min.js"></script>
+  <script type="text/javascript" src="../../js/plugins/link.min.js"></script>
+  <script type="text/javascript" src="../../js/plugins/inline_style.min.js"></script>
+
+  <script>
+    $(function(){
+      $('#edit').froalaEditor({
+        toolbarButtons: ['bold', 'italic', 'underline', 'strikeThrough', '|', 'inlineStyle', 'undo', 'redo'],
+
+        // Define new inline styles.
+        inlineStyles: {
+          'Big Red': 'font-size: 20px; color: red;',
+          'Small Blue': 'font-size: 14px; color: blue;'
+        }
+      })
+    });
+  </script>
+</body>
+</html>

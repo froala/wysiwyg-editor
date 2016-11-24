@@ -13,24 +13,22 @@
   <link rel="stylesheet" href="../../css/plugins/image.css">
   <link rel="stylesheet" href="../../css/plugins/line_breaker.css">
   <link rel="stylesheet" href="../../css/plugins/table.css">
+  <link rel="stylesheet" href="../../css/plugins/char_counter.css">
   <link rel="stylesheet" href="../../css/plugins/video.css">
+  <link rel="stylesheet" href="../../css/plugins/fullscreen.css">
+  <link rel="stylesheet" href="../../css/plugins/file.css">
+  <link rel="stylesheet" href="../../css/plugins/quick_insert.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/codemirror.min.css">
 
   <style>
       body {
-          text-align: center;
+        text-align: center;
       }
 
       div#editor {
-          width: 81%;
-          margin: auto;
-          text-align: left;
-      }
-
-      div#input-parent {
-        background: #efefef;
-        padding: 10px;
-        margin-top: 30px;
+        width: 81%;
+        margin: auto;
+        text-align: left;
       }
   </style>
 </head>
@@ -38,54 +36,59 @@
 <body>
   <div id="editor">
     <div id='edit' style="margin-top: 30px;">
-      <h1>Blur / Focus Events</h1>
-      <p>This example allows you to see when the <a href="https://www.froala.com/wysiwyg-editor/docs/events#blur" title="Blur event" target="_blank">blur</a> and the <a href="https://www.froala.com/wysiwyg-editor/docs/events#focus" title="Focus event" target="_blank">focus</a> events are triggered. Open the browser console to follow the event flow.</p>
-    </div>
+      <h1>Change Toolbar Buttons</h1>
 
-    <div id="input-parent">
-      <p>Use the input below to test focus and blur events together with an input.</p>
-      <input id="asd" type="text"><br/>
+      <p>The toolbar's buttons can be customized based on the screen size using the following options:</p>
+
+      <ul>
+        <li><a href="https://www.froala.com/wysiwyg-editor/docs/options#toolbarButtons" title="toolbarButtons" target="_blank">toolbarButtons</a> for large devices (≥ 1200px)</li>
+        <li><a href="https://www.froala.com/wysiwyg-editor/docs/options#toolbarButtonsMD" title="toolbarButtonsMD" target="_blank">toolbarButtonsMD</a> for medium devices (≥ 992px)</li>
+        <li><a href="https://www.froala.com/wysiwyg-editor/docs/options#toolbarButtonsSM" title="toolbarButtonsSM" target="_blank">toolbarButtonsSM</a> for small devices (≥ 768px)</li>
+        <li><a href="https://www.froala.com/wysiwyg-editor/docs/options#toolbarButtonsXS" title="toolbarButtonsXS" target="_blank">toolbarButtonsXS</a> for extra small devices (&lt; 768px)</li>
+      </ul>
+
+      <p>Buttons can be grouped together by adding separators between them. There are 2 types of separators: Vertical <code>|</code> and horizontal <code>-</code>. Separators can be added by passing them to any of the options above.</p>
     </div>
   </div>
 
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/codemirror.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/mode/xml/xml.min.js"></script>
-  <script type="text/javascript" src="../../js/froala_editor.min.js"></script>
+
+  <script type="text/javascript" src="../../js/froala_editor.min.js" ></script>
   <script type="text/javascript" src="../../js/plugins/align.min.js"></script>
+  <script type="text/javascript" src="../../js/plugins/char_counter.min.js"></script>
   <script type="text/javascript" src="../../js/plugins/code_beautifier.min.js"></script>
   <script type="text/javascript" src="../../js/plugins/code_view.min.js"></script>
   <script type="text/javascript" src="../../js/plugins/colors.min.js"></script>
   <script type="text/javascript" src="../../js/plugins/draggable.min.js"></script>
   <script type="text/javascript" src="../../js/plugins/emoticons.min.js"></script>
+  <script type="text/javascript" src="../../js/plugins/entities.min.js"></script>
+  <script type="text/javascript" src="../../js/plugins/file.min.js"></script>
   <script type="text/javascript" src="../../js/plugins/font_size.min.js"></script>
   <script type="text/javascript" src="../../js/plugins/font_family.min.js"></script>
+  <script type="text/javascript" src="../../js/plugins/fullscreen.min.js"></script>
   <script type="text/javascript" src="../../js/plugins/image.min.js"></script>
   <script type="text/javascript" src="../../js/plugins/image_manager.min.js"></script>
   <script type="text/javascript" src="../../js/plugins/line_breaker.min.js"></script>
+  <script type="text/javascript" src="../../js/plugins/inline_style.min.js"></script>
   <script type="text/javascript" src="../../js/plugins/link.min.js"></script>
   <script type="text/javascript" src="../../js/plugins/lists.min.js"></script>
   <script type="text/javascript" src="../../js/plugins/paragraph_format.min.js"></script>
+  <script type="text/javascript" src="../../js/plugins/paragraph_style.min.js"></script>
+  <script type="text/javascript" src="../../js/plugins/quick_insert.min.js"></script>
+  <script type="text/javascript" src="../../js/plugins/quote.min.js"></script>
   <script type="text/javascript" src="../../js/plugins/table.min.js"></script>
+  <script type="text/javascript" src="../../js/plugins/save.min.js"></script>
+  <script type="text/javascript" src="../../js/plugins/url.min.js"></script>
   <script type="text/javascript" src="../../js/plugins/video.min.js"></script>
 
   <script>
     $(function(){
       $('#edit').froalaEditor({
-        enter: $.FroalaEditor.ENTER_P
-      })
-      .on('froalaEditor.focus', function () {
-        console.log ('focus');
-      })
-      .on('froalaEditor.blur', function () {
-        console.log ('blur');
-      })
-
-      $('#asd').on('focus', function () {
-        console.log ('input focus')
-      }).on('blur', function () {
-        console.log ('input blur')
-      })
+        toolbarButtons: ['undo', 'redo' , '|', 'bold', 'italic', 'underline', 'strikethrough', 'subscript', 'superscript', 'outdent', 'indent', 'clearFormatting', 'insertTable', 'html'],
+        toolbarButtonsXS: ['undo', 'redo' , '-', 'bold', 'italic', 'underline']
+      });
     });
   </script>
 </body>

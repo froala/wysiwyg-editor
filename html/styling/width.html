@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../../css/froala_editor.css">
+  <link rel="stylesheet" href="../../css/froala_style.css">
+
+  <style>
+      body {
+          text-align: center;
+      }
+
+      section {
+          width: 81%;
+          margin: auto;
+          text-align: left;
+      }
+  </style>
+</head>
+
+<body>
+  <section id="editor">
+      <div id='edit' style="margin-top: 30px;">
+        <h1>Predefined Width</h1>
+
+        <p>Set a specific width to the WYSIWYG HTML editor using the <a href="https://www.froala.com/wysiwyg-editor/docs/options#width" target="_blank" title="width option">width</a> option.</p>
+      </div>
+  </section>
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script type="text/javascript" src="../../js/froala_editor.min.js"></script>
+  <script type="text/javascript" src="../../js/plugins/link.min.js"></script>
+
+  <script>
+    $(function(){
+      $('#edit').froalaEditor({
+        width: 400
+      })
+    });
+  </script>
+</body>
+</html>

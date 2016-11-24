@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.0.2/css/material-design-iconic-font.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../../css/froala_editor.css">
+  <link rel="stylesheet" href="../../css/froala_style.css">
+  <link rel="stylesheet" href="../../css/plugins/image.css">
+  <link rel="stylesheet" href="../../css/plugins/image_manager.css">
+  <link rel="stylesheet" href="../../css/plugins/table.css">
+  <link rel="stylesheet" href="../../css/plugins/quick_insert.css">
+
+  <style>
+      body {
+          text-align: center;
+      }
+
+      section {
+        width: 81%;
+        margin: auto;
+        text-align: left;
+      }
+  </style>
+</head>
+
+<body>
+  <section id="editor">
+    <div id='edit' style="margin-top: 30px;">
+      <h1>Quick Insert</h1>
+
+      <p>Quick Insert makes WYSIWYG HTML editing awesome.</p>
+
+      <p>The quick insert button will appear when you have focus on an empty line. To see it in action hit enter at the end of this line.</p>
+
+      <p>There are 2 options related to the quick insert:</p>
+      <ul>
+        <li><a href="https://www.froala.com/wysiwyg-editor/docs/options#quickInsertButtons" title="quickInsertButtons option" target="_blank">quickInsertButtons</a> - the buttons to display in the quick inserter.</li>
+        <li><a href="https://www.froala.com/wysiwyg-editor/docs/options#quickInsertTags" title="quickInsertTags option" target="_blank">quickInsertTags</a> - the list of tags for which the quick insert button will appear when empty.</li>
+      </ul>
+    </div>
+  </section>
+
+  <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script type="text/javascript" src="../../js/froala_editor.min.js"></script>
+  <script type="text/javascript" src="../../js/plugins/quick_insert.min.js"></script>
+  <script type="text/javascript" src="../../js/plugins/image.min.js"></script>
+  <script type="text/javascript" src="../../js/plugins/image_manager.min.js"></script>
+  <script type="text/javascript" src="../../js/plugins/lists.min.js"></script>
+  <script type="text/javascript" src="../../js/plugins/table.min.js"></script>
+
+  <script>
+    $(function() {
+      $('#edit').froalaEditor()
+    });
+  </script>
+</body>
+</html>

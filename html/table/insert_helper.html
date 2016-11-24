@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../../css/froala_editor.css">
+  <link rel="stylesheet" href="../../css/froala_style.css">
+  <link rel="stylesheet" href="../../css/plugins/table.css">
+
+  <style>
+      body {
+        text-align: center;
+      }
+
+      section {
+        width: 81%;
+        margin: auto;
+        text-align: left;
+      }
+  </style>
+</head>
+
+<body>
+  <section id="editor">
+      <div id='edit' style="margin-top: 30px;">
+        <h1>Table Insert Helper</h1>
+
+        <p>The <code>table.min.js</code> plugin also offers a tool that allows you to insert rows and columns easier, just by going to the endge of the table.</p>
+
+        <table style="width: 100%;">
+        	<tbody>
+        		<tr>
+        			<td style="width: 25%;">
+        				<br>
+        			</td>
+        			<td style="width: 25%;">
+        				<br>
+        			</td>
+        			<td style="width: 25%;">
+        				<br>
+        			</td>
+        			<td style="width: 25%;">
+        				<br>
+        			</td>
+        		</tr>
+        		<tr>
+        			<td style="width: 25%;">
+        				<br>
+        			</td>
+        			<td style="width: 25%;">
+        				<br>
+        			</td>
+        			<td style="width: 25%;">
+        				<br>
+        			</td>
+        			<td style="width: 25%;">
+        				<br>
+        			</td>
+        		</tr>
+        	</tbody>
+        </table>
+
+        <p>There are 2 options that are related to the table insert helper works:</p>
+
+        <ul>
+          <li><a href="http://www.froala.dev/wysiwyg-editor/docs/options#tableInsertHelper" title="tableInsertHelper option" target="_blank">tableInsertHelper</a> - This option can be used to disable the table insert helper.</li>
+          <li><a href="http://www.froala.dev/wysiwyg-editor/docs/options#tableInsertHelperOffset" title="tableInsertHelperOffset option" target="_blank">tableInsertHelperOffset</a> - The distance in pixels from the table border at which to show the insert helper.</li>
+        </ul>
+      </div>
+  </section>
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script type="text/javascript" src="../../js/froala_editor.min.js"></script>
+  <script type="text/javascript" src="../../js/plugins/link.min.js"></script>
+  <script type="text/javascript" src="../../js/plugins/table.min.js"></script>
+
+  <script>
+    $(function(){
+      $('#edit').froalaEditor({
+        toolbarButtons: ['bold', 'italic', 'underline', 'strikeThrough', 'table', '|', 'undo', 'redo'],
+        tableInsertHelperOffset: 25
+      })
+    });
+  </script>
+</body>
+</html>

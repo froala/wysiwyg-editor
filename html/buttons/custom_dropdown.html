@@ -16,12 +16,13 @@
   <link rel="stylesheet" href="../../css/plugins/char_counter.css">
   <link rel="stylesheet" href="../../css/plugins/video.css">
   <link rel="stylesheet" href="../../css/plugins/fullscreen.css">
+  <link rel="stylesheet" href="../../css/plugins/file.css">
+  <link rel="stylesheet" href="../../css/plugins/quick_insert.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/codemirror.min.css">
 
   <style>
       body {
           text-align: center;
-          margin: 0;
       }
 
       div#editor {
@@ -34,63 +35,78 @@
 
 <body>
   <div id="editor">
-      <div id='edit' style="margin-top: 30px;">
-        <h1>Init on click - 1st editor</h1>
+    <div id='edit' style="margin-top: 30px;">
+      <h1>Custom Dropdown</h1>
 
-        <p>Init on click improves the page performance by initializing only the basic code when the page is loaded and the rest of the code when clicking in the editable area. It is highly recommended to use the <a href="https://www.froala.com/wysiwyg-editor/docs/options#initOnClick" target="_blank" title="initOnClick option">initOnClick</a> option if you have more rich text editors on the same page.</p>
+      <p>An example of custom dropdown for the WYSIWYG HTML editor.</p>
 
-        <p><strong>Click here to initialize the WYSIWYG HTML editor on this text.</strong></p>
-      </div>
+      <p>More details about defining a custom dropdown can be found in the <a href="https://froala.com/wysiwyg-editor/docs/concepts/custom/dropdown" title="Custom Dropdown Concept" target="_blank">Custom Dropdown</a> concept.</p>
 
-      <div id='edit2' style="margin-top: 30px;">
-        <h1>Init on click - 2nd editor</h1>
-
-        <a href="http://google.com" title="Aenean sed hendrerit">Aenean sed hendrerit</a> velit. Nullam eu mi dolor. Maecenas et erat risus. Nulla ac auctor diam, non aliquet ante. Fusce ullamcorper, ipsum id tempor lacinia, sem tellus malesuada libero, quis ornare sem massa in orci. Sed dictum dictum tristique. Proin eros turpis, ultricies eu sapien eget, ornare rutrum ipsum. Pellentesque eros nisl, ornare nec ipsum sed, aliquet sollicitudin erat. Nulla tincidunt porta <strong>vehicula.</strong><br/>
-
-        <i>Nullam laoreet</i> imperdiet orci ac euismod. Curabitur vel lectus nisi. Phasellus accumsan aliquet augue, eu rutrum tellus iaculis in. Nunc viverra ultrices mollis. Curabitur malesuada nunc massa, ut imperdiet arcu lobortis sed. Cras ac arcu mauris. Maecenas id lectus nisl. Donec consectetur scelerisque quam at ultricies. Nam quis magna iaculis, condimentum metus ut, elementum metus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus id tempus nisi.<br/>
-      </div>
+      <p>After defining custom buttons you need to add them to the toolbar buttons list, using the following options: <a href="https://froala.com/wysiwyg-editor/docs/options#toolbarButtons" title="toolbarButtons" target="_blank">toolbarButtons</a>, <a href="https://froala.com/wysiwyg-editor/docs/options#toolbarButtonsMD" title="toolbarButtonsMD" target="_blank">toolbarButtonsMD</a>, <a href="https://froala.com/wysiwyg-editor/docs/options#toolbarButtonsSM" title="toolbarButtonsSM" target="_blank">toolbarButtonsSM</a> and <a href="https://froala.com/wysiwyg-editor/docs/options#toolbarButtonsXS" title="toolbarButtonsXS" target="_blank">toolbarButtonsXS</a> as explained in the <a href="https://froala.com/wysiwyg-editor/examples/custom-toolbar" title="Custom Toolbar Example" target="_blank">Custom Toolbar</a> example.</p>
+    </div>
   </div>
 
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/codemirror.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/mode/xml/xml.min.js"></script>
-  <script type="text/javascript" src="../../js/froala_editor.min.js"></script>
+
+  <script type="text/javascript" src="../../js/froala_editor.min.js" ></script>
   <script type="text/javascript" src="../../js/plugins/align.min.js"></script>
+  <script type="text/javascript" src="../../js/plugins/char_counter.min.js"></script>
   <script type="text/javascript" src="../../js/plugins/code_beautifier.min.js"></script>
   <script type="text/javascript" src="../../js/plugins/code_view.min.js"></script>
   <script type="text/javascript" src="../../js/plugins/colors.min.js"></script>
   <script type="text/javascript" src="../../js/plugins/draggable.min.js"></script>
   <script type="text/javascript" src="../../js/plugins/emoticons.min.js"></script>
+  <script type="text/javascript" src="../../js/plugins/entities.min.js"></script>
+  <script type="text/javascript" src="../../js/plugins/file.min.js"></script>
   <script type="text/javascript" src="../../js/plugins/font_size.min.js"></script>
   <script type="text/javascript" src="../../js/plugins/font_family.min.js"></script>
+  <script type="text/javascript" src="../../js/plugins/fullscreen.min.js"></script>
   <script type="text/javascript" src="../../js/plugins/image.min.js"></script>
   <script type="text/javascript" src="../../js/plugins/image_manager.min.js"></script>
   <script type="text/javascript" src="../../js/plugins/line_breaker.min.js"></script>
+  <script type="text/javascript" src="../../js/plugins/inline_style.min.js"></script>
   <script type="text/javascript" src="../../js/plugins/link.min.js"></script>
   <script type="text/javascript" src="../../js/plugins/lists.min.js"></script>
   <script type="text/javascript" src="../../js/plugins/paragraph_format.min.js"></script>
   <script type="text/javascript" src="../../js/plugins/paragraph_style.min.js"></script>
-  <script type="text/javascript" src="../../js/plugins/video.min.js"></script>
+  <script type="text/javascript" src="../../js/plugins/quick_insert.min.js"></script>
+  <script type="text/javascript" src="../../js/plugins/quote.min.js"></script>
   <script type="text/javascript" src="../../js/plugins/table.min.js"></script>
-  <script type="text/javascript" src="../../js/plugins/url.min.js"></script>
-  <script type="text/javascript" src="../../js/plugins/entities.min.js"></script>
-  <script type="text/javascript" src="../../js/plugins/char_counter.min.js"></script>
-  <script type="text/javascript" src="../../js/plugins/inline_style.min.js"></script>
   <script type="text/javascript" src="../../js/plugins/save.min.js"></script>
-  <script type="text/javascript" src="../../js/plugins/fullscreen.min.js"></script>
-  <script type="text/javascript" src="../../js/languages/ro.js"></script>
+  <script type="text/javascript" src="../../js/plugins/url.min.js"></script>
+  <script type="text/javascript" src="../../js/plugins/video.min.js"></script>
 
   <script>
     $(function(){
-      var options = {
-        enter: $.FroalaEditor.ENTER_P,
-        toolbarInline: true,
-        initOnClick: true,
-        toolbarButtons: ['bold', 'italic', 'underline', 'strikeThrough', 'color', 'emoticons', '-', 'paragraphFormat', 'align', 'formatOL', 'formatUL', 'indent', 'outdent', '-', 'insertImage', 'insertLink', 'insertFile', 'insertVideo', 'undo', 'redo']
-      };
+      $.FroalaEditor.DefineIcon('my_dropdown', {NAME: 'cog'});
+        $.FroalaEditor.RegisterCommand('my_dropdown', {
+          title: 'Advanced options',
+          type: 'dropdown',
+          focus: false,
+          undo: false,
+          refreshAfterCallback: true,
+          options: {
+            'v1': 'Option 1',
+            'v2': 'Option 2'
+          },
+          callback: function (cmd, val) {
+            console.log (val);
+          },
+          // Callback on refresh.
+          refresh: function ($btn) {
+            console.log ('do refresh');
+          },
+          // Callback on dropdown show.
+          refreshOnShow: function ($btn, $dropdown) {
+            console.log ('do refresh when show');
+          }
+        });
 
-      $('#edit').froalaEditor($.extend({}, options, {zIndex: 21}))
-      $('#edit2').froalaEditor($.extend({}, options, {zIndex: 1}))
+      $('#edit').froalaEditor({
+        toolbarButtons: ['bold', 'italic', 'formatBlock', 'my_dropdown']
+      })
     });
   </script>
 </body>

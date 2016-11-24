@@ -2,7 +2,8 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="../../css/froala_editor.css">
   <link rel="stylesheet" href="../../css/froala_style.css">
@@ -21,10 +22,9 @@
   <style>
       body {
           text-align: center;
-          margin: 0;
       }
 
-      div#editor {
+      section {
           width: 81%;
           margin: auto;
           text-align: left;
@@ -33,23 +33,34 @@
 </head>
 
 <body>
-  <div id="editor">
+  <section id="editor">
       <div id='edit' style="margin-top: 30px;">
-        <h1>Init on click - 1st editor</h1>
+        <h1>RTL LTR Direction Buttons</h1>
 
-        <p>Init on click improves the page performance by initializing only the basic code when the page is loaded and the rest of the code when clicking in the editable area. It is highly recommended to use the <a href="https://www.froala.com/wysiwyg-editor/docs/options#initOnClick" target="_blank" title="initOnClick option">initOnClick</a> option if you have more rich text editors on the same page.</p>
+        <p>Custom buttons for RTL and LTR to change direction for the current selection.</p>
 
-        <p><strong>Click here to initialize the WYSIWYG HTML editor on this text.</strong></p>
+        <img class="fr-fir" src="../../img/photo1.jpg" alt="Old Clock" width="300"/>
+
+        <p>The rich text editor has full RTL support. Set the <a href="https://www.froala.com/wysiwyg-editor/v2.0/docs/options#direction" title="direction option" target="_blank">direction</a> option to rtl and writing in Arabic or Farsi will feel naturally.</p>
+
+        <a href="http://froala.com" title="Aenean sed hendrerit" target="_blank">Aenean sed hendrerit</a> velit. Nullam eu mi dolor. Maecenas et erat risus. Nulla ac auctor diam, non aliquet ante. Fusce ullamcorper, ipsum id tempor lacinia, sem tellus malesuada libero, quis ornare sem massa in orci. Sed dictum dictum tristique. Proin eros turpis, ultricies eu sapien eget, ornare rutrum ipsum. Pellentesque eros nisl, ornare nec ipsum sed, aliquet sollicitudin erat. Nulla tincidunt porta <strong>vehicula.</strong><br/>
+
+        <table style="width: 60%;">
+          <tr>
+            <td style="width: 25%;">testing rtl</td>
+            <td style="width: 25%;">rtl</td>
+            <td style="width: 25%;">testing rtl</td>
+            <td style="width: 25%;">rtl</td>
+          </tr>
+          <tr>
+            <td style="width: 25%;">testing rtl</td>
+            <td style="width: 25%;">rtl</td>
+            <td style="width: 25%;">testing rtl</td>
+            <td style="width: 25%;">rtl</td>
+          </tr>
+        </table>
       </div>
-
-      <div id='edit2' style="margin-top: 30px;">
-        <h1>Init on click - 2nd editor</h1>
-
-        <a href="http://google.com" title="Aenean sed hendrerit">Aenean sed hendrerit</a> velit. Nullam eu mi dolor. Maecenas et erat risus. Nulla ac auctor diam, non aliquet ante. Fusce ullamcorper, ipsum id tempor lacinia, sem tellus malesuada libero, quis ornare sem massa in orci. Sed dictum dictum tristique. Proin eros turpis, ultricies eu sapien eget, ornare rutrum ipsum. Pellentesque eros nisl, ornare nec ipsum sed, aliquet sollicitudin erat. Nulla tincidunt porta <strong>vehicula.</strong><br/>
-
-        <i>Nullam laoreet</i> imperdiet orci ac euismod. Curabitur vel lectus nisi. Phasellus accumsan aliquet augue, eu rutrum tellus iaculis in. Nunc viverra ultrices mollis. Curabitur malesuada nunc massa, ut imperdiet arcu lobortis sed. Cras ac arcu mauris. Maecenas id lectus nisl. Donec consectetur scelerisque quam at ultricies. Nam quis magna iaculis, condimentum metus ut, elementum metus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus id tempus nisi.<br/>
-      </div>
-  </div>
+  </section>
 
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/codemirror.min.js"></script>
@@ -82,15 +93,46 @@
 
   <script>
     $(function(){
-      var options = {
-        enter: $.FroalaEditor.ENTER_P,
-        toolbarInline: true,
-        initOnClick: true,
-        toolbarButtons: ['bold', 'italic', 'underline', 'strikeThrough', 'color', 'emoticons', '-', 'paragraphFormat', 'align', 'formatOL', 'formatUL', 'indent', 'outdent', '-', 'insertImage', 'insertLink', 'insertFile', 'insertVideo', 'undo', 'redo']
-      };
+      var changeDirection = function (dir, align) {
+        this.selection.save();
+        var elements = this.selection.blocks();
+        for (var i = 0; i < elements.length; i++) {
+          var element = elements[i];
+          if (element != this.$el.get(0)) {
+           $(element)
+             .css('direction', dir)
+             .css('text-align', align);
+          }
+        }
 
-      $('#edit').froalaEditor($.extend({}, options, {zIndex: 21}))
-      $('#edit2').froalaEditor($.extend({}, options, {zIndex: 1}))
+        this.selection.restore();
+      }
+
+      $.FroalaEditor.DefineIcon('rightToLeft', {NAME: 'long-arrow-left'});
+      $.FroalaEditor.RegisterCommand('rightToLeft', {
+        title: 'RTL',
+        focus: true,
+        undo: true,
+        refreshAfterCallback: true,
+        callback: function () {
+          changeDirection.apply(this, ['rtl', 'right']);
+        }
+      })
+
+      $.FroalaEditor.DefineIcon('leftToRight', {NAME: 'long-arrow-right'});
+      $.FroalaEditor.RegisterCommand('leftToRight', {
+        title: 'LTR',
+        focus: true,
+        undo: true,
+        refreshAfterCallback: true,
+        callback: function () {
+          changeDirection.apply(this, ['ltr', 'left']);
+        }
+      });
+
+      $('#edit').froalaEditor({
+        toolbarButtons: ['undo', 'redo' , 'bold', 'formatOL', 'formatUL', '|', 'rightToLeft', 'leftToRight']
+      });
     });
   </script>
 </body>

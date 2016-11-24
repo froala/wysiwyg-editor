@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.0.2/css/material-design-iconic-font.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../../css/froala_editor.css">
+  <link rel="stylesheet" href="../../css/froala_style.css">
+  <link rel="stylesheet" href="../../css/plugins/table.css">
+  <link href='http://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+
+  <style>
+      body {
+          text-align: center;
+      }
+
+      section {
+          width: 81%;
+          margin: auto;
+          text-align: left;
+      }
+  </style>
+</head>
+
+<body>
+  <section id="editor">
+      <div id='edit' style="margin-top: 30px;">
+        <h1>Nested Tables</h1>
+
+        <p>In this example you can test advanced actions on nested tables.</p>
+
+        <table style="width: 100%;">
+          <tr>
+            <td style="width: 25%;">row 1, col 1</td>
+            <td style="width: 25%;">
+              <table style="width: 100%;">
+                <tr><td style="width: 50%;">t2, row 1, col 1</td><td style="width: 50%;">t2, row 1, col 2</td></tr>
+                <tr><td>t2, row 2, col 1</td><td>t2, row 2, col 2</td></tr>
+                <tr><td>t2, row 3, col 1</td><td>t2, row 3, col 2</td></tr>
+              </table>
+            </td>
+            <td style="width: 25%;">row 1, col 3</td>
+            <td style="width: 25%;">row 1, col 4</td>
+          </tr>
+          <tr>
+            <td>row 2, col 1</td>
+            <td>row 2, col 2</td>
+            <td>row 2, col 3</td>
+            <td>row 2, col 4</td>
+          </tr>
+        </table>
+
+        <br/>
+
+        <table style="width: 100%;">
+          <tr>
+            <th style="width: 25%;">h1</th>
+            <th style="width: 25%;">h2</th>
+            <th style="width: 25%;">h3</th>
+            <th style="width: 25%;">h4</th>
+          </tr>
+          <tr><td>row 1, col 1</td><td>row 1, col 2</td><td>row 1, col 3</td><td>row 1, col 4</td></tr>
+          <tr><td>row 2, col 1</td><td>row 2, col 2</td><td>row 2, col 3</td><td>row 2, col 4</td></tr>
+          <tr><td>row 3, col 1</td><td>row 3, col 2</td><td>row 3, col 3</td><td>row 3, col 4</td></tr>
+          <tr><td>row 4, col 1</td><td>row 4, col 2</td><td>row 4, col 3</td><td>row 4, col 4</td></tr>
+        </table>
+
+        <br/>
+
+        <table style="width: 100%;">
+          <tr>
+            <td rowspan="2" style="width: 9.0909%;">a</td>
+            <td style="width: 9.0909%;">b</td>
+            <td style="width: 9.0909%;">c</td>
+            <td style="width: 9.0909%;">d</td>
+            <td style="width: 9.0909%;">e</td>
+            <td style="width: 9.0909%;">f</td>
+            <td style="width: 9.0909%;">g</td>
+            <td style="width: 9.0909%;">h</td>
+            <td style="width: 9.0909%;">i</td>
+            <td rowspan="3" style="width: 9.0909%;">j</td>
+            <td style="width: 9.0909%;">k</td>
+          </tr>
+          <tr>
+            <td rowspan="2">l</td>
+            <td colspan="2">m</td>
+            <td>n</td>
+            <td>o</td>
+            <td>p</td>
+            <td rowspan="2" colspan="2">q</td>
+            <td>r</td>
+          </tr>
+          <tr>
+            <td>s</td>
+            <td>t</td>
+            <td colspan="2">u</td>
+            <td>v</td>
+            <td>w</td>
+            <td>x</td>
+          </tr>
+          <tr>
+            <td>y</td>
+            <td>z</td>
+            <td>za</td>
+            <td><ul><li>zb</li></ul></td>
+            <td>zc</td>
+            <td>zd</td>
+            <td>ze</td>
+            <td>zf</td>
+            <td colspan="2">zg</td>
+            <td>zh</td>
+          </tr>
+        </table>
+      </div>
+  </section>
+
+  <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script type="text/javascript" src="../../js/froala_editor.min.js"></script>
+  <script type="text/javascript" src="../../js/plugins/table.min.js"></script>
+
+  <script>
+    $(function(){
+      $('#edit').froalaEditor()
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.0.2/css/material-design-iconic-font.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../../css/froala_editor.css">
+  <link rel="stylesheet" href="../../css/froala_style.css">
+  <link rel="stylesheet" href="../../css/plugins/table.css">
+  <link rel="stylesheet" href="../../css/plugins/line_breaker.css">
+
+  <style>
+      body {
+          text-align: center;
+      }
+
+      section {
+        width: 81%;
+        margin: auto;
+        text-align: left;
+      }
+  </style>
+</head>
+
+<body>
+  <section id="editor">
+      <div id='edit' style="margin-top: 30px;">
+        <h1>Line Breaker</h1>
+
+        <p>Using the <code>line_breaker.min.js</code> plugin it is possible to insert a new paragraph between HTML elements where the cursor cannot be placed.</p>
+
+        <p>There are 2 options related to the line breaker:</p>
+        <ul>
+          <li><a href="https://www.froala.com/wysiwyg-editor/v2.0/docs/options#lineBreakerTags" title="lineBreakerTags option" target="_blank">lineBreakerTags</a> - the list of HTML tags between which the line-breaker should appear.</li>
+          <li><a href="https://www.froala.com/wysiwyg-editor/v2.0/docs/options#lineBreakerOffset" title="lineBreakerOffset option" target="_blank">lineBreakerOffset</a> - the distance in pixels from the top or bottom of an element at which to show the line-breaker.</li>
+        </ul>
+
+        <table style="width: 100%;">
+          <tbody>
+            <tr>
+              <td style="width: 25%;"></td>
+              <td style="width: 25%;"><table style="width: 100%;">
+                  <tbody>
+                    <tr>
+                      <td style="width: 50%;"></td>
+                      <td style="width: 50%;"></td>
+                    </tr>
+                    <tr>
+                      <td style="width: 50%;"></td>
+                      <td style="width: 50%;"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+              <td style="width: 25%;"></td>
+              <td style="width: 25%;"></td>
+            </tr>
+            <tr>
+              <td style="width: 25%;"></td>
+              <td style="width: 25%;"></td>
+              <td style="width: 25%;"></td>
+              <td style="width: 25%;"></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <hr/>
+
+        <table style="width: 100%;">
+          <tbody>
+            <tr>
+              <td style="width: 25%;"></td>
+              <td style="width: 25%;"></td>
+              <td style="width: 25%;"></td>
+              <td style="width: 25%;"></td>
+            </tr>
+            <tr>
+              <td style="width: 25%;"></td>
+              <td style="width: 25%;"></td>
+              <td style="width: 25%;"></td>
+              <td style="width: 25%;"></td>
+            </tr>
+          </tbody>
+        </table>
+</div>
+  </section>
+
+  <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script type="text/javascript" src="../../js/froala_editor.min.js"></script>
+  <script type="text/javascript" src="../../js/plugins/line_breaker.min.js"></script>
+   <script type="text/javascript" src="../../js/plugins/table.min.js"></script>
+
+  <script>
+    $(function() {
+      $('#edit').froalaEditor()
+    });
+  </script>
+</body>
+</html>
