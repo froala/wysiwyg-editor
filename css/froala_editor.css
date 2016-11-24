@@ -145,6 +145,7 @@ iframe.fr-iframe {
   display: none;
   top: 0;
   left: 0;
+  right: 0;
   overflow: hidden;
 }
 .fr-wrapper.show-placeholder .fr-placeholder {
@@ -158,20 +159,12 @@ iframe.fr-iframe {
   background: #b5d6fd;
   color: #000000;
 }
-.fr-box.fr-rtl .fr-wrapper .fr-placeholder {
-  right: 0;
-  left: auto;
-}
 .fr-box.fr-basic .fr-wrapper {
   background: #ffffff;
   border: 0px;
   border-top: 0;
   top: 0;
   left: 0;
-}
-.fr-box.fr-basic.fr-rtl .fr-wrapper .fr-placeholder {
-  right: 0;
-  left: auto;
 }
 .fr-box.fr-basic.fr-top .fr-wrapper {
   border-top: 0;
