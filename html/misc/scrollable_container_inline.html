@@ -42,6 +42,10 @@
           margin-top: 50px;
           margin-left: 50px;
         }
+
+        #edit {
+          border: solid 1px #000000;
+        }
     </style>
 </head>
 
@@ -49,11 +53,12 @@
   <section id="editor">
     <div id="scrollable">
       <div id='edit' style="margin-top: 30px;">
-        <h1>Scrollable Container</h1>
+        <h1>Scrollable Container Inline Toolbar</h1>
+        <p>Scrollable container also works with inline toolbar.</p>
         <p>The black border is the editable area. Select some text so that the editor appears. The editable area is inside a scrollable container.</p>
       </div>
 
-      <p><strong>This is a scrollable container</strong></p>
+      <p><strong>This a scrollable container</strong></p>
 
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis diam in odio iaculis blandit. Nunc eu mauris sit amet purus viverra gravida ut a dui. Vivamus nec rutrum augue, pharetra faucibus purus. Maecenas non orci sagittis, vehicula lorem et, dignissim nunc. Suspendisse suscipit, diam non varius facilisis, enim libero tincidunt magna, sit amet iaculis eros libero sit amet eros. Vestibulum a rhoncus felis. Nam lacus nulla, consequat ac lacus sit amet, accumsan pellentesque risus. Aenean viverra mi at urna mattis fermentum. Curabitur porta metus in tortor elementum, in semper nulla ullamcorper. Vestibulum mattis tempor tortor quis gravida. In rhoncus risus nibh. Nullam condimentum dapibus massa vel fringilla. Sed hendrerit sed est quis facilisis. Ut sit amet nibh sem. Pellentesque imperdiet mollis libero.</p>
 
@@ -97,6 +102,8 @@
   <script>
       $(function(){
         $('#edit').froalaEditor({
+          toolbarInline: true,
+          toolbarButtons: ['bold', 'italic', 'underline', 'strikeThrough', 'color', 'emoticons', '-', 'paragraphFormat', 'align', 'formatOL', 'formatUL', 'indent', 'outdent', '-', 'insertImage', 'insertLink', 'insertFile', 'insertVideo', 'undo', 'redo'],
           scrollableContainer: '#scrollable'
         })
       });
