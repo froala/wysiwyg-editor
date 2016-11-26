@@ -26,3 +26,6 @@
 .fr-popup .fr-emoticon img {
   height: 20px;
 }
+.fr-popup .fr-link:focus {
+  background: #ebebeb;
+}

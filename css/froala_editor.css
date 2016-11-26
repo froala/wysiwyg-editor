@@ -10,6 +10,9 @@
   content: "";
   height: 0;
 }
+:focus {
+  outline: 0;
+}
 .fr-element,
 .fr-element:focus {
   outline: 0px solid transparent;
@@ -673,6 +676,9 @@ body.prevent-scroll.fr-mobile {
   text-rendering: optimizelegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+.fr-popup .fr-input-focus {
+  background: #f5f5f5;
 }
 .fr-popup.fr-above {
   margin-top: -10px;

@@ -77,6 +77,7 @@
 .fr-popup .fr-table-size .fr-select-table-size > span {
   display: inline-block;
   padding: 0px 4px 4px 0;
+  background: transparent;
 }
 .fr-popup .fr-table-size .fr-select-table-size > span > span {
   display: inline-block;
@@ -84,11 +85,9 @@
   height: 18px;
   border: 1px solid #dddddd;
 }
-.fr-popup .fr-table-size .fr-select-table-size > span:hover,
 .fr-popup .fr-table-size .fr-select-table-size > span.hover {
   background: transparent;
 }
-.fr-popup .fr-table-size .fr-select-table-size > span:hover > span,
 .fr-popup .fr-table-size .fr-select-table-size > span.hover > span {
   background: rgba(30, 136, 229, 0.3);
   border: solid 1px #1e88e5;
@@ -127,23 +126,7 @@
   cursor: default;
   left: 0;
 }
-.fr-popup .fr-table-colors > span.fr-selected-color::after {
-  color: #ffffff;
-  content: "\f00c";
-  font-family: FontAwesome;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 32px;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  text-align: center;
-  cursor: default;
-}
-.fr-popup .fr-table-colors > span:hover,
-.fr-popup .fr-table-colors > span.fr-selected-color {
+.fr-popup .fr-table-colors > span:focus {
   outline: 1px solid #222222;
   z-index: 2;
 }

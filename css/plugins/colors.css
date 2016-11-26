@@ -29,7 +29,8 @@
   padding: 8px 0;
   position: relative;
 }
-.fr-popup .fr-colors-tabs .fr-colors-tab:hover {
+.fr-popup .fr-colors-tabs .fr-colors-tab:hover,
+.fr-popup .fr-colors-tabs .fr-colors-tab:focus {
   color: #1e88e5;
 }
 .fr-popup .fr-colors-tabs .fr-colors-tab[data-param1="background"]::after {
@@ -102,7 +103,7 @@
   cursor: default;
 }
 .fr-popup .fr-color-set > span:hover,
-.fr-popup .fr-color-set > span.fr-selected-color {
+.fr-popup .fr-color-set > span:focus {
   outline: 1px solid #222222;
   z-index: 2;
 }
