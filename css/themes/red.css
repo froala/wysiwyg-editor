@@ -809,9 +809,6 @@
   right: auto;
   bottom: auto;
   height: auto;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
   border-radius: 0 0 2px 2px;
   -moz-border-radius: 0 0 2px 2px;
   -webkit-border-radius: 0 0 2px 2px;
@@ -821,9 +818,6 @@
 }
 .red-theme .fr-command.fr-btn + .fr-dropdown-menu .fr-dropdown-wrapper {
   background: #b8312f;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
   padding: 0;
   margin: auto;
   -webkit-transition: max-height 0.2s ease 0s;
@@ -854,6 +848,11 @@
 }
 .red-theme .fr-command.fr-btn + .fr-dropdown-menu .fr-dropdown-wrapper .fr-dropdown-content ul.fr-dropdown-list li a.fr-disabled {
   color: #edc9c9;
+}
+.red-theme .fr-command.fr-btn.fr-active + .fr-dropdown-menu {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
 }
 .red-theme .fr-command.fr-btn.fr-active + .fr-dropdown-menu .fr-dropdown-wrapper {
   height: auto;
