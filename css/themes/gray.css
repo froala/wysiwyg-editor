@@ -659,9 +659,9 @@
 .gray-theme.fr-toolbar .fr-command.fr-btn span,
 .gray-theme.fr-popup .fr-command.fr-btn span {
   font-size: 14px;
-  line-height: 14px;
+  line-height: 17px;
   min-width: 38px;
-  height: 14px;
+  height: 17px;
   padding: 0 2px;
 }
 .gray-theme.fr-toolbar .fr-command.fr-btn img,

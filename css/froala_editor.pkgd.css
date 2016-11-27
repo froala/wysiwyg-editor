@@ -298,13 +298,13 @@ iframe.fr-iframe {
 .fr-popup .fr-command.fr-btn span {
   font-size: 14px;
   display: block;
-  line-height: 14px;
+  line-height: 17px;
   min-width: 38px;
   float: left;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
-  height: 14px;
+  height: 17px;
   font-weight: bold;
   padding: 0 2px;
 }
