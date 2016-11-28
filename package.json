@@ -1,6 +1,6 @@
 {
   "name": "froala-editor",
-  "version": "2.3.5",
+  "version": "3.0.0-0",
   "description": "A beautiful jQuery WYSIWYG HTML rich text editor. High performance and modern design make it easy to use for developers and loved by users.",
   "keywords": [
     "froala",
@@ -28,7 +28,7 @@
       "name": "Froala Labs"
     }
   ],
-  "dependencies" : {
+  "dependencies": {
     "jquery": ">=1.11.0",
     "font-awesome": ">=4.4.0"
   },
