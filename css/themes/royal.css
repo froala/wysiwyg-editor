@@ -250,6 +250,9 @@
   bottom: 0;
   right: 0;
 }
+.royal-theme.fr-modal .fr-modal-wrapper .fr-modal-body .fr-help-modal table tr {
+  border: 0;
+}
 .royal-theme.fr-modal .fr-modal-wrapper .fr-modal-body .fr-help-modal table tbody tr {
   border-bottom: solid 1px #ebebeb;
 }

@@ -524,6 +524,7 @@ iframe.fr-iframe {
 }
 body.prevent-scroll {
   overflow: hidden;
+  text-align: center;
 }
 body.prevent-scroll.fr-mobile {
   position: fixed;

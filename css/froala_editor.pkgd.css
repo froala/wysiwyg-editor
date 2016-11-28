@@ -524,6 +524,7 @@ iframe.fr-iframe {
 }
 body.prevent-scroll {
   overflow: hidden;
+  text-align: center;
 }
 body.prevent-scroll.fr-mobile {
   position: fixed;
@@ -1626,6 +1627,9 @@ body.fr-fullscreen {
 }
 .fr-modal .fr-modal-wrapper .fr-modal-body .fr-help-modal table + table {
   margin-top: 20px;
+}
+.fr-modal .fr-modal-wrapper .fr-modal-body .fr-help-modal table tr {
+  border: 0;
 }
 .fr-modal .fr-modal-wrapper .fr-modal-body .fr-help-modal table th,
 .fr-modal .fr-modal-wrapper .fr-modal-body .fr-help-modal table td {
