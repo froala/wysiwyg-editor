@@ -10,6 +10,16 @@
   content: "";
   height: 0;
 }
+.hide-by-clipping {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
 :focus {
   outline: 0;
 }
@@ -293,6 +303,17 @@ iframe.fr-iframe {
   margin: 12px 12px;
   text-align: center;
   float: none;
+}
+.fr-toolbar .fr-command.fr-btn span.fr-sr-only,
+.fr-popup .fr-command.fr-btn span.fr-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
 }
 .fr-toolbar .fr-command.fr-btn span,
 .fr-popup .fr-command.fr-btn span {
@@ -1150,4 +1171,14 @@ body.prevent-scroll.fr-mobile {
 .fr-sticky-on + .fr-sticky-dummy,
 .fr-sticky-box > .fr-sticky-dummy {
   display: block;
+}
+span.fr-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
 }

@@ -10,6 +10,16 @@
   content: "";
   height: 0;
 }
+.hide-by-clipping {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
 .fr-popup .fr-colors-tabs {
   -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 1px 1px rgba(0, 0, 0, 0.16);
   -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 1px 1px rgba(0, 0, 0, 0.16);
@@ -87,9 +97,8 @@
   cursor: default;
   left: 0;
 }
-.fr-popup .fr-color-set > span.fr-selected-color::after {
+.fr-popup .fr-color-set > span .fr-selected-color {
   color: #ffffff;
-  content: "\f00c";
   font-family: FontAwesome;
   font-size: 13px;
   font-weight: 400;

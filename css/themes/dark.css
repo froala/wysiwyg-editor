@@ -10,6 +10,16 @@
   content: "";
   height: 0;
 }
+.hide-by-clipping {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
 .dark-theme:focus {
   outline: 0;
 }
@@ -193,7 +203,7 @@
   bottom: 0;
   left: 0;
 }
-.dark-theme.fr-popup .fr-color-set > span.fr-selected-color::after {
+.dark-theme.fr-popup .fr-color-set > span .fr-selected-color {
   color: #ffffff;
   font-weight: 400;
   top: 0;
