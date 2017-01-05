@@ -952,6 +952,7 @@
   -moz-transition: color 0.2s ease 0s;
   -ms-transition: color 0.2s ease 0s;
   -o-transition: color 0.2s ease 0s;
+  background: #b8312f;
 }
 .red-theme.fr-popup .fr-input-line input.fr-not-empty:focus + label,
 .red-theme.fr-popup .fr-input-line textarea.fr-not-empty:focus + label {

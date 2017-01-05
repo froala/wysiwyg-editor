@@ -952,6 +952,7 @@
   -moz-transition: color 0.2s ease 0s;
   -ms-transition: color 0.2s ease 0s;
   -o-transition: color 0.2s ease 0s;
+  background: #ffffff;
 }
 .royal-theme.fr-popup .fr-input-line input.fr-not-empty:focus + label,
 .royal-theme.fr-popup .fr-input-line textarea.fr-not-empty:focus + label {
