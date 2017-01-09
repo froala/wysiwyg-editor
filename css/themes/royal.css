@@ -567,6 +567,39 @@
     bottom: -5px;
   }
 }
+.royal-theme .fr-video-upload-layer {
+  border: dashed 2px #b7bdc0;
+  padding: 25px 0;
+}
+.royal-theme .fr-video-upload-layer:hover {
+  background: #e6e6e6;
+}
+.royal-theme .fr-video-upload-layer.fr-drop {
+  background: #e6e6e6;
+  border-color: #553982;
+}
+.royal-theme .fr-video-upload-layer .fr-form {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.royal-theme .fr-video-progress-bar-layer > h3 {
+  margin: 10px 0;
+}
+.royal-theme .fr-video-progress-bar-layer > div.fr-loader {
+  background: #ccc4da;
+}
+.royal-theme .fr-video-progress-bar-layer > div.fr-loader span {
+  background: #553982;
+  -webkit-transition: width 0.2s ease 0s;
+  -moz-transition: width 0.2s ease 0s;
+  -ms-transition: width 0.2s ease 0s;
+  -o-transition: width 0.2s ease 0s;
+}
+.royal-theme .fr-video-progress-bar-layer > div.fr-loader.fr-indeterminate span {
+  top: 0;
+}
 .royal-theme.fr-video-overlay {
   top: 0;
   left: 0;
