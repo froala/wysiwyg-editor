@@ -482,6 +482,9 @@
 .royal-theme .fr-qi-helper a.fr-btn.fr-floating-btn {
   color: #553982;
 }
+.royal-theme.fr-modal .fr-modal-wrapper .fr-modal-body .fr-special-characters-modal .fr-special-character {
+  border: 1px solid #cccccc;
+}
 .royal-theme .fr-element table td.fr-selected-cell,
 .royal-theme .fr-element table th.fr-selected-cell {
   border: 1px double #553982;

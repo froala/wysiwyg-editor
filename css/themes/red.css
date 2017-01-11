@@ -482,6 +482,9 @@
 .red-theme .fr-qi-helper a.fr-btn.fr-floating-btn {
   color: #ffffff;
 }
+.red-theme.fr-modal .fr-modal-wrapper .fr-modal-body .fr-special-characters-modal .fr-special-character {
+  border: 1px solid #cccccc;
+}
 .red-theme .fr-element table td.fr-selected-cell,
 .red-theme .fr-element table th.fr-selected-cell {
   border: 1px double #ffca28;

@@ -482,6 +482,9 @@
 .gray-theme .fr-qi-helper a.fr-btn.fr-floating-btn {
   color: #37474f;
 }
+.gray-theme.fr-modal .fr-modal-wrapper .fr-modal-body .fr-special-characters-modal .fr-special-character {
+  border: 1px solid #cccccc;
+}
 .gray-theme .fr-element table td.fr-selected-cell,
 .gray-theme .fr-element table th.fr-selected-cell {
   border: 1px double #0097a7;
