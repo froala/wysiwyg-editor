@@ -20,6 +20,9 @@
   clip: rect(0, 0, 0, 0);
   border: 0;
 }
+.fr-view {
+  text-align: initial;
+}
 .fr-view strong {
   font-weight: 700;
 }
