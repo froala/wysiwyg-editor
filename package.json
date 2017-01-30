@@ -33,6 +33,7 @@
     "font-awesome": ">=4.4.0"
   },
   "filename": "js/froala_editor.min.js",
+  "main": "js/froala_editor.min.js",
   "npmName": "froala-editor",
   "npmFileMap": [
     {
