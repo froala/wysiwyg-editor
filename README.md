@@ -35,4 +35,4 @@ In order to use the Froala Editor you have to purchase one of the following lice
 * Changelog:  [froala.com/wysiwyg-editor/changelog](https://www.froala.com/wysiwyg-editor/changelog)
 * Licensing: [froala.com/wysiwyg-editor/terms](https://www.froala.com/wysiwyg-editor/terms)
 * FAQ: [froala.com/wysiwyg-editor/faq](https://www.froala.com/wysiwyg-editor/faq)
-* Support: [froala.com/wysiwyg-editor/contact](https://www.froala.com/wysiwyg-editor/contact)
+* Support: [froala.com/wysiwyg-editor/contact](https://wysiwyg-editor.froala.help/hc/en-us)
