@@ -11,7 +11,9 @@ We promise to extend courtesy and respect to everyone opening an issue. We expec
 
 All reported issues to this project are valuable. Please act with respect and avoid demeaning, condescending, racist, sexist and other inappropriate language and conduct. Please ensure comments stay professional and constructive.
 
-We are paying high attention to every single issue opened. Please do not open 2 different issues for the same thing.
+We are paying high attention to every single issue opened. Please check existing issues and do not open 2 different issues for the same thing.
+
+Thanks!
 
 ## Reporting Issues
 We use GitHub Issues as the official bug tracker for the Froala WYSIWYG HTMl Editor. Here are some advices for our users that want to report an issue:
