@@ -459,7 +459,7 @@ iframe.fr-iframe {
   right: auto;
   bottom: auto;
   height: auto;
-  z-index: 3;
+  z-index: 4;
   -webkit-overflow-scrolling: touch;
   overflow: hidden;
   border-radius: 0 0 2px 2px;
