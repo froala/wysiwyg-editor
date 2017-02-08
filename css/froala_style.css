@@ -23,6 +23,9 @@
 .fr-view {
   text-align: initial;
 }
+.fr-view span[style~="color:"] a {
+  color: inherit;
+}
 .fr-view strong {
   font-weight: 700;
 }

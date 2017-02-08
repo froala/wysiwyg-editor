@@ -609,6 +609,9 @@
   bottom: 0;
   right: 0;
 }
+.dark-theme .fr-view span[style~="color:"] a {
+  color: inherit;
+}
 .dark-theme .fr-view strong {
   font-weight: 700;
 }

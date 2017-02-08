@@ -609,6 +609,9 @@
   bottom: 0;
   right: 0;
 }
+.royal-theme .fr-view span[style~="color:"] a {
+  color: inherit;
+}
 .royal-theme .fr-view strong {
   font-weight: 700;
 }
