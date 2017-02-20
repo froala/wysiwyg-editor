@@ -20,9 +20,6 @@
   clip: rect(0, 0, 0, 0);
   border: 0;
 }
-.fr-view {
-  text-align: initial;
-}
 .fr-view span[style~="color:"] a {
   color: inherit;
 }
