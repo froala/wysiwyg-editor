@@ -20,9 +20,6 @@
   clip: rect(0, 0, 0, 0);
   border: 0;
 }
-:focus {
-  outline: 0;
-}
 .fr-element,
 .fr-element:focus {
   outline: 0px solid transparent;
@@ -419,6 +416,7 @@ iframe.fr-iframe {
 }
 .fr-desktop .fr-command:hover,
 .fr-desktop .fr-command:focus {
+  outline: 0;
   color: #222222;
   background: #ebebeb;
 }
@@ -648,6 +646,9 @@ body.prevent-scroll.fr-mobile {
   height: 100%;
   min-height: 150px;
   overflow-y: scroll;
+}
+.fr-modal .fr-modal-wrapper div.fr-modal-body:focus {
+  outline: 0;
 }
 .fr-desktop .fr-modal-wrapper .fr-modal-head i:hover {
   background: #ebebeb;

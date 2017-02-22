@@ -20,9 +20,6 @@
   clip: rect(0, 0, 0, 0);
   border: 0;
 }
-.red-theme:focus {
-  outline: 0;
-}
 .red-theme.fr-box.fr-basic .fr-element {
   color: #000000;
   padding: 10px;
@@ -219,6 +216,7 @@
   background: #ffca28;
 }
 .red-theme.fr-popup .fr-link:focus {
+  outline: 0;
   background: #c65a59;
 }
 .red-theme .fr-file-upload-layer {
@@ -789,6 +787,7 @@
 }
 .red-theme.fr-desktop .fr-command:hover,
 .red-theme.fr-desktop .fr-command:focus {
+  outline: 0;
   color: #ffffff;
   background: #c65a59;
 }
@@ -933,6 +932,9 @@
 .red-theme.fr-modal .fr-modal-wrapper .fr-modal-head h4 {
   margin: 0;
   font-weight: 400;
+}
+.red-theme.fr-modal .fr-modal-wrapper div.fr-modal-body:focus {
+  outline: 0;
 }
 .red-theme.red-theme.fr-desktop .fr-modal-wrapper .fr-modal-head i:hover {
   background: #c65a59;

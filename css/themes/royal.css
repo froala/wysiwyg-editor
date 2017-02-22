@@ -20,9 +20,6 @@
   clip: rect(0, 0, 0, 0);
   border: 0;
 }
-.royal-theme:focus {
-  outline: 0;
-}
 .royal-theme.fr-box.fr-basic .fr-element {
   color: #000000;
   padding: 10px;
@@ -219,6 +216,7 @@
   background: #553982;
 }
 .royal-theme.fr-popup .fr-link:focus {
+  outline: 0;
   background: #e6e6e6;
 }
 .royal-theme .fr-file-upload-layer {
@@ -789,6 +787,7 @@
 }
 .royal-theme.fr-desktop .fr-command:hover,
 .royal-theme.fr-desktop .fr-command:focus {
+  outline: 0;
   color: #553982;
   background: #e6e6e6;
 }
@@ -933,6 +932,9 @@
 .royal-theme.fr-modal .fr-modal-wrapper .fr-modal-head h4 {
   margin: 0;
   font-weight: 400;
+}
+.royal-theme.fr-modal .fr-modal-wrapper div.fr-modal-body:focus {
+  outline: 0;
 }
 .royal-theme.royal-theme.fr-desktop .fr-modal-wrapper .fr-modal-head i:hover {
   background: #e6e6e6;

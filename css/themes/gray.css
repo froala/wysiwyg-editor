@@ -20,9 +20,6 @@
   clip: rect(0, 0, 0, 0);
   border: 0;
 }
-.gray-theme:focus {
-  outline: 0;
-}
 .gray-theme.fr-box.fr-basic .fr-element {
   color: #000000;
   padding: 10px;
@@ -219,6 +216,7 @@
   background: #0097a7;
 }
 .gray-theme.fr-popup .fr-link:focus {
+  outline: 0;
   background: #e6e6e6;
 }
 .gray-theme .fr-file-upload-layer {
@@ -789,6 +787,7 @@
 }
 .gray-theme.fr-desktop .fr-command:hover,
 .gray-theme.fr-desktop .fr-command:focus {
+  outline: 0;
   color: #37474f;
   background: #e6e6e6;
 }
@@ -933,6 +932,9 @@
 .gray-theme.fr-modal .fr-modal-wrapper .fr-modal-head h4 {
   margin: 0;
   font-weight: 400;
+}
+.gray-theme.fr-modal .fr-modal-wrapper div.fr-modal-body:focus {
+  outline: 0;
 }
 .gray-theme.gray-theme.fr-desktop .fr-modal-wrapper .fr-modal-head i:hover {
   background: #e6e6e6;

@@ -37,5 +37,6 @@
   height: 20px;
 }
 .fr-popup .fr-link:focus {
+  outline: 0;
   background: #ebebeb;
 }

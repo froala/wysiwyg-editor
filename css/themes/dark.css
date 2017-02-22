@@ -20,9 +20,6 @@
   clip: rect(0, 0, 0, 0);
   border: 0;
 }
-.dark-theme:focus {
-  outline: 0;
-}
 .dark-theme.fr-box.fr-basic .fr-element {
   color: #000000;
   padding: 10px;
@@ -219,6 +216,7 @@
   background: #42a5f5;
 }
 .dark-theme.fr-popup .fr-link:focus {
+  outline: 0;
   background: #3d3d3d;
 }
 .dark-theme .fr-file-upload-layer {
@@ -789,6 +787,7 @@
 }
 .dark-theme.fr-desktop .fr-command:hover,
 .dark-theme.fr-desktop .fr-command:focus {
+  outline: 0;
   color: #ffffff;
   background: #3d3d3d;
 }
@@ -933,6 +932,9 @@
 .dark-theme.fr-modal .fr-modal-wrapper .fr-modal-head h4 {
   margin: 0;
   font-weight: 400;
+}
+.dark-theme.fr-modal .fr-modal-wrapper div.fr-modal-body:focus {
+  outline: 0;
 }
 .dark-theme.dark-theme.fr-desktop .fr-modal-wrapper .fr-modal-head i:hover {
   background: #3d3d3d;
