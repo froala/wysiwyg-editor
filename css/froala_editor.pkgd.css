@@ -545,7 +545,6 @@ iframe.fr-iframe {
 }
 body.prevent-scroll {
   overflow: hidden;
-  text-align: center;
 }
 body.prevent-scroll.fr-mobile {
   position: fixed;
@@ -566,6 +565,7 @@ body.prevent-scroll.fr-mobile {
   text-rendering: optimizelegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-align: center;
 }
 .fr-modal .fr-modal-wrapper {
   border-radius: 2px;
