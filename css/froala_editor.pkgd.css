@@ -412,6 +412,9 @@ iframe.fr-iframe {
   float: right;
 }
 .fr-toolbar.fr-inline .fr-command.fr-btn {
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   float: none;
 }
 .fr-desktop .fr-command:hover,
