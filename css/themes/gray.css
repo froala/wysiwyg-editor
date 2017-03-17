@@ -882,6 +882,10 @@
   bottom: 0;
   right: 0;
 }
+.gray-theme.fr-modal.fr-middle .fr-modal-wrapper {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 .gray-theme.fr-modal .fr-modal-wrapper {
   border-radius: 2px;
   -moz-border-radius: 2px;
@@ -923,6 +927,7 @@
 }
 .gray-theme.fr-modal .fr-modal-wrapper .fr-modal-head i.fr-modal-close {
   top: 0;
+  bottom: 0;
   right: 0;
   -webkit-transition: color 0.2s ease 0s;
   -moz-transition: color 0.2s ease 0s;
@@ -935,6 +940,25 @@
 }
 .gray-theme.fr-modal .fr-modal-wrapper div.fr-modal-body:focus {
   outline: 0;
+}
+.gray-theme.fr-modal .fr-modal-wrapper div.fr-modal-body button.fr-command {
+  color: #0097a7;
+  -webkit-transition: background 0.2s ease 0s;
+  -moz-transition: background 0.2s ease 0s;
+  -ms-transition: background 0.2s ease 0s;
+  -o-transition: background 0.2s ease 0s;
+}
+.gray-theme.fr-modal .fr-modal-wrapper div.fr-modal-body button.fr-command:hover,
+.gray-theme.fr-modal .fr-modal-wrapper div.fr-modal-body button.fr-command:focus {
+  background: #e6e6e6;
+  color: #0097a7;
+}
+.gray-theme.fr-modal .fr-modal-wrapper div.fr-modal-body button.fr-command:active {
+  background: #d6d6d6;
+  color: #0097a7;
+}
+.gray-theme.fr-modal .fr-modal-wrapper div.fr-modal-body button::-moz-focus-inner {
+  border: 0;
 }
 .gray-theme.gray-theme.fr-desktop .fr-modal-wrapper .fr-modal-head i:hover {
   background: #e6e6e6;

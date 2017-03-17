@@ -567,6 +567,15 @@ body.prevent-scroll.fr-mobile {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
 }
+.fr-modal.fr-middle .fr-modal-wrapper {
+  margin-top: 0;
+  margin-bottom: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
 .fr-modal .fr-modal-wrapper {
   border-radius: 2px;
   -moz-border-radius: 2px;
@@ -585,7 +594,6 @@ body.prevent-scroll.fr-mobile {
   border-top: 5px solid #222222;
   overflow: hidden;
   width: 90%;
-  padding-bottom: 10px;
   position: relative;
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -630,6 +638,7 @@ body.prevent-scroll.fr-mobile {
 .fr-modal .fr-modal-wrapper .fr-modal-head i.fr-modal-close {
   position: absolute;
   top: 0;
+  bottom: 0;
   right: 0;
   -webkit-transition: color 0.2s ease 0s;
   -moz-transition: color 0.2s ease 0s;
@@ -649,9 +658,41 @@ body.prevent-scroll.fr-mobile {
   height: 100%;
   min-height: 150px;
   overflow-y: scroll;
+  padding-bottom: 10px;
 }
 .fr-modal .fr-modal-wrapper div.fr-modal-body:focus {
   outline: 0;
+}
+.fr-modal .fr-modal-wrapper div.fr-modal-body button.fr-command {
+  height: 36px;
+  line-height: 1;
+  color: #1e88e5;
+  padding: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  border: none;
+  background: none;
+  font-size: 16px;
+  outline: none;
+  -webkit-transition: background 0.2s ease 0s;
+  -moz-transition: background 0.2s ease 0s;
+  -ms-transition: background 0.2s ease 0s;
+  -o-transition: background 0.2s ease 0s;
+}
+.fr-modal .fr-modal-wrapper div.fr-modal-body button.fr-command + button {
+  margin-left: 24px;
+}
+.fr-modal .fr-modal-wrapper div.fr-modal-body button.fr-command:hover,
+.fr-modal .fr-modal-wrapper div.fr-modal-body button.fr-command:focus {
+  background: #ebebeb;
+  color: #1e88e5;
+}
+.fr-modal .fr-modal-wrapper div.fr-modal-body button.fr-command:active {
+  background: #d6d6d6;
+  color: #1e88e5;
+}
+.fr-modal .fr-modal-wrapper div.fr-modal-body button::-moz-focus-inner {
+  border: 0;
 }
 .fr-desktop .fr-modal-wrapper .fr-modal-head i:hover {
   background: #ebebeb;
