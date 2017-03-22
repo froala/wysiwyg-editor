@@ -885,6 +885,8 @@
 .gray-theme.fr-modal.fr-middle .fr-modal-wrapper {
   margin-top: 0;
   margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 .gray-theme.fr-modal .fr-modal-wrapper {
   border-radius: 2px;
