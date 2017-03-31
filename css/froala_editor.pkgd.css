@@ -463,6 +463,7 @@ iframe.fr-iframe {
   z-index: 4;
   -webkit-overflow-scrolling: touch;
   overflow: hidden;
+  zoom: 1;
   border-radius: 0 0 2px 2px;
   -moz-border-radius: 0 0 2px 2px;
   -webkit-border-radius: 0 0 2px 2px;
@@ -520,6 +521,9 @@ iframe.fr-iframe {
 .fr-command.fr-btn + .fr-dropdown-menu .fr-dropdown-wrapper .fr-dropdown-content ul.fr-dropdown-list li a.fr-disabled {
   color: #bdbdbd;
   cursor: default;
+}
+.fr-command.fr-btn:not(.fr-active) + .fr-dropdown-menu {
+  left: -3000px !important;
 }
 .fr-command.fr-btn.fr-active + .fr-dropdown-menu {
   display: inline-block;
