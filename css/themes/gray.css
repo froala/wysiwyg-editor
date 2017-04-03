@@ -483,6 +483,26 @@
 .gray-theme.fr-modal .fr-modal-wrapper .fr-modal-body .fr-special-characters-modal .fr-special-character {
   border: 1px solid #cccccc;
 }
+.gray-theme .examples-variante > a {
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.gray-theme .sc-cm-holder > .sc-cm {
+  border-top: 5px solid #bdbdbd !important;
+}
+.gray-theme .sc-cm__item_dropdown:hover > a,
+.gray-theme .sc-cm a:hover {
+  background-color: #e6e6e6 !important;
+}
+.gray-theme .sc-cm__item_active > a,
+.gray-theme .sc-cm__item_active > a:hover,
+.gray-theme .sc-cm a:active,
+.gray-theme .sc-cm a:focus {
+  background-color: #d6d6d6 !important;
+}
+.gray-theme .sc-cm-holder > .sc-cm:before {
+  background-color: #e6e6e6 !important;
+}
 .gray-theme .fr-element table td.fr-selected-cell,
 .gray-theme .fr-element table th.fr-selected-cell {
   border: 1px double #0097a7;
@@ -710,7 +730,7 @@
 .gray-theme.fr-popup .fr-command.fr-btn span {
   font-size: 14px;
   line-height: 17px;
-  min-width: 38px;
+  min-width: 34px;
   height: 17px;
   padding: 0 2px;
 }
