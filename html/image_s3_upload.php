@@ -170,7 +170,7 @@
           }
         }
       })
-      .on('froala.image.uploadedToS3', function (e, editor, link, key, response) {
+      .on('froalaEditor.image.uploadedToS3', function (e, editor, link, key, response) {
         console.log ('S3 Link:', link);
         console.log ('S3 Key:', key);
       })
