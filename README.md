@@ -2,20 +2,27 @@
 
 ​
 
-# Froala Editor [![Build Status](https://travis-ci.com/froala-labs/froala-editor-js-2.svg?token=6qHm2TpvBKAAVFCrJa9X&branch=master)](https://travis-ci.com/froala-labs/froala-editor-js-2)
+# [Froala Editor](https://www.froala.com/wysiwyg-editor) [![Build Status](https://travis-ci.com/froala-labs/froala-editor-js-2.svg?token=6qHm2TpvBKAAVFCrJa9X&branch=master)](https://travis-ci.com/froala-labs/froala-editor-js-2)
 
 Froala WYSIWYG HTML Editor is one of the most powerful JavaScript rich text editors ever.
 
 - Slim - only add the plugins that you need ([30+ official plugins](https://www.froala.com/wysiwyg-editor/docs/plugins))
-- Client frameworks integrations
+- [Client frameworks integrations](https://www.froala.com/wysiwyg-editor/docs/framework-plugins/)
 - Server side SDKs for [PHP](https://www.froala.com/wysiwyg-editor/docs/sdks/php), [Node.JS](https://www.froala.com/wysiwyg-editor/docs/sdks/nodejs),  [.NET](https://www.froala.com/wysiwyg-editor/docs/sdks/dotnet), [Java](https://www.froala.com/wysiwyg-editor/docs/sdks/java), and [Python](https://www.froala.com/wysiwyg-editor/docs/sdks/python)
 - Code is well commented
 - [Online documentation](https://www.froala.com/wysiwyg-editor/docs) up to date
 - Simple to extend - the plugins are all well commented and simple to use as a basis for your own plugins
 - Well maintained - [frequent releases](https://www.froala.com/wysiwyg-editor/changelog)
 - Great support - [Help Center](https://wysiwyg-editor.froala.help)
-- Reasonable [licensing](https://www.froala.com/wysiwyg-editor/pricing)
 
+
+
+
+## Demos
+
+- **Basic demo**: https://www.froala.com/wysiwyg-editor
+- **Inline demo**: https://www.froala.com/wysiwyg-editor/inline
+- **Full list**: https://www.froala.com/wysiwyg-editor/examples
 
 ​
 
@@ -90,8 +97,7 @@ At present, we officially aim to support the last two versions of the following 
 - Safari iOS
 - Chrome, Firefox and Default Browser Android
 
-
-
+​
 
 ## Resources
 
