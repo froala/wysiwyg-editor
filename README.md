@@ -15,7 +15,7 @@ Froala WYSIWYG HTML Editor is one of the most powerful JavaScript rich text edit
 - Well maintained - [frequent releases](https://www.froala.com/wysiwyg-editor/changelog)
 - Great support - [Help Center](https://wysiwyg-editor.froala.help)
 
-
+​
 
 
 ## Demos
