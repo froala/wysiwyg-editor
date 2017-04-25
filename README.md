@@ -91,7 +91,7 @@ At present, we officially aim to support the last two versions of the following 
 - Chrome, Firefox and Default Browser Android
 
 
-​
+
 
 ## Resources
 
@@ -103,7 +103,7 @@ At present, we officially aim to support the last two versions of the following 
 - Issues [Repo guidelines](https://github.com/highcharts/highcharts/blob/master/repo-guidelines.md)
 
 
-
+​
 
 ## Reporting Issues
 
@@ -125,14 +125,3 @@ If you have questions or need help integrating the editor please [contact us](ht
 ## Licensing
 
 In order to use the Froala Editor you have to purchase one of the following licenses according to your needs. You can find more about that on our website on the [pricing plan page](https://www.froala.com/wysiwyg-editor/pricing).
-
-​
-
-## Useful links
-
-* Official website:  [froala.com/wysiwyg-editor](https://www.froala.com/wysiwyg-editor)
-* Official download: [froala.com/wysiwyg-editor/pricing](https://www.froala.com/wysiwyg-editor/pricing)
-* Changelog:  [froala.com/wysiwyg-editor/changelog](https://www.froala.com/wysiwyg-editor/changelog)
-* Licensing: [froala.com/wysiwyg-editor/terms](https://www.froala.com/wysiwyg-editor/terms)
-* FAQ: [wysiwyg-editor.froala.help](https://wysiwyg-editor.froala.help/hc/en-us)
-* Support: [froala.com/wysiwyg-editor/contact](https://wysiwyg-editor.froala.help/hc/en-us)
