@@ -949,7 +949,6 @@
 }
 .gray-theme.fr-modal .fr-modal-wrapper .fr-modal-head i.fr-modal-close {
   top: 0;
-  bottom: 0;
   right: 0;
   -webkit-transition: color 0.2s ease 0s;
   -moz-transition: color 0.2s ease 0s;

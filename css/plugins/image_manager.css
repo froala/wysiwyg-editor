@@ -41,6 +41,7 @@
 }
 .fr-modal-head .fr-modal-tags {
   display: none;
+  text-align: left;
 }
 .fr-modal-head .fr-modal-tags a {
   display: inline-block;
