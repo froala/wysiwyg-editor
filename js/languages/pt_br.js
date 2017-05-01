@@ -24,7 +24,7 @@ $.FE.LANGUAGE['pt_br'] = {
     "Delete": "Apagar",
     "Cancel": "Cancelar",
     "OK": "Ok",
-    "Back": "Costas",
+    "Back": "Voltar",
     "Remove": "Remover",
     "More": "Mais",
     "Update": "Atualizar",
@@ -32,7 +32,7 @@ $.FE.LANGUAGE['pt_br'] = {
 
     // Font
     "Font Family": "Fonte",
-    "Font Size": "Tamanho",
+    "Font Size": "Tamanho da fonte",
 
     // Colors
     "Colors": "Cores",
@@ -50,7 +50,7 @@ $.FE.LANGUAGE['pt_br'] = {
 
     // Style
     "Paragraph Style": "Estilo de par\u00e1grafo",
-    "Inline Style": "Estilo embutido",
+    "Inline Style": "Estilo em linha",
 
     // Alignment
     "Align": "Alinhar",
@@ -61,7 +61,7 @@ $.FE.LANGUAGE['pt_br'] = {
     "None": "Nenhum",
 
     // Lists
-    "Ordered List": "Lista ordenada",
+    "Ordered List": "Lista Ordenada",
     "Unordered List": "Lista n\u00e3o ordenada",
 
     // Indent
@@ -87,36 +87,36 @@ $.FE.LANGUAGE['pt_br'] = {
     "Loading": "Carregando",
     "Deleting": "Excluindo",
     "Tags": "Etiquetas",
-    "Are you sure? Image will be deleted.": "Voc\u00ea tem certeza? Imagem ser\u00e1 apagada.",
+    "Are you sure? Image will be deleted.": "Voc\u00ea tem certeza? A imagem ser\u00e1 apagada.",
     "Replace": "Substituir",
-    "Uploading": "Carregando imagem",
-    "Loading image": "Carregando imagem",
+    "Uploading": "Enviando",
+    "Loading image": "Carregando Imagem",
     "Display": "Exibir",
     "Inline": "Em linha",
-    "Break Text": "Texto de quebra",
+    "Break Text": "Quebrar texto",
     "Alternate Text": "Texto alternativo",
     "Change Size": "Alterar tamanho",
     "Width": "Largura",
     "Height": "Altura",
-    "Something went wrong. Please try again.": "Algo deu errado. Por favor, tente novamente.",
+    "Something went wrong. Please try again.": "Algo deu errado. Por favor, tente novamente!",
 
     // Video
     "Insert Video": "Inserir v\u00eddeo",
-    "Embedded Code": "C\u00f3digo embutido",
+    "Embedded Code": "C\u00f3digo Incorporado",
 
     // Tables
     "Insert Table": "Inserir tabela",
     "Table Header": "Cabe\u00e7alho da tabela",
-    "Remove Table": "Remover mesa",
-    "Table Style": "estilo de tabela",
-    "Horizontal Align": "Alinhamento horizontal",
-    "Row": "Linha",
-    "Insert row above": "Inserir linha antes",
-    "Insert row below": "Inserir linha depois",
+    "Remove Table": "Remover tabela,
+    "Table Style": "Estilo da tabela",
+    "Horizontal Align": "Alinhamento Horizontal",
+    "Row": "Linha"
+    "Insert row above": "Inserir linha acima",
+    "Insert row below": "Inserir linha abaixo",
     "Delete row": "Excluir linha",
     "Column": "Coluna",
-    "Insert column before": "Inserir coluna antes",
-    "Insert column after": "Inserir coluna depois",
+    "Insert column before": "Inserir coluna acima",
+    "Insert column after": "Inserir coluna abaixo",
     "Delete column": "Excluir coluna",
     "Cell": "C\u00e9lula",
     "Merge cells": "Agrupar c\u00e9lulas",
@@ -133,7 +133,7 @@ $.FE.LANGUAGE['pt_br'] = {
     "Cell Style": "Estilo de c\u00e9lula",
 
     // Files
-    "Upload File": "Upload de arquivo",
+    "Upload File": "Enviar arquivo",
     "Drop file": "Arraste seu arquivo aqui",
 
     // Emoticons
