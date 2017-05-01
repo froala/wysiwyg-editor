@@ -107,10 +107,10 @@ $.FE.LANGUAGE['pt_br'] = {
     // Tables
     "Insert Table": "Inserir tabela",
     "Table Header": "Cabe\u00e7alho da tabela",
-    "Remove Table": "Remover tabela,
+    "Remove Table": "Remover tabela",
     "Table Style": "Estilo da tabela",
     "Horizontal Align": "Alinhamento Horizontal",
-    "Row": "Linha"
+    "Row": "Linha",
     "Insert row above": "Inserir linha acima",
     "Insert row below": "Inserir linha abaixo",
     "Delete row": "Excluir linha",
