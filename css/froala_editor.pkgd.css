@@ -33,6 +33,9 @@
   overflow-x: auto;
   min-height: 40px;
 }
+.fr-box.fr-basic.fr-rtl .fr-element {
+  text-align: right;
+}
 .fr-element {
   background: transparent;
   position: relative;
