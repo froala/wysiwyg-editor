@@ -34,6 +34,7 @@
   
   $.extend($.FE.DEFAULTS, {
     scaytAutoload: false,
+    scaytCustomerId: '1:tLBmI3-7rr3J1-GMEFA1-mIewo-hynTZ1-PV38I1-uEXCy2-Rn81L-gXuG4-NUNri4-5q9Q34-Jd',
     scaytOptions: {
       enableOnTouchDevices: false,
       localization:'en',
@@ -122,6 +123,7 @@
 
       // Get SCAYT default options and overide them.
       var scayt_options = editor.opts.scaytOptions;
+      scayt_options.customerId = editor.opts.scaytCustomerId;
       scayt_options.container = editor.$el.get(0);
       scayt_options.autoStartup = editor.opts.scaytAutoload;
       scayt_options.onLoad = _loaded;
