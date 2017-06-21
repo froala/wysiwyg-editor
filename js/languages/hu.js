@@ -47,7 +47,7 @@ $.FE.LANGUAGE['hu'] = {
 
     // Main buttons
     "Insert": "Beilleszt\u00e9s",
-    "Delete": "T\u00f6r\u00f6l",
+    "Delete": "T\u00f6rl\u00e9s",
     "Cancel": "M\u00e9gse",
     "OK": "Rendben",
     "Back": "Vissza",
@@ -58,7 +58,7 @@ $.FE.LANGUAGE['hu'] = {
 
     // Font
     "Font Family": "Bet\u0171t\u00edpus",
-    "Font Size": "Bet\u0171m\u00e9retek",
+    "Font Size": "Bet\u0171m\u00e9ret",
 
     // Colors
     "Colors": "Sz\u00ednek",
@@ -111,12 +111,12 @@ $.FE.LANGUAGE['hu'] = {
     "or click": "vagy kattintson ide",
     "Manage Images": "K\u00e9pek kezel\u00e9se",
     "Loading": "Bet\u00f6lt\u00e9s...",
-    "Deleting": "T\u00f6rl\u00e9se",
+    "Deleting": "T\u00f6rl\u00e9s...",
     "Tags": "C\u00edmk\u00e9k",
-    "Are you sure? Image will be deleted.": "Biztos benne? K\u00e9p t\u00f6rl\u00e9sre ker\u00fcl.",
+    "Are you sure? Image will be deleted.": "Biztos benne? A k\u00e9p t\u00f6rl\u00e9sre ker\u00fcl.",
     "Replace": "Csere",
     "Uploading": "Felt\u00f6lt\u00e9s",
-    "Loading image": "K\u00e9pfelt\u00f6lt\u00e9s",
+    "Loading image": "K\u00e9p bet\u00f6lt\u00e9se",
     "Display": "Kijelz\u0151",
     "Inline": "Sorban",
     "Break Text": "Sz\u00f6veg t\u00f6r\u00e9se",
@@ -164,17 +164,17 @@ $.FE.LANGUAGE['hu'] = {
 
     // Emoticons
     "Emoticons": "Hangulatjelek",
-    "Grinning face": "Vigyorg\u00f3",
+    "Grinning face": "Vigyorg\u00f3 arc",
     "Grinning face with smiling eyes": "Vigyorg\u00f3 arc mosolyg\u00f3 szemekkel",
     "Face with tears of joy": "Arc \u00e1t az \u00f6r\u00f6m k\u00f6nnyei",
     "Smiling face with open mouth": "Mosolyg\u00f3 arc t\u00e1tott sz\u00e1jjal",
-    "Smiling face with open mouth and smiling eyes": "Mosoly g\u00f3 arc t\u00e1tott sz\u00e1jjal \u00e9s mosolyg\u00f3 szemek",
+    "Smiling face with open mouth and smiling eyes": "Mosolyg\u00f3 arc t\u00e1tott sz\u00e1jjal \u00e9s mosolyg\u00f3 szemek",
     "Smiling face with open mouth and cold sweat": "Mosolyg\u00f3 arc t\u00e1tott sz\u00e1jjal \u00e9s hideg ver\u00edt\u00e9k",
     "Smiling face with open mouth and tightly-closed eyes": "Mosolyg\u00f3 arc t\u00e1tott sz\u00e1jjal \u00e9s szorosan lehunyt szemmel",
     "Smiling face with halo": "Mosolyg\u00f3 arc dicsf\u00e9nyben",
     "Smiling face with horns": "Mosolyg\u00f3 arc szarvakkal",
     "Winking face": "Kacsint\u00f3s arc",
-    "Smiling face with smiling eyes": "Mosolyg\u00f3 arc mosolyg\u00f3 szemek",
+    "Smiling face with smiling eyes": "Mosolyg\u00f3 arc mosolyg\u00f3 szemekkel",
     "Face savoring delicious food": "Arc \u00edzlelgette \u00edzletes \u00e9telek",
     "Relieved face": "Megk\u00f6nnyebb\u00fclt arc",
     "Smiling face with heart-shaped eyes": "Mosolyg\u00f3 arc sz\u00edv alak\u00fa szemekkel",
@@ -187,7 +187,7 @@ $.FE.LANGUAGE['hu'] = {
     "Pensive face": "T\u00f6preng\u0151 arc",
     "Confused face": "Zavaros arc",
     "Confounded face": "R\u00e1c\u00e1folt arc",
-    "Kissing face": "Cs\u00f3k arc",
+    "Kissing face": "Cs\u00f3kos arc",
     "Face throwing a kiss": "Arcra dobott egy cs\u00f3kot",
     "Kissing face with smiling eyes": "Cs\u00f3kos arc\u00e1t mosolyg\u00f3 szemek",
     "Kissing face with closed eyes": "Cs\u00f3kos arc\u00e1t csukott szemmel",
@@ -201,7 +201,7 @@ $.FE.LANGUAGE['hu'] = {
     "Crying face": "S\u00edr\u00f3 arc",
     "Persevering face": "Kitart\u00f3 arc",
     "Face with look of triumph": "Arc\u00e1t diadalmas pillant\u00e1st",
-    "Disappointed but relieved face": "Csal\u00f3dott, de megk\u00f6nnyebb\u00fclt arccal",
+    "Disappointed but relieved face": "Csal\u00f3dott, de megk\u00f6nnyebb\u00fclt arc",
     "Frowning face with open mouth": "Komor arcb\u00f3l t\u00e1tott sz\u00e1jjal",
     "Anguished face": "Gy\u00f6tr\u0151d\u0151 arc",
     "Fearful face": "F\u00e9lelmetes arc",
@@ -249,8 +249,8 @@ $.FE.LANGUAGE['hu'] = {
 
     // Quote
     "Quote": "Id\u00e9zet",
-    "Increase": "Beh\u00faz\u00e1s cs\u00f6kkent\u00e9se",
-    "Decrease": "Beh\u00faz\u00e1s n\u00f6vel\u00e9se",
+    "Increase": "N\u00f6vel\u00e9s",
+    "Decrease": "Cs\u00f6kkent\u00e9s",
 
     // Quick Insert
     "Quick Insert": "Beilleszt\u00e9s"
