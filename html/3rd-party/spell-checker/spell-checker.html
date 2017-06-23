@@ -25,6 +25,8 @@
     <!-- Include the plugin CSS file. -->
     <link rel="stylesheet" href="../../../css/plugins/code_view.css">
 
+    <link rel="stylesheet" href="../../../css/third_party/spell_checker.min.css">
+
     <style>
         body {
             text-align: center;
@@ -81,20 +83,20 @@
 <script>
   $(function(){
     $('#edit').froalaEditor({
-      scayt: true,
-      scaytOptions:{
+      scaytAutoload: true,
+      scaytOptions: {
         enableOnTouchDevices: false,
-        localization:'es',
+        localization:'en',
         extraModules: 'ui',
-        spellcheckLang: 'es_ES',
+        DefaultSelection: 'American English',
+        spellcheckLang: 'en_US',
         contextMenuSections: 'suggest|moresuggest',
         serviceProtocol: 'https',
         servicePort:'80',
         serviceHost:'svc.webspellchecker.net',
         servicePath:'spellcheck/script/ssrv.cgi',
         contextMenuForMisspelledOnly: true,
-        scriptPath: 'http://demo.webspellchecker.net/froala/customscayt.js',
-        disableOptionsStorage: ['lang']
+        scriptPath: 'https://svc.webspellchecker.net/spellcheck31/lf/scayt3/customscayt/customscayt.js'
       }
     })
   });
