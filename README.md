@@ -1,10 +1,13 @@
-![WYSIWYG HTML Editor](https://raw.githubusercontent.com/froala/wysiwyg-editor/master/editor.jpg)
+# [Froala Editor](https://www.froala.com/wysiwyg-editor)
 
-​
-
-# [Froala Editor](https://www.froala.com/wysiwyg-editor) [![Build Status](https://travis-ci.com/froala-labs/froala-editor-js-2.svg?token=6qHm2TpvBKAAVFCrJa9X&branch=master)](https://travis-ci.com/froala-labs/froala-editor-js-2)
+[![Build Status](https://travis-ci.com/froala-labs/froala-editor-js-2.svg?token=6qHm2TpvBKAAVFCrJa9X&branch=master)](https://travis-ci.com/froala-labs/froala-editor-js-2)
+[![npm](https://img.shields.io/npm/dm/froala-editor.svg)](https://www.npmjs.com/package/froala-editor)
+[![Issue Stats](https://img.shields.io/issuestats/i/github/froala/wysiwyg-editor.svg)](https://github.com/froala/wysiwyg-editor)
+[![npm](https://img.shields.io/npm/v/froala-editor.svg)](https://www.npmjs.com/package/froala-editor)
 
 Froala WYSIWYG HTML Editor is one of the most powerful JavaScript rich text editors ever.
+
+![WYSIWYG HTML Editor](https://raw.githubusercontent.com/froala/wysiwyg-editor/master/editor.jpg)
 
 - Slim - only add the plugins that you need ([30+ official plugins](https://www.froala.com/wysiwyg-editor/docs/plugins))
 - [Client frameworks integrations](https://www.froala.com/wysiwyg-editor/docs/framework-plugins/)
@@ -28,7 +31,7 @@ Froala WYSIWYG HTML Editor is one of the most powerful JavaScript rich text edit
 
 ## Get Started
 
-Froala WYSIWYG HTML Editor requires [jQuery](http://jquery.com/) 1.11.0 or higher and the iconic font named [Font Awesome](http://fortawesome.github.io/Font-Awesome/) 4.4.0. You may also use older versions of Font Awesome, but some of the editor's icons will not appear. 
+Froala WYSIWYG HTML Editor requires [jQuery](http://jquery.com/) 1.11.0 or higher and the iconic font named [Font Awesome](http://fortawesome.github.io/Font-Awesome/) 4.4.0. You may also use older versions of Font Awesome, but some of the editor's icons will not appear.
 
 ```html
 <!-- Include CSS for icons. -->
@@ -49,10 +52,10 @@ Froala WYSIWYG HTML Editor requires [jQuery](http://jquery.com/) 1.11.0 or highe
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/froala-editor/2.5.1//js/froala_editor.pkgd.min.js"></script>
 
 <!-- Initialize the editor. -->
-<script> 
-  $(function() { 
-    $('textarea').froalaEditor() 
-  }); 
+<script>
+  $(function() {
+    $('textarea').froalaEditor()
+  });
 </script>
 ```
 
