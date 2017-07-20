@@ -474,6 +474,14 @@ iframe.fr-iframe {
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
 }
+.fr-command.fr-btn + .fr-dropdown-menu.test-height .fr-dropdown-wrapper {
+  -webkit-transition: none;
+  -moz-transition: none;
+  -ms-transition: none;
+  -o-transition: none;
+  height: auto;
+  max-height: 275px;
+}
 .fr-command.fr-btn + .fr-dropdown-menu .fr-dropdown-wrapper {
   background: #ffffff;
   padding: 0;

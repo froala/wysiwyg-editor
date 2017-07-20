@@ -843,6 +843,10 @@
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
 }
+.royal-theme .fr-command.fr-btn + .fr-dropdown-menu.test-height .fr-dropdown-wrapper {
+  height: auto;
+  max-height: 275px;
+}
 .royal-theme .fr-command.fr-btn + .fr-dropdown-menu .fr-dropdown-wrapper {
   background: #ffffff;
   padding: 0;
