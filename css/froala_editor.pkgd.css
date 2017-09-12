@@ -236,7 +236,7 @@ iframe.fr-iframe {
   -khtml-user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none;
-  z-index: 9997;
+  z-index: 2147483647;
   text-rendering: optimizelegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
