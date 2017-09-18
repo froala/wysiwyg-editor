@@ -664,6 +664,15 @@
 .royal-theme .fr-view .fr-img-caption .fr-img-wrap > span {
   padding: 5px 0 0;
 }
+.royal-theme .fr-element .fr-embedly::after {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.royal-theme.fr-box .fr-embedly-resizer {
+  border: solid 1px #553982;
+}
 .royal-theme .examples-variante > a {
   font-size: 14px;
   font-family: Arial, Helvetica, sans-serif;
