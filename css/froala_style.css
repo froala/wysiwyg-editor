@@ -298,6 +298,8 @@
   text-align: center;
   display: block;
   padding: 5px 0 0;
+  font-size: initial;
+  font-weight: initial;
 }
 .fr-view button.fr-rounded,
 .fr-view input.fr-rounded,
