@@ -193,6 +193,15 @@
 .gray-theme.fr-popup .fr-colors-tabs .fr-colors-tab.fr-selected-tab {
   color: #0097a7;
 }
+.gray-theme.fr-popup .fr-color-hex-layer .fr-input-line {
+  padding: 8px 0 0;
+}
+.gray-theme.fr-popup .fr-color-hex-layer .fr-action-buttons button {
+  background-color: #0097a7;
+}
+.gray-theme.fr-popup .fr-color-hex-layer .fr-action-buttons button:hover {
+  background-color: #006974;
+}
 .gray-theme.fr-popup .fr-color-set {
   line-height: 0;
 }

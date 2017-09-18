@@ -65,6 +65,36 @@
   -ms-transform: translate3d(-100%, 0, 0);
   -o-transform: translate3d(-100%, 0, 0);
 }
+.fr-popup .fr-color-hex-layer {
+  width: 100%;
+  margin: 0px;
+  padding: 10px;
+}
+.fr-popup .fr-color-hex-layer .fr-input-line {
+  float: left;
+  width: calc(100% - 50px);
+  padding: 8px 0 0;
+}
+.fr-popup .fr-color-hex-layer .fr-action-buttons {
+  float: right;
+  width: 50px;
+}
+.fr-popup .fr-color-hex-layer .fr-action-buttons button {
+  background-color: #1e88e5;
+  color: #FFF;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  font-size: 13px;
+  height: 32px;
+}
+.fr-popup .fr-color-hex-layer .fr-action-buttons button:hover {
+  background-color: #166dba;
+  color: #FFF;
+}
 .fr-popup .fr-separator + .fr-colors-tabs {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;

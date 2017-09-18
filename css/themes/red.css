@@ -193,6 +193,15 @@
 .red-theme.fr-popup .fr-colors-tabs .fr-colors-tab.fr-selected-tab {
   color: #ffca28;
 }
+.red-theme.fr-popup .fr-color-hex-layer .fr-input-line {
+  padding: 8px 0 0;
+}
+.red-theme.fr-popup .fr-color-hex-layer .fr-action-buttons button {
+  background-color: #ffca28;
+}
+.red-theme.fr-popup .fr-color-hex-layer .fr-action-buttons button:hover {
+  background-color: #f4b800;
+}
 .red-theme.fr-popup .fr-color-set {
   line-height: 0;
 }

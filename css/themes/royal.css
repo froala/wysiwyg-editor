@@ -193,6 +193,15 @@
 .royal-theme.fr-popup .fr-colors-tabs .fr-colors-tab.fr-selected-tab {
   color: #553982;
 }
+.royal-theme.fr-popup .fr-color-hex-layer .fr-input-line {
+  padding: 8px 0 0;
+}
+.royal-theme.fr-popup .fr-color-hex-layer .fr-action-buttons button {
+  background-color: #553982;
+}
+.royal-theme.fr-popup .fr-color-hex-layer .fr-action-buttons button:hover {
+  background-color: #3e295f;
+}
 .royal-theme.fr-popup .fr-color-set {
   line-height: 0;
 }
