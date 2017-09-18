@@ -289,21 +289,29 @@
   text-align: center;
 }
 .fr-view .fr-img-caption .fr-img-wrap {
-  padding: 5px;
+  padding: 0px;
   display: inline-block;
   margin: auto;
-  border: solid 1px #DEDEDE;
+  text-align: center;
 }
 .fr-view .fr-img-caption .fr-img-wrap img {
   display: block;
   margin: auto;
 }
 .fr-view .fr-img-caption .fr-img-wrap > span {
-  text-align: center;
-  display: block;
-  padding: 5px 0 0;
-  font-size: initial;
+  margin: auto;
+  display: inline-block;
+  padding: 5px 5px 10px;
+  font-size: 14px;
   font-weight: initial;
+  max-width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-opacity: 0.9;
+  -moz-opacity: 0.9;
+  opacity: 0.9;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
 }
 .fr-view button.fr-rounded,
 .fr-view input.fr-rounded,

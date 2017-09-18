@@ -662,7 +662,7 @@
   margin: auto;
 }
 .gray-theme .fr-view .fr-img-caption .fr-img-wrap > span {
-  padding: 5px 0 0;
+  margin: auto;
 }
 .gray-theme .fr-element .fr-embedly::after {
   top: 0;
