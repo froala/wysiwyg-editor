@@ -26,12 +26,12 @@
 }
 .fr-box.fr-basic .fr-element {
   color: #000000;
-  padding: 10px;
+  padding: 20px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   overflow-x: auto;
-  min-height: 40px;
+  min-height: 60px;
 }
 .fr-box.fr-basic.fr-rtl .fr-element {
   text-align: right;
@@ -2384,7 +2384,7 @@ div.fr-modal-body div.fr-image-list div.fr-image-container .fr-insert-img {
 .fr-qi-helper {
   position: absolute;
   z-index: 3;
-  padding-left: 10px;
+  padding-left: 20px;
   white-space: nowrap;
 }
 .fr-qi-helper a.fr-btn.fr-floating-btn {

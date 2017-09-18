@@ -22,9 +22,9 @@
 }
 .gray-theme.fr-box.fr-basic .fr-element {
   color: #000000;
-  padding: 10px;
+  padding: 20px;
   overflow-x: auto;
-  min-height: 40px;
+  min-height: 60px;
 }
 .gray-theme .fr-element {
   -webkit-user-select: auto;
@@ -475,7 +475,7 @@
   top: -16px;
 }
 .gray-theme .fr-qi-helper {
-  padding-left: 10px;
+  padding-left: 20px;
 }
 .gray-theme .fr-qi-helper a.fr-btn.fr-floating-btn {
   color: #37474f;
