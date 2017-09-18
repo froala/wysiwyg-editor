@@ -151,9 +151,11 @@
 }
 .fr-view img.fr-dib.fr-fil {
   margin-left: 0;
+  text-align: left;
 }
 .fr-view img.fr-dib.fr-fir {
   margin-right: 0;
+  text-align: right;
 }
 .fr-view img.fr-dii {
   display: inline-block;
@@ -204,9 +206,11 @@
 }
 .fr-view span.fr-img-caption.fr-dib.fr-fil {
   margin-left: 0;
+  text-align: left;
 }
 .fr-view span.fr-img-caption.fr-dib.fr-fir {
   margin-right: 0;
+  text-align: right;
 }
 .fr-view span.fr-img-caption.fr-dii {
   display: inline-block;
@@ -340,9 +344,11 @@ img.fr-view.fr-dib {
 }
 img.fr-view.fr-dib.fr-fil {
   margin-left: 0;
+  text-align: left;
 }
 img.fr-view.fr-dib.fr-fir {
   margin-right: 0;
+  text-align: right;
 }
 img.fr-view.fr-dii {
   display: inline-block;
@@ -393,9 +399,11 @@ span.fr-img-caption.fr-view.fr-dib {
 }
 span.fr-img-caption.fr-view.fr-dib.fr-fil {
   margin-left: 0;
+  text-align: left;
 }
 span.fr-img-caption.fr-view.fr-dib.fr-fir {
   margin-right: 0;
+  text-align: right;
 }
 span.fr-img-caption.fr-view.fr-dii {
   display: inline-block;
