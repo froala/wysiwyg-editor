@@ -655,6 +655,15 @@
 .royal-theme .fr-view .fr-text-bordered {
   padding: 10px 0;
 }
+.royal-theme .fr-view .fr-img-caption .fr-img-wrap {
+  margin: auto;
+}
+.royal-theme .fr-view .fr-img-caption .fr-img-wrap img {
+  margin: auto;
+}
+.royal-theme .fr-view .fr-img-caption .fr-img-wrap > span {
+  padding: 5px 0 0;
+}
 .royal-theme .examples-variante > a {
   font-size: 14px;
   font-family: Arial, Helvetica, sans-serif;

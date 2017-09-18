@@ -655,6 +655,15 @@
 .gray-theme .fr-view .fr-text-bordered {
   padding: 10px 0;
 }
+.gray-theme .fr-view .fr-img-caption .fr-img-wrap {
+  margin: auto;
+}
+.gray-theme .fr-view .fr-img-caption .fr-img-wrap img {
+  margin: auto;
+}
+.gray-theme .fr-view .fr-img-caption .fr-img-wrap > span {
+  padding: 5px 0 0;
+}
 .gray-theme .examples-variante > a {
   font-size: 14px;
   font-family: Arial, Helvetica, sans-serif;

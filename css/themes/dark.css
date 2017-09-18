@@ -655,6 +655,15 @@
 .dark-theme .fr-view .fr-text-bordered {
   padding: 10px 0;
 }
+.dark-theme .fr-view .fr-img-caption .fr-img-wrap {
+  margin: auto;
+}
+.dark-theme .fr-view .fr-img-caption .fr-img-wrap img {
+  margin: auto;
+}
+.dark-theme .fr-view .fr-img-caption .fr-img-wrap > span {
+  padding: 5px 0 0;
+}
 .dark-theme .examples-variante > a {
   font-size: 14px;
   font-family: Arial, Helvetica, sans-serif;
