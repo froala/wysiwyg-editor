@@ -26,12 +26,12 @@
 }
 .fr-box.fr-basic .fr-element {
   color: #000000;
-  padding: 20px;
+  padding: 16px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   overflow-x: auto;
-  min-height: 60px;
+  min-height: 52px;
 }
 .fr-box.fr-basic.fr-rtl .fr-element {
   text-align: right;

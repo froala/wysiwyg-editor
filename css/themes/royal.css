@@ -22,9 +22,9 @@
 }
 .royal-theme.fr-box.fr-basic .fr-element {
   color: #000000;
-  padding: 20px;
+  padding: 16px;
   overflow-x: auto;
-  min-height: 60px;
+  min-height: 52px;
 }
 .royal-theme .fr-element {
   -webkit-user-select: auto;
@@ -484,7 +484,7 @@
   top: -16px;
 }
 .royal-theme .fr-qi-helper {
-  padding-left: 20px;
+  padding-left: 16px;
 }
 .royal-theme .fr-qi-helper a.fr-btn.fr-floating-btn {
   color: #553982;
