@@ -42,6 +42,7 @@
     "css/plugins/special_characters.min.css",
     "css/plugins/table.min.css",
     "css/plugins/video.min.css",
+    "css/third_party/embedly.min.css",
     "css/third_party/spell_checker.min.css",
     "js/froala_editor.min.js",
     "js/froala_editor.pkgd.min.js",
@@ -75,6 +76,7 @@
     "js/plugins/url.min.js",
     "js/plugins/video.min.js",
     "js/plugins/word_paste.min.js",
+    "js/third_party/embedly.min.js",
     "js/third_party/image_aviary.min.js",
     "js/third_party/spell_checker.min.js"
   ],
