@@ -64,6 +64,7 @@ $.FE.LANGUAGE['he'] = {
     "Colors": "\u05e6\u05d1\u05e2\u05d9\u05dd",
     "Background": "\u05e8\u05e7\u05e2",
     "Text": "\u05d4\u05d8\u05e1\u05d8",
+    "HEX Color": "צבע הקס",
 
     // Paragraphs
     "Paragraph Format": "\u05e4\u05d5\u05e8\u05de\u05d8",
@@ -125,6 +126,8 @@ $.FE.LANGUAGE['he'] = {
     "Width": "\u05e8\u05d5\u05d7\u05d1",
     "Height": "\u05d2\u05d5\u05d1\u05d4",
     "Something went wrong. Please try again.": "\u05de\u05e9\u05d4\u05d5 \u05d4\u05e9\u05ea\u05d1\u05e9. \u05d1\u05d1\u05e7\u05e9\u05d4 \u05e0\u05e1\u05d4 \u05e9\u05d5\u05d1.",
+    "Image Caption": "כיתוב תמונה",
+    "Advanced Edit": "עריכה מתקדמת",
 
     // Video
     "Insert Video": "\u05d4\u05d5\u05e1\u05e4\u05ea \u05d5\u05d9\u05d3\u05d9\u05d0\u05d5",
@@ -253,7 +256,47 @@ $.FE.LANGUAGE['he'] = {
     "Decrease": "\u05d9\u05e8\u05d9\u05d3\u05d4",
 
     // Quick Insert
-    "Quick Insert": "\u05db\u05e0\u05e1 \u05de\u05d4\u05d9\u05e8"
+    "Quick Insert": "\u05db\u05e0\u05e1 \u05de\u05d4\u05d9\u05e8",
+
+    // Spcial Characters
+    "Special Characters": "תווים מיוחדים",
+    "Latin": "לָטִינִית",
+    "Greek": "יווני",
+    "Cyrillic": "קירילית",
+    "Punctuation": "פיסוק",
+    "Currency": "מַטְבֵּעַ",
+    "Arrows": "חצים",
+    "Math": "מתמטיקה",
+    "Misc": "שונות",
+
+    // Print.
+    "Print": "הדפס",
+
+    // Spell Checker.
+    "Spell Checker": "בודק איות",
+
+    // Help
+    "Help": "עֶזרָה",
+    "Shortcuts": "קיצורי דרך",
+    "Inline Editor": "עורך מוטבע",
+    "Show the editor": "להראות את העורך",
+    "Common actions": "פעולות נפוצות",
+    "Copy": "עותק",
+    "Cut": "גזירה",
+    "Paste": "לְהַדבִּיק",
+    "Basic Formatting": "עיצוב בסיסי",
+    "Increase quote level": "רמת ציטוט",
+    "Decrease quote level": "רמת ציטוט ירידה",
+    "Image / Video": "תמונה / וידאו",
+    "Resize larger": "גודל גדול יותר",
+    "Resize smaller": "גודל קטן יותר",
+    "Table": "שולחן",
+    "Select table cell": "בחר תא תא - -",
+    "Extend selection one cell": "להאריך את הבחירה תא אחד",
+    "Extend selection one row": "להאריך את הבחירה שורה אחת",
+    "Navigation": "ניווט",
+    "Focus popup / toolbar": "מוקד קופץ / סרגל הכלים",
+    "Return focus to previous position": "חזרה להתמקד קודם"
   },
   direction: "rtl"
 };

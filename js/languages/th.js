@@ -64,6 +64,7 @@ $.FE.LANGUAGE['th'] = {
     "Colors": "\u0e2a\u0e35",
     "Background": "\u0e1e\u0e37\u0e49\u0e19\u0e2b\u0e25\u0e31\u0e07",
     "Text": "\u0e02\u0e49\u0e2d\u0e04\u0e27\u0e32\u0e21",
+    "HEX Color": "สีฐานสิบหก",
 
     // Paragraphs
     "Paragraph Format": "\u0e23\u0e39\u0e1b\u0e41\u0e1a\u0e1a",
@@ -125,6 +126,8 @@ $.FE.LANGUAGE['th'] = {
     "Width": "\u0e04\u0e27\u0e32\u0e21\u0e01\u0e27\u0e49\u0e32\u0e07",
     "Height": "\u0e04\u0e27\u0e32\u0e21\u0e2a\u0e39\u0e07",
     "Something went wrong. Please try again.": "\u0e1a\u0e32\u0e07\u0e2d\u0e22\u0e48\u0e32\u0e07\u0e1c\u0e34\u0e14\u0e1b\u0e01\u0e15\u0e34. \u0e01\u0e23\u0e38\u0e13\u0e32\u0e25\u0e2d\u0e07\u0e2d\u0e35\u0e01\u0e04\u0e23\u0e31\u0e49\u0e07.",
+    "Image Caption": "คำบรรยายภาพ",
+    "Advanced Edit": "แก้ไขขั้นสูง",
 
     // Video
     "Insert Video": "\u0e41\u0e17\u0e23\u0e01\u0e27\u0e34\u0e14\u0e35\u0e42\u0e2d",
@@ -212,7 +215,7 @@ $.FE.LANGUAGE['th'] = {
     "Loudly crying face": "\u0e23\u0e49\u0e2d\u0e07\u0e44\u0e2b\u0e49\u0e40\u0e2a\u0e35\u0e22\u0e07\u0e14\u0e31\u0e07\u0e2b\u0e19\u0e49\u0e32",
     "Face with open mouth": "\u0e43\u0e1a\u0e2b\u0e19\u0e49\u0e32\u0e17\u0e35\u0e48\u0e21\u0e35\u0e1b\u0e32\u0e01\u0e40\u0e1b\u0e34\u0e14",
     "Hushed face": "\u0e43\u0e1a\u0e2b\u0e19\u0e49\u0e32\u0e40\u0e07\u0e35\u0e22\u0e1a",
-    "Face with open mouth and cold sweat": "",
+    "Face with open mouth and cold sweat": "หน้ากับปากเปิดและเหงื่อเย็น",
     "Face screaming in fear": "\u0e43\u0e1a\u0e2b\u0e19\u0e49\u0e32\u0e17\u0e35\u0e48\u0e21\u0e35\u0e1b\u0e32\u0e01\u0e40\u0e1b\u0e34\u0e14\u0e41\u0e25\u0e30\u0e40\u0e2b\u0e07\u0e37\u0e48\u0e2d\u0e40\u0e22\u0e47\u0e19",
     "Astonished face": "\u0e43\u0e1a\u0e2b\u0e19\u0e49\u0e32\u0e1b\u0e23\u0e30\u0e2b\u0e25\u0e32\u0e14\u0e43\u0e08",
     "Flushed face": "\u0e43\u0e1a\u0e2b\u0e19\u0e49\u0e32\u0e41\u0e14\u0e07",
@@ -253,7 +256,47 @@ $.FE.LANGUAGE['th'] = {
     "Decrease": "\u0e25\u0e14\u0e25\u0e07",
 
     // Quick Insert
-    "Quick Insert": "\u0e41\u0e17\u0e23\u0e01\u0e14\u0e48\u0e27\u0e19"
+    "Quick Insert": "\u0e41\u0e17\u0e23\u0e01\u0e14\u0e48\u0e27\u0e19",
+
+    // Spcial Characters
+    "Special Characters": "อักขระพิเศษ",
+    "Latin": "ละติน",
+    "Greek": "กรีก",
+    "Cyrillic": "ริลลิก",
+    "Punctuation": "วรรคตอน",
+    "Currency": "เงินตรา",
+    "Arrows": "ลูกศร",
+    "Math": "คณิตศาสตร์",
+    "Misc": "อื่น ๆ",
+
+    // Print.
+    "Print": "พิมพ์",
+
+    // Spell Checker.
+    "Spell Checker": "ตัวตรวจสอบการสะกด",
+
+    // Help
+    "Help": "ช่วยด้วย",
+    "Shortcuts": "ทางลัด",
+    "Inline Editor": "ตัวแก้ไขแบบอินไลน์",
+    "Show the editor": "แสดงตัวแก้ไข",
+    "Common actions": "การกระทำร่วมกัน",
+    "Copy": "สำเนา",
+    "Cut": "ตัด",
+    "Paste": "แปะ",
+    "Basic Formatting": "การจัดรูปแบบพื้นฐาน",
+    "Increase quote level": "ระดับราคาเพิ่มขึ้น",
+    "Decrease quote level": "ระดับราคาลดลง",
+    "Image / Video": "ภาพ / วิดีโอ",
+    "Resize larger": "ปรับขนาดใหญ่ขึ้น",
+    "Resize smaller": "ปรับขนาดเล็กลง",
+    "Table": "ตาราง",
+    "Select table cell": "เลือกเซลล์ตาราง",
+    "Extend selection one cell": "ขยายการเลือกหนึ่งเซลล์",
+    "Extend selection one row": "ขยายการเลือกหนึ่งแถว",
+    "Navigation": "การเดินเรือ",
+    "Focus popup / toolbar": "โฟกัสป๊อปอัพ / แถบเครื่องมือ",
+    "Return focus to previous position": "กลับไปยังตำแหน่งก่อนหน้า"
   },
   direction: "ltr"
 };

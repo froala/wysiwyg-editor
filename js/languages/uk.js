@@ -64,6 +64,7 @@ $.FE.LANGUAGE['uk'] = {
     "Colors": "\u043a\u043e\u043b\u044c\u043e\u0440\u0438",
     "Background": "\u0424\u043e\u043d",
     "Text": "\u0422\u0435\u043a\u0441\u0442",
+    "HEX Color": "Шістнадцятковий колір",
 
     // Paragraphs
     "Paragraph Format": "\u0424\u043e\u0440\u043c\u0430\u0442",
@@ -125,6 +126,8 @@ $.FE.LANGUAGE['uk'] = {
     "Width": "\u0428\u0438\u0440\u0438\u043d\u0430",
     "Height": "\u0412\u0438\u0441\u043e\u0442\u0430",
     "Something went wrong. Please try again.": "\u0429\u043e\u0441\u044c \u043f\u0456\u0448\u043b\u043e \u043d\u0435 \u0442\u0430\u043a. \u0411\u0443\u0434\u044c \u043b\u0430\u0441\u043a\u0430 \u0441\u043f\u0440\u043e\u0431\u0443\u0439\u0442\u0435 \u0449\u0435 \u0440\u0430\u0437.",
+    "Image Caption": "Заголовок зображення",
+    "Advanced Edit": "Розширений редагування",
 
     // Video
     "Insert Video": "\u0412\u0441\u0442\u0430\u0432\u0438\u0442\u0438 \u0432\u0456\u0434\u0435\u043e",
@@ -253,7 +256,47 @@ $.FE.LANGUAGE['uk'] = {
     "Decrease": "\u0437\u043d\u0438\u0436\u0435\u043d\u043d\u044f",
 
     // Quick Insert
-    "Quick Insert": "\u0428\u0432\u0438\u0434\u043a\u0438\u0439 \u0432\u0441\u0442\u0430\u0432\u043a\u0430"
+    "Quick Insert": "\u0428\u0432\u0438\u0434\u043a\u0438\u0439 \u0432\u0441\u0442\u0430\u0432\u043a\u0430",
+
+    // Spcial Characters
+    "Special Characters": "Спеціальні символи",
+    "Latin": "Латинський",
+    "Greek": "Грецький",
+    "Cyrillic": "Кирилиця",
+    "Punctuation": "Пунктуація",
+    "Currency": "Валюта",
+    "Arrows": "Стріли",
+    "Math": "Математика",
+    "Misc": "Різне",
+
+    // Print.
+    "Print": "Друкувати",
+
+    // Spell Checker.
+    "Spell Checker": "Перевірка орфографії",
+
+    // Help
+    "Help": "Допомогти",
+    "Shortcuts": "Ярлики",
+    "Inline Editor": "Вбудований редактор",
+    "Show the editor": "Показати редактору",
+    "Common actions": "Спільні дії",
+    "Copy": "Скопіювати",
+    "Cut": "Вирізати",
+    "Paste": "Вставити",
+    "Basic Formatting": "Основне форматування",
+    "Increase quote level": "Збільшити рівень цитування",
+    "Decrease quote level": "Знизити рівень цитування",
+    "Image / Video": "Зображення / відео",
+    "Resize larger": "Змінити розмір більше",
+    "Resize smaller": "Змінити розмір менше",
+    "Table": "Стіл",
+    "Select table cell": "Виберіть комірку таблиці",
+    "Extend selection one cell": "Продовжити виділення однієї комірки",
+    "Extend selection one row": "Продовжити виділення одного рядка",
+    "Navigation": "Навігація",
+    "Focus popup / toolbar": "Фокус спливаюче / панель інструментів",
+    "Return focus to previous position": "Поверніть фокус на попередню позицію"
   },
   direction: "ltr"
 };

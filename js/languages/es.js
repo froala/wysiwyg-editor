@@ -54,7 +54,7 @@ $.FE.LANGUAGE['es'] = {
     "Remove": "Quitar",
     "More": "M\u00e1s",
     "Update": "Actualizaci\u00f3n",
-    "Style": "",
+    "Style": "Estilo",
 
     // Font
     "Font Family": "Familia de fuentes",
@@ -64,6 +64,7 @@ $.FE.LANGUAGE['es'] = {
     "Colors": "Colores",
     "Background": "Fondo",
     "Text": "Texto",
+    "HEX Color": "Color hexadecimal",
 
     // Paragraphs
     "Paragraph Format": "Formato de p\u00e1rrafo",
@@ -125,6 +126,8 @@ $.FE.LANGUAGE['es'] = {
     "Width": "Ancho",
     "Height": "Altura",
     "Something went wrong. Please try again.": "Algo sali\u00f3 mal. Por favor, vuelva a intentarlo.",
+    "Image Caption": "Captura de imagen",
+    "Advanced Edit": "Edición avanzada",
 
     // Video
     "Insert Video": "Insertar video",
@@ -253,7 +256,47 @@ $.FE.LANGUAGE['es'] = {
     "Decrease": "Disminuci\u00f3n",
 
     // Quick Insert
-    "Quick Insert": "Inserci\u00f3n r\u00e1pida"
+    "Quick Insert": "Inserci\u00f3n r\u00e1pida",
+
+    // Spcial Characters
+    "Special Characters": "Caracteres especiales",
+    "Latin": "Latín",
+    "Greek": "Griego",
+    "Cyrillic": "Cirílico",
+    "Punctuation": "Puntuación",
+    "Currency": "Moneda",
+    "Arrows": "Flechas",
+    "Math": "Mates",
+    "Misc": "Misc",
+
+    // Print.
+    "Print": "Impresión",
+
+    // Spell Checker.
+    "Spell Checker": "Corrector ortográfico",
+
+    // Help
+    "Help": "Ayuda",
+    "Shortcuts": "Atajos",
+    "Inline Editor": "Editor en línea",
+    "Show the editor": "Mostrar al editor",
+    "Common actions": "Acciones comunes",
+    "Copy": "Dupdo",
+    "Cut": "Cortar",
+    "Paste": "Pegar",
+    "Basic Formatting": "Formato básico",
+    "Increase quote level": "Aumentar el nivel de cotización",
+    "Decrease quote level": "Disminuir el nivel de cotización",
+    "Image / Video": "Imagen / video",
+    "Resize larger": "Redimensionar más grande",
+    "Resize smaller": "Redimensionar más pequeño",
+    "Table": "Mesa",
+    "Select table cell": "Celda de tabla select",
+    "Extend selection one cell": "Ampliar la selección una celda",
+    "Extend selection one row": "Ampliar la selección una fila",
+    "Navigation": "Navegación",
+    "Focus popup / toolbar": "Focus popup / toolbar",
+    "Return focus to previous position": "Volver al foco a la posición anterior"
   },
   direction: "ltr"
 };

@@ -64,6 +64,7 @@ $.FE.LANGUAGE['ar'] = {
     "Colors": "\u0627\u0644\u0623\u0644\u0648\u0627\u0646",
     "Background": "\u0627\u0644\u062e\u0644\u0641\u064a\u0629",
     "Text": "\u0627\u0644\u0646\u0635",
+    "HEX Color": "عرافة اللون",
 
     // Paragraphs
     "Paragraph Format": "\u062a\u0646\u0633\u064a\u0642 \u0627\u0644\u0641\u0642\u0631\u0629",
@@ -125,6 +126,8 @@ $.FE.LANGUAGE['ar'] = {
     "Width": "\u0639\u0631\u0636",
     "Height": "\u0627\u0631\u062a\u0641\u0627\u0639",
     "Something went wrong. Please try again.": ".\u062d\u062f\u062b \u062e\u0637\u0623 \u0645\u0627. \u062d\u0627\u0648\u0644 \u0645\u0631\u0629 \u0627\u062e\u0631\u0649",
+    "Image Caption": "تعليق على الصورة",
+    "Advanced Edit": "تعديل متقدم",
 
     // Video
     "Insert Video": "\u0625\u062f\u0631\u0627\u062c \u0641\u064a\u062f\u064a\u0648",
@@ -253,7 +256,47 @@ $.FE.LANGUAGE['ar'] = {
     "Decrease": "\u0627\u0646\u062e\u0641\u0627\u0636",
 
     // Quick Insert
-    "Quick Insert": "\u0625\u062f\u0631\u0627\u062c \u0633\u0631\u064a\u0639"
+    "Quick Insert": "\u0625\u062f\u0631\u0627\u062c \u0633\u0631\u064a\u0639",
+
+    // Spcial Characters
+    "Special Characters": "أحرف خاصة",
+    "Latin": "لاتينية",
+    "Greek": "الإغريقي",
+    "Cyrillic": "السيريلية",
+    "Punctuation": "علامات ترقيم",
+    "Currency": "دقة",
+    "Arrows": "السهام",
+    "Math": "الرياضيات",
+    "Misc": "متفرقات",
+
+    // Print.
+    "Print": "طباعة",
+
+    // Spell Checker.
+    "Spell Checker": "مدقق املائي",
+
+    // Help
+    "Help": "مساعدة",
+    "Shortcuts": "اختصارات",
+    "Inline Editor": "محرر مضمنة",
+    "Show the editor": "عرض المحرر",
+    "Common actions": "الإجراءات المشتركة",
+    "Copy": "نسخ",
+    "Cut": "يقطع",
+    "Paste": "معجون",
+    "Basic Formatting": "التنسيق الأساسي",
+    "Increase quote level": "زيادة مستوى الاقتباس",
+    "Decrease quote level": "انخفاض مستوى الاقتباس",
+    "Image / Video": "صورة / فيديو",
+    "Resize larger": "تغيير حجم أكبر",
+    "Resize smaller": "تغيير حجم أصغر",
+    "Table": "الطاولة",
+    "Select table cell": "حدد خلية الجدول",
+    "Extend selection one cell": "توسيع اختيار خلية واحدة",
+    "Extend selection one row": "تمديد اختيار صف واحد",
+    "Navigation": "التنقل",
+    "Focus popup / toolbar": "التركيز المنبثقة / شريط الأدوات",
+    "Return focus to previous position": "عودة التركيز إلى الموقف السابق"
   },
   direction: "rtl"
 };

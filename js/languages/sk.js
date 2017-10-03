@@ -65,6 +65,7 @@ $.FE.LANGUAGE['sk'] = {
     "Colors": "Farby",
     "Background": "Pozadie",
     "Text": "Text",
+    "HEX Color": "Hex Farby",
 
     // Paragraphs
     "Paragraph Format": "Form\u00e1t odstavca",
@@ -126,6 +127,8 @@ $.FE.LANGUAGE['sk'] = {
     "Width": "\u0165\u00edrka",
     "Height": "V\u00fd\u0161ka",
     "Something went wrong. Please try again.": "Nie\u010do sa pokazilo. Pros\u00edm, sk\u00faste to znova.",
+    "Image Caption": "Titulok obrázka",
+    "Advanced Edit": "Pokročilá úprava",
 
     // Video
     "Insert Video": "Vlo\u017ei\u0165 video",
@@ -254,7 +257,47 @@ $.FE.LANGUAGE['sk'] = {
     "Decrease": "Zn\u00ed\u017ei\u0165",
 
     // Quick Insert
-    "Quick Insert": "Vlo\u017ei\u0165 zr\u00fdchlene"
+    "Quick Insert": "Vlo\u017ei\u0165 zr\u00fdchlene",
+
+    // Spcial Characters
+    "Special Characters": "Špeciálne znaky",
+    "Latin": "Latinčina",
+    "Greek": "Grécky",
+    "Cyrillic": "Cyriliky",
+    "Punctuation": "Interpunkcia",
+    "Currency": "Mena",
+    "Arrows": "Šípky",
+    "Math": "Matematika",
+    "Misc": "Misc",
+
+    // Print.
+    "Print": "Vytlačiť",
+
+    // Spell Checker.
+    "Spell Checker": "Kontrola pravopisu",
+
+    // Help
+    "Help": "Pomoc",
+    "Shortcuts": "Skratky",
+    "Inline Editor": "Inline editor",
+    "Show the editor": "Zobraziť editor",
+    "Common actions": "Spoločné akcie",
+    "Copy": "Kópie",
+    "Cut": "Rez",
+    "Paste": "Pasta",
+    "Basic Formatting": "Základné formátovanie",
+    "Increase quote level": "Zvýšiť úroveň cenovej ponuky",
+    "Decrease quote level": "Znížiť úroveň cenovej ponuky",
+    "Image / Video": "Obrázok / video",
+    "Resize larger": "Zmena veľkosti",
+    "Resize smaller": "Meniť veľkosť",
+    "Table": "Stôl",
+    "Select table cell": "Vyberte bunku tabuľky",
+    "Extend selection one cell": "Rozšíriť výber jednej bunky",
+    "Extend selection one row": "Rozšíriť výber o jeden riadok",
+    "Navigation": "Navigácia",
+    "Focus popup / toolbar": "Zameranie / panel s nástrojmi",
+    "Return focus to previous position": "Vrátiť zaostrenie na predchádzajúcu pozíciu"
   },
   direction: "ltr"
 };

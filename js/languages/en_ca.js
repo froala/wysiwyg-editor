@@ -64,6 +64,7 @@ $.FE.LANGUAGE['en_ca'] = {
     "Colors": "Colours",
     "Background": "Background",
     "Text": "Text",
+    "HEX Color": "HEX Colour",
 
     // Paragraphs
     "Paragraph Format": "Paragraph Format",
@@ -125,6 +126,8 @@ $.FE.LANGUAGE['en_ca'] = {
     "Width": "Width",
     "Height": "Height",
     "Something went wrong. Please try again.": "Something went wrong. Please try again.",
+    "Image Caption": "Image Caption",
+    "Advanced Edit": "Advanced Edit",
 
     // Video
     "Insert Video": "Insert Video",
@@ -197,7 +200,47 @@ $.FE.LANGUAGE['en_ca'] = {
     "Decrease": "Decrease",
 
     // Quick Insert
-    "Quick Insert": "Quick Insert"
+    "Quick Insert": "Quick Insert",
+
+    // Spcial Characters
+    "Special Characters": "Special Characters",
+    "Latin": "Latin",
+    "Greek": "Greek",
+    "Cyrillic": "Cyrillic",
+    "Punctuation": "Punctuation",
+    "Currency": "Currency",
+    "Arrows": "Arrows",
+    "Math": "Math",
+    "Misc": "Misc",
+
+    // Print.
+    "Print": "Print",
+
+    // Spell Checker.
+    "Spell Checker": "Spell Checker",
+
+    // Help
+    "Help": "Help",
+    "Shortcuts": "Shortcuts",
+    "Inline Editor": "Inline Editor",
+    "Show the editor": "Show the editor",
+    "Common actions": "Common actions",
+    "Copy": "Copy",
+    "Cut": "Cut",
+    "Paste": "Paste",
+    "Basic Formatting": "Basic Formatting",
+    "Increase quote level": "Increase quote level",
+    "Decrease quote level": "Decrease quote level",
+    "Image / Video": "Image / Video",
+    "Resize larger": "Resize larger",
+    "Resize smaller": "Resize smaller",
+    "Table": "Table",
+    "Select table cell": "Select table cell",
+    "Extend selection one cell": "Extend selection one cell",
+    "Extend selection one row": "Extend selection one row",
+    "Navigation": "Navigation",
+    "Focus popup / toolbar": "Focus popup / toolbar",
+    "Return focus to previous position": "Return focus to previous position"
   },
   direction: "ltr"
 };

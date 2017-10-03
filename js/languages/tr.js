@@ -64,6 +64,7 @@ $.FE.LANGUAGE['tr'] = {
     "Colors": "Renkler",
     "Background": "Arkaplan",
     "Text": "Metin",
+    "HEX Color": "Altı renkli",
 
     // Paragraphs
     "Paragraph Format": "Bi\u00e7imler",
@@ -125,6 +126,8 @@ $.FE.LANGUAGE['tr'] = {
     "Width": "Geni\u015flik",
     "Height": "Y\u00fckseklik",
     "Something went wrong. Please try again.": "Bir \u015feyler yanl\u0131\u015f gitti. L\u00fctfen tekrar deneyin.",
+    "Image Caption": "Resim yazısı",
+    "Advanced Edit": "Ileri düzey düzenleme",
 
     // Video
     "Insert Video": "Video ekle",
@@ -253,7 +256,47 @@ $.FE.LANGUAGE['tr'] = {
     "Decrease": "Azal\u0131\u015f",
 
     // Quick Insert
-    "Quick Insert": "H\u0131zl\u0131 insert"
+    "Quick Insert": "H\u0131zl\u0131 insert",
+
+    // Spcial Characters
+    "Special Characters": "Özel karakterler",
+    "Latin": "Latince",
+    "Greek": "Yunan",
+    "Cyrillic": "Kiril",
+    "Punctuation": "Noktalama",
+    "Currency": "Para birimi",
+    "Arrows": "Oklar",
+    "Math": "Matematik",
+    "Misc": "Misc",
+
+    // Print.
+    "Print": "Baskı",
+
+    // Spell Checker.
+    "Spell Checker": "Yazım denetleyicisi",
+
+    // Help
+    "Help": "Yardım et",
+    "Shortcuts": "Kısayollar",
+    "Inline Editor": "Satır içi düzenleyici",
+    "Show the editor": "Editörü gösterin",
+    "Common actions": "Ortak eylemler",
+    "Copy": "Kopya",
+    "Cut": "Kesim",
+    "Paste": "Yapıştırmak",
+    "Basic Formatting": "Temel biçimlendirme",
+    "Increase quote level": "Teklif seviyesini yükselt",
+    "Decrease quote level": "Teklif seviyesini azalt",
+    "Image / Video": "Resim / video",
+    "Resize larger": "Daha büyük yeniden boyutlandır",
+    "Resize smaller": "Daha küçük boyuta getir",
+    "Table": "Tablo",
+    "Select table cell": "Tablo hücresi seç",
+    "Extend selection one cell": "Seçimi bir hücre genişlet",
+    "Extend selection one row": "Seçimi bir sıra genişlet",
+    "Navigation": "Navigasyon",
+    "Focus popup / toolbar": "Odaklanma açılır penceresi / araç çubuğu",
+    "Return focus to previous position": "Odaklamaya önceki konumuna geri dönün"
   },
   direction: "ltr"
 };

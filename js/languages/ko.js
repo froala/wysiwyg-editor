@@ -64,6 +64,7 @@ $.FE.LANGUAGE['ko'] = {
     "Colors": "\uc0c9\uc0c1",
     "Background": "\ubc30\uacbd",
     "Text": "\ud14d\uc2a4\ud2b8",
+    "HEX Color": "헥스 색",
 
     // Paragraphs
     "Paragraph Format": "\ub2e8\ub77d",
@@ -125,6 +126,8 @@ $.FE.LANGUAGE['ko'] = {
     "Width": "\ud3ed",
     "Height": "\uc2e0\uc7a5",
     "Something went wrong. Please try again.": "\ubb38\uc81c\uac00 \ubc1c\uc0dd\ud588\uc2b5\ub2c8\ub2e4. \ub2e4\uc2dc \uc2dc\ub3c4\ud558\uc2ed\uc2dc\uc624.",
+    "Image Caption": "이미지 캡션",
+    "Advanced Edit": "고급 편집",
 
     // Video
     "Insert Video": "\ube44\ub514\uc624 \uc0bd\uc785",
@@ -253,7 +256,47 @@ $.FE.LANGUAGE['ko'] = {
     "Decrease": "\uac10\uc18c",
 
     // Quick Insert
-    "Quick Insert": "\ube60\ub978 \uc0bd\uc785"
+    "Quick Insert": "\ube60\ub978 \uc0bd\uc785",
+
+    // Spcial Characters
+    "Special Characters": "특수 문자",
+    "Latin": "라틴어",
+    "Greek": "그리스 사람",
+    "Cyrillic": "키릴 문자의",
+    "Punctuation": "구두",
+    "Currency": "통화",
+    "Arrows": "화살",
+    "Math": "수학",
+    "Misc": "기타",
+
+    // Print.
+    "Print": "인쇄",
+
+    // Spell Checker.
+    "Spell Checker": "맞춤법 검사기",
+
+    // Help
+    "Help": "도움",
+    "Shortcuts": "단축키",
+    "Inline Editor": "인라인 편집기",
+    "Show the editor": "편집기보기",
+    "Common actions": "공통된 행동",
+    "Copy": "부",
+    "Cut": "절단",
+    "Paste": "풀",
+    "Basic Formatting": "기본 서식",
+    "Increase quote level": "견적을 올리다",
+    "Decrease quote level": "견적을 내리다",
+    "Image / Video": "이미지 / 비디오",
+    "Resize larger": "크기를 더 크게 조정하다",
+    "Resize smaller": "크기를 더 작게하다",
+    "Table": "표",
+    "Select table cell": "표 셀 선택",
+    "Extend selection one cell": "하나의 셀을 확장한다.",
+    "Extend selection one row": "하나의 행을 선택 확장",
+    "Navigation": "항해",
+    "Focus popup / toolbar": "포커스 팝업 / 툴바",
+    "Return focus to previous position": "이전 위치로 초점을 되돌립니다."
   },
   direction: "ltr"
 };

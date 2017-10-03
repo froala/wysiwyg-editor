@@ -64,6 +64,7 @@ $.FE.LANGUAGE['fi'] = {
     "Colors": "V\u00e4rit",
     "Background": "Taustan",
     "Text": "Tekstin",
+    "HEX Color": "Heksadesimaali",
 
     // Paragraphs
     "Paragraph Format": "Muotoilut",
@@ -125,6 +126,8 @@ $.FE.LANGUAGE['fi'] = {
     "Width": "Leveys",
     "Height": "Korkeus",
     "Something went wrong. Please try again.": "Jotain meni pieleen. Yrit\u00e4 uudelleen.",
+    "Image Caption": "Kuva-otsikko",
+    "Advanced Edit": "Edistynyt muokkaus",
 
     // Video
     "Insert Video": "Lis\u00e4\u00e4 video",
@@ -253,7 +256,47 @@ $.FE.LANGUAGE['fi'] = {
     "Decrease": "Pienenn\u00e4",
 
     // Quick Insert
-    "Quick Insert": "Nopea insertti"
+    "Quick Insert": "Nopea insertti",
+
+    // Spcial Characters
+    "Special Characters": "Erikoismerkkejä",
+    "Latin": "Latina",
+    "Greek": "Kreikkalainen",
+    "Cyrillic": "Kyrillinen",
+    "Punctuation": "Välimerkit",
+    "Currency": "Valuutta",
+    "Arrows": "Nuolet",
+    "Math": "Matematiikka",
+    "Misc": "Sekalaista",
+
+    // Print.
+    "Print": "Tulosta",
+
+    // Spell Checker.
+    "Spell Checker": "Oikeinkirjoittaja",
+
+    // Help
+    "Help": "Auta",
+    "Shortcuts": "Pikakuvakkeet",
+    "Inline Editor": "Inline-editori",
+    "Show the editor": "Näytä editori",
+    "Common actions": "Yhteisiä toimia",
+    "Copy": "Kopio",
+    "Cut": "Leikata",
+    "Paste": "Tahna",
+    "Basic Formatting": "Perusmuotoilu",
+    "Increase quote level": "Lisää lainaustasoa",
+    "Decrease quote level": "Laskea lainaustasoa",
+    "Image / Video": "Kuva / video",
+    "Resize larger": "Kokoa suurempi",
+    "Resize smaller": "Pienempi koko",
+    "Table": "Pöytä",
+    "Select table cell": "Valitse taulukon solu",
+    "Extend selection one cell": "Laajentaa valinta yhden solun",
+    "Extend selection one row": "Laajenna valinta yksi rivi",
+    "Navigation": "Suunnistus",
+    "Focus popup / toolbar": "Painopistevalo / työkalurivi",
+    "Return focus to previous position": "Palauta tarkennus edelliseen asentoon"
   },
   direction: "ltr"
 };

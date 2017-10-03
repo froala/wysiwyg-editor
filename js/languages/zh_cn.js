@@ -64,6 +64,7 @@ $.FE.LANGUAGE['zh_cn'] = {
     "Colors": "\u989c\u8272",
     "Background": "\u80cc\u666f",
     "Text": "\u6587\u5b57",
+    "HEX Color": "十六进制颜色",
 
     // Paragraphs
     "Paragraph Format": "\u683c\u5f0f",
@@ -125,6 +126,8 @@ $.FE.LANGUAGE['zh_cn'] = {
     "Width": "\u5bbd\u5ea6",
     "Height": "\u9ad8\u5ea6",
     "Something went wrong. Please try again.": "\u51fa\u4e86\u4e9b\u95ee\u9898\u3002 \u8bf7\u518d\u8bd5\u4e00\u6b21\u3002",
+    "Image Caption": "图片说明",
+    "Advanced Edit": "高级编辑",
 
     // Video
     "Insert Video": "\u63d2\u5165\u89c6\u9891",
@@ -165,7 +168,7 @@ $.FE.LANGUAGE['zh_cn'] = {
     // Emoticons
     "Emoticons": "\u8868\u60c5",
     "Grinning face": "\u8138\u4e0a\u7b11\u563b\u563b",
-    "Grinning face with smiling eyes": "",
+    "Grinning face with smiling eyes": "咧着嘴笑的脸微笑的眼睛",
     "Face with tears of joy": "\u7b11\u563b\u563b\u7684\u8138\uff0c\u542b\u7b11\u7684\u773c\u775b",
     "Smiling face with open mouth": "\u7b11\u8138\u5f20\u5f00\u5634",
     "Smiling face with open mouth and smiling eyes": "\u7b11\u8138\u5f20\u5f00\u5634\u5fae\u7b11\u7684\u773c\u775b",
@@ -212,7 +215,7 @@ $.FE.LANGUAGE['zh_cn'] = {
     "Loudly crying face": "\u5927\u58f0\u54ed\u8138",
     "Face with open mouth": "\u9762\u5bf9\u5f20\u5f00\u5634",
     "Hushed face": "\u5b89\u9759\u7684\u8138",
-    "Face with open mouth and cold sweat": "",
+    "Face with open mouth and cold sweat": "脸上露出嘴巴和冷汗",
     "Face screaming in fear": "\u9762\u5bf9\u5f20\u5f00\u5634\uff0c\u4e00\u8eab\u51b7\u6c57",
     "Astonished face": "\u9762\u5bf9\u60ca\u8bb6",
     "Flushed face": "\u7ea2\u6251\u6251\u7684\u8138\u86cb",
@@ -253,7 +256,47 @@ $.FE.LANGUAGE['zh_cn'] = {
     "Decrease": "\u5220\u9664\u5f15\u7528",
 
     // Quick Insert
-    "Quick Insert": "\u5feb\u63d2"
+    "Quick Insert": "\u5feb\u63d2",
+
+    // Spcial Characters
+    "Special Characters": "特殊字符",
+    "Latin": "拉丁",
+    "Greek": "希腊语",
+    "Cyrillic": "西里尔",
+    "Punctuation": "标点",
+    "Currency": "货币",
+    "Arrows": "箭头",
+    "Math": "数学",
+    "Misc": "杂项",
+
+    // Print.
+    "Print": "打印",
+
+    // Spell Checker.
+    "Spell Checker": "拼写检查器",
+
+    // Help
+    "Help": "帮帮我",
+    "Shortcuts": "快捷键",
+    "Inline Editor": "内联编辑器",
+    "Show the editor": "显示编辑",
+    "Common actions": "共同行动",
+    "Copy": "复制",
+    "Cut": "切",
+    "Paste": "糊",
+    "Basic Formatting": "基本格式",
+    "Increase quote level": "提高报价水平",
+    "Decrease quote level": "降低报价水平",
+    "Image / Video": "图像/视频",
+    "Resize larger": "调整大小更大",
+    "Resize smaller": "调整大小更小",
+    "Table": "表",
+    "Select table cell": "选择表单元格",
+    "Extend selection one cell": "扩展选择一个单元格",
+    "Extend selection one row": "扩展选择一行",
+    "Navigation": "导航",
+    "Focus popup / toolbar": "焦点弹出/工具栏",
+    "Return focus to previous position": "将焦点返回到上一个位置"
   },
   direction: "ltr"
 };

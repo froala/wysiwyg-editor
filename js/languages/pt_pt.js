@@ -64,6 +64,7 @@ $.FE.LANGUAGE['pt_pt'] = {
     "Colors": "Cores",
     "Background": "Fundo",
     "Text": "Texto",
+    "HEX Color": "Cor hexadecimal",
 
     // Paragraphs
     "Paragraph Format": "Formatos",
@@ -125,6 +126,8 @@ $.FE.LANGUAGE['pt_pt'] = {
     "Width": "Largura",
     "Height": "Altura",
     "Something went wrong. Please try again.": "Algo deu errado. Por favor, tente novamente.",
+    "Image Caption": "Legenda da imagem",
+    "Advanced Edit": "Edição avançada",
 
     // Video
     "Insert Video": "Inserir v\u00eddeo",
@@ -253,7 +256,47 @@ $.FE.LANGUAGE['pt_pt'] = {
     "Decrease": "Diminuir",
 
     // Quick Insert
-    "Quick Insert": "Inser\u00e7\u00e3o r\u00e1pida"
+    "Quick Insert": "Inser\u00e7\u00e3o r\u00e1pida",
+
+    // Spcial Characters
+    "Special Characters": "Caracteres especiais",
+    "Latin": "Latino",
+    "Greek": "Grego",
+    "Cyrillic": "Cirílico",
+    "Punctuation": "Pontuação",
+    "Currency": "Moeda",
+    "Arrows": "Setas; flechas",
+    "Math": "Matemática",
+    "Misc": "Misc",
+
+    // Print.
+    "Print": "Impressão",
+
+    // Spell Checker.
+    "Spell Checker": "Verificador ortográfico",
+
+    // Help
+    "Help": "Socorro",
+    "Shortcuts": "Atalhos",
+    "Inline Editor": "Editor em linha",
+    "Show the editor": "Mostre o editor",
+    "Common actions": "Ações comuns",
+    "Copy": "Cópia de",
+    "Cut": "Cortar",
+    "Paste": "Colar",
+    "Basic Formatting": "Formatação básica",
+    "Increase quote level": "Aumentar o nível de cotação",
+    "Decrease quote level": "Diminuir o nível de cotação",
+    "Image / Video": "Imagem / video",
+    "Resize larger": "Redimensionar maior",
+    "Resize smaller": "Redimensionar menor",
+    "Table": "Mesa",
+    "Select table cell": "Selecione a célula da tabela",
+    "Extend selection one cell": "Ampliar a seleção de uma célula",
+    "Extend selection one row": "Ampliar a seleção uma linha",
+    "Navigation": "Navegação",
+    "Focus popup / toolbar": "Foco popup / barra de ferramentas",
+    "Return focus to previous position": "Retornar o foco para a posição anterior"
   },
   direction: "ltr"
 };

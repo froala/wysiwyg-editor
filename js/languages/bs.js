@@ -64,6 +64,7 @@ $.FE.LANGUAGE['bs'] = {
     "Colors": "Boje",
     "Background": "Pozadine",
     "Text": "Teksta",
+    "HEX Color": "Hex boje",
 
     // Paragraphs
     "Paragraph Format": "Paragraf formatu",
@@ -125,6 +126,8 @@ $.FE.LANGUAGE['bs'] = {
     "Width": "\u0161irina",
     "Height": "Visina",
     "Something went wrong. Please try again.": "Ne\u0161to je po\u0161lo po zlu. Molimo vas da poku\u0161ate ponovo.",
+    "Image Caption": "Caption slika",
+    "Advanced Edit": "Napredna izmjena",
 
     // Video
     "Insert Video": "Umetni video",
@@ -253,7 +256,47 @@ $.FE.LANGUAGE['bs'] = {
     "Decrease": "Smanjenje",
 
     // Quick Insert
-    "Quick Insert": "Brzo umetak"
+    "Quick Insert": "Brzo umetak",
+
+    // Spcial Characters
+    "Special Characters": "Posebni znakovi",
+    "Latin": "Latin",
+    "Greek": "Greek",
+    "Cyrillic": "Ćirilično",
+    "Punctuation": "Interpunkcija",
+    "Currency": "Valuta",
+    "Arrows": "Strelice",
+    "Math": "Matematika",
+    "Misc": "Misc",
+
+    // Print.
+    "Print": "Print",
+
+    // Spell Checker.
+    "Spell Checker": "Proveru pravopisa",
+
+    // Help
+    "Help": "Pomoć",
+    "Shortcuts": "Prečice",
+    "Inline Editor": "Inline editor",
+    "Show the editor": "Pokaži urednika",
+    "Common actions": "Zajedničke akcije",
+    "Copy": "Kopiraj",
+    "Cut": "Cut",
+    "Paste": "Paste",
+    "Basic Formatting": "Osnovno oblikovanje",
+    "Increase quote level": "Povećati cijeni",
+    "Decrease quote level": "Smanjiti nivo ponude",
+    "Image / Video": "Slika / video",
+    "Resize larger": "Veće veličine",
+    "Resize smaller": "Manja promjena veličine",
+    "Table": "Stol",
+    "Select table cell": "Izaberite ćeliju tablice",
+    "Extend selection one cell": "Produžiti izbor jedne ćelije",
+    "Extend selection one row": "Produžiti izbor jedan red",
+    "Navigation": "Navigacija",
+    "Focus popup / toolbar": "Focus popup / toolbar",
+    "Return focus to previous position": "Vratite fokus na prethodnu poziciju"
   },
   direction: "ltr"
 };

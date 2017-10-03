@@ -64,6 +64,7 @@ $.FE.LANGUAGE['hr'] = {
     "Colors": "Boje",
     "Background": "Pozadina",
     "Text": "Tekst",
+    "HEX Color": "Heksadecimalne boje",
 
     // Paragraphs
     "Paragraph Format": "Format odlomka",
@@ -125,6 +126,8 @@ $.FE.LANGUAGE['hr'] = {
     "Width": "\u0160irina",
     "Height": "Visina",
     "Something went wrong. Please try again.": "Ne\u0161to je po\u0161lo po zlu. Molimo poku\u0161ajte ponovno.",
+    "Image Caption": "Opis slike",
+    "Advanced Edit": "Napredno uređivanje",
 
     // Video
     "Insert Video": "Umetni video",
@@ -253,7 +256,47 @@ $.FE.LANGUAGE['hr'] = {
     "Decrease": "Smanji",
 
     // Quick Insert
-    "Quick Insert": "Brzo umetak"
+    "Quick Insert": "Brzo umetak",
+
+    // Spcial Characters
+    "Special Characters": "Posebni znakovi",
+    "Latin": "Latinski",
+    "Greek": "Grčki",
+    "Cyrillic": "Ćirilica",
+    "Punctuation": "Interpunkcija",
+    "Currency": "Valuta",
+    "Arrows": "Strelice",
+    "Math": "Matematika",
+    "Misc": "Razno",
+
+    // Print.
+    "Print": "Otisak",
+
+    // Spell Checker.
+    "Spell Checker": "Provjeritelj pravopisa",
+
+    // Help
+    "Help": "Pomoć",
+    "Shortcuts": "Prečaci",
+    "Inline Editor": "Inline editor",
+    "Show the editor": "Prikaži urednika",
+    "Common actions": "Zajedničke radnje",
+    "Copy": "Kopirati",
+    "Cut": "Rez",
+    "Paste": "Zalijepiti",
+    "Basic Formatting": "Osnovno oblikovanje",
+    "Increase quote level": "Povećati razinu citata",
+    "Decrease quote level": "Smanjite razinu citata",
+    "Image / Video": "Slika / video",
+    "Resize larger": "Promijenite veličinu većeg",
+    "Resize smaller": "Promijenite veličinu manju",
+    "Table": "Stol",
+    "Select table cell": "Odaberite stolnu ćeliju",
+    "Extend selection one cell": "Proširiti odabir jedne ćelije",
+    "Extend selection one row": "Proširite odabir jednog retka",
+    "Navigation": "Navigacija",
+    "Focus popup / toolbar": "Fokus popup / alatnoj traci",
+    "Return focus to previous position": "Vratiti fokus na prethodnu poziciju"
   },
   direction: "ltr"
 };

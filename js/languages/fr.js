@@ -64,6 +64,7 @@ $.FE.LANGUAGE['fr'] = {
     "Colors": "Couleurs",
     "Background": "Arri\u00e8re-plan",
     "Text": "Texte",
+    "HEX Color": "Couleur hexagonale",
 
     // Paragraphs
     "Paragraph Format": "Formats",
@@ -125,6 +126,8 @@ $.FE.LANGUAGE['fr'] = {
     "Width": "Largeur",
     "Height": "Hauteur",
     "Something went wrong. Please try again.": "Quelque chose a mal tourn\u00e9. Veuillez r\u00e9essayer.",
+    "Image Caption": "Légende de l'image",
+    "Advanced Edit": "Édition avancée",
 
     // Video
     "Insert Video": "Ins\u00e9rer une vid\u00e9o",
@@ -253,7 +256,47 @@ $.FE.LANGUAGE['fr'] = {
     "Decrease": "Diminution",
 
     // Quick Insert
-    "Quick Insert": "Ins\u00e9rez rapide"
+    "Quick Insert": "Ins\u00e9rez rapide",
+
+    // Spcial Characters
+    "Special Characters": "Caractères spéciaux",
+    "Latin": "Latin",
+    "Greek": "Grec",
+    "Cyrillic": "Cyrillique",
+    "Punctuation": "Ponctuation",
+    "Currency": "Devise",
+    "Arrows": "Flèches",
+    "Math": "Math",
+    "Misc": "Misc",
+
+    // Print.
+    "Print": "Impression",
+
+    // Spell Checker.
+    "Spell Checker": "Correcteur orthographique",
+
+    // Help
+    "Help": "Aidez-moi",
+    "Shortcuts": "Raccourcis",
+    "Inline Editor": "Éditeur en ligne",
+    "Show the editor": "Montrer l'éditeur",
+    "Common actions": "Actions communes",
+    "Copy": "Copie",
+    "Cut": "Couper",
+    "Paste": "Coller",
+    "Basic Formatting": "Formatage de base",
+    "Increase quote level": "Augmenter le niveau de devis",
+    "Decrease quote level": "Baisse du niveau de citation",
+    "Image / Video": "Image / vidéo",
+    "Resize larger": "Redimensionner plus grand",
+    "Resize smaller": "Redimensionner plus petit",
+    "Table": "Table",
+    "Select table cell": "Sélectionner la cellule du tableau",
+    "Extend selection one cell": "Étendre la sélection d'une cellule",
+    "Extend selection one row": "Étendre la sélection d'une ligne",
+    "Navigation": "La navigation",
+    "Focus popup / toolbar": "Focus popup / toolbar",
+    "Return focus to previous position": "Retourner l'accent sur le poste précédent"
   },
   direction: "ltr"
 };

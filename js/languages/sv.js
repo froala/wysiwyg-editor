@@ -64,6 +64,7 @@ $.FE.LANGUAGE['sv'] = {
     "Colors": "F\u00e4rger",
     "Background": "Bakgrund",
     "Text": "Text",
+    "HEX Color": "Hex färg",
 
     // Paragraphs
     "Paragraph Format": "Format",
@@ -125,6 +126,8 @@ $.FE.LANGUAGE['sv'] = {
     "Width": "Bredd",
     "Height": "H\u00f6jd",
     "Something went wrong. Please try again.": "N\u00e5got gick snett. Var god f\u00f6rs\u00f6k igen.",
+    "Image Caption": "Bildtextning",
+    "Advanced Edit": "Avancerad redigering",
 
     // Video
     "Insert Video": "Infoga video",
@@ -253,7 +256,47 @@ $.FE.LANGUAGE['sv'] = {
     "Decrease": "Minska",
 
     // Quick Insert
-    "Quick Insert": "Snabb insats"
+    "Quick Insert": "Snabb insats",
+
+    // Spcial Characters
+    "Special Characters": "Speciella karaktärer",
+    "Latin": "Latin",
+    "Greek": "Grekisk",
+    "Cyrillic": "Cyrillic",
+    "Punctuation": "Skiljetecken",
+    "Currency": "Valuta",
+    "Arrows": "Pilar",
+    "Math": "Matematik",
+    "Misc": "Misc",
+
+    // Print.
+    "Print": "Skriva ut",
+
+    // Spell Checker.
+    "Spell Checker": "Stavningskontroll",
+
+    // Help
+    "Help": "Hjälpa",
+    "Shortcuts": "Genvägar",
+    "Inline Editor": "Inline editor",
+    "Show the editor": "Visa redigeraren",
+    "Common actions": "Gemensamma åtgärder",
+    "Copy": "Kopiera",
+    "Cut": "Skära",
+    "Paste": "Klistra",
+    "Basic Formatting": "Grundläggande formatering",
+    "Increase quote level": "Öka citatnivå",
+    "Decrease quote level": "Sänk citatnivå",
+    "Image / Video": "Bild / video",
+    "Resize larger": "Ändra storlek större",
+    "Resize smaller": "Ändra storlek mindre",
+    "Table": "Tabell",
+    "Select table cell": "Välj tabellcell",
+    "Extend selection one cell": "Utvidga valet en cell",
+    "Extend selection one row": "Förlänga valet en rad",
+    "Navigation": "Navigering",
+    "Focus popup / toolbar": "Fokus popup / verktygsfältet",
+    "Return focus to previous position": "Returnera fokus till tidigare position"
   },
   direction: "ltr"
 };

@@ -64,6 +64,7 @@ $.FE.LANGUAGE['nl'] = {
     "Colors": "Kleuren",
     "Background": "Achtergrond",
     "Text": "Tekst",
+    "HEX Color": "Hex kleur",
 
     // Paragraphs
     "Paragraph Format": "Opmaak",
@@ -125,6 +126,8 @@ $.FE.LANGUAGE['nl'] = {
     "Width": "Breedte",
     "Height": "Hoogte",
     "Something went wrong. Please try again.": "Er is iets fout gegaan. Probeer opnieuw.",
+    "Image Caption": "Afbeelding caption",
+    "Advanced Edit": "Geavanceerd bewerken",
 
     // Video
     "Insert Video": "Video invoegen",
@@ -253,7 +256,47 @@ $.FE.LANGUAGE['nl'] = {
     "Decrease": "Daling",
 
     // Quick Insert
-    "Quick Insert": "Snel invoegen"
+    "Quick Insert": "Snel invoegen",
+
+    // Spcial Characters
+    "Special Characters": "Speciale tekens",
+    "Latin": "Latijns",
+    "Greek": "Grieks",
+    "Cyrillic": "Cyrillisch",
+    "Punctuation": "Interpunctie",
+    "Currency": "Valuta",
+    "Arrows": "Pijlen",
+    "Math": "Wiskunde",
+    "Misc": "Misc",
+
+    // Print.
+    "Print": "Afdrukken",
+
+    // Spell Checker.
+    "Spell Checker": "Spellingscontrole",
+
+    // Help
+    "Help": "Helpen",
+    "Shortcuts": "Snelkoppelingen",
+    "Inline Editor": "Inline editor",
+    "Show the editor": "Laat de editor zien",
+    "Common actions": "Gemeenschappelijke acties",
+    "Copy": "Kopiëren",
+    "Cut": "Besnoeiing",
+    "Paste": "Plakken",
+    "Basic Formatting": "Basisformattering",
+    "Increase quote level": "Citaat niveau verhogen",
+    "Decrease quote level": "Citaatniveau verminderen",
+    "Image / Video": "Beeld / video",
+    "Resize larger": "Grootte groter",
+    "Resize smaller": "Kleiner formaat wijzigen",
+    "Table": "Tafel",
+    "Select table cell": "Selecteer tabelcel",
+    "Extend selection one cell": "Selecteer een cel uit",
+    "Extend selection one row": "Selecteer een rij uit",
+    "Navigation": "Navigatie",
+    "Focus popup / toolbar": "Focus pop-up / werkbalk",
+    "Return focus to previous position": "Terugkeer focus naar vorige positie"
   },
   direction: "ltr"
 };

@@ -64,6 +64,7 @@ $.FE.LANGUAGE['ro'] = {
     "Colors": "Culoare",
     "Background": "Fundal",
     "Text": "Text",
+    "HEX Color": "Culoare Hexa",
 
     // Paragraphs
     "Paragraph Format": "Format paragraf",
@@ -126,6 +127,8 @@ $.FE.LANGUAGE['ro'] = {
     "Width": "L\u0103\u021bime",
     "Height": "\u00cen\u0103l\u021bime",
     "Something went wrong. Please try again.": "Ceva n-a mers bine. V\u0103 rug\u0103m s\u0103 \u00eencerca\u021bi din nou.",
+    "Image Caption": "Captura imaginii",
+    "Advanced Edit": "Editare avansată",
 
     // Video
     "Insert Video": "Inserare video",
@@ -254,7 +257,47 @@ $.FE.LANGUAGE['ro'] = {
     "Decrease": "De-indenteaz\u0103",
 
     // Quick Insert
-    "Quick Insert": "Inserare rapid\u0103"
+    "Quick Insert": "Inserare rapid\u0103",
+
+    // Spcial Characters
+    "Special Characters": "Caracterele speciale",
+    "Latin": "Latină",
+    "Greek": "Greacă",
+    "Cyrillic": "Chirilic",
+    "Punctuation": "Punctuaţie",
+    "Currency": "Valută",
+    "Arrows": "Săgeți",
+    "Math": "Matematică",
+    "Misc": "Diverse",
+
+    // Print.
+    "Print": "Imprimare",
+
+    // Spell Checker.
+    "Spell Checker": "Ortografie",
+
+    // Help
+    "Help": "Ajutor",
+    "Shortcuts": "Comenzi rapide",
+    "Inline Editor": "Editor inline",
+    "Show the editor": "Arătați editorul",
+    "Common actions": "Acțiuni comune",
+    "Copy": "Copie",
+    "Cut": "A taia",
+    "Paste": "Lipire",
+    "Basic Formatting": "Formatul de bază",
+    "Increase quote level": "Creșteți nivelul cotației",
+    "Decrease quote level": "Micșorați nivelul cotației",
+    "Image / Video": "Imagine / video",
+    "Resize larger": "Redimensionați mai mare",
+    "Resize smaller": "Redimensionați mai puțin",
+    "Table": "Tabel",
+    "Select table cell": "Selectați celula tabelă",
+    "Extend selection one cell": "Extindeți selecția la o celulă",
+    "Extend selection one row": "Extindeți selecția cu un rând",
+    "Navigation": "Navigare",
+    "Focus popup / toolbar": "Focus popup / bara de instrumente",
+    "Return focus to previous position": "Reveniți la poziția anterioară"
   },
   direction: "ltr"
 };

@@ -64,6 +64,7 @@ $.FE.LANGUAGE['nb'] = {
     "Colors": "Farger",
     "Background": "Bakgrunn",
     "Text": "Tekst",
+    "HEX Color": "Heksefarge",
 
     // Paragraphs
     "Paragraph Format": "Stiler",
@@ -125,6 +126,8 @@ $.FE.LANGUAGE['nb'] = {
     "Width": "Bredde",
     "Height": "H\u00f8yde",
     "Something went wrong. Please try again.": "Noe gikk galt. V\u00e6r s\u00e5 snill, pr\u00f8v p\u00e5 nytt.",
+    "Image Caption": "Bilde bildetekst",
+    "Advanced Edit": "Avansert redigering",
 
     // Video
     "Insert Video": "Sett inn video",
@@ -253,7 +256,47 @@ $.FE.LANGUAGE['nb'] = {
     "Decrease": "Nedgang",
 
     // Quick Insert
-    "Quick Insert": "Hurtiginnsats"
+    "Quick Insert": "Hurtiginnsats",
+
+    // Spcial Characters
+    "Special Characters": "Spesielle karakterer",
+    "Latin": "Latin",
+    "Greek": "Gresk",
+    "Cyrillic": "Kyrilliske",
+    "Punctuation": "Tegnsetting",
+    "Currency": "Valuta",
+    "Arrows": "Piler",
+    "Math": "Matte",
+    "Misc": "Misc",
+
+    // Print.
+    "Print": "Skrive ut",
+
+    // Spell Checker.
+    "Spell Checker": "Stavekontroll",
+
+    // Help
+    "Help": "Hjelp",
+    "Shortcuts": "Snarveier",
+    "Inline Editor": "Inline editor",
+    "Show the editor": "Vis redaktøren",
+    "Common actions": "Felles handlinger",
+    "Copy": "Kopiere",
+    "Cut": "Kutte opp",
+    "Paste": "Lim inn",
+    "Basic Formatting": "Grunnleggende formatering",
+    "Increase quote level": "Øke tilbudsnivået",
+    "Decrease quote level": "Redusere tilbudsnivå",
+    "Image / Video": "Bilde / video",
+    "Resize larger": "Endre størrelsen større",
+    "Resize smaller": "Endre størrelsen mindre",
+    "Table": "Bord",
+    "Select table cell": "Velg tabellcelle",
+    "Extend selection one cell": "Utvide valg en celle",
+    "Extend selection one row": "Utvide valg en rad",
+    "Navigation": "Navigasjon",
+    "Focus popup / toolbar": "Fokus popup / verktøylinje",
+    "Return focus to previous position": "Returnere fokus til tidligere posisjon"
   },
   direction: "ltr"
 };

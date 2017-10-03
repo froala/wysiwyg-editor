@@ -64,6 +64,7 @@ $.FE.LANGUAGE['ru'] = {
     "Colors": "\u0426\u0432\u0435\u0442\u0430",
     "Background": "\u0424\u043e\u043d",
     "Text": "\u0422\u0435\u043a\u0441\u0442",
+    "HEX Color": "Шестигранный цвет",
 
     // Paragraphs
     "Paragraph Format": "\u0424\u043e\u0440\u043c\u0430\u0442 \u0430\u0431\u0437\u0430\u0446\u0430",
@@ -125,6 +126,8 @@ $.FE.LANGUAGE['ru'] = {
     "Width": "\u0428\u0438\u0440\u0438\u043d\u0430",
     "Height": "\u0412\u044b\u0441\u043e\u0442\u0430",
     "Something went wrong. Please try again.": "\u0427\u0442\u043e\u002d\u0442\u043e \u043f\u043e\u0448\u043b\u043e \u043d\u0435 \u0442\u0430\u043a\u002e \u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430\u002c \u043f\u043e\u043f\u0440\u043e\u0431\u0443\u0439\u0442\u0435 \u0435\u0449\u0435 \u0440\u0430\u0437\u002e",
+    "Image Caption": "Подпись изображения",
+    "Advanced Edit": "Расширенное редактирование",
 
     // Video
     "Insert Video": "\u0412\u0441\u0442\u0430\u0432\u0438\u0442\u044c \u0432\u0438\u0434\u0435\u043e",
@@ -253,7 +256,47 @@ $.FE.LANGUAGE['ru'] = {
     "Decrease": "\u0421\u043d\u0438\u0436\u0435\u043d\u0438\u0435",
 
     // Quick Insert
-    "Quick Insert": "\u0411\u044b\u0441\u0442\u0440\u0430\u044f \u0432\u0441\u0442\u0430\u0432\u043a\u0430"
+    "Quick Insert": "\u0411\u044b\u0441\u0442\u0440\u0430\u044f \u0432\u0441\u0442\u0430\u0432\u043a\u0430",
+
+    // Spcial Characters
+    "Special Characters": "Специальные символы",
+    "Latin": "Латинский",
+    "Greek": "Греческий",
+    "Cyrillic": "Кириллица",
+    "Punctuation": "Пунктуация",
+    "Currency": "Валюта",
+    "Arrows": "Стрелки",
+    "Math": "Математический",
+    "Misc": "Разное",
+
+    // Print.
+    "Print": "Распечатать",
+
+    // Spell Checker.
+    "Spell Checker": "Программа проверки орфографии",
+
+    // Help
+    "Help": "Помогите",
+    "Shortcuts": "Сочетания",
+    "Inline Editor": "Встроенный редактор",
+    "Show the editor": "Показать редактора",
+    "Common actions": "Общие действия",
+    "Copy": "Копия",
+    "Cut": "Порез",
+    "Paste": "Вставить",
+    "Basic Formatting": "Базовое форматирование",
+    "Increase quote level": "Увеличить уровень котировки",
+    "Decrease quote level": "Уменьшить уровень кавычек",
+    "Image / Video": "Изображение / видео",
+    "Resize larger": "Изменить размер",
+    "Resize smaller": "Уменьшить размер",
+    "Table": "Таблица",
+    "Select table cell": "Выбрать ячейку таблицы",
+    "Extend selection one cell": "Продлить выделение одной ячейки",
+    "Extend selection one row": "Расширить выделение на одну строку",
+    "Navigation": "Навигация",
+    "Focus popup / toolbar": "Фокусное всплывающее окно / панель инструментов",
+    "Return focus to previous position": "Вернуть фокус на предыдущую позицию"
   },
   direction: "ltr"
 };

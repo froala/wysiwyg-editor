@@ -64,6 +64,7 @@ $.FE.LANGUAGE['sr'] = {
     "Colors": "Boje",
     "Background": "Pozadina",
     "Text": "Tekst",
+    "HEX Color": "HEX boje",
 
     // Paragraphs
     "Paragraph Format": "Format pasusa",
@@ -125,6 +126,8 @@ $.FE.LANGUAGE['sr'] = {
     "Width": "\u0160irina",
     "Height": "Visina",
     "Something went wrong. Please try again.": "Ne\u0161to krenulo naopako. Poku\u0161ajte ponovo.",
+    "Image Caption": "Slika natpisa",
+    "Advanced Edit": "Napredno uređivanje",
 
     // Video
     "Insert Video": "Umetanje video",
@@ -253,7 +256,47 @@ $.FE.LANGUAGE['sr'] = {
     "Decrease": "Smanjivanje",
 
     // Quick Insert
-    "Quick Insert": "Brzo umetanje"
+    "Quick Insert": "Brzo umetanje",
+
+    // Spcial Characters
+    "Special Characters": "Specijalni znakovi",
+    "Latin": "Latino",
+    "Greek": "Grk",
+    "Cyrillic": "Ćirilica",
+    "Punctuation": "Interpunkcije",
+    "Currency": "Valuta",
+    "Arrows": "Strelice",
+    "Math": "Matematika",
+    "Misc": "Misc",
+
+    // Print.
+    "Print": "Odštampaj",
+
+    // Spell Checker.
+    "Spell Checker": "Kontrolor pravopisa",
+
+    // Help
+    "Help": "Pomoć",
+    "Shortcuts": "Prečice",
+    "Inline Editor": "Pri upisivanju Editor",
+    "Show the editor": "Prikaži urednik",
+    "Common actions": "Zajedničke akcije",
+    "Copy": "Kopija",
+    "Cut": "Rez",
+    "Paste": "Nalepi",
+    "Basic Formatting": "Osnovno oblikovanje",
+    "Increase quote level": "Povećati ponudu za nivo",
+    "Decrease quote level": "Smanjenje ponude nivo",
+    "Image / Video": "Slika / Video",
+    "Resize larger": "Veće veličine",
+    "Resize smaller": "Promena veličine manji",
+    "Table": "Sto",
+    "Select table cell": "Select ćelije",
+    "Extend selection one cell": "Proširite selekciju jednu ćeliju",
+    "Extend selection one row": "Proširite selekciju jedan red",
+    "Navigation": "Navigacija",
+    "Focus popup / toolbar": "Fokus Iskačući meni / traka sa alatkama",
+    "Return focus to previous position": "Vratiti fokus na prethodnu poziciju"
   },
   direction: "ltr"
 };

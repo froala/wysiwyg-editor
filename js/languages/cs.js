@@ -64,6 +64,7 @@ $.FE.LANGUAGE['cs'] = {
     "Colors": "Barvy",
     "Background": "Pozad\u00ed",
     "Text": "P\u00edsmo",
+    "HEX Color": "Hex Barvy",
 
     // Paragraphs
     "Paragraph Format": "Form\u00e1t odstavec",
@@ -125,6 +126,8 @@ $.FE.LANGUAGE['cs'] = {
     "Width": "\u0160\u00ed\u0159ka",
     "Height": "V\u00fd\u0161ka",
     "Something went wrong. Please try again.": "N\u011bco se pokazilo. Pros\u00edm zkuste to znovu.",
+    "Image Caption": "Obrázek titulku",
+    "Advanced Edit": "Pokročilá úprava",
 
     // Video
     "Insert Video": "Vlo\u017eit video",
@@ -253,7 +256,47 @@ $.FE.LANGUAGE['cs'] = {
     "Decrease": "Sn\u00ed\u017een\u00ed",
 
     // Quick Insert
-    "Quick Insert": "Rychl\u00e1 vlo\u017eka"
+    "Quick Insert": "Rychl\u00e1 vlo\u017eka",
+
+    // Spcial Characters
+    "Special Characters": "Speciální znaky",
+    "Latin": "Latinský",
+    "Greek": "Řecký",
+    "Cyrillic": "Cyrilice",
+    "Punctuation": "Interpunkce",
+    "Currency": "Měna",
+    "Arrows": "Šipky",
+    "Math": "Matematika",
+    "Misc": "Misc",
+
+    // Print.
+    "Print": "Tisk",
+
+    // Spell Checker.
+    "Spell Checker": "Kontrola pravopisu",
+
+    // Help
+    "Help": "Pomoc",
+    "Shortcuts": "Zkratky",
+    "Inline Editor": "Inline editor",
+    "Show the editor": "Zobrazit editor",
+    "Common actions": "Společné akce",
+    "Copy": "Kopírovat",
+    "Cut": "Střih",
+    "Paste": "Vložit",
+    "Basic Formatting": "Základní formátování",
+    "Increase quote level": "Zvýšení cenové hladiny",
+    "Decrease quote level": "Snížit úroveň cenové nabídky",
+    "Image / Video": "Obraz / video",
+    "Resize larger": "Změna velikosti větší",
+    "Resize smaller": "Změnit velikost menší",
+    "Table": "Stůl",
+    "Select table cell": "Vyberte buňku tabulky",
+    "Extend selection one cell": "Rozšířit výběr o jednu buňku",
+    "Extend selection one row": "Rozšířit výběr o jeden řádek",
+    "Navigation": "Navigace",
+    "Focus popup / toolbar": "Popup / panel nástrojů zaostření",
+    "Return focus to previous position": "Návrat na předchozí pozici"
   },
   direction: "ltr"
 };

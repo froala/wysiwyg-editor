@@ -64,6 +64,7 @@ $.FE.LANGUAGE['ja'] = {
     "Colors": "\u8272",
     "Background": "\u80cc\u666f",
     "Text": "\u30c6\u30ad\u30b9\u30c8",
+    "HEX Color": "六角の色",
 
     // Paragraphs
     "Paragraph Format": "\u6bb5\u843d\u306e\u66f8\u5f0f",
@@ -125,6 +126,8 @@ $.FE.LANGUAGE['ja'] = {
     "Width": "\u5e45",
     "Height": "\u9ad8\u3055",
     "Something went wrong. Please try again.": "\u4f55\u304b\u304c\u9593\u9055\u3063\u3066\u3044\u307e\u3057\u305f\u3002\u3082\u3046\u4e00\u5ea6\u3084\u308a\u76f4\u3057\u3066\u304f\u3060\u3055\u3044\u3002",
+    "Image Caption": "画像キャプション",
+    "Advanced Edit": "高度な編集",
 
     // Video
     "Insert Video": "\u52d5\u753b\u306e\u633f\u5165",
@@ -253,7 +256,47 @@ $.FE.LANGUAGE['ja'] = {
     "Decrease": "\u6e1b\u5c11",
 
     // Quick Insert
-    "Quick Insert": "\u30af\u30a4\u30c3\u30af\u30a4\u30f3\u30b5\u30fc\u30c8"
+    "Quick Insert": "\u30af\u30a4\u30c3\u30af\u30a4\u30f3\u30b5\u30fc\u30c8",
+
+    // Spcial Characters
+    "Special Characters": "特殊文字",
+    "Latin": "ラテン",
+    "Greek": "ギリシャ語",
+    "Cyrillic": "キリル",
+    "Punctuation": "句読点",
+    "Currency": "通貨",
+    "Arrows": "矢",
+    "Math": "数学",
+    "Misc": "その他",
+
+    // Print.
+    "Print": "印刷する",
+
+    // Spell Checker.
+    "Spell Checker": "スペルチェッカー",
+
+    // Help
+    "Help": "助けて",
+    "Shortcuts": "ショートカット",
+    "Inline Editor": "インラインエディタ",
+    "Show the editor": "エディタを表示する",
+    "Common actions": "共通の行動",
+    "Copy": "コピー",
+    "Cut": "カット",
+    "Paste": "ペースト",
+    "Basic Formatting": "基本的な書式設定",
+    "Increase quote level": "見積もりを増やす",
+    "Decrease quote level": "見積もりを減らす",
+    "Image / Video": "画像/ビデオ",
+    "Resize larger": "サイズを大きくする",
+    "Resize smaller": "サイズを小さくする",
+    "Table": "表",
+    "Select table cell": "表のセルを選択",
+    "Extend selection one cell": "1つのセルを選択拡張",
+    "Extend selection one row": "選択範囲を1行延長する",
+    "Navigation": "ナビゲーション",
+    "Focus popup / toolbar": "フォーカスポップアップ/ツールバー",
+    "Return focus to previous position": "前の位置にフォーカスを戻す"
   },
   direction: "ltr"
 };

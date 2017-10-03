@@ -64,6 +64,7 @@ $.FE.LANGUAGE['de'] = {
     "Colors": "Farben",
     "Background": "Hintergrund",
     "Text": "Text",
+    "HEX Color": "Hexe Farbe",
 
     // Paragraphs
     "Paragraph Format": "Formate",
@@ -125,6 +126,8 @@ $.FE.LANGUAGE['de'] = {
     "Width": "Breite",
     "Height": "H\u00f6he",
     "Something went wrong. Please try again.": "Etwas ist schief gelaufen. Bitte versuchen Sie es erneut.",
+    "Image Caption": "Bildbeschreibung",
+    "Advanced Edit": "Erweiterte Bearbeitung",
 
     // Video
     "Insert Video": "Video einf\u00fcgen",
@@ -253,7 +256,47 @@ $.FE.LANGUAGE['de'] = {
     "Decrease": "Verkleinern",
 
     // Quick Insert
-    "Quick Insert": "Schnelleinsatz"
+    "Quick Insert": "Schnelleinsatz",
+
+    // Spcial Characters
+    "Special Characters": "Spezielle Charaktere",
+    "Latin": "Lateinisch",
+    "Greek": "Griechisch",
+    "Cyrillic": "Kyrillisch",
+    "Punctuation": "Interpunktion",
+    "Currency": "Währung",
+    "Arrows": "Pfeile",
+    "Math": "Mathe",
+    "Misc": "Misc",
+
+    // Print.
+    "Print": "Drucken",
+
+    // Spell Checker.
+    "Spell Checker": "Rechtschreibprüfung",
+
+    // Help
+    "Help": "Hilfe",
+    "Shortcuts": "Verknüpfungen",
+    "Inline Editor": "Inline-Editor",
+    "Show the editor": "Zeige den Redakteur",
+    "Common actions": "Gemeinsame Aktionen",
+    "Copy": "Kopieren",
+    "Cut": "Schneiden",
+    "Paste": "Paste",
+    "Basic Formatting": "Grundformatierung",
+    "Increase quote level": "Zitat erhöhen",
+    "Decrease quote level": "Verringern Sie das Zitatniveau",
+    "Image / Video": "Bild / Video",
+    "Resize larger": "Größe größer ändern",
+    "Resize smaller": "Verkleinern kleiner",
+    "Table": "Tabelle",
+    "Select table cell": "Tischzelle auswählen",
+    "Extend selection one cell": "Erweitere eine Zelle",
+    "Extend selection one row": "Erweitere eine reihe",
+    "Navigation": "Navigation",
+    "Focus popup / toolbar": "Fokus-Popup / Symbolleiste",
+    "Return focus to previous position": "Rückkehr Fokus auf vorherige Position"
   },
   direction: "ltr"
 };
