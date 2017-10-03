@@ -296,7 +296,17 @@ $.FE.LANGUAGE['et'] = {
     "Extend selection one row": "Laiendage valikut ühe reana",
     "Navigation": "Navigeerimine",
     "Focus popup / toolbar": "Fookuse hüpikakna / tööriistariba",
-    "Return focus to previous position": "Tagasi pöörata tähelepanu eelmisele positsioonile"
+    "Return focus to previous position": "Tagasi pöörata tähelepanu eelmisele positsioonile",
+
+    // Embed.ly
+    "Embed URL": "Embed url",
+    "Paste in a URL to embed": "Kleepige URL-i sisestamiseks",
+
+    // Word Paste.
+    "The pasted content is coming from a Microsoft Word document. Do you want to keep the format or clean it up?": "Kleepitud sisu pärineb Microsoft Wordi dokumendist. kas soovite vormi säilitada või puhastada?",
+    "Keep": "Pidage seda",
+    "Clean": "Puhas",
+    "Word Paste Detected": "Avastatud sõna pasta"
   },
   direction: "ltr"
 };

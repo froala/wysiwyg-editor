@@ -296,7 +296,17 @@ $.FE.LANGUAGE['tr'] = {
     "Extend selection one row": "Seçimi bir sıra genişlet",
     "Navigation": "Navigasyon",
     "Focus popup / toolbar": "Odaklanma açılır penceresi / araç çubuğu",
-    "Return focus to previous position": "Odaklamaya önceki konumuna geri dönün"
+    "Return focus to previous position": "Odaklamaya önceki konumuna geri dönün",
+
+    // Embed.ly
+    "Embed URL": "URL göm",
+    "Paste in a URL to embed": "Yerleştirmek için bir URL'ye yapıştırın",
+
+    // Word Paste.
+    "The pasted content is coming from a Microsoft Word document. Do you want to keep the format or clean it up?": "Yapıştırılan içerik bir Microsoft Word belgesinden geliyor. Biçimi saklamaya mı yoksa temizlemeyi mi istiyor musun?",
+    "Keep": "Tutmak",
+    "Clean": "Temiz",
+    "Word Paste Detected": "Kelime yapıştırması algılandı"
   },
   direction: "ltr"
 };

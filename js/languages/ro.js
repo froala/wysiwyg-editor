@@ -297,7 +297,17 @@ $.FE.LANGUAGE['ro'] = {
     "Extend selection one row": "Extindeți selecția cu un rând",
     "Navigation": "Navigare",
     "Focus popup / toolbar": "Focus popup / bara de instrumente",
-    "Return focus to previous position": "Reveniți la poziția anterioară"
+    "Return focus to previous position": "Reveniți la poziția anterioară",
+
+    // Embed.ly
+    "Embed URL": "Încorporați url",
+    "Paste in a URL to embed": "Lipiți într-un url pentru a încorpora",
+
+    // Word Paste.
+    "The pasted content is coming from a Microsoft Word document. Do you want to keep the format or clean it up?": "Conținutul lipit vine dintr-un document word Microsoft. Doriți să păstrați formatul sau să îl curățați?",
+    "Keep": "A pastra",
+    "Clean": "Curat",
+    "Word Paste Detected": "Cuvântul paste a fost detectat"
   },
   direction: "ltr"
 };

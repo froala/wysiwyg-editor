@@ -296,7 +296,17 @@ $.FE.LANGUAGE['zh_cn'] = {
     "Extend selection one row": "扩展选择一行",
     "Navigation": "导航",
     "Focus popup / toolbar": "焦点弹出/工具栏",
-    "Return focus to previous position": "将焦点返回到上一个位置"
+    "Return focus to previous position": "将焦点返回到上一个位置",
+
+    // Embed.ly
+    "Embed URL": "嵌入网址",
+    "Paste in a URL to embed": "粘贴在一个网址中嵌入",
+
+    // Word Paste.
+    "The pasted content is coming from a Microsoft Word document. Do you want to keep the format or clean it up?": "粘贴的内容来自微软Word文档。你想保留格式还是清理它？",
+    "Keep": "保持",
+    "Clean": "清洁",
+    "Word Paste Detected": "检测到字贴"
   },
   direction: "ltr"
 };

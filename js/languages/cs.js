@@ -296,7 +296,17 @@ $.FE.LANGUAGE['cs'] = {
     "Extend selection one row": "Rozšířit výběr o jeden řádek",
     "Navigation": "Navigace",
     "Focus popup / toolbar": "Popup / panel nástrojů zaostření",
-    "Return focus to previous position": "Návrat na předchozí pozici"
+    "Return focus to previous position": "Návrat na předchozí pozici",
+
+    // Embed.ly
+    "Embed URL": "Vložte url",
+    "Paste in a URL to embed": "Vložit adresu URL, kterou chcete vložit",
+
+    // Word Paste.
+    "The pasted content is coming from a Microsoft Word document. Do you want to keep the format or clean it up?": "Vložený obsah pochází z dokumentu Microsoft Word. chcete formát uchovat nebo jej vyčistit?",
+    "Keep": "Držet",
+    "Clean": "Čistý",
+    "Word Paste Detected": "Slovní vložka zjištěna"
   },
   direction: "ltr"
 };

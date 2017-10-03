@@ -296,8 +296,19 @@ $.FE.LANGUAGE['hu'] = {
     "Extend selection one row": "Szűkítse ki az egy sort",
     "Navigation": "Navigáció",
     "Focus popup / toolbar": "Fókusz felugró ablak / eszköztár",
-    "Return focus to previous position": "Visszaáll az előző pozícióra"
+    "Return focus to previous position": "Visszaáll az előző pozícióra",
+
+    // Embed.ly
+    "Embed URL": "Beágyazott url",
+    "Paste in a URL to embed": "Beilleszteni egy URL-t a beágyazáshoz",
+
+    // Word Paste.
+    "The pasted content is coming from a Microsoft Word document. Do you want to keep the format or clean it up?": "A beillesztett tartalom egy microsoft szó dokumentumból származik. szeretné megtartani a formátumot vagy tisztítani?",
+    "Keep": "Tart",
+    "Clean": "Tiszta",
+    "Word Paste Detected": "Szópaszta észlelhető"
   },
   direction: "ltr"
 };
+
 }));

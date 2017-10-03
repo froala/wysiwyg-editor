@@ -296,7 +296,17 @@ $.FE.LANGUAGE['uk'] = {
     "Extend selection one row": "Продовжити виділення одного рядка",
     "Navigation": "Навігація",
     "Focus popup / toolbar": "Фокус спливаюче / панель інструментів",
-    "Return focus to previous position": "Поверніть фокус на попередню позицію"
+    "Return focus to previous position": "Поверніть фокус на попередню позицію",
+
+    // Embed.ly
+    "Embed URL": "Вставити URL-адресу",
+    "Paste in a URL to embed": "Вставте в url, щоб вставити",
+
+    // Word Paste.
+    "The pasted content is coming from a Microsoft Word document. Do you want to keep the format or clean it up?": "Вставлений вміст надходить з документу Microsoft Word. ви хочете зберегти формат чи очистити його?",
+    "Keep": "Тримати",
+    "Clean": "Чистий",
+    "Word Paste Detected": "Слово паста виявлено"
   },
   direction: "ltr"
 };

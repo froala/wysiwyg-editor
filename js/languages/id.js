@@ -297,7 +297,17 @@ $.FE.LANGUAGE['id'] = {
     "Extend selection one row": "Perpanjang pilihan satu baris",
     "Navigation": "Navigasi",
     "Focus popup / toolbar": "Fokus popup / toolbar",
-    "Return focus to previous position": "Kembali fokus ke posisi sebelumnya"
+    "Return focus to previous position": "Kembali fokus ke posisi sebelumnya",
+
+    // Embed.ly
+    "Embed URL": "Embed url",
+    "Paste in a URL to embed": "Paste di url untuk menanamkan",
+
+    // Word Paste.
+    "The pasted content is coming from a Microsoft Word document. Do you want to keep the format or clean it up?": "Konten yang disisipkan berasal dari dokumen kata microsoft. apakah Anda ingin menyimpan format atau membersihkannya?",
+    "Keep": "Menjaga",
+    "Clean": "Bersih",
+    "Word Paste Detected": "Kata paste terdeteksi"
   },
   direction: "ltr"
 };

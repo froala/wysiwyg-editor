@@ -296,7 +296,17 @@ $.FE.LANGUAGE['fi'] = {
     "Extend selection one row": "Laajenna valinta yksi rivi",
     "Navigation": "Suunnistus",
     "Focus popup / toolbar": "Painopistevalo / työkalurivi",
-    "Return focus to previous position": "Palauta tarkennus edelliseen asentoon"
+    "Return focus to previous position": "Palauta tarkennus edelliseen asentoon",
+
+    // Embed.ly
+    "Embed URL": "Upottaa URL-osoite",
+    "Paste in a URL to embed": "Liitä upotettu URL-osoite",
+
+    // Word Paste.
+    "The pasted content is coming from a Microsoft Word document. Do you want to keep the format or clean it up?": "Liitetty sisältö tulee Microsoft Word -asiakirjasta. Haluatko säilyttää muodon tai puhdistaa sen?",
+    "Keep": "Pitää",
+    "Clean": "Puhdas",
+    "Word Paste Detected": "Sana-tahna havaittu"
   },
   direction: "ltr"
 };

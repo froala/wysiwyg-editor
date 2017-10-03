@@ -296,7 +296,17 @@ $.FE.LANGUAGE['sr'] = {
     "Extend selection one row": "Proširite selekciju jedan red",
     "Navigation": "Navigacija",
     "Focus popup / toolbar": "Fokus Iskačući meni / traka sa alatkama",
-    "Return focus to previous position": "Vratiti fokus na prethodnu poziciju"
+    "Return focus to previous position": "Vratiti fokus na prethodnu poziciju",
+
+    // Embed.ly
+    "Embed URL": "Ugradite URL",
+    "Paste in a URL to embed": "Nalepite URL adresu da biste ugradili",
+
+    // Word Paste.
+    "The pasted content is coming from a Microsoft Word document. Do you want to keep the format or clean it up?": "Nalepljeni sadržaj dolazi iz Microsoft Word dokument. Da li želite zadržati u formatu ili počistiti?",
+    "Keep": "Nastavi",
+    "Clean": "Oиisti",
+    "Word Paste Detected": "Word Nalepi otkriven"
   },
   direction: "ltr"
 };

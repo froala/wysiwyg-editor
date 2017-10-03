@@ -296,7 +296,17 @@ $.FE.LANGUAGE['ko'] = {
     "Extend selection one row": "하나의 행을 선택 확장",
     "Navigation": "항해",
     "Focus popup / toolbar": "포커스 팝업 / 툴바",
-    "Return focus to previous position": "이전 위치로 초점을 되돌립니다."
+    "Return focus to previous position": "이전 위치로 초점을 되돌립니다.",
+
+    // Embed.ly
+    "Embed URL": "퍼가기 URL",
+    "Paste in a URL to embed": "삽입 할 URL에 붙여 넣기",
+
+    // Word Paste.
+    "The pasted content is coming from a Microsoft Word document. Do you want to keep the format or clean it up?": "붙여 넣은 내용은 Microsoft Word 문서에서 가져옵니다. 형식을 유지하거나 정리하고 싶습니까?",
+    "Keep": "유지",
+    "Clean": "깨끗한",
+    "Word Paste Detected": "단어 붙여 넣기가 감지되었습니다."
   },
   direction: "ltr"
 };

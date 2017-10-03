@@ -296,7 +296,17 @@ $.FE.LANGUAGE['fr'] = {
     "Extend selection one row": "Étendre la sélection d'une ligne",
     "Navigation": "La navigation",
     "Focus popup / toolbar": "Focus popup / toolbar",
-    "Return focus to previous position": "Retourner l'accent sur le poste précédent"
+    "Return focus to previous position": "Retourner l'accent sur le poste précédent",
+
+    // Embed.ly
+    "Embed URL": "URL intégrée",
+    "Paste in a URL to embed": "Coller dans une url pour intégrer",
+
+    // Word Paste.
+    "The pasted content is coming from a Microsoft Word document. Do you want to keep the format or clean it up?": "Le contenu collé provient d'un document Microsoft Word. voulez-vous garder le format ou le nettoyer?",
+    "Keep": "Garder",
+    "Clean": "Nettoyer",
+    "Word Paste Detected": "Pate de mots détectée"
   },
   direction: "ltr"
 };

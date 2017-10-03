@@ -296,7 +296,17 @@ $.FE.LANGUAGE['fa'] = {
     "Extend selection one row": "یک ردیف را انتخاب کنید",
     "Navigation": "جهت یابی",
     "Focus popup / toolbar": "تمرکز پنجره / نوار ابزار",
-    "Return focus to previous position": "تمرکز بازگشت به موقعیت قبلی"
+    "Return focus to previous position": "تمرکز بازگشت به موقعیت قبلی",
+
+    // Embed.ly
+    "Embed URL": "آدرس جاسازی",
+    "Paste in a URL to embed": "یک URL برای جاسازی کپی کنید",
+
+    // Word Paste.
+    "The pasted content is coming from a Microsoft Word document. Do you want to keep the format or clean it up?": "محتوای جا به جا از یک سند Word Microsoft می آید. آیا می خواهید فرمت را نگه دارید یا پاک کنید؟",
+    "Keep": "نگاه داشتن",
+    "Clean": "پاک کن",
+    "Word Paste Detected": "کلمه رب تشخیص داده شده است"
   },
   direction: "rtl"
 };

@@ -296,7 +296,17 @@ $.FE.LANGUAGE['ja'] = {
     "Extend selection one row": "選択範囲を1行延長する",
     "Navigation": "ナビゲーション",
     "Focus popup / toolbar": "フォーカスポップアップ/ツールバー",
-    "Return focus to previous position": "前の位置にフォーカスを戻す"
+    "Return focus to previous position": "前の位置にフォーカスを戻す",
+
+    // Embed.ly
+    "Embed URL": "埋め込みURL",
+    "Paste in a URL to embed": "埋め込むURLに貼り付ける",
+
+    // Word Paste.
+    "The pasted content is coming from a Microsoft Word document. Do you want to keep the format or clean it up?": "貼り付けられたコンテンツは、マイクロソフトワード文書から来ています。あなたはフォーマットを保持したいのですか、それともクリーンアップしますか？",
+    "Keep": "キープ",
+    "Clean": "クリーン",
+    "Word Paste Detected": "単語ペーストを検出しました"
   },
   direction: "ltr"
 };

@@ -296,7 +296,17 @@ $.FE.LANGUAGE['zh_tw'] = {
     "Extend selection one row": "擴展選擇一行",
     "Navigation": "導航",
     "Focus popup / toolbar": "焦點彈出/工具欄",
-    "Return focus to previous position": "將焦點返回到上一個位置"
+    "Return focus to previous position": "將焦點返回到上一個位置",
+
+    // Embed.ly
+    "Embed URL": "嵌入網址",
+    "Paste in a URL to embed": "粘貼在一個網址中嵌入",
+
+    // Word Paste.
+    "The pasted content is coming from a Microsoft Word document. Do you want to keep the format or clean it up?": "粘貼的內容來自微軟Word文檔。你想保留格式還是清理它？",
+    "Keep": "保持",
+    "Clean": "清潔",
+    "Word Paste Detected": "檢測到字貼"
   },
   direction: "ltr"
 };

@@ -296,7 +296,17 @@ $.FE.LANGUAGE['da'] = {
     "Extend selection one row": "Udvide markeringen en række",
     "Navigation": "Navigation",
     "Focus popup / toolbar": "Fokus popup / værktøjslinje",
-    "Return focus to previous position": "Returnere fokus til tidligere position"
+    "Return focus to previous position": "Returnere fokus til tidligere position",
+
+    // Embed.ly
+    "Embed URL": "Integrere url",
+    "Paste in a URL to embed": "Indsæt i en URL for at indlejre",
+
+    // Word Paste.
+    "The pasted content is coming from a Microsoft Word document. Do you want to keep the format or clean it up?": "Det indsatte indhold kommer fra et Microsoft Word-dokument. vil du holde formatet eller rydde det op?",
+    "Keep": "Holde",
+    "Clean": "Ren",
+    "Word Paste Detected": "Ordpasta opdages"
   },
   direction: "ltr"
 };

@@ -296,7 +296,17 @@ $.FE.LANGUAGE['ar'] = {
     "Extend selection one row": "تمديد اختيار صف واحد",
     "Navigation": "التنقل",
     "Focus popup / toolbar": "التركيز المنبثقة / شريط الأدوات",
-    "Return focus to previous position": "عودة التركيز إلى الموقف السابق"
+    "Return focus to previous position": "عودة التركيز إلى الموقف السابق",
+
+    // Embed.ly
+    "Embed URL": "تضمين عنوان ورل",
+    "Paste in a URL to embed": "الصق في عنوان ورل لتضمينه",
+
+    // Word Paste.
+    "The pasted content is coming from a Microsoft Word document. Do you want to keep the format or clean it up?": "المحتوى الذي تم لصقه قادم من وثيقة كلمة ميكروسوفت. هل تريد الاحتفاظ بالتنسيق أو تنظيفه؟",
+    "Keep": "احتفظ",
+    "Clean": "نظيف",
+    "Word Paste Detected": "تم اكتشاف معجون الكلمات"
   },
   direction: "rtl"
 };

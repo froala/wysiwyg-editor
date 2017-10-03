@@ -296,7 +296,17 @@ $.FE.LANGUAGE['th'] = {
     "Extend selection one row": "ขยายการเลือกหนึ่งแถว",
     "Navigation": "การเดินเรือ",
     "Focus popup / toolbar": "โฟกัสป๊อปอัพ / แถบเครื่องมือ",
-    "Return focus to previous position": "กลับไปยังตำแหน่งก่อนหน้า"
+    "Return focus to previous position": "กลับไปยังตำแหน่งก่อนหน้า",
+
+    // Embed.ly
+    "Embed URL": "ฝัง URL",
+    "Paste in a URL to embed": "วางใน url เพื่อฝัง",
+
+    // Word Paste.
+    "The pasted content is coming from a Microsoft Word document. Do you want to keep the format or clean it up?": "เนื้อหาที่วางจะมาจากเอกสารคำในแบบ microsoft คุณต้องการเก็บรูปแบบหรือทำความสะอาดหรือไม่?",
+    "Keep": "เก็บ",
+    "Clean": "สะอาด",
+    "Word Paste Detected": "ตรวจพบการวางคำ"
   },
   direction: "ltr"
 };

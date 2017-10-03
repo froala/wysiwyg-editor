@@ -297,7 +297,17 @@ $.FE.LANGUAGE['sk'] = {
     "Extend selection one row": "Rozšíriť výber o jeden riadok",
     "Navigation": "Navigácia",
     "Focus popup / toolbar": "Zameranie / panel s nástrojmi",
-    "Return focus to previous position": "Vrátiť zaostrenie na predchádzajúcu pozíciu"
+    "Return focus to previous position": "Vrátiť zaostrenie na predchádzajúcu pozíciu",
+
+    // Embed.ly
+    "Embed URL": "Vložiť adresu URL",
+    "Paste in a URL to embed": "Vložte do adresy URL, ktorú chcete vložiť",
+
+    // Word Paste.
+    "The pasted content is coming from a Microsoft Word document. Do you want to keep the format or clean it up?": "Vložený obsah vychádza z dokumentu Microsoft Word. chcete formát uchovať alebo ho vyčistiť?",
+    "Keep": "Zachovať",
+    "Clean": "Čistý",
+    "Word Paste Detected": "Slovná vložka bola zistená"
   },
   direction: "ltr"
 };

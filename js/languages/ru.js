@@ -296,7 +296,17 @@ $.FE.LANGUAGE['ru'] = {
     "Extend selection one row": "Расширить выделение на одну строку",
     "Navigation": "Навигация",
     "Focus popup / toolbar": "Фокусное всплывающее окно / панель инструментов",
-    "Return focus to previous position": "Вернуть фокус на предыдущую позицию"
+    "Return focus to previous position": "Вернуть фокус на предыдущую позицию",
+
+    // Embed.ly
+    "Embed URL": "Вставить URL-адрес",
+    "Paste in a URL to embed": "Вставить URL-адрес для встраивания",
+
+    // Word Paste.
+    "The pasted content is coming from a Microsoft Word document. Do you want to keep the format or clean it up?": "Вложенный контент поступает из документа Microsoft Word. вы хотите сохранить формат или очистить его?",
+    "Keep": "Держать",
+    "Clean": "Чистый",
+    "Word Paste Detected": "Обнаружена паста слов"
   },
   direction: "ltr"
 };

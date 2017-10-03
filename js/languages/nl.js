@@ -296,7 +296,17 @@ $.FE.LANGUAGE['nl'] = {
     "Extend selection one row": "Selecteer een rij uit",
     "Navigation": "Navigatie",
     "Focus popup / toolbar": "Focus pop-up / werkbalk",
-    "Return focus to previous position": "Terugkeer focus naar vorige positie"
+    "Return focus to previous position": "Terugkeer focus naar vorige positie",
+
+    // Embed.ly
+    "Embed URL": "Embed url",
+    "Paste in a URL to embed": "Plak in een url om in te vullen",
+
+    // Word Paste.
+    "The pasted content is coming from a Microsoft Word document. Do you want to keep the format or clean it up?": "De geplakte inhoud komt uit een Microsoft Word-document. wil je het formaat behouden of opruimen?",
+    "Keep": "Houden",
+    "Clean": "Schoon",
+    "Word Paste Detected": "Woordpasta gedetecteerd"
   },
   direction: "ltr"
 };

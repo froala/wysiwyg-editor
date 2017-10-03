@@ -240,7 +240,17 @@ $.FE.LANGUAGE['en_gb'] = {
     "Extend selection one row": "Extend selection one row",
     "Navigation": "Navigation",
     "Focus popup / toolbar": "Focus popup / toolbar",
-    "Return focus to previous position": "Return focus to previous position"
+    "Return focus to previous position": "Return focus to previous position",
+
+    // Embed.ly
+    "Embed URL": "Embed URL",
+    "Paste in a URL to embed": "Paste in a URL to embed",
+
+    // Word Paste.
+    "The pasted content is coming from a Microsoft Word document. Do you want to keep the format or clean it up?": "The pasted content is coming from a Microsoft Word document. Do you want to keep the format or clean it up?",
+    "Keep": "Keep",
+    "Clean": "Clean",
+    "Word Paste Detected": "Word Paste Detected"
   },
   direction: "ltr"
 };

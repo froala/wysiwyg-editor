@@ -296,7 +296,17 @@ $.FE.LANGUAGE['he'] = {
     "Extend selection one row": "להאריך את הבחירה שורה אחת",
     "Navigation": "ניווט",
     "Focus popup / toolbar": "מוקד קופץ / סרגל הכלים",
-    "Return focus to previous position": "חזרה להתמקד קודם"
+    "Return focus to previous position": "חזרה להתמקד קודם",
+
+    // Embed.ly
+    "Embed URL": "כתובת אתר להטביע",
+    "Paste in a URL to embed": "הדבק כתובת אתר להטביע",
+
+    // Word Paste.
+    "The pasted content is coming from a Microsoft Word document. Do you want to keep the format or clean it up?": "התוכן המודבק מגיע ממסמך Word של Microsoft. האם ברצונך לשמור את הפורמט או לנקות אותו?",
+    "Keep": "לִשְׁמוֹר",
+    "Clean": "לְנַקוֹת",
+    "Word Paste Detected": "הדבק מילה זוהתה"
   },
   direction: "rtl"
 };

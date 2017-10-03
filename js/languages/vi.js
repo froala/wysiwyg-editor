@@ -236,7 +236,17 @@ $.FE.LANGUAGE['vi'] = {
     "Extend selection one row": "Mở rộng lựa chọn một hàng",
     "Navigation": "Dẫn đường",
     "Focus popup / toolbar": "Tập trung popup / thanh công cụ",
-    "Return focus to previous position": "Quay trở lại vị trí trước"
+    "Return focus to previous position": "Quay trở lại vị trí trước",
+
+    // Embed.ly
+    "Embed URL": "Url nhúng",
+    "Paste in a URL to embed": "Dán vào một url để nhúng",
+
+    // Word Paste.
+    "The pasted content is coming from a Microsoft Word document. Do you want to keep the format or clean it up?": "Nội dung dán là đến từ một tài liệu từ microsoft. bạn có muốn giữ định dạng hoặc làm sạch nó?",
+    "Keep": "Giữ",
+    "Clean": "Dọn dẹp",
+    "Word Paste Detected": "Dán từ được phát hiện"
   },
   direction: "ltr"
 };

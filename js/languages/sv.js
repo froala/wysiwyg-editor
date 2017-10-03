@@ -296,7 +296,17 @@ $.FE.LANGUAGE['sv'] = {
     "Extend selection one row": "Förlänga valet en rad",
     "Navigation": "Navigering",
     "Focus popup / toolbar": "Fokus popup / verktygsfältet",
-    "Return focus to previous position": "Returnera fokus till tidigare position"
+    "Return focus to previous position": "Returnera fokus till tidigare position",
+
+    // Embed.ly
+    "Embed URL": "Bädda in url",
+    "Paste in a URL to embed": "Klistra in i en url för att bädda in",
+
+    // Word Paste.
+    "The pasted content is coming from a Microsoft Word document. Do you want to keep the format or clean it up?": "Det klistrade innehållet kommer från ett Microsoft Word-dokument. vill du hålla formatet eller städa upp det?",
+    "Keep": "Ha kvar",
+    "Clean": "Rena",
+    "Word Paste Detected": "Ordpasta upptäcks"
   },
   direction: "ltr"
 };

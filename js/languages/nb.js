@@ -296,7 +296,17 @@ $.FE.LANGUAGE['nb'] = {
     "Extend selection one row": "Utvide valg en rad",
     "Navigation": "Navigasjon",
     "Focus popup / toolbar": "Fokus popup / verktøylinje",
-    "Return focus to previous position": "Returnere fokus til tidligere posisjon"
+    "Return focus to previous position": "Returnere fokus til tidligere posisjon",
+
+    // Embed.ly
+    "Embed URL": "Legge inn nettadressen",
+    "Paste in a URL to embed": "Lim inn i en URL for å legge inn",
+
+    // Word Paste.
+    "The pasted content is coming from a Microsoft Word document. Do you want to keep the format or clean it up?": "Det limte innholdet kommer fra et Microsoft Word-dokument. vil du beholde formatet eller rydde det opp?",
+    "Keep": "Beholde",
+    "Clean": "Ren",
+    "Word Paste Detected": "Ordpasta oppdages"
   },
   direction: "ltr"
 };
