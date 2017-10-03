@@ -169,10 +169,6 @@ iframe.fr-iframe {
 .fr-wrapper.show-placeholder .fr-placeholder {
   display: block;
 }
-.fr-wrapper ::selection {
-  background: #b5d6fd;
-  color: #000000;
-}
 .fr-wrapper ::-moz-selection {
   background: #b5d6fd;
   color: #000000;
