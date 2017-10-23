@@ -495,6 +495,15 @@
 .gray-theme .fr-table-resizer div {
   border-right: 1px solid #0097a7;
 }
+.gray-theme.fr-popup .fr-table-colors-hex-layer .fr-input-line {
+  padding: 8px 0 0;
+}
+.gray-theme.fr-popup .fr-table-colors-hex-layer .fr-action-buttons button {
+  background-color: #0097a7;
+}
+.gray-theme.fr-popup .fr-table-colors-hex-layer .fr-action-buttons button:hover {
+  background-color: #006974;
+}
 .gray-theme.fr-popup .fr-table-size .fr-select-table-size {
   line-height: 0;
 }

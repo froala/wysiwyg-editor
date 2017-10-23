@@ -495,6 +495,15 @@
 .royal-theme .fr-table-resizer div {
   border-right: 1px solid #553982;
 }
+.royal-theme.fr-popup .fr-table-colors-hex-layer .fr-input-line {
+  padding: 8px 0 0;
+}
+.royal-theme.fr-popup .fr-table-colors-hex-layer .fr-action-buttons button {
+  background-color: #553982;
+}
+.royal-theme.fr-popup .fr-table-colors-hex-layer .fr-action-buttons button:hover {
+  background-color: #3e295f;
+}
 .royal-theme.fr-popup .fr-table-size .fr-select-table-size {
   line-height: 0;
 }
