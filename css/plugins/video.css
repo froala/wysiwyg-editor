@@ -162,7 +162,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  z-index: 9999;
+  z-index: 2147483640;
   overflow: hidden;
   margin: 0 !important;
   padding: 0 !important;
@@ -226,6 +226,6 @@
   left: 0;
   bottom: 0;
   right: 0;
-  z-index: 9999;
+  z-index: 2147483640;
   display: none;
 }

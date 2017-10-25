@@ -219,6 +219,7 @@
 }
 .red-theme .fr-drag-helper {
   background: #ffca28;
+  z-index: 2147483640;
 }
 .red-theme.fr-popup .fr-link:focus {
   outline: 0;
@@ -240,6 +241,7 @@
   bottom: 0;
   left: 0;
   right: 0;
+  z-index: 2147483640;
 }
 .red-theme .fr-file-progress-bar-layer > h3 {
   margin: 10px 0;
@@ -326,6 +328,7 @@
   left: 0;
   bottom: 0;
   right: 0;
+  z-index: 2147483640;
 }
 .red-theme .fr-image-upload-layer {
   border: dashed 2px #edc9c9;
@@ -343,6 +346,7 @@
   bottom: 0;
   left: 0;
   right: 0;
+  z-index: 2147483640;
 }
 .red-theme .fr-image-progress-bar-layer > h3 {
   margin: 10px 0;
@@ -598,6 +602,7 @@
   bottom: 0;
   left: 0;
   right: 0;
+  z-index: 2147483640;
 }
 .red-theme .fr-video-progress-bar-layer > h3 {
   margin: 10px 0;
@@ -620,6 +625,7 @@
   left: 0;
   bottom: 0;
   right: 0;
+  z-index: 2147483640;
 }
 .red-theme .fr-view span[style~="color:"] a {
   color: inherit;
@@ -937,6 +943,7 @@
   left: 0;
   bottom: 0;
   right: 0;
+  z-index: 2147483640;
 }
 .red-theme.fr-modal.fr-middle .fr-modal-wrapper {
   margin-top: 0;

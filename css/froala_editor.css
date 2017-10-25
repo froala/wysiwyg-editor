@@ -578,7 +578,7 @@ body.prevent-scroll.fr-mobile {
   bottom: 0;
   right: 0;
   width: 100%;
-  z-index: 9999;
+  z-index: 2147483640;
   text-rendering: optimizelegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -729,7 +729,7 @@ body.prevent-scroll.fr-mobile {
   -moz-opacity: 0.5;
   opacity: 0.5;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-  z-index: 9998;
+  z-index: 2147483639;
 }
 .fr-popup {
   position: absolute;
@@ -756,7 +756,7 @@ body.prevent-scroll.fr-mobile {
   -webkit-user-select: none;
   -ms-user-select: none;
   margin-top: 10px;
-  z-index: 9995;
+  z-index: 2147483635;
   text-align: left;
   border: 0px;
   border-top: 5px solid #222222;

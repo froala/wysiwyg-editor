@@ -17,7 +17,7 @@ body.fr-fullscreen {
   left: 0;
   bottom: 0;
   right: 0;
-  z-index: 9990 !important;
+  z-index: 2147483630 !important;
   width: auto !important;
 }
 .fr-box.fr-fullscreen .fr-toolbar.fr-top {

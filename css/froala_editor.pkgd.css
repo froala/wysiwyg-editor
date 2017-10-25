@@ -578,7 +578,7 @@ body.prevent-scroll.fr-mobile {
   bottom: 0;
   right: 0;
   width: 100%;
-  z-index: 9999;
+  z-index: 2147483640;
   text-rendering: optimizelegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -729,7 +729,7 @@ body.prevent-scroll.fr-mobile {
   -moz-opacity: 0.5;
   opacity: 0.5;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-  z-index: 9998;
+  z-index: 2147483639;
 }
 .fr-popup {
   position: absolute;
@@ -756,7 +756,7 @@ body.prevent-scroll.fr-mobile {
   -webkit-user-select: none;
   -ms-user-select: none;
   margin-top: 10px;
-  z-index: 9995;
+  z-index: 2147483635;
   text-align: left;
   border: 0px;
   border-top: 5px solid #222222;
@@ -1586,7 +1586,7 @@ textarea.fr-code {
   opacity: 0.2;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   position: absolute;
-  z-index: 9999;
+  z-index: 2147483640;
   display: none;
 }
 .fr-drag-helper.fr-visible {
@@ -1681,7 +1681,7 @@ textarea.fr-code {
   bottom: 0;
   left: 0;
   right: 0;
-  z-index: 9999;
+  z-index: 2147483640;
   overflow: hidden;
   margin: 0 !important;
   padding: 0 !important;
@@ -1790,7 +1790,7 @@ body.fr-fullscreen {
   left: 0;
   bottom: 0;
   right: 0;
-  z-index: 9990 !important;
+  z-index: 2147483630 !important;
   width: auto !important;
 }
 .fr-box.fr-fullscreen .fr-toolbar.fr-top {
@@ -1953,7 +1953,7 @@ body.fr-fullscreen {
   left: 0;
   bottom: 0;
   right: 0;
-  z-index: 9999;
+  z-index: 2147483640;
   display: none;
 }
 .fr-image-upload-layer {
@@ -1982,7 +1982,7 @@ body.fr-fullscreen {
   bottom: 0;
   left: 0;
   right: 0;
-  z-index: 9999;
+  z-index: 2147483640;
   overflow: hidden;
   margin: 0 !important;
   padding: 0 !important;
@@ -2396,7 +2396,7 @@ div.fr-modal-body div.fr-image-list div.fr-image-container .fr-insert-img {
 }
 .fr-quick-insert {
   position: absolute;
-  z-index: 9998;
+  z-index: 2147483639;
   white-space: nowrap;
   padding-right: 5px;
   margin-left: -5px;
@@ -2823,7 +2823,7 @@ div.fr-modal-body div.fr-image-list div.fr-image-container .fr-insert-img {
   bottom: 0;
   left: 0;
   right: 0;
-  z-index: 9999;
+  z-index: 2147483640;
   overflow: hidden;
   margin: 0 !important;
   padding: 0 !important;
@@ -2887,6 +2887,6 @@ div.fr-modal-body div.fr-image-list div.fr-image-container .fr-insert-img {
   left: 0;
   bottom: 0;
   right: 0;
-  z-index: 9999;
+  z-index: 2147483640;
   display: none;
 }

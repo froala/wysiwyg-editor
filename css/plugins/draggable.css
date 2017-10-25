@@ -29,7 +29,7 @@
   opacity: 0.2;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   position: absolute;
-  z-index: 9999;
+  z-index: 2147483640;
   display: none;
 }
 .fr-drag-helper.fr-visible {

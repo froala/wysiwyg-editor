@@ -22,7 +22,7 @@
 }
 .fr-quick-insert {
   position: absolute;
-  z-index: 9998;
+  z-index: 2147483639;
   white-space: nowrap;
   padding-right: 5px;
   margin-left: -5px;
