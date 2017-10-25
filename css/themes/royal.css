@@ -74,6 +74,10 @@
   background: #b5d6fd;
   color: #000000;
 }
+.royal-theme .fr-wrapper ::selection {
+  background: #b5d6fd;
+  color: #000000;
+}
 .royal-theme.fr-box.fr-basic .fr-wrapper {
   background: #ffffff;
   border: 0px;
