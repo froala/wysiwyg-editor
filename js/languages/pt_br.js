@@ -136,7 +136,7 @@ $.FE.LANGUAGE['pt_br'] = {
     // Tables
     "Insert Table": "Inserir tabela",
     "Table Header": "Cabe\u00e7alho da tabela",
-    "Remove Table": "Remover mesa",
+    "Remove Table": "Remover tabela",
     "Table Style": "estilo de tabela",
     "Horizontal Align": "Alinhamento horizontal",
     "Row": "Linha",
@@ -290,7 +290,7 @@ $.FE.LANGUAGE['pt_br'] = {
     "Image / Video": "Imagem / video",
     "Resize larger": "Redimensionar maior",
     "Resize smaller": "Redimensionar menor",
-    "Table": "Mesa",
+    "Table": "Tabela",
     "Select table cell": "Selecione a célula da tabela",
     "Extend selection one cell": "Ampliar a seleção de uma célula",
     "Extend selection one row": "Ampliar a seleção uma linha",
