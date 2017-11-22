@@ -133,6 +133,10 @@ $.FE.LANGUAGE['ro'] = {
     // Video
     "Insert Video": "Inserare video",
     "Embedded Code": "Cod embedded",
+    "Paste in a video URL": "Lipiți o adresă URL pentru video",
+    "Drop video": "Trage video",
+    "Your browser does not support HTML5 video.": "Browserul dvs. nu acceptă videoclipul html5.",
+    "Upload Video": "Încărcați videoclipul",
 
     // Tables
     "Insert Table": "Inserare tabel",
@@ -301,13 +305,13 @@ $.FE.LANGUAGE['ro'] = {
 
     // Embed.ly
     "Embed URL": "Încorporați url",
-    "Paste in a URL to embed": "Lipiți într-un url pentru a încorpora",
+    "Paste in a URL to embed": "Lipiți un URL pentru a-l încorpora",
 
     // Word Paste.
     "The pasted content is coming from a Microsoft Word document. Do you want to keep the format or clean it up?": "Conținutul lipit vine dintr-un document word Microsoft. Doriți să păstrați formatul sau să îl curățați?",
     "Keep": "A pastra",
     "Clean": "Curat",
-    "Word Paste Detected": "Cuvântul paste a fost detectat"
+    "Word Paste Detected": "A fost detectată lipire din Word"
   },
   direction: "ltr"
 };

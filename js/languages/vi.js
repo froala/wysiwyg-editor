@@ -128,6 +128,10 @@ $.FE.LANGUAGE['vi'] = {
     // Video
     "Insert Video": "Ch\u00E8n video",
     "Embedded Code": "M\u00E3 nh\u00FAng",
+    "Paste in a video URL": "Dán vào một url video",
+    "Drop video": "Thả video",
+    "Your browser does not support HTML5 video.": "Trình duyệt của bạn không hỗ trợ video html5.",
+    "Upload Video": "Tải video lên",
 
     // Tables
     "Insert Table": "Ch\u00E8n b\u1EA3ng",

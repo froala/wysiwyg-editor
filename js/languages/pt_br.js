@@ -132,6 +132,10 @@ $.FE.LANGUAGE['pt_br'] = {
     // Video
     "Insert Video": "Inserir v\u00eddeo",
     "Embedded Code": "C\u00f3digo embutido",
+    "Paste in a video URL": "Colar em um URL de vídeo",
+    "Drop video": "Solte o video",
+    "Your browser does not support HTML5 video.": "Seu navegador não suporta o vídeo html5.",
+    "Upload Video": "Envio vídeo",
 
     // Tables
     "Insert Table": "Inserir tabela",

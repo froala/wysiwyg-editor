@@ -132,6 +132,10 @@ $.FE.LANGUAGE['tr'] = {
     // Video
     "Insert Video": "Video ekle",
     "Embedded Code": "G\u00f6m\u00fcl\u00fc kod",
+    "Paste in a video URL": "Bir video URL'sine yapıştırın",
+    "Drop video": "Video bırak",
+    "Your browser does not support HTML5 video.": "Tarayıcınız html5 videoyu desteklemez.",
+    "Upload Video": "Video yükle",
 
     // Tables
     "Insert Table": "Tablo ekle",

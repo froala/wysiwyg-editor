@@ -132,6 +132,10 @@ $.FE.LANGUAGE['ar'] = {
     // Video
     "Insert Video": "\u0625\u062f\u0631\u0627\u062c \u0641\u064a\u062f\u064a\u0648",
     "Embedded Code": "\u0627\u0644\u062a\u0639\u0644\u064a\u0645\u0627\u062a \u0627\u0644\u0628\u0631\u0645\u062c\u064a\u0629 \u0627\u0644\u0645\u0636\u0645\u0646\u0629",
+    "Paste in a video URL": "لصق في عنوان ورل للفيديو",
+    "Drop video": "انخفاض الفيديو",
+    "Your browser does not support HTML5 video.": "متصفحك لا يدعم فيديو HTML5.",
+    "Upload Video": "رفع فيديو",
 
     // Tables
     "Insert Table": "\u0625\u062f\u0631\u0627\u062c \u062c\u062f\u0648\u0644",

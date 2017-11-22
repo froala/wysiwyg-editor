@@ -132,6 +132,10 @@ $.FE.LANGUAGE['hu'] = {
     // Video
     "Insert Video": "Vide\u00f3 beilleszt\u00e9se",
     "Embedded Code": "K\u00f3d bem\u00e1sol\u00e1sa",
+    "Paste in a video URL": "Illessze be a videó URL-címét",
+    "Drop video": "Csepp videót",
+    "Your browser does not support HTML5 video.": "A böngészője nem támogatja a html5 videót.",
+    "Upload Video": "Videó feltöltése",
 
     // Tables
     "Insert Table": "T\u00e1bl\u00e1zat beilleszt\u00e9se",

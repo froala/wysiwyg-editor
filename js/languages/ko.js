@@ -132,6 +132,10 @@ $.FE.LANGUAGE['ko'] = {
     // Video
     "Insert Video": "\ube44\ub514\uc624 \uc0bd\uc785",
     "Embedded Code": "\uc784\ubca0\ub514\ub4dc \ucf54\ub4dc",
+    "Paste in a video URL": "동영상 URL에 붙여 넣기",
+    "Drop video": "동영상을 내리다",
+    "Your browser does not support HTML5 video.": "귀하의 브라우저는 html5 비디오를 지원하지 않습니다.",
+    "Upload Video": "동영상 업로드",
 
     // Tables
     "Insert Table": "\ud14c\uc774\ube14 \uc0bd\uc785",

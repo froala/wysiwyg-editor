@@ -132,6 +132,10 @@ $.FE.LANGUAGE['id'] = {
     // Video
     "Insert Video": "Memasukkan video",
     "Embedded Code": "Kode tertanam",
+    "Paste in a video URL": "Paste di url video",
+    "Drop video": "Jatuhkan video",
+    "Your browser does not support HTML5 video.": "Browser Anda tidak mendukung video html5.",
+    "Upload Video": "Mengunggah video",
 
     // Tables
     "Insert Table": "Sisipkan tabel",

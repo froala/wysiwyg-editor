@@ -132,6 +132,10 @@ $.FE.LANGUAGE['uk'] = {
     // Video
     "Insert Video": "\u0412\u0441\u0442\u0430\u0432\u0438\u0442\u0438 \u0432\u0456\u0434\u0435\u043e",
     "Embedded Code": "\u0432\u0431\u0443\u0434\u043e\u0432\u0430\u043d\u0438\u0439 \u043a\u043e\u0434",
+    "Paste in a video URL": "Вставте в відео-URL",
+    "Drop video": "Падіння відео",
+    "Your browser does not support HTML5 video.": "Ваш браузер не підтримує відео html5.",
+    "Upload Video": "Завантажити відео",
 
     // Tables
     "Insert Table": "\u0412\u0441\u0442\u0430\u0432\u0438\u0442\u0438 \u0442\u0430\u0431\u043b\u0438\u0446\u044e",

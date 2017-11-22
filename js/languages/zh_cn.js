@@ -132,6 +132,10 @@ $.FE.LANGUAGE['zh_cn'] = {
     // Video
     "Insert Video": "\u63d2\u5165\u89c6\u9891",
     "Embedded Code": "\u5d4c\u5165\u5f0f\u4ee3\u7801",
+    "Paste in a video URL": "粘贴在视频网址",
+    "Drop video": "放下视频",
+    "Your browser does not support HTML5 video.": "您的浏览器不支持html5视频。",
+    "Upload Video": "上传视频",
 
     // Tables
     "Insert Table": "\u63d2\u5165\u8868\u683c",

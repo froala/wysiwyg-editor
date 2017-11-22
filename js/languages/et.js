@@ -132,6 +132,10 @@ $.FE.LANGUAGE['et'] = {
     // Video
     "Insert Video": "Lisa video",
     "Embedded Code": "Varjatud koodi",
+    "Paste in a video URL": "Kleebi video URL-i",
+    "Drop video": "Tilk videot",
+    "Your browser does not support HTML5 video.": "Teie brauser ei toeta html5-videot.",
+    "Upload Video": "Video üleslaadimine",
 
     // Tables
     "Insert Table": "Sisesta tabel",

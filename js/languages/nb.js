@@ -132,6 +132,10 @@ $.FE.LANGUAGE['nb'] = {
     // Video
     "Insert Video": "Sett inn video",
     "Embedded Code": "Embedded kode",
+    "Paste in a video URL": "Lim inn i en video-url",
+    "Drop video": "Slipp video",
+    "Your browser does not support HTML5 video.": "Nettleseren din støtter ikke html5 video.",
+    "Upload Video": "Last opp video",
 
     // Tables
     "Insert Table": "Sett inn tabell",

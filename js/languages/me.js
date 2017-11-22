@@ -132,6 +132,10 @@ $.FE.LANGUAGE['me'] = {
     // Video
     "Insert Video": "Umetni video",
     "Embedded Code": "Embedded kod",
+    "Paste in a video URL": "Prilepite v URL video posnetka",
+    "Drop video": "Izbaci video",
+    "Your browser does not support HTML5 video.": "Váš prehliadač nepodporuje video HTML5.",
+    "Upload Video": "Upload video",
 
     // Tables
     "Insert Table": "Umetni tabelu",

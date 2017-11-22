@@ -132,6 +132,10 @@ $.FE.LANGUAGE['hr'] = {
     // Video
     "Insert Video": "Umetni video",
     "Embedded Code": "Ugra\u0111eni kod",
+    "Paste in a video URL": "Zalijepite u URL videozapisa",
+    "Drop video": "Ispusti video",
+    "Your browser does not support HTML5 video.": "Vaš preglednik ne podržava HTML video.",
+    "Upload Video": "Prenesi videozapis",
 
     // Tables
     "Insert Table": "Umetni tablicu",

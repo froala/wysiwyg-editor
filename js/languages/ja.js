@@ -132,6 +132,10 @@ $.FE.LANGUAGE['ja'] = {
 		// Video
 		"Insert Video": "\u52d5\u753b\u306e\u633f\u5165",
 		"Embedded Code": "\u30bf\u30b0\u3092\u57cb\u3081\u8fbc\u3080",
+    "Paste in a video URL": "ビデオURLに貼り付ける",
+    "Drop video": "ビデオをドロップする",
+    "Your browser does not support HTML5 video.": "あなたのブラウザはhtml5ビデオをサポートしていません。",
+    "Upload Video": "ビデオをアップロードする",
 
 		// Tables
 		"Insert Table": "\u8868\u306e\u633f\u5165",

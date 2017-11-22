@@ -132,6 +132,10 @@ $.FE.LANGUAGE['he'] = {
     // Video
     "Insert Video": "\u05d4\u05d5\u05e1\u05e4\u05ea \u05d5\u05d9\u05d3\u05d9\u05d0\u05d5",
     "Embedded Code": "\u05e7\u05d5\u05d3 \u05de\u05d5\u05d8\u05d1\u05e2",
+    "Paste in a video URL": "הדבק בכתובת אתר של סרטון",
+    "Drop video": "ירידה וידאו",
+    "Your browser does not support HTML5 video.": "הדפדפן שלך אינו תומך וידאו html5.",
+    "Upload Video": "להעלות וידאו",
 
     // Tables
     "Insert Table": "\u05d4\u05db\u05e0\u05e1 \u05d8\u05d1\u05dc\u05d4",

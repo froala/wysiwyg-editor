@@ -132,6 +132,10 @@ $.FE.LANGUAGE['nl'] = {
     // Video
     "Insert Video": "Video invoegen",
     "Embedded Code": "Ingebedde code",
+    "Paste in a video URL": "Plak in een video-URL",
+    "Drop video": "Video laten vallen",
+    "Your browser does not support HTML5 video.": "Je browser ondersteunt geen html5-video.",
+    "Upload Video": "Upload video",
 
     // Tables
     "Insert Table": "Tabel invoegen",

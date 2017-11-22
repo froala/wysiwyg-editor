@@ -132,6 +132,10 @@ $.FE.LANGUAGE['th'] = {
     // Video
     "Insert Video": "\u0e41\u0e17\u0e23\u0e01\u0e27\u0e34\u0e14\u0e35\u0e42\u0e2d",
     "Embedded Code": "\u0e23\u0e2b\u0e31\u0e2a\u0e2a\u0e21\u0e2d\u0e07\u0e01\u0e25\u0e1d\u0e31\u0e07\u0e15\u0e31\u0e27",
+    "Paste in a video URL": "วางใน URL วิดีโอ",
+    "Drop video": "วางวิดีโอ",
+    "Your browser does not support HTML5 video.": "เบราเซอร์ของคุณไม่สนับสนุนวิดีโอ HTML5",
+    "Upload Video": "อัปโหลดวิดีโอ",
 
     // Tables
     "Insert Table": "\u0e41\u0e17\u0e23\u0e01\u0e15\u0e32\u0e23\u0e32\u0e07",
