@@ -91,9 +91,9 @@
 .fr-popup .fr-table-colors-hex-layer .fr-action-buttons button {
   background-color: #1e88e5;
   color: #FFF;
-  border-radius: 4px;
-  -moz-border-radius: 4px;
-  -webkit-border-radius: 4px;
+  border-radius: 2px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;

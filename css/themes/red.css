@@ -198,6 +198,12 @@
 }
 .red-theme.fr-popup .fr-color-hex-layer .fr-action-buttons button {
   background-color: #ffca28;
+  border-radius: 2px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
 }
 .red-theme.fr-popup .fr-color-hex-layer .fr-action-buttons button:hover {
   background-color: #f4b800;
@@ -508,6 +514,12 @@
 }
 .red-theme.fr-popup .fr-table-colors-hex-layer .fr-action-buttons button {
   background-color: #ffca28;
+  border-radius: 2px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
 }
 .red-theme.fr-popup .fr-table-colors-hex-layer .fr-action-buttons button:hover {
   background-color: #f4b800;
@@ -1015,6 +1027,12 @@
   -moz-transition: background 0.2s ease 0s;
   -ms-transition: background 0.2s ease 0s;
   -o-transition: background 0.2s ease 0s;
+  border-radius: 2px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
 }
 .red-theme.fr-modal .fr-modal-wrapper div.fr-modal-body button.fr-command:hover,
 .red-theme.fr-modal .fr-modal-wrapper div.fr-modal-body button.fr-command:focus {
@@ -1117,6 +1135,12 @@
   -moz-transition: background 0.2s ease 0s;
   -ms-transition: background 0.2s ease 0s;
   -o-transition: background 0.2s ease 0s;
+  border-radius: 2px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
 }
 .red-theme.fr-popup .fr-action-buttons button.fr-command:hover,
 .red-theme.fr-popup .fr-action-buttons button.fr-command:focus {

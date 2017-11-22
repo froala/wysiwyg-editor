@@ -703,6 +703,12 @@ body.prevent-scroll.fr-mobile {
   -moz-transition: background 0.2s ease 0s;
   -ms-transition: background 0.2s ease 0s;
   -o-transition: background 0.2s ease 0s;
+  border-radius: 2px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
 }
 .fr-modal .fr-modal-wrapper div.fr-modal-body button.fr-command + button {
   margin-left: 24px;
@@ -925,6 +931,12 @@ body.prevent-scroll.fr-mobile {
   -moz-transition: background 0.2s ease 0s;
   -ms-transition: background 0.2s ease 0s;
   -o-transition: background 0.2s ease 0s;
+  border-radius: 2px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
 }
 .fr-popup .fr-action-buttons button.fr-command + button {
   margin-left: 24px;
