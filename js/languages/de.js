@@ -64,7 +64,7 @@ $.FE.LANGUAGE['de'] = {
     "Colors": "Farben",
     "Background": "Hintergrund",
     "Text": "Text",
-    "HEX Color": "Hexe Farbe",
+    "HEX Color": "Hexadezimale Farbe",
 
     // Paragraphs
     "Paragraph Format": "Formate",
@@ -260,7 +260,7 @@ $.FE.LANGUAGE['de'] = {
     "Decrease": "Verkleinern",
 
     // Quick Insert
-    "Quick Insert": "Schnelleinsatz",
+    "Special Characters": "Spezielle Zeichen",
 
     // Spcial Characters
     "Special Characters": "Spezielle Charaktere",
@@ -271,7 +271,7 @@ $.FE.LANGUAGE['de'] = {
     "Currency": "Währung",
     "Arrows": "Pfeile",
     "Math": "Mathe",
-    "Misc": "Misc",
+    "Misc": "Sonstiges", 
 
     // Print.
     "Print": "Drucken",
@@ -283,28 +283,28 @@ $.FE.LANGUAGE['de'] = {
     "Help": "Hilfe",
     "Shortcuts": "Verknüpfungen",
     "Inline Editor": "Inline-Editor",
-    "Show the editor": "Zeige den Redakteur",
-    "Common actions": "Gemeinsame Aktionen",
+    "Show the editor": "Zeige den Editor",
+    "Common actions": "Häufige Aktionen",
     "Copy": "Kopieren",
-    "Cut": "Schneiden",
-    "Paste": "Paste",
+    "Cut": "Ausschneiden",
+    "Paste": "Einfügen",
     "Basic Formatting": "Grundformatierung",
-    "Increase quote level": "Zitat erhöhen",
-    "Decrease quote level": "Verringern Sie das Zitatniveau",
+    "Increase quote level": "Zitatniveau erhöhen",
+    "Decrease quote level": "Zitatniveau verringern",
     "Image / Video": "Bild / Video",
-    "Resize larger": "Größe größer ändern",
-    "Resize smaller": "Verkleinern kleiner",
+    "Resize larger": "Vergrößern",
+    "Resize smaller": "Verkleinern",
     "Table": "Tabelle",
-    "Select table cell": "Tischzelle auswählen",
+    "Select table cell": "Tabellenzelle auswählen",
     "Extend selection one cell": "Erweitere eine Zelle",
-    "Extend selection one row": "Erweitere eine reihe",
+    "Extend selection one row": "Erweitere eine Zeile",
     "Navigation": "Navigation",
     "Focus popup / toolbar": "Fokus-Popup / Symbolleiste",
-    "Return focus to previous position": "Rückkehr Fokus auf vorherige Position",
+    "Return focus to previous position": "Fokus auf vorherige Position",
 
     // Embed.ly
-    "Embed URL": "Embed url",
-    "Paste in a URL to embed": "Einfügen in eine URL zum Einbetten",
+    "Embed URL": "URL einbetten",
+    "Paste in a URL to embed": "URL einfügen um sie einzubetten",
 
     // Word Paste.
     "The pasted content is coming from a Microsoft Word document. Do you want to keep the format or clean it up?": "Der eingefügte Inhalt kommt aus einem Microsoft Word-Dokument. Möchtest du das Format behalten oder aufräumen?",
