@@ -260,10 +260,10 @@ $.FE.LANGUAGE['de'] = {
     "Decrease": "Verkleinern",
 
     // Quick Insert
-    "Special Characters": "Spezielle Zeichen",
+    "Quick Insert": "Schnell einfügen",
 
     // Spcial Characters
-    "Special Characters": "Spezielle Charaktere",
+    "Special Characters": "Spezielle Zeichen",
     "Latin": "Lateinisch",
     "Greek": "Griechisch",
     "Cyrillic": "Kyrillisch",
@@ -310,7 +310,7 @@ $.FE.LANGUAGE['de'] = {
     "The pasted content is coming from a Microsoft Word document. Do you want to keep the format or clean it up?": "Der eingefügte Inhalt kommt aus einem Microsoft Word-Dokument. Möchtest du das Format behalten oder aufräumen?",
     "Keep": "Behalten",
     "Clean": "Reinigen",
-    "Word Paste Detected": "Wortpaste erkannt"
+    "Word Paste Detected": "Aus Word einfügen"
   },
   direction: "ltr"
 };
