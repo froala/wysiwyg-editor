@@ -263,7 +263,7 @@ $.FE.LANGUAGE['de'] = {
     "Quick Insert": "Schnell einfügen",
 
     // Spcial Characters
-    "Special Characters": "Spezielle Zeichen",
+    "Special Characters": "Sonderzeichen",
     "Latin": "Lateinisch",
     "Greek": "Griechisch",
     "Cyrillic": "Kyrillisch",
