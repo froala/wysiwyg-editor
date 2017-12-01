@@ -37,7 +37,7 @@
 $.FE.LANGUAGE['de'] = {
   translation: {
     // Place holder
-    "Type something": "Schreiben Sie etwas",
+    "Type something": "Hier tippen",
 
     // Basic formatting
     "Bold": "Fett",
@@ -49,7 +49,7 @@ $.FE.LANGUAGE['de'] = {
     "Insert": "Einfügen",
     "Delete": "Löschen",
     "Cancel": "Abbrechen",
-    "OK": "Ok",
+    "OK": "OK",
     "Back": "Zurück",
     "Remove": "Entfernen",
     "More": "Mehr",
@@ -64,7 +64,7 @@ $.FE.LANGUAGE['de'] = {
     "Colors": "Farben",
     "Background": "Hintergrund",
     "Text": "Text",
-    "HEX Color": "Hexadezimale Farbe",
+    "HEX Color": "Hexadezimaler Farbwert",
 
     // Paragraphs
     "Paragraph Format": "Formatierung",
@@ -76,8 +76,8 @@ $.FE.LANGUAGE['de'] = {
     "Heading 4": "Überschrift 4",
 
     // Style
-    "Paragraph Style": "Absatz-Stil",
-    "Inline Style": "Inline-Stil",
+    "Paragraph Style": "Absatzformatierung",
+    "Inline Style": "Inlineformatierung",
 
     // Alignment
     "Align": "Ausrichtung",
@@ -108,13 +108,13 @@ $.FE.LANGUAGE['de'] = {
     "Upload Image": "Bild hochladen",
     "By URL": "Von URL",
     "Browse": "Durchsuchen",
-    "Drop image": "Ziehen Sie ein Bild hierher",
-    "or click": "oder klicken Sie hier",
+    "Drop image": "Bild hineinziehen",
+    "or click": "oder hier klicken",
     "Manage Images": "Bilder verwalten",
     "Loading": "Laden",
     "Deleting": "Löschen",
     "Tags": "Tags",
-    "Are you sure? Image will be deleted.": "Sind Sie sicher? Das Bild wird gelöscht.",
+    "Are you sure? Image will be deleted.": "Wollen Sie das Bild wirklich löschen?",
     "Replace": "Ersetzen",
     "Uploading": "Hochladen",
     "Loading image": "Das Bild wird geladen",
@@ -133,15 +133,15 @@ $.FE.LANGUAGE['de'] = {
     "Insert Video": "Video einfügen",
     "Embedded Code": "Eingebetteter Code",
     "Paste in a video URL": "Fügen Sie die Video-URL ein",
-    "Drop video": "Video ablegen",
-    "Your browser does not support HTML5 video.": "Ihr Browser unterstützt kein HTML5-Video.",
+    "Drop video": "Video hineinziehen",
+    "Your browser does not support HTML5 video.": "Ihr Browser unterstützt keine HTML5-Videos.",
     "Upload Video": "Video hochladen",
 
     // Tables
     "Insert Table": "Tabelle einfügen",
     "Table Header": "Tabellenkopf",
     "Remove Table": "Tabelle entfernen",
-    "Table Style": "Tabellen-Stil",
+    "Table Style": "Tabellenformatierung",
     "Horizontal Align": "Horizontale Ausrichtung",
     "Row": "Zeile",
     "Insert row above": "Neue Zeile davor einfügen",
@@ -155,7 +155,7 @@ $.FE.LANGUAGE['de'] = {
     "Merge cells": "Zellen verbinden",
     "Horizontal split": "Horizontal teilen",
     "Vertical split": "Vertikal teilen",
-    "Cell Background": "Zellenhintergrund",
+    "Cell Background": "Zellenfarbe",
     "Vertical Align": "Vertikale Ausrichtung",
     "Top": "Oben",
     "Middle": "Zentriert",
@@ -167,7 +167,7 @@ $.FE.LANGUAGE['de'] = {
 
     // Files
     "Upload File": "Datei hochladen",
-    "Drop file": "Ziehen Sie eine Datei hierhin",
+    "Drop file": "Datei hineinziehen",
 
     // Emoticons
     "Emoticons": "Emoticons",
@@ -284,7 +284,7 @@ $.FE.LANGUAGE['de'] = {
     "Shortcuts": "Verknüpfungen",
     "Inline Editor": "Inline-Editor",
     "Show the editor": "Editor anzeigen",
-    "Common actions": "Häufige Aktionen",
+    "Common actions": "Häufig verwendete Befehle",
     "Copy": "Kopieren",
     "Cut": "Ausschneiden",
     "Paste": "Einfügen",
