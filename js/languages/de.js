@@ -53,7 +53,7 @@ $.FE.LANGUAGE['de'] = {
     "Back": "Zurück",
     "Remove": "Entfernen",
     "More": "Mehr",
-    "Update": "Aktualisierung",
+    "Update": "Aktualisieren",
     "Style": "Stil",
 
     // Font
@@ -67,7 +67,7 @@ $.FE.LANGUAGE['de'] = {
     "HEX Color": "Hexadezimale Farbe",
 
     // Paragraphs
-    "Paragraph Format": "Formate",
+    "Paragraph Format": "Formatierung",
     "Normal": "Normal",
     "Code": "Quelltext",
     "Heading 1": "Überschrift 1",
@@ -88,8 +88,8 @@ $.FE.LANGUAGE['de'] = {
     "None": "Keine",
 
     // Lists
-    "Ordered List": "Geordnete Liste",
-    "Unordered List": "Ungeordnete Liste",
+    "Ordered List": "Nummerierte Liste",
+    "Unordered List": "Unnummerierte Liste",
 
     // Indent
     "Decrease Indent": "Einzug verkleinern",
@@ -98,7 +98,7 @@ $.FE.LANGUAGE['de'] = {
     // Links
     "Insert Link": "Link einfügen",
     "Open in new tab": "In neuem Tab öffnen",
-    "Open Link": "Link Öffnen",
+    "Open Link": "Link öffnen",
     "Edit Link": "Link bearbeiten",
     "Unlink": "Link entfernen",
     "Choose Link": "Einen Link auswählen",
@@ -107,7 +107,7 @@ $.FE.LANGUAGE['de'] = {
     "Insert Image": "Bild einfügen",
     "Upload Image": "Bild hochladen",
     "By URL": "Von URL",
-    "Browse": "Ordner",
+    "Browse": "Durchsuchen",
     "Drop image": "Ziehen Sie ein Bild hierher",
     "or click": "oder klicken Sie hier",
     "Manage Images": "Bilder verwalten",
@@ -132,7 +132,7 @@ $.FE.LANGUAGE['de'] = {
     // Video
     "Insert Video": "Video einfügen",
     "Embedded Code": "Eingebetteter Code",
-    "Paste in a video URL": "Einfügen in eine Video-URL",
+    "Paste in a video URL": "Fügen Sie die Video-URL ein",
     "Drop video": "Video ablegen",
     "Your browser does not support HTML5 video.": "Ihr Browser unterstützt kein HTML5-Video.",
     "Upload Video": "Video hochladen",
@@ -141,8 +141,8 @@ $.FE.LANGUAGE['de'] = {
     "Insert Table": "Tabelle einfügen",
     "Table Header": "Tabellenkopf",
     "Remove Table": "Tabelle entfernen",
-    "Table Style": "Tabelle Stil",
-    "Horizontal Align": "Horizontal Ausrichtung",
+    "Table Style": "Tabellen-Stil",
+    "Horizontal Align": "Horizontale Ausrichtung",
     "Row": "Zeile",
     "Insert row above": "Neue Zeile davor einfügen",
     "Insert row below": "Neue Zeile danach einfügen",
@@ -152,7 +152,7 @@ $.FE.LANGUAGE['de'] = {
     "Insert column after": "Neue Spalte danach einfügen",
     "Delete column": "Spalte löschen",
     "Cell": "Zelle",
-    "Merge cells": "Zelle verschmelzen",
+    "Merge cells": "Zellen verbinden",
     "Horizontal split": "Horizontal teilen",
     "Vertical split": "Vertikal teilen",
     "Cell Background": "Zellenhintergrund",
@@ -166,7 +166,7 @@ $.FE.LANGUAGE['de'] = {
     "Cell Style": "Zellen-Stil",
 
     // Files
-    "Upload File": "Datei Hochladen",
+    "Upload File": "Datei hochladen",
     "Drop file": "Ziehen Sie eine Datei hierhin",
 
     // Emoticons
@@ -267,11 +267,11 @@ $.FE.LANGUAGE['de'] = {
     "Latin": "Lateinisch",
     "Greek": "Griechisch",
     "Cyrillic": "Kyrillisch",
-    "Punctuation": "Interpunktion",
+    "Punctuation": "Satzzeichen",
     "Currency": "Währung",
     "Arrows": "Pfeile",
-    "Math": "Mathe",
-    "Misc": "Sonstiges",
+    "Math": "Mathematik",
+    "Misc": "Sonstige",
 
     // Print.
     "Print": "Drucken",
@@ -283,7 +283,7 @@ $.FE.LANGUAGE['de'] = {
     "Help": "Hilfe",
     "Shortcuts": "Verknüpfungen",
     "Inline Editor": "Inline-Editor",
-    "Show the editor": "Zeige den Editor",
+    "Show the editor": "Editor anzeigen",
     "Common actions": "Häufige Aktionen",
     "Copy": "Kopieren",
     "Cut": "Ausschneiden",
@@ -296,8 +296,8 @@ $.FE.LANGUAGE['de'] = {
     "Resize smaller": "Verkleinern",
     "Table": "Tabelle",
     "Select table cell": "Tabellenzelle auswählen",
-    "Extend selection one cell": "Erweitere eine Zelle",
-    "Extend selection one row": "Erweitere eine Zeile",
+    "Extend selection one cell": "Erweitere Auswahl um eine Zelle",
+    "Extend selection one row": "Erweitere Auswahl um eine Zeile",
     "Navigation": "Navigation",
     "Focus popup / toolbar": "Fokus-Popup / Symbolleiste",
     "Return focus to previous position": "Fokus auf vorherige Position",
@@ -307,9 +307,9 @@ $.FE.LANGUAGE['de'] = {
     "Paste in a URL to embed": "URL einfügen um sie einzubetten",
 
     // Word Paste.
-    "The pasted content is coming from a Microsoft Word document. Do you want to keep the format or clean it up?": "Der eingefügte Inhalt kommt aus einem Microsoft Word-Dokument. Möchtest du das Format behalten oder aufräumen?",
+    "The pasted content is coming from a Microsoft Word document. Do you want to keep the format or clean it up?": "Der eingefügte Inhalt kommt aus einem Microsoft Word-Dokument. Möchten Sie die Formatierungen behalten oder verwerfen?",
     "Keep": "Behalten",
-    "Clean": "Reinigen",
+    "Clean": "Bereinigen",
     "Word Paste Detected": "Aus Word einfügen"
   },
   direction: "ltr"
