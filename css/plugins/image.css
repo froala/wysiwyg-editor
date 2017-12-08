@@ -113,7 +113,7 @@
   z-index: 2147483640;
   display: none;
 }
-.fr-image-upload-layer {
+.fr-popup .fr-image-upload-layer {
   border: dashed 2px #bdbdbd;
   padding: 25px 0;
   position: relative;
@@ -122,14 +122,14 @@
   line-height: 140%;
   text-align: center;
 }
-.fr-image-upload-layer:hover {
+.fr-popup .fr-image-upload-layer:hover {
   background: #ebebeb;
 }
-.fr-image-upload-layer.fr-drop {
+.fr-popup .fr-image-upload-layer.fr-drop {
   background: #ebebeb;
   border-color: #1e88e5;
 }
-.fr-image-upload-layer .fr-form {
+.fr-popup .fr-image-upload-layer .fr-form {
   -webkit-opacity: 0;
   -moz-opacity: 0;
   opacity: 0;
@@ -145,7 +145,7 @@
   padding: 0 !important;
   width: 100% !important;
 }
-.fr-image-upload-layer .fr-form input {
+.fr-popup .fr-image-upload-layer .fr-form input {
   cursor: pointer;
   position: absolute;
   right: 0px;
@@ -156,15 +156,15 @@
   margin: 0px;
   font-size: 400px;
 }
-.fr-image-progress-bar-layer > h3 {
+.fr-popup .fr-image-progress-bar-layer > h3 {
   font-size: 16px;
   margin: 10px 0;
   font-weight: normal;
 }
-.fr-image-progress-bar-layer > div.fr-action-buttons {
+.fr-popup .fr-image-progress-bar-layer > div.fr-action-buttons {
   display: none;
 }
-.fr-image-progress-bar-layer > div.fr-loader {
+.fr-popup .fr-image-progress-bar-layer > div.fr-loader {
   background: #bcdbf7;
   height: 10px;
   width: 100%;
@@ -172,7 +172,7 @@
   overflow: hidden;
   position: relative;
 }
-.fr-image-progress-bar-layer > div.fr-loader span {
+.fr-popup .fr-image-progress-bar-layer > div.fr-loader span {
   display: block;
   height: 100%;
   width: 0%;
@@ -182,7 +182,7 @@
   -ms-transition: width 0.2s ease 0s;
   -o-transition: width 0.2s ease 0s;
 }
-.fr-image-progress-bar-layer > div.fr-loader.fr-indeterminate span {
+.fr-popup .fr-image-progress-bar-layer > div.fr-loader.fr-indeterminate span {
   width: 30% !important;
   position: absolute;
   top: 0;
@@ -191,10 +191,10 @@
   -o-animation: loading 2s linear infinite;
   animation: loading 2s linear infinite;
 }
-.fr-image-progress-bar-layer.fr-error > div.fr-loader {
+.fr-popup .fr-image-progress-bar-layer.fr-error > div.fr-loader {
   display: none;
 }
-.fr-image-progress-bar-layer.fr-error > div.fr-action-buttons {
+.fr-popup .fr-image-progress-bar-layer.fr-error > div.fr-action-buttons {
   display: block;
 }
 .fr-image-size-layer .fr-image-group .fr-input-line {
