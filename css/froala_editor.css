@@ -107,7 +107,8 @@
   -o-transition: transform 0.2s ease 0s;
   fill: #1e88e5;
 }
-.fr-box a.fr-floating-btn i {
+.fr-box a.fr-floating-btn i,
+.fr-box a.fr-floating-btn svg {
   font-size: 14px;
   line-height: 32px;
 }
@@ -293,7 +294,9 @@ iframe.fr-iframe {
   width: auto;
 }
 .fr-toolbar .fr-command.fr-btn i,
-.fr-popup .fr-command.fr-btn i {
+.fr-popup .fr-command.fr-btn i,
+.fr-toolbar .fr-command.fr-btn svg,
+.fr-popup .fr-command.fr-btn svg {
   display: block;
   font-size: 14px;
   width: 14px;
@@ -349,7 +352,9 @@ iframe.fr-iframe {
 .fr-toolbar .fr-command.fr-btn.fr-dropdown span,
 .fr-popup .fr-command.fr-btn.fr-dropdown span,
 .fr-toolbar .fr-command.fr-btn.fr-dropdown img,
-.fr-popup .fr-command.fr-btn.fr-dropdown img {
+.fr-popup .fr-command.fr-btn.fr-dropdown img,
+.fr-toolbar .fr-command.fr-btn.fr-dropdown svg,
+.fr-popup .fr-command.fr-btn.fr-dropdown svg {
   margin-left: 8px;
   margin-right: 16px;
 }
@@ -642,7 +647,8 @@ body.prevent-scroll.fr-mobile {
   -ms-transition: height 0.2s ease 0s;
   -o-transition: height 0.2s ease 0s;
 }
-.fr-modal .fr-modal-wrapper .fr-modal-head i {
+.fr-modal .fr-modal-wrapper .fr-modal-head i,
+.fr-modal .fr-modal-wrapper .fr-modal-head svg {
   padding: 12px;
   width: 20px;
   font-size: 16px;
@@ -653,7 +659,8 @@ body.prevent-scroll.fr-mobile {
   -moz-box-sizing: content-box;
   box-sizing: content-box;
 }
-.fr-modal .fr-modal-wrapper .fr-modal-head i.fr-modal-close {
+.fr-modal .fr-modal-wrapper .fr-modal-head i.fr-modal-close,
+.fr-modal .fr-modal-wrapper .fr-modal-head svg.fr-modal-close {
   position: absolute;
   top: 0;
   right: 0;

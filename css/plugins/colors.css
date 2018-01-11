@@ -116,7 +116,8 @@
   position: relative;
   z-index: 1;
 }
-.fr-popup .fr-color-set > span > i {
+.fr-popup .fr-color-set > span > i,
+.fr-popup .fr-color-set > span > svg {
   text-align: center;
   line-height: 32px;
   height: 32px;

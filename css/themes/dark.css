@@ -53,7 +53,8 @@
   -o-transition: transform 0.2s ease 0s;
   fill: #42a5f5;
 }
-.dark-theme.fr-box a.fr-floating-btn i {
+.dark-theme.fr-box a.fr-floating-btn i,
+.dark-theme.fr-box a.fr-floating-btn svg {
   font-size: 14px;
   line-height: 32px;
 }
@@ -211,7 +212,8 @@
 .dark-theme.fr-popup .fr-color-set {
   line-height: 0;
 }
-.dark-theme.fr-popup .fr-color-set > span > i {
+.dark-theme.fr-popup .fr-color-set > span > i,
+.dark-theme.fr-popup .fr-color-set > span > svg {
   bottom: 0;
   left: 0;
 }
@@ -775,7 +777,9 @@
   width: auto;
 }
 .dark-theme.fr-toolbar .fr-command.fr-btn i,
-.dark-theme.fr-popup .fr-command.fr-btn i {
+.dark-theme.fr-popup .fr-command.fr-btn i,
+.dark-theme.fr-toolbar .fr-command.fr-btn svg,
+.dark-theme.fr-popup .fr-command.fr-btn svg {
   font-size: 14px;
   width: 14px;
   margin: 12px 12px;
@@ -807,7 +811,9 @@
 .dark-theme.fr-toolbar .fr-command.fr-btn.fr-dropdown span,
 .dark-theme.fr-popup .fr-command.fr-btn.fr-dropdown span,
 .dark-theme.fr-toolbar .fr-command.fr-btn.fr-dropdown img,
-.dark-theme.fr-popup .fr-command.fr-btn.fr-dropdown img {
+.dark-theme.fr-popup .fr-command.fr-btn.fr-dropdown img,
+.dark-theme.fr-toolbar .fr-command.fr-btn.fr-dropdown svg,
+.dark-theme.fr-popup .fr-command.fr-btn.fr-dropdown svg {
   margin-left: 8px;
   margin-right: 16px;
 }
@@ -1003,10 +1009,12 @@
   -ms-transition: height 0.2s ease 0s;
   -o-transition: height 0.2s ease 0s;
 }
-.dark-theme.fr-modal .fr-modal-wrapper .fr-modal-head i {
+.dark-theme.fr-modal .fr-modal-wrapper .fr-modal-head i,
+.dark-theme.fr-modal .fr-modal-wrapper .fr-modal-head svg {
   color: #ffffff;
 }
-.dark-theme.fr-modal .fr-modal-wrapper .fr-modal-head i.fr-modal-close {
+.dark-theme.fr-modal .fr-modal-wrapper .fr-modal-head i.fr-modal-close,
+.dark-theme.fr-modal .fr-modal-wrapper .fr-modal-head svg.fr-modal-close {
   top: 0;
   right: 0;
   -webkit-transition: color 0.2s ease 0s;
