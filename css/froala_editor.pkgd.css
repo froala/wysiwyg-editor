@@ -787,6 +787,9 @@ body.prevent-scroll.fr-mobile {
   opacity: 0;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
 }
+.fr-popup.fr-empty {
+  display: none !important;
+}
 .fr-popup .fr-hs {
   display: block !important;
 }
