@@ -291,11 +291,10 @@ img.fr-shadow,
 }
 .fr-view .fr-img-caption .fr-img-wrap > span {
   margin: auto;
-  display: inline-block;
+  display: block;
   padding: 5px 5px 10px;
   font-size: 14px;
   font-weight: initial;
-  max-width: 100%;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -303,6 +302,8 @@ img.fr-shadow,
   -moz-opacity: 0.9;
   opacity: 0.9;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  width: 100%;
+  text-align: center;
 }
 .fr-view button.fr-rounded,
 .fr-view input.fr-rounded,
