@@ -647,8 +647,7 @@ body.prevent-scroll.fr-mobile {
   -ms-transition: height 0.2s ease 0s;
   -o-transition: height 0.2s ease 0s;
 }
-.fr-modal .fr-modal-wrapper .fr-modal-head i,
-.fr-modal .fr-modal-wrapper .fr-modal-head svg {
+.fr-modal .fr-modal-wrapper .fr-modal-head .fr-modal-close {
   padding: 12px;
   width: 20px;
   font-size: 16px;
@@ -658,9 +657,6 @@ body.prevent-scroll.fr-mobile {
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
   box-sizing: content-box;
-}
-.fr-modal .fr-modal-wrapper .fr-modal-head i.fr-modal-close,
-.fr-modal .fr-modal-wrapper .fr-modal-head svg.fr-modal-close {
   position: absolute;
   top: 0;
   right: 0;

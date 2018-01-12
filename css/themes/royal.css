@@ -1009,12 +1009,8 @@
   -ms-transition: height 0.2s ease 0s;
   -o-transition: height 0.2s ease 0s;
 }
-.royal-theme.fr-modal .fr-modal-wrapper .fr-modal-head i,
-.royal-theme.fr-modal .fr-modal-wrapper .fr-modal-head svg {
+.royal-theme.fr-modal .fr-modal-wrapper .fr-modal-head .fr-modal-close {
   color: #553982;
-}
-.royal-theme.fr-modal .fr-modal-wrapper .fr-modal-head i.fr-modal-close,
-.royal-theme.fr-modal .fr-modal-wrapper .fr-modal-head svg.fr-modal-close {
   top: 0;
   right: 0;
   -webkit-transition: color 0.2s ease 0s;
