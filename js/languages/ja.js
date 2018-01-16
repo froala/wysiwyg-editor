@@ -124,7 +124,7 @@ $.FE.LANGUAGE['ja'] = {
 		"Alternate Text": "\u4ee3\u66ff\u30c6\u30ad\u30b9\u30c8",
 		"Change Size": "\u30b5\u30a4\u30ba\u5909\u66f4",
 		"Width": "\u5e45",
-		"Height": "\u9ad8\u3055",
+		"Height": "\ub192\uc774",
 		"Something went wrong. Please try again.": "\u554f\u984c\u304c\u767a\u751f\u3057\u307e\u3057\u305f\u3002\u3082\u3046\u4e00\u5ea6\u3084\u308a\u76f4\u3057\u3066\u304f\u3060\u3055\u3044\u3002",
     "Image Caption": "\u753b\u50cf\u30ad\u30e3\u30d7\u30b7\u30e7\u30f3",
     "Advanced Edit": "\u9ad8\u5ea6\u306a\u7de8\u96c6",
