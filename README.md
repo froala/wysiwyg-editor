@@ -72,6 +72,8 @@ For more details on customizing the editor, please check the editor [documentati
 - Angular 2: https://github.com/froala/angular2-froala-wysiwyg
 - Aurelia: https://github.com/froala/aurelia-froala-editor
 - CakePHP: https://github.com/froala/wysiwyg-cake
+- Craft 2 CMS: https://github.com/froala/Craft-Froala-WYSIWYG
+- Craft 3 CMS: https://github.com/froala/Craft-3-Froala-WYSIWYG
 - Django: https://github.com/froala/django-froala-editor
 - Ember: https://github.com/froala/ember-froala-editor
 - Knockout: https://github.com/froala/knockout-froala
