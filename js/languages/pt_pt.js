@@ -50,7 +50,7 @@ $.FE.LANGUAGE['pt_pt'] = {
     "Delete": "Apagar",
     "Cancel": "Cancelar",
     "OK": "Ok",
-    "Back": "Costas",
+    "Back": "Voltar",
     "Remove": "Remover",
     "More": "Mais",
     "Update": "Atualizar",
