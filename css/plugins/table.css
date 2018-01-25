@@ -52,7 +52,7 @@
 }
 .fr-table-resizer {
   cursor: col-resize;
-  position: fixed;
+  position: absolute;
   z-index: 3;
   display: none;
 }
@@ -175,7 +175,7 @@
   height: 12px;
 }
 .fr-insert-helper {
-  position: fixed;
+  position: absolute;
   z-index: 9999;
   white-space: nowrap;
 }

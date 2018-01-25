@@ -2552,7 +2552,7 @@ div.fr-modal-body div.fr-image-list div.fr-image-container .fr-insert-img {
 }
 .fr-table-resizer {
   cursor: col-resize;
-  position: fixed;
+  position: absolute;
   z-index: 3;
   display: none;
 }
@@ -2675,7 +2675,7 @@ div.fr-modal-body div.fr-image-list div.fr-image-container .fr-insert-img {
   height: 12px;
 }
 .fr-insert-helper {
-  position: fixed;
+  position: absolute;
   z-index: 9999;
   white-space: nowrap;
 }
