@@ -2124,6 +2124,7 @@ body.fr-fullscreen {
   -moz-transition: padding 0.2s ease 0s, width 0.2s ease 0s, opacity 0.2s ease 0s;
   -ms-transition: padding 0.2s ease 0s, width 0.2s ease 0s, opacity 0.2s ease 0s;
   -o-transition: padding 0.2s ease 0s, width 0.2s ease 0s, opacity 0.2s ease 0s;
+  padding: 12px;
 }
 .fr-modal-head .fr-modal-head-line i.fr-modal-more.fr-not-available {
   opacity: 0;
