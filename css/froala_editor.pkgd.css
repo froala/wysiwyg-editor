@@ -60,12 +60,6 @@
 }
 .fr-element [contenteditable="true"] {
   outline: 0px solid transparent;
-  user-select: text;
-  -o-user-select: text;
-  -moz-user-select: text;
-  -khtml-user-select: text;
-  -webkit-user-select: text;
-  -ms-user-select: text;
 }
 .fr-box a.fr-floating-btn {
   -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 1px 1px rgba(0, 0, 0, 0.16);
