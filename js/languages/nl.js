@@ -58,13 +58,13 @@ $.FE.LANGUAGE['nl'] = {
 
     // Font
     "Font Family": "Lettertype",
-    "Font Size": "Letter grootte",
+    "Font Size": "Lettergrootte",
 
     // Colors
     "Colors": "Kleuren",
     "Background": "Achtergrond",
     "Text": "Tekst",
-    "HEX Color": "Hex kleur",
+    "HEX Color": "HEX kleur",
 
     // Paragraphs
     "Paragraph Format": "Opmaak",
@@ -77,7 +77,7 @@ $.FE.LANGUAGE['nl'] = {
 
     // Style
     "Paragraph Style": "Paragraaf stijl",
-    "Inline Style": "In de rij stijl",
+    "Inline Style": "Inline stijl",
 
     // Alignment
     "Align": "Uitlijnen",
@@ -96,7 +96,7 @@ $.FE.LANGUAGE['nl'] = {
     "Increase Indent": "Inspringen vergroten",
 
     // Links
-    "Insert Link": "Hyperlink invoegen",
+    "Insert Link": "Link invoegen",
     "Open in new tab": "Openen in nieuwe tab",
     "Open Link": "Open link",
     "Edit Link": "Link bewerken",
@@ -107,8 +107,8 @@ $.FE.LANGUAGE['nl'] = {
     "Insert Image": "Afbeelding invoegen",
     "Upload Image": "Afbeelding uploaden",
     "By URL": "Via URL",
-    "Browse": "Blader",
-    "Drop image": "Drop afbeelding",
+    "Browse": "Bladeren",
+    "Drop image": "Sleep afbeelding",
     "or click": "of klik op",
     "Manage Images": "Afbeeldingen beheren",
     "Loading": "Bezig met laden",
@@ -119,7 +119,7 @@ $.FE.LANGUAGE['nl'] = {
     "Uploading": "Uploaden",
     "Loading image": "Afbeelding laden",
     "Display": "Tonen",
-    "Inline": "In lijn",
+    "Inline": "Inline",
     "Break Text": "Tekst afbreken",
     "Alternate Text": "Alternatieve tekst",
     "Change Size": "Grootte wijzigen",
@@ -132,10 +132,10 @@ $.FE.LANGUAGE['nl'] = {
     // Video
     "Insert Video": "Video invoegen",
     "Embedded Code": "Ingebedde code",
-    "Paste in a video URL": "Plak in een video-URL",
-    "Drop video": "Video laten vallen",
+    "Paste in a video URL": "Voeg een video-URL toe",
+    "Drop video": "Sleep video",
     "Your browser does not support HTML5 video.": "Je browser ondersteunt geen html5-video.",
-    "Upload Video": "Upload video",
+    "Upload Video": "Video uploaden",
 
     // Tables
     "Insert Table": "Tabel invoegen",
@@ -166,8 +166,8 @@ $.FE.LANGUAGE['nl'] = {
     "Cell Style": "Celstijl",
 
     // Files
-    "Upload File": "Upload bestand",
-    "Drop file": "Drop bestand",
+    "Upload File": "Bestand uploaden",
+    "Drop file": "Sleep bestand",
 
     // Emoticons
     "Emoticons": "Emoticons",
@@ -257,7 +257,7 @@ $.FE.LANGUAGE['nl'] = {
     // Quote
     "Quote": "Citaat",
     "Increase": "Toenemen",
-    "Decrease": "Daling",
+    "Decrease": "Afnemen",
 
     // Quick Insert
     "Quick Insert": "Snel invoegen",
@@ -280,37 +280,37 @@ $.FE.LANGUAGE['nl'] = {
     "Spell Checker": "Spellingscontrole",
 
     // Help
-    "Help": "Helpen",
+    "Help": "Hulp",
     "Shortcuts": "Snelkoppelingen",
     "Inline Editor": "Inline editor",
     "Show the editor": "Laat de editor zien",
-    "Common actions": "Gemeenschappelijke acties",
+    "Common actions": "Algemene acties",
     "Copy": "Kopiëren",
-    "Cut": "Besnoeiing",
+    "Cut": "Knippen",
     "Paste": "Plakken",
     "Basic Formatting": "Basisformattering",
     "Increase quote level": "Citaat niveau verhogen",
     "Decrease quote level": "Citaatniveau verminderen",
     "Image / Video": "Beeld / video",
-    "Resize larger": "Grootte groter",
-    "Resize smaller": "Kleiner formaat wijzigen",
-    "Table": "Tafel",
+    "Resize larger": "Groter maken",
+    "Resize smaller": "Kleiner maken",
+    "Table": "Tabel",
     "Select table cell": "Selecteer tabelcel",
     "Extend selection one cell": "Selecteer een cel uit",
     "Extend selection one row": "Selecteer een rij uit",
     "Navigation": "Navigatie",
     "Focus popup / toolbar": "Focus pop-up / werkbalk",
-    "Return focus to previous position": "Terugkeer focus naar vorige positie",
+    "Return focus to previous position": "Focus terug naar vorige positie",
 
     // Embed.ly
     "Embed URL": "Embed url",
-    "Paste in a URL to embed": "Plak in een url om in te vullen",
+    "Paste in a URL to embed": "Voer een URL in om toe te voegen",
 
     // Word Paste.
-    "The pasted content is coming from a Microsoft Word document. Do you want to keep the format or clean it up?": "De geplakte inhoud komt uit een Microsoft Word-document. wil je het formaat behouden of opruimen?",
-    "Keep": "Houden",
-    "Clean": "Schoon",
-    "Word Paste Detected": "Woordpasta gedetecteerd"
+    "The pasted content is coming from a Microsoft Word document. Do you want to keep the format or clean it up?": "De geplakte inhoud komt uit een Microsoft Word-document. wil je het formaat behouden of schoonmaken?",
+    "Keep": "Opmaak behouden",
+    "Clean": "Tekst schoonmaken",
+    "Word Paste Detected": "Word inhoud gedetecteerd"
   },
   direction: "ltr"
 };
