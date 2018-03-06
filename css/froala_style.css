@@ -284,10 +284,12 @@ img.fr-shadow,
   display: inline-block;
   margin: auto;
   text-align: center;
+  width: 100%;
 }
 .fr-view .fr-img-caption .fr-img-wrap img {
   display: block;
   margin: auto;
+  width: 100%;
 }
 .fr-view .fr-img-caption .fr-img-wrap > span {
   margin: auto;
