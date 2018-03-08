@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0" />
+
+  <link rel="stylesheet" href="../../css/froala_editor.pkgd.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/at.js/1.4.0/css/jquery.atwho.min.css">
+
+  <!-- Code Mirror CSS file. -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/codemirror.min.css">
+
+  <!-- Include the plugin CSS file. -->
+  <link rel="stylesheet" href="../../css/plugins/code_view.css">
+
+  <style>
+    body {
+      text-align: center;
+    }
+
+    div#editor {
+      width: 81%;
+      margin: auto;
+      text-align: left;
+    }
+
+    .atwho-view-ul {
+      text-align: left;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div id="editor">
+
+    <div id="edit" style="margin-top: 30px;">
+      <h1>Code Mirror</h1>
+
+      <img class="fr-fir fr-dii" src="../../img/photo1.jpg" alt="Old Clock" width="300" />Click the Code View button to see the editor content's HTML.
+
+      <p>The code_view.min.js plugin can be used as is or you can use also use it together with Code Mirror. All there is to be done is to include the corresponding Code Mirror CSS and JS files.</p>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/codemirror.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/mode/xml/xml.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/at.js/1.4.0/js/jquery.atwho.min.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+  <script type="text/javascript" src="../../js/froala_editor.pkgd.min.js"></script>
+
+  <script>
+    $(function() {
+      $('#edit').froalaEditor({
+        iconsTemplate: 'font_awesome_5'
+      })
+    });
+
+  </script>
+</body>
+
+</html>
