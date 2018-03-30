@@ -64,7 +64,7 @@ $.FE.LANGUAGE['ru'] = {
     "Colors": "\u0426\u0432\u0435\u0442\u0430",
     "Background": "\u0424\u043e\u043d",
     "Text": "\u0422\u0435\u043a\u0441\u0442",
-    "HEX Color": "Шестигранный цвет",
+    "HEX Color": "Шестнадцатеричный код цвета",
 
     // Paragraphs
     "Paragraph Format": "\u0424\u043e\u0440\u043c\u0430\u0442 \u0430\u0431\u0437\u0430\u0446\u0430",
