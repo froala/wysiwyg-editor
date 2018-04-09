@@ -112,6 +112,7 @@ img.fr-shadow,
 .fr-view pre {
   white-space: pre-wrap;
   word-wrap: break-word;
+  overflow: visible;
 }
 .fr-view[dir="rtl"] blockquote {
   border-left: none;
