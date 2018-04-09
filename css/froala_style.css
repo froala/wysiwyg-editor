@@ -62,6 +62,9 @@ img.fr-shadow,
   max-width: 100%;
   table-layout: fixed;
 }
+.fr-view table td {
+  min-width: 5px;
+}
 .fr-view table.fr-dashed-borders td,
 .fr-view table.fr-dashed-borders th {
   border-style: dashed;
