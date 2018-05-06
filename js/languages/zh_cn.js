@@ -108,16 +108,16 @@ $.FE.LANGUAGE['zh_cn'] = {
     "Upload Image": "上传图片",
     "By URL": "通过网址",
     "Browse": "浏览",
-    "Drop image": "拖入图像",
+    "Drop image": "拖入图片",
     "or click": "或点击",
-    "Manage Images": "管理图像",
+    "Manage Images": "管理图片",
     "Loading": "加载中",
     "Deleting": "删除中",
     "Tags": "标签",
     "Are you sure? Image will be deleted.": "将删除图片，是否确定？",
-    "Replace": "坑爹的",
+    "Replace": "替换",
     "Uploading": "上传中",
-    "Loading image": "加载图片中",
+    "Loading image": "图片中加载",
     "Display": "显示",
     "Inline": "内联",
     "Break Text": "断开文本",
@@ -126,7 +126,7 @@ $.FE.LANGUAGE['zh_cn'] = {
     "Width": "宽度",
     "Height": "高度",
     "Something went wrong. Please try again.": "发生了错误，请再试一次。",
-    "Image Caption": "图片说明",
+    "Image Caption": "图片标题",
     "Advanced Edit": "高级编辑",
 
     // Video
@@ -260,13 +260,13 @@ $.FE.LANGUAGE['zh_cn'] = {
     "Decrease": "删除引用",
 
     // Quick Insert
-    "Quick Insert": "快速拖入",
+    "Quick Insert": "快速插入",
 
     // Spcial Characters
     "Special Characters": "特殊字符",
-    "Latin": "拉丁文",
-    "Greek": "希腊语",
-    "Cyrillic": "西里尔",
+    "Latin": "拉丁字母",
+    "Greek": "希腊字母",
+    "Cyrillic": "西里尔字母",
     "Punctuation": "标点",
     "Currency": "货币",
     "Arrows": "箭头",
@@ -295,7 +295,7 @@ $.FE.LANGUAGE['zh_cn'] = {
     "Resize larger": "放大尺寸",
     "Resize smaller": "缩小尺寸",
     "Table": "表格",
-    "Select table cell": "选择表单元格",
+    "Select table cell": "选择单元格",
     "Extend selection one cell": "增加选择一个单元格",
     "Extend selection one row": "增加选择一行",
     "Navigation": "导航",
@@ -304,11 +304,11 @@ $.FE.LANGUAGE['zh_cn'] = {
 
     // Embed.ly
     "Embed URL": "嵌入网址",
-    "Paste in a URL to embed": "嵌入复制的网址",
+    "Paste in a URL to embed": "粘贴要嵌入的网址",
 
     // Word Paste.
     "The pasted content is coming from a Microsoft Word document. Do you want to keep the format or clean it up?": "粘贴的内容来自微软Word文档，是否保留文档格式？",
-    "Keep": "保持",
+    "Keep": "保留",
     "Clean": "清除",
     "Word Paste Detected": "检测到来自Word的内容"
   },
