@@ -289,9 +289,9 @@
 
       // Word Paste.
       "The pasted content is coming from a Microsoft Word document. Do you want to keep the format or clean it up?": "O conteúdo colado vem de um documento Microsoft Word. Você quer manter o formato ou limpá-lo?",
-      "Keep": "Guarda",
-      "Clean": "Limpar \ limpo",
-      "Word Paste Detected": "Pasta de palavras detectada"
+      "Keep": "Manter",
+      "Clean": "Limpar",
+      "Word Paste Detected": "Colar do Word detectado"
     },
     direction: "ltr"
   };
