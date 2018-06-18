@@ -69,7 +69,7 @@
       "None": '\uC5C6\uC74C',
 
       // Lists
-      "Ordered List": '\uC22B\uC790\uB9AC\uC2A4\uD2B8',
+      "Ordered List": '\uC22B\uC790 \uB9AC\uC2A4\uD2B8',
       "Unordered List": '\uC810 \uB9AC\uC2A4\uD2B8',
 
       // Indent
