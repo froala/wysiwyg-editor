@@ -102,7 +102,7 @@
       "Display": "Prikaz",
       "Inline": "Pri upisivanju",
       "Break Text": "Prelom teksta",
-      "Alternate Text": "Alternativni tekst",
+      "Alternative Text": "Alternativni tekst",
       "Change Size": 'Promena veli\u010Dine',
       "Width": '\u0160irina',
       "Height": "Visina",

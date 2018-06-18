@@ -102,7 +102,7 @@
       "Display": 'G\xF6stermek',
       "Inline": '\xC7izgide',
       "Break Text": 'K\u0131r\u0131lma metni',
-      "Alternate Text": "Alternatif metin",
+      "Alternative Text": "Alternatif metin",
       "Change Size": 'De\u011Fi\u015Fim boyutu',
       "Width": 'Geni\u015Flik',
       "Height": 'Y\xFCkseklik',

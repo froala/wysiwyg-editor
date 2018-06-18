@@ -102,7 +102,7 @@
       "Display": 'Kijelz\u0151',
       "Inline": "Sorban",
       "Break Text": 'Sz\xF6veg t\xF6r\xE9se',
-      "Alternate Text": 'Alternat\xEDv sz\xF6veg',
+      "Alternative Text": 'Alternat\xEDv sz\xF6veg',
       "Change Size": 'M\xE9ret m\xF3dos\xEDt\xE1sa',
       "Width": 'Sz\xE9less\xE9g',
       "Height": 'Magass\xE1g',

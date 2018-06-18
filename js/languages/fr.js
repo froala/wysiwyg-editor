@@ -102,7 +102,7 @@
       "Display": "Afficher",
       "Inline": "En ligne",
       "Break Text": "Rompre le texte",
-      "Alternate Text": "Texte alternatif",
+      "Alternative Text": "Texte alternatif",
       "Change Size": "Changer la dimension",
       "Width": "Largeur",
       "Height": "Hauteur",

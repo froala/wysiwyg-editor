@@ -105,7 +105,7 @@
       "Display": "Προβολή",
       "Inline": "Ενσωματωμένη",
       "Break Text": "Σπάσιμο κειμένου",
-      "Alternate Text": "Εναλλακτικό κείμενο",
+      "Alternative Text": "Εναλλακτικό κείμενο",
       "Change Size": "Αλλαγή μεγέθους",
       "Width": "Πλάτος",
       "Height": "Ύψος",

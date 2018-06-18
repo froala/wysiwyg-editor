@@ -102,7 +102,7 @@
       "Display": '\u0639\u0631\u0636',
       "Inline": '\u0641\u064A \u062E\u0637',
       "Break Text": '\u0646\u0635 \u0627\u0633\u062A\u0631\u0627\u062D\u0629',
-      "Alternate Text": '\u0646\u0635 \u0628\u062F\u064A\u0644',
+      "Alternative Text": '\u0646\u0635 \u0628\u062F\u064A\u0644',
       "Change Size": '\u062A\u063A\u064A\u064A\u0631 \u062D\u062C\u0645',
       "Width": '\u0639\u0631\u0636',
       "Height": '\u0627\u0631\u062A\u0641\u0627\u0639',

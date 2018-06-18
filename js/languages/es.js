@@ -102,7 +102,7 @@
       "Display": "Mostrar",
       "Inline": 'En l\xEDnea',
       "Break Text": "Romper texto",
-      "Alternate Text": "Texto alternativo",
+      "Alternative Text": "Texto alternativo",
       "Change Size": 'Cambiar tama\xF1o',
       "Width": "Ancho",
       "Height": "Altura",

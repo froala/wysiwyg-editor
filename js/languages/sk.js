@@ -103,7 +103,7 @@
       "Display": 'Zobrazi\u0165',
       "Inline": "Inline",
       "Break Text": "Zalomenie textu",
-      "Alternate Text": 'Alternat\xEDvny text',
+      "Alternative Text": 'Alternat\xEDvny text',
       "Change Size": 'Zmeni\u0165 ve\u013Ekos\u0165',
       "Width": '\u0165\xEDrka',
       "Height": 'V\xFD\u0161ka',

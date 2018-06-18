@@ -102,7 +102,7 @@
       "Display": "Utstilling",
       "Inline": 'P\xE5 linje',
       "Break Text": "Brudd tekst",
-      "Alternate Text": "Alternativ tekst",
+      "Alternative Text": "Alternativ tekst",
       "Change Size": 'Endre st\xF8rrelse',
       "Width": "Bredde",
       "Height": 'H\xF8yde',

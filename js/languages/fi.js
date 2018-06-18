@@ -102,7 +102,7 @@
       "Display": 'N\xE4ytt\xE4',
       "Inline": "Linjassa",
       "Break Text": "Rikkoa teksti",
-      "Alternate Text": "Vaihtoehtoinen teksti",
+      "Alternative Text": "Vaihtoehtoinen teksti",
       "Change Size": "Muuta kokoa",
       "Width": "Leveys",
       "Height": "Korkeus",

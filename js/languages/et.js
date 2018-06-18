@@ -102,7 +102,7 @@
       "Display": "Kuvama",
       "Inline": 'J\xE4rjekorras',
       "Break Text": "Murdma teksti",
-      "Alternate Text": "Asendusliikme teksti",
+      "Alternative Text": "Asendusliikme teksti",
       "Change Size": "Muuda suurust",
       "Width": "Laius",
       "Height": 'K\xF5rgus',

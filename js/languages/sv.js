@@ -102,7 +102,7 @@
       "Display": "Visa",
       "Inline": "I linje",
       "Break Text": "Bryt text",
-      "Alternate Text": "Alternativ text",
+      "Alternative Text": "Alternativ text",
       "Change Size": '\xC4ndra storlek',
       "Width": "Bredd",
       "Height": 'H\xF6jd',

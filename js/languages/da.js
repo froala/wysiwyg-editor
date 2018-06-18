@@ -102,7 +102,7 @@
       "Display": "Udstilling",
       "Inline": "Inline",
       "Break Text": "Afbrydelse tekst",
-      "Alternate Text": "Suppleant tekst",
+      "Alternative Text": "Suppleant tekst",
       "Change Size": 'Skift st\xF8rrelse',
       "Width": "Bredde",
       "Height": 'H\xF8jde',

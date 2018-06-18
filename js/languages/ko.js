@@ -102,7 +102,7 @@
       "Display": '\uB514\uC2A4\uD50C\uB808\uC774',
       "Inline": '\uC778\uB77C\uC778',
       "Break Text": '\uAD6C\uBD84 \uD14D\uC2A4\uD2B8',
-      "Alternate Text": '\uB300\uCCB4 \uD14D\uC2A4\uD2B8',
+      "Alternative Text": '\uB300\uCCB4 \uD14D\uC2A4\uD2B8',
       "Change Size": '\uD06C\uAE30 \uBCC0\uACBD',
       "Width": '\uD3ED',
       "Height": '\uB192\uC774',

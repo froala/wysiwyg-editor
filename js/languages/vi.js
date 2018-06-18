@@ -98,7 +98,7 @@
       "Display": 'Hi\u1EC3n th\u1ECB',
       "Inline": 'C\xF9ng d\xF2ng v\u1EDBi ch\u1EEF',
       "Break Text": 'Kh\xF4ng c\xF9ng d\xF2ng v\u1EDBi ch\u1EEF',
-      "Alternate Text": 'Thay th\u1EBF ch\u1EEF',
+      "Alternative Text": 'Thay th\u1EBF ch\u1EEF',
       "Change Size": 'Thay \u0111\u1ED5i k\xEDch c\u1EE1',
       "Width": 'Chi\u1EC1u r\u1ED9ng',
       "Height": 'Chi\u1EC1u cao',

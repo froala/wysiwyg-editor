@@ -102,7 +102,7 @@
       "Display": "Wystawa",
       "Inline": "Zgodna",
       "Break Text": 'Z\u0142ama\u0107 tekst',
-      "Alternate Text": "Tekst alternatywny",
+      "Alternative Text": "Tekst alternatywny",
       "Change Size": 'Zmie\u0144 rozmiar',
       "Width": 'Szeroko\u015B\u0107',
       "Height": 'Wysoko\u015B\u0107',

@@ -102,7 +102,7 @@
       "Display": '\u986F\u793A',
       "Inline": '\u5D4C\u5165',
       "Break Text": '\u8207\u6587\u5B57\u5206\u96E2',
-      "Alternate Text": '\u6587\u5B57\u74B0\u7E5E',
+      "Alternative Text": '\u6587\u5B57\u74B0\u7E5E',
       "Change Size": '\u8ABF\u6574\u5927\u5C0F',
       "Width": '\u5BEC\u5EA6',
       "Height": '\u9AD8\u5EA6',

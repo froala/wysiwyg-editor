@@ -102,7 +102,7 @@
       "Display": 'Prika\u017Ei',
       "Inline": "U liniji",
       "Break Text": "Odvojeni tekst",
-      "Alternate Text": "Alternativni tekst",
+      "Alternative Text": "Alternativni tekst",
       "Change Size": 'Promjena veli\u010Dine',
       "Width": '\u0160irina',
       "Height": "Visina",

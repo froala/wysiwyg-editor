@@ -102,7 +102,7 @@
       "Display": "Zobrazit",
       "Inline": "Inline",
       "Break Text": 'P\u0159est\xE1vka textu',
-      "Alternate Text": 'Alternativn\xED textu',
+      "Alternative Text": 'Alternativn\xED textu',
       "Change Size": 'Zm\u011Bnit velikost',
       "Width": '\u0160\xED\u0159ka',
       "Height": 'V\xFD\u0161ka',
