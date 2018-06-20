@@ -1,8 +1,9 @@
 /*!
-        * Froala Editor v2.8.2 (https://www.froala.com/wysiwyg-editor)
-        * Copyright 2014-2018 Froala Labs
-        * Licensed under Froala Editor Terms (https://www.froala.com/wysiwyg-editor/terms)
-        */
+ * froala_editor v2.8.2 (https://www.froala.com/wysiwyg-editor)
+ * License https://froala.com/wysiwyg-editor/terms/
+ * Copyright 2014-2018 Froala Labs
+ */
+
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? factory(require('FroalaEditor')) :
   typeof define === 'function' && define.amd ? define(['FroalaEditor'], factory) :
