@@ -88,7 +88,7 @@ $.FE.LANGUAGE['ko'] = {
     "None": "\uc5c6\uc74c",
 
     // Lists
-    "Ordered List": "\uc22b\uc790\ub9ac\uc2a4\ud2b8",
+    "Ordered List": "\uc22b\uc790 \ub9ac\uc2a4\ud2b8",
     "Unordered List": "\uc810 \ub9ac\uc2a4\ud2b8",
 
     // Indent
