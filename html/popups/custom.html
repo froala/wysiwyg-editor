@@ -39,12 +39,12 @@
 
   <script>
     // Define popup template.
-    Object.assign($.FroalaEditor.POPUP_TEMPLATES, {
+    $.extend($.FroalaEditor.POPUP_TEMPLATES, {
       'customPlugin.popup': '[_BUTTONS_][_CUSTOM_LAYER_]'
     });
 
     // Define popup buttons.
-    Object.assign($.FroalaEditor.DEFAULTS, {
+    $.extend($.FroalaEditor.DEFAULTS, {
       popupButtons: ['popupClose', '|', 'popupButton1', 'popupButton2'],
     });
 

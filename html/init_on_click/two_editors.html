@@ -89,8 +89,8 @@
         toolbarButtons: ['bold', 'italic', 'underline', 'strikeThrough', 'color', 'emoticons', '-', 'paragraphFormat', 'align', 'formatOL', 'formatUL', 'indent', 'outdent', '-', 'insertImage', 'insertLink', 'insertFile', 'insertVideo', 'undo', 'redo']
       };
 
-      $('#edit').froalaEditor(Object.assign({}, options, {zIndex: 21}))
-      $('#edit2').froalaEditor(Object.assign({}, options, {zIndex: 1}))
+      $('#edit').froalaEditor($.extend({}, options, {zIndex: 21}))
+      $('#edit2').froalaEditor($.extend({}, options, {zIndex: 1}))
     });
   </script>
 </body>

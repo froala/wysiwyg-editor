@@ -1,246 +1,262 @@
 /*!
- * froala_editor v2.8.4 (https://www.froala.com/wysiwyg-editor)
+ * froala_editor v2.8.2 (https://www.froala.com/wysiwyg-editor)
  * License https://froala.com/wysiwyg-editor/terms/
  * Copyright 2014-2018 Froala Labs
  */
 
-(function (global, factory) {
-  typeof exports === 'object' && typeof module !== 'undefined' ? factory(require('jquery')) :
-  typeof define === 'function' && define.amd ? define(['jquery'], factory) :
-  (factory(global.jQuery));
-}(this, (function ($) { 'use strict';
+(function (factory) {
+    if (typeof define === 'function' && define.amd) {
+        // AMD. Register as an anonymous module.
+        define(['jquery'], factory);
+    } else if (typeof module === 'object' && module.exports) {
+        // Node/CommonJS
+        module.exports = function( root, jQuery ) {
+            if ( jQuery === undefined ) {
+                // require('jQuery') returns a factory that requires window to
+                // build a jQuery instance, we normalize how we use modules
+                // that require this pattern but the window provided is a noop
+                // if it's defined (how jquery works)
+                if ( typeof window !== 'undefined' ) {
+                    jQuery = require('jquery');
+                }
+                else {
+                    jQuery = require('jquery')(root);
+                }
+            }
+            return factory(jQuery);
+        };
+    } else {
+        // Browser globals
+        factory(window.jQuery);
+    }
+}(function ($) {
+/**
+ * English spoken in Canada
+ */
 
-  $ = $ && $.hasOwnProperty('default') ? $['default'] : $;
+$.FE.LANGUAGE['en_ca'] = {
+  translation: {
+    // Place holder
+    "Type something": "Type something",
 
-  /**
-   * English spoken in Canada
-   */
-  var FE = $.FE;
+    // Basic formatting
+    "Bold": "Bold",
+    "Italic": "Italic",
+    "Underline": "Underline",
+    "Strikethrough": "Strikethrough",
 
-  FE.LANGUAGE['en_ca'] = {
-    translation: {
-      // Place holder
-      "Type something": "Type something",
+    // Main buttons
+    "Insert": "Insert",
+    "Delete": "Delete",
+    "Cancel": "Cancel",
+    "OK": "OK",
+    "Back": "Back",
+    "Remove": "Remove",
+    "More": "More",
+    "Update": "Update",
+    "Style": "Style",
 
-      // Basic formatting
-      "Bold": "Bold",
-      "Italic": "Italic",
-      "Underline": "Underline",
-      "Strikethrough": "Strikethrough",
+    // Font
+    "Font Family": "Font Family",
+    "Font Size": "Font Size",
 
-      // Main buttons
-      "Insert": "Insert",
-      "Delete": "Delete",
-      "Cancel": "Cancel",
-      "OK": "OK",
-      "Back": "Back",
-      "Remove": "Remove",
-      "More": "More",
-      "Update": "Update",
-      "Style": "Style",
+    // Colors
+    "Colors": "Colours",
+    "Background": "Background",
+    "Text": "Text",
+    "HEX Color": "HEX Colour",
 
-      // Font
-      "Font Family": "Font Family",
-      "Font Size": "Font Size",
+    // Paragraphs
+    "Paragraph Format": "Paragraph Format",
+    "Normal": "Normal",
+    "Code": "Code",
+    "Heading 1": "Heading 1",
+    "Heading 2": "Heading 2",
+    "Heading 3": "Heading 3",
+    "Heading 4": "Heading 4",
 
-      // Colors
-      "Colors": "Colours",
-      "Background": "Background",
-      "Text": "Text",
-      "HEX Color": "HEX Colour",
+    // Style
+    "Paragraph Style": "Paragraph Style",
+    "Inline Style": "Inline Style",
 
-      // Paragraphs
-      "Paragraph Format": "Paragraph Format",
-      "Normal": "Normal",
-      "Code": "Code",
-      "Heading 1": "Heading 1",
-      "Heading 2": "Heading 2",
-      "Heading 3": "Heading 3",
-      "Heading 4": "Heading 4",
+    // Alignment
+    "Align": "Align",
+    "Align Left": "Align Left",
+    "Align Center": "Align Centre",
+    "Align Right": "Alight Right",
+    "Align Justify": "Align Justify",
+    "None": "None",
 
-      // Style
-      "Paragraph Style": "Paragraph Style",
-      "Inline Style": "Inline Style",
+    // Lists
+    "Ordered List": "Ordered List",
+    "Unordered List": "Unordered List",
 
-      // Alignment
-      "Align": "Align",
-      "Align Left": "Align Left",
-      "Align Center": "Align Centre",
-      "Align Right": "Alight Right",
-      "Align Justify": "Align Justify",
-      "None": "None",
+    // Indent
+    "Decrease Indent": "Decrease Indent",
+    "Increase Indent": "Increase Indent",
 
-      // Lists
-      "Ordered List": "Ordered List",
-      "Unordered List": "Unordered List",
+    // Links
+    "Insert Link": "Insert Link",
+    "Open in new tab": "Open in new tab",
+    "Open Link": "Open Link",
+    "Edit Link": "Edit Link",
+    "Unlink": "Unlink",
+    "Choose Link": "Choose Link",
 
-      // Indent
-      "Decrease Indent": "Decrease Indent",
-      "Increase Indent": "Increase Indent",
+    // Images
+    "Insert Image": "Insert Image",
+    "Upload Image": "Upload Image",
+    "By URL": "By URL",
+    "Browse": "Browse",
+    "Drop image": "Drop image",
+    "or click": "or click",
+    "Manage Images": "Manage Images",
+    "Loading": "Loading",
+    "Deleting": "Deleting",
+    "Tags": "Tags",
+    "Are you sure? Image will be deleted.": "Are you sure? Image will be deleted.",
+    "Replace": "Replace",
+    "Uploading": "Uploading",
+    "Loading image": "Loading image",
+    "Display": "Display",
+    "Inline": "Inline",
+    "Break Text": "Break Text",
+    "Alternate Text": "Alternate Text",
+    "Change Size": "Change Size",
+    "Width": "Width",
+    "Height": "Height",
+    "Something went wrong. Please try again.": "Something went wrong. Please try again.",
+    "Image Caption": "Image Caption",
+    "Advanced Edit": "Advanced Edit",
 
-      // Links
-      "Insert Link": "Insert Link",
-      "Open in new tab": "Open in new tab",
-      "Open Link": "Open Link",
-      "Edit Link": "Edit Link",
-      "Unlink": "Unlink",
-      "Choose Link": "Choose Link",
+    // Video
+    "Insert Video": "Insert Video",
+    "Embedded Code": "Embedded Code",
+    "Paste in a video URL": "Paste in a video URL",
+    "Drop video": "Drop video",
+    "Your browser does not support HTML5 video.": "Your browser does not support HTML5 video.",
+    "Upload Video": "Upload Video",
 
-      // Images
-      "Insert Image": "Insert Image",
-      "Upload Image": "Upload Image",
-      "By URL": "By URL",
-      "Browse": "Browse",
-      "Drop image": "Drop image",
-      "or click": "or click",
-      "Manage Images": "Manage Images",
-      "Loading": "Loading",
-      "Deleting": "Deleting",
-      "Tags": "Tags",
-      "Are you sure? Image will be deleted.": "Are you sure? Image will be deleted.",
-      "Replace": "Replace",
-      "Uploading": "Uploading",
-      "Loading image": "Loading image",
-      "Display": "Display",
-      "Inline": "Inline",
-      "Break Text": "Break Text",
-      "Alternative Text": "Alternative Text",
-      "Change Size": "Change Size",
-      "Width": "Width",
-      "Height": "Height",
-      "Something went wrong. Please try again.": "Something went wrong. Please try again.",
-      "Image Caption": "Image Caption",
-      "Advanced Edit": "Advanced Edit",
+    // Tables
+    "Insert Table": "Insert Table",
+    "Table Header": "Table Header",
+    "Remove Table": "Remove Table",
+    "Table Style": "Table Style",
+    "Horizontal Align": "Horizontal Align",
+    "Row": "Row",
+    "Insert row above": "Insert row above",
+    "Insert row below": "Insert row below",
+    "Delete row": "Delete row",
+    "Column": "Column",
+    "Insert column before": "Insert column before",
+    "Insert column after": "Insert column after",
+    "Delete column": "Delete column",
+    "Cell": "Cell",
+    "Merge cells": "Merge cells",
+    "Horizontal split": "Horizontal split",
+    "Vertical split": "Vertical split",
+    "Cell Background": "Cell Background",
+    "Vertical Align": "Vertical Align",
+    "Top": "Top",
+    "Middle": "Middle",
+    "Bottom": "Bottom",
+    "Align Top": "Align Top",
+    "Align Middle": "Align Middle",
+    "Align Bottom": "Align Bottom",
+    "Cell Style": "Cell Style",
 
-      // Video
-      "Insert Video": "Insert Video",
-      "Embedded Code": "Embedded Code",
-      "Paste in a video URL": "Paste in a video URL",
-      "Drop video": "Drop video",
-      "Your browser does not support HTML5 video.": "Your browser does not support HTML5 video.",
-      "Upload Video": "Upload Video",
+    // Files
+    "Upload File": "Upload File",
+    "Drop file": "Drop file",
 
-      // Tables
-      "Insert Table": "Insert Table",
-      "Table Header": "Table Header",
-      "Remove Table": "Remove Table",
-      "Table Style": "Table Style",
-      "Horizontal Align": "Horizontal Align",
-      "Row": "Row",
-      "Insert row above": "Insert row above",
-      "Insert row below": "Insert row below",
-      "Delete row": "Delete row",
-      "Column": "Column",
-      "Insert column before": "Insert column before",
-      "Insert column after": "Insert column after",
-      "Delete column": "Delete column",
-      "Cell": "Cell",
-      "Merge cells": "Merge cells",
-      "Horizontal split": "Horizontal split",
-      "Vertical split": "Vertical split",
-      "Cell Background": "Cell Background",
-      "Vertical Align": "Vertical Align",
-      "Top": "Top",
-      "Middle": "Middle",
-      "Bottom": "Bottom",
-      "Align Top": "Align Top",
-      "Align Middle": "Align Middle",
-      "Align Bottom": "Align Bottom",
-      "Cell Style": "Cell Style",
+    // Emoticons
+    "Emoticons": "Emoticons",
 
-      // Files
-      "Upload File": "Upload File",
-      "Drop file": "Drop file",
+    // Line breaker
+    "Break": "Break",
 
-      // Emoticons
-      "Emoticons": "Emoticons",
+    // Math
+    "Subscript": "Subscript",
+    "Superscript": "Superscript",
 
-      // Line breaker
-      "Break": "Break",
+    // Full screen
+    "Fullscreen": "Fullscreen",
 
-      // Math
-      "Subscript": "Subscript",
-      "Superscript": "Superscript",
+    // Horizontal line
+    "Insert Horizontal Line": "Insert Horizontal Line",
 
-      // Full screen
-      "Fullscreen": "Fullscreen",
+    // Clear formatting
+    "Clear Formatting": "Cell Formatting",
 
-      // Horizontal line
-      "Insert Horizontal Line": "Insert Horizontal Line",
+    // Undo, redo
+    "Undo": "Undo",
+    "Redo": "Redo",
 
-      // Clear formatting
-      "Clear Formatting": "Cell Formatting",
+    // Select all
+    "Select All": "Select All",
 
-      // Undo, redo
-      "Undo": "Undo",
-      "Redo": "Redo",
+    // Code view
+    "Code View": "Code View",
 
-      // Select all
-      "Select All": "Select All",
+    // Quote
+    "Quote": "Quote",
+    "Increase": "Increase",
+    "Decrease": "Decrease",
 
-      // Code view
-      "Code View": "Code View",
+    // Quick Insert
+    "Quick Insert": "Quick Insert",
 
-      // Quote
-      "Quote": "Quote",
-      "Increase": "Increase",
-      "Decrease": "Decrease",
+    // Spcial Characters
+    "Special Characters": "Special Characters",
+    "Latin": "Latin",
+    "Greek": "Greek",
+    "Cyrillic": "Cyrillic",
+    "Punctuation": "Punctuation",
+    "Currency": "Currency",
+    "Arrows": "Arrows",
+    "Math": "Math",
+    "Misc": "Misc",
 
-      // Quick Insert
-      "Quick Insert": "Quick Insert",
+    // Print.
+    "Print": "Print",
 
-      // Spcial Characters
-      "Special Characters": "Special Characters",
-      "Latin": "Latin",
-      "Greek": "Greek",
-      "Cyrillic": "Cyrillic",
-      "Punctuation": "Punctuation",
-      "Currency": "Currency",
-      "Arrows": "Arrows",
-      "Math": "Math",
-      "Misc": "Misc",
+    // Spell Checker.
+    "Spell Checker": "Spell Checker",
 
-      // Print.
-      "Print": "Print",
+    // Help
+    "Help": "Help",
+    "Shortcuts": "Shortcuts",
+    "Inline Editor": "Inline Editor",
+    "Show the editor": "Show the editor",
+    "Common actions": "Common actions",
+    "Copy": "Copy",
+    "Cut": "Cut",
+    "Paste": "Paste",
+    "Basic Formatting": "Basic Formatting",
+    "Increase quote level": "Increase quote level",
+    "Decrease quote level": "Decrease quote level",
+    "Image / Video": "Image / Video",
+    "Resize larger": "Resize larger",
+    "Resize smaller": "Resize smaller",
+    "Table": "Table",
+    "Select table cell": "Select table cell",
+    "Extend selection one cell": "Extend selection one cell",
+    "Extend selection one row": "Extend selection one row",
+    "Navigation": "Navigation",
+    "Focus popup / toolbar": "Focus popup / toolbar",
+    "Return focus to previous position": "Return focus to previous position",
 
-      // Spell Checker.
-      "Spell Checker": "Spell Checker",
+    // Embed.ly
+    "Embed URL": "Embed URL",
+    "Paste in a URL to embed": "Paste in a URL to embed",
 
-      // Help
-      "Help": "Help",
-      "Shortcuts": "Shortcuts",
-      "Inline Editor": "Inline Editor",
-      "Show the editor": "Show the editor",
-      "Common actions": "Common actions",
-      "Copy": "Copy",
-      "Cut": "Cut",
-      "Paste": "Paste",
-      "Basic Formatting": "Basic Formatting",
-      "Increase quote level": "Increase quote level",
-      "Decrease quote level": "Decrease quote level",
-      "Image / Video": "Image / Video",
-      "Resize larger": "Resize larger",
-      "Resize smaller": "Resize smaller",
-      "Table": "Table",
-      "Select table cell": "Select table cell",
-      "Extend selection one cell": "Extend selection one cell",
-      "Extend selection one row": "Extend selection one row",
-      "Navigation": "Navigation",
-      "Focus popup / toolbar": "Focus popup / toolbar",
-      "Return focus to previous position": "Return focus to previous position",
+    // Word Paste.
+    "The pasted content is coming from a Microsoft Word document. Do you want to keep the format or clean it up?": "The pasted content is coming from a Microsoft Word document. Do you want to keep the format or clean it up?",
+    "Keep": "Keep",
+    "Clean": "Clean",
+    "Word Paste Detected": "Word Paste Detected"
+  },
+  direction: "ltr"
+};
 
-      // Embed.ly
-      "Embed URL": "Embed URL",
-      "Paste in a URL to embed": "Paste in a URL to embed",
-
-      // Word Paste.
-      "The pasted content is coming from a Microsoft Word document. Do you want to keep the format or clean it up?": "The pasted content is coming from a Microsoft Word document. Do you want to keep the format or clean it up?",
-      "Keep": "Keep",
-      "Clean": "Clean",
-      "Word Paste Detected": "Word Paste Detected"
-    },
-    direction: "ltr"
-  };
-
-})));
-//# sourceMappingURL=en_ca.js.map
+}));

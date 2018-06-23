@@ -1,302 +1,318 @@
 /*!
- * froala_editor v2.8.4 (https://www.froala.com/wysiwyg-editor)
+ * froala_editor v2.8.2 (https://www.froala.com/wysiwyg-editor)
  * License https://froala.com/wysiwyg-editor/terms/
  * Copyright 2014-2018 Froala Labs
  */
 
-(function (global, factory) {
-  typeof exports === 'object' && typeof module !== 'undefined' ? factory(require('jquery')) :
-  typeof define === 'function' && define.amd ? define(['jquery'], factory) :
-  (factory(global.jQuery));
-}(this, (function ($) { 'use strict';
+(function (factory) {
+    if (typeof define === 'function' && define.amd) {
+        // AMD. Register as an anonymous module.
+        define(['jquery'], factory);
+    } else if (typeof module === 'object' && module.exports) {
+        // Node/CommonJS
+        module.exports = function( root, jQuery ) {
+            if ( jQuery === undefined ) {
+                // require('jQuery') returns a factory that requires window to
+                // build a jQuery instance, we normalize how we use modules
+                // that require this pattern but the window provided is a noop
+                // if it's defined (how jquery works)
+                if ( typeof window !== 'undefined' ) {
+                    jQuery = require('jquery');
+                }
+                else {
+                    jQuery = require('jquery')(root);
+                }
+            }
+            return factory(jQuery);
+        };
+    } else {
+        // Browser globals
+        factory(window.jQuery);
+    }
+}(function ($) {
+/**
+ * Korean
+ */
 
-  $ = $ && $.hasOwnProperty('default') ? $['default'] : $;
+$.FE.LANGUAGE['ko'] = {
+  translation: {
+    // Place holder
+    "Type something": "\ub0b4\uc6a9\uc744 \uc785\ub825\ud558\uc138\uc694",
 
-  /**
-   * Korean
-   */
-  var FE = $.FE;
+    // Basic formatting
+    "Bold": "\uad75\uac8c",
+    "Italic": "\uae30\uc6b8\uc784\uaf34",
+    "Underline": "\ubc11\uc904",
+    "Strikethrough": "\ucde8\uc18c\uc120",
 
-  FE.LANGUAGE['ko'] = {
-    translation: {
-      // Place holder
-      "Type something": '\uB0B4\uC6A9\uC744 \uC785\uB825\uD558\uC138\uC694',
+    // Main buttons
+    "Insert": "\uc0bd\uc785",
+    "Delete": "\uc0ad\uc81c",
+    "Cancel": "\ucde8\uc18c",
+    "OK": "\uc2b9\uc778",
+    "Back": "\ub4a4\ub85c",
+    "Remove": "\uc81c\uac70",
+    "More": "\ub354",
+    "Update": "\uc5c5\ub370\uc774\ud2b8",
+    "Style": "\uc2a4\ud0c0\uc77c",
 
-      // Basic formatting
-      "Bold": '\uAD75\uAC8C',
-      "Italic": '\uAE30\uC6B8\uC784\uAF34',
-      "Underline": '\uBC11\uC904',
-      "Strikethrough": '\uCDE8\uC18C\uC120',
+    // Font
+    "Font Family": "\uae00\uaf34",
+    "Font Size": "\ud3f0\ud2b8 \ud06c\uae30",
 
-      // Main buttons
-      "Insert": '\uC0BD\uC785',
-      "Delete": '\uC0AD\uC81C',
-      "Cancel": '\uCDE8\uC18C',
-      "OK": '\uC2B9\uC778',
-      "Back": '\uB4A4\uB85C',
-      "Remove": '\uC81C\uAC70',
-      "More": '\uB354',
-      "Update": '\uC5C5\uB370\uC774\uD2B8',
-      "Style": '\uC2A4\uD0C0\uC77C',
+    // Colors
+    "Colors": "\uc0c9\uc0c1",
+    "Background": "\ubc30\uacbd",
+    "Text": "\ud14d\uc2a4\ud2b8",
+    "HEX Color": "\ud5e5\uc2a4 \uc0c9\uc0c1",
 
-      // Font
-      "Font Family": '\uAE00\uAF34',
-      "Font Size": '\uD3F0\uD2B8 \uD06C\uAE30',
+    // Paragraphs
+    "Paragraph Format": "\ub2e8\ub77d",
+    "Normal": "\ud45c\uc900",
+    "Code": "\ucf54\ub4dc",
+    "Heading 1": "\uc81c\ubaa9 1",
+    "Heading 2": "\uc81c\ubaa9 2",
+    "Heading 3": "\uc81c\ubaa9 3",
+    "Heading 4": "\uc81c\ubaa9 4",
 
-      // Colors
-      "Colors": '\uC0C9\uC0C1',
-      "Background": '\uBC30\uACBD',
-      "Text": '\uD14D\uC2A4\uD2B8',
-      "HEX Color": '\uD5E5\uC2A4 \uC0C9\uC0C1',
+    // Style
+    "Paragraph Style": "\ub2e8\ub77d \uc2a4\ud0c0\uc77c",
+    "Inline Style": "\uc778\ub77c\uc778 \uc2a4\ud0c0\uc77c",
 
-      // Paragraphs
-      "Paragraph Format": '\uB2E8\uB77D',
-      "Normal": '\uD45C\uC900',
-      "Code": '\uCF54\uB4DC',
-      "Heading 1": '\uC81C\uBAA9 1',
-      "Heading 2": '\uC81C\uBAA9 2',
-      "Heading 3": '\uC81C\uBAA9 3',
-      "Heading 4": '\uC81C\uBAA9 4',
+    // Alignment
+    "Align": "\uc815\ub82c",
+    "Align Left": "\uc67c\ucabd\uc815\ub82c",
+    "Align Center": "\uac00\uc6b4\ub370\uc815\ub82c",
+    "Align Right": "\uc624\ub978\ucabd\uc815\ub82c",
+    "Align Justify": "\uc591\ucabd\uc815\ub82c",
+    "None": "\uc5c6\uc74c",
 
-      // Style
-      "Paragraph Style": '\uB2E8\uB77D \uC2A4\uD0C0\uC77C',
-      "Inline Style": '\uC778\uB77C\uC778 \uC2A4\uD0C0\uC77C',
+    // Lists
+    "Ordered List": "\uc22b\uc790\ub9ac\uc2a4\ud2b8",
+    "Unordered List": "\uc810 \ub9ac\uc2a4\ud2b8",
 
-      // Alignment
-      "Align": '\uC815\uB82C',
-      "Align Left": '\uC67C\uCABD\uC815\uB82C',
-      "Align Center": '\uAC00\uC6B4\uB370\uC815\uB82C',
-      "Align Right": '\uC624\uB978\uCABD\uC815\uB82C',
-      "Align Justify": '\uC591\uCABD\uC815\uB82C',
-      "None": '\uC5C6\uC74C',
+    // Indent
+    "Decrease Indent": "\ub0b4\uc5b4\uc4f0\uae30",
+    "Increase Indent": "\ub4e4\uc5ec\uc4f0\uae30",
 
-      // Lists
-      "Ordered List": '\uC22B\uC790 \uB9AC\uC2A4\uD2B8',
-      "Unordered List": '\uC810 \uB9AC\uC2A4\uD2B8',
+    // Links
+    "Insert Link": "\ub9c1\ud06c \uc0bd\uc785",
+    "Open in new tab": "\uc0c8 \ud0ed\uc5d0\uc11c \uc5f4\uae30",
+    "Open Link": "\ub9c1\ud06c \uc5f4\uae30",
+    "Edit Link": "\ud3b8\uc9d1 \ub9c1\ud06c",
+    "Unlink": "\ub9c1\ud06c\uc0ad\uc81c",
+    "Choose Link": "\ub9c1\ud06c\ub97c \uc120\ud0dd",
 
-      // Indent
-      "Decrease Indent": '\uB0B4\uC5B4\uC4F0\uAE30',
-      "Increase Indent": '\uB4E4\uC5EC\uC4F0\uAE30',
+    // Images
+    "Insert Image": "\uc774\ubbf8\uc9c0 \uc0bd\uc785",
+    "Upload Image": "\uc774\ubbf8\uc9c0 \uc5c5\ub85c\ub4dc",
+    "By URL": "URL \ub85c",
+    "Browse": "\uac80\uc0c9",
+    "Drop image": "\uc774\ubbf8\uc9c0\ub97c \ub4dc\ub798\uadf8&\ub4dc\ub86d",
+    "or click": "\ub610\ub294 \ud074\ub9ad",
+    "Manage Images": "\uc774\ubbf8\uc9c0 \uad00\ub9ac",
+    "Loading": "\ub85c\ub4dc",
+    "Deleting": "\uc0ad\uc81c",
+    "Tags": "\ud0dc\uadf8",
+    "Are you sure? Image will be deleted.": "\ud655\uc2e4\ud55c\uac00\uc694? \uc774\ubbf8\uc9c0\uac00 \uc0ad\uc81c\ub429\ub2c8\ub2e4.",
+    "Replace": "\uad50\uccb4",
+    "Uploading": "\uc5c5\ub85c\ub4dc",
+    "Loading image": "\uc774\ubbf8\uc9c0 \ub85c\ub4dc \uc911",
+    "Display": "\ub514\uc2a4\ud50c\ub808\uc774",
+    "Inline": "\uc778\ub77c\uc778",
+    "Break Text": "\uad6c\ubd84 \ud14d\uc2a4\ud2b8",
+    "Alternate Text": "\ub300\uccb4 \ud14d\uc2a4\ud2b8",
+    "Change Size": "\ud06c\uae30 \ubcc0\uacbd",
+    "Width": "\ud3ed",
+    "Height": "\ub192\uc774",
+    "Something went wrong. Please try again.": "\ubb38\uc81c\uac00 \ubc1c\uc0dd\ud588\uc2b5\ub2c8\ub2e4. \ub2e4\uc2dc \uc2dc\ub3c4\ud558\uc2ed\uc2dc\uc624.",
+    "Image Caption": "\uc774\ubbf8\uc9c0 \ucea1\uc158",
+    "Advanced Edit": "\uace0\uae09 \ud3b8\uc9d1",
 
-      // Links
-      "Insert Link": '\uB9C1\uD06C \uC0BD\uC785',
-      "Open in new tab": '\uC0C8 \uD0ED\uC5D0\uC11C \uC5F4\uAE30',
-      "Open Link": '\uB9C1\uD06C \uC5F4\uAE30',
-      "Edit Link": '\uD3B8\uC9D1 \uB9C1\uD06C',
-      "Unlink": '\uB9C1\uD06C\uC0AD\uC81C',
-      "Choose Link": '\uB9C1\uD06C\uB97C \uC120\uD0DD',
+    // Video
+    "Insert Video": "\ub3d9\uc601\uc0c1 \uc0bd\uc785",
+    "Embedded Code": "\uc784\ubca0\ub514\ub4dc \ucf54\ub4dc",
+    "Paste in a video URL": "\ub3d9\uc601\uc0c1 URL\uc5d0 \ubd99\uc5ec \ub123\uae30",
+    "Drop video": "\ub3d9\uc601\uc0c1\uc744 \ub4dc\ub798\uadf8&\ub4dc\ub86d",
+    "Your browser does not support HTML5 video.": "\uadc0\ud558\uc758 \ube0c\ub77c\uc6b0\uc800\ub294 html5 video\ub97c \uc9c0\uc6d0\ud558\uc9c0 \uc54a\uc2b5\ub2c8\ub2e4.",
+    "Upload Video": "\ub3d9\uc601\uc0c1 \uc5c5\ub85c\ub4dc",
 
-      // Images
-      "Insert Image": '\uC774\uBBF8\uC9C0 \uC0BD\uC785',
-      "Upload Image": '\uC774\uBBF8\uC9C0 \uC5C5\uB85C\uB4DC',
-      "By URL": 'URL \uB85C',
-      "Browse": '\uAC80\uC0C9',
-      "Drop image": '\uC774\uBBF8\uC9C0\uB97C \uB4DC\uB798\uADF8&\uB4DC\uB86D',
-      "or click": '\uB610\uB294 \uD074\uB9AD',
-      "Manage Images": '\uC774\uBBF8\uC9C0 \uAD00\uB9AC',
-      "Loading": '\uB85C\uB4DC',
-      "Deleting": '\uC0AD\uC81C',
-      "Tags": '\uD0DC\uADF8',
-      "Are you sure? Image will be deleted.": '\uD655\uC2E4\uD55C\uAC00\uC694? \uC774\uBBF8\uC9C0\uAC00 \uC0AD\uC81C\uB429\uB2C8\uB2E4.',
-      "Replace": '\uAD50\uCCB4',
-      "Uploading": '\uC5C5\uB85C\uB4DC',
-      "Loading image": '\uC774\uBBF8\uC9C0 \uB85C\uB4DC \uC911',
-      "Display": '\uB514\uC2A4\uD50C\uB808\uC774',
-      "Inline": '\uC778\uB77C\uC778',
-      "Break Text": '\uAD6C\uBD84 \uD14D\uC2A4\uD2B8',
-      "Alternative Text": '\uB300\uCCB4 \uD14D\uC2A4\uD2B8',
-      "Change Size": '\uD06C\uAE30 \uBCC0\uACBD',
-      "Width": '\uD3ED',
-      "Height": '\uB192\uC774',
-      "Something went wrong. Please try again.": '\uBB38\uC81C\uAC00 \uBC1C\uC0DD\uD588\uC2B5\uB2C8\uB2E4. \uB2E4\uC2DC \uC2DC\uB3C4\uD558\uC2ED\uC2DC\uC624.',
-      "Image Caption": '\uC774\uBBF8\uC9C0 \uCEA1\uC158',
-      "Advanced Edit": '\uACE0\uAE09 \uD3B8\uC9D1',
+    // Tables
+    "Insert Table": "\ud45c \uc0bd\uc785",
+    "Table Header": "\ud45c \ud5e4\ub354",
+    "Remove Table": "\ud45c \uc81c\uac70",
+    "Table Style": "\ud45c \uc2a4\ud0c0\uc77c",
+    "Horizontal Align": "\uc218\ud3c9 \uc815\ub82c",
+    "Row": "\ud589",
+    "Insert row above": "\uc55e\uc5d0 \ud589\uc744 \uc0bd\uc785",
+    "Insert row below": "\ub4a4\uc5d0 \ud589\uc744 \uc0bd\uc785",
+    "Delete row": "\ud589 \uc0ad\uc81c",
+    "Column": "\uc5f4",
+    "Insert column before": "\uc55e\uc5d0 \uc5f4\uc744 \uc0bd\uc785",
+    "Insert column after": "\ub4a4\uc5d0 \uc5f4\uc744 \uc0bd\uc785",
+    "Delete column": "\uc5f4 \uc0ad\uc81c",
+    "Cell": "\uc140",
+    "Merge cells": "\uc140 \ud569\uce58\uae30",
+    "Horizontal split": "\uc218\ud3c9 \ubd84\ud560",
+    "Vertical split": "\uc218\uc9c1 \ubd84\ud560",
+    "Cell Background": "\uc140 \ubc30\uacbd",
+    "Vertical Align": "\uc218\uc9c1 \uc815\ub82c",
+    "Top": "\uc704\ucabd \uc815\ub82c",
+    "Middle": "\uac00\uc6b4\ub370 \uc815\ub82c",
+    "Bottom": "\uc544\ub798\ucabd \uc815\ub82c",
+    "Align Top": "\uc704\ucabd\uc73c\ub85c \uc815\ub82c\ud569\ub2c8\ub2e4.",
+    "Align Middle": "\uac00\uc6b4\ub370\ub85c \uc815\ub82c\ud569\ub2c8\ub2e4.",
+    "Align Bottom": "\uc544\ub798\ucabd\uc73c\ub85c \uc815\ub82c\ud569\ub2c8\ub2e4.",
+    "Cell Style": "\uc140 \uc2a4\ud0c0\uc77c",
 
-      // Video
-      "Insert Video": '\uB3D9\uC601\uC0C1 \uC0BD\uC785',
-      "Embedded Code": '\uC784\uBCA0\uB514\uB4DC \uCF54\uB4DC',
-      "Paste in a video URL": '\uB3D9\uC601\uC0C1 URL\uC5D0 \uBD99\uC5EC \uB123\uAE30',
-      "Drop video": '\uB3D9\uC601\uC0C1\uC744 \uB4DC\uB798\uADF8&\uB4DC\uB86D',
-      "Your browser does not support HTML5 video.": '\uADC0\uD558\uC758 \uBE0C\uB77C\uC6B0\uC800\uB294 html5 video\uB97C \uC9C0\uC6D0\uD558\uC9C0 \uC54A\uC2B5\uB2C8\uB2E4.',
-      "Upload Video": '\uB3D9\uC601\uC0C1 \uC5C5\uB85C\uB4DC',
+    // Files
+    "Upload File": "\ud30c\uc77c \ucca8\ubd80",
+    "Drop file": "\ud30c\uc77c\uc744 \ub4dc\ub798\uadf8&\ub4dc\ub86d",
 
-      // Tables
-      "Insert Table": '\uD45C \uC0BD\uC785',
-      "Table Header": '\uD45C \uD5E4\uB354',
-      "Remove Table": '\uD45C \uC81C\uAC70',
-      "Table Style": '\uD45C \uC2A4\uD0C0\uC77C',
-      "Horizontal Align": '\uC218\uD3C9 \uC815\uB82C',
-      "Row": '\uD589',
-      "Insert row above": '\uC55E\uC5D0 \uD589\uC744 \uC0BD\uC785',
-      "Insert row below": '\uB4A4\uC5D0 \uD589\uC744 \uC0BD\uC785',
-      "Delete row": '\uD589 \uC0AD\uC81C',
-      "Column": '\uC5F4',
-      "Insert column before": '\uC55E\uC5D0 \uC5F4\uC744 \uC0BD\uC785',
-      "Insert column after": '\uB4A4\uC5D0 \uC5F4\uC744 \uC0BD\uC785',
-      "Delete column": '\uC5F4 \uC0AD\uC81C',
-      "Cell": '\uC140',
-      "Merge cells": '\uC140 \uD569\uCE58\uAE30',
-      "Horizontal split": '\uC218\uD3C9 \uBD84\uD560',
-      "Vertical split": '\uC218\uC9C1 \uBD84\uD560',
-      "Cell Background": '\uC140 \uBC30\uACBD',
-      "Vertical Align": '\uC218\uC9C1 \uC815\uB82C',
-      "Top": '\uC704\uCABD \uC815\uB82C',
-      "Middle": '\uAC00\uC6B4\uB370 \uC815\uB82C',
-      "Bottom": '\uC544\uB798\uCABD \uC815\uB82C',
-      "Align Top": '\uC704\uCABD\uC73C\uB85C \uC815\uB82C\uD569\uB2C8\uB2E4.',
-      "Align Middle": '\uAC00\uC6B4\uB370\uB85C \uC815\uB82C\uD569\uB2C8\uB2E4.',
-      "Align Bottom": '\uC544\uB798\uCABD\uC73C\uB85C \uC815\uB82C\uD569\uB2C8\uB2E4.',
-      "Cell Style": '\uC140 \uC2A4\uD0C0\uC77C',
+    // Emoticons
+    "Emoticons": "\uc774\ubaa8\ud2f0\ucf58",
+    "Grinning face": "\uc5bc\uad74 \uc6c3\uae30\ub9cc",
+    "Grinning face with smiling eyes": "\ubbf8\uc18c\ub294 \ub208\uc744 \uac00\uc9c4 \uc5bc\uad74 \uc6c3\uae30\ub9cc",
+    "Face with tears of joy": "\uae30\uc068\uc758 \ub208\ubb3c\ub85c \uc5bc\uad74",
+    "Smiling face with open mouth": "\uc624\ud508 \uc785\uc73c\ub85c \uc6c3\ub294 \uc5bc\uad74",
+    "Smiling face with open mouth and smiling eyes": "\uc624\ud508 \uc785\uc73c\ub85c \uc6c3\ub294 \uc5bc\uad74\uacfc \ub208\uc744 \ubbf8\uc18c",
+    "Smiling face with open mouth and cold sweat": "\uc785\uc744 \uc5f4\uace0 \uc2dd\uc740 \ub540\uacfc \ud568\uaed8 \uc6c3\ub294 \uc5bc\uad74",
+    "Smiling face with open mouth and tightly-closed eyes": "\uc624\ud508 \uc785\uacfc \ubc00\uc811\ud558\uac8c \ub2eb\ud78c \ub41c \ub208\uc744 \uac00\uc9c4 \uc6c3\ub294 \uc5bc\uad74",
+    "Smiling face with halo": "\ud6c4\uad11 \uc6c3\ub294 \uc5bc\uad74",
+    "Smiling face with horns": "\ubfd4 \uc6c3\ub294 \uc5bc\uad74",
+    "Winking face": "\uc5bc\uad74 \uc719\ud06c",
+    "Smiling face with smiling eyes": "\uc6c3\ub294 \ub208\uc73c\ub85c \uc6c3\ub294 \uc5bc\uad74",
+    "Face savoring delicious food": "\ub9db\uc788\ub294 \uc74c\uc2dd\uc744 \uc74c\ubbf8 \uc5bc\uad74",
+    "Relieved face": "\uc548\ub3c4 \uc5bc\uad74",
+    "Smiling face with heart-shaped eyes": "\ud558\ud2b8 \ubaa8\uc591\uc758 \ub208\uc73c\ub85c \uc6c3\ub294 \uc5bc\uad74",
+    "Smiling face with sunglasses": "\uc120\uae00\ub77c\uc2a4 \uc6c3\ub294 \uc5bc\uad74",
+    "Smirking face": "\ub3c8\uc744 \uc9c0\ubd88 \uc5bc\uad74",
+    "Neutral face": "\uc911\ub9bd \uc5bc\uad74",
+    "Expressionless face": "\ubb34\ud45c\uc815 \uc5bc\uad74",
+    "Unamused face": "\uc990\uac81\uac8c\ud558\uc9c0 \uc5bc\uad74",
+    "Face with cold sweat": "\uc2dd\uc740 \ub540\uacfc \uc5bc\uad74",
+    "Pensive face": "\uc7a0\uaca8\uc788\ub294 \uc5bc\uad74",
+    "Confused face": "\ud63c\ub780 \uc5bc\uad74",
+    "Confounded face": "\ub9dd\ud560 \uac83 \uc5bc\uad74",
+    "Kissing face": "\uc5bc\uad74\uc744 \ud0a4\uc2a4",
+    "Face throwing a kiss": "\ud0a4\uc2a4\ub97c \ub358\uc9c0\uace0 \uc5bc\uad74",
+    "Kissing face with smiling eyes": "\ubbf8\uc18c\ub294 \ub208\uc744 \uac00\uc9c4 \uc5bc\uad74\uc744 \ud0a4\uc2a4",
+    "Kissing face with closed eyes": "\ub2eb\ud78c \ub41c \ub208\uc744 \uac00\uc9c4 \uc5bc\uad74\uc744 \ud0a4\uc2a4",
+    "Face with stuck out tongue": "\ub0b4\ubc00 \ud600 \uc5bc\uad74",
+    "Face with stuck out tongue and winking eye": "\ub0b4\ubc00 \ud600\uc640 \uc719\ud06c \ub208\uacfc \uc5bc\uad74",
+    "Face with stuck out tongue and tightly-closed eyes": "\ubc16\uc73c\ub85c \ubd99\uc5b4 \ud600\uc640 \ubc00\uc811\ud558\uac8c \ub2eb\ud78c \ub41c \ub208\uc744 \uac00\uc9c4 \uc5bc\uad74",
+    "Disappointed face": "\uc2e4\ub9dd \uc5bc\uad74",
+    "Worried face": "\uac71\uc815 \uc5bc\uad74",
+    "Angry face": "\uc131\ub09c \uc5bc\uad74",
+    "Pouting face": "\uc5bc\uad74\uc744 \uc090",
+    "Crying face": "\uc5bc\uad74 \uc6b0\ub294",
+    "Persevering face": "\uc5bc\uad74\uc744 \uc778\ub0b4",
+    "Face with look of triumph": "\uc2b9\ub9ac\uc758 \ud45c\uc815\uc73c\ub85c \uc5bc\uad74",
+    "Disappointed but relieved face": "\uc2e4\ub9dd\ud558\uc9c0\ub9cc \uc5bc\uad74\uc744 \uc548\uc2ec",
+    "Frowning face with open mouth": "\uc624\ud508 \uc785\uc73c\ub85c \uc5bc\uad74\uc744 \ucc21\uadf8\ub9bc",
+    "Anguished face": "\uace0\ub1cc\uc758 \uc5bc\uad74",
+    "Fearful face": "\ubb34\uc11c\uc6b4 \uc5bc\uad74",
+    "Weary face": "\uc9c0\uce5c \uc5bc\uad74",
+    "Sleepy face": "\uc2ac\ub9ac\ud53c \uc5bc\uad74",
+    "Tired face": "\ud53c\uace4 \uc5bc\uad74",
+    "Grimacing face": "\uc5bc\uad74\uc744 \ucc21\uadf8\ub9b0",
+    "Loudly crying face": "\ud070 \uc18c\ub9ac\ub85c \uc5bc\uad74\uc744 \uc6b8\uace0",
+    "Face with open mouth": "\uc624\ud508 \uc785\uc73c\ub85c \uc5bc\uad74",
+    "Hushed face": "\uc870\uc6a9\ud55c \uc5bc\uad74",
+    "Face with open mouth and cold sweat": "\uc785\uc744 \uc5f4\uace0 \uc2dd\uc740 \ub540\uc73c\ub85c \uc5bc\uad74",
+    "Face screaming in fear": "\uacf5\ud3ec\uc5d0 \ube44\uba85 \uc5bc\uad74",
+    "Astonished face": "\ub180\ub77c \uc5bc\uad74",
+    "Flushed face": "\ud50c\ub7ec\uc2dc \uc5bc\uad74",
+    "Sleeping face": "\uc5bc\uad74 \uc7a0\uc790\ub294",
+    "Dizzy face": "\ub514\uc9c0 \uc5bc\uad74",
+    "Face without mouth": "\uc785\uc5c6\uc774 \uc5bc\uad74",
+    "Face with medical mask": "\uc758\ub8cc \ub9c8\uc2a4\ud06c\ub85c \uc5bc\uad74",
 
-      // Files
-      "Upload File": '\uD30C\uC77C \uCCA8\uBD80',
-      "Drop file": '\uD30C\uC77C\uC744 \uB4DC\uB798\uADF8&\uB4DC\uB86D',
+    // Line breaker
+    "Break": "\ub2e8\uc808",
 
-      // Emoticons
-      "Emoticons": '\uC774\uBAA8\uD2F0\uCF58',
-      "Grinning face": '\uC5BC\uAD74 \uC6C3\uAE30\uB9CC',
-      "Grinning face with smiling eyes": '\uBBF8\uC18C\uB294 \uB208\uC744 \uAC00\uC9C4 \uC5BC\uAD74 \uC6C3\uAE30\uB9CC',
-      "Face with tears of joy": '\uAE30\uC068\uC758 \uB208\uBB3C\uB85C \uC5BC\uAD74',
-      "Smiling face with open mouth": '\uC624\uD508 \uC785\uC73C\uB85C \uC6C3\uB294 \uC5BC\uAD74',
-      "Smiling face with open mouth and smiling eyes": '\uC624\uD508 \uC785\uC73C\uB85C \uC6C3\uB294 \uC5BC\uAD74\uACFC \uB208\uC744 \uBBF8\uC18C',
-      "Smiling face with open mouth and cold sweat": '\uC785\uC744 \uC5F4\uACE0 \uC2DD\uC740 \uB540\uACFC \uD568\uAED8 \uC6C3\uB294 \uC5BC\uAD74',
-      "Smiling face with open mouth and tightly-closed eyes": '\uC624\uD508 \uC785\uACFC \uBC00\uC811\uD558\uAC8C \uB2EB\uD78C \uB41C \uB208\uC744 \uAC00\uC9C4 \uC6C3\uB294 \uC5BC\uAD74',
-      "Smiling face with halo": '\uD6C4\uAD11 \uC6C3\uB294 \uC5BC\uAD74',
-      "Smiling face with horns": '\uBFD4 \uC6C3\uB294 \uC5BC\uAD74',
-      "Winking face": '\uC5BC\uAD74 \uC719\uD06C',
-      "Smiling face with smiling eyes": '\uC6C3\uB294 \uB208\uC73C\uB85C \uC6C3\uB294 \uC5BC\uAD74',
-      "Face savoring delicious food": '\uB9DB\uC788\uB294 \uC74C\uC2DD\uC744 \uC74C\uBBF8 \uC5BC\uAD74',
-      "Relieved face": '\uC548\uB3C4 \uC5BC\uAD74',
-      "Smiling face with heart-shaped eyes": '\uD558\uD2B8 \uBAA8\uC591\uC758 \uB208\uC73C\uB85C \uC6C3\uB294 \uC5BC\uAD74',
-      "Smiling face with sunglasses": '\uC120\uAE00\uB77C\uC2A4 \uC6C3\uB294 \uC5BC\uAD74',
-      "Smirking face": '\uB3C8\uC744 \uC9C0\uBD88 \uC5BC\uAD74',
-      "Neutral face": '\uC911\uB9BD \uC5BC\uAD74',
-      "Expressionless face": '\uBB34\uD45C\uC815 \uC5BC\uAD74',
-      "Unamused face": '\uC990\uAC81\uAC8C\uD558\uC9C0 \uC5BC\uAD74',
-      "Face with cold sweat": '\uC2DD\uC740 \uB540\uACFC \uC5BC\uAD74',
-      "Pensive face": '\uC7A0\uACA8\uC788\uB294 \uC5BC\uAD74',
-      "Confused face": '\uD63C\uB780 \uC5BC\uAD74',
-      "Confounded face": '\uB9DD\uD560 \uAC83 \uC5BC\uAD74',
-      "Kissing face": '\uC5BC\uAD74\uC744 \uD0A4\uC2A4',
-      "Face throwing a kiss": '\uD0A4\uC2A4\uB97C \uB358\uC9C0\uACE0 \uC5BC\uAD74',
-      "Kissing face with smiling eyes": '\uBBF8\uC18C\uB294 \uB208\uC744 \uAC00\uC9C4 \uC5BC\uAD74\uC744 \uD0A4\uC2A4',
-      "Kissing face with closed eyes": '\uB2EB\uD78C \uB41C \uB208\uC744 \uAC00\uC9C4 \uC5BC\uAD74\uC744 \uD0A4\uC2A4',
-      "Face with stuck out tongue": '\uB0B4\uBC00 \uD600 \uC5BC\uAD74',
-      "Face with stuck out tongue and winking eye": '\uB0B4\uBC00 \uD600\uC640 \uC719\uD06C \uB208\uACFC \uC5BC\uAD74',
-      "Face with stuck out tongue and tightly-closed eyes": '\uBC16\uC73C\uB85C \uBD99\uC5B4 \uD600\uC640 \uBC00\uC811\uD558\uAC8C \uB2EB\uD78C \uB41C \uB208\uC744 \uAC00\uC9C4 \uC5BC\uAD74',
-      "Disappointed face": '\uC2E4\uB9DD \uC5BC\uAD74',
-      "Worried face": '\uAC71\uC815 \uC5BC\uAD74',
-      "Angry face": '\uC131\uB09C \uC5BC\uAD74',
-      "Pouting face": '\uC5BC\uAD74\uC744 \uC090',
-      "Crying face": '\uC5BC\uAD74 \uC6B0\uB294',
-      "Persevering face": '\uC5BC\uAD74\uC744 \uC778\uB0B4',
-      "Face with look of triumph": '\uC2B9\uB9AC\uC758 \uD45C\uC815\uC73C\uB85C \uC5BC\uAD74',
-      "Disappointed but relieved face": '\uC2E4\uB9DD\uD558\uC9C0\uB9CC \uC5BC\uAD74\uC744 \uC548\uC2EC',
-      "Frowning face with open mouth": '\uC624\uD508 \uC785\uC73C\uB85C \uC5BC\uAD74\uC744 \uCC21\uADF8\uB9BC',
-      "Anguished face": '\uACE0\uB1CC\uC758 \uC5BC\uAD74',
-      "Fearful face": '\uBB34\uC11C\uC6B4 \uC5BC\uAD74',
-      "Weary face": '\uC9C0\uCE5C \uC5BC\uAD74',
-      "Sleepy face": '\uC2AC\uB9AC\uD53C \uC5BC\uAD74',
-      "Tired face": '\uD53C\uACE4 \uC5BC\uAD74',
-      "Grimacing face": '\uC5BC\uAD74\uC744 \uCC21\uADF8\uB9B0',
-      "Loudly crying face": '\uD070 \uC18C\uB9AC\uB85C \uC5BC\uAD74\uC744 \uC6B8\uACE0',
-      "Face with open mouth": '\uC624\uD508 \uC785\uC73C\uB85C \uC5BC\uAD74',
-      "Hushed face": '\uC870\uC6A9\uD55C \uC5BC\uAD74',
-      "Face with open mouth and cold sweat": '\uC785\uC744 \uC5F4\uACE0 \uC2DD\uC740 \uB540\uC73C\uB85C \uC5BC\uAD74',
-      "Face screaming in fear": '\uACF5\uD3EC\uC5D0 \uBE44\uBA85 \uC5BC\uAD74',
-      "Astonished face": '\uB180\uB77C \uC5BC\uAD74',
-      "Flushed face": '\uD50C\uB7EC\uC2DC \uC5BC\uAD74',
-      "Sleeping face": '\uC5BC\uAD74 \uC7A0\uC790\uB294',
-      "Dizzy face": '\uB514\uC9C0 \uC5BC\uAD74',
-      "Face without mouth": '\uC785\uC5C6\uC774 \uC5BC\uAD74',
-      "Face with medical mask": '\uC758\uB8CC \uB9C8\uC2A4\uD06C\uB85C \uC5BC\uAD74',
+    // Math
+    "Subscript": "\uc544\ub798 \ucca8\uc790",
+    "Superscript": "\uc704 \ucca8\uc790",
 
-      // Line breaker
-      "Break": '\uB2E8\uC808',
+    // Full screen
+    "Fullscreen": "\uc804\uccb4 \ud654\uba74",
 
-      // Math
-      "Subscript": '\uC544\uB798 \uCCA8\uC790',
-      "Superscript": '\uC704 \uCCA8\uC790',
+    // Horizontal line
+    "Insert Horizontal Line": "\uc218\ud3c9\uc120\uc744 \uc0bd\uc785",
 
-      // Full screen
-      "Fullscreen": '\uC804\uCCB4 \uD654\uBA74',
+    // Clear formatting
+    "Clear Formatting": "\uc11c\uc2dd \uc81c\uac70",
 
-      // Horizontal line
-      "Insert Horizontal Line": '\uC218\uD3C9\uC120\uC744 \uC0BD\uC785',
+    // Undo, redo
+    "Undo": "\uc2e4\ud589 \ucde8\uc18c",
+    "Redo": "\ub418\ub3cc\ub9ac\uae30",
 
-      // Clear formatting
-      "Clear Formatting": '\uC11C\uC2DD \uC81C\uAC70',
+    // Select all
+    "Select All": "\uc804\uccb4\uc120\ud0dd",
 
-      // Undo, redo
-      "Undo": '\uC2E4\uD589 \uCDE8\uC18C',
-      "Redo": '\uB418\uB3CC\uB9AC\uAE30',
+    // Code view
+    "Code View": "\ucf54\ub4dc\ubcf4\uae30",
 
-      // Select all
-      "Select All": '\uC804\uCCB4\uC120\uD0DD',
+    // Quote
+    "Quote": "\uc778\uc6a9",
+    "Increase": "\uc99d\uac00",
+    "Decrease": "\uac10\uc18c",
 
-      // Code view
-      "Code View": '\uCF54\uB4DC\uBCF4\uAE30',
+    // Quick Insert
+    "Quick Insert": "\ube60\ub978 \uc0bd\uc785",
 
-      // Quote
-      "Quote": '\uC778\uC6A9',
-      "Increase": '\uC99D\uAC00',
-      "Decrease": '\uAC10\uC18C',
+    // Spcial Characters
+    "Special Characters": "\ud2b9\uc218 \ubb38\uc790",
+    "Latin": "\ub77c\ud2f4\uc5b4",
+    "Greek": "\uadf8\ub9ac\uc2a4\uc5b4",
+    "Cyrillic": "\ud0a4\ub9b4 \ubb38\uc790",
+    "Punctuation": "\ubb38\uc7a5\ubd80\ud638",
+    "Currency": "\ud1b5\ud654",
+    "Arrows": "\ud654\uc0b4\ud45c",
+    "Math": "\uc218\ud559",
+    "Misc": "\uadf8 \uc678",
 
-      // Quick Insert
-      "Quick Insert": '\uBE60\uB978 \uC0BD\uC785',
+    // Print.
+    "Print": "\uc778\uc1c4",
 
-      // Spcial Characters
-      "Special Characters": '\uD2B9\uC218 \uBB38\uC790',
-      "Latin": '\uB77C\uD2F4\uC5B4',
-      "Greek": '\uADF8\uB9AC\uC2A4\uC5B4',
-      "Cyrillic": '\uD0A4\uB9B4 \uBB38\uC790',
-      "Punctuation": '\uBB38\uC7A5\uBD80\uD638',
-      "Currency": '\uD1B5\uD654',
-      "Arrows": '\uD654\uC0B4\uD45C',
-      "Math": '\uC218\uD559',
-      "Misc": '\uADF8 \uC678',
+    // Spell Checker.
+    "Spell Checker": "\ub9de\ucda4\ubc95 \uac80\uc0ac\uae30",
 
-      // Print.
-      "Print": '\uC778\uC1C4',
+    // Help
+    "Help": "\ub3c4\uc6c0\ub9d0",
+    "Shortcuts": "\ub2e8\ucd95\ud0a4",
+    "Inline Editor": "\uc778\ub77c\uc778 \uc5d0\ub514\ud130",
+    "Show the editor": "\uc5d0\ub514\ud130 \ubcf4\uae30",
+    "Common actions": "\uc77c\ubc18 \ub3d9\uc791",
+    "Copy": "\ubcf5\uc0ac\ud558\uae30",
+    "Cut": "\uc798\ub77c\ub0b4\uae30",
+    "Paste": "\ubd99\uc5ec\ub123\uae30",
+    "Basic Formatting": "\uae30\ubcf8 \uc11c\uc2dd",
+    "Increase quote level": "\uc778\uc6a9 \uc99d\uac00",
+    "Decrease quote level": "\uc778\uc6a9 \uac10\uc18c",
+    "Image / Video": "\uc774\ubbf8\uc9c0 / \ub3d9\uc601\uc0c1",
+    "Resize larger": "\ud06c\uae30\ub97c \ub354 \ud06c\uac8c \uc870\uc815",
+    "Resize smaller": "\ud06c\uae30\ub97c \ub354 \uc791\uac8c \uc870\uc815",
+    "Table": "\ud45c",
+    "Select table cell": "\ud45c \uc140 \uc120\ud0dd",
+    "Extend selection one cell": "\uc140\uc758 \uc120\ud0dd \ubc94\uc704\ub97c \ud655\uc7a5",
+    "Extend selection one row": "\ud589\uc758 \uc120\ud0dd \ubc94\uc704\ub97c \ud655\uc7a5",
+    "Navigation": "\ub124\ube44\uac8c\uc774\uc158",
+    "Focus popup / toolbar": "\ud31d\uc5c5 / \ud234\ubc14\ub97c \ud3ec\ucee4\uc2a4",
+    "Return focus to previous position": "\uc774\uc804 \uc704\uce58\ub85c \ud3ec\ucee4\uc2a4 \ub418\ub3cc\ub9ac\uae30",
 
-      // Spell Checker.
-      "Spell Checker": '\uB9DE\uCDA4\uBC95 \uAC80\uC0AC\uAE30',
+    // Embed.ly
+    "Embed URL": "\uc784\ubca0\ub4dc URL",
+    "Paste in a URL to embed": "\uc784\ubca0\ub4dc URL\uc5d0 \ubd99\uc5ec \ub123\uae30",
 
-      // Help
-      "Help": '\uB3C4\uC6C0\uB9D0',
-      "Shortcuts": '\uB2E8\uCD95\uD0A4',
-      "Inline Editor": '\uC778\uB77C\uC778 \uC5D0\uB514\uD130',
-      "Show the editor": '\uC5D0\uB514\uD130 \uBCF4\uAE30',
-      "Common actions": '\uC77C\uBC18 \uB3D9\uC791',
-      "Copy": '\uBCF5\uC0AC\uD558\uAE30',
-      "Cut": '\uC798\uB77C\uB0B4\uAE30',
-      "Paste": '\uBD99\uC5EC\uB123\uAE30',
-      "Basic Formatting": '\uAE30\uBCF8 \uC11C\uC2DD',
-      "Increase quote level": '\uC778\uC6A9 \uC99D\uAC00',
-      "Decrease quote level": '\uC778\uC6A9 \uAC10\uC18C',
-      "Image / Video": '\uC774\uBBF8\uC9C0 / \uB3D9\uC601\uC0C1',
-      "Resize larger": '\uD06C\uAE30\uB97C \uB354 \uD06C\uAC8C \uC870\uC815',
-      "Resize smaller": '\uD06C\uAE30\uB97C \uB354 \uC791\uAC8C \uC870\uC815',
-      "Table": '\uD45C',
-      "Select table cell": '\uD45C \uC140 \uC120\uD0DD',
-      "Extend selection one cell": '\uC140\uC758 \uC120\uD0DD \uBC94\uC704\uB97C \uD655\uC7A5',
-      "Extend selection one row": '\uD589\uC758 \uC120\uD0DD \uBC94\uC704\uB97C \uD655\uC7A5',
-      "Navigation": '\uB124\uBE44\uAC8C\uC774\uC158',
-      "Focus popup / toolbar": '\uD31D\uC5C5 / \uD234\uBC14\uB97C \uD3EC\uCEE4\uC2A4',
-      "Return focus to previous position": '\uC774\uC804 \uC704\uCE58\uB85C \uD3EC\uCEE4\uC2A4 \uB418\uB3CC\uB9AC\uAE30',
+    // Word Paste.
+    "The pasted content is coming from a Microsoft Word document. Do you want to keep the format or clean it up?": "\ubd99\uc5ec\ub123\uc740 \ubb38\uc11c\ub294 \ub9c8\uc774\ud06c\ub85c\uc18c\ud504\ud2b8 \uc6cc\ub4dc\uc5d0\uc11c \uac00\uc838\uc654\uc2b5\ub2c8\ub2e4. \ud3ec\ub9f7\uc744 \uc720\uc9c0\ud558\uac70\ub098 \uc815\ub9ac \ud558\uc2dc\uaca0\uc2b5\ub2c8\uae4c?",
+    "Keep": "\uc720\uc9c0",
+    "Clean": "\uc815\ub9ac",
+    "Word Paste Detected": "\uc6cc\ub4dc \ubd99\uc5ec \ub123\uae30\uac00 \uac80\ucd9c \ub418\uc5c8\uc2b5\ub2c8\ub2e4."
+  },
+  direction: "ltr"
+};
 
-      // Embed.ly
-      "Embed URL": '\uC784\uBCA0\uB4DC URL',
-      "Paste in a URL to embed": '\uC784\uBCA0\uB4DC URL\uC5D0 \uBD99\uC5EC \uB123\uAE30',
-
-      // Word Paste.
-      "The pasted content is coming from a Microsoft Word document. Do you want to keep the format or clean it up?": '\uBD99\uC5EC\uB123\uC740 \uBB38\uC11C\uB294 \uB9C8\uC774\uD06C\uB85C\uC18C\uD504\uD2B8 \uC6CC\uB4DC\uC5D0\uC11C \uAC00\uC838\uC654\uC2B5\uB2C8\uB2E4. \uD3EC\uB9F7\uC744 \uC720\uC9C0\uD558\uAC70\uB098 \uC815\uB9AC \uD558\uC2DC\uACA0\uC2B5\uB2C8\uAE4C?',
-      "Keep": '\uC720\uC9C0',
-      "Clean": '\uC815\uB9AC',
-      "Word Paste Detected": '\uC6CC\uB4DC \uBD99\uC5EC \uB123\uAE30\uAC00 \uAC80\uCD9C \uB418\uC5C8\uC2B5\uB2C8\uB2E4.'
-    },
-    direction: "ltr"
-  };
-
-})));
-//# sourceMappingURL=ko.js.map
+}));

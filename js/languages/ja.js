@@ -1,302 +1,318 @@
 /*!
- * froala_editor v2.8.4 (https://www.froala.com/wysiwyg-editor)
+ * froala_editor v2.8.2 (https://www.froala.com/wysiwyg-editor)
  * License https://froala.com/wysiwyg-editor/terms/
  * Copyright 2014-2018 Froala Labs
  */
 
-(function (global, factory) {
-  typeof exports === 'object' && typeof module !== 'undefined' ? factory(require('jquery')) :
-  typeof define === 'function' && define.amd ? define(['jquery'], factory) :
-  (factory(global.jQuery));
-}(this, (function ($) { 'use strict';
+(function (factory) {
+    if (typeof define === 'function' && define.amd) {
+        // AMD. Register as an anonymous module.
+        define(['jquery'], factory);
+    } else if (typeof module === 'object' && module.exports) {
+        // Node/CommonJS
+        module.exports = function( root, jQuery ) {
+            if ( jQuery === undefined ) {
+                // require('jQuery') returns a factory that requires window to
+                // build a jQuery instance, we normalize how we use modules
+                // that require this pattern but the window provided is a noop
+                // if it's defined (how jquery works)
+                if ( typeof window !== 'undefined' ) {
+                    jQuery = require('jquery');
+                }
+                else {
+                    jQuery = require('jquery')(root);
+                }
+            }
+            return factory(jQuery);
+        };
+    } else {
+        // Browser globals
+        factory(window.jQuery);
+    }
+}(function ($) {
+/**
+ * Japanese
+ */
 
-  $ = $ && $.hasOwnProperty('default') ? $['default'] : $;
+$.FE.LANGUAGE['ja'] = {
+  translation: {
+    // Place holder
+    "Type something": "\u3053\u3053\u306b\u5165\u529b\u3057\u307e\u3059",
 
-  /**
-   * Japanese
-   */
-  var FE = $.FE;
+    // Basic formatting
+    "Bold": "\u592a\u5b57",
+    "Italic": "\u659c\u4f53",
+    "Underline": "\u4e0b\u7dda",
+    "Strikethrough": "\u53d6\u308a\u6d88\u3057\u7dda",
 
-  FE.LANGUAGE['ja'] = {
-    translation: {
-      // Place holder
-      "Type something": '\u3053\u3053\u306B\u5165\u529B\u3057\u307E\u3059',
+    // Main buttons
+    "Insert": "\u633f\u5165",
+    "Delete": "\u524a\u9664",
+    "Cancel": "\u30ad\u30e3\u30f3\u30bb\u30eb",
+    "OK": "OK",
+    "Back": "\u623b\u308b",
+    "Remove": "\u524a\u9664",
+    "More": "\u3082\u3063\u3068",
+    "Update": "\u66f4\u65b0",
+    "Style": "\u30b9\u30bf\u30a4\u30eb",
 
-      // Basic formatting
-      "Bold": '\u592A\u5B57',
-      "Italic": '\u659C\u4F53',
-      "Underline": '\u4E0B\u7DDA',
-      "Strikethrough": '\u53D6\u308A\u6D88\u3057\u7DDA',
+    // Font
+    "Font Family": "\u30d5\u30a9\u30f3\u30c8",
+    "Font Size": "\u30d5\u30a9\u30f3\u30c8\u30b5\u30a4\u30ba",
 
-      // Main buttons
-      "Insert": '\u633F\u5165',
-      "Delete": '\u524A\u9664',
-      "Cancel": '\u30AD\u30E3\u30F3\u30BB\u30EB',
-      "OK": "OK",
-      "Back": '\u623B\u308B',
-      "Remove": '\u524A\u9664',
-      "More": '\u3082\u3063\u3068',
-      "Update": '\u66F4\u65B0',
-      "Style": '\u30B9\u30BF\u30A4\u30EB',
+    // Colors
+    "Colors": "\u8272",
+    "Background": "\u80cc\u666f",
+    "Text": "\u30c6\u30ad\u30b9\u30c8",
+    "HEX Color": "\u30d8\u30ad\u30b5\u306e\u8272",
 
-      // Font
-      "Font Family": '\u30D5\u30A9\u30F3\u30C8',
-      "Font Size": '\u30D5\u30A9\u30F3\u30C8\u30B5\u30A4\u30BA',
+    // Paragraphs
+    "Paragraph Format": "\u6bb5\u843d\u306e\u66f8\u5f0f",
+    "Normal": "\u6a19\u6e96",
+    "Code": "\u30b3\u30fc\u30c9",
+    "Heading 1": "\u30d8\u30c3\u30c0\u30fc 1",
+    "Heading 2": "\u30d8\u30c3\u30c0\u30fc 2",
+    "Heading 3": "\u30d8\u30c3\u30c0\u30fc 3",
+    "Heading 4": "\u30d8\u30c3\u30c0\u30fc 4",
 
-      // Colors
-      "Colors": '\u8272',
-      "Background": '\u80CC\u666F',
-      "Text": '\u30C6\u30AD\u30B9\u30C8',
-      "HEX Color": '\u30D8\u30AD\u30B5\u306E\u8272',
+    // Style
+    "Paragraph Style": "\u6bb5\u843d\u30b9\u30bf\u30a4\u30eb",
+    "Inline Style": "\u30a4\u30f3\u30e9\u30a4\u30f3\u30b9\u30bf\u30a4\u30eb",
 
-      // Paragraphs
-      "Paragraph Format": '\u6BB5\u843D\u306E\u66F8\u5F0F',
-      "Normal": '\u6A19\u6E96',
-      "Code": '\u30B3\u30FC\u30C9',
-      "Heading 1": '\u30D8\u30C3\u30C0\u30FC 1',
-      "Heading 2": '\u30D8\u30C3\u30C0\u30FC 2',
-      "Heading 3": '\u30D8\u30C3\u30C0\u30FC 3',
-      "Heading 4": '\u30D8\u30C3\u30C0\u30FC 4',
+    // Alignment
+    "Align": "\u914d\u7f6e",
+    "Align Left": "\u5de6\u63c3\u3048",
+    "Align Center": "\u4e2d\u592e\u63c3\u3048",
+    "Align Right": "\u53f3\u63c3\u3048",
+    "Align Justify": "\u4e21\u7aef\u63c3\u3048",
+    "None": "\u306a\u3057",
 
-      // Style
-      "Paragraph Style": '\u6BB5\u843D\u30B9\u30BF\u30A4\u30EB',
-      "Inline Style": '\u30A4\u30F3\u30E9\u30A4\u30F3\u30B9\u30BF\u30A4\u30EB',
+    // Lists
+    "Ordered List": "\u6bb5\u843d\u756a\u53f7",
+    "Unordered List": "\u7b87\u6761\u66f8\u304d",
 
-      // Alignment
-      "Align": '\u914D\u7F6E',
-      "Align Left": '\u5DE6\u63C3\u3048',
-      "Align Center": '\u4E2D\u592E\u63C3\u3048',
-      "Align Right": '\u53F3\u63C3\u3048',
-      "Align Justify": '\u4E21\u7AEF\u63C3\u3048',
-      "None": '\u306A\u3057',
+    // Indent
+    "Decrease Indent": "\u30a4\u30f3\u30c7\u30f3\u30c8\u3092\u6e1b\u3089\u3059",
+    "Increase Indent": "\u30a4\u30f3\u30c7\u30f3\u30c8\u3092\u5897\u3084\u3059",
 
-      // Lists
-      "Ordered List": '\u6BB5\u843D\u756A\u53F7',
-      "Unordered List": '\u7B87\u6761\u66F8\u304D',
+    // Links
+    "Insert Link": "\u30ea\u30f3\u30af\u306e\u633f\u5165",
+    "Open in new tab": "\u65b0\u3057\u3044\u30bf\u30d6\u3067\u958b\u304f",
+    "Open Link": "\u30ea\u30f3\u30af\u3092\u958b\u304f",
+    "Edit Link": "\u30ea\u30f3\u30af\u306e\u7de8\u96c6",
+    "Unlink": "\u30ea\u30f3\u30af\u306e\u524a\u9664",
+    "Choose Link": "\u30ea\u30f3\u30af\u3092\u9078\u629e",
 
-      // Indent
-      "Decrease Indent": '\u30A4\u30F3\u30C7\u30F3\u30C8\u3092\u6E1B\u3089\u3059',
-      "Increase Indent": '\u30A4\u30F3\u30C7\u30F3\u30C8\u3092\u5897\u3084\u3059',
+    // Images
+    "Insert Image": "\u753b\u50cf\u306e\u633f\u5165",
+    "Upload Image": "\u753b\u50cf\u3092\u30a2\u30c3\u30d7\u30ed\u30fc\u30c9",
+    "By URL": "\u753b\u50cf\u306eURL\u3092\u5165\u529b",
+    "Browse": "\u53c2\u7167",
+    "Drop image": "\u753b\u50cf\u3092\u30c9\u30e9\u30c3\u30b0&\u30c9\u30ed\u30c3\u30d7",
+    "or click": "\u307e\u305f\u306f\u30af\u30ea\u30c3\u30af",
+    "Manage Images": "\u753b\u50cf\u306e\u7ba1\u7406",
+    "Loading": "\u8aad\u307f\u8fbc\u307f\u4e2d",
+    "Deleting": "\u524a\u9664",
+    "Tags": "\u30bf\u30b0",
+    "Are you sure? Image will be deleted.": "\u672c\u5f53\u306b\u524a\u9664\u3057\u307e\u3059\u304b\uff1f",
+    "Replace": "\u7f6e\u63db",
+    "Uploading": "\u30a2\u30c3\u30d7\u30ed\u30fc\u30c9\u4e2d",
+    "Loading image": "\u753b\u50cf\u8aad\u307f\u8fbc\u307f\u4e2d",
+    "Display": "\u8868\u793a",
+    "Inline": "\u30a4\u30f3\u30e9\u30a4\u30f3",
+    "Break Text": "\u30c6\u30ad\u30b9\u30c8\u306e\u6539\u884c",
+    "Alternate Text": "\u4ee3\u66ff\u30c6\u30ad\u30b9\u30c8",
+    "Change Size": "\u30b5\u30a4\u30ba\u5909\u66f4",
+    "Width": "\u5e45",
+    "Height": "\u9ad8\u3055",
+    "Something went wrong. Please try again.": "\u554f\u984c\u304c\u767a\u751f\u3057\u307e\u3057\u305f\u3002\u3082\u3046\u4e00\u5ea6\u3084\u308a\u76f4\u3057\u3066\u304f\u3060\u3055\u3044\u3002",
+    "Image Caption": "\u753b\u50cf\u30ad\u30e3\u30d7\u30b7\u30e7\u30f3",
+    "Advanced Edit": "\u9ad8\u5ea6\u306a\u7de8\u96c6",
 
-      // Links
-      "Insert Link": '\u30EA\u30F3\u30AF\u306E\u633F\u5165',
-      "Open in new tab": '\u65B0\u3057\u3044\u30BF\u30D6\u3067\u958B\u304F',
-      "Open Link": '\u30EA\u30F3\u30AF\u3092\u958B\u304F',
-      "Edit Link": '\u30EA\u30F3\u30AF\u306E\u7DE8\u96C6',
-      "Unlink": '\u30EA\u30F3\u30AF\u306E\u524A\u9664',
-      "Choose Link": '\u30EA\u30F3\u30AF\u3092\u9078\u629E',
+    // Video
+    "Insert Video": "\u52d5\u753b\u306e\u633f\u5165",
+    "Embedded Code": "\u57cb\u3081\u8fbc\u307f\u30b3\u30fc\u30c9",
+    "Paste in a video URL": "\u52d5\u753bURL\u306b\u8cbc\u308a\u4ed8\u3051\u308b",
+    "Drop video": "\u52d5\u753b\u3092\u30c9\u30e9\u30c3\u30b0&\u30c9\u30ed\u30c3\u30d7",
+    "Your browser does not support HTML5 video.": "\u3042\u306a\u305f\u306e\u30d6\u30e9\u30a6\u30b6\u306fhtml5 video\u3092\u30b5\u30dd\u30fc\u30c8\u3057\u3066\u3044\u307e\u305b\u3093\u3002",
+    "Upload Video": "\u52d5\u753b\u306e\u30a2\u30c3\u30d7\u30ed\u30fc\u30c9",
 
-      // Images
-      "Insert Image": '\u753B\u50CF\u306E\u633F\u5165',
-      "Upload Image": '\u753B\u50CF\u3092\u30A2\u30C3\u30D7\u30ED\u30FC\u30C9',
-      "By URL": '\u753B\u50CF\u306EURL\u3092\u5165\u529B',
-      "Browse": '\u53C2\u7167',
-      "Drop image": '\u753B\u50CF\u3092\u30C9\u30E9\u30C3\u30B0&\u30C9\u30ED\u30C3\u30D7',
-      "or click": '\u307E\u305F\u306F\u30AF\u30EA\u30C3\u30AF',
-      "Manage Images": '\u753B\u50CF\u306E\u7BA1\u7406',
-      "Loading": '\u8AAD\u307F\u8FBC\u307F\u4E2D',
-      "Deleting": '\u524A\u9664',
-      "Tags": '\u30BF\u30B0',
-      "Are you sure? Image will be deleted.": '\u672C\u5F53\u306B\u524A\u9664\u3057\u307E\u3059\u304B\uFF1F',
-      "Replace": '\u7F6E\u63DB',
-      "Uploading": '\u30A2\u30C3\u30D7\u30ED\u30FC\u30C9\u4E2D',
-      "Loading image": '\u753B\u50CF\u8AAD\u307F\u8FBC\u307F\u4E2D',
-      "Display": '\u8868\u793A',
-      "Inline": '\u30A4\u30F3\u30E9\u30A4\u30F3',
-      "Break Text": '\u30C6\u30AD\u30B9\u30C8\u306E\u6539\u884C',
-      "Alternative Text": '\u4EE3\u66FF\u30C6\u30AD\u30B9\u30C8',
-      "Change Size": '\u30B5\u30A4\u30BA\u5909\u66F4',
-      "Width": '\u5E45',
-      "Height": '\u9AD8\u3055',
-      "Something went wrong. Please try again.": '\u554F\u984C\u304C\u767A\u751F\u3057\u307E\u3057\u305F\u3002\u3082\u3046\u4E00\u5EA6\u3084\u308A\u76F4\u3057\u3066\u304F\u3060\u3055\u3044\u3002',
-      "Image Caption": '\u753B\u50CF\u30AD\u30E3\u30D7\u30B7\u30E7\u30F3',
-      "Advanced Edit": '\u9AD8\u5EA6\u306A\u7DE8\u96C6',
+    // Tables
+    "Insert Table": "\u8868\u306e\u633f\u5165",
+    "Table Header": "\u8868\u306e\u30d8\u30c3\u30c0\u30fc",
+    "Remove Table": "\u8868\u306e\u524a\u9664",
+    "Table Style": "\u8868\u306e\u30b9\u30bf\u30a4\u30eb",
+    "Horizontal Align": "\u6a2a\u4f4d\u7f6e",
+    "Row": "\u884c",
+    "Insert row above": "\u4e0a\u306b\u884c\u3092\u633f\u5165",
+    "Insert row below": "\u4e0b\u306b\u884c\u3092\u633f\u5165",
+    "Delete row": "\u884c\u306e\u524a\u9664",
+    "Column": "\u5217",
+    "Insert column before": "\u5de6\u306b\u5217\u3092\u633f\u5165",
+    "Insert column after": "\u53f3\u306b\u5217\u3092\u633f\u5165",
+    "Delete column": "\u5217\u306e\u524a\u9664",
+    "Cell": "\u30bb\u30eb",
+    "Merge cells": "\u30bb\u30eb\u306e\u7d50\u5408",
+    "Horizontal split": "\u6a2a\u5206\u5272",
+    "Vertical split": "\u7e26\u5206\u5272",
+    "Cell Background": "\u30bb\u30eb\u306e\u80cc\u666f",
+    "Vertical Align": "\u7e26\u4f4d\u7f6e",
+    "Top": "\u4e0a\u63c3\u3048",
+    "Middle": "\u4e2d\u592e\u63c3\u3048",
+    "Bottom": "\u4e0b\u63c3\u3048",
+    "Align Top": "\u4e0a\u306b\u63c3\u3048\u307e\u3059",
+    "Align Middle": "\u4e2d\u592e\u306b\u63c3\u3048\u307e\u3059",
+    "Align Bottom": "\u4e0b\u306b\u63c3\u3048\u307e\u3059",
+    "Cell Style": "\u30bb\u30eb\u30b9\u30bf\u30a4\u30eb",
 
-      // Video
-      "Insert Video": '\u52D5\u753B\u306E\u633F\u5165',
-      "Embedded Code": '\u57CB\u3081\u8FBC\u307F\u30B3\u30FC\u30C9',
-      "Paste in a video URL": '\u52D5\u753BURL\u306B\u8CBC\u308A\u4ED8\u3051\u308B',
-      "Drop video": '\u52D5\u753B\u3092\u30C9\u30E9\u30C3\u30B0&\u30C9\u30ED\u30C3\u30D7',
-      "Your browser does not support HTML5 video.": '\u3042\u306A\u305F\u306E\u30D6\u30E9\u30A6\u30B6\u306Fhtml5 video\u3092\u30B5\u30DD\u30FC\u30C8\u3057\u3066\u3044\u307E\u305B\u3093\u3002',
-      "Upload Video": '\u52D5\u753B\u306E\u30A2\u30C3\u30D7\u30ED\u30FC\u30C9',
+    // Files
+    "Upload File": "\u30d5\u30a1\u30a4\u30eb\u306e\u30a2\u30c3\u30d7\u30ed\u30fc\u30c9",
+    "Drop file": "\u30d5\u30a1\u30a4\u30eb\u3092\u30c9\u30e9\u30c3\u30b0&\u30c9\u30ed\u30c3\u30d7",
 
-      // Tables
-      "Insert Table": '\u8868\u306E\u633F\u5165',
-      "Table Header": '\u8868\u306E\u30D8\u30C3\u30C0\u30FC',
-      "Remove Table": '\u8868\u306E\u524A\u9664',
-      "Table Style": '\u8868\u306E\u30B9\u30BF\u30A4\u30EB',
-      "Horizontal Align": '\u6A2A\u4F4D\u7F6E',
-      "Row": '\u884C',
-      "Insert row above": '\u4E0A\u306B\u884C\u3092\u633F\u5165',
-      "Insert row below": '\u4E0B\u306B\u884C\u3092\u633F\u5165',
-      "Delete row": '\u884C\u306E\u524A\u9664',
-      "Column": '\u5217',
-      "Insert column before": '\u5DE6\u306B\u5217\u3092\u633F\u5165',
-      "Insert column after": '\u53F3\u306B\u5217\u3092\u633F\u5165',
-      "Delete column": '\u5217\u306E\u524A\u9664',
-      "Cell": '\u30BB\u30EB',
-      "Merge cells": '\u30BB\u30EB\u306E\u7D50\u5408',
-      "Horizontal split": '\u6A2A\u5206\u5272',
-      "Vertical split": '\u7E26\u5206\u5272',
-      "Cell Background": '\u30BB\u30EB\u306E\u80CC\u666F',
-      "Vertical Align": '\u7E26\u4F4D\u7F6E',
-      "Top": '\u4E0A\u63C3\u3048',
-      "Middle": '\u4E2D\u592E\u63C3\u3048',
-      "Bottom": '\u4E0B\u63C3\u3048',
-      "Align Top": '\u4E0A\u306B\u63C3\u3048\u307E\u3059',
-      "Align Middle": '\u4E2D\u592E\u306B\u63C3\u3048\u307E\u3059',
-      "Align Bottom": '\u4E0B\u306B\u63C3\u3048\u307E\u3059',
-      "Cell Style": '\u30BB\u30EB\u30B9\u30BF\u30A4\u30EB',
+    // Emoticons
+    "Emoticons": "\u7d75\u6587\u5b57",
+    "Grinning face": "\u30cb\u30f3\u30de\u30ea\u9854",
+    "Grinning face with smiling eyes": "\u30cb\u30f3\u30de\u30ea\u9854(\u7b11\u3063\u3066\u3044\u308b\u76ee)",
+    "Face with tears of joy": "\u5b09\u3057\u6ce3\u304d\u3059\u308b\u9854",
+    "Smiling face with open mouth": "\u7b11\u9854(\u5e83\u3052\u305f\u53e3)",
+    "Smiling face with open mouth and smiling eyes": "\u7b11\u9854(\u5e83\u3052\u305f\u53e3\u3001\u7b11\u3063\u3066\u3044\u308b\u76ee)",
+    "Smiling face with open mouth and cold sweat": "\u7b11\u9854(\u5e83\u3052\u305f\u53e3\u3001\u51b7\u3084\u6c57)",
+    "Smiling face with open mouth and tightly-closed eyes": "\u7b11\u9854(\u5e83\u3052\u305f\u53e3\u3001\u3057\u3063\u304b\u308a\u9589\u3058\u305f\u76ee)",
+    "Smiling face with halo": "\u5929\u4f7f\u306e\u8f2a\u304c\u304b\u304b\u3063\u3066\u3044\u308b\u7b11\u9854",
+    "Smiling face with horns": "\u89d2\u306e\u3042\u308b\u7b11\u9854",
+    "Winking face": "\u30a6\u30a3\u30f3\u30af\u3057\u305f\u9854",
+    "Smiling face with smiling eyes": "\u7b11\u9854(\u7b11\u3063\u3066\u3044\u308b\u76ee)",
+    "Face savoring delicious food": "\u304a\u3044\u3057\u3044\u3082\u306e\u3092\u98df\u3079\u305f\u9854",
+    "Relieved face": "\u5b89\u5fc3\u3057\u305f\u9854",
+    "Smiling face with heart-shaped eyes": "\u76ee\u304c\u30cf\u30fc\u30c8\u306e\u7b11\u9854",
+    "Smiling face with sunglasses": "\u30b5\u30f3\u30b0\u30e9\u30b9\u3092\u304b\u3051\u305f\u7b11\u9854",
+    "Smirking face": "\u4f5c\u308a\u7b11\u3044",
+    "Neutral face": "\u7121\u8868\u60c5\u306e\u9854",
+    "Expressionless face": "\u7121\u8868\u60c5\u306a\u9854",
+    "Unamused face": "\u3064\u307e\u3089\u306a\u3044\u9854",
+    "Face with cold sweat": "\u51b7\u3084\u6c57\u3092\u304b\u3044\u305f\u9854",
+    "Pensive face": "\u8003\u3048\u4e2d\u306e\u9854",
+    "Confused face": "\u5c11\u3057\u3057\u3087\u3093\u307c\u308a\u3057\u305f\u9854",
+    "Confounded face": "\u56f0\u308a\u679c\u3066\u305f\u9854",
+    "Kissing face": "\u30ad\u30b9\u3059\u308b\u9854",
+    "Face throwing a kiss": "\u6295\u3052\u30ad\u30c3\u30b9\u3059\u308b\u9854",
+    "Kissing face with smiling eyes": "\u7b11\u3044\u306a\u304c\u3089\u30ad\u30b9\u3059\u308b\u9854",
+    "Kissing face with closed eyes": "\u76ee\u3092\u9589\u3058\u3066\u30ad\u30b9\u3059\u308b\u9854",
+    "Face with stuck out tongue": "\u304b\u3089\u304b\u3063\u305f\u9854(\u3042\u3063\u304b\u3093\u3079\u3048)",
+    "Face with stuck out tongue and winking eye": "\u30a6\u30a3\u30f3\u30af\u3057\u3066\u820c\u3092\u51fa\u3057\u305f\u9854",
+    "Face with stuck out tongue and tightly-closed eyes": "\u76ee\u3092\u9589\u3058\u3066\u820c\u3092\u51fa\u3057\u305f\u9854",
+    "Disappointed face": "\u843d\u3061\u8fbc\u3093\u3060\u9854",
+    "Worried face": "\u4e0d\u5b89\u306a\u9854",
+    "Angry face": "\u6012\u3063\u305f\u9854",
+    "Pouting face": "\u3075\u304f\u308c\u9854",
+    "Crying face": "\u6ce3\u3044\u3066\u3044\u308b\u9854",
+    "Persevering face": "\u5931\u6557\u9854",
+    "Face with look of triumph": "\u52dd\u3061\u307b\u3053\u3063\u305f\u9854",
+    "Disappointed but relieved face": "\u5b89\u5835\u3057\u305f\u9854",
+    "Frowning face with open mouth": "\u3044\u3084\u306a\u9854(\u958b\u3051\u305f\u53e3)",
+    "Anguished face": "\u3052\u3093\u306a\u308a\u3057\u305f\u9854",
+    "Fearful face": "\u9752\u3056\u3081\u305f\u9854",
+    "Weary face": "\u75b2\u308c\u305f\u9854",
+    "Sleepy face": "\u7720\u3044\u9854",
+    "Tired face": "\u3057\u3093\u3069\u3044\u9854",
+    "Grimacing face": "\u3061\u3087\u3063\u3068\u4e0d\u5feb\u306a\u9854",
+    "Loudly crying face": "\u5927\u6ce3\u304d\u3057\u3066\u3044\u308b\u9854",
+    "Face with open mouth": "\u53e3\u3092\u958b\u3051\u305f\u9854",
+    "Hushed face": "\u9ed9\u3063\u305f\u9854",
+    "Face with open mouth and cold sweat": "\u53e3\u3092\u958b\u3051\u305f\u9854(\u51b7\u3084\u6c57)",
+    "Face screaming in fear": "\u6050\u6016\u306e\u53eb\u3073\u9854",
+    "Astonished face": "\u9a5a\u3044\u305f\u9854",
+    "Flushed face": "\u71b1\u3063\u307d\u3044\u9854",
+    "Sleeping face": "\u5bdd\u9854",
+    "Dizzy face": "\u307e\u3044\u3063\u305f\u9854",
+    "Face without mouth": "\u53e3\u306e\u306a\u3044\u9854",
+    "Face with medical mask": "\u30de\u30b9\u30af\u3057\u305f\u9854",
 
-      // Files
-      "Upload File": '\u30D5\u30A1\u30A4\u30EB\u306E\u30A2\u30C3\u30D7\u30ED\u30FC\u30C9',
-      "Drop file": '\u30D5\u30A1\u30A4\u30EB\u3092\u30C9\u30E9\u30C3\u30B0&\u30C9\u30ED\u30C3\u30D7',
+    // Line breaker
+    "Break": "\u6539\u884c",
 
-      // Emoticons
-      "Emoticons": '\u7D75\u6587\u5B57',
-      "Grinning face": '\u30CB\u30F3\u30DE\u30EA\u9854',
-      "Grinning face with smiling eyes": '\u30CB\u30F3\u30DE\u30EA\u9854(\u7B11\u3063\u3066\u3044\u308B\u76EE)',
-      "Face with tears of joy": '\u5B09\u3057\u6CE3\u304D\u3059\u308B\u9854',
-      "Smiling face with open mouth": '\u7B11\u9854(\u5E83\u3052\u305F\u53E3)',
-      "Smiling face with open mouth and smiling eyes": '\u7B11\u9854(\u5E83\u3052\u305F\u53E3\u3001\u7B11\u3063\u3066\u3044\u308B\u76EE)',
-      "Smiling face with open mouth and cold sweat": '\u7B11\u9854(\u5E83\u3052\u305F\u53E3\u3001\u51B7\u3084\u6C57)',
-      "Smiling face with open mouth and tightly-closed eyes": '\u7B11\u9854(\u5E83\u3052\u305F\u53E3\u3001\u3057\u3063\u304B\u308A\u9589\u3058\u305F\u76EE)',
-      "Smiling face with halo": '\u5929\u4F7F\u306E\u8F2A\u304C\u304B\u304B\u3063\u3066\u3044\u308B\u7B11\u9854',
-      "Smiling face with horns": '\u89D2\u306E\u3042\u308B\u7B11\u9854',
-      "Winking face": '\u30A6\u30A3\u30F3\u30AF\u3057\u305F\u9854',
-      "Smiling face with smiling eyes": '\u7B11\u9854(\u7B11\u3063\u3066\u3044\u308B\u76EE)',
-      "Face savoring delicious food": '\u304A\u3044\u3057\u3044\u3082\u306E\u3092\u98DF\u3079\u305F\u9854',
-      "Relieved face": '\u5B89\u5FC3\u3057\u305F\u9854',
-      "Smiling face with heart-shaped eyes": '\u76EE\u304C\u30CF\u30FC\u30C8\u306E\u7B11\u9854',
-      "Smiling face with sunglasses": '\u30B5\u30F3\u30B0\u30E9\u30B9\u3092\u304B\u3051\u305F\u7B11\u9854',
-      "Smirking face": '\u4F5C\u308A\u7B11\u3044',
-      "Neutral face": '\u7121\u8868\u60C5\u306E\u9854',
-      "Expressionless face": '\u7121\u8868\u60C5\u306A\u9854',
-      "Unamused face": '\u3064\u307E\u3089\u306A\u3044\u9854',
-      "Face with cold sweat": '\u51B7\u3084\u6C57\u3092\u304B\u3044\u305F\u9854',
-      "Pensive face": '\u8003\u3048\u4E2D\u306E\u9854',
-      "Confused face": '\u5C11\u3057\u3057\u3087\u3093\u307C\u308A\u3057\u305F\u9854',
-      "Confounded face": '\u56F0\u308A\u679C\u3066\u305F\u9854',
-      "Kissing face": '\u30AD\u30B9\u3059\u308B\u9854',
-      "Face throwing a kiss": '\u6295\u3052\u30AD\u30C3\u30B9\u3059\u308B\u9854',
-      "Kissing face with smiling eyes": '\u7B11\u3044\u306A\u304C\u3089\u30AD\u30B9\u3059\u308B\u9854',
-      "Kissing face with closed eyes": '\u76EE\u3092\u9589\u3058\u3066\u30AD\u30B9\u3059\u308B\u9854',
-      "Face with stuck out tongue": '\u304B\u3089\u304B\u3063\u305F\u9854(\u3042\u3063\u304B\u3093\u3079\u3048)',
-      "Face with stuck out tongue and winking eye": '\u30A6\u30A3\u30F3\u30AF\u3057\u3066\u820C\u3092\u51FA\u3057\u305F\u9854',
-      "Face with stuck out tongue and tightly-closed eyes": '\u76EE\u3092\u9589\u3058\u3066\u820C\u3092\u51FA\u3057\u305F\u9854',
-      "Disappointed face": '\u843D\u3061\u8FBC\u3093\u3060\u9854',
-      "Worried face": '\u4E0D\u5B89\u306A\u9854',
-      "Angry face": '\u6012\u3063\u305F\u9854',
-      "Pouting face": '\u3075\u304F\u308C\u9854',
-      "Crying face": '\u6CE3\u3044\u3066\u3044\u308B\u9854',
-      "Persevering face": '\u5931\u6557\u9854',
-      "Face with look of triumph": '\u52DD\u3061\u307B\u3053\u3063\u305F\u9854',
-      "Disappointed but relieved face": '\u5B89\u5835\u3057\u305F\u9854',
-      "Frowning face with open mouth": '\u3044\u3084\u306A\u9854(\u958B\u3051\u305F\u53E3)',
-      "Anguished face": '\u3052\u3093\u306A\u308A\u3057\u305F\u9854',
-      "Fearful face": '\u9752\u3056\u3081\u305F\u9854',
-      "Weary face": '\u75B2\u308C\u305F\u9854',
-      "Sleepy face": '\u7720\u3044\u9854',
-      "Tired face": '\u3057\u3093\u3069\u3044\u9854',
-      "Grimacing face": '\u3061\u3087\u3063\u3068\u4E0D\u5FEB\u306A\u9854',
-      "Loudly crying face": '\u5927\u6CE3\u304D\u3057\u3066\u3044\u308B\u9854',
-      "Face with open mouth": '\u53E3\u3092\u958B\u3051\u305F\u9854',
-      "Hushed face": '\u9ED9\u3063\u305F\u9854',
-      "Face with open mouth and cold sweat": '\u53E3\u3092\u958B\u3051\u305F\u9854(\u51B7\u3084\u6C57)',
-      "Face screaming in fear": '\u6050\u6016\u306E\u53EB\u3073\u9854',
-      "Astonished face": '\u9A5A\u3044\u305F\u9854',
-      "Flushed face": '\u71B1\u3063\u307D\u3044\u9854',
-      "Sleeping face": '\u5BDD\u9854',
-      "Dizzy face": '\u307E\u3044\u3063\u305F\u9854',
-      "Face without mouth": '\u53E3\u306E\u306A\u3044\u9854',
-      "Face with medical mask": '\u30DE\u30B9\u30AF\u3057\u305F\u9854',
+    // Math
+    "Subscript": "\u4e0b\u4ed8\u304d\u6587\u5b57",
+    "Superscript": "\u4e0a\u4ed8\u304d\u6587\u5b57",
 
-      // Line breaker
-      "Break": '\u6539\u884C',
+    // Full screen
+    "Fullscreen": "\u5168\u753b\u9762\u8868\u793a",
 
-      // Math
-      "Subscript": '\u4E0B\u4ED8\u304D\u6587\u5B57',
-      "Superscript": '\u4E0A\u4ED8\u304D\u6587\u5B57',
+    // Horizontal line
+    "Insert Horizontal Line": "\u6c34\u5e73\u7dda\u306e\u633f\u5165",
 
-      // Full screen
-      "Fullscreen": '\u5168\u753B\u9762\u8868\u793A',
+    // Clear formatting
+    "Clear Formatting": "\u66f8\u5f0f\u306e\u30af\u30ea\u30a2",
 
-      // Horizontal line
-      "Insert Horizontal Line": '\u6C34\u5E73\u7DDA\u306E\u633F\u5165',
+    // Undo, redo
+    "Undo": "\u5143\u306b\u623b\u3059",
+    "Redo": "\u3084\u308a\u76f4\u3059",
 
-      // Clear formatting
-      "Clear Formatting": '\u66F8\u5F0F\u306E\u30AF\u30EA\u30A2',
+    // Select all
+    "Select All": "\u5168\u3066\u3092\u9078\u629e",
 
-      // Undo, redo
-      "Undo": '\u5143\u306B\u623B\u3059',
-      "Redo": '\u3084\u308A\u76F4\u3059',
+    // Code view
+    "Code View": "HTML\u30bf\u30b0\u8868\u793a",
 
-      // Select all
-      "Select All": '\u5168\u3066\u3092\u9078\u629E',
+    // Quote
+    "Quote": "\u5f15\u7528",
+    "Increase": "\u5897\u52a0",
+    "Decrease": "\u6e1b\u5c11",
 
-      // Code view
-      "Code View": 'HTML\u30BF\u30B0\u8868\u793A',
+    // Quick Insert
+    "Quick Insert": "\u30af\u30a4\u30c3\u30af\u633f\u5165",
 
-      // Quote
-      "Quote": '\u5F15\u7528',
-      "Increase": '\u5897\u52A0',
-      "Decrease": '\u6E1B\u5C11',
+    // Spcial Characters
+    "Special Characters": "\u7279\u6b8a\u6587\u5b57",
+    "Latin": "\u30e9\u30c6\u30f3\u8a9e",
+    "Greek": "\u30ae\u30ea\u30b7\u30e3\u8a9e",
+    "Cyrillic": "\u30ad\u30ea\u30eb\u6587\u5b57",
+    "Punctuation": "\u53e5\u8aad\u70b9",
+    "Currency": "\u901a\u8ca8",
+    "Arrows": "\u77e2\u5370",
+    "Math": "\u6570\u5b66",
+    "Misc": "\u305d\u306e\u4ed6",
 
-      // Quick Insert
-      "Quick Insert": '\u30AF\u30A4\u30C3\u30AF\u633F\u5165',
+    // Print.
+    "Print": "\u5370\u5237",
 
-      // Spcial Characters
-      "Special Characters": '\u7279\u6B8A\u6587\u5B57',
-      "Latin": '\u30E9\u30C6\u30F3\u8A9E',
-      "Greek": '\u30AE\u30EA\u30B7\u30E3\u8A9E',
-      "Cyrillic": '\u30AD\u30EA\u30EB\u6587\u5B57',
-      "Punctuation": '\u53E5\u8AAD\u70B9',
-      "Currency": '\u901A\u8CA8',
-      "Arrows": '\u77E2\u5370',
-      "Math": '\u6570\u5B66',
-      "Misc": '\u305D\u306E\u4ED6',
+    // Spell Checker.
+    "Spell Checker": "\u30b9\u30da\u30eb\u30c1\u30a7\u30c3\u30af",
 
-      // Print.
-      "Print": '\u5370\u5237',
+    // Help
+    "Help": "\u30d8\u30eb\u30d7",
+    "Shortcuts": "\u30b7\u30e7\u30fc\u30c8\u30ab\u30c3\u30c8",
+    "Inline Editor": "\u30a4\u30f3\u30e9\u30a4\u30f3\u30a8\u30c7\u30a3\u30bf",
+    "Show the editor": "\u30a8\u30c7\u30a3\u30bf\u3092\u8868\u793a",
+    "Common actions": "\u4e00\u822c\u52d5\u4f5c",
+    "Copy": "\u30b3\u30d4\u30fc",
+    "Cut": "\u30ab\u30c3\u30c8",
+    "Paste": "\u8cbc\u308a\u4ed8\u3051",
+    "Basic Formatting": "\u57fa\u672c\u66f8\u5f0f",
+    "Increase quote level": "\u5f15\u7528\u3092\u5897\u3084\u3059",
+    "Decrease quote level": "\u5f15\u7528\u3092\u6e1b\u3089\u3059",
+    "Image / Video": "\u753b\u50cf/\u52d5\u753b",
+    "Resize larger": "\u5927\u304d\u304f\u3059\u308b",
+    "Resize smaller": "\u5c0f\u3055\u304f\u3059\u308b",
+    "Table": "\u8868",
+    "Select table cell": "\u30bb\u30eb\u3092\u9078\u629e",
+    "Extend selection one cell": "\u30bb\u30eb\u306e\u9078\u629e\u7bc4\u56f2\u3092\u5e83\u3052\u308b",
+    "Extend selection one row": "\u5217\u306e\u9078\u629e\u7bc4\u56f2\u3092\u5e83\u3052\u308b",
+    "Navigation": "\u30ca\u30d3\u30b2\u30fc\u30b7\u30e7\u30f3",
+    "Focus popup / toolbar": "\u30dd\u30c3\u30d7\u30a2\u30c3\u30d7/\u30c4\u30fc\u30eb\u30d0\u30fc\u3092\u30d5\u30a9\u30fc\u30ab\u30b9",
+    "Return focus to previous position": "\u524d\u306e\u4f4d\u7f6e\u306b\u30d5\u30a9\u30fc\u30ab\u30b9\u3092\u623b\u3059",
 
-      // Spell Checker.
-      "Spell Checker": '\u30B9\u30DA\u30EB\u30C1\u30A7\u30C3\u30AF',
+    //\u00a0Embed.ly
+    "Embed URL": "\u57cb\u3081\u8fbc\u307fURL",
+    "Paste in a URL to embed": "\u57cb\u3081\u8fbc\u307fURL\u306b\u8cbc\u308a\u4ed8\u3051\u308b",
 
-      // Help
-      "Help": '\u30D8\u30EB\u30D7',
-      "Shortcuts": '\u30B7\u30E7\u30FC\u30C8\u30AB\u30C3\u30C8',
-      "Inline Editor": '\u30A4\u30F3\u30E9\u30A4\u30F3\u30A8\u30C7\u30A3\u30BF',
-      "Show the editor": '\u30A8\u30C7\u30A3\u30BF\u3092\u8868\u793A',
-      "Common actions": '\u4E00\u822C\u52D5\u4F5C',
-      "Copy": '\u30B3\u30D4\u30FC',
-      "Cut": '\u30AB\u30C3\u30C8',
-      "Paste": '\u8CBC\u308A\u4ED8\u3051',
-      "Basic Formatting": '\u57FA\u672C\u66F8\u5F0F',
-      "Increase quote level": '\u5F15\u7528\u3092\u5897\u3084\u3059',
-      "Decrease quote level": '\u5F15\u7528\u3092\u6E1B\u3089\u3059',
-      "Image / Video": '\u753B\u50CF/\u52D5\u753B',
-      "Resize larger": '\u5927\u304D\u304F\u3059\u308B',
-      "Resize smaller": '\u5C0F\u3055\u304F\u3059\u308B',
-      "Table": '\u8868',
-      "Select table cell": '\u30BB\u30EB\u3092\u9078\u629E',
-      "Extend selection one cell": '\u30BB\u30EB\u306E\u9078\u629E\u7BC4\u56F2\u3092\u5E83\u3052\u308B',
-      "Extend selection one row": '\u5217\u306E\u9078\u629E\u7BC4\u56F2\u3092\u5E83\u3052\u308B',
-      "Navigation": '\u30CA\u30D3\u30B2\u30FC\u30B7\u30E7\u30F3',
-      "Focus popup / toolbar": '\u30DD\u30C3\u30D7\u30A2\u30C3\u30D7/\u30C4\u30FC\u30EB\u30D0\u30FC\u3092\u30D5\u30A9\u30FC\u30AB\u30B9',
-      "Return focus to previous position": '\u524D\u306E\u4F4D\u7F6E\u306B\u30D5\u30A9\u30FC\u30AB\u30B9\u3092\u623B\u3059',
+    // Word Paste.
+    "The pasted content is coming from a Microsoft Word document. Do you want to keep the format or clean it up?": "\u8cbc\u308a\u4ed8\u3051\u305f\u6587\u66f8\u306fMicrosoft Word\u304b\u3089\u53d6\u5f97\u3055\u308c\u307e\u3059\u3002\u30d5\u30a9\u30fc\u30de\u30c3\u30c8\u3092\u4fdd\u6301\u3057\u3066\u8cbc\u308a\u4ed8\u3051\u307e\u3059\u304b\uff1f",
+    "Keep": "\u66f8\u5f0f\u3092\u4fdd\u6301\u3059\u308b",
+    "Clean": "\u66f8\u5f0f\u3092\u4fdd\u6301\u3057\u306a\u3044",
+    "Word Paste Detected": "Microsoft Word\u306e\u8cbc\u308a\u4ed8\u3051\u304c\u691c\u51fa\u3055\u308c\u307e\u3057\u305f"
+  },
+  direction: "ltr"
+};
 
-      //\u00a0Embed.ly
-      "Embed URL": '\u57CB\u3081\u8FBC\u307FURL',
-      "Paste in a URL to embed": '\u57CB\u3081\u8FBC\u307FURL\u306B\u8CBC\u308A\u4ED8\u3051\u308B',
-
-      // Word Paste.
-      "The pasted content is coming from a Microsoft Word document. Do you want to keep the format or clean it up?": '\u8CBC\u308A\u4ED8\u3051\u305F\u6587\u66F8\u306FMicrosoft Word\u304B\u3089\u53D6\u5F97\u3055\u308C\u307E\u3059\u3002\u30D5\u30A9\u30FC\u30DE\u30C3\u30C8\u3092\u4FDD\u6301\u3057\u3066\u8CBC\u308A\u4ED8\u3051\u307E\u3059\u304B\uFF1F',
-      "Keep": '\u66F8\u5F0F\u3092\u4FDD\u6301\u3059\u308B',
-      "Clean": '\u66F8\u5F0F\u3092\u4FDD\u6301\u3057\u306A\u3044',
-      "Word Paste Detected": 'Microsoft Word\u306E\u8CBC\u308A\u4ED8\u3051\u304C\u691C\u51FA\u3055\u308C\u307E\u3057\u305F'
-    },
-    direction: "ltr"
-  };
-
-})));
-//# sourceMappingURL=ja.js.map
+}));

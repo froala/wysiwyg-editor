@@ -1,302 +1,318 @@
 /*!
- * froala_editor v2.8.4 (https://www.froala.com/wysiwyg-editor)
+ * froala_editor v2.8.2 (https://www.froala.com/wysiwyg-editor)
  * License https://froala.com/wysiwyg-editor/terms/
  * Copyright 2014-2018 Froala Labs
  */
 
-(function (global, factory) {
-  typeof exports === 'object' && typeof module !== 'undefined' ? factory(require('jquery')) :
-  typeof define === 'function' && define.amd ? define(['jquery'], factory) :
-  (factory(global.jQuery));
-}(this, (function ($) { 'use strict';
+(function (factory) {
+    if (typeof define === 'function' && define.amd) {
+        // AMD. Register as an anonymous module.
+        define(['jquery'], factory);
+    } else if (typeof module === 'object' && module.exports) {
+        // Node/CommonJS
+        module.exports = function( root, jQuery ) {
+            if ( jQuery === undefined ) {
+                // require('jQuery') returns a factory that requires window to
+                // build a jQuery instance, we normalize how we use modules
+                // that require this pattern but the window provided is a noop
+                // if it's defined (how jquery works)
+                if ( typeof window !== 'undefined' ) {
+                    jQuery = require('jquery');
+                }
+                else {
+                    jQuery = require('jquery')(root);
+                }
+            }
+            return factory(jQuery);
+        };
+    } else {
+        // Browser globals
+        factory(window.jQuery);
+    }
+}(function ($) {
+/**
+ * Estonian
+ */
 
-  $ = $ && $.hasOwnProperty('default') ? $['default'] : $;
+$.FE.LANGUAGE['et'] = {
+  translation: {
+    // Place holder
+    "Type something": "Kirjuta midagi",
 
-  /**
-   * Estonian
-   */
-  var FE = $.FE;
+    // Basic formatting
+    "Bold": "Rasvane",
+    "Italic": "Kursiiv",
+    "Underline": "Allajoonitud",
+    "Strikethrough": "L\u00e4bikriipsutatud",
 
-  FE.LANGUAGE['et'] = {
-    translation: {
-      // Place holder
-      "Type something": "Kirjuta midagi",
+    // Main buttons
+    "Insert": "Lisa",
+    "Delete": "Kustuta",
+    "Cancel": "T\u00fchista",
+    "OK": "OK",
+    "Back": "Tagasi",
+    "Remove": "Eemaldama",
+    "More": "Rohkem",
+    "Update": "Ajakohastama",
+    "Style": "Stiil",
 
-      // Basic formatting
-      "Bold": "Rasvane",
-      "Italic": "Kursiiv",
-      "Underline": "Allajoonitud",
-      "Strikethrough": 'L\xE4bikriipsutatud',
+    // Font
+    "Font Family": "Fondi perekond",
+    "Font Size": "Fondi suurus",
 
-      // Main buttons
-      "Insert": "Lisa",
-      "Delete": "Kustuta",
-      "Cancel": 'T\xFChista',
-      "OK": "OK",
-      "Back": "Tagasi",
-      "Remove": "Eemaldama",
-      "More": "Rohkem",
-      "Update": "Ajakohastama",
-      "Style": "Stiil",
+    // Colors
+    "Colors": "V\u00e4rvid",
+    "Background": "Taust",
+    "Text": "Tekst",
+    "HEX Color": "Hex värvi",
 
-      // Font
-      "Font Family": "Fondi perekond",
-      "Font Size": "Fondi suurus",
+    // Paragraphs
+    "Paragraph Format": "Paragrahv formaat",
+    "Normal": "Normaalne",
+    "Code": "Kood",
+    "Heading 1": "P\u00e4is 1",
+    "Heading 2": "P\u00e4is 2",
+    "Heading 3": "P\u00e4is 3",
+    "Heading 4": "P\u00e4is 4",
 
-      // Colors
-      "Colors": 'V\xE4rvid',
-      "Background": "Taust",
-      "Text": "Tekst",
-      "HEX Color": "Hex värvi",
+    // Style
+    "Paragraph Style": "Paragrahv stiil",
+    "Inline Style": "J\u00e4rjekorras stiil",
 
-      // Paragraphs
-      "Paragraph Format": "Paragrahv formaat",
-      "Normal": "Normaalne",
-      "Code": "Kood",
-      "Heading 1": 'P\xE4is 1',
-      "Heading 2": 'P\xE4is 2',
-      "Heading 3": 'P\xE4is 3',
-      "Heading 4": 'P\xE4is 4',
+    // Alignment
+    "Align": "Joonda",
+    "Align Left": "Joonda vasakule",
+    "Align Center": "Joonda keskele",
+    "Align Right": "Joonda paremale",
+    "Align Justify": "R\u00f6\u00f6pjoondus",
+    "None": "Mitte \u00fckski",
 
-      // Style
-      "Paragraph Style": "Paragrahv stiil",
-      "Inline Style": 'J\xE4rjekorras stiil',
+    // Lists
+    "Ordered List": "Tellitud nimekirja",
+    "Unordered List": "Tavalise nimekirja",
 
-      // Alignment
-      "Align": "Joonda",
-      "Align Left": "Joonda vasakule",
-      "Align Center": "Joonda keskele",
-      "Align Right": "Joonda paremale",
-      "Align Justify": 'R\xF6\xF6pjoondus',
-      "None": 'Mitte \xFCkski',
+    // Indent
+    "Decrease Indent": "V\u00e4henemine taane",
+    "Increase Indent": "Suurenda taanet",
 
-      // Lists
-      "Ordered List": "Tellitud nimekirja",
-      "Unordered List": "Tavalise nimekirja",
+    // Links
+    "Insert Link": "Lisa link",
+    "Open in new tab": "Ava uues sakis",
+    "Open Link": "Avatud link",
+    "Edit Link": "Muuda link",
+    "Unlink": "Eemalda link",
+    "Choose Link": "Vali link",
 
-      // Indent
-      "Decrease Indent": 'V\xE4henemine taane',
-      "Increase Indent": "Suurenda taanet",
+    // Images
+    "Insert Image": "Lisa pilt",
+    "Upload Image": "Laadige pilt",
+    "By URL": "Poolt URL",
+    "Browse": "sirvida",
+    "Drop image": "Aseta pilt",
+    "or click": "v\u00f5i kliki",
+    "Manage Images": "Halda pilte",
+    "Loading": "Laadimine",
+    "Deleting": "Kustutamine",
+    "Tags": "Sildid",
+    "Are you sure? Image will be deleted.": "Oled sa kindel? Pilt kustutatakse.",
+    "Replace": "Asendama",
+    "Uploading": "Laadimise pilti",
+    "Loading image": "Laadimise pilti",
+    "Display": "Kuvama",
+    "Inline": "J\u00e4rjekorras",
+    "Break Text": "Murdma teksti",
+    "Alternate Text": "Asendusliikme teksti",
+    "Change Size": "Muuda suurust",
+    "Width": "Laius",
+    "Height": "K\u00f5rgus",
+    "Something went wrong. Please try again.": "Midagi l\u00e4ks valesti. Palun proovi uuesti.",
+    "Image Caption": "Pildi pealkiri",
+    "Advanced Edit": "Täiustatud redigeerimine",
 
-      // Links
-      "Insert Link": "Lisa link",
-      "Open in new tab": "Ava uues sakis",
-      "Open Link": "Avatud link",
-      "Edit Link": "Muuda link",
-      "Unlink": "Eemalda link",
-      "Choose Link": "Vali link",
+    // Video
+    "Insert Video": "Lisa video",
+    "Embedded Code": "Varjatud koodi",
+    "Paste in a video URL": "Kleebi video URL-i",
+    "Drop video": "Tilk videot",
+    "Your browser does not support HTML5 video.": "Teie brauser ei toeta html5-videot.",
+    "Upload Video": "Video üleslaadimine",
 
-      // Images
-      "Insert Image": "Lisa pilt",
-      "Upload Image": "Laadige pilt",
-      "By URL": "Poolt URL",
-      "Browse": "sirvida",
-      "Drop image": "Aseta pilt",
-      "or click": 'v\xF5i kliki',
-      "Manage Images": "Halda pilte",
-      "Loading": "Laadimine",
-      "Deleting": "Kustutamine",
-      "Tags": "Sildid",
-      "Are you sure? Image will be deleted.": "Oled sa kindel? Pilt kustutatakse.",
-      "Replace": "Asendama",
-      "Uploading": "Laadimise pilti",
-      "Loading image": "Laadimise pilti",
-      "Display": "Kuvama",
-      "Inline": 'J\xE4rjekorras',
-      "Break Text": "Murdma teksti",
-      "Alternative Text": "Asendusliikme teksti",
-      "Change Size": "Muuda suurust",
-      "Width": "Laius",
-      "Height": 'K\xF5rgus',
-      "Something went wrong. Please try again.": 'Midagi l\xE4ks valesti. Palun proovi uuesti.',
-      "Image Caption": "Pildi pealkiri",
-      "Advanced Edit": "Täiustatud redigeerimine",
+    // Tables
+    "Insert Table": "Sisesta tabel",
+    "Table Header": "Tabel p\u00e4ise kaudu",
+    "Remove Table": "Eemalda tabel",
+    "Table Style": "Tabel stiili",
+    "Horizontal Align": "Horisontaalne joonda",
+    "Row": "Rida",
+    "Insert row above": "Sisesta rida \u00fcles",
+    "Insert row below": "Sisesta rida alla",
+    "Delete row": "Kustuta rida",
+    "Column": "Veerg",
+    "Insert column before": "Sisesta veerg ette",
+    "Insert column after": "Sisesta veerg j\u00e4rele",
+    "Delete column": "Kustuta veerg",
+    "Cell": "Lahter",
+    "Merge cells": "\u00fchenda lahtrid",
+    "Horizontal split": "Poolita horisontaalselt",
+    "Vertical split": "Poolita vertikaalselt",
+    "Cell Background": "Lahter tausta",
+    "Vertical Align": "Vertikaalne joonda",
+    "Top": "\u00fclemine",
+    "Middle": "Keskmine",
+    "Bottom": "P\u00f5hi",
+    "Align Top": "Joonda \u00fclemine",
+    "Align Middle": "Joonda keskmine",
+    "Align Bottom": "Joonda P\u00f5hi",
+    "Cell Style": "Lahter stiili",
 
-      // Video
-      "Insert Video": "Lisa video",
-      "Embedded Code": "Varjatud koodi",
-      "Paste in a video URL": "Kleebi video URL-i",
-      "Drop video": "Tilk videot",
-      "Your browser does not support HTML5 video.": "Teie brauser ei toeta html5-videot.",
-      "Upload Video": "Video üleslaadimine",
+    // Files
+    "Upload File": "Lae fail \u00fcles",
+    "Drop file": "Aseta fail",
 
-      // Tables
-      "Insert Table": "Sisesta tabel",
-      "Table Header": 'Tabel p\xE4ise kaudu',
-      "Remove Table": "Eemalda tabel",
-      "Table Style": "Tabel stiili",
-      "Horizontal Align": "Horisontaalne joonda",
-      "Row": "Rida",
-      "Insert row above": 'Sisesta rida \xFCles',
-      "Insert row below": "Sisesta rida alla",
-      "Delete row": "Kustuta rida",
-      "Column": "Veerg",
-      "Insert column before": "Sisesta veerg ette",
-      "Insert column after": 'Sisesta veerg j\xE4rele',
-      "Delete column": "Kustuta veerg",
-      "Cell": "Lahter",
-      "Merge cells": '\xFChenda lahtrid',
-      "Horizontal split": "Poolita horisontaalselt",
-      "Vertical split": "Poolita vertikaalselt",
-      "Cell Background": "Lahter tausta",
-      "Vertical Align": "Vertikaalne joonda",
-      "Top": '\xFClemine',
-      "Middle": "Keskmine",
-      "Bottom": 'P\xF5hi',
-      "Align Top": 'Joonda \xFClemine',
-      "Align Middle": "Joonda keskmine",
-      "Align Bottom": 'Joonda P\xF5hi',
-      "Cell Style": "Lahter stiili",
+    // Emoticons
+    "Emoticons": "Emotikonid",
+    "Grinning face": "Irvitas n\u00e4kku",
+    "Grinning face with smiling eyes": "Irvitas n\u00e4kku naeratavad silmad",
+    "Face with tears of joy": "N\u00e4gu r\u00f5\u00f5mupisaratega",
+    "Smiling face with open mouth": "Naeratav n\u00e4gu avatud suuga",
+    "Smiling face with open mouth and smiling eyes": "Naeratav n\u00e4gu avatud suu ja naeratavad silmad",
+    "Smiling face with open mouth and cold sweat": "Naeratav n\u00e4gu avatud suu ja k\u00fclm higi",
+    "Smiling face with open mouth and tightly-closed eyes": "Naeratav n\u00e4gu avatud suu ja tihedalt suletud silmad",
+    "Smiling face with halo": "Naeratav n\u00e4gu halo",
+    "Smiling face with horns": "Naeratav n\u00e4gu sarved",
+    "Winking face": "Pilgutab n\u00e4gu",
+    "Smiling face with smiling eyes": "Naeratav n\u00e4gu naeratab silmad",
+    "Face savoring delicious food": "N\u00e4gu nautides maitsvat toitu",
+    "Relieved face": "P\u00e4\u00e4stetud n\u00e4gu",
+    "Smiling face with heart-shaped eyes": "Naeratav n\u00e4gu s\u00fcdajas silmad",
+    "Smiling face with sunglasses": "Naeratav n\u00e4gu p\u00e4ikeseprillid",
+    "Smirking face": "Muigama n\u00e4gu ",
+    "Neutral face": "Neutraalne n\u00e4gu",
+    "Expressionless face": "Ilmetu n\u00e4gu",
+    "Unamused face": "Morn n\u00e4gu",
+    "Face with cold sweat": "N\u00e4gu k\u00fclma higiga",
+    "Pensive face": "M\u00f5tlik n\u00e4gu",
+    "Confused face": "Segaduses n\u00e4gu",
+    "Confounded face": "Segas n\u00e4gu",
+    "Kissing face": "Suudlevad n\u00e4gu",
+    "Face throwing a kiss": "N\u00e4gu viskamine suudlus",
+    "Kissing face with smiling eyes": "Suudlevad n\u00e4gu naeratab silmad",
+    "Kissing face with closed eyes": "Suudlevad n\u00e4gu, silmad kinni",
+    "Face with stuck out tongue": "N\u00e4gu ummikus v\u00e4lja keele",
+    "Face with stuck out tongue and winking eye": "N\u00e4gu ummikus v\u00e4lja keele ja silma pilgutav silma",
+    "Face with stuck out tongue and tightly-closed eyes": "N\u00e4gu ummikus v\u00e4lja keele ja silmad tihedalt suletuna",
+    "Disappointed face": "Pettunud n\u00e4gu",
+    "Worried face": "Mures n\u00e4gu",
+    "Angry face": "Vihane n\u00e4gu",
+    "Pouting face": "Tursik n\u00e4gu",
+    "Crying face": "Nutt n\u00e4gu",
+    "Persevering face": "Püsiv n\u00e4gu",
+    "Face with look of triumph": "N\u00e4gu ilme triumf",
+    "Disappointed but relieved face": "Pettunud kuid vabastati n\u00e4gu",
+    "Frowning face with open mouth": "Kulmukortsutav n\u00e4gu avatud suuga",
+    "Anguished face": "Ahastavad n\u00e4gu",
+    "Fearful face": "Hirmunult n\u00e4gu",
+    "Weary face": "Grimasse",
+    "Sleepy face": "Unine n\u00e4gu",
+    "Tired face": "V\u00e4sinud n\u00e4gu",
+    "Grimacing face": "Grimassitavaks n\u00e4gu",
+    "Loudly crying face": "Valjusti nutma n\u00e4gu",
+    "Face with open mouth": "N\u00e4gu avatud suuga",
+    "Hushed face": "Raskel n\u00e4gu",
+    "Face with open mouth and cold sweat": "N\u00e4gu avatud suu ja k\u00fclm higi",
+    "Face screaming in fear": "N\u00e4gu karjuvad hirm",
+    "Astonished face": "Lummatud n\u00e4gu",
+    "Flushed face": "Punetav n\u00e4gu",
+    "Sleeping face": "Uinuv n\u00e4gu",
+    "Dizzy face": "Uimane n\u00fcgu",
+    "Face without mouth": "N\u00e4gu ilma suu",
+    "Face with medical mask": "N\u00e4gu meditsiinilise mask",
 
-      // Files
-      "Upload File": 'Lae fail \xFCles',
-      "Drop file": "Aseta fail",
+    // Line breaker
+    "Break": "Murdma",
 
-      // Emoticons
-      "Emoticons": "Emotikonid",
-      "Grinning face": 'Irvitas n\xE4kku',
-      "Grinning face with smiling eyes": 'Irvitas n\xE4kku naeratavad silmad',
-      "Face with tears of joy": 'N\xE4gu r\xF5\xF5mupisaratega',
-      "Smiling face with open mouth": 'Naeratav n\xE4gu avatud suuga',
-      "Smiling face with open mouth and smiling eyes": 'Naeratav n\xE4gu avatud suu ja naeratavad silmad',
-      "Smiling face with open mouth and cold sweat": 'Naeratav n\xE4gu avatud suu ja k\xFClm higi',
-      "Smiling face with open mouth and tightly-closed eyes": 'Naeratav n\xE4gu avatud suu ja tihedalt suletud silmad',
-      "Smiling face with halo": 'Naeratav n\xE4gu halo',
-      "Smiling face with horns": 'Naeratav n\xE4gu sarved',
-      "Winking face": 'Pilgutab n\xE4gu',
-      "Smiling face with smiling eyes": 'Naeratav n\xE4gu naeratab silmad',
-      "Face savoring delicious food": 'N\xE4gu nautides maitsvat toitu',
-      "Relieved face": 'P\xE4\xE4stetud n\xE4gu',
-      "Smiling face with heart-shaped eyes": 'Naeratav n\xE4gu s\xFCdajas silmad',
-      "Smiling face with sunglasses": 'Naeratav n\xE4gu p\xE4ikeseprillid',
-      "Smirking face": 'Muigama n\xE4gu ',
-      "Neutral face": 'Neutraalne n\xE4gu',
-      "Expressionless face": 'Ilmetu n\xE4gu',
-      "Unamused face": 'Morn n\xE4gu',
-      "Face with cold sweat": 'N\xE4gu k\xFClma higiga',
-      "Pensive face": 'M\xF5tlik n\xE4gu',
-      "Confused face": 'Segaduses n\xE4gu',
-      "Confounded face": 'Segas n\xE4gu',
-      "Kissing face": 'Suudlevad n\xE4gu',
-      "Face throwing a kiss": 'N\xE4gu viskamine suudlus',
-      "Kissing face with smiling eyes": 'Suudlevad n\xE4gu naeratab silmad',
-      "Kissing face with closed eyes": 'Suudlevad n\xE4gu, silmad kinni',
-      "Face with stuck out tongue": 'N\xE4gu ummikus v\xE4lja keele',
-      "Face with stuck out tongue and winking eye": 'N\xE4gu ummikus v\xE4lja keele ja silma pilgutav silma',
-      "Face with stuck out tongue and tightly-closed eyes": 'N\xE4gu ummikus v\xE4lja keele ja silmad tihedalt suletuna',
-      "Disappointed face": 'Pettunud n\xE4gu',
-      "Worried face": 'Mures n\xE4gu',
-      "Angry face": 'Vihane n\xE4gu',
-      "Pouting face": 'Tursik n\xE4gu',
-      "Crying face": 'Nutt n\xE4gu',
-      "Persevering face": 'P\xFCsiv n\xE4gu',
-      "Face with look of triumph": 'N\xE4gu ilme triumf',
-      "Disappointed but relieved face": 'Pettunud kuid vabastati n\xE4gu',
-      "Frowning face with open mouth": 'Kulmukortsutav n\xE4gu avatud suuga',
-      "Anguished face": 'Ahastavad n\xE4gu',
-      "Fearful face": 'Hirmunult n\xE4gu',
-      "Weary face": "Grimasse",
-      "Sleepy face": 'Unine n\xE4gu',
-      "Tired face": 'V\xE4sinud n\xE4gu',
-      "Grimacing face": 'Grimassitavaks n\xE4gu',
-      "Loudly crying face": 'Valjusti nutma n\xE4gu',
-      "Face with open mouth": 'N\xE4gu avatud suuga',
-      "Hushed face": 'Raskel n\xE4gu',
-      "Face with open mouth and cold sweat": 'N\xE4gu avatud suu ja k\xFClm higi',
-      "Face screaming in fear": 'N\xE4gu karjuvad hirm',
-      "Astonished face": 'Lummatud n\xE4gu',
-      "Flushed face": 'Punetav n\xE4gu',
-      "Sleeping face": 'Uinuv n\xE4gu',
-      "Dizzy face": 'Uimane n\xFCgu',
-      "Face without mouth": 'N\xE4gu ilma suu',
-      "Face with medical mask": 'N\xE4gu meditsiinilise mask',
+    // Math
+    "Subscript": "Allindeks",
+    "Superscript": "\u00dclaindeks",
 
-      // Line breaker
-      "Break": "Murdma",
+    // Full screen
+    "Fullscreen": "T\u00e4isekraanil",
 
-      // Math
-      "Subscript": "Allindeks",
-      "Superscript": '\xDClaindeks',
+    // Horizontal line
+    "Insert Horizontal Line": "Sisesta horisontaalne joon",
 
-      // Full screen
-      "Fullscreen": 'T\xE4isekraanil',
+    // Clear formatting
+    "Clear Formatting": "Eemalda formaatimine",
 
-      // Horizontal line
-      "Insert Horizontal Line": "Sisesta horisontaalne joon",
+    // Undo, redo
+    "Undo": "V\u00f5ta tagasi",
+    "Redo": "Tee uuesti",
 
-      // Clear formatting
-      "Clear Formatting": "Eemalda formaatimine",
+    // Select all
+    "Select All": "Vali k\u00f5ik",
 
-      // Undo, redo
-      "Undo": 'V\xF5ta tagasi',
-      "Redo": "Tee uuesti",
+    // Code view
+    "Code View": "Koodi vaadata",
 
-      // Select all
-      "Select All": 'Vali k\xF5ik',
+    // Quote
+    "Quote": "Tsitaat",
+    "Increase": "Suurendama",
+    "Decrease": "V\u00e4henda",
 
-      // Code view
-      "Code View": "Koodi vaadata",
+    // Quick Insert
+    "Quick Insert": "Kiire sisestada",
 
-      // Quote
-      "Quote": "Tsitaat",
-      "Increase": "Suurendama",
-      "Decrease": 'V\xE4henda',
+    // Spcial Characters
+    "Special Characters": "Erimärgid",
+    "Latin": "Latin",
+    "Greek": "Kreeka keel",
+    "Cyrillic": "Kirillitsa",
+    "Punctuation": "Kirjavahemärgid",
+    "Currency": "Valuuta",
+    "Arrows": "Nooled",
+    "Math": "Matemaatika",
+    "Misc": "Misc",
 
-      // Quick Insert
-      "Quick Insert": "Kiire sisestada",
+    // Print.
+    "Print": "Printige",
 
-      // Spcial Characters
-      "Special Characters": "Erimärgid",
-      "Latin": "Latin",
-      "Greek": "Kreeka keel",
-      "Cyrillic": "Kirillitsa",
-      "Punctuation": "Kirjavahemärgid",
-      "Currency": "Valuuta",
-      "Arrows": "Nooled",
-      "Math": "Matemaatika",
-      "Misc": "Misc",
+    // Spell Checker.
+    "Spell Checker": "Õigekirja kontrollija",
 
-      // Print.
-      "Print": "Printige",
+    // Help
+    "Help": "Abi",
+    "Shortcuts": "Otseteed",
+    "Inline Editor": "Sisemine redaktor",
+    "Show the editor": "Näita redaktorit",
+    "Common actions": "Ühised meetmed",
+    "Copy": "Koopia",
+    "Cut": "Lõigake",
+    "Paste": "Kleepige",
+    "Basic Formatting": "Põhiline vormindamine",
+    "Increase quote level": "Suurendada tsiteerimise taset",
+    "Decrease quote level": "Langetada tsiteerimise tase",
+    "Image / Video": "Pilt / video",
+    "Resize larger": "Suuruse muutmine suurem",
+    "Resize smaller": "Väiksema suuruse muutmine",
+    "Table": "Laud",
+    "Select table cell": "Vali tabeli lahtrisse",
+    "Extend selection one cell": "Laiendage valikut üks lahtrisse",
+    "Extend selection one row": "Laiendage valikut ühe reana",
+    "Navigation": "Navigeerimine",
+    "Focus popup / toolbar": "Fookuse hüpikakna / tööriistariba",
+    "Return focus to previous position": "Tagasi pöörata tähelepanu eelmisele positsioonile",
 
-      // Spell Checker.
-      "Spell Checker": "Õigekirja kontrollija",
+    // Embed.ly
+    "Embed URL": "Embed url",
+    "Paste in a URL to embed": "Kleepige URL-i sisestamiseks",
 
-      // Help
-      "Help": "Abi",
-      "Shortcuts": "Otseteed",
-      "Inline Editor": "Sisemine redaktor",
-      "Show the editor": "Näita redaktorit",
-      "Common actions": "Ühised meetmed",
-      "Copy": "Koopia",
-      "Cut": "Lõigake",
-      "Paste": "Kleepige",
-      "Basic Formatting": "Põhiline vormindamine",
-      "Increase quote level": "Suurendada tsiteerimise taset",
-      "Decrease quote level": "Langetada tsiteerimise tase",
-      "Image / Video": "Pilt / video",
-      "Resize larger": "Suuruse muutmine suurem",
-      "Resize smaller": "Väiksema suuruse muutmine",
-      "Table": "Laud",
-      "Select table cell": "Vali tabeli lahtrisse",
-      "Extend selection one cell": "Laiendage valikut üks lahtrisse",
-      "Extend selection one row": "Laiendage valikut ühe reana",
-      "Navigation": "Navigeerimine",
-      "Focus popup / toolbar": "Fookuse hüpikakna / tööriistariba",
-      "Return focus to previous position": "Tagasi pöörata tähelepanu eelmisele positsioonile",
+    // Word Paste.
+    "The pasted content is coming from a Microsoft Word document. Do you want to keep the format or clean it up?": "Kleepitud sisu pärineb Microsoft Wordi dokumendist. kas soovite vormi säilitada või puhastada?",
+    "Keep": "Pidage seda",
+    "Clean": "Puhas",
+    "Word Paste Detected": "Avastatud sõna pasta"
+  },
+  direction: "ltr"
+};
 
-      // Embed.ly
-      "Embed URL": "Embed url",
-      "Paste in a URL to embed": "Kleepige URL-i sisestamiseks",
-
-      // Word Paste.
-      "The pasted content is coming from a Microsoft Word document. Do you want to keep the format or clean it up?": "Kleepitud sisu pärineb Microsoft Wordi dokumendist. kas soovite vormi säilitada või puhastada?",
-      "Keep": "Pidage seda",
-      "Clean": "Puhas",
-      "Word Paste Detected": "Avastatud sõna pasta"
-    },
-    direction: "ltr"
-  };
-
-})));
-//# sourceMappingURL=et.js.map
+}));

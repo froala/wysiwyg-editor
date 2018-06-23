@@ -1,302 +1,318 @@
 /*!
- * froala_editor v2.8.4 (https://www.froala.com/wysiwyg-editor)
+ * froala_editor v2.8.2 (https://www.froala.com/wysiwyg-editor)
  * License https://froala.com/wysiwyg-editor/terms/
  * Copyright 2014-2018 Froala Labs
  */
 
-(function (global, factory) {
-  typeof exports === 'object' && typeof module !== 'undefined' ? factory(require('jquery')) :
-  typeof define === 'function' && define.amd ? define(['jquery'], factory) :
-  (factory(global.jQuery));
-}(this, (function ($) { 'use strict';
+(function (factory) {
+    if (typeof define === 'function' && define.amd) {
+        // AMD. Register as an anonymous module.
+        define(['jquery'], factory);
+    } else if (typeof module === 'object' && module.exports) {
+        // Node/CommonJS
+        module.exports = function( root, jQuery ) {
+            if ( jQuery === undefined ) {
+                // require('jQuery') returns a factory that requires window to
+                // build a jQuery instance, we normalize how we use modules
+                // that require this pattern but the window provided is a noop
+                // if it's defined (how jquery works)
+                if ( typeof window !== 'undefined' ) {
+                    jQuery = require('jquery');
+                }
+                else {
+                    jQuery = require('jquery')(root);
+                }
+            }
+            return factory(jQuery);
+        };
+    } else {
+        // Browser globals
+        factory(window.jQuery);
+    }
+}(function ($) {
+/**
+ * Finnish
+ */
 
-  $ = $ && $.hasOwnProperty('default') ? $['default'] : $;
+$.FE.LANGUAGE['fi'] = {
+  translation: {
+    // Place holder
+    "Type something": "Kirjoita jotain",
 
-  /**
-   * Finnish
-   */
-  var FE = $.FE;
+    // Basic formatting
+    "Bold": "Lihavointi",
+    "Italic": "Kursivointi",
+    "Underline": "Alleviivaus",
+    "Strikethrough": "Yliviivaus",
 
-  FE.LANGUAGE['fi'] = {
-    translation: {
-      // Place holder
-      "Type something": "Kirjoita jotain",
+    // Main buttons
+    "Insert": "Lis\u00e4\u00e4",
+    "Delete": "Poista",
+    "Cancel": "Peruuta",
+    "OK": "Ok",
+    "Back": "Takaisin",
+    "Remove": "Poista",
+    "More": "Lis\u00e4\u00e4",
+    "Update": "P\u00e4ivitys",
+    "Style": "Tyyli",
 
-      // Basic formatting
-      "Bold": "Lihavointi",
-      "Italic": "Kursivointi",
-      "Underline": "Alleviivaus",
-      "Strikethrough": "Yliviivaus",
+    // Font
+    "Font Family": "Fontti",
+    "Font Size": "Fonttikoko",
 
-      // Main buttons
-      "Insert": 'Lis\xE4\xE4',
-      "Delete": "Poista",
-      "Cancel": "Peruuta",
-      "OK": "Ok",
-      "Back": "Takaisin",
-      "Remove": "Poista",
-      "More": 'Lis\xE4\xE4',
-      "Update": 'P\xE4ivitys',
-      "Style": "Tyyli",
+    // Colors
+    "Colors": "V\u00e4rit",
+    "Background": "Taustan",
+    "Text": "Tekstin",
+    "HEX Color": "Heksadesimaali",
 
-      // Font
-      "Font Family": "Fontti",
-      "Font Size": "Fonttikoko",
+    // Paragraphs
+    "Paragraph Format": "Muotoilut",
+    "Normal": "Normaali",
+    "Code": "Koodi",
+    "Heading 1": "Otsikko 1",
+    "Heading 2": "Otsikko 2",
+    "Heading 3": "Otsikko 3",
+    "Heading 4": "Otsikko 4",
 
-      // Colors
-      "Colors": 'V\xE4rit',
-      "Background": "Taustan",
-      "Text": "Tekstin",
-      "HEX Color": "Heksadesimaali",
+    // Style
+    "Paragraph Style": "Kappaleen tyyli",
+    "Inline Style": "Linjassa tyyli",
 
-      // Paragraphs
-      "Paragraph Format": "Muotoilut",
-      "Normal": "Normaali",
-      "Code": "Koodi",
-      "Heading 1": "Otsikko 1",
-      "Heading 2": "Otsikko 2",
-      "Heading 3": "Otsikko 3",
-      "Heading 4": "Otsikko 4",
+    // Alignment
+    "Align": "Tasaa",
+    "Align Left": "Tasaa vasemmalle",
+    "Align Center": "Keskit\u00e4",
+    "Align Right": "Tasaa oikealle",
+    "Align Justify": "Tasaa",
+    "None": "Ei mit\u00e4\u00e4n",
 
-      // Style
-      "Paragraph Style": "Kappaleen tyyli",
-      "Inline Style": "Linjassa tyyli",
+    // Lists
+    "Ordered List": "J\u00e4rjestetty lista",
+    "Unordered List": "J\u00e4rjest\u00e4m\u00e4t\u00f6n lista",
 
-      // Alignment
-      "Align": "Tasaa",
-      "Align Left": "Tasaa vasemmalle",
-      "Align Center": 'Keskit\xE4',
-      "Align Right": "Tasaa oikealle",
-      "Align Justify": "Tasaa",
-      "None": 'Ei mit\xE4\xE4n',
+    // Indent
+    "Decrease Indent": "Sisenn\u00e4",
+    "Increase Indent": "Loitonna",
 
-      // Lists
-      "Ordered List": 'J\xE4rjestetty lista',
-      "Unordered List": 'J\xE4rjest\xE4m\xE4t\xF6n lista',
+    // Links
+    "Insert Link": "Lis\u00e4\u00e4 linkki",
+    "Open in new tab": "Avaa uudessa v\u00e4lilehdess\u00e4",
+    "Open Link": "Avaa linkki",
+    "Edit Link": "Muokkaa linkki",
+    "Unlink": "Poista linkki",
+    "Choose Link": "Valitse linkki",
 
-      // Indent
-      "Decrease Indent": 'Sisenn\xE4',
-      "Increase Indent": "Loitonna",
+    // Images
+    "Insert Image": "Lis\u00e4\u00e4 kuva",
+    "Upload Image": "Lataa kuva",
+    "By URL": "Mukaan URL",
+    "Browse": "Selailla",
+    "Drop image": "Pudota kuva",
+    "or click": "tai napsauta",
+    "Manage Images": "Hallitse kuvia",
+    "Loading": "Lastaus",
+    "Deleting": "Poistaminen",
+    "Tags": "Tagit",
+    "Are you sure? Image will be deleted.": "Oletko varma? Kuva poistetaan.",
+    "Replace": "Vaihda",
+    "Uploading": "Lataaminen",
+    "Loading image": "Lastaus kuva",
+    "Display": "N\u00e4ytt\u00e4",
+    "Inline": "Linjassa",
+    "Break Text": "Rikkoa teksti",
+    "Alternate Text": "Vaihtoehtoinen teksti",
+    "Change Size": "Muuta kokoa",
+    "Width": "Leveys",
+    "Height": "Korkeus",
+    "Something went wrong. Please try again.": "Jotain meni pieleen. Yrit\u00e4 uudelleen.",
+    "Image Caption": "Kuva-otsikko",
+    "Advanced Edit": "Edistynyt muokkaus",
 
-      // Links
-      "Insert Link": 'Lis\xE4\xE4 linkki',
-      "Open in new tab": 'Avaa uudessa v\xE4lilehdess\xE4',
-      "Open Link": "Avaa linkki",
-      "Edit Link": "Muokkaa linkki",
-      "Unlink": "Poista linkki",
-      "Choose Link": "Valitse linkki",
+    // Video
+    "Insert Video": "Lis\u00e4\u00e4 video",
+    "Embedded Code": "Upotettu koodi",
+    "Paste in a video URL": "Liitä video url",
+    "Drop video": "Pudota video",
+    "Your browser does not support HTML5 video.": "Selaimesi ei tue html5-videota.",
+    "Upload Video": "Lataa video",
 
-      // Images
-      "Insert Image": 'Lis\xE4\xE4 kuva',
-      "Upload Image": "Lataa kuva",
-      "By URL": "Mukaan URL",
-      "Browse": "Selailla",
-      "Drop image": "Pudota kuva",
-      "or click": "tai napsauta",
-      "Manage Images": "Hallitse kuvia",
-      "Loading": "Lastaus",
-      "Deleting": "Poistaminen",
-      "Tags": "Tagit",
-      "Are you sure? Image will be deleted.": "Oletko varma? Kuva poistetaan.",
-      "Replace": "Vaihda",
-      "Uploading": "Lataaminen",
-      "Loading image": "Lastaus kuva",
-      "Display": 'N\xE4ytt\xE4',
-      "Inline": "Linjassa",
-      "Break Text": "Rikkoa teksti",
-      "Alternative Text": "Vaihtoehtoinen teksti",
-      "Change Size": "Muuta kokoa",
-      "Width": "Leveys",
-      "Height": "Korkeus",
-      "Something went wrong. Please try again.": 'Jotain meni pieleen. Yrit\xE4 uudelleen.',
-      "Image Caption": "Kuva-otsikko",
-      "Advanced Edit": "Edistynyt muokkaus",
+    // Tables
+    "Insert Table": "Lis\u00e4\u00e4 taulukko",
+    "Table Header": "Taulukko yl\u00e4tunniste",
+    "Remove Table": "Poista taulukko",
+    "Table Style": "Taulukko tyyli",
+    "Horizontal Align": "Vaakasuora tasaa",
+    "Row": "Rivi",
+    "Insert row above": "Lis\u00e4\u00e4 rivi ennen",
+    "Insert row below": "Lis\u00e4\u00e4 rivi j\u00e4lkeen",
+    "Delete row": "Poista rivi",
+    "Column": "Sarake",
+    "Insert column before": "Lis\u00e4\u00e4 sarake ennen",
+    "Insert column after": "Lis\u00e4\u00e4 sarake j\u00e4lkeen",
+    "Delete column": "Poista sarake",
+    "Cell": "Solu",
+    "Merge cells": "Yhdist\u00e4 solut",
+    "Horizontal split": "Jaa vaakasuora",
+    "Vertical split": "Jaa pystysuora",
+    "Cell Background": "Solun tausta",
+    "Vertical Align": "Pystysuora tasaa",
+    "Top": "Alku",
+    "Middle": "Keskimm\u00e4inen",
+    "Bottom": "Pohja",
+    "Align Top": "Tasaa alkuun",
+    "Align Middle": "Tasaa keskimm\u00e4inen",
+    "Align Bottom": "Tasaa pohja",
+    "Cell Style": "Solun tyyli",
 
-      // Video
-      "Insert Video": 'Lis\xE4\xE4 video',
-      "Embedded Code": "Upotettu koodi",
-      "Paste in a video URL": "Liitä video url",
-      "Drop video": "Pudota video",
-      "Your browser does not support HTML5 video.": "Selaimesi ei tue html5-videota.",
-      "Upload Video": "Lataa video",
+    // Files
+    "Upload File": "Lataa tiedosto",
+    "Drop file": "Pudota tiedosto",
 
-      // Tables
-      "Insert Table": 'Lis\xE4\xE4 taulukko',
-      "Table Header": 'Taulukko yl\xE4tunniste',
-      "Remove Table": "Poista taulukko",
-      "Table Style": "Taulukko tyyli",
-      "Horizontal Align": "Vaakasuora tasaa",
-      "Row": "Rivi",
-      "Insert row above": 'Lis\xE4\xE4 rivi ennen',
-      "Insert row below": 'Lis\xE4\xE4 rivi j\xE4lkeen',
-      "Delete row": "Poista rivi",
-      "Column": "Sarake",
-      "Insert column before": 'Lis\xE4\xE4 sarake ennen',
-      "Insert column after": 'Lis\xE4\xE4 sarake j\xE4lkeen',
-      "Delete column": "Poista sarake",
-      "Cell": "Solu",
-      "Merge cells": 'Yhdist\xE4 solut',
-      "Horizontal split": "Jaa vaakasuora",
-      "Vertical split": "Jaa pystysuora",
-      "Cell Background": "Solun tausta",
-      "Vertical Align": "Pystysuora tasaa",
-      "Top": "Alku",
-      "Middle": 'Keskimm\xE4inen',
-      "Bottom": "Pohja",
-      "Align Top": "Tasaa alkuun",
-      "Align Middle": 'Tasaa keskimm\xE4inen',
-      "Align Bottom": "Tasaa pohja",
-      "Cell Style": "Solun tyyli",
+    // Emoticons
+    "Emoticons": "Hymi\u00f6it\u00e4",
+    "Grinning face": "Virnisteli kasvot",
+    "Grinning face with smiling eyes": "Virnisteli kasvot hymyilev\u00e4t silm\u00e4t",
+    "Face with tears of joy": "Kasvot ilon kyyneleit\u00e4",
+    "Smiling face with open mouth": "Hymyilev\u00e4 kasvot suu auki",
+    "Smiling face with open mouth and smiling eyes": "Hymyilev\u00e4 kasvot suu auki ja hymyilee silm\u00e4t",
+    "Smiling face with open mouth and cold sweat": "Hymyilev\u00e4 kasvot suu auki ja kylm\u00e4 hiki",
+    "Smiling face with open mouth and tightly-closed eyes": "Hymyilev\u00e4 kasvot suu auki ja tiiviisti suljettu silm\u00e4t",
+    "Smiling face with halo": "Hymyilev\u00e4 kasvot Halo",
+    "Smiling face with horns": "Hymyilev\u00e4 kasvot sarvet",
+    "Winking face": "Silm\u00e4niskut kasvot",
+    "Smiling face with smiling eyes": "Hymyilev\u00e4 kasvot hymyilev\u00e4t silm\u00e4t",
+    "Face savoring delicious food": "Kasvot maistella herkullista ruokaa",
+    "Relieved face": "Vapautettu kasvot",
+    "Smiling face with heart-shaped eyes": "Hymyilev\u00e4t kasvot syd\u00e4men muotoinen silm\u00e4t",
+    "Smiling face with sunglasses": "Hymyilev\u00e4 kasvot aurinkolasit",
+    "Smirking face": "Hym\u00e4t\u00e4\u00e4 kasvot",
+    "Neutral face": "Neutraali kasvot",
+    "Expressionless face": "Ilmeet\u00f6n kasvot",
+    "Unamused face": "Ei huvittanut kasvo",
+    "Face with cold sweat": "Kasvot kylm\u00e4 hiki",
+    "Pensive face": "Mietteli\u00e4s kasvot",
+    "Confused face": "Sekava kasvot",
+    "Confounded face": "Sekoitti kasvot",
+    "Kissing face": "Suudella kasvot",
+    "Face throwing a kiss": "Kasvo heitt\u00e4\u00e4 suudelma",
+    "Kissing face with smiling eyes": "Suudella kasvot hymyilev\u00e4t silm\u00e4t",
+    "Kissing face with closed eyes": "Suudella kasvot silm\u00e4t ummessa",
+    "Face with stuck out tongue": "Kasvot ojensi kieli",
+    "Face with stuck out tongue and winking eye": "Kasvot on juuttunut pois kielen ja silm\u00e4niskuja silm\u00e4",
+    "Face with stuck out tongue and tightly-closed eyes": "Kasvot on juuttunut pois kielen ja tiiviisti suljettuna silm\u00e4t",
+    "Disappointed face": "Pettynyt kasvot",
+    "Worried face": "Huolissaan kasvot",
+    "Angry face": "Vihainen kasvot",
+    "Pouting face": "Pouting kasvot",
+    "Crying face": "Itku kasvot",
+    "Persevering face": "Pitk\u00e4j\u00e4nteinen kasvot",
+    "Face with look of triumph": "Kasvot ilme Triumph",
+    "Disappointed but relieved face": "Pettynyt mutta helpottunut kasvot",
+    "Frowning face with open mouth": "Frowning kasvot suu auki",
+    "Anguished face": "Tuskainen kasvot",
+    "Fearful face": "Pelokkuus kasvot",
+    "Weary face": "V\u00e4synyt kasvot",
+    "Sleepy face": "Unelias kasvot",
+    "Tired face": "V\u00e4synyt kasvot",
+    "Grimacing face": "Irvist\u00e4en kasvot",
+    "Loudly crying face": "\u00e4\u00e4nekk\u00e4\u00e4sti itku kasvot",
+    "Face with open mouth": "Kasvot suu auki",
+    "Hushed face": "Hiljentynyt kasvot",
+    "Face with open mouth and cold sweat": "Kasvot suu auki ja kylm\u00e4 hiki",
+    "Face screaming in fear": "Kasvot huutaa pelosta",
+    "Astonished face": "H\u00e4mm\u00e4stynyt kasvot",
+    "Flushed face": "Kasvojen punoitus",
+    "Sleeping face": "Nukkuva kasvot",
+    "Dizzy face": "Huimausta kasvot",
+    "Face without mouth": "Kasvot ilman suuhun",
+    "Face with medical mask": "Kasvot l\u00e4\u00e4ketieteen naamio",
 
-      // Files
-      "Upload File": "Lataa tiedosto",
-      "Drop file": "Pudota tiedosto",
+    // Line breaker
+    "Break": "Rikkoa",
 
-      // Emoticons
-      "Emoticons": 'Hymi\xF6it\xE4',
-      "Grinning face": "Virnisteli kasvot",
-      "Grinning face with smiling eyes": 'Virnisteli kasvot hymyilev\xE4t silm\xE4t',
-      "Face with tears of joy": 'Kasvot ilon kyyneleit\xE4',
-      "Smiling face with open mouth": 'Hymyilev\xE4 kasvot suu auki',
-      "Smiling face with open mouth and smiling eyes": 'Hymyilev\xE4 kasvot suu auki ja hymyilee silm\xE4t',
-      "Smiling face with open mouth and cold sweat": 'Hymyilev\xE4 kasvot suu auki ja kylm\xE4 hiki',
-      "Smiling face with open mouth and tightly-closed eyes": 'Hymyilev\xE4 kasvot suu auki ja tiiviisti suljettu silm\xE4t',
-      "Smiling face with halo": 'Hymyilev\xE4 kasvot Halo',
-      "Smiling face with horns": 'Hymyilev\xE4 kasvot sarvet',
-      "Winking face": 'Silm\xE4niskut kasvot',
-      "Smiling face with smiling eyes": 'Hymyilev\xE4 kasvot hymyilev\xE4t silm\xE4t',
-      "Face savoring delicious food": "Kasvot maistella herkullista ruokaa",
-      "Relieved face": "Vapautettu kasvot",
-      "Smiling face with heart-shaped eyes": 'Hymyilev\xE4t kasvot syd\xE4men muotoinen silm\xE4t',
-      "Smiling face with sunglasses": 'Hymyilev\xE4 kasvot aurinkolasit',
-      "Smirking face": 'Hym\xE4t\xE4\xE4 kasvot',
-      "Neutral face": "Neutraali kasvot",
-      "Expressionless face": 'Ilmeet\xF6n kasvot',
-      "Unamused face": "Ei huvittanut kasvo",
-      "Face with cold sweat": 'Kasvot kylm\xE4 hiki',
-      "Pensive face": 'Mietteli\xE4s kasvot',
-      "Confused face": "Sekava kasvot",
-      "Confounded face": "Sekoitti kasvot",
-      "Kissing face": "Suudella kasvot",
-      "Face throwing a kiss": 'Kasvo heitt\xE4\xE4 suudelma',
-      "Kissing face with smiling eyes": 'Suudella kasvot hymyilev\xE4t silm\xE4t',
-      "Kissing face with closed eyes": 'Suudella kasvot silm\xE4t ummessa',
-      "Face with stuck out tongue": "Kasvot ojensi kieli",
-      "Face with stuck out tongue and winking eye": 'Kasvot on juuttunut pois kielen ja silm\xE4niskuja silm\xE4',
-      "Face with stuck out tongue and tightly-closed eyes": 'Kasvot on juuttunut pois kielen ja tiiviisti suljettuna silm\xE4t',
-      "Disappointed face": "Pettynyt kasvot",
-      "Worried face": "Huolissaan kasvot",
-      "Angry face": "Vihainen kasvot",
-      "Pouting face": "Pouting kasvot",
-      "Crying face": "Itku kasvot",
-      "Persevering face": 'Pitk\xE4j\xE4nteinen kasvot',
-      "Face with look of triumph": "Kasvot ilme Triumph",
-      "Disappointed but relieved face": "Pettynyt mutta helpottunut kasvot",
-      "Frowning face with open mouth": "Frowning kasvot suu auki",
-      "Anguished face": "Tuskainen kasvot",
-      "Fearful face": "Pelokkuus kasvot",
-      "Weary face": 'V\xE4synyt kasvot',
-      "Sleepy face": "Unelias kasvot",
-      "Tired face": 'V\xE4synyt kasvot',
-      "Grimacing face": 'Irvist\xE4en kasvot',
-      "Loudly crying face": '\xE4\xE4nekk\xE4\xE4sti itku kasvot',
-      "Face with open mouth": "Kasvot suu auki",
-      "Hushed face": "Hiljentynyt kasvot",
-      "Face with open mouth and cold sweat": 'Kasvot suu auki ja kylm\xE4 hiki',
-      "Face screaming in fear": "Kasvot huutaa pelosta",
-      "Astonished face": 'H\xE4mm\xE4stynyt kasvot',
-      "Flushed face": "Kasvojen punoitus",
-      "Sleeping face": "Nukkuva kasvot",
-      "Dizzy face": "Huimausta kasvot",
-      "Face without mouth": "Kasvot ilman suuhun",
-      "Face with medical mask": 'Kasvot l\xE4\xE4ketieteen naamio',
+    // Math
+    "Subscript": "Alaindeksi",
+    "Superscript": "Yl\u00e4indeksi",
 
-      // Line breaker
-      "Break": "Rikkoa",
+    // Full screen
+    "Fullscreen": "Koko n\u00e4ytt\u00f6",
 
-      // Math
-      "Subscript": "Alaindeksi",
-      "Superscript": 'Yl\xE4indeksi',
+    // Horizontal line
+    "Insert Horizontal Line": "Lis\u00e4\u00e4 vaakasuora viiva",
 
-      // Full screen
-      "Fullscreen": 'Koko n\xE4ytt\xF6',
+    // Clear formatting
+    "Clear Formatting": "Poista muotoilu",
 
-      // Horizontal line
-      "Insert Horizontal Line": 'Lis\xE4\xE4 vaakasuora viiva',
+    // Undo, redo
+    "Undo": "Peru",
+    "Redo": "Tee uudelleen",
 
-      // Clear formatting
-      "Clear Formatting": "Poista muotoilu",
+    // Select all
+    "Select All": "Valitse kaikki",
 
-      // Undo, redo
-      "Undo": "Peru",
-      "Redo": "Tee uudelleen",
+    // Code view
+    "Code View": "Koodi n\u00e4kym\u00e4",
 
-      // Select all
-      "Select All": "Valitse kaikki",
+    // Quote
+    "Quote": "Lainaus",
+    "Increase": "Lis\u00e4t\u00e4",
+    "Decrease": "Pienenn\u00e4",
 
-      // Code view
-      "Code View": 'Koodi n\xE4kym\xE4',
+    // Quick Insert
+    "Quick Insert": "Nopea insertti",
 
-      // Quote
-      "Quote": "Lainaus",
-      "Increase": 'Lis\xE4t\xE4',
-      "Decrease": 'Pienenn\xE4',
+    // Spcial Characters
+    "Special Characters": "Erikoismerkkejä",
+    "Latin": "Latina",
+    "Greek": "Kreikkalainen",
+    "Cyrillic": "Kyrillinen",
+    "Punctuation": "Välimerkit",
+    "Currency": "Valuutta",
+    "Arrows": "Nuolet",
+    "Math": "Matematiikka",
+    "Misc": "Sekalaista",
 
-      // Quick Insert
-      "Quick Insert": "Nopea insertti",
+    // Print.
+    "Print": "Tulosta",
 
-      // Spcial Characters
-      "Special Characters": "Erikoismerkkejä",
-      "Latin": "Latina",
-      "Greek": "Kreikkalainen",
-      "Cyrillic": "Kyrillinen",
-      "Punctuation": "Välimerkit",
-      "Currency": "Valuutta",
-      "Arrows": "Nuolet",
-      "Math": "Matematiikka",
-      "Misc": "Sekalaista",
+    // Spell Checker.
+    "Spell Checker": "Oikeinkirjoittaja",
 
-      // Print.
-      "Print": "Tulosta",
+    // Help
+    "Help": "Auta",
+    "Shortcuts": "Pikakuvakkeet",
+    "Inline Editor": "Inline-editori",
+    "Show the editor": "Näytä editori",
+    "Common actions": "Yhteisiä toimia",
+    "Copy": "Kopio",
+    "Cut": "Leikata",
+    "Paste": "Tahna",
+    "Basic Formatting": "Perusmuotoilu",
+    "Increase quote level": "Lisää lainaustasoa",
+    "Decrease quote level": "Laskea lainaustasoa",
+    "Image / Video": "Kuva / video",
+    "Resize larger": "Kokoa suurempi",
+    "Resize smaller": "Pienempi koko",
+    "Table": "Pöytä",
+    "Select table cell": "Valitse taulukon solu",
+    "Extend selection one cell": "Laajentaa valinta yhden solun",
+    "Extend selection one row": "Laajenna valinta yksi rivi",
+    "Navigation": "Suunnistus",
+    "Focus popup / toolbar": "Painopistevalo / työkalurivi",
+    "Return focus to previous position": "Palauta tarkennus edelliseen asentoon",
 
-      // Spell Checker.
-      "Spell Checker": "Oikeinkirjoittaja",
+    // Embed.ly
+    "Embed URL": "Upottaa URL-osoite",
+    "Paste in a URL to embed": "Liitä upotettu URL-osoite",
 
-      // Help
-      "Help": "Auta",
-      "Shortcuts": "Pikakuvakkeet",
-      "Inline Editor": "Inline-editori",
-      "Show the editor": "Näytä editori",
-      "Common actions": "Yhteisiä toimia",
-      "Copy": "Kopio",
-      "Cut": "Leikata",
-      "Paste": "Tahna",
-      "Basic Formatting": "Perusmuotoilu",
-      "Increase quote level": "Lisää lainaustasoa",
-      "Decrease quote level": "Laskea lainaustasoa",
-      "Image / Video": "Kuva / video",
-      "Resize larger": "Kokoa suurempi",
-      "Resize smaller": "Pienempi koko",
-      "Table": "Pöytä",
-      "Select table cell": "Valitse taulukon solu",
-      "Extend selection one cell": "Laajentaa valinta yhden solun",
-      "Extend selection one row": "Laajenna valinta yksi rivi",
-      "Navigation": "Suunnistus",
-      "Focus popup / toolbar": "Painopistevalo / työkalurivi",
-      "Return focus to previous position": "Palauta tarkennus edelliseen asentoon",
+    // Word Paste.
+    "The pasted content is coming from a Microsoft Word document. Do you want to keep the format or clean it up?": "Liitetty sisältö tulee Microsoft Word -asiakirjasta. Haluatko säilyttää muodon tai puhdistaa sen?",
+    "Keep": "Pitää",
+    "Clean": "Puhdas",
+    "Word Paste Detected": "Sana-tahna havaittu"
+  },
+  direction: "ltr"
+};
 
-      // Embed.ly
-      "Embed URL": "Upottaa URL-osoite",
-      "Paste in a URL to embed": "Liitä upotettu URL-osoite",
-
-      // Word Paste.
-      "The pasted content is coming from a Microsoft Word document. Do you want to keep the format or clean it up?": "Liitetty sisältö tulee Microsoft Word -asiakirjasta. Haluatko säilyttää muodon tai puhdistaa sen?",
-      "Keep": "Pitää",
-      "Clean": "Puhdas",
-      "Word Paste Detected": "Sana-tahna havaittu"
-    },
-    direction: "ltr"
-  };
-
-})));
-//# sourceMappingURL=fi.js.map
+}));
