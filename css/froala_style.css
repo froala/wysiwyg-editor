@@ -60,7 +60,6 @@ img.fr-shadow,
   border-collapse: collapse;
   empty-cells: show;
   max-width: 100%;
-  table-layout: fixed;
 }
 .fr-view table td {
   min-width: 5px;
