@@ -121,7 +121,7 @@ $.FE.LANGUAGE['da'] = {
     "Display": "Udstilling",
     "Inline": "Inline",
     "Break Text": "Afbrydelse tekst",
-    "Alternate Text": "Suppleant tekst",
+    "Alternative Text": "Suppleant tekst",
     "Change Size": "Skift st\u00f8rrelse",
     "Width": "Bredde",
     "Height": "H\u00f8jde",

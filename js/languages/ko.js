@@ -121,7 +121,7 @@ $.FE.LANGUAGE['ko'] = {
     "Display": "\ub514\uc2a4\ud50c\ub808\uc774",
     "Inline": "\uc778\ub77c\uc778",
     "Break Text": "\uad6c\ubd84 \ud14d\uc2a4\ud2b8",
-    "Alternate Text": "\ub300\uccb4 \ud14d\uc2a4\ud2b8",
+    "Alternative Text": "\ub300\uccb4 \ud14d\uc2a4\ud2b8",
     "Change Size": "\ud06c\uae30 \ubcc0\uacbd",
     "Width": "\ud3ed",
     "Height": "\ub192\uc774",

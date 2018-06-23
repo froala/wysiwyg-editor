@@ -121,7 +121,7 @@ $.FE.LANGUAGE['pt_pt'] = {
     "Display": "Exibir",
     "Inline": "Em linha",
     "Break Text": "Texto de quebra",
-    "Alternate Text": "Texto alternativo",
+    "Alternative Text": "Texto alternativo",
     "Change Size": "Alterar tamanho",
     "Width": "Largura",
     "Height": "Altura",

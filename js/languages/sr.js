@@ -121,7 +121,7 @@ $.FE.LANGUAGE['sr'] = {
     "Display": "Prikaz",
     "Inline": "Pri upisivanju",
     "Break Text": "Prelom teksta",
-    "Alternate Text": "Alternativni tekst",
+    "Alternative Text": "Alternativni tekst",
     "Change Size": "Promena veli\u010dine",
     "Width": "\u0160irina",
     "Height": "Visina",

@@ -121,7 +121,7 @@ $.FE.LANGUAGE['cs'] = {
     "Display": "Zobrazit",
     "Inline": "Inline",
     "Break Text": "P\u0159est\u00e1vka textu",
-    "Alternate Text": "Alternativn\u00ed textu",
+    "Alternative Text": "Alternativn\u00ed textu",
     "Change Size": "Zm\u011bnit velikost",
     "Width": "\u0160\u00ed\u0159ka",
     "Height": "V\u00fd\u0161ka",

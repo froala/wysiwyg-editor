@@ -120,7 +120,7 @@ $.FE.LANGUAGE['ku'] = {
     "Display": "پیشان دان",
     "Inline": "ناو دێڕ",
     "Break Text": "ماوەی دەق",
-    "Alternate Text": "جێگرەوەی دەق",
+    "Alternative Text": "جێگرەوەی دەق",
     "Change Size": "گۆڕینی قەبارەی",
     "Width": "پانی",
     "Height": "بەرزی",

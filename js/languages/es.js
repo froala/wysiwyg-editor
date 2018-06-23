@@ -121,7 +121,7 @@ $.FE.LANGUAGE['es'] = {
     "Display": "Mostrar",
     "Inline": "En l\u00ednea",
     "Break Text": "Romper texto",
-    "Alternate Text": "Texto alternativo",
+    "Alternative Text": "Texto alternativo",
     "Change Size": "Cambiar tama\u00f1o",
     "Width": "Ancho",
     "Height": "Altura",

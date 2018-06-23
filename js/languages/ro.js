@@ -122,7 +122,7 @@ $.FE.LANGUAGE['ro'] = {
     "Display": "Afi\u0219are",
     "Inline": "\u00cen linie",
     "Break Text": "Sparge text",
-    "Alternate Text": "Text alternativ",
+    "Alternative Text": "Text alternativ",
     "Change Size": "Modificare dimensiuni",
     "Width": "L\u0103\u021bime",
     "Height": "\u00cen\u0103l\u021bime",

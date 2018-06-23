@@ -121,7 +121,7 @@ $.FE.LANGUAGE['he'] = {
     "Display": "\u05ea\u05e6\u05d5\u05d2\u05d4",
     "Inline": "\u05d1\u05e9\u05d5\u05e8\u05d4",
     "Break Text": "\u05d8\u05e7\u05e1\u05d8 \u05d4\u05e4\u05e1\u05e7\u05d4",
-    "Alternate Text": "\u05d8\u05e7\u05e1\u05d8 \u05d7\u05dc\u05d5\u05e4\u05d9",
+    "Alternative Text": "\u05d8\u05e7\u05e1\u05d8 \u05d7\u05dc\u05d5\u05e4\u05d9",
     "Change Size": "\u05d2\u05d5\u05d3\u05dc \u05e9\u05d9\u05e0\u05d5\u05d9",
     "Width": "\u05e8\u05d5\u05d7\u05d1",
     "Height": "\u05d2\u05d5\u05d1\u05d4",

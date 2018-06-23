@@ -121,7 +121,7 @@ $.FE.LANGUAGE['et'] = {
     "Display": "Kuvama",
     "Inline": "J\u00e4rjekorras",
     "Break Text": "Murdma teksti",
-    "Alternate Text": "Asendusliikme teksti",
+    "Alternative Text": "Asendusliikme teksti",
     "Change Size": "Muuda suurust",
     "Width": "Laius",
     "Height": "K\u00f5rgus",

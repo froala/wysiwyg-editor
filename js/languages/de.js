@@ -121,7 +121,7 @@ $.FE.LANGUAGE['de'] = {
     "Display": "Textausrichtung",
     "Inline": "Mit Text in einer Zeile",
     "Break Text": "Text umbrechen",
-    "Alternate Text": "Alternativtext",
+    "Alternative Text": "Alternativtext",
     "Change Size": "Größe ändern",
     "Width": "Breite",
     "Height": "Höhe",

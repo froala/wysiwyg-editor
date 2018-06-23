@@ -122,7 +122,7 @@ $.FE.LANGUAGE['sk'] = {
     "Display": "Zobrazi\u0165",
     "Inline": "Inline",
     "Break Text": "Zalomenie textu",
-    "Alternate Text": "Alternat\u00edvny text",
+    "Alternative Text": "Alternat\u00edvny text",
     "Change Size": "Zmeni\u0165 ve\u013ekos\u0165",
     "Width": "\u0165\u00edrka",
     "Height": "V\u00fd\u0161ka",

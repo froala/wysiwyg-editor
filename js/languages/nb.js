@@ -121,7 +121,7 @@ $.FE.LANGUAGE['nb'] = {
     "Display": "Utstilling",
     "Inline": "P\u00e5 linje",
     "Break Text": "Brudd tekst",
-    "Alternate Text": "Alternativ tekst",
+    "Alternative Text": "Alternativ tekst",
     "Change Size": "Endre st\u00f8rrelse",
     "Width": "Bredde",
     "Height": "H\u00f8yde",

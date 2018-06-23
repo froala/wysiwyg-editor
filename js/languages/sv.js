@@ -121,7 +121,7 @@ $.FE.LANGUAGE['sv'] = {
     "Display": "Visa",
     "Inline": "I linje",
     "Break Text": "Bryt text",
-    "Alternate Text": "Alternativ text",
+    "Alternative Text": "Alternativ text",
     "Change Size": "\u00c4ndra storlek",
     "Width": "Bredd",
     "Height": "H\u00f6jd",

@@ -121,7 +121,7 @@ $.FE.LANGUAGE['zh_cn'] = {
     "Display": "\u663e\u793a",
     "Inline": "\u6392\u961f",
     "Break Text": "\u65ad\u5f00\u6587\u672c",
-    "Alternate Text": "\u5907\u7528\u6587\u672c",
+    "Alternative Text": "\u5907\u7528\u6587\u672c",
     "Change Size": "\u5c3a\u5bf8\u53d8\u5316",
     "Width": "\u5bbd\u5ea6",
     "Height": "\u9ad8\u5ea6",

@@ -121,7 +121,7 @@ $.FE.LANGUAGE['nl'] = {
     "Display": "Tonen",
     "Inline": "Inline",
     "Break Text": "Tekst afbreken",
-    "Alternate Text": "Alternatieve tekst",
+    "Alternative Text": "Alternatieve tekst",
     "Change Size": "Grootte wijzigen",
     "Width": "Breedte",
     "Height": "Hoogte",

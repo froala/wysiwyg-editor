@@ -121,7 +121,7 @@ $.FE.LANGUAGE['hu'] = {
     "Display": "Kijelz\u0151",
     "Inline": "Sorban",
     "Break Text": "Sz\u00f6veg t\u00f6r\u00e9se",
-    "Alternate Text": "Alternat\u00edv sz\u00f6veg",
+    "Alternative Text": "Alternat\u00edv sz\u00f6veg",
     "Change Size": "M\u00e9ret m\u00f3dos\u00edt\u00e1sa",
     "Width": "Sz\u00e9less\u00e9g",
     "Height": "Magass\u00e1g",

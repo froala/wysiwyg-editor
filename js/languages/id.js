@@ -121,7 +121,7 @@ $.FE.LANGUAGE['id'] = {
     "Display": "Pameran",
     "Inline": "Di barisan",
     "Break Text": "Memecah teks",
-    "Alternate Text": "Teks alternatif",
+    "Alternative Text": "Teks alternatif",
     "Change Size": "Ukuran perubahan",
     "Width": "Lebar",
     "Height": "Tinggi",

@@ -121,7 +121,7 @@ $.FE.LANGUAGE['ja'] = {
     "Display": "\u8868\u793a",
     "Inline": "\u30a4\u30f3\u30e9\u30a4\u30f3",
     "Break Text": "\u30c6\u30ad\u30b9\u30c8\u306e\u6539\u884c",
-    "Alternate Text": "\u4ee3\u66ff\u30c6\u30ad\u30b9\u30c8",
+    "Alternative Text": "\u4ee3\u66ff\u30c6\u30ad\u30b9\u30c8",
     "Change Size": "\u30b5\u30a4\u30ba\u5909\u66f4",
     "Width": "\u5e45",
     "Height": "\u9ad8\u3055",

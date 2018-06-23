@@ -121,7 +121,7 @@ $.FE.LANGUAGE['zh_tw'] = {
     "Display": "\u986f\u793a",
     "Inline": "\u5d4c\u5165",
     "Break Text": "\u8207\u6587\u5b57\u5206\u96e2",
-    "Alternate Text": "\u6587\u5b57\u74b0\u7e5e",
+    "Alternative Text": "\u6587\u5b57\u74b0\u7e5e",
     "Change Size": "\u8abf\u6574\u5927\u5c0f",
     "Width": "\u5bec\u5ea6",
     "Height": "\u9ad8\u5ea6",

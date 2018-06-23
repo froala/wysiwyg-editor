@@ -121,7 +121,7 @@ $.FE.LANGUAGE['tr'] = {
     "Display": "G\u00f6stermek",
     "Inline": "\u00c7izgide",
     "Break Text": "K\u0131r\u0131lma metni",
-    "Alternate Text": "Alternatif metin",
+    "Alternative Text": "Alternatif metin",
     "Change Size": "De\u011fi\u015fim boyutu",
     "Width": "Geni\u015flik",
     "Height": "Y\u00fckseklik",
