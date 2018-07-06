@@ -64,7 +64,7 @@ $.FE.LANGUAGE['ru'] = {
     "Colors": "\u0426\u0432\u0435\u0442\u0430",
     "Background": "\u0424\u043e\u043d",
     "Text": "\u0422\u0435\u043a\u0441\u0442",
-    "HEX Color": "Шестнадцатеричный код цвета",
+    "HEX Color": "HEX цвет",
 
     // Paragraphs
     "Paragraph Format": "\u0424\u043e\u0440\u043c\u0430\u0442 \u0430\u0431\u0437\u0430\u0446\u0430",
@@ -126,15 +126,15 @@ $.FE.LANGUAGE['ru'] = {
     "Width": "\u0428\u0438\u0440\u0438\u043d\u0430",
     "Height": "\u0412\u044b\u0441\u043e\u0442\u0430",
     "Something went wrong. Please try again.": "\u0427\u0442\u043e\u002d\u0442\u043e \u043f\u043e\u0448\u043b\u043e \u043d\u0435 \u0442\u0430\u043a\u002e \u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430\u002c \u043f\u043e\u043f\u0440\u043e\u0431\u0443\u0439\u0442\u0435 \u0435\u0449\u0435 \u0440\u0430\u0437\u002e",
-    "Image Caption": "Подпись изображения",
+    "Image Caption": "Подпись к изображению",
     "Advanced Edit": "Расширенное редактирование",
 
     // Video
     "Insert Video": "\u0412\u0441\u0442\u0430\u0432\u0438\u0442\u044c \u0432\u0438\u0434\u0435\u043e",
     "Embedded Code": "\u0048\u0054\u004d\u004c\u002d\u043a\u043e\u0434 \u0434\u043b\u044f \u0432\u0441\u0442\u0430\u0432\u043a\u0438",
     "Paste in a video URL": "Вставить URL-адрес видео",
-    "Drop video": "Перетащите видефайл",
-    "Your browser does not support HTML5 video.": "Ваш браузер не поддерживает видео html5.",
+    "Drop video": "Вставить видео",
+    "Your browser does not support HTML5 video.": "Ваш браузер не поддерживает html5 видео.",
     "Upload Video": "Загрузить видео",
 
     // Tables
@@ -280,26 +280,26 @@ $.FE.LANGUAGE['ru'] = {
     "Spell Checker": "Программа проверки орфографии",
 
     // Help
-    "Help": "Помогите",
-    "Shortcuts": "Сочетания",
+    "Help": "Помощь",
+    "Shortcuts": "Горячие клавищи",
     "Inline Editor": "Встроенный редактор",
-    "Show the editor": "Показать редактора",
+    "Show the editor": "Показать редактор",
     "Common actions": "Общие действия",
-    "Copy": "Копия",
-    "Cut": "Порез",
+    "Copy": "Копировать",
+    "Cut": "Вырезать",
     "Paste": "Вставить",
     "Basic Formatting": "Базовое форматирование",
-    "Increase quote level": "Увеличить уровень котировки",
-    "Decrease quote level": "Уменьшить уровень кавычек",
-    "Image / Video": "Изображение / видео",
+    "Increase quote level": "Увеличить уровень цитирования",
+    "Decrease quote level": "Уменьшить уровень цитирования",
+    "Image / Video": "Изображение / Видео",
     "Resize larger": "Изменить размер",
     "Resize smaller": "Уменьшить размер",
     "Table": "Таблица",
     "Select table cell": "Выбрать ячейку таблицы",
-    "Extend selection one cell": "Продлить выделение одной ячейки",
+    "Extend selection one cell": "Расширить выделение одной ячейки",
     "Extend selection one row": "Расширить выделение на одну строку",
     "Navigation": "Навигация",
-    "Focus popup / toolbar": "Фокусное всплывающее окно / панель инструментов",
+    "Focus popup / toolbar": "Сфокусировать всплывающее окно / панель инструментов",
     "Return focus to previous position": "Вернуть фокус на предыдущую позицию",
 
     // Embed.ly
@@ -307,10 +307,10 @@ $.FE.LANGUAGE['ru'] = {
     "Paste in a URL to embed": "Вставить URL-адрес для встраивания",
 
     // Word Paste.
-    "The pasted content is coming from a Microsoft Word document. Do you want to keep the format or clean it up?": "Вложенный контент поступает из документа Microsoft Word. вы хотите сохранить формат или очистить его?",
-    "Keep": "Держать",
-    "Clean": "Чистый",
-    "Word Paste Detected": "Обнаружена паста слов"
+    "The pasted content is coming from a Microsoft Word document. Do you want to keep the format or clean it up?": "Вы пытаетесь вставить текст из документа Microsoft Word. Вы хотите сохранить или очистить формат?",
+    "Keep": "Сохранить",
+    "Clean": "Очистить",
+    "Word Paste Detected": "Обнаружена вставка отформатированного текста"
   },
   direction: "ltr"
 };
