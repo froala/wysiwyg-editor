@@ -40,7 +40,7 @@ $.FE.LANGUAGE['zh_cn'] = {
     "Type something": "输入内容",
 
     // Basic formatting
-    "Bold": "黑体",
+    "Bold": "加粗",
     "Italic": "斜体",
     "Underline": "下划线",
     "Strikethrough": "删除线",
@@ -84,7 +84,7 @@ $.FE.LANGUAGE['zh_cn'] = {
     "Align Left": "左对齐",
     "Align Center": "居中",
     "Align Right": "右对齐",
-    "Align Justify": "均齐",
+    "Align Justify": "两端对齐",
     "None": "无",
 
     // Lists
@@ -117,7 +117,7 @@ $.FE.LANGUAGE['zh_cn'] = {
     "Are you sure? Image will be deleted.": "图片将会被删除，是否确认？",
     "Replace": "替换",
     "Uploading": "上传中",
-    "Loading image": "加载图片",
+    "Loading image": "图片加载中",
     "Display": "显示",
     "Inline": "内联",
     "Break Text": "换行文本",
@@ -292,10 +292,10 @@ $.FE.LANGUAGE['zh_cn'] = {
     "Increase quote level": "增加引用级别",
     "Decrease quote level": "减少引用级别",
     "Image / Video": "图像/视频",
-    "Resize larger": "更大",
-    "Resize smaller": "更小",
+    "Resize larger": "放大",
+    "Resize smaller": "缩小",
     "Table": "表格",
-    "Select table cell": "选择表单元格",
+    "Select table cell": "选择单元格",
     "Extend selection one cell": "扩展选择单元格",
     "Extend selection one row": "扩展选择行",
     "Navigation": "导航",
@@ -307,9 +307,9 @@ $.FE.LANGUAGE['zh_cn'] = {
     "Paste in a URL to embed": "粘贴要嵌入的网址",
 
     // Word Paste.
-    "The pasted content is coming from a Microsoft Word document. Do you want to keep the format or clean it up?": "粘贴的内容来自微软 Word 文档。你想保留格式还是清清除格式？",
+    "The pasted content is coming from a Microsoft Word document. Do you want to keep the format or clean it up?": "粘贴的内容来自微软 Word 文档。你想保留格式还是清除格式？",
     "Keep": "保留",
-    "Clean": "清理",
+    "Clean": "清除",
     "Word Paste Detected": "检测到来自 Word 的粘贴"
   },
   direction: "ltr"
