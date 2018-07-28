@@ -40,7 +40,7 @@ $.FE.LANGUAGE['zh_cn'] = {
     "Type something": "输入内容",
 
     // Basic formatting
-    "Bold": "加粗",
+    "Bold": "粗体",
     "Italic": "斜体",
     "Underline": "下划线",
     "Strikethrough": "删除线",
@@ -51,7 +51,7 @@ $.FE.LANGUAGE['zh_cn'] = {
     "Cancel": "取消",
     "OK": "确定",
     "Back": "后退",
-    "Remove": "移除",
+    "Remove": "删除",
     "More": "更多",
     "Update": "更新",
     "Style": "样式",
@@ -63,24 +63,24 @@ $.FE.LANGUAGE['zh_cn'] = {
     // Colors
     "Colors": "颜色",
     "Background": "背景",
-    "Text": "文本",
+    "Text": "字体",
     "HEX Color": "十六进制颜色",
 
     // Paragraphs
     "Paragraph Format": "段落格式",
-    "Normal": "普通",
+    "Normal": "正文",
     "Code": "代码",
-    "Heading 1": "一级标题",
-    "Heading 2": "二级标题",
-    "Heading 3": "三级标题",
-    "Heading 4": "四级标题",
+    "Heading 1": "标题1",
+    "Heading 2": "标题2",
+    "Heading 3": "标题3",
+    "Heading 4": "标题4",
 
     // Style
     "Paragraph Style": "段落样式",
     "Inline Style": "内联样式",
 
     // Alignment
-    "Align": "对齐",
+    "Align": "对齐方式",
     "Align Left": "左对齐",
     "Align Center": "居中",
     "Align Right": "右对齐",
@@ -88,20 +88,20 @@ $.FE.LANGUAGE['zh_cn'] = {
     "None": "无",
 
     // Lists
-    "Ordered List": "有序列表",
-    "Unordered List": "无序列表",
+    "Ordered List": "编号",
+    "Unordered List": "项目符号",
 
     // Indent
-    "Decrease Indent": "增加缩进",
-    "Increase Indent": "减少缩进",
+    "Decrease Indent": "减少缩进量",
+    "Increase Indent": "增加缩进量",
 
     // Links
-    "Insert Link": "插入链接",
-    "Open in new tab": "在新标签打开",
-    "Open Link": "打开链接",
-    "Edit Link": "编辑链接",
-    "Unlink": "取消链接",
-    "Choose Link": "选择链接",
+    "Insert Link": "插入超链接",
+    "Open in new tab": "在新标签页中打开",
+    "Open Link": "打开超链接",
+    "Edit Link": "编辑超链接",
+    "Unlink": "删除超链接",
+    "Choose Link": "选择超链接",
 
     // Images
     "Insert Image": "插入图片",
@@ -119,9 +119,9 @@ $.FE.LANGUAGE['zh_cn'] = {
     "Uploading": "上传中",
     "Loading image": "图片加载中",
     "Display": "显示",
-    "Inline": "内联",
-    "Break Text": "换行文本",
-    "Alternative Text": "替代文本",
+    "Inline": "嵌入型",
+    "Break Text": "上下型环绕",
+    "Alternative Text": "替换文字",
     "Change Size": "改变大小",
     "Width": "宽度",
     "Height": "高度",
@@ -132,7 +132,7 @@ $.FE.LANGUAGE['zh_cn'] = {
     // Video
     "Insert Video": "插入视频",
     "Embedded Code": "嵌入代码",
-    "Paste in a video URL": "粘贴入视频网址",
+    "Paste in a video URL": "粘贴视频网址",
     "Drop video": "拖入视频",
     "Your browser does not support HTML5 video.": "您的浏览器不支持 HTML5 视频。",
     "Upload Video": "上传视频",
@@ -142,27 +142,27 @@ $.FE.LANGUAGE['zh_cn'] = {
     "Table Header": "表头",
     "Remove Table": "删除表格",
     "Table Style": "表格样式",
-    "Horizontal Align": "水平对齐",
+    "Horizontal Align": "水平对齐方式",
     "Row": "行",
-    "Insert row above": "在上方插入行",
-    "Insert row below": "在下方插入行",
+    "Insert row above": "在上方插入",
+    "Insert row below": "在下方插入",
     "Delete row": "删除行",
     "Column": "列",
-    "Insert column before": "在左侧插入列",
-    "Insert column after": "在右侧插入列",
+    "Insert column before": "在左侧插入",
+    "Insert column after": "在右侧插入",
     "Delete column": "删除列",
     "Cell": "单元格",
     "Merge cells": "合并单元格",
     "Horizontal split": "水平分割",
     "Vertical split": "垂直分割",
     "Cell Background": "单元格背景",
-    "Vertical Align": "垂直对齐",
-    "Top": "顶端",
-    "Middle": "中部",
-    "Bottom": "底端",
-    "Align Top": "向上对齐",
-    "Align Middle": "水平置中",
-    "Align Bottom": "向下对齐",
+    "Vertical Align": "垂直对齐方式",
+    "Top": "靠上",
+    "Middle": "居中",
+    "Bottom": "靠下",
+    "Align Top": "靠上对齐",
+    "Align Middle": "居中对齐",
+    "Align Bottom": "靠下对齐",
     "Cell Style": "单元格样式",
 
     // Files
@@ -245,8 +245,8 @@ $.FE.LANGUAGE['zh_cn'] = {
     "Clear Formatting": "清除格式",
 
     // Undo, redo
-    "Undo": "撤销",
-    "Redo": "重做",
+    "Undo": "撤消",
+    "Redo": "恢复",
 
     // Select all
     "Select All": "全选",
@@ -264,9 +264,9 @@ $.FE.LANGUAGE['zh_cn'] = {
 
     // Spcial Characters
     "Special Characters": "特殊字符",
-    "Latin": "拉丁",
-    "Greek": "希腊语",
-    "Cyrillic": "西里尔",
+    "Latin": "拉丁字母",
+    "Greek": "希腊字母",
+    "Cyrillic": "西里尔字母",
     "Punctuation": "标点",
     "Currency": "货币",
     "Arrows": "箭头",
@@ -296,8 +296,8 @@ $.FE.LANGUAGE['zh_cn'] = {
     "Resize smaller": "缩小",
     "Table": "表格",
     "Select table cell": "选择单元格",
-    "Extend selection one cell": "扩展选择单元格",
-    "Extend selection one row": "扩展选择行",
+    "Extend selection one cell": "增加选中的单元格",
+    "Extend selection one row": "增加选中的行",
     "Navigation": "导航",
     "Focus popup / toolbar": "焦点弹出/工具栏",
     "Return focus to previous position": "将焦点返回到上一个位置",
@@ -307,10 +307,10 @@ $.FE.LANGUAGE['zh_cn'] = {
     "Paste in a URL to embed": "粘贴要嵌入的网址",
 
     // Word Paste.
-    "The pasted content is coming from a Microsoft Word document. Do you want to keep the format or clean it up?": "粘贴的内容来自微软 Word 文档。你想保留格式还是清除格式？",
+    "The pasted content is coming from a Microsoft Word document. Do you want to keep the format or clean it up?": "粘贴的内容来自微软 Word 文档。你想保留还是清除格式？",
     "Keep": "保留",
     "Clean": "清除",
-    "Word Paste Detected": "检测到来自 Word 的粘贴"
+    "Word Paste Detected": "检测到粘贴自 Word 的内容"
   },
   direction: "ltr"
 };
