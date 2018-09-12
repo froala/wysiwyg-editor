@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.com/froala-labs/froala-editor-js-2.svg?token=6qHm2TpvBKAAVFCrJa9X&branch=master)](https://travis-ci.com/froala-labs/froala-editor-js-2)
 [![npm](https://img.shields.io/npm/dm/froala-editor.svg)](https://www.npmjs.com/package/froala-editor)
-[![Issue Stats](https://img.shields.io/issuestats/i/github/froala/wysiwyg-editor.svg)](https://github.com/froala/wysiwyg-editor)
+[![GitHub closed issues](https://img.shields.io/github/issues-closed-raw/badges/shields.svg)](https://github.com/froala/wysiwyg-editor)
 [![npm](https://img.shields.io/npm/v/froala-editor.svg)](https://www.npmjs.com/package/froala-editor)
 
 Froala WYSIWYG HTML Editor is one of the most powerful JavaScript rich text editors ever.
