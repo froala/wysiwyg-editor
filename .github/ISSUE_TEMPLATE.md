@@ -1,3 +1,5 @@
+### _If you have a feature suggestion, please add it on the [Feature List](https://wysiwyg-editor-roadmap.froala.com/public) instead._
+
 ##### Expected behavior.
 (Describe expected behaviour here)
 
