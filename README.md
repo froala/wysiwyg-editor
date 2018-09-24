@@ -17,7 +17,7 @@ Froala WYSIWYG HTML Editor is one of the most powerful JavaScript rich text edit
 - Simple to extend - the plugins are all well commented and simple to use as a basis for your own plugins
 - Well maintained - [frequent releases](https://www.froala.com/wysiwyg-editor/changelog)
 - Great support - [Help Center](https://wysiwyg-editor.froala.help)
-
+- Awesome [new features](https://wysiwyg-editor-roadmap.froala.com)
 ​
 
 
@@ -111,6 +111,7 @@ At present, we officially aim to support the last two versions of the following 
 - Documentation:  [froala.com/wysiwyg-editor/docs](https://www.froala.com/wysiwyg-editor/docs)
 - License Agreement: [www.froala.com/wysiwyg-editor/terms](https://www.froala.com/wysiwyg-editor/terms)
 - Support: [wysiwyg-editor.froala.help](https://wysiwyg-editor.froala.help/hc/en-us)
+- Roadmap & Feature Requests: [https://wysiwyg-editor-roadmap.froala.com](https://wysiwyg-editor-roadmap.froala.com)
 - Issues [Repo guidelines](https://github.com/highcharts/highcharts/blob/master/repo-guidelines.md)
 
 
