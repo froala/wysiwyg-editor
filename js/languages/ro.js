@@ -112,7 +112,6 @@ $.FE.LANGUAGE['ro'] = {
     "or click": "sau f\u0103 click",
     "Manage Images": "Gestionare imagini",
     "Loading": "Se \u00eencarc\u0103",
-    "Deleting": "",
     "Deleting": "Se \u0219terge",
     "Tags": "Etichete",
     "Are you sure? Image will be deleted.": "Sunte\u021bi sigur? Imaginea va fi \u015ftears\u0103.",
