@@ -244,6 +244,9 @@ $.FE.LANGUAGE['zh_tw'] = {
     // Clear formatting
     "Clear Formatting": "\u6e05\u9664\u683c\u5f0f",
 
+    // Save
+    "Save": "保存",
+
     // Undo, redo
     "Undo": "\u5fa9\u539f",
     "Redo": "\u53d6\u6d88\u5fa9\u539f",

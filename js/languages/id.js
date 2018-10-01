@@ -245,6 +245,9 @@ $.FE.LANGUAGE['id'] = {
     // Clear formatting
     "Clear Formatting": "Menghapus format",
 
+    // Save
+    "Save": "Menyimpan",
+
     // Undo, redo
     "Undo": "Batal",
     "Redo": "Ulang",

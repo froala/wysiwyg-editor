@@ -248,6 +248,9 @@ $.FE.LANGUAGE['da'] = {
     "Undo": "Fortryd",
     "Redo": "Genopret",
 
+    // Save
+    "Save": "Gemme",
+
     // Select all
     "Select All": "V\u00e6lg alle",
 

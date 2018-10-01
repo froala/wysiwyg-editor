@@ -244,6 +244,9 @@ $.FE.LANGUAGE['sr'] = {
     // Clear formatting
     "Clear Formatting": "Brisanje oblikovanja",
 
+    // Save
+    "Save": "\u0441\u0430\u0447\u0443\u0432\u0430\u0442\u0438",
+
     // Undo, redo
     "Undo": "Opozovi radnju",
     "Redo": "Ponavljanje",

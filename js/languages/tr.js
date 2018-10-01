@@ -244,6 +244,9 @@ $.FE.LANGUAGE['tr'] = {
     // Clear formatting
     "Clear Formatting": "Bi\u00e7imlendirme kald\u0131r",
 
+    // Save
+    "Save": "Kayıt etmek",
+
     // Undo, redo
     "Undo": "Geri Al",
     "Redo": "Yinele",

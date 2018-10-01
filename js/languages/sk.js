@@ -245,6 +245,9 @@ $.FE.LANGUAGE['sk'] = {
     // Clear formatting
     "Clear Formatting": "Vymaza\u0165 formatovanie",
 
+    // Save
+    "Save": "\u0055\u006c\u006f\u017e\u0069\u0165",
+
     // Undo, redo
     "Undo": "Sp\u00e4\u0165",
     "Redo": "Znova",

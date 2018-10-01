@@ -244,6 +244,9 @@ $.FE.LANGUAGE['nb'] = {
     // Clear formatting
     "Clear Formatting": "Fjerne formatering",
 
+    // Save
+    "Save": "Lagre",
+
     // Undo, redo
     "Undo": "Angre",
     "Redo": "Utf\u00f8r likevel",

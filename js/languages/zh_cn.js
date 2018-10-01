@@ -244,6 +244,9 @@ $.FE.LANGUAGE['zh_cn'] = {
     // Clear formatting
     "Clear Formatting": "清除格式",
 
+    // Save
+    "Save": "保存",
+
     // Undo, redo
     "Undo": "撤消",
     "Redo": "恢复",

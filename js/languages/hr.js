@@ -244,6 +244,9 @@ $.FE.LANGUAGE['hr'] = {
     // Clear formatting
     "Clear Formatting": "Ukloni oblikovanje",
 
+    // Save
+    "Save": "\u0055\u0161\u0074\u0065\u0064\u006a\u0065\u0074\u0069",
+
     // Undo, redo
     "Undo": "Korak natrag",
     "Redo": "Korak naprijed",

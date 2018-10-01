@@ -237,6 +237,9 @@ $.FE.LANGUAGE['ku'] = {
     // Clear formatting
     "Clear Formatting": "سڕینەوەی شێواز",
 
+    // Save
+    "Save": "",
+
     // Undo, redo
     "Undo": "گەڕانەوە",
     "Redo": "هێنانەوەی هەنگاوی پێشتر",

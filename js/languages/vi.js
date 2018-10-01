@@ -184,6 +184,9 @@ $.FE.LANGUAGE['vi'] = {
     // Clear formatting
     "Clear Formatting": "X\u00F3a \u0111\u1ECBnh d\u1EA1ng",
 
+    // Save
+    "Save": "Save",
+
     // Undo, redo
     "Undo": "Undo",
     "Redo": "Redo",

@@ -244,6 +244,9 @@ $.FE.LANGUAGE['fi'] = {
     // Clear formatting
     "Clear Formatting": "Poista muotoilu",
 
+    // Save
+    "Save": "Tallentaa",
+
     // Undo, redo
     "Undo": "Peru",
     "Redo": "Tee uudelleen",

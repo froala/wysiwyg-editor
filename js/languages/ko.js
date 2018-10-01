@@ -244,6 +244,9 @@ $.FE.LANGUAGE['ko'] = {
     // Clear formatting
     "Clear Formatting": "\uc11c\uc2dd \uc81c\uac70",
 
+    // Save
+    "Save": "\uad6c\ud558\ub2e4",
+
     // Undo, redo
     "Undo": "\uc2e4\ud589 \ucde8\uc18c",
     "Redo": "\ub418\ub3cc\ub9ac\uae30",

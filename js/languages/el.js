@@ -250,6 +250,9 @@ $.FE.LANGUAGE['el'] = {
     // Clear formatting
     "Clear Formatting": "Εκαθάριση μορφοποίησης",
 
+    // Save
+    "Save": "",
+
     // Undo, redo
     "Undo": "Αναίρεση",
     "Redo": "Επανάληψη",

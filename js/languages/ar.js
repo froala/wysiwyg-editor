@@ -244,6 +244,9 @@ $.FE.LANGUAGE['ar'] = {
     // Clear formatting
     "Clear Formatting": "\u0625\u0632\u0627\u0644\u0629 \u0627\u0644\u062a\u0646\u0633\u064a\u0642",
 
+    // Save
+    "Save": "\u062d\u0641\u0638",
+
     // Undo, redo
     "Undo": "\u062a\u0631\u0627\u062c\u0639",
     "Redo": "\u0625\u0639\u0627\u062f\u0629",

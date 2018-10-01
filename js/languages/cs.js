@@ -244,6 +244,9 @@ $.FE.LANGUAGE['cs'] = {
     // Clear formatting
     "Clear Formatting": "Vymazat form\u00e1tov\u00e1n\u00ed",
 
+    // Save
+    "Save": "\u0055\u006c\u006f\u017e\u0069\u0074",
+
     // Undo, redo
     "Undo": "Zp\u011bt",
     "Redo": "Znovu",

@@ -244,6 +244,9 @@ $.FE.LANGUAGE['ro'] = {
     // Clear formatting
     "Clear Formatting": "Elimina\u021bi formatarea",
 
+    // Save
+    "Save": "\u0053\u0061\u006c\u0076\u0061\u021b\u0069",
+
     // Undo, redo
     "Undo": "Reexecut\u0103",
     "Redo": "Dezexecut\u0103",

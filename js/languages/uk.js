@@ -244,6 +244,9 @@ $.FE.LANGUAGE['uk'] = {
     // Clear formatting
     "Clear Formatting": "\u041e\u0447\u0438\u0441\u0442\u0438\u0442\u0438 \u0444\u043e\u0440\u043c\u0430\u0442\u0443\u0432\u0430\u043d\u043d\u044f",
 
+    // Save
+    "Save": "\u0417\u0431\u0435\u0440\u0435\u0433\u0442\u0438",
+
     // Undo, redo
     "Undo": "\u0421\u043a\u0430\u0441\u0443\u0432\u0430\u0442\u0438",
     "Redo": "\u041f\u043e\u0432\u0442\u043e\u0440\u0438\u0442\u0438",

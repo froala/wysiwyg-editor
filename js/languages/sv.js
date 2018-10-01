@@ -244,6 +244,9 @@ $.FE.LANGUAGE['sv'] = {
     // Clear formatting
     "Clear Formatting": "Ta bort formatering",
 
+    // Save
+    "Save": "Spara",
+
     // Undo, redo
     "Undo": "\u00c5ngra",
     "Redo": "G\u00f6r om",

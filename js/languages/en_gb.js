@@ -188,6 +188,9 @@ $.FE.LANGUAGE['en_gb'] = {
     // Clear formatting
     "Clear Formatting": "Cell Formatting",
 
+    // Save
+    "Save": "Save",
+
     // Undo, redo
     "Undo": "Undo",
     "Redo": "Redo",

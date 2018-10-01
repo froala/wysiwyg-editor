@@ -244,6 +244,9 @@ $.FE.LANGUAGE['es'] = {
     // Clear formatting
     "Clear Formatting": "Quitar el formato",
 
+    // Save
+    "Save": "Salvar",
+
     // Undo, redo
     "Undo": "Deshacer",
     "Redo": "Rehacer",

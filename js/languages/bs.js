@@ -244,6 +244,9 @@ $.FE.LANGUAGE['bs'] = {
     // Clear formatting
     "Clear Formatting": "Izbrisati formatiranje",
 
+    // Save
+    "Save":"Spremi",
+
     // Undo, redo
     "Undo": "Korak nazad",
     "Redo": "Korak naprijed",

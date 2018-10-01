@@ -244,6 +244,9 @@ $.FE.LANGUAGE['et'] = {
     // Clear formatting
     "Clear Formatting": "Eemalda formaatimine",
 
+    // Save
+    "Save": "Salvesta",
+
     // Undo, redo
     "Undo": "V\u00f5ta tagasi",
     "Redo": "Tee uuesti",

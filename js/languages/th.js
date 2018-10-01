@@ -244,6 +244,9 @@ $.FE.LANGUAGE['th'] = {
     // Clear formatting
     "Clear Formatting": "\u0e19\u0e33\u0e01\u0e32\u0e23\u0e08\u0e31\u0e14\u0e23\u0e39\u0e1b\u0e41\u0e1a\u0e1a",
 
+    // Save
+    "Save": "\u0e1a\u0e31\u0e19\u0e17\u0e36\u0e01",
+
     // Undo, redo
     "Undo": "\u0e40\u0e25\u0e34\u0e01\u0e17\u0e33",
     "Redo": "\u0e17\u0e4d\u0e32\u0e0b\u0e49\u0e33",

@@ -244,6 +244,9 @@ $.FE.LANGUAGE['ja'] = {
     // Clear formatting
     "Clear Formatting": "\u66f8\u5f0f\u306e\u30af\u30ea\u30a2",
 
+    // Save
+    "Save": "\u30bb\u30fc\u30d6",
+
     // Undo, redo
     "Undo": "\u5143\u306b\u623b\u3059",
     "Redo": "\u3084\u308a\u76f4\u3059",

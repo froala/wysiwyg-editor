@@ -244,6 +244,9 @@ $.FE.LANGUAGE['nl'] = {
     // Clear formatting
     "Clear Formatting": "Verwijder opmaak",
 
+    // Save
+    "Save": "Opslaan",
+
     // Undo, redo
     "Undo": "Ongedaan maken",
     "Redo": "Opnieuw",

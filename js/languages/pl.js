@@ -244,6 +244,9 @@ $.FE.LANGUAGE['pl'] = {
     // Clear formatting
     "Clear Formatting": "Usu\u0144 formatowanie",
 
+    // Save
+    "Save": "\u005a\u0061\u0070\u0069\u0073\u0061\u0107",
+
     // Undo, redo
     "Undo": "Cofnij",
     "Redo": "Pon\u00f3w",

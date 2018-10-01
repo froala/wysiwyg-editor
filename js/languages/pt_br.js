@@ -244,6 +244,9 @@ $.FE.LANGUAGE['pt_br'] = {
     // Clear formatting
     "Clear Formatting": "Remover formatação",
 
+    // Save
+    "Save": "\u0053\u0061\u006c\u0076\u0065",
+
     // Undo, redo
     "Undo": "Desfazer",
     "Redo": "Refazer",

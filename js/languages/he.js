@@ -244,6 +244,9 @@ $.FE.LANGUAGE['he'] = {
     // Clear formatting
     "Clear Formatting": "\u05dc\u05d4\u05e1\u05d9\u05e8 \u05e2\u05d9\u05e6\u05d5\u05d1",
 
+    // Save
+    "Save": "\u05dc\u05d4\u05e6\u05d9\u05dc",
+
     // Undo, redo
     "Undo": "\u05d1\u05d9\u05d8\u05d5\u05dc",
     "Redo": "\u05d1\u05e6\u05e2 \u05e9\u05d5\u05d1",
