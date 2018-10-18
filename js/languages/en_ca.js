@@ -83,7 +83,7 @@ $.FE.LANGUAGE['en_ca'] = {
     "Align": "Align",
     "Align Left": "Align Left",
     "Align Center": "Align Centre",
-    "Align Right": "Alight Right",
+    "Align Right": "Align Right",
     "Align Justify": "Align Justify",
     "None": "None",
 
@@ -186,7 +186,7 @@ $.FE.LANGUAGE['en_ca'] = {
     "Insert Horizontal Line": "Insert Horizontal Line",
 
     // Clear formatting
-    "Clear Formatting": "Cell Formatting",
+    "Clear Formatting": "Clear Formatting",
 
     // Save
     "Save": "Save",
