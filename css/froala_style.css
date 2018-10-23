@@ -175,6 +175,24 @@ img.fr-shadow,
 .fr-view .fr-text-uppercase {
   text-transform: uppercase;
 }
+.fr-view .fr-class-highlighted {
+  background-color: #ffff00;
+}
+.fr-view .fr-class-code {
+  border-color: #cccccc;
+  border-radius: 2px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  background: #f5f5f5;
+  padding: 10px;
+  font-family: "Courier New", Courier, monospace;
+}
+.fr-view .fr-class-transparency {
+  opacity: 0.5;
+}
 .fr-view img {
   position: relative;
   max-width: 100%;

@@ -693,6 +693,9 @@
 .gray-theme .fr-view .fr-text-bordered {
   padding: 10px 0;
 }
+.gray-theme .fr-view .fr-class-highlighted {
+  background-color: #ffff00;
+}
 .gray-theme .fr-view .fr-img-caption .fr-img-wrap {
   margin: auto;
 }
