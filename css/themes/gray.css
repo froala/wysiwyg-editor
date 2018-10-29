@@ -872,13 +872,17 @@
   border-top-color: #b7bdc0;
 }
 .gray-theme.fr-desktop .fr-command:hover,
-.gray-theme.fr-desktop .fr-command:focus {
+.gray-theme.fr-desktop .fr-command:focus,
+.gray-theme.fr-desktop .fr-command.fr-btn-hover,
+.gray-theme.fr-desktop .fr-command.fr-expanded {
   outline: 0;
   color: #37474f;
   background: #e6e6e6;
 }
 .gray-theme.fr-desktop .fr-command:hover::after,
-.gray-theme.fr-desktop .fr-command:focus::after {
+.gray-theme.fr-desktop .fr-command:focus::after,
+.gray-theme.fr-desktop .fr-command.fr-btn-hover::after,
+.gray-theme.fr-desktop .fr-command.fr-expanded::after {
   border-top-color: #37474f !important;
 }
 .gray-theme.fr-desktop .fr-command.fr-selected {
@@ -886,7 +890,9 @@
   background: #d6d6d6;
 }
 .gray-theme.fr-desktop .fr-command.fr-active:hover,
-.gray-theme.fr-desktop .fr-command.fr-active:focus {
+.gray-theme.fr-desktop .fr-command.fr-active:focus,
+.gray-theme.fr-desktop .fr-command.fr-active.fr-btn-hover,
+.gray-theme.fr-desktop .fr-command.fr-active.fr-expanded {
   color: #0097a7;
   background: #e6e6e6;
 }

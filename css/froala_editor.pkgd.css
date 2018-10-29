@@ -240,6 +240,10 @@ iframe.fr-iframe {
   opacity: 1;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
 }
+.fr-toolbar .fr-btn-wrap.fr-hidden,
+.fr-popup .fr-btn-wrap.fr-hidden {
+  display: none;
+}
 .fr-toolbar .fr-command.fr-btn,
 .fr-popup .fr-command.fr-btn {
   background: transparent;
@@ -418,13 +422,17 @@ iframe.fr-iframe {
   float: none;
 }
 .fr-desktop .fr-command:hover,
-.fr-desktop .fr-command:focus {
+.fr-desktop .fr-command:focus,
+.fr-desktop .fr-command.fr-btn-hover,
+.fr-desktop .fr-command.fr-expanded {
   outline: 0;
   color: #222222;
   background: #ebebeb;
 }
 .fr-desktop .fr-command:hover::after,
-.fr-desktop .fr-command:focus::after {
+.fr-desktop .fr-command:focus::after,
+.fr-desktop .fr-command.fr-btn-hover::after,
+.fr-desktop .fr-command.fr-expanded::after {
   border-top-color: #222222 !important;
 }
 .fr-desktop .fr-command.fr-selected {
@@ -432,7 +440,9 @@ iframe.fr-iframe {
   background: #d6d6d6;
 }
 .fr-desktop .fr-command.fr-active:hover,
-.fr-desktop .fr-command.fr-active:focus {
+.fr-desktop .fr-command.fr-active:focus,
+.fr-desktop .fr-command.fr-active.fr-btn-hover,
+.fr-desktop .fr-command.fr-active.fr-expanded {
   color: #1e88e5;
   background: #ebebeb;
 }
@@ -453,6 +463,15 @@ iframe.fr-iframe {
 .fr-toolbar.fr-mobile .fr-command.fr-blink,
 .fr-popup.fr-mobile .fr-command.fr-blink {
   background: transparent;
+}
+.fr-command.fr-btn.fr-options {
+  width: 16px;
+  margin-left: -5px;
+}
+.fr-command.fr-btn.fr-options.fr-btn-hover,
+.fr-command.fr-btn.fr-options:hover,
+.fr-command.fr-btn.fr-options:focus {
+  border-left: solid 1px #FAFAFA;
 }
 .fr-command.fr-btn + .fr-dropdown-menu {
   display: inline-block;
