@@ -269,6 +269,21 @@ img.fr-shadow,
   text-align: center;
   position: relative;
 }
+.fr-view .fr-video.fr-rv {
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+.fr-view .fr-video.fr-rv > iframe,
+.fr-view .fr-video.fr-rv object,
+.fr-view .fr-video.fr-rv embed {
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 .fr-view .fr-video > * {
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
