@@ -622,7 +622,7 @@ body.prevent-scroll.fr-mobile {
 @media (min-width: 992px) {
   .fr-modal .fr-modal-wrapper {
     margin: 50px auto;
-    width: 600px;
+    width: 960px;
   }
 }
 .fr-modal .fr-modal-wrapper .fr-modal-head {

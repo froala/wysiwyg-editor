@@ -714,6 +714,9 @@
 .royal-theme.fr-box .fr-embedly-resizer {
   border: solid 1px #553982;
 }
+.royal-theme.fr-modal .fr-modal-wrapper .fr-modal-body .fr-font-awesome-modal .fr-font-awesome-title {
+  border-bottom: solid 1px #f0f0f0;
+}
 .royal-theme .examples-variante > a {
   font-size: 14px;
   font-family: Arial, Helvetica, sans-serif;
