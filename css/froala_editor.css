@@ -195,6 +195,37 @@ iframe.fr-iframe {
   -moz-box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.12), 0 -1px 1px 1px rgba(0, 0, 0, 0.16);
   box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.12), 0 -1px 1px 1px rgba(0, 0, 0, 0.16);
 }
+@media (min-width: 992px) {
+  .fr-box.fr-document {
+    min-width: 21cm;
+  }
+  .fr-box.fr-document .fr-wrapper {
+    text-align: center;
+    padding: 30px;
+    min-width: 21cm;
+    background: #EFEFEF;
+  }
+  .fr-box.fr-document .fr-wrapper .fr-element {
+    text-align: left;
+    background: #FFF;
+    width: 21cm;
+    margin: auto;
+    min-height: 24cm !important;
+    padding: 1cm 2cm;
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 1px 1px rgba(0, 0, 0, 0.16);
+    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 1px 1px rgba(0, 0, 0, 0.16);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 1px 1px rgba(0, 0, 0, 0.16);
+    overflow: visible;
+  }
+  .fr-box.fr-document .fr-wrapper .fr-element hr {
+    margin-left: -2cm;
+    margin-right: -2cm;
+    background: #EFEFEF;
+    height: 1cm;
+    outline: none;
+    border: none;
+  }
+}
 .fr-tooltip {
   position: absolute;
   top: 0;
@@ -239,6 +270,11 @@ iframe.fr-iframe {
   -moz-opacity: 1;
   opacity: 1;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+}
+.fr-toolbar .fr-btn-wrap,
+.fr-popup .fr-btn-wrap {
+  float: left;
+  white-space: nowrap;
 }
 .fr-toolbar .fr-btn-wrap.fr-hidden,
 .fr-popup .fr-btn-wrap.fr-hidden {
