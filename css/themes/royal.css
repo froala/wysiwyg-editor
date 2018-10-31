@@ -725,6 +725,20 @@
 .royal-theme.fr-modal .fr-modal-wrapper .fr-modal-body .fr-font-awesome-modal .fr-font-awesome-title {
   border-bottom: solid 1px #f0f0f0;
 }
+.royal-theme .tui-image-editor-container {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 10;
+}
+.royal-theme .tui-editor-cancel-btn {
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+}
+.royal-theme .tui-editor-save-btn {
+  color: #ffffff;
+}
 .royal-theme .examples-variante > a {
   font-size: 14px;
   font-family: Arial, Helvetica, sans-serif;
