@@ -275,6 +275,7 @@ iframe.fr-iframe {
 .fr-popup .fr-btn-wrap {
   float: left;
   white-space: nowrap;
+  position: relative;
 }
 .fr-toolbar .fr-btn-wrap.fr-hidden,
 .fr-popup .fr-btn-wrap.fr-hidden {
