@@ -210,7 +210,7 @@ iframe.fr-iframe {
     background: #FFF;
     width: 21cm;
     margin: auto;
-    min-height: 24cm !important;
+    min-height: 26cm !important;
     padding: 1cm 2cm;
     -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 1px 1px rgba(0, 0, 0, 0.16);
     -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 1px 1px rgba(0, 0, 0, 0.16);
