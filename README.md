@@ -34,7 +34,7 @@ Froala WYSIWYG HTML Editor requires [jQuery](http://jquery.com/) 1.11.0 or highe
 
 ```html
 <!-- Include CSS for icons. -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
 
 <!-- Include Editor style. -->
 <link href="https://cdn.jsdelivr.net/npm/froala-editor@2.9.0/css/froala_editor.pkgd.min.css" rel="stylesheet" type="text/css" />
@@ -48,7 +48,7 @@ Froala WYSIWYG HTML Editor requires [jQuery](http://jquery.com/) 1.11.0 or highe
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 
 <!-- Include Editor JS files. -->
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/froala-editor@2.9.0//js/froala_editor.pkgd.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/froala-editor@2.9.0/js/froala_editor.pkgd.min.js"></script>
 
 <!-- Initialize the editor. -->
 <script>
@@ -66,7 +66,7 @@ For more details on customizing the editor, please check the editor [documentati
 
 - npm: `npm install froala-editor`
 - bower: `bower install froala-wysiwyg-editor`
-- CDN: https://cdnjs.com/libraries/froala-editor
+- CDN: https://cdn.jsdelivr.net/npm/froala-editor/
 - Angular JS: https://github.com/froala/angular-froala
 - Angular 2: https://github.com/froala/angular2-froala-wysiwyg
 - Aurelia: https://github.com/froala/aurelia-froala-editor
