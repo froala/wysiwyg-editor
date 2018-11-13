@@ -926,6 +926,15 @@
 .royal-theme.fr-popup.fr-mobile .fr-command.fr-blink {
   background: #9365b8;
 }
+.royal-theme .fr-command.fr-btn.fr-options {
+  width: 16px;
+  margin-left: -5px;
+}
+.royal-theme .fr-command.fr-btn.fr-options.fr-btn-hover,
+.royal-theme .fr-command.fr-btn.fr-options:hover,
+.royal-theme .fr-command.fr-btn.fr-options:focus {
+  border-left: solid 1px #fafafa;
+}
 .royal-theme .fr-command.fr-btn + .fr-dropdown-menu {
   right: auto;
   bottom: auto;

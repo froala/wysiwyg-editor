@@ -926,6 +926,15 @@
 .red-theme.fr-popup.fr-mobile .fr-command.fr-blink {
   background: transparent;
 }
+.red-theme .fr-command.fr-btn.fr-options {
+  width: 16px;
+  margin-left: -5px;
+}
+.red-theme .fr-command.fr-btn.fr-options.fr-btn-hover,
+.red-theme .fr-command.fr-btn.fr-options:hover,
+.red-theme .fr-command.fr-btn.fr-options:focus {
+  border-left: solid 1px #fafafa;
+}
 .red-theme .fr-command.fr-btn + .fr-dropdown-menu {
   right: auto;
   bottom: auto;

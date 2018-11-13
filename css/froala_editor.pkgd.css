@@ -509,7 +509,7 @@ iframe.fr-iframe {
 .fr-command.fr-btn.fr-options.fr-btn-hover,
 .fr-command.fr-btn.fr-options:hover,
 .fr-command.fr-btn.fr-options:focus {
-  border-left: solid 1px #FAFAFA;
+  border-left: solid 1px #fafafa;
 }
 .fr-command.fr-btn + .fr-dropdown-menu {
   display: inline-block;

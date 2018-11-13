@@ -926,6 +926,15 @@
 .gray-theme.fr-popup.fr-mobile .fr-command.fr-blink {
   background: transparent;
 }
+.gray-theme .fr-command.fr-btn.fr-options {
+  width: 16px;
+  margin-left: -5px;
+}
+.gray-theme .fr-command.fr-btn.fr-options.fr-btn-hover,
+.gray-theme .fr-command.fr-btn.fr-options:hover,
+.gray-theme .fr-command.fr-btn.fr-options:focus {
+  border-left: solid 1px #fafafa;
+}
 .gray-theme .fr-command.fr-btn + .fr-dropdown-menu {
   right: auto;
   bottom: auto;
