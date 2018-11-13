@@ -452,7 +452,8 @@ iframe.fr-iframe {
 .fr-popup.fr-rtl .fr-command.fr-btn {
   float: right;
 }
-.fr-toolbar.fr-inline .fr-command.fr-btn:not(.fr-hidden) {
+.fr-toolbar.fr-inline > .fr-command.fr-btn:not(.fr-hidden),
+.fr-toolbar.fr-inline > .fr-btn-wrap:not(.fr-hidden) {
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
