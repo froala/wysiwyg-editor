@@ -14,3 +14,6 @@
 
 ##### Browser.
 (Browser name an version here)
+
+##### Recording.
+(A recording showing how to reproduce the problem)
