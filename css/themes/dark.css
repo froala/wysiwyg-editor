@@ -205,7 +205,7 @@
 .dark-theme.fr-popup .fr-color-hex-layer .fr-input-line {
   padding: 8px 0 0;
 }
-.dark-theme.fr-popup .fr-color-hex-layer .fr-action-buttons button {
+.dark-theme.fr-popup .fr-color-hex-layer .fr-action-buttons button.fr-command {
   background-color: #42a5f5;
   border-radius: 2px;
   -moz-border-radius: 2px;
@@ -214,7 +214,7 @@
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
 }
-.dark-theme.fr-popup .fr-color-hex-layer .fr-action-buttons button:hover {
+.dark-theme.fr-popup .fr-color-hex-layer .fr-action-buttons button.fr-command:hover {
   background-color: #128ef2;
 }
 .dark-theme.fr-popup .fr-color-set {

@@ -1552,9 +1552,9 @@ textarea.fr-code {
   float: right;
   width: 50px;
 }
-.fr-popup .fr-color-hex-layer .fr-action-buttons button {
+.fr-popup .fr-color-hex-layer .fr-action-buttons button.fr-command {
   background-color: #1e88e5;
-  color: #FFF;
+  color: #FFF !important;
   border-radius: 2px;
   -moz-border-radius: 2px;
   -webkit-border-radius: 2px;
@@ -1564,7 +1564,7 @@ textarea.fr-code {
   font-size: 13px;
   height: 32px;
 }
-.fr-popup .fr-color-hex-layer .fr-action-buttons button:hover {
+.fr-popup .fr-color-hex-layer .fr-action-buttons button.fr-command:hover {
   background-color: #166dba;
   color: #FFF;
 }

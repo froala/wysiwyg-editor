@@ -205,7 +205,7 @@
 .gray-theme.fr-popup .fr-color-hex-layer .fr-input-line {
   padding: 8px 0 0;
 }
-.gray-theme.fr-popup .fr-color-hex-layer .fr-action-buttons button {
+.gray-theme.fr-popup .fr-color-hex-layer .fr-action-buttons button.fr-command {
   background-color: #0097a7;
   border-radius: 2px;
   -moz-border-radius: 2px;
@@ -214,7 +214,7 @@
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
 }
-.gray-theme.fr-popup .fr-color-hex-layer .fr-action-buttons button:hover {
+.gray-theme.fr-popup .fr-color-hex-layer .fr-action-buttons button.fr-command:hover {
   background-color: #006974;
 }
 .gray-theme.fr-popup .fr-color-set {
