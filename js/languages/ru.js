@@ -311,9 +311,9 @@ $.FE.LANGUAGE['ru'] = {
 
     // Word Paste.
     "The pasted content is coming from a Microsoft Word document. Do you want to keep the format or clean it up?": "Вы пытаетесь вставить текст из документа Microsoft Word. Вы хотите сохранить или очистить формат?",
-    "Keep": "Сохранить",
+    "Keep": "Оставить",
     "Clean": "Очистить",
-    "Word Paste Detected": "Обнаружена вставка отформатированного текста"
+    "Word Paste Detected": "Обнаружено копирование из Word"
   },
   direction: "ltr"
 };
