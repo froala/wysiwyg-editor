@@ -1317,3 +1317,14 @@ span.fr-sr-only {
   clip: rect(0, 0, 0, 0);
   border: 0;
 }
+
+.fr-wrapper.show-placeholder .fr-element {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.fr-wrapper.show-placeholder .fr-placeholder {
+  position: static;
+  padding-bottom: 16px;
+}
