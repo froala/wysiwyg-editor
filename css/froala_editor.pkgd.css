@@ -449,7 +449,9 @@ iframe.fr-iframe {
   border-top-color: #bdbdbd;
 }
 .fr-toolbar.fr-rtl .fr-command.fr-btn,
-.fr-popup.fr-rtl .fr-command.fr-btn {
+.fr-popup.fr-rtl .fr-command.fr-btn,
+.fr-toolbar.fr-rtl .fr-btn-wrap,
+.fr-popup.fr-rtl .fr-btn-wrap {
   float: right;
 }
 .fr-toolbar.fr-inline > .fr-command.fr-btn:not(.fr-hidden),
