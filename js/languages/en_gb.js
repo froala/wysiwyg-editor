@@ -186,7 +186,7 @@ $.FE.LANGUAGE['en_gb'] = {
     "Insert Horizontal Line": "Insert Horizontal Line",
 
     // Clear formatting
-    "Clear Formatting": "Cell Formatting",
+    "Clear Formatting": "Clear Formatting",
 
     // Save
     "Save": "Save",
