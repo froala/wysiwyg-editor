@@ -384,13 +384,15 @@
 .red-theme.fr-popup .fr-image-progress-bar-layer > div.fr-loader.fr-indeterminate span {
   top: 0;
 }
-.red-theme.fr-modal-head .fr-modal-head-line i.fr-modal-more {
+.red-theme.fr-modal-head .fr-modal-head-line i.fr-modal-more,
+.red-theme.fr-modal-head .fr-modal-head-line svg.fr-modal-more {
   -webkit-transition: padding 0.2s ease 0s, width 0.2s ease 0s, opacity 0.2s ease 0s;
   -moz-transition: padding 0.2s ease 0s, width 0.2s ease 0s, opacity 0.2s ease 0s;
   -ms-transition: padding 0.2s ease 0s, width 0.2s ease 0s, opacity 0.2s ease 0s;
   -o-transition: padding 0.2s ease 0s, width 0.2s ease 0s, opacity 0.2s ease 0s;
 }
-.red-theme.fr-modal-head .fr-modal-head-line i.fr-modal-more.fr-not-available {
+.red-theme.fr-modal-head .fr-modal-head-line i.fr-modal-more.fr-not-available,
+.red-theme.fr-modal-head .fr-modal-head-line svg.fr-modal-more.fr-not-available {
   opacity: 0;
   width: 0;
   padding: 12px 0;

@@ -2177,7 +2177,8 @@ body.fr-fullscreen {
   content: "";
   height: 0;
 }
-.fr-modal-head .fr-modal-head-line i.fr-modal-more {
+.fr-modal-head .fr-modal-head-line i.fr-modal-more,
+.fr-modal-head .fr-modal-head-line svg.fr-modal-more {
   float: left;
   opacity: 1;
   -webkit-transition: padding 0.2s ease 0s, width 0.2s ease 0s, opacity 0.2s ease 0s;
@@ -2186,7 +2187,8 @@ body.fr-fullscreen {
   -o-transition: padding 0.2s ease 0s, width 0.2s ease 0s, opacity 0.2s ease 0s;
   padding: 12px;
 }
-.fr-modal-head .fr-modal-head-line i.fr-modal-more.fr-not-available {
+.fr-modal-head .fr-modal-head-line i.fr-modal-more.fr-not-available,
+.fr-modal-head .fr-modal-head-line svg.fr-modal-more.fr-not-available {
   opacity: 0;
   width: 0;
   padding: 12px 0;
