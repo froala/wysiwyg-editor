@@ -592,6 +592,7 @@ iframe.fr-iframe {
 .fr-command.fr-btn + .fr-dropdown-menu .fr-dropdown-wrapper .fr-dropdown-content ul.fr-dropdown-list li a .fr-shortcut {
   float: right;
   margin-left: 32px;
+  font-weight: bold;
   -webkit-opacity: 0.75;
   -moz-opacity: 0.75;
   opacity: 0.75;
