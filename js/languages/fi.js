@@ -89,7 +89,22 @@ $.FE.LANGUAGE['fi'] = {
 
     // Lists
     "Ordered List": "J\u00e4rjestetty lista",
+    "Default": "Oletusarvo",
+    "Lower Alpha": "Alempi alfa",
+    "Lower Greek": "Alempi kreikka",
+    "Lower Roman": "Alempi roomalainen",
+    "Upper Alpha": "Ylempi alfa",
+    "Upper Roman": "Ylempi roomalainen",
+
     "Unordered List": "J\u00e4rjest\u00e4m\u00e4t\u00f6n lista",
+    "Circle": "Ympyrä",
+    "Disc": "Levy",
+    "Square": "Neliö-",
+
+    // Line height
+    "Line Height": "Viivankorkeus",
+    "Single": "Yksittäinen",
+    "Double": "Kaksinkertainen",
 
     // Indent
     "Decrease Indent": "Sisenn\u00e4",

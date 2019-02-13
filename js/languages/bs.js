@@ -89,7 +89,22 @@ $.FE.LANGUAGE['bs'] = {
 
     // Lists
     "Ordered List": "Ure\u0111ena lista",
+    "Default": "Default",
+    "Lower Alpha": "Niži alfa",
+    "Lower Greek": "Niži grčki",
+    "Lower Roman": "Lower roman",
+    "Upper Alpha": "Upper alpha",
+    "Upper Roman": "Upper roman",
+
     "Unordered List": "Nesre\u0111ene lista",
+    "Circle": "Krug",
+    "Disc": "Disk",
+    "Square": "Kvadrat",
+
+    // Line height
+    "Line Height": "Visina linije",
+    "Single": "Single",
+    "Double": "Double",
 
     // Indent
     "Decrease Indent": "Smanjenje alineja",

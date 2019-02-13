@@ -88,7 +88,22 @@ $.FE.LANGUAGE['ku'] = {
 
     // Lists
     "Ordered List": "لیستی داواکراو",
+    "Default": "Destçûnî",
+    "Lower Alpha": "Alpha kêm",
+    "Lower Greek": "Grek",
+    "Lower Roman": "Roman",
+    "Upper Alpha": "Alpha",
+    "Upper Roman": "Rûsî",
+
     "Unordered List": "لیستی داوانەکراو",
+    "Circle": "Çember",
+    "Disc": "Disc",
+    "Square": "Meydan",
+
+    // Line height
+    "Line Height": "Hewayê",
+    "Single": "Yekoyek",
+    "Double": "Dûcar",
 
     // Indent
     "Decrease Indent": "کەمکردنەوەی بۆشایی بەجێهێشتن",
@@ -238,7 +253,7 @@ $.FE.LANGUAGE['ku'] = {
     "Clear Formatting": "سڕینەوەی شێواز",
 
     // Save
-    "Save": "",
+    "Save": "Rizgarkirin",
 
     // Undo, redo
     "Undo": "گەڕانەوە",

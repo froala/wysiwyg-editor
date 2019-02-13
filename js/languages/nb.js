@@ -89,7 +89,22 @@ $.FE.LANGUAGE['nb'] = {
 
     // Lists
     "Ordered List": "Ordnet liste",
+    "Default": "Misligholde",
+    "Lower Alpha": "Lavere alfa",
+    "Lower Greek": "Lavere greske",
+    "Lower Roman": "Lavere romersk",
+    "Upper Alpha": "Øvre alfa",
+    "Upper Roman": "Øvre roman",
+
     "Unordered List": "Uordnet liste",
+    "Circle": "Sirkel",
+    "Disc": "Plate",
+    "Square": "Torget",
+
+    // Line height
+    "Line Height": "Linjehøyde",
+    "Single": "Enkelt",
+    "Double": "Dobbelt",
 
     // Indent
     "Decrease Indent": "Reduser innrykk",

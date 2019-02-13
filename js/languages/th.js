@@ -89,7 +89,22 @@ $.FE.LANGUAGE['th'] = {
 
     // Lists
     "Ordered List": "\u0e23\u0e32\u0e22\u0e01\u0e32\u0e23\u0e25\u0e33\u0e14\u0e31\u0e1a\u0e40\u0e25\u0e02",
+    "Default": "ค่าเริ่มต้น",
+    "Lower Alpha": "อัลฟาตอนล่าง",
+    "Lower Greek": "กรีกต่ำกว่า",
+    "Lower Roman": "โรมันล่าง",
+    "Upper Alpha": "อัลฟาตอนบน",
+    "Upper Roman": "โรมันตอนบน",
+
     "Unordered List": "\u0e23\u0e32\u0e22\u0e01\u0e32\u0e23\u0e2a\u0e31\u0e0d\u0e25\u0e31\u0e01\u0e29\u0e13\u0e4c\u0e2b\u0e31\u0e27\u0e02\u0e49\u0e2d\u0e22\u0e48\u0e2d\u0e22",
+    "Circle": "วงกลม",
+    "Disc": "จาน",
+    "Square": "สี่เหลี่ยม",
+
+    // Line height
+    "Line Height": "ความสูงของบรรทัด",
+    "Single": "เดียว",
+    "Double": "สอง",
 
     // Indent
     "Decrease Indent": "\u0e25\u0e14\u0e01\u0e32\u0e23\u0e40\u0e22\u0e37\u0e49\u0e2d\u0e07",

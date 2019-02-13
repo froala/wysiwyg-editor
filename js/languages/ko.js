@@ -89,7 +89,22 @@ $.FE.LANGUAGE['ko'] = {
 
     // Lists
     "Ordered List": "\uc22b\uc790 \ub9ac\uc2a4\ud2b8",
+    "Default": "태만",
+    "Lower Alpha": "낮은 알파",
+    "Lower Greek": "낮은 그리스어",
+    "Lower Roman": "로마자 낮은",
+    "Upper Alpha": "상단 알파",
+    "Upper Roman": "상층 로마자",
+
     "Unordered List": "\uc810 \ub9ac\uc2a4\ud2b8",
+    "Circle": "원",
+    "Disc": "디스크",
+    "Square": "광장",
+
+    // Line height
+    "Line Height": "라인 높이",
+    "Single": "단일",
+    "Double": "더블",
 
     // Indent
     "Decrease Indent": "\ub0b4\uc5b4\uc4f0\uae30",

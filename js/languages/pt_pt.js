@@ -89,7 +89,22 @@ $.FE.LANGUAGE['pt_pt'] = {
 
     // Lists
     "Ordered List": "Lista ordenada",
+    "Default": "Padrão",
+    "Lower Alpha": "Alpha inferior",
+    "Lower Greek": "Grego inferior",
+    "Lower Roman": "Baixa romana",
+    "Upper Alpha": "Alfa superior",
+    "Upper Roman": "Romana superior",
+
     "Unordered List": "Lista n\u00e3o ordenada",
+    "Circle": "Círculo",
+    "Disc": "Disco",
+    "Square": "Quadrado",
+
+    // Line height
+    "Line Height": "Altura da linha",
+    "Single": "Solteiro",
+    "Double": "Em dobro",
 
     // Indent
     "Decrease Indent": "Diminuir avan\u00e7o",

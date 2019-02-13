@@ -89,7 +89,22 @@ $.FE.LANGUAGE['tr'] = {
 
     // Lists
     "Ordered List": "S\u0131ral\u0131 liste",
+    "Default": "Varsayılan",
+    "Lower Alpha": "Alt alfa",
+    "Lower Greek": "Alt yunan",
+    "Lower Roman": "Alt roma",
+    "Upper Alpha": "Üst alfa",
+    "Upper Roman": "Üst roma",
+
     "Unordered List": "S\u0131ras\u0131z liste",
+    "Circle": "Daire",
+    "Disc": "Disk",
+    "Square": "Kare",
+
+    // Line height
+    "Line Height": "Satır yüksekliği",
+    "Single": "Tek",
+    "Double": "Çift",
 
     // Indent
     "Decrease Indent": "Girintiyi azalt",

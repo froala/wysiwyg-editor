@@ -89,7 +89,22 @@ $.FE.LANGUAGE['zh_tw'] = {
 
     // Lists
     "Ordered List": "\u6578\u5b57\u6e05\u55ae",
+    "Default": "默認",
+    "Lower Alpha": "低α",
+    "Lower Greek": "下希臘",
+    "Lower Roman": "較低的羅馬",
+    "Upper Alpha": "上阿爾法",
+    "Upper Roman": "上羅馬",
+
     "Unordered List": "\u9805\u76ee\u6e05\u55ae",
+    "Circle": "圈",
+    "Disc": "圓盤",
+    "Square": "廣場",
+
+    // Line height
+    "Line Height": "線高",
+    "Single": "單",
+    "Double": "雙",
 
     // Indent
     "Decrease Indent": "\u6e1b\u5c11\u7e2e\u6392",

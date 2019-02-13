@@ -89,7 +89,22 @@ $.FE.LANGUAGE['ja'] = {
 
     // Lists
     "Ordered List": "\u6bb5\u843d\u756a\u53f7",
+    "Default": "デフォルト",
+    "Lower Alpha": "下アルファ",
+    "Lower Greek": "下ギリシャ",
+    "Lower Roman": "下ローマ",
+    "Upper Alpha": "アッパーアルファ",
+    "Upper Roman": "アッパーローマン",
+
     "Unordered List": "\u7b87\u6761\u66f8\u304d",
+    "Circle": "サークル",
+    "Disc": "ディスク",
+    "Square": "平方",
+
+    // Line height
+    "Line Height": "行の高さ",
+    "Single": "シングル",
+    "Double": "ダブル",
 
     // Indent
     "Decrease Indent": "\u30a4\u30f3\u30c7\u30f3\u30c8\u3092\u6e1b\u3089\u3059",

@@ -89,7 +89,22 @@ $.FE.LANGUAGE['nl'] = {
 
     // Lists
     "Ordered List": "Geordende lijst",
+    "Default": "Standaard",
+    "Lower Alpha": "Lagere alpha",
+    "Lower Greek": "Lager Grieks",
+    "Lower Roman": "Lager Romeins",
+    "Upper Alpha": "Bovenste alfa",
+    "Upper Roman": "Bovenste roman",
+
     "Unordered List": "Ongeordende lijst",
+    "Circle": "Cirkel",
+    "Disc": "Schijf",
+    "Square": "Plein",
+
+    // Line height
+    "Line Height": "Lijnhoogte",
+    "Single": "Single",
+    "Double": "Dubbele",
 
     // Indent
     "Decrease Indent": "Inspringen verkleinen",

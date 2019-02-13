@@ -89,7 +89,22 @@ $.FE.LANGUAGE['da'] = {
 
     // Lists
     "Ordered List": "Punktopstilling",
+    "Default": "Standard",
+    "Lower Alpha": "Lavere alfa",
+    "Lower Greek": "Lavere græsk",
+    "Lower Roman": "Lavere romersk",
+    "Upper Alpha": "Øvre alfa",
+    "Upper Roman": "Øvre romersk",
+
     "Unordered List": "Punktopstilling med tal",
+    "Circle": "Cirkel",
+    "Disc": "Disk",
+    "Square": "Firkant",
+
+    // Line height
+    "Line Height": "Linjehøjde",
+    "Single": "Enkelt",
+    "Double": "Dobbelt",
 
     // Indent
     "Decrease Indent": "Formindsk indrykning",

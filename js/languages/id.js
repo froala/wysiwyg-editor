@@ -89,7 +89,22 @@ $.FE.LANGUAGE['id'] = {
 
     // Lists
     "Ordered List": "List nomor",
+    "Default": "Standar",
+    "Lower Alpha": "Alpha lebih rendah",
+    "Lower Greek": "Yunani lebih rendah",
+    "Lower Roman": "Roman rendah",
+    "Upper Alpha": "Alpha atas",
+    "Upper Roman": "Roman atas",
+
     "Unordered List": "List simbol",
+    "Circle": "Lingkaran",
+    "Disc": "Cakram",
+    "Square": "Kotak",
+
+    // Line height
+    "Line Height": "Tinggi garis",
+    "Single": "Tunggal",
+    "Double": "Dua kali lipat",
 
     // Indent
     "Decrease Indent": "Turunkan inden",

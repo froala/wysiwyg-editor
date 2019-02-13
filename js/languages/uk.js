@@ -89,7 +89,22 @@ $.FE.LANGUAGE['uk'] = {
 
     // Lists
     "Ordered List": "\u041d\u0443\u043c\u0435\u0440\u043e\u0432\u0430\u043d\u0438\u0439 \u0441\u043f\u0438\u0441\u043e\u043a",
+    "Default": "За замовчуванням",
+    "Lower Alpha": "Нижня альфа",
+    "Lower Greek": "Нижній грецький",
+    "Lower Roman": "Нижній римський",
+    "Upper Alpha": "Верхня альфа",
+    "Upper Roman": "Верхній римський",
+
     "Unordered List": "\u041c\u0430\u0440\u043a\u043e\u0432\u0430\u043d\u0438\u0439 \u0441\u043f\u0438\u0441\u043e\u043a",
+    "Circle": "Коло",
+    "Disc": "Диск",
+    "Square": "Площа",
+
+    // Line height
+    "Line Height": "Висота рядка",
+    "Single": "Одномісний",
+    "Double": "Подвійний",
 
     // Indent
     "Decrease Indent": "\u0417\u043c\u0435\u043d\u0448\u0438\u0442\u0438 \u0432\u0456\u0434\u0441\u0442\u0443\u043f",

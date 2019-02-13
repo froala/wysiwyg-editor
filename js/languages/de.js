@@ -89,7 +89,22 @@ $.FE.LANGUAGE['de'] = {
 
     // Lists
     "Ordered List": "Nummerierte Liste",
+    "Default": "Standard",
+    "Lower Alpha": "Kleinbuchstaben",
+    "Lower Greek": "Griechisches Alphabet",
+    "Lower Roman": "Römische Ziffern (klein)",
+    "Upper Alpha": "Grossbuchstaben",
+    "Upper Roman": "Römische Ziffern (gross)",
+
     "Unordered List": "Unnummerierte Liste",
+    "Circle": "Kreis",
+    "Disc": "Kreis gefüllt",
+    "Square": "Quadrat",
+
+    // Line height
+    "Line Height": "Zeilenhöhe",
+    "Single": "Einfach",
+    "Double": "Doppelt",
 
     // Indent
     "Decrease Indent": "Einzug verkleinern",

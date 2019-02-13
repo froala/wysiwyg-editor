@@ -89,7 +89,22 @@ $.FE.LANGUAGE['ru'] = {
 
     // Lists
     "Ordered List": "\u041d\u0443\u043c\u0435\u0440\u043e\u0432\u0430\u043d\u043d\u044b\u0439 \u0441\u043f\u0438\u0441\u043e\u043a",
+    "Default": "Дефолт",
+    "Lower Alpha": "Низшая альфа",
+    "Lower Greek": "Нижний греческий",
+    "Lower Roman": "Нижний римлянин",
+    "Upper Alpha": "Верхняя альфа",
+    "Upper Roman": "Верховный римлянин",
+
     "Unordered List": "\u041c\u0430\u0440\u043a\u0438\u0440\u043e\u0432\u0430\u043d\u043d\u044b\u0439 \u0441\u043f\u0438\u0441\u043e\u043a",
+    "Circle": "Круг",
+    "Disc": "Диск",
+    "Square": "Площадь",
+
+    // Line height
+    "Line Height": "Высота линии",
+    "Single": "Не замужем",
+    "Double": "Двойной",
 
     // Indent
     "Decrease Indent": "\u0423\u043c\u0435\u043d\u044c\u0448\u0438\u0442\u044c \u043e\u0442\u0441\u0442\u0443\u043f",

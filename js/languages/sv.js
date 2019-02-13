@@ -89,7 +89,22 @@ $.FE.LANGUAGE['sv'] = {
 
     // Lists
     "Ordered List": "Ordnad lista",
+    "Default": "Standard",
+    "Lower Alpha": "Lägre alfa",
+    "Lower Greek": "Lägre grekiska",
+    "Lower Roman": "Lägre roman",
+    "Upper Alpha": "Övre alfa",
+    "Upper Roman": "Övre roman",
+
     "Unordered List": "Oordnad lista",
+    "Circle": "Cirkel",
+    "Disc": "Skiva",
+    "Square": "Fyrkant",
+
+    // Line height
+    "Line Height": "Radavstånd",
+    "Single": "Enda",
+    "Double": "Dubbel",
 
     // Indent
     "Decrease Indent": "Minska indrag",

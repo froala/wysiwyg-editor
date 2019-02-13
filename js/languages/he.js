@@ -89,7 +89,22 @@ $.FE.LANGUAGE['he'] = {
 
     // Lists
     "Ordered List": "\u05d4\u05d5\u05e1\u05e4\u05ea \u05e8\u05e9\u05d9\u05de\u05d4 \u05de\u05de\u05d5\u05e1\u05e4\u05e8\u05ea",
+    "Default": "ברירת המחדל",
+    "Lower Alpha": "אלפא נמוך יותר",
+    "Lower Greek": "נמוך יוונית",
+    "Lower Roman": "התחתון הרומית",
+    "Upper Alpha": "אלפא העליון",
+    "Upper Roman": "הרומאי העליון",
+
     "Unordered List": "\u05d4\u05d5\u05e1\u05e4\u05ea \u05e8\u05e9\u05d9\u05de\u05d4",
+    "Circle": "מעגל",
+    "Disc": "דיסק",
+    "Square": "כיכר",
+
+    // Line height
+    "Line Height": "גובה קו",
+    "Single": "יחיד",
+    "Double": "כפול",
 
     // Indent
     "Decrease Indent": "\u05d4\u05e7\u05d8\u05e0\u05ea \u05db\u05e0\u05d9\u05e1\u05d4",
