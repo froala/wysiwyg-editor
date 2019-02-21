@@ -1876,6 +1876,13 @@ body.fr-fullscreen {
 .fr-box.fr-fullscreen .fr-toolbar.fr-bottom {
   bottom: 0 !important;
 }
+.fr-fullscreen-wrapper {
+  z-index: 2147483640!important;
+  width: 100%!important;
+  margin: 0!important;
+  padding: 0!important;
+  overflow: visible!important;
+}
 
 .clearfix::after {
   clear: both;
