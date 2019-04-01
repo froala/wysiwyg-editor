@@ -200,7 +200,7 @@ iframe.fr-iframe {
     min-width: 21cm;
   }
   .fr-box.fr-document .fr-wrapper {
-    text-align: center;
+    text-align: left;
     padding: 30px;
     min-width: 21cm;
     background: #EFEFEF;

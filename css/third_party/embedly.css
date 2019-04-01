@@ -50,6 +50,7 @@
 }
 .fr-box .fr-embedly-resizer {
   position: absolute;
+  z-index: 2;
   border: solid 1px #1e88e5;
   display: none;
   user-select: none;
