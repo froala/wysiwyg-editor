@@ -116,6 +116,7 @@
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
+    z-index: auto;
   }
 }
 .red-theme .fr-sticky-on.fr-sticky-ios {

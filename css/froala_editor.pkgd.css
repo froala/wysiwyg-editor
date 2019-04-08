@@ -216,6 +216,7 @@ iframe.fr-iframe {
     -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 1px 1px rgba(0, 0, 0, 0.16);
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 1px 1px rgba(0, 0, 0, 0.16);
     overflow: visible;
+    z-index: auto;
   }
   .fr-box.fr-document .fr-wrapper .fr-element hr {
     margin-left: -2cm;
@@ -224,6 +225,9 @@ iframe.fr-iframe {
     height: 1cm;
     outline: none;
     border: none;
+  }
+  .fr-box.fr-document .fr-wrapper .fr-element img {
+    z-index: 1;
   }
 }
 .fr-tooltip {
@@ -1964,7 +1968,6 @@ body.fr-fullscreen {
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
   box-sizing: content-box;
-  z-index: 2;
 }
 .fr-image-resizer.fr-active {
   display: block;
