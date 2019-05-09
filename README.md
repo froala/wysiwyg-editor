@@ -1,8 +1,10 @@
-# [Froala Editor](https://www.froala.com/wysiwyg-editor)
+# [Froala Editor V3](https://www.froala.com/wysiwyg-editor)
 
 [![Build Status](https://travis-ci.com/froala-labs/froala-editor-js-2.svg?token=6qHm2TpvBKAAVFCrJa9X&branch=master)](https://travis-ci.com/froala-labs/froala-editor-js-2)
 [![npm](https://img.shields.io/npm/dm/froala-editor.svg)](https://www.npmjs.com/package/froala-editor)
 [![npm](https://img.shields.io/npm/v/froala-editor.svg)](https://www.npmjs.com/package/froala-editor)
+
+> ❗️*This branch is for Froala WYSIWYG Editor V3. If you are looking for version 2, please check <https://github.com/froala/wysiwyg-editor/tree/v2>.*
 
 Froala WYSIWYG HTML Editor is one of the most powerful JavaScript rich text editors ever.
 
@@ -26,7 +28,7 @@ Froala WYSIWYG HTML Editor is one of the most powerful JavaScript rich text edit
 - **Inline demo**: https://www.froala.com/wysiwyg-editor/inline
 - **Full list**: https://www.froala.com/wysiwyg-editor/examples
 
-​
+
 
 ## Get Started
 
@@ -49,7 +51,7 @@ Froala WYSIWYG HTML Editor is one of the most powerful JavaScript rich text edit
 
 For more details on customizing the editor, please check the editor [documentation](https://www.froala.com/wysiwyg-editor/docs).
 
-​
+
 
 ## Download
 
@@ -75,7 +77,7 @@ For more details on customizing the editor, please check the editor [documentati
 - Wordpress: https://github.com/froala/wordpress-froala-wysiwyg
 
 
-​
+
 
 ## Browser Support
 
@@ -90,7 +92,7 @@ At present, we officially aim to support the last two versions of the following 
 - Safari iOS
 - Chrome, Firefox and Default Browser Android
 
-​
+
 
 ## Resources
 
@@ -103,7 +105,7 @@ At present, we officially aim to support the last two versions of the following 
 - Issues [Repo guidelines](https://github.com/highcharts/highcharts/blob/master/repo-guidelines.md)
 
 
-​
+
 
 ## Reporting Issues
 
@@ -114,13 +116,13 @@ We use GitHub Issues as the official bug tracker for the Froala WYSIWYG HTML Edi
 3. Some issues may be browser specific, so specifying in what browser you encountered the issue might help.
 
 
-​
+
 
 ## Technical Support or Questions
 
 If you have questions or need help integrating the editor please [contact us](https://www.froala.com/wysiwyg-editor/contact) instead of opening an issue.
 
-​
+
 
 ## Licensing
 
