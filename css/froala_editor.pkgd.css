@@ -1231,7 +1231,6 @@ body.prevent-scroll {
   display: inline-block; }
 
 .second-toolbar {
-  padding: 0 0 3px 0;
   border: 1px solid #CCCCCC;
   border-top: 0;
   background: #FFF;
@@ -1355,7 +1354,7 @@ span.fr-sr-only {
   border: 0; }
 
 .fr-box .fr-counter {
-  padding: 10px 13px 0 0;
+  padding: 10px;
   float: right;
   color: #999999;
   content: attr(data-chars);

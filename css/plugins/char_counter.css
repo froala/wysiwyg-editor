@@ -15,7 +15,7 @@
   border: 0; }
 
 .fr-box .fr-counter {
-  padding: 10px 13px 0 0;
+  padding: 10px;
   float: right;
   color: #999999;
   content: attr(data-chars);

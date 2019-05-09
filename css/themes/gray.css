@@ -164,7 +164,7 @@
   opacity: 0;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; }
 .gray-theme.fr-box .fr-counter {
-  padding: 10px 13px 0 0;
+  padding: 10px;
   color: #999999;
   font-size: 14px;
   font-family: sans-serif;
@@ -1830,7 +1830,6 @@
     width: calc(100% - (2 * 4px));
     margin: 0 4px; }
 .gray-theme .second-toolbar {
-  padding: 0 0 3px 0;
   border: 1px solid #CCCCCC;
   border-top: 0;
   background: #FFF;

@@ -1231,7 +1231,6 @@ body.prevent-scroll {
   display: inline-block; }
 
 .second-toolbar {
-  padding: 0 0 3px 0;
   border: 1px solid #CCCCCC;
   border-top: 0;
   background: #FFF;
