@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="../../css/froala_editor.css">
   <link rel="stylesheet" href="../../css/froala_style.css">
@@ -21,37 +22,42 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/codemirror.min.css">
 
   <style>
-      body {
-          text-align: center;
-      }
+    body {
+      text-align: center;
+    }
 
-      div#editor {
-          width: 81%;
-          margin: auto;
-          text-align: left;
-      }
+    div#editor {
+      width: 81%;
+      margin: auto;
+      text-align: left;
+    }
   </style>
 </head>
 
 <body>
   <div id="editor">
     <div id='edit' style="margin-top: 30px;">
-      <img class="fr-fir fr-dii" src="../../img/photo1.jpg" alt="Old Clock" width="200"/>
+      <img class="fr-fir fr-dii" src="../../img/photo1.jpg" alt="Old Clock" width="200" />
       <h1>Custom Image Button</h1>
 
       <p>Click on the image to see the custom image button.</p>
 
-      <p>An example of custom button for the image editing popup. More details about defining a custom image button can be found in the <a href="https://www.froala.com/wysiwyg-editor/docs/concepts/custom/button" title="Custom Button Concept" target="_blank">Custom Button</a> concept.</p>
+      <p>An example of custom button for the image editing popup. More details about defining a custom image button can
+        be found in the <a href="https://www.froala.com/wysiwyg-editor/docs/concepts/custom/button"
+          title="Custom Button Concept" target="_blank">Custom Button</a> concept.</p>
 
-      <p>After defining custom buttons you need to add them to the image popup buttons list, using the <a href="https://www.froala.com/wysiwyg-editor/docs/options#imageEditButtons" title="imageEditButtons" target="_blank">imageEditButtons</a> option.</p>
+      <p>After defining custom buttons you need to add them to the image popup buttons list, using the <a
+          href="https://www.froala.com/wysiwyg-editor/docs/options#imageEditButtons" title="imageEditButtons"
+          target="_blank">imageEditButtons</a> option.</p>
     </div>
   </div>
 
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/codemirror.min.js"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/mode/xml/xml.min.js"></script>
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/codemirror.min.js"></script>
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/mode/xml/xml.min.js"></script>
 
-  <script type="text/javascript" src="../../js/froala_editor.min.js" ></script>
+  <script type="text/javascript" src="../../js/froala_editor.min.js"></script>
   <script type="text/javascript" src="../../js/plugins/align.min.js"></script>
   <script type="text/javascript" src="../../js/plugins/char_counter.min.js"></script>
   <script type="text/javascript" src="../../js/plugins/code_beautifier.min.js"></script>
@@ -80,23 +86,24 @@
   <script type="text/javascript" src="../../js/plugins/video.min.js"></script>
 
   <script>
-    $(function(){
-      $.FroalaEditor.DefineIcon('imageInfo', {NAME: 'info'});
-      $.FroalaEditor.RegisterCommand('imageInfo', {
+    (function () {
+      FroalaEditor.DefineIcon('imageInfo', { NAME: 'info', PATH: 'M12 2C10.343 2 9 3.343 9 5C9 6.657 10.343 8 12 8C13.657 8 15 6.657 15 5C15 3.343 13.657 2 12 2zM9 10A1.0001 1.0001 0 1 0 9 12L10 12L10 20L9 20A1.0001 1.0001 0 1 0 9 22L15 22A1.0001 1.0001 0 1 0 15 20L14 20L14 11C14 10.448 13.552 10 13 10L11 10L9 10z' })
+      FroalaEditor.RegisterCommand('imageInfo', {
         title: 'Info',
         focus: false,
         undo: false,
         refreshAfterCallback: false,
         callback: function () {
-          var $img = this.image.get();
-          alert($img.attr('src'));
+          var $img = this.image.get()
+          alert($img.attr('src'))
         }
-      });
+      })
 
-      $('#edit').froalaEditor({
+      new FroalaEditor("#edit", {
         imageEditButtons: ['imageDisplay', 'imageAlign', 'imageInfo', 'imageRemove']
       })
-    });
+    })()
   </script>
 </body>
+
 </html>

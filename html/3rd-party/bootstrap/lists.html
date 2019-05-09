@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="../../../css/froala_editor.css">
   <link rel="stylesheet" href="../../../css/froala_style.css">
@@ -26,25 +27,25 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
 
   <style>
-      body {
-          text-align: center;
-      }
+    body {
+      text-align: center;
+    }
 
-      div#editor {
-          width: 81%;
-          margin: auto;
-          text-align: left;
-      }
+    div#editor {
+      width: 81%;
+      margin: auto;
+      text-align: left;
+    }
 
-      .fr-inner:not(.row) {
-        border: solid 1px #CCC;
-      }
+    .fr-inner:not(.row) {
+      border: solid 1px #CCC;
+    }
   </style>
 </head>
 
 <body>
   <div id="editor">
-      <textarea id='edit'>
+    <textarea id='edit'>
           <ul class="list-group">
             <li class="list-group-item">Cras justo odio</li>
             <li class="list-group-item">Dapibus ac facilisis in</li>
@@ -56,9 +57,11 @@
   </div>
 
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/codemirror.min.js"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/mode/xml/xml.min.js"></script>
-  <script type="text/javascript" src="../../../js/froala_editor.min.js" ></script>
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/codemirror.min.js"></script>
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/mode/xml/xml.min.js"></script>
+  <script type="text/javascript" src="../../../js/froala_editor.min.js"></script>
   <script type="text/javascript" src="../../../js/plugins/align.min.js"></script>
   <script type="text/javascript" src="../../../js/plugins/code_beautifier.min.js"></script>
   <script type="text/javascript" src="../../../js/plugins/code_view.min.js"></script>
@@ -90,11 +93,12 @@
   <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
   <script>
-    $(function(){
-      $('#edit').froalaEditor({
-        enter: $.FroalaEditor.ENTER_BR
+    (function () {
+      new FroalaEditor("#edit", {
+        enter: FroalaEditor.ENTER_BR
       })
-    });
+    })()
   </script>
 </body>
+
 </html>

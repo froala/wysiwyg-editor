@@ -42,7 +42,6 @@
     div#froala-details {
       text-align: left;
     }
-
   </style>
 </head>
 
@@ -53,18 +52,22 @@
 
       <img class="fr-fir fr-dii" src="../../../img/photo1.jpg" alt="Old Clock" width="300" />
 
-      <p>Click on the image then apply rich image editing using the advanced edit button. This will launch the TUI image editor plugin.</p>
+      <p>Click on the image then apply rich image editing using the advanced edit button. This will launch the TUI image
+        editor plugin.</p>
       <p>To integrate the plugin an api key it will be needed but it's easily obtained from</p>
     </div>
   </div>
 
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/codemirror.min.js"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/mode/xml/xml.min.js"></script>
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/codemirror.min.js"></script>
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/mode/xml/xml.min.js"></script>
 
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/1.6.7/fabric.min.js"></script>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/tui-code-snippet@1.4.0/dist/tui-code-snippet.min.js"></script>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/tui-image-editor@3.2.2/dist/tui-image-editor.min.js"></script>
+  <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/tui-code-snippet@1.4.0/dist/tui-code-snippet.min.js"></script>
+  <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/tui-image-editor@3.2.2/dist/tui-image-editor.min.js"></script>
 
   <script type="text/javascript" src="../../../js/froala_editor.min.js"></script>
 
@@ -84,10 +87,9 @@
   <script type="text/javascript" src="../../../js/third_party/image_tui.min.js"></script>
 
   <script>
-    $(function() {
-      $('#edit').froalaEditor({})
-    });
-
+    (function () {
+      new FroalaEditor("#edit", {})
+    })()
   </script>
 </body>
 

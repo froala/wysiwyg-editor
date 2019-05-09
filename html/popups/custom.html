@@ -1,95 +1,95 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="../../css/froala_editor.css">
   <link rel="stylesheet" href="../../css/froala_style.css">
 
   <style>
-      body {
-          text-align: center;
-      }
+    body {
+      text-align: center;
+    }
 
-      section {
-          width: 81%;
-          margin: auto;
-          text-align: left;
-      }
+    section {
+      width: 81%;
+      margin: auto;
+      text-align: left;
+    }
 
-      .custom-layer {
-        text-align: center;
-        padding: 10px;
-      }
+    .custom-layer {
+      text-align: center;
+      padding: 10px;
+    }
   </style>
 </head>
 
 <body>
   <section id="editor">
-      <div id='edit' style="margin-top: 30px;">
-        <h1>Custom Popup example</h1>
-        <p>This is an example of how to create your own popup.</p>
-      </div>
+    <div id='edit' style="margin-top: 30px;">
+      <h1>Custom Popup example</h1>
+      <p>This is an example of how to create your own popup.</p>
+    </div>
   </section>
 
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <script type="text/javascript" src="../../js/froala_editor.min.js"></script>
 
   <script>
     // Define popup template.
-    $.extend($.FroalaEditor.POPUP_TEMPLATES, {
+    Object.assign(FroalaEditor.POPUP_TEMPLATES, {
       'customPlugin.popup': '[_BUTTONS_][_CUSTOM_LAYER_]'
-    });
+    })
 
     // Define popup buttons.
-    $.extend($.FroalaEditor.DEFAULTS, {
+    Object.assign(FroalaEditor.DEFAULTS, {
       popupButtons: ['popupClose', '|', 'popupButton1', 'popupButton2'],
-    });
+    })
 
     // The custom popup is defined inside a plugin (new or existing).
-    $.FroalaEditor.PLUGINS.customPlugin = function (editor) {
+    FroalaEditor.PLUGINS.customPlugin = function (editor) {
       // Create custom popup.
-      function initPopup () {
+      function initPopup() {
         // Load popup template.
-        var template = $.FroalaEditor.POPUP_TEMPLATES.customPopup;
-        if (typeof template == 'function') template = template.apply(editor);
+        var template = FroalaEditor.POPUP_TEMPLATES.customPopup
+        if (typeof template == 'function') template = template.apply(editor)
 
         // Popup buttons.
-        var popup_buttons = '';
+        var popup_buttons = ''
 
         // Create the list of buttons.
         if (editor.opts.popupButtons.length > 1) {
-          popup_buttons += '<div class="fr-buttons">';
-          popup_buttons += editor.button.buildList(editor.opts.popupButtons);
-          popup_buttons += '</div>';
+          popup_buttons += '<div class="fr-buttons">'
+          popup_buttons += editor.button.buildList(editor.opts.popupButtons)
+          popup_buttons += '</div>'
         }
 
         // Load popup template.
         var template = {
           buttons: popup_buttons,
           custom_layer: '<div class="custom-layer">Hello World!</div>'
-        };
+        }
 
         // Create popup.
-        var $popup = editor.popups.create('customPlugin.popup', template);
+        var $popup = editor.popups.create('customPlugin.popup', template)
 
-        return $popup;
+        return $popup
       }
 
       // Show the popup
-      function showPopup () {
+      function showPopup() {
         // Get the popup object defined above.
-        var $popup = editor.popups.get('customPlugin.popup');
+        var $popup = editor.popups.get('customPlugin.popup')
 
         // If popup doesn't exist then create it.
         // To improve performance it is best to create the popup when it is first needed
         // and not when the editor is initialized.
-        if (!$popup) $popup = initPopup();
+        if (!$popup) $popup = initPopup()
 
         // Set the editor toolbar as the popup's container.
-        editor.popups.setContainer('customPlugin.popup', editor.$tb);
+        editor.popups.setContainer('customPlugin.popup', editor.$tb)
 
         // If the editor is not displayed when a toolbar button is pressed, then set BODY as the popup's container.
         // editor.popups.setContainer('customPlugin.popup', $('body'));
@@ -99,20 +99,20 @@
 
         // This custom popup is opened by pressing a button from the editor's toolbar.
         // Get the button's object in order to place the popup relative to it.
-        var $btn = editor.$tb.find('.fr-command[data-cmd="myButton"]');
+        var $btn = editor.$tb.find('.fr-command[data-cmd="myButton"]')
 
         // Compute the popup's position.
-        var left = $btn.offset().left + $btn.outerWidth() / 2;
-        var top = $btn.offset().top + (editor.opts.toolbarBottom ? 10 : $btn.outerHeight() - 10);
+        var left = $btn.offset().left + $btn.outerWidth() / 2
+        var top = $btn.offset().top + (editor.opts.toolbarBottom ? 10 : $btn.outerHeight() - 10)
 
         // Show the custom popup.
         // The button's outerHeight is required in case the popup needs to be displayed above it.
-        editor.popups.show('customPlugin.popup', left, top, $btn.outerHeight());
+        editor.popups.show('customPlugin.popup', left, top, $btn.outerHeight())
       }
 
       // Hide the custom popup.
-      function hidePopup () {
-        editor.popups.hide('customPlugin.popup');
+      function hidePopup() {
+        editor.popups.hide('customPlugin.popup')
       }
 
       // Methods visible outside the plugin.
@@ -123,8 +123,8 @@
     }
 
     // Define an icon and command for the button that opens the custom popup.
-    $.FroalaEditor.DefineIcon('buttonIcon', { NAME: 'star'})
-    $.FroalaEditor.RegisterCommand('myButton', {
+    FroalaEditor.DefineIcon('buttonIcon', { NAME: 'star', PATH: 'M12 17.27L18.18 21l-1.64 -7.03L22 9.24l-7.19 -0.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z' })
+    FroalaEditor.RegisterCommand('myButton', {
       title: 'Show Popup',
       icon: 'buttonIcon',
       undo: false,
@@ -138,53 +138,52 @@
         }
         else {
           if (this.$el.find('.fr-marker')) {
-            this.events.disableBlur();
-            this.selection.restore();
+            this.events.disableBlur()
+            this.selection.restore()
           }
-          this.popups.hide('customPlugin.popup');
+          this.popups.hide('customPlugin.popup')
         }
       }
-    });
+    })
 
     // Define custom popup close button icon and command.
-    $.FroalaEditor.DefineIcon('popupClose', { NAME: 'times' });
-    $.FroalaEditor.RegisterCommand('popupClose', {
+    FroalaEditor.DefineIcon('popupClose', { NAME: 'times', PATH: 'M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z' });
+    FroalaEditor.RegisterCommand('popupClose', {
       title: 'Close',
       undo: false,
       focus: false,
       callback: function () {
         this.customPlugin.hidePopup();
       }
-    });
+    })
 
     // Define custom popup 1.
-    $.FroalaEditor.DefineIcon('popupButton1', { NAME: 'bell-o' });
-    $.FroalaEditor.RegisterCommand('popupButton1', {
+    FroalaEditor.DefineIcon('popupButton1', { NAME: 'bell-o', PATH: 'M10.01 21.01c0 1.1 0.89 1.99 1.99 1.99s1.99 -0.89 1.99 -1.99h-3.98zm8.87 -4.19V11c0 -3.25 -2.25 -5.97 -5.29 -6.69v-0.72C13.59 2.71 12.88 2 12 2s-1.59 0.71 -1.59 1.59v0.72C7.37 5.03 5.12 7.75 5.12 11v5.82L3 18.94V20h18v-1.06l-2.12 -2.12zM16 13.01h-3v3h-2v-3H8V11h3V8h2v3h3v2.01z' });
+    FroalaEditor.RegisterCommand('popupButton1', {
       title: 'Button 1',
       undo: false,
       focus: false,
       callback: function () {
         alert("popupButton1 was pressed");
       }
-    });
+    })
 
     // Define custom popup 2.
-    $.FroalaEditor.DefineIcon('popupButton2', { NAME: 'bullhorn' });
-    $.FroalaEditor.RegisterCommand('popupButton2', {
+    FroalaEditor.DefineIcon('popupButton2', { NAME: 'bullhorn', PATH: 'M20 2H4c-1.1 0 -1.99 0.9 -1.99 2L2 22l4 -4h14c1.1 0 2 -0.9 2 -2V4c0 -1.1 -0.9 -2 -2 -2zm-7 9h-2V5h2v6zm0 4h-2v-2h2v2z' });
+    FroalaEditor.RegisterCommand('popupButton2', {
       title: 'Button 2',
       undo: false,
       focus: false,
       callback: function () {
-        alert("popupButton2");
+        alert("popupButton2")
       }
-    });
+    })
 
-    $(function(){
-      $('#edit').froalaEditor({
-        toolbarButtons: ['bold', 'italic', 'underline', 'strikeThrough', 'myButton', '|', 'undo', 'redo'],
+      new FroalaEditor("#edit", {
+        toolbarButtons: [ ['bold', 'italic', 'underline', 'strikeThrough', 'myButton'], ['undo', 'redo'] ],
         pluginsEnabled: ['customPlugin']
       })
-    });
   </script>
 </body>
+
 </html>

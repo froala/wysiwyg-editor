@@ -127,7 +127,6 @@
       Curabitur sem purus, sagittis quis lorem ac, iaculis laoreet lacus. Fusce eleifend congue massa a ornare. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sodales, tortor ut hendrerit lacinia, velit metus commodo libero, eu consequat est metus sit amet odio. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque eu sem vehicula, vulputate est sit amet, mattis nisi. Nullam consequat at turpis vitae pretium. Nulla risus velit, pharetra ac sollicitudin sed, volutpat nec felis.
   </div>
 
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/codemirror.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/mode/xml/xml.min.js"></script>
   <script type="text/javascript" src="../js/froala_editor.min.js"></script>
@@ -157,9 +156,9 @@
   <script type="text/javascript" src="../js/languages/ro.js"></script>
 
   <script>
-    $(function(){
-      $('#edit').froalaEditor({
-        enter: $.FroalaEditor.ENTER_P,
+    (function(){
+      new FroalaEditor("#edit",{
+        enter: FroalaEditor.ENTER_P,
         fileUploadToS3: {
           bucket: '<?php echo $bucket; ?>',
           region: '<?php echo $region; ?>',
@@ -170,13 +169,15 @@
             policy: '<?php echo $policy; ?>',
             signature: '<?php echo $signature; ?>',
           }
+        },
+        events: {
+          'file.uploadedToS3': function(link, key, response) {
+            console.log ('S3 Link:', link)
+            console.log ('S3 Key:', key)
+          }
         }
       })
-      .on('froala.file.uploadedToS3', function (e, editor, link, key, response) {
-        console.log ('S3 Link:', link);
-        console.log ('S3 Key:', key);
-      })
-    });
+    })()
   </script>
 </body>
 </html>

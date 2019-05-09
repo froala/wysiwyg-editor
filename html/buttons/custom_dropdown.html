@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="../../css/froala_editor.css">
   <link rel="stylesheet" href="../../css/froala_style.css">
@@ -21,15 +22,15 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/codemirror.min.css">
 
   <style>
-      body {
-          text-align: center;
-      }
+    body {
+      text-align: center;
+    }
 
-      div#editor {
-          width: 81%;
-          margin: auto;
-          text-align: left;
-      }
+    div#editor {
+      width: 81%;
+      margin: auto;
+      text-align: left;
+    }
   </style>
 </head>
 
@@ -40,17 +41,29 @@
 
       <p>An example of custom dropdown for the WYSIWYG HTML editor.</p>
 
-      <p>More details about defining a custom dropdown can be found in the <a href="https://froala.com/wysiwyg-editor/docs/concepts/custom/dropdown" title="Custom Dropdown Concept" target="_blank">Custom Dropdown</a> concept.</p>
+      <p>More details about defining a custom dropdown can be found in the <a
+          href="https://froala.com/wysiwyg-editor/docs/concepts/custom/dropdown" title="Custom Dropdown Concept"
+          target="_blank">Custom Dropdown</a> concept.</p>
 
-      <p>After defining custom buttons you need to add them to the toolbar buttons list, using the following options: <a href="https://froala.com/wysiwyg-editor/docs/options#toolbarButtons" title="toolbarButtons" target="_blank">toolbarButtons</a>, <a href="https://froala.com/wysiwyg-editor/docs/options#toolbarButtonsMD" title="toolbarButtonsMD" target="_blank">toolbarButtonsMD</a>, <a href="https://froala.com/wysiwyg-editor/docs/options#toolbarButtonsSM" title="toolbarButtonsSM" target="_blank">toolbarButtonsSM</a> and <a href="https://froala.com/wysiwyg-editor/docs/options#toolbarButtonsXS" title="toolbarButtonsXS" target="_blank">toolbarButtonsXS</a> as explained in the <a href="https://froala.com/wysiwyg-editor/examples/custom-toolbar" title="Custom Toolbar Example" target="_blank">Custom Toolbar</a> example.</p>
+      <p>After defining custom buttons you need to add them to the toolbar buttons list, using the following options: <a
+          href="https://froala.com/wysiwyg-editor/docs/options#toolbarButtons" title="toolbarButtons"
+          target="_blank">toolbarButtons</a>, <a href="https://froala.com/wysiwyg-editor/docs/options#toolbarButtonsMD"
+          title="toolbarButtonsMD" target="_blank">toolbarButtonsMD</a>, <a
+          href="https://froala.com/wysiwyg-editor/docs/options#toolbarButtonsSM" title="toolbarButtonsSM"
+          target="_blank">toolbarButtonsSM</a> and <a
+          href="https://froala.com/wysiwyg-editor/docs/options#toolbarButtonsXS" title="toolbarButtonsXS"
+          target="_blank">toolbarButtonsXS</a> as explained in the <a
+          href="https://froala.com/wysiwyg-editor/examples/custom-toolbar" title="Custom Toolbar Example"
+          target="_blank">Custom Toolbar</a> example.</p>
     </div>
   </div>
 
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/codemirror.min.js"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/mode/xml/xml.min.js"></script>
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/codemirror.min.js"></script>
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/mode/xml/xml.min.js"></script>
 
-  <script type="text/javascript" src="../../js/froala_editor.min.js" ></script>
+  <script type="text/javascript" src="../../js/froala_editor.min.js"></script>
   <script type="text/javascript" src="../../js/plugins/align.min.js"></script>
   <script type="text/javascript" src="../../js/plugins/char_counter.min.js"></script>
   <script type="text/javascript" src="../../js/plugins/code_beautifier.min.js"></script>
@@ -79,35 +92,36 @@
   <script type="text/javascript" src="../../js/plugins/video.min.js"></script>
 
   <script>
-    $(function(){
-      $.FroalaEditor.DefineIcon('my_dropdown', {NAME: 'cog'});
-        $.FroalaEditor.RegisterCommand('my_dropdown', {
-          title: 'Advanced options',
-          type: 'dropdown',
-          focus: false,
-          undo: false,
-          refreshAfterCallback: true,
-          options: {
-            'v1': 'Option 1',
-            'v2': 'Option 2'
-          },
-          callback: function (cmd, val) {
-            console.log (val);
-          },
-          // Callback on refresh.
-          refresh: function ($btn) {
-            console.log ('do refresh');
-          },
-          // Callback on dropdown show.
-          refreshOnShow: function ($btn, $dropdown) {
-            console.log ('do refresh when show');
-          }
-        });
-
-      $('#edit').froalaEditor({
-        toolbarButtons: ['bold', 'italic', 'formatBlock', 'my_dropdown']
+    (function () {
+      FroalaEditor.DefineIcon('my_dropdown', { NAME: 'cog', PATH: "M15.95 10.78c0.03 -0.25 0.05 -0.51 0.05 -0.78s-0.02 -0.53 -0.06 -0.78l1.69 -1.32c0.15 -0.12 0.19 -0.34 0.1 -0.51l-1.6 -2.77c-0.1 -0.18 -0.31 -0.24 -0.49 -0.18l-1.99 0.8c-0.42 -0.32 -0.86 -0.58 -1.35 -0.78L12 2.34c-0.03 -0.2 -0.2 -0.34 -0.4 -0.34H8.4c-0.2 0 -0.36 0.14 -0.39 0.34l-0.3 2.12c-0.49 0.2 -0.94 0.47 -1.35 0.78l-1.99 -0.8c-0.18 -0.07 -0.39 0 -0.49 0.18l-1.6 2.77c-0.1 0.18 -0.06 0.39 0.1 0.51l1.69 1.32c-0.04 0.25 -0.07 0.52 -0.07 0.78s0.02 0.53 0.06 0.78L2.37 12.1c-0.15 0.12 -0.19 0.34 -0.1 0.51l1.6 2.77c0.1 0.18 0.31 0.24 0.49 0.18l1.99 -0.8c0.42 0.32 0.86 0.58 1.35 0.78l0.3 2.12c0.04 0.2 0.2 0.34 0.4 0.34h3.2c0.2 0 0.37 -0.14 0.39 -0.34l0.3 -2.12c0.49 -0.2 0.94 -0.47 1.35 -0.78l1.99 0.8c0.18 0.07 0.39 0 0.49 -0.18l1.6 -2.77c0.1 -0.18 0.06 -0.39 -0.1 -0.51l-1.67 -1.32zM10 13c-1.65 0 -3 -1.35 -3 -3s1.35 -3 3 -3 3 1.35 3 3 -1.35 3 -3 3z" })
+      FroalaEditor.RegisterCommand('my_dropdown', {
+        title: 'Advanced options',
+        type: 'dropdown',
+        focus: false,
+        undo: false,
+        refreshAfterCallback: true,
+        options: {
+          'v1': 'Option 1',
+          'v2': 'Option 2'
+        },
+        callback: function (cmd, val) {
+          console.log(val)
+        },
+        // Callback on refresh.
+        refresh: function ($btn) {
+          console.log('do refresh')
+        },
+        // Callback on dropdown show.
+        refreshOnShow: function ($btn, $dropdown) {
+          console.log('do refresh when show')
+        }
       })
-    });
+
+      new FroalaEditor("#edit", {
+        toolbarButtons: [ ['bold', 'italic', 'formatBlock', 'my_dropdown'] ]
+      })
+    })()
   </script>
 </body>
+
 </html>

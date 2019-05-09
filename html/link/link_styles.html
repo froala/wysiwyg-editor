@@ -53,7 +53,6 @@
       </div>
   </div>
 
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/codemirror.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/mode/xml/xml.min.js"></script>
 
@@ -86,15 +85,15 @@
   <script type="text/javascript" src="../../js/plugins/video.min.js"></script>
 
   <script>
-    $(function(){
-      $('#edit').froalaEditor({
+    (function(){
+      new FroalaEditor("#edit",{
         // Define new link styles.
         linkStyles: {
           class1: 'Class 1',
           class2: 'Class 2'
         }
       })
-    });
+    })()
   </script>
 </body>
 </html>

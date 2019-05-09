@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="../../css/froala_editor.css">
   <link rel="stylesheet" href="../../css/froala_style.css">
@@ -21,24 +22,24 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/codemirror.min.css">
 
   <style>
-      body {
-          text-align: center;
-      }
+    body {
+      text-align: center;
+    }
 
-      div#editor {
-          width: 81%;
-          margin: auto;
-          text-align: left;
-      }
+    div#editor {
+      width: 81%;
+      margin: auto;
+      text-align: left;
+    }
 
-      .class1 {
-        border-radius: 10%;
-        border: 2px solid #efefef;
-      }
+    .class1 {
+      border-radius: 10%;
+      border: 2px solid #efefef;
+    }
 
-      .class2 {
-        opacity: 0.5;
-      }
+    .class2 {
+      opacity: 0.5;
+    }
   </style>
 </head>
 
@@ -49,18 +50,25 @@
 
       <p>The classes should be defined in CSS, otherwise no changes will be visible on the image&#39;s appearance.</p>
 
-      <img class="fr-fil fr-dii" src="../../img/photo1.jpg" alt="Old Clock" width="200"/>
+      <img class="fr-fil fr-dii" src="../../img/photo1.jpg" alt="Old Clock" width="200" />
 
-      <p>You can define your own image styles using the <code><a href="https://www.froala.com/wysiwyg-editor/docs/options#imageStyles" title="imageStyles" target="_blank">imageStyles</a></code> option. This option is an Object where the key represents the class name and its value is the style name that appears in the dropdown list. It is important to have unique keys otherwise they will not work properly.</p>
-      <p>By default you can select multiple image styles at a time. If you want to toggle them and allow only one style to be selected at a time use the <code><a href="https://www.froala.com/wysiwyg-editor/docs/options#imageMultipleStyles" title="imageMultipleStyles" target="_blank">imageMultipleStyles</a></code> option.</p>
+      <p>You can define your own image styles using the
+        <code><a href="https://www.froala.com/wysiwyg-editor/docs/options#imageStyles" title="imageStyles" target="_blank">imageStyles</a></code>
+        option. This option is an Object where the key represents the class name and its value is the style name that
+        appears in the dropdown list. It is important to have unique keys otherwise they will not work properly.</p>
+      <p>By default you can select multiple image styles at a time. If you want to toggle them and allow only one style
+        to be selected at a time use the
+        <code><a href="https://www.froala.com/wysiwyg-editor/docs/options#imageMultipleStyles" title="imageMultipleStyles" target="_blank">imageMultipleStyles</a></code>
+        option.</p>
     </div>
   </div>
 
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/codemirror.min.js"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/mode/xml/xml.min.js"></script>
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/codemirror.min.js"></script>
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/mode/xml/xml.min.js"></script>
 
-  <script type="text/javascript" src="../../js/froala_editor.min.js" ></script>
+  <script type="text/javascript" src="../../js/froala_editor.min.js"></script>
   <script type="text/javascript" src="../../js/plugins/align.min.js"></script>
   <script type="text/javascript" src="../../js/plugins/char_counter.min.js"></script>
   <script type="text/javascript" src="../../js/plugins/code_beautifier.min.js"></script>
@@ -89,15 +97,16 @@
   <script type="text/javascript" src="../../js/plugins/video.min.js"></script>
 
   <script>
-    $(function(){
-      $('#edit').froalaEditor({
+    (function () {
+      new FroalaEditor("#edit", {
         // Define new image styles.
         imageStyles: {
           class1: 'Class 1',
           class2: 'Class 2'
         }
       })
-    });
+    })()
   </script>
 </body>
+
 </html>

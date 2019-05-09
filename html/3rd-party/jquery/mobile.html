@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="../../../css/froala_editor.css">
   <link rel="stylesheet" href="../../../css/froala_style.css">
@@ -21,40 +22,42 @@
   <link rel="stylesheet" href="http://code.jquery.com/mobile/git/jquery.mobile-git.css">
 
   <style>
-      body {
-          text-align: center;
-      }
+    body {
+      text-align: center;
+    }
 
-      div#editor {
-          width: 81%;
-          margin: auto;
-          text-align: left;
-      }
+    div#editor {
+      width: 81%;
+      margin: auto;
+      text-align: left;
+    }
   </style>
 </head>
 
 <body>
   <div data-role="page">
 
-  	<div data-role="header">
-  		<h1>Page Title</h1>
-  	</div><!-- /header -->
+    <div data-role="header">
+      <h1>Page Title</h1>
+    </div><!-- /header -->
 
-  	<div role="main" class="ui-content">
-          <textarea name="edit" id="edit">Click here to edit</textarea>
-  	</div><!-- /content -->
+    <div role="main" class="ui-content">
+      <textarea name="edit" id="edit">Click here to edit</textarea>
+    </div><!-- /content -->
 
-  	<div data-role="footer">
-  		<h4>Page Footer</h4>
-  	</div><!-- /footer -->
+    <div data-role="footer">
+      <h4>Page Footer</h4>
+    </div><!-- /footer -->
   </div><!-- /page -->
 
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <script type="text/javascript" src="http://demos.jquerymobile.com/1.4.5/js/jquery.mobile-1.4.5.min.js"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/codemirror.min.js"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/mode/xml/xml.min.js"></script>
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/codemirror.min.js"></script>
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/mode/xml/xml.min.js"></script>
 
-  <script type="text/javascript" src="../../../js/froala_editor.min.js" ></script>
+  <script type="text/javascript" src="../../../js/froala_editor.min.js"></script>
 
   <script type="text/javascript" src="../../../js/plugins/align.min.js"></script>
   <script type="text/javascript" src="../../../js/plugins/code_beautifier.min.js"></script>
@@ -85,13 +88,14 @@
   <script type="text/javascript" src="../../../js/languages/ro.js"></script>
 
   <script>
-     $(document).on('pageinit', function () {
-      $('#edit').froalaEditor({
-        enter: $.FroalaEditor.ENTER_P,
+    $(document).on('pageinit', function () {
+      const editorInstance = new FroalaEditor('#edit', {
+        enter: FroalaEditor.ENTER_P,
         toolbarInline: true,
-        toolbarButtons: ['bold', 'italic', 'underline']
+        toolbarButtons: [ ['bold', 'italic', 'underline'] ]
       })
     });
   </script>
 </body>
+
 </html>

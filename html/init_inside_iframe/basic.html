@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
@@ -20,20 +21,20 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/codemirror.min.css">
 
   <style>
-      body {
-        text-align: center;
-      }
+    body {
+      text-align: center;
+    }
 
-      section {
-        width: 80%;
-        margin: auto;
-        text-align: left;
-      }
+    section {
+      width: 80%;
+      margin: auto;
+      text-align: left;
+    }
 
-      iframe {
-        width: 100%;
-        height: 400px;
-      }
+    iframe {
+      width: 100%;
+      height: 400px;
+    }
   </style>
 </head>
 
@@ -44,9 +45,10 @@
     </iframe>
   </section>
 
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/codemirror.min.js"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/mode/xml/xml.min.js"></script>
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/codemirror.min.js"></script>
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/mode/xml/xml.min.js"></script>
   <script type="text/javascript" src="../../js/froala_editor.min.js"></script>
   <script type="text/javascript" src="../../js/plugins/align.min.js"></script>
   <script type="text/javascript" src="../../js/plugins/code_beautifier.min.js"></script>
@@ -75,22 +77,25 @@
   <script type="text/javascript" src="../../js/plugins/fullscreen.min.js"></script>
 
   <script>
-    $(function () {
+    (function () {
       var timer = setInterval(function () {
-        var iframe = document.getElementById('content');
-        var iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
+        var iframe = document.getElementById('content')
+        var iframeDoc = iframe.contentDocument || iframe.contentWindow.document
 
         // Check if loading is complete
         if (iframeDoc.readyState == 'complete' || iframeDoc.readyState == 'interactive') {
-          $(iframe).contents().find('#edit').froalaEditor({
-            scrollableContainer: $(iframe).contents().find('body')
+
+          new FroalaEditor('#edit', {
+            //iframe_document : iframeDoc,
+            scrollableContainer: iframeDoc.getElementById("edit")
           })
 
-          clearInterval(timer);
-          return;
+          clearInterval(timer)
+          return
         }
-      }, 500);
-    })
+      }, 500)
+    })()
   </script>
 </body>
+
 </html>

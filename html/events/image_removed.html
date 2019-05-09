@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="../../css/froala_editor.css">
   <link rel="stylesheet" href="../../css/froala_style.css">
@@ -17,32 +18,48 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/codemirror.min.css">
 
   <style>
-      body {
-          text-align: center;
-      }
+    body {
+      text-align: center;
+    }
 
-      div#editor {
-          width: 81%;
-          margin: auto;
-          text-align: left;
-      }
+    div#editor {
+      width: 81%;
+      margin: auto;
+      text-align: left;
+    }
   </style>
 </head>
 
 <body>
   <div id="editor">
-      <div id='edit' style="margin-top: 30px;">
-        <h1>Image Removed event</h1>
-        <p>In this example you can see how the <a href="https://www.froala.com/wysiwyg-editor/docs/events#image.removed" title="image.removed">image.removed</a> event is fired. Don't forget to open the browser console.</p>
+    <div id='edit' style="margin-top: 30px;">
+      <h1>Image Removed event</h1>
+      <p>In this example you can see how the <a href="https://www.froala.com/wysiwyg-editor/docs/events#image.removed"
+          title="image.removed">image.removed</a> event is fired. Don't forget to open the browser console.</p>
 
-        <img class="fr-fir fr-dii" src="../../img/photo1.jpg" alt="Old Clock" width="300"/>Lorem <strong>ipsum</strong> dolor sit amet, consectetur <strong>adipiscing <em>elit.</em> Donec</strong> facilisis diam in odio iaculis blandit. Nunc eu mauris sit amet purus <strong>viverra</strong><em> gravida</em> ut a dui.<br/>
-                <ul><li>Vivamus nec rutrum augue, pharetra faucibus purus. Maecenas non orci sagittis, vehicula lorem et, dignissim nunc.</li> <li>Suspendisse suscipit, diam non varius facilisis, enim libero tincidunt magna, sit amet iaculis eros libero sit amet eros. Vestibulum a rhoncus felis.<ol><li>Nam lacus nulla, consequat ac lacus sit amet, accumsan pellentesque risus. Aenean viverra mi at urna mattis fermentum.</li> <li>Curabitur porta metus in tortor elementum, in semper nulla ullamcorper. Vestibulum mattis tempor tortor quis gravida. In rhoncus risus nibh. Nullam condimentum dapibus massa vel fringilla. Sed hendrerit sed est quis facilisis. Ut sit amet nibh sem. Pellentesque imperdiet mollis libero.</li></ol></li></ul>
-      </div>
+      <img class="fr-fir fr-dii" src="../../img/photo1.jpg" alt="Old Clock" width="300" />Lorem <strong>ipsum</strong>
+      dolor sit amet, consectetur <strong>adipiscing <em>elit.</em> Donec</strong> facilisis diam in odio iaculis
+      blandit. Nunc eu mauris sit amet purus <strong>viverra</strong><em> gravida</em> ut a dui.<br />
+      <ul>
+        <li>Vivamus nec rutrum augue, pharetra faucibus purus. Maecenas non orci sagittis, vehicula lorem et, dignissim
+          nunc.</li>
+        <li>Suspendisse suscipit, diam non varius facilisis, enim libero tincidunt magna, sit amet iaculis eros libero
+          sit amet eros. Vestibulum a rhoncus felis.<ol>
+            <li>Nam lacus nulla, consequat ac lacus sit amet, accumsan pellentesque risus. Aenean viverra mi at urna
+              mattis fermentum.</li>
+            <li>Curabitur porta metus in tortor elementum, in semper nulla ullamcorper. Vestibulum mattis tempor tortor
+              quis gravida. In rhoncus risus nibh. Nullam condimentum dapibus massa vel fringilla. Sed hendrerit sed est
+              quis facilisis. Ut sit amet nibh sem. Pellentesque imperdiet mollis libero.</li>
+          </ol>
+        </li>
+      </ul>
+    </div>
   </div>
 
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/codemirror.min.js"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/mode/xml/xml.min.js"></script>
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/codemirror.min.js"></script>
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/mode/xml/xml.min.js"></script>
   <script type="text/javascript" src="../../js/froala_editor.min.js"></script>
   <script type="text/javascript" src="../../js/plugins/align.min.js"></script>
   <script type="text/javascript" src="../../js/plugins/code_beautifier.min.js"></script>
@@ -62,15 +79,18 @@
   <script type="text/javascript" src="../../js/plugins/video.min.js"></script>
 
   <script>
-    $(function(){
-      $('#edit').froalaEditor({
-        enter: $.FroalaEditor.ENTER_P
+    (function () {
+      const editorInstance = new FroalaEditor('#edit', {
+        enter: FroalaEditor.ENTER_P,
+        events: {
+          'image.removed': function ($img) {
+            console.log('image removed', $img)
+            console.log('image src', $img.attr('src'))
+          }
+        }
       })
-      .on ('froalaEditor.image.removed', function (e, editor, $img) {
-        console.log ('image removed', $img);
-        console.log ('image src', $img.attr('src'))
-      })
-    });
+    })()
   </script>
 </body>
+
 </html>

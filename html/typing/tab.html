@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="../../css/froala_editor.css">
   <link rel="stylesheet" href="../../css/froala_style.css">
@@ -20,15 +21,15 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/codemirror.min.css">
 
   <style>
-      body {
-        text-align: center;
-      }
+    body {
+      text-align: center;
+    }
 
-      div#editor {
-        width: 81%;
-        margin: auto;
-        text-align: left;
-      }
+    div#editor {
+      width: 81%;
+      margin: auto;
+      text-align: left;
+    }
   </style>
 </head>
 
@@ -36,14 +37,18 @@
   <div id="editor">
     <div id='edit' style="margin-top: 30px;">
       <h1>TAB Key</h1>
-      <p>Froala WYSIWYG HTML Editor does not interfere with the natural TAB key behavior allowing you to easily navigate through pages. You can also change this behaviour and use the TAB key to indent a specified number of spaces at a time. Use the <a href="https://www.froala.com/wysiwyg-editor/docs/options#tabSpaces" target="_blank" title="tabSpaces option">tabSpaces</a> option to specify the number of spaces.</p>
+      <p>Froala WYSIWYG HTML Editor does not interfere with the natural TAB key behavior allowing you to easily navigate
+        through pages. You can also change this behaviour and use the TAB key to indent a specified number of spaces at
+        a time. Use the <a href="https://www.froala.com/wysiwyg-editor/docs/options#tabSpaces" target="_blank"
+          title="tabSpaces option">tabSpaces</a> option to specify the number of spaces.</p>
     </div>
   </div>
 
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/codemirror.min.js"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/mode/xml/xml.min.js"></script>
-  <script type="text/javascript" src="../../js/froala_editor.min.js" ></script>
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/codemirror.min.js"></script>
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/mode/xml/xml.min.js"></script>
+  <script type="text/javascript" src="../../js/froala_editor.min.js"></script>
   <script type="text/javascript" src="../../js/plugins/align.min.js"></script>
   <script type="text/javascript" src="../../js/plugins/code_beautifier.min.js"></script>
   <script type="text/javascript" src="../../js/plugins/code_view.min.js"></script>
@@ -70,11 +75,12 @@
   <script type="text/javascript" src="../../js/plugins/fullscreen.min.js"></script>
 
   <script>
-    $(function(){
-      $('#edit').froalaEditor({
+    (function () {
+      new FroalaEditor("#edit", {
         tabSpaces: 4
       })
-    });
+    })()
   </script>
 </body>
+
 </html>
