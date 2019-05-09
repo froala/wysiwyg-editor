@@ -34,14 +34,14 @@ Froala WYSIWYG HTML Editor is one of the most powerful JavaScript rich text edit
 
 ```html
 <!-- Include Editor style. -->
-<link href="https://cdn.jsdelivr.net/npm/froala-editor@3.0.0-beta.1/css/froala_editor.pkgd.min.css" rel="stylesheet" type="text/css" />
+<link href="https://cdn.jsdelivr.net/npm/froala-editor@3.0.0-beta.0/css/froala_editor.pkgd.min.css" rel="stylesheet" type="text/css" />
 
 <!-- Create a tag that we will use as the editable area. -->
 <!-- You can use a div tag as well. -->
 <textarea></textarea>
 
 <!-- Include Editor JS files. -->
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/froala-editor@3.0.0-beta.1/js/froala_editor.pkgd.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/froala-editor@3.0.0-beta.0/js/froala_editor.pkgd.min.js"></script>
 
 <!-- Initialize the editor. -->
 <script>
