@@ -26,5 +26,9 @@
     position: absolute;
     left: calc(50% - (40px / 2));
     top: -20px; }
+    .fr-line-breaker a.fr-floating-btn svg {
+      margin: 8px;
+      height: 24px;
+      width: 24px; }
 
 /*# sourceMappingURL=line_breaker.css.map */

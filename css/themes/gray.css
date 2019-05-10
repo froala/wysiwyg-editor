@@ -636,6 +636,10 @@
   .gray-theme .fr-line-breaker a.fr-floating-btn {
     left: calc(50% - (40px / 2));
     top: -20px; }
+    .gray-theme .fr-line-breaker a.fr-floating-btn svg {
+      margin: 8px;
+      height: 24px;
+      width: 24px; }
 .gray-theme .fr-quick-insert {
   padding-right: 10px;
   -webkit-box-sizing: content-box;
