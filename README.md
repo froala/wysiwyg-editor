@@ -30,7 +30,21 @@ Froala WYSIWYG HTML Editor is one of the most powerful JavaScript rich text edit
 
 
 
-## Get Started
+## Download and Install Froala Editor
+
+### Install from npm
+
+```
+npm install froala-editor
+```
+
+### Install from bower
+
+```
+bower install froala-wysiwyg-editor
+```
+
+### Load from CDN
 
 ```html
 <!-- Include Editor style. -->
@@ -49,15 +63,107 @@ Froala WYSIWYG HTML Editor is one of the most powerful JavaScript rich text edit
 </script>
 ```
 
+
+
+### Load from CDN as an AMD
+
+```html
+<html>
+<head>
+  <!-- Load CSS files. -->
+  <link rel="stylesheet" type="text/css" href="../dist/css/froala_editor.css">
+
+  <script src="require.js"></script>
+  <script>
+    require.config({
+      packages: [{
+        name: 'froala-editor',
+        main: 'js/froala_editor.min'
+      }],
+      paths: {
+        // Change this to your server if you do not wish to use our CDN.
+        'froala-editor': '../dist'
+      }
+    });
+  </script>
+
+  <style>
+    body {
+      text-align: center;
+    }
+    div#editor {
+      width: 81%;
+      margin: auto;
+      text-align: left;
+    }
+    .ss {
+      background-color: red;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="editor">
+    <div id='edit' style='margin-top:30px;'>
+    </div>
+  </div>
+
+  <script>
+    require([
+      'froala-editor',
+      'froala-editor/js/plugins/align.min',
+      'froala-editor/js/languages/de'
+    ], function(FroalaEditor) {
+      new FroalaEditor('#edit', {
+        language: 'de'
+      })
+    });
+  </script>
+</body>
+
+</html>
+```
+
+
+
+### Load from CDN as CommonJS Module
+
+*The following examples presumes you are using npm to install froala-editor, see Download and install FroalaEditor for more details.*
+
+```javascript
+var FroalaEditor = require('froala-editor');
+
+require('froala-editor/js/plugins/align.min');
+require('froala-editor/js/languages/de');
+
+new FroalaEditor('#edit', {
+	language: 'de'
+});
+```
+
+
+
+### Load from as a transpiled ES6/UMD module
+
+*The following examples presumes you are using npm to install froala-editor, see Download and install FroalaEditor for more details.*
+
+```javascript
+import 'froala-editor/js/plugins/align.min.js'
+import 'froala-editor/js/languages/de.js';
+
+import FroalaEditor from 'froala-editor';
+
+new FroalaEditor('#edit', {
+  language: 'de'
+});
+```
+
 For more details on customizing the editor, please check the editor [documentation](https://www.froala.com/wysiwyg-editor/docs).
 
 
 
-## Download
+## Use with your existing framework
 
-- npm: `npm install froala-editor`
-- bower: `bower install froala-wysiwyg-editor`
-- CDN: https://cdn.jsdelivr.net/npm/froala-editor/
 - Angular JS: https://github.com/froala/angular-froala
 - Angular 2: https://github.com/froala/angular2-froala-wysiwyg
 - Aurelia: https://github.com/froala/aurelia-froala-editor
