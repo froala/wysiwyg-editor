@@ -18,7 +18,8 @@
   width: 100%;
   margin: 0;
   padding: 20px;
-  padding-top: 0; }
+  padding-top: 0;
+  float: left; }
   .fr-popup .fr-layer.fr-color-hex-layer .fr-input-line {
     float: left;
     width: calc(100% - 50px);
