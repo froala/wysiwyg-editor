@@ -1521,14 +1521,15 @@
       -webkit-box-sizing: border-box;
       -moz-box-sizing: border-box;
       box-sizing: border-box;
-      -webkit-transition: border-color 0.5s ease;
-      -moz-transition: border-color 0.5s ease;
-      -ms-transition: border-color 0.5s ease;
-      -o-transition: border-color 0.5s ease; }
+      -webkit-transition: border 0.5s, padding 0.5s;
+      -moz-transition: border 0.5s, padding 0.5s;
+      -ms-transition: border 0.5s, padding 0.5s;
+      -o-transition: border 0.5s, padding 0.5s; }
       .gray-theme.fr-popup .fr-input-line input[type="text"]:hover, .gray-theme.fr-popup .fr-input-line textarea:hover {
         border: solid 1px #515151; }
       .gray-theme.fr-popup .fr-input-line input[type="text"]:focus, .gray-theme.fr-popup .fr-input-line textarea:focus {
-        border: solid 2px #0097A7; }
+        border: solid 2px #0097A7;
+        padding: 3px 11px; }
     .gray-theme.fr-popup .fr-input-line input[type="text"] {
       height: 46px; }
     .gray-theme.fr-popup .fr-input-line input + label, .gray-theme.fr-popup .fr-input-line textarea + label {
