@@ -71,7 +71,7 @@ bower install froala-wysiwyg-editor
 <html>
 <head>
   <!-- Load CSS files. -->
-  <link rel="stylesheet" type="text/css" href="../dist/css/froala_editor.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/froala-editor@3.0.0-beta.0/css/froala_editor.css">
 
   <script src="require.js"></script>
   <script>
@@ -82,7 +82,7 @@ bower install froala-wysiwyg-editor
       }],
       paths: {
         // Change this to your server if you do not wish to use our CDN.
-        'froala-editor': '../dist'
+        'froala-editor': 'https://cdn.jsdelivr.net/npm/froala-editor@3.0.0-beta.0'
       }
     });
   </script>
