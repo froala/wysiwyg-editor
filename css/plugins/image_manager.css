@@ -189,15 +189,13 @@ div.fr-modal-body {
         position: absolute;
         cursor: pointer;
         margin: 0;
-        width: 36px;
-        height: 36px;
-        line-height: 36px;
+        line-height: 40px;
         text-decoration: none;
         z-index: 3; }
       div.fr-modal-body div.fr-image-list div.fr-image-container .fr-delete-img {
         background: #B8312F;
         fill: #FFF;
-        padding: 5px;
+        padding: 8px;
         left: 50%;
         -webkit-transform: translateY(-50%) translateX(25%);
         -moz-transform: translateY(-50%) translateX(25%);
@@ -206,7 +204,7 @@ div.fr-modal-body {
       div.fr-modal-body div.fr-image-list div.fr-image-container .fr-insert-img {
         background: #FFF;
         fill: #0098f7;
-        padding: 5px;
+        padding: 8px;
         left: 50%;
         -webkit-transform: translateY(-50%) translateX(-125%);
         -moz-transform: translateY(-50%) translateX(-125%);

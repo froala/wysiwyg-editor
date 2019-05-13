@@ -599,13 +599,11 @@
         -ms-transition: background 0.2s ease 0s, color 0.2s ease 0s;
         -o-transition: background 0.2s ease 0s, color 0.2s ease 0s;
         margin: 0;
-        width: 36px;
-        height: 36px;
-        line-height: 36px; }
+        line-height: 40px; }
       .dark-themediv.fr-modal-body div.fr-image-list div.fr-image-container .fr-delete-img {
         background: #B8312F;
         fill: #FFF;
-        padding: 5px;
+        padding: 8px;
         -webkit-transform: translateY(-50%) translateX(25%);
         -moz-transform: translateY(-50%) translateX(25%);
         -ms-transform: translateY(-50%) translateX(25%);
@@ -613,7 +611,7 @@
       .dark-themediv.fr-modal-body div.fr-image-list div.fr-image-container .fr-insert-img {
         background: #353535;
         fill: #0098f7;
-        padding: 5px;
+        padding: 8px;
         -webkit-transform: translateY(-50%) translateX(-125%);
         -moz-transform: translateY(-50%) translateX(-125%);
         -ms-transform: translateY(-50%) translateX(-125%);
