@@ -1762,7 +1762,7 @@
     margin: 0 17px 0 12px; }
   .gray-theme.fr-toolbar .fr-command.fr-btn.fr-open {
     margin-top: 10px;
-    margin-bottom: -5px;
+    margin-bottom: -1px;
     border-radius: 4px 4px 0 0;
     -moz-border-radius: 4px 4px 0 0;
     -webkit-border-radius: 4px 4px 0 0;
@@ -1810,7 +1810,7 @@
       padding-top: 48px;
       background: #FFF; }
     .gray-theme.fr-toolbar.fr-bottom .fr-command.fr-btn.fr-open {
-      margin-top: -5px;
+      margin-top: -1px;
       margin-bottom: 10px;
       border-radius: 0 0 4px 4px;
       -moz-border-radius: 0 0 4px 4px;
