@@ -65,7 +65,7 @@ bower install froala-wysiwyg-editor
 
 
 
-### Load from CDN as an AMD
+### Load from CDN as an AMD module
 
 ```html
 <html>
@@ -123,7 +123,7 @@ bower install froala-wysiwyg-editor
 
 
 
-### Load from CDN as CommonJS Module
+### Load Froala Editor as a CommonJS Module
 
 *The following examples presumes you are using npm to install froala-editor, see Download and install FroalaEditor for more details.*
 
@@ -139,7 +139,7 @@ new FroalaEditor('#edit');
 
 
 
-### Load from as a transpiled ES6/UMD module
+### Load Froala Editor as a transpiled ES6/UMD module
 
 *The following examples presumes you are using npm to install froala-editor, see Download and install FroalaEditor for more details.*
 
