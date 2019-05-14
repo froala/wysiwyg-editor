@@ -133,12 +133,10 @@ bower install froala-wysiwyg-editor
 ```javascript
 var FroalaEditor = require('froala-editor');
 
+// Load a plugin.
 require('froala-editor/js/plugins/align.min');
-require('froala-editor/js/languages/de');
 
-new FroalaEditor('#edit', {
-	language: 'de'
-});
+new FroalaEditor('#edit');
 ```
 
 
@@ -148,14 +146,12 @@ new FroalaEditor('#edit', {
 *The following examples presumes you are using npm to install froala-editor, see Download and install FroalaEditor for more details.*
 
 ```javascript
-import 'froala-editor/js/plugins/align.min.js'
-import 'froala-editor/js/languages/de.js';
-
 import FroalaEditor from 'froala-editor';
 
-new FroalaEditor('#edit', {
-  language: 'de'
-});
+// Load a plugin.
+import 'froala-editor/js/plugins/align.min.js'
+
+new FroalaEditor('#edit');
 ```
 
 For more details on customizing the editor, please check the editor [documentation](https://www.froala.com/wysiwyg-editor/docs).
