@@ -66,7 +66,7 @@ bower install froala-wysiwyg-editor
 
 
 ### Load from CDN as an AMD module
-
+Froala Editor is compatible with AMD module loaders such as RequireJS. The following example shows how to load it along with the Algin plugin from CDN using RequireJS.
 ```html
 <html>
 <head>
@@ -124,8 +124,7 @@ bower install froala-wysiwyg-editor
 
 
 ### Load Froala Editor as a CommonJS Module
-
-*The following examples presumes you are using npm to install froala-editor, see Download and install FroalaEditor for more details.*
+Froala Editor is using an UMD module pattern, as a result it has support for CommonJS. *The following examples presumes you are using npm to install froala-editor, see Download and install FroalaEditor for more details.*
 
 ```javascript
 var FroalaEditor = require('froala-editor');
@@ -140,8 +139,7 @@ new FroalaEditor('#edit');
 
 
 ### Load Froala Editor as a transpiled ES6/UMD module
-
-*The following examples presumes you are using npm to install froala-editor, see Download and install FroalaEditor for more details.*
+Since Froala Editor supports ES6 (ESM - ECMAScript modules) and UMD (AMD, CommonJS), it can be also loaded as a module with the use of transpilers. E.g. Babel, Typescript. *The following examples presumes you are using npm to install froala-editor, see Download and install FroalaEditor for more details.*
 
 ```javascript
 import FroalaEditor from 'froala-editor'
