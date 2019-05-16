@@ -1394,13 +1394,14 @@
     .dark-theme.fr-modal .fr-modal-wrapper .fr-modal-head {
       background: #353535;
       min-height: 42px;
+      border-bottom: solid #efefef 1px;
       -webkit-transition: all 0.2s ease 0s;
       -moz-transition: all 0.2s ease 0s;
       -ms-transition: all 0.2s ease 0s;
       -o-transition: all 0.2s ease 0s; }
       .dark-theme.fr-modal .fr-modal-wrapper .fr-modal-head .fr-modal-head-line {
         height: 56px;
-        padding: 0 20px; }
+        padding: 0 10px; }
       .dark-theme.fr-modal .fr-modal-wrapper .fr-modal-head .fr-modal-close {
         margin: 10px;
         top: 0;

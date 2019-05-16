@@ -634,13 +634,14 @@ body.prevent-scroll {
       width: 100%;
       min-height: 42px;
       z-index: 3;
+      border-bottom: solid #efefef 1px;
       -webkit-transition: all 0.2s ease 0s;
       -moz-transition: all 0.2s ease 0s;
       -ms-transition: all 0.2s ease 0s;
       -o-transition: all 0.2s ease 0s; }
       .fr-modal .fr-modal-wrapper .fr-modal-head .fr-modal-head-line {
         height: 56px;
-        padding: 0 20px; }
+        padding: 0 10px; }
       .fr-modal .fr-modal-wrapper .fr-modal-head .fr-modal-close {
         margin: 10px;
         position: absolute;
