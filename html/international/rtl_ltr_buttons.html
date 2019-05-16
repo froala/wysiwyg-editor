@@ -115,7 +115,7 @@
         this.selection.restore()
       }
 
-      FroalaEditor.DefineIcon('rightToLeft', { NAME: 'long-arrow-left', PATH: 'M20 11H7.83l5.59 -5.59L12 4l-8 8 8 8 1.41 -1.41L7.83 13H20v-2z' })
+      FroalaEditor.DefineIcon('rightToLeft', { NAME: 'long-arrow-left', SVG_KEY: 'undo' })
       FroalaEditor.RegisterCommand('rightToLeft', {
         title: 'RTL',
         focus: true,
@@ -126,7 +126,7 @@
         }
       })
 
-      FroalaEditor.DefineIcon('leftToRight', { NAME: 'long-arrow-right', PATH: 'M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8 -8z' })
+      FroalaEditor.DefineIcon('leftToRight', { NAME: 'long-arrow-right', SVG_KEY: 'redo' })
       FroalaEditor.RegisterCommand('leftToRight', {
         title: 'LTR',
         focus: true,
