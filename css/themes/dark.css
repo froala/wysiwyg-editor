@@ -1034,8 +1034,11 @@
   -khtml-user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none; }
-.dark-theme.fr-popup .fr-fa-icon {
-  width: 24px; }
+.dark-theme.fr-popup .fr-icon.fr-fa-icon {
+  width: 24px;
+  padding: 8px;
+  margin: 6px;
+  font-size: 16px; }
 .dark-theme .tui-image-editor-container {
   top: 0;
   left: 0;

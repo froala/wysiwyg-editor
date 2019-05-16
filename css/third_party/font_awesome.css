@@ -14,7 +14,10 @@
   clip: rect(0, 0, 0, 0);
   border: 0; }
 
-.fr-popup .fr-fa-icon {
-  width: 24px; }
+.fr-popup .fr-icon.fr-fa-icon {
+  width: 24px;
+  padding: 8px;
+  margin: 6px;
+  font-size: 16px; }
 
 /*# sourceMappingURL=font_awesome.css.map */
