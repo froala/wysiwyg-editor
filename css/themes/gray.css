@@ -141,7 +141,8 @@
     background: #efefef; }
     .gray-theme .fr-box.fr-document .fr-wrapper .fr-element {
       background: #FFF;
-      margin: auto; }
+      margin: auto;
+      z-index: auto; }
       .gray-theme .fr-box.fr-document .fr-wrapper .fr-element hr {
         background: #efefef; } }
 .gray-theme .fr-sticky-on {

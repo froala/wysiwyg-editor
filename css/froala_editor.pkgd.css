@@ -188,14 +188,17 @@ iframe.fr-iframe {
         margin: auto;
         min-height: 26cm !important;
         padding: 1cm 2cm;
-        overflow: visible; }
+        overflow: visible;
+        z-index: auto; }
         .fr-box.fr-document .fr-wrapper .fr-element hr {
           margin-left: -2cm;
           margin-right: -2cm;
           background: #efefef;
           height: 1cm;
           outline: none;
-          border: none; } }
+          border: none; }
+        .fr-box.fr-document .fr-wrapper .fr-element img {
+          z-index: 1; } }
 .fr-tooltip {
   position: absolute;
   top: 0;
@@ -1875,8 +1878,7 @@ body.fr-fullscreen {
   -ms-user-select: none;
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
-  box-sizing: content-box;
-  z-index: 2; }
+  box-sizing: content-box; }
   .fr-image-resizer.fr-active {
     display: block; }
   .fr-image-resizer .fr-handler {

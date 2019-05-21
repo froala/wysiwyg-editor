@@ -29,8 +29,7 @@
   -ms-user-select: none;
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
-  box-sizing: content-box;
-  z-index: 2; }
+  box-sizing: content-box; }
   .fr-image-resizer.fr-active {
     display: block; }
   .fr-image-resizer .fr-handler {
