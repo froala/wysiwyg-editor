@@ -1333,7 +1333,7 @@
           .dark-theme .fr-command.fr-btn + .fr-dropdown-menu .fr-dropdown-wrapper .fr-dropdown-content ul.fr-dropdown-list li a svg {
             width: 24px;
             height: 24px;
-            margin: 8px 4px; }
+            margin: 3px 4px; }
             .dark-theme .fr-command.fr-btn + .fr-dropdown-menu .fr-dropdown-wrapper .fr-dropdown-content ul.fr-dropdown-list li a svg path {
               fill: #FFF; }
           .dark-theme .fr-command.fr-btn + .fr-dropdown-menu .fr-dropdown-wrapper .fr-dropdown-content ul.fr-dropdown-list li a.fr-active {
