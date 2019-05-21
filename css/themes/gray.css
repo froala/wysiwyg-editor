@@ -1146,7 +1146,7 @@
   .gray-theme.fr-toolbar .fr-command.fr-btn i, .gray-theme.fr-toolbar .fr-command.fr-btn svg, .gray-theme.fr-popup .fr-command.fr-btn i, .gray-theme.fr-popup .fr-command.fr-btn svg, .gray-theme.fr-modal .fr-command.fr-btn i, .gray-theme.fr-modal .fr-command.fr-btn svg {
     margin: 8px 7px;
     width: 24px; }
-  .gray-theme.fr-toolbar .fr-command.fr-btn svg, .gray-theme.fr-popup .fr-command.fr-btn svg, .gray-theme.fr-modal .fr-command.fr-btn svg {
+  .gray-theme.fr-toolbar .fr-command.fr-btn svg.fr-svg, .gray-theme.fr-popup .fr-command.fr-btn svg.fr-svg, .gray-theme.fr-modal .fr-command.fr-btn svg.fr-svg {
     height: 24px; }
   .gray-theme.fr-toolbar .fr-command.fr-btn svg path, .gray-theme.fr-popup .fr-command.fr-btn svg path, .gray-theme.fr-modal .fr-command.fr-btn svg path {
     -webkit-transition: all 0.5s;

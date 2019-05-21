@@ -303,7 +303,7 @@ iframe.fr-iframe {
     float: none;
     margin: 8px 7px;
     width: 24px; }
-  .fr-toolbar .fr-command.fr-btn svg, .fr-popup .fr-command.fr-btn svg, .fr-modal .fr-command.fr-btn svg {
+  .fr-toolbar .fr-command.fr-btn svg.fr-svg, .fr-popup .fr-command.fr-btn svg.fr-svg, .fr-modal .fr-command.fr-btn svg.fr-svg {
     height: 24px; }
   .fr-toolbar .fr-command.fr-btn svg path, .fr-popup .fr-command.fr-btn svg path, .fr-modal .fr-command.fr-btn svg path {
     -webkit-transition: all 0.5s;

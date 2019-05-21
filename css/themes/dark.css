@@ -1146,7 +1146,7 @@
   .dark-theme.fr-toolbar .fr-command.fr-btn i, .dark-theme.fr-toolbar .fr-command.fr-btn svg, .dark-theme.fr-popup .fr-command.fr-btn i, .dark-theme.fr-popup .fr-command.fr-btn svg, .dark-theme.fr-modal .fr-command.fr-btn i, .dark-theme.fr-modal .fr-command.fr-btn svg {
     margin: 8px 7px;
     width: 24px; }
-  .dark-theme.fr-toolbar .fr-command.fr-btn svg, .dark-theme.fr-popup .fr-command.fr-btn svg, .dark-theme.fr-modal .fr-command.fr-btn svg {
+  .dark-theme.fr-toolbar .fr-command.fr-btn svg.fr-svg, .dark-theme.fr-popup .fr-command.fr-btn svg.fr-svg, .dark-theme.fr-modal .fr-command.fr-btn svg.fr-svg {
     height: 24px; }
   .dark-theme.fr-toolbar .fr-command.fr-btn svg path, .dark-theme.fr-popup .fr-command.fr-btn svg path, .dark-theme.fr-modal .fr-command.fr-btn svg path {
     -webkit-transition: all 0.5s;
