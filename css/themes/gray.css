@@ -1295,6 +1295,7 @@
     -ms-transition: border-left 0s, background-color 0.5s;
     -o-transition: border-left 0s, background-color 0.5s; }
 .gray-theme .fr-command.fr-btn + .fr-dropdown-menu {
+  background: #F5F5F5;
   right: auto;
   bottom: auto;
   height: auto;
@@ -1315,7 +1316,6 @@
     height: auto;
     max-height: 275px; }
   .gray-theme .fr-command.fr-btn + .fr-dropdown-menu .fr-dropdown-wrapper {
-    background: #F5F5F5;
     padding: 0;
     margin: auto;
     -webkit-box-sizing: border-box;

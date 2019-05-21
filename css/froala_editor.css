@@ -469,6 +469,7 @@ iframe.fr-iframe {
     -ms-transition: border-left 0s, background-color 0.5s;
     -o-transition: border-left 0s, background-color 0.5s; }
 .fr-command.fr-btn + .fr-dropdown-menu {
+  background: #FFF;
   display: inline-block;
   position: absolute;
   right: auto;
@@ -495,7 +496,6 @@ iframe.fr-iframe {
     height: auto;
     max-height: 275px; }
   .fr-command.fr-btn + .fr-dropdown-menu .fr-dropdown-wrapper {
-    background: #FFF;
     padding: 0;
     margin: auto;
     display: inline-block;
