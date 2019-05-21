@@ -763,15 +763,6 @@ body.prevent-scroll {
       .fr-popup .fr-icon-container {
         display: inline-flex;
         -ms-flex-flow: row wrap; } }
-    @media screen and (-ms-high-contrast: active) and (min-width: 768px), (-ms-high-contrast: none) and (min-width: 768px) {
-      .fr-popup .fr-icon-container.fr-emoticon-container {
-        width: 328px; } }
-    @media screen and (-ms-high-contrast: active) and (min-width: 768px), (-ms-high-contrast: none) and (min-width: 768px) {
-      .fr-popup .fr-icon-container.fr-fa-container {
-        width: 466px; } }
-    @media screen and (-ms-high-contrast: active) and (min-width: 768px), (-ms-high-contrast: none) and (min-width: 768px) {
-      .fr-popup .fr-icon-container.fr-sc-container {
-        width: 328px; } }
     @media screen and (-ms-high-contrast: active) and (max-width: 768px), (-ms-high-contrast: none) and (max-width: 768px) {
       .fr-popup .fr-icon-container {
         width: 236px; } }

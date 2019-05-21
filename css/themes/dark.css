@@ -301,6 +301,9 @@
     width: 24px; }
 .dark-theme.fr-popup .fr-command.fr-btn.fr-tabs-unicode {
   padding: 0 0 0 14px; }
+@media screen and (-ms-high-contrast: active) and (min-width: 768px), (-ms-high-contrast: none) and (min-width: 768px) {
+  .dark-theme.fr-popup .fr-icon-container.fr-emoticon-container {
+    width: 328px; } }
 .dark-theme.fr-popup .fr-file-upload-layer {
   border: dashed 2px gray;
   padding: 25px 0;
@@ -687,6 +690,9 @@
 .dark-theme.fr-popup .fr-special-character {
   width: 24px;
   height: 24px; }
+@media screen and (-ms-high-contrast: active) and (min-width: 768px), (-ms-high-contrast: none) and (min-width: 768px) {
+  .dark-theme.fr-popup .fr-icon-container.fr-sc-container {
+    width: 328px; } }
 .dark-theme .fr-element table td.fr-selected-cell, .dark-theme .fr-element table th.fr-selected-cell {
   border: 1px double #0098f7; }
 .dark-theme .fr-element table tr {
@@ -1038,10 +1044,15 @@
   -webkit-user-select: none;
   -ms-user-select: none; }
 .dark-theme.fr-popup .fr-icon.fr-fa-icon {
-  width: 24px;
+  width: 18px;
   padding: 8px;
   margin: 6px;
   font-size: 16px; }
+.dark-theme.fr-popup .fr-icon-container.fr-fa-container {
+  grid-template-columns: repeat(auto-fill, minmax(45px, 45px)); }
+  @media screen and (-ms-high-contrast: active) and (min-width: 768px), (-ms-high-contrast: none) and (min-width: 768px) {
+    .dark-theme.fr-popup .fr-icon-container.fr-fa-container {
+      width: 466px; } }
 .dark-theme .tui-image-editor-container {
   top: 0;
   left: 0;
@@ -1491,15 +1502,6 @@
     @media (min-width: 768px) {
       .dark-theme.fr-popup .fr-icon-container {
         min-width: 276px; } }
-    @media screen and (-ms-high-contrast: active) and (min-width: 768px), (-ms-high-contrast: none) and (min-width: 768px) {
-      .dark-theme.fr-popup .fr-icon-container.fr-emoticon-container {
-        width: 328px; } }
-    @media screen and (-ms-high-contrast: active) and (min-width: 768px), (-ms-high-contrast: none) and (min-width: 768px) {
-      .dark-theme.fr-popup .fr-icon-container.fr-fa-container {
-        width: 466px; } }
-    @media screen and (-ms-high-contrast: active) and (min-width: 768px), (-ms-high-contrast: none) and (min-width: 768px) {
-      .dark-theme.fr-popup .fr-icon-container.fr-sc-container {
-        width: 328px; } }
     @media screen and (-ms-high-contrast: active) and (max-width: 768px), (-ms-high-contrast: none) and (max-width: 768px) {
       .dark-theme.fr-popup .fr-icon-container {
         width: 236px; } }
