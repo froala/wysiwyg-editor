@@ -598,6 +598,9 @@
         -moz-transition: background 0.2s ease 0s, color 0.2s ease 0s;
         -ms-transition: background 0.2s ease 0s, color 0.2s ease 0s;
         -o-transition: background 0.2s ease 0s, color 0.2s ease 0s;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
         margin: 0;
         line-height: 40px; }
       .gray-themediv.fr-modal-body div.fr-image-list div.fr-image-container .fr-delete-img {
@@ -622,8 +625,8 @@
   opacity: 0.75;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; }
 .gray-theme.fr-desktop .fr-modal-wrapper div.fr-modal-body div.fr-image-list div.fr-image-container:hover .fr-delete-img, .gray-theme.fr-desktop .fr-modal-wrapper div.fr-modal-body div.fr-image-list div.fr-image-container:hover .fr-insert-img {
-  width: 24px;
-  height: 24px; }
+  width: 40px;
+  height: 40px; }
 .gray-theme.fr-desktop .fr-modal-wrapper div.fr-modal-body div.fr-image-list div.fr-image-container .fr-delete-img:hover {
   background: #bf4644;
   color: #FFF; }

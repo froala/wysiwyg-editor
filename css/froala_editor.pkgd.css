@@ -2243,6 +2243,9 @@ div.fr-modal-body {
         -moz-transition: background 0.2s ease 0s, color 0.2s ease 0s;
         -ms-transition: background 0.2s ease 0s, color 0.2s ease 0s;
         -o-transition: background 0.2s ease 0s, color 0.2s ease 0s;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
         position: absolute;
         cursor: pointer;
         margin: 0;
@@ -2275,8 +2278,8 @@ div.fr-modal-body {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; }
 .fr-desktop .fr-modal-wrapper div.fr-modal-body div.fr-image-list div.fr-image-container:hover .fr-delete-img, .fr-desktop .fr-modal-wrapper div.fr-modal-body div.fr-image-list div.fr-image-container:hover .fr-insert-img {
   display: inline-block;
-  width: 24px;
-  height: 24px; }
+  width: 40px;
+  height: 40px; }
 .fr-desktop .fr-modal-wrapper div.fr-modal-body div.fr-image-list div.fr-image-container .fr-delete-img:hover {
   background: #bf4644;
   color: #FFF; }
