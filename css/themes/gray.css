@@ -1768,6 +1768,9 @@
       margin-right: 4px; }
   .gray-theme.fr-toolbar .fr-btn-grp {
     margin: 0 17px 0 12px; }
+    @media (max-width: 768px) {
+      .gray-theme.fr-toolbar .fr-btn-grp {
+        margin: 0 7px 0 6px; } }
   .gray-theme.fr-toolbar .fr-command.fr-btn.fr-open {
     margin-top: 10px;
     margin-bottom: -1px;

@@ -1125,6 +1125,9 @@ body.prevent-scroll {
   .fr-toolbar .fr-btn-grp {
     display: inline-block;
     margin: 0 17px 0 12px; }
+    @media (max-width: 768px) {
+      .fr-toolbar .fr-btn-grp {
+        margin: 0 7px 0 6px; } }
   .fr-toolbar .fr-command.fr-btn.fr-open {
     margin-top: 10px;
     margin-bottom: -1px;
