@@ -756,9 +756,11 @@ body.prevent-scroll {
   .fr-popup .fr-icon-container {
     padding: 20px;
     max-height: 200px;
-    overflow: auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(36px, 36px)); }
+    overflow: auto; }
+    @supports not (-ms-high-contrast: none) {
+      .fr-popup .fr-icon-container {
+        grid-template-columns: repeat(auto-fill, minmax(36px, 36px));
+        display: grid; } }
     @media (min-width: 768px) {
       .fr-popup .fr-icon-container {
         min-width: 276px; } }
