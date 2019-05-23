@@ -4,11 +4,6 @@
  * Copyright 2014-2019 Froala Labs
  */
 
-/*!
-        * Froala Editor v3.0.0-beta.2 (https://www.froala.com/wysiwyg-editor)
-        * Copyright 2014-2019 Froala Labs
-        * Licensed under Froala Editor Terms (https://www.froala.com/wysiwyg-editor/terms)
-        */
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? factory(require('froala-editor')) :
   typeof define === 'function' && define.amd ? define(['froala-editor'], factory) :
