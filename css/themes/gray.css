@@ -356,13 +356,28 @@
   top: 0;
   left: 0;
   bottom: 0;
-  right: 0;
-  border-radius: 0;
-  -moz-border-radius: 0;
-  -webkit-border-radius: 0;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box; }
+  right: 0; }
+  .gray-theme.fr-box.fr-fullscreen.fr-basic.fr-top .fr-wrapper {
+    border-radius: 0;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box; }
+  .gray-theme.fr-box.fr-fullscreen.fr-basic.fr-bottom .fr-wrapper {
+    border-radius: 0;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box; }
+  .gray-theme.fr-box.fr-fullscreen .fr-toolbar {
+    border-radius: 0;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box; }
   .gray-theme.fr-box.fr-fullscreen .second-toolbar {
     margin-top: 0;
     border-radius: 0;

@@ -1785,17 +1785,32 @@ body.fr-fullscreen {
   bottom: 0;
   right: 0;
   z-index: 2147483630 !important;
-  width: auto !important;
-  border-radius: 0;
-  -moz-border-radius: 0;
-  -webkit-border-radius: 0;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box; }
-  .fr-box.fr-fullscreen .fr-toolbar.fr-top {
-    top: 0 !important; }
-  .fr-box.fr-fullscreen .fr-toolbar.fr-bottom {
-    bottom: 0 !important; }
+  width: auto !important; }
+  .fr-box.fr-fullscreen.fr-basic.fr-top .fr-wrapper {
+    border-radius: 0;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box; }
+  .fr-box.fr-fullscreen.fr-basic.fr-bottom .fr-wrapper {
+    border-radius: 0;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box; }
+  .fr-box.fr-fullscreen .fr-toolbar {
+    border-radius: 0;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box; }
+    .fr-box.fr-fullscreen .fr-toolbar.fr-top {
+      top: 0 !important; }
+    .fr-box.fr-fullscreen .fr-toolbar.fr-bottom {
+      bottom: 0 !important; }
   .fr-box.fr-fullscreen .second-toolbar {
     margin-top: 0;
     border-radius: 0;
