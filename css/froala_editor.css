@@ -762,7 +762,10 @@ body.prevent-scroll {
   .fr-popup .fr-icon-container {
     padding: 20px;
     max-height: 200px;
-    overflow: auto; }
+    overflow: auto;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
     @supports not (-ms-high-contrast: none) {
       .fr-popup .fr-icon-container {
         grid-template-columns: repeat(auto-fill, minmax(36px, 36px));

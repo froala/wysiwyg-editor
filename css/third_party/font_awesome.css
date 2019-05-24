@@ -30,4 +30,4 @@
     grid-template-columns: repeat(auto-fill, minmax(45px, 45px)); } }
 @media screen and (-ms-high-contrast: active) and (min-width: 768px), (-ms-high-contrast: none) and (min-width: 768px) {
   .fr-popup .fr-icon-container.fr-fa-container {
-    width: 466px; } }
+    width: 506px; } }

@@ -296,7 +296,7 @@ textarea.fr-code {
   padding: 0 0 0 14px; }
 @media screen and (-ms-high-contrast: active) and (min-width: 768px), (-ms-high-contrast: none) and (min-width: 768px) {
   .fr-popup .fr-icon-container.fr-emoticon-container {
-    width: 328px; } }
+    width: 368px; } }
 
 .clearfix::after {
   clear: both;
@@ -1093,7 +1093,7 @@ div.fr-modal-body {
   height: 24px; }
 @media screen and (-ms-high-contrast: active) and (min-width: 768px), (-ms-high-contrast: none) and (min-width: 768px) {
   .fr-popup .fr-icon-container.fr-sc-container {
-    width: 328px; } }
+    width: 368px; } }
 
 .clearfix::after {
   clear: both;

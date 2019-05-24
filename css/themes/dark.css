@@ -310,7 +310,7 @@
   padding: 0 0 0 14px; }
 @media screen and (-ms-high-contrast: active) and (min-width: 768px), (-ms-high-contrast: none) and (min-width: 768px) {
   .dark-theme.fr-popup .fr-icon-container.fr-emoticon-container {
-    width: 328px; } }
+    width: 368px; } }
 .dark-theme.fr-popup .fr-file-upload-layer {
   border: dashed 2px gray;
   padding: 25px 0;
@@ -714,7 +714,7 @@
   height: 24px; }
 @media screen and (-ms-high-contrast: active) and (min-width: 768px), (-ms-high-contrast: none) and (min-width: 768px) {
   .dark-theme.fr-popup .fr-icon-container.fr-sc-container {
-    width: 328px; } }
+    width: 368px; } }
 .dark-theme .fr-element table td.fr-selected-cell, .dark-theme .fr-element table th.fr-selected-cell {
   border: 1px double #0098f7; }
 .dark-theme .fr-element table tr {
@@ -1075,7 +1075,7 @@
     grid-template-columns: repeat(auto-fill, minmax(45px, 45px)); } }
 @media screen and (-ms-high-contrast: active) and (min-width: 768px), (-ms-high-contrast: none) and (min-width: 768px) {
   .dark-theme.fr-popup .fr-icon-container.fr-fa-container {
-    width: 466px; } }
+    width: 506px; } }
 .dark-theme .tui-image-editor-container {
   top: 0;
   left: 0;
@@ -1520,7 +1520,10 @@
   .dark-theme.fr-popup .fr-icon-container {
     padding: 20px;
     max-height: 200px;
-    overflow: auto; }
+    overflow: auto;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
     @supports not (-ms-high-contrast: none) {
       .dark-theme.fr-popup .fr-icon-container {
         grid-template-columns: repeat(auto-fill, minmax(36px, 36px)); } }
