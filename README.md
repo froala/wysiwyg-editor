@@ -6,6 +6,8 @@
 
 > *This branch is for Froala WYSIWYG Editor V3. If you are looking for version 2, please check <https://github.com/froala/wysiwyg-editor/tree/v2>.*
 
+<a href="https://www.producthunt.com/posts/froala-wysiwyg-editor-v3?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-froala-wysiwyg-editor-v3" target="_blank" rel="nofollow"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=156650&theme=light" alt="Froala WYSIWYG Editor V3 - The Next Generation WYSIWYG HTML Editor. 💫 | Product Hunt Embed" style="width: 250px; height: 54px;" width="250px" height="54px" /></a>
+
 Froala WYSIWYG HTML Editor is one of the most powerful JavaScript rich text editors ever.
 
 ![WYSIWYG HTML Editor](https://raw.githubusercontent.com/froala/wysiwyg-editor/master/editor.jpg)
