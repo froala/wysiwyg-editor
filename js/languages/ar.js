@@ -62,7 +62,20 @@
       'None': "\u0644\u0627 \u0634\u064A\u0621",
       // Lists
       'Ordered List': "\u0642\u0627\u0626\u0645\u0629 \u0645\u0631\u062A\u0628\u0629",
+      'Default': 'الافتراضي',
+      'Lower Alpha': 'أقل ألفا',
+      'Lower Greek': 'أقل اليونانية',
+      'Lower Roman': 'انخفاض الروماني',
+      'Upper Alpha': 'العلوي ألفا',
+      'Upper Roman': 'الروماني العلوي',
       'Unordered List': "\u0642\u0627\u0626\u0645\u0629 \u063A\u064A\u0631 \u0645\u0631\u062A\u0628\u0629",
+      'Circle': 'دائرة',
+      'Disc': 'القرص',
+      'Square': 'ميدان',
+      // Line height
+      'Line Height': 'ارتفاع خط',
+      'Single': 'غير مرتبطة',
+      'Double': 'مزدوج',
       // Indent
       'Decrease Indent': "\u0627\u0646\u062E\u0641\u0627\u0636 \u0627\u0644\u0645\u0633\u0627\u0641\u0629 \u0627\u0644\u0628\u0627\u062F\u0626\u0629",
       'Increase Indent': "\u0632\u064A\u0627\u062F\u0629 \u0627\u0644\u0645\u0633\u0627\u0641\u0629 \u0627\u0644\u0628\u0627\u062F\u0626\u0629",
