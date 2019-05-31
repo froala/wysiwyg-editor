@@ -1427,7 +1427,6 @@ textarea.fr-code {
 }
 .fr-box.fr-code-view textarea.fr-code {
   display: block;
-  overflow-y: hidden;
 }
 .fr-box.fr-code-view.fr-inline {
   -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 1px 1px rgba(0, 0, 0, 0.16);
