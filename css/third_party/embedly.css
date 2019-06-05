@@ -48,6 +48,7 @@
 
 .fr-box .fr-embedly-resizer {
   position: absolute;
+  z-index: 2;
   border: solid 1px #0098f7;
   display: none;
   user-select: none;
