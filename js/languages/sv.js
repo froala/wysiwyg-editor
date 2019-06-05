@@ -116,7 +116,7 @@
       'Insert row below': 'Infoga rad efter',
       'Delete row': 'Ta bort rad',
       'Column': 'Kolumn',
-      'Insert column before': "Infoga kollumn f\xF6re",
+      'Insert column before': "Infoga kolumn f\xF6re",
       'Insert column after': 'Infoga kolumn efter',
       'Delete column': 'Ta bort kolumn',
       'Cell': 'Cell',
