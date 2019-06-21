@@ -1451,6 +1451,7 @@
         line-height: 18px; }
     .dark-theme.fr-modal .fr-modal-wrapper div.fr-modal-body {
       min-height: 150px;
+      overflow-y: auto;
       padding-bottom: 20px; }
       .dark-theme.fr-modal .fr-modal-wrapper div.fr-modal-body:focus {
         outline: 0; }

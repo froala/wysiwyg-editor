@@ -667,7 +667,7 @@ body.prevent-scroll {
     .fr-modal .fr-modal-wrapper div.fr-modal-body {
       height: 100%;
       min-height: 150px;
-      overflow-y: scroll;
+      overflow-y: auto;
       padding-bottom: 20px; }
       .fr-modal .fr-modal-wrapper div.fr-modal-body:focus {
         outline: 0; }
