@@ -63,6 +63,19 @@
       // Lists
       'Ordered List': "\u041D\u0443\u043C\u0435\u0440\u043E\u0432\u0430\u043D\u043D\u044B\u0439 \u0441\u043F\u0438\u0441\u043E\u043A",
       'Unordered List': "\u041C\u0430\u0440\u043A\u0438\u0440\u043E\u0432\u0430\u043D\u043D\u044B\u0439 \u0441\u043F\u0438\u0441\u043E\u043A",
+      'Default': 'По умолчанию',
+      'Lower Alpha': 'Низшая альфа',
+      'Lower Greek': 'Нижний греческий',
+      'Lower Roman': 'Нижний римлянин',
+      'Upper Alpha': 'Верхняя альфа',
+      'Upper Roman': 'Верховный римлянин',
+      'Circle': 'Круг',
+      'Disc': 'Диск',
+      'Square': 'Площадь',
+      // Line height
+      'Line Height': 'Высота линии',
+      'Single': 'Одинарный',
+      'Double': 'Двойной',
       // Indent
       'Decrease Indent': "\u0423\u043C\u0435\u043D\u044C\u0448\u0438\u0442\u044C \u043E\u0442\u0441\u0442\u0443\u043F",
       'Increase Indent': "\u0423\u0432\u0435\u043B\u0438\u0447\u0438\u0442\u044C \u043E\u0442\u0441\u0442\u0443\u043F",
