@@ -86,7 +86,7 @@
       'Tags': 'Etiketter',
       'Are you sure? Image will be deleted.': "\xC4r du s\xE4ker? Bild kommer att raderas.",
       'Replace': "Ers\xE4tt",
-      'Uploading': 'Laddar up',
+      'Uploading': 'Laddar upp',
       'Loading image': 'Laddar bild',
       'Display': 'Visa',
       'Inline': 'I linje',
