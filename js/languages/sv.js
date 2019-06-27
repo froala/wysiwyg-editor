@@ -131,7 +131,7 @@ $.FE.LANGUAGE['sv'] = {
     "Tags": "Etiketter",
     "Are you sure? Image will be deleted.": "\u00c4r du s\u00e4ker? Bild kommer att raderas.",
     "Replace": "Ers\u00e4tt",
-    "Uploading": "Laddar up",
+    "Uploading": "Laddar upp",
     "Loading image": "Laddar bild",
     "Display": "Visa",
     "Inline": "I linje",
