@@ -4,8 +4,6 @@
 [![npm](https://img.shields.io/npm/dm/froala-editor.svg)](https://www.npmjs.com/package/froala-editor)
 [![npm](https://img.shields.io/npm/v/froala-editor.svg)](https://www.npmjs.com/package/froala-editor)
 
-> *This branch is for Froala WYSIWYG Editor V3. If you are looking for version 2, please check <https://github.com/froala/wysiwyg-editor/tree/v2>.*
-
 Froala WYSIWYG HTML Editor is one of the most powerful JavaScript rich text editors ever.
 
 ![WYSIWYG HTML Editor](https://raw.githubusercontent.com/froala/wysiwyg-editor/master/editor.jpg)
