@@ -126,7 +126,6 @@ iframe.fr-iframe {
   width: 100%;
   border: none;
   position: relative;
-  padding: 20px;
   display: block;
   z-index: 2;
   -webkit-box-sizing: border-box;
