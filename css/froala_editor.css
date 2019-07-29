@@ -1227,11 +1227,12 @@ body.prevent-scroll {
   .fr-separator.fr-vs {
     height: 32px;
     width: 1px;
-    margin: 4px; }
+    margin: 8px 4px; }
   .fr-separator.fr-hs {
     clear: both;
     width: calc(100% - (2 * 4px));
-    margin: 0 4px; }
+    margin: 0 4px;
+    height: 1px; }
   .fr-separator.fr-hidden {
     display: none !important; }
 

@@ -1868,10 +1868,11 @@
   .gray-theme .fr-separator.fr-vs {
     height: 32px;
     width: 1px;
-    margin: 4px; }
+    margin: 8px 4px; }
   .gray-theme .fr-separator.fr-hs {
     width: calc(100% - (2 * 4px));
-    margin: 0 4px; }
+    margin: 0 4px;
+    height: 1px; }
 .gray-theme .second-toolbar {
   border: 1px solid #CCCCCC;
   border-top: 0;
