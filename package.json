@@ -21,7 +21,7 @@
   "license": "https://www.froala.com/wysiwyg-editor/pricing",
   "repository": {
     "type": "git",
-    "url": "git://github.com/froala/wysiwyg-editor.git"
+    "url": "git://github.com/froala/wysiwyg-editor-release.git"
   },
   "maintainers": [
     {
