@@ -152,7 +152,8 @@ iframe.fr-iframe {
     right: 0;
     overflow: hidden; }
   .fr-wrapper.show-placeholder .fr-placeholder {
-    display: block; }
+    display: block;
+    position: relative; }
   .fr-wrapper ::-moz-selection {
     background: #b5d6fd;
     color: #000; }
