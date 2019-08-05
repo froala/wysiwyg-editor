@@ -155,6 +155,7 @@ iframe.fr-iframe {
 }
 .fr-wrapper.show-placeholder .fr-placeholder {
   display: block;
+  position: relative;
 }
 .fr-wrapper ::-moz-selection {
   background: #b5d6fd;
