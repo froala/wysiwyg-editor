@@ -47,14 +47,14 @@ Using Froala Editor from CDN is the easiest way to install it and we recommend u
 
 ```html
 <!-- Include Editor style. -->
-<link href="https://cdn.jsdelivr.net/npm/froala-editor@3.0.0-beta.0/css/froala_editor.pkgd.min.css" rel="stylesheet" type="text/css" />
+<link href="https://cdn.jsdelivr.net/npm/froala-editor@latest/css/froala_editor.pkgd.min.css" rel="stylesheet" type="text/css" />
 
 <!-- Create a tag that we will use as the editable area. -->
 <!-- You can use a div tag as well. -->
 <textarea></textarea>
 
 <!-- Include Editor JS files. -->
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/froala-editor@3.0.0-beta.0/js/froala_editor.pkgd.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/froala-editor@latest/js/froala_editor.pkgd.min.js"></script>
 
 <!-- Initialize the editor. -->
 <script>
@@ -70,7 +70,7 @@ Froala Editor is compatible with AMD module loaders such as RequireJS. The follo
 <html>
 <head>
   <!-- Load CSS files. -->
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/froala-editor@3.0.0-beta.0/css/froala_editor.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/froala-editor@latest/css/froala_editor.css">
 
   <script src="require.js"></script>
   <script>
@@ -81,7 +81,7 @@ Froala Editor is compatible with AMD module loaders such as RequireJS. The follo
       }],
       paths: {
         // Change this to your server if you do not wish to use our CDN.
-        'froala-editor': 'https://cdn.jsdelivr.net/npm/froala-editor@3.0.0-beta.0'
+        'froala-editor': 'https://cdn.jsdelivr.net/npm/froala-editor@latest'
       }
     });
   </script>
