@@ -264,7 +264,7 @@
       'Clean': "\u66F8\u5F0F\u3092\u4FDD\u6301\u3057\u306A\u3044",
       'Word Paste Detected': "Microsoft Word\u306E\u8CBC\u308A\u4ED8\u3051\u304C\u691C\u51FA\u3055\u308C\u307E\u3057\u305F",
       // Character Counter
-      'Characters': 'キャラクター',
+      'Characters': '文字数',
       // More Buttons
       'More Text': 'より多くのテキスト',
       'More Paragraph': 'もっと段落',
