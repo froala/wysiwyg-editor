@@ -84,10 +84,10 @@
       'Loading': 'Chargement',
       'Deleting': 'Suppression',
       'Tags': "\xC9tiquettes",
-      'Are you sure? Image will be deleted.': "Etes-vous certain? L'image sera supprim\xE9e.",
+      'Are you sure? Image will be deleted.': "Etes-vous certain ? L'image sera supprim\xE9e.",
       'Replace': 'Remplacer',
-      'Uploading': "En t\xE9l\xE9versement d'images",
-      'Loading image': 'En chargement d\'images',
+      'Uploading': "Envoi en cours",
+      'Loading image': 'Chargement d\'image en cours',
       'Display': 'Afficher',
       'Inline': 'En ligne',
       'Break Text': 'Rompre le texte',
@@ -103,7 +103,7 @@
       'Embedded Code': "Code int\xE9gr\xE9",
       'Paste in a video URL': "Coller l'URL d'une vid\xE9o",
       'Drop video': "D\xE9poser une vid\xE9o",
-      'Your browser does not support HTML5 video.': "Votre navigateur ne supporte pas les vid\xE9os en format HTML5.",
+      'Your browser does not support HTML5 video.': "Votre navigateur ne supporte pas les vid\xE9os au format HTML5.",
       'Upload Video': "T\xE9l\xE9verser une vid\xE9o",
       // Tables
       'Insert Table': "Ins\xE9rer un tableau",
@@ -205,7 +205,7 @@
       // Clear formatting
       'Clear Formatting': 'Effacer le formatage',
       // Save
-      'Save': 'sauvegarder',
+      'Save': 'Sauvegarder',
       // Undo, redo
       'Undo': 'Annuler',
       'Redo': "R\xE9tablir",
@@ -259,12 +259,12 @@
       'Embed URL': "URL int\xE9gr\xE9e",
       'Paste in a URL to embed': "Coller une URL int\xE9gr\xE9e",
       // Word Paste.
-      'The pasted content is coming from a Microsoft Word document. Do you want to keep the format or clean it up?': "Le contenu coll\xE9 provient d'un document Microsoft Word. Voulez-vous conserver le format ou le nettoyer?",
+      'The pasted content is coming from a Microsoft Word document. Do you want to keep the format or clean it up?': "Le contenu coll\xE9 provient d'un document Microsoft Word. Voulez-vous conserver le format ou le nettoyer ?",
       'Keep': 'Conserver',
       'Clean': 'Nettoyer',
       'Word Paste Detected': "Copiage de mots d\xE9tect\xE9",
       // Character Counter 
-      'Characters': 'Personnages',
+      'Characters': 'caractères',
       // More Buttons
       'More Text': 'Plus de texte',
       'More Paragraph': 'Plus paragraphe',
