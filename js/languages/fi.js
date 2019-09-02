@@ -88,7 +88,7 @@
       'Replace': 'Vaihda',
       'Uploading': 'Lataaminen',
       'Loading image': 'Lastaus kuva',
-      'Display': "N\xE4ytt\xE4",
+      'Display': "N\xE4ytt\xF6",
       'Inline': 'Linjassa',
       'Break Text': 'Rikkoa teksti',
       'Alternative Text': 'Vaihtoehtoinen teksti',
