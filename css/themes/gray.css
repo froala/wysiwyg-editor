@@ -397,6 +397,8 @@
   border-bottom: solid 1px #ebebeb; }
 .gray-theme.fr-modal .fr-modal-wrapper .fr-modal-body .fr-help-modal table tbody td:first-child {
   color: #737e84; }
+.gray-theme .fr-element img {
+  padding: 0 1px; }
 .gray-theme .fr-image-resizer {
   border: solid 1px #0097A7;
   user-select: none;

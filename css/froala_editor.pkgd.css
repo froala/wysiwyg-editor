@@ -1900,7 +1900,8 @@ body.fr-fullscreen {
   border: 0; }
 
 .fr-element img {
-  cursor: pointer; }
+  cursor: pointer;
+  padding: 0 1px; }
 
 .fr-image-resizer {
   position: absolute;
