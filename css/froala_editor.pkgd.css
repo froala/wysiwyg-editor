@@ -1954,6 +1954,7 @@ body.fr-fullscreen {
 }
 .fr-element img {
   cursor: pointer;
+  padding: 0 1px;
 }
 .fr-image-resizer {
   position: absolute;
