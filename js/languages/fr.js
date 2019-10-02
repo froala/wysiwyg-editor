@@ -264,7 +264,7 @@
       'Clean': 'Nettoyer',
       'Word Paste Detected': "Copiage de mots d\xE9tect\xE9",
       // Character Counter 
-      'Characters': 'Personnages',
+      'Characters': 'Caractères',
       // More Buttons
       'More Text': 'Plus de texte',
       'More Paragraph': 'Plus paragraphe',
