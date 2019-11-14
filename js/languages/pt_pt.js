@@ -86,7 +86,7 @@
       'Tags': 'Etiquetas',
       'Are you sure? Image will be deleted.': "Voc\xEA tem certeza? Imagem ser\xE1 apagada.",
       'Replace': 'Substituir',
-      'Uploading': 'Carregando imagem',
+      'Uploading': 'Carregando',
       'Loading image': 'Carregando imagem',
       'Display': 'Exibir',
       'Inline': 'Em linha',
