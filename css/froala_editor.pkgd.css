@@ -726,6 +726,16 @@ body.prevent-scroll {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   z-index: 2147483639; }
 
+ol.decimal_type {
+  counter-reset: item; }
+
+ol.decimal_type > li {
+  display: block; }
+
+ol.decimal_type > li:before {
+  content: counters(item,".") ". ";
+  counter-increment: item; }
+
 .fr-popup {
   position: absolute;
   display: none;
