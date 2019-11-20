@@ -2828,6 +2828,7 @@ img.fr-bordered {
     -khtml-user-select: none;
     -webkit-user-select: none;
     -ms-user-select: none;
+    break-after: always;
     page-break-after: always; }
   .fr-view .fr-file {
     position: relative; }
