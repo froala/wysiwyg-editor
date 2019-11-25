@@ -30,7 +30,6 @@
   position: relative; }
   .fr-element .fr-embedly::after {
     position: absolute;
-    content: '';
     z-index: 1;
     top: 0;
     left: 0;
