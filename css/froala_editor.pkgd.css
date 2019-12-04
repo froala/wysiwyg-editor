@@ -3001,7 +3001,6 @@ img.fr-bordered {
     text-align: center; }
     .fr-view .fr-img-caption .fr-img-wrap {
       padding: 0;
-      display: inline-block;
       margin: auto;
       text-align: center;
       width: 100%; }
