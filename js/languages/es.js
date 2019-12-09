@@ -50,6 +50,7 @@
       'Heading 2': 'Encabezado 2',
       'Heading 3': 'Encabezado 3',
       'Heading 4': 'Encabezado 4',
+      'Line Height': 'Interlineado',
       // Style
       'Paragraph Style': "Estilo de p\xE1rrafo",
       'Inline Style': "Estilo en l\xEDnea",
