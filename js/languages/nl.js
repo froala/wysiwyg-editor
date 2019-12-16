@@ -66,7 +66,7 @@
       'Ordered List': 'Geordende lijst',
       'Unordered List': 'Ongeordende lijst',
       'Default': 'Standaard',
-      'Lower alpha': 'Kleine letters',
+      'Lower Alpha': 'Kleine letters',
       'Lower Greek': 'Kleine Griekse letters',
       'Lower Roman': 'Kleine Romeinse cijfers',
       'Upper Alpha': 'Grote letters',
