@@ -90,6 +90,19 @@ $.FE.LANGUAGE['es'] = {
     // Lists
     "Ordered List": "Lista ordenada",
     "Unordered List": "Lista desordenada",
+    "Default": "Defecto",
+
+    // Ordered lists
+    "Lower Alpha": "Alfa inferior",
+    "Lower Greek": "Griego inferior",
+    "Lower Roman": "Bajo romano",
+    "Upper Alpha": "Alfa superior",
+    "Upper Roman": "Alto romano",
+
+    // Unordered lists
+    "Circle": "Circulo",
+    "Disc": "Dto",
+    "Square": "Cuadrado",
 
     // Indent
     "Decrease Indent": "Reducir sangr\u00eda",
@@ -310,7 +323,18 @@ $.FE.LANGUAGE['es'] = {
     "The pasted content is coming from a Microsoft Word document. Do you want to keep the format or clean it up?": "El contenido pegado viene de un documento de Microsoft Word. ¿Quieres mantener el formato o limpiarlo?",
     "Keep": "Guardar",
     "Clean": "Limpiar",
-    "Word Paste Detected": "Palabra detectada"
+    "Word Paste Detected": "Palabra detectada",
+
+    //PDF
+    "Download PDF": "Descargar PDF",
+
+    "Inline Class": "Clase en línea",
+
+    //Line height
+    "Line Height": "Interlineado",
+    "Single": "Soltera",
+    "Double": "Doble",
+
   },
   direction: "ltr"
 };
