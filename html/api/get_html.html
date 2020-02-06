@@ -45,7 +45,7 @@
 
       <p>You can use at any time in your code the following snippet to get the content inside the Froala WYSIWYG HTML
         Editor</p>
-      <p><code>$('div#selector').froalaEditor('html.get');</code></p>
+      <p><code>editor.html.get(true);</code></p>
     </div>
   </div>
 
@@ -83,7 +83,8 @@
   <script type="text/javascript" src="../../js/plugins/video.min.js"></script>
 
   <script>
-    new FroalaEditor("#edit")
+    editor = new FroalaEditor("#edit");
+    // ... your Froala code
   </script>
 </body>
 
