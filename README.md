@@ -1,5 +1,7 @@
 # [Froala Editor V3](https://www.froala.com/wysiwyg-editor)
 
+VALENTINE'S DAY SALE: ***20% off*** all Editor Plans! Enter code **LoveFroalaRM** at checkout. Code expires Feb. 21, 2020.
+
 [![Build Status](https://api.travis-ci.com/froala-labs/froala-editor-js-2.svg?token=RmiyW7AecDyQ8ja7VMDj&branch=master)](https://travis-ci.com/froala-labs/froala-editor-js-2)
 [![npm](https://img.shields.io/npm/dm/froala-editor.svg)](https://www.npmjs.com/package/froala-editor)
 [![npm](https://img.shields.io/npm/v/froala-editor.svg)](https://www.npmjs.com/package/froala-editor)
