@@ -217,7 +217,8 @@ iframe.fr-iframe {
     -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 1px 1px rgba(0, 0, 0, 0.16);
     -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 1px 1px rgba(0, 0, 0, 0.16);
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 1px 1px rgba(0, 0, 0, 0.16);
-    overflow: visible;
+    /* https://github.com/froala-labs/froala-editor-js-2/issues/1531 */
+    /* Removed overflow: visible; */
     z-index: auto;
   }
   .fr-box.fr-document .fr-wrapper .fr-element hr {
