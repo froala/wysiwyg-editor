@@ -111,6 +111,12 @@
   box-shadow: none;
 }
 @media (min-width: 992px) {
+  .red-theme .fr-box.fr-document {
+    min-width: calc(21cm + 30px + 30px);
+  }
+  .red-theme .fr-box.fr-document .fr-wrapper {
+    padding: 30px;
+  }
   .red-theme .fr-box.fr-document .fr-wrapper .fr-element {
     margin: auto;
     -webkit-box-shadow: none;

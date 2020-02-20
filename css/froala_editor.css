@@ -199,7 +199,7 @@ iframe.fr-iframe {
 }
 @media (min-width: 992px) {
   .fr-box.fr-document {
-    min-width: 21cm;
+    min-width: calc(21cm + 30px + 30px);
   }
   .fr-box.fr-document .fr-wrapper {
     text-align: left;

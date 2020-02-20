@@ -111,6 +111,12 @@
   box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.12), 0 -1px 1px 1px rgba(0, 0, 0, 0.16);
 }
 @media (min-width: 992px) {
+  .royal-theme .fr-box.fr-document {
+    min-width: calc(21cm + 30px + 30px);
+  }
+  .royal-theme .fr-box.fr-document .fr-wrapper {
+    padding: 30px;
+  }
   .royal-theme .fr-box.fr-document .fr-wrapper .fr-element {
     margin: auto;
     -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 1px 1px rgba(0, 0, 0, 0.16);
