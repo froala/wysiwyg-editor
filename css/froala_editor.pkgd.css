@@ -152,6 +152,7 @@ iframe.fr-iframe {
   left: 0;
   right: 0;
   overflow: hidden;
+  pointer-events: none;
 }
 .fr-wrapper.show-placeholder .fr-placeholder {
   display: block;
