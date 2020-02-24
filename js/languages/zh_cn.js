@@ -266,10 +266,48 @@
       // Character Counter
       'Characters': '字数统计',
       // More Buttons
+
       'More Text': ' 更多文字',
       'More Paragraph': '更多段落',
       'More Rich': '更多丰富',
-      'More Misc': '更多杂项'
+      'More Misc': '更多杂项',
+
+      'Rounded':'圆角',
+      'Bordered':'边框',
+      'Shadow':'阴影',
+
+      'Download PDF': '下载PDF',
+
+      'Text Color': '字体颜色',
+
+      'Background Color': '背景颜色',
+
+      'Inline Class': '内联类',
+
+      'Highlighted':'高亮',
+      'Transparent':'透明',
+
+      'Big Red':'大号红',
+      'Small Blue':'小号蓝',
+
+      'Default':'默认',
+      'Lower Alpha':'小写字母',
+      'Lower Greek':'小写希腊',
+      'Lower Roman':'小写罗马',
+      'Upper Alpha':'大写字母',
+      'Upper Roman':'大写罗马',
+
+      'Circle':'空心圆',
+      'Disc':'实心圆',
+      'Square':'实心方块',
+
+      "Gray":"灰色",
+      "Spaced":"字母间隙",
+      "Uppercase":"大写",
+
+      "Line Height":'行高',
+      'Single':'1',
+      'Double':'2',
     },
     direction: 'ltr'
   };
