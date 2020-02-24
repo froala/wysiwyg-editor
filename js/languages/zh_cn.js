@@ -301,11 +301,11 @@
       'Disc': '● 实心圆',
       'Square': '■ 实心方块',
 
-      "Gray": '灰色',
-      "Spaced": '字母间隙',
-      "Uppercase": '大写',
+      'Gray': '灰色',
+      'Spaced': '字母间隙',
+      'Uppercase': '大写',
 
-      "Line Height": '行高',
+      'Line Height': '行高',
       'Single': '1',
       'Double': '2'
     },
