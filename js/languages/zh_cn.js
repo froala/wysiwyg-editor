@@ -272,9 +272,9 @@
       'More Rich': '更多丰富',
       'More Misc': '更多杂项',
 
-      'Rounded':'圆角',
-      'Bordered':'边框',
-      'Shadow':'阴影',
+      'Rounded': '圆角',
+      'Bordered': '边框',
+      'Shadow': '阴影',
 
       'Download PDF': '下载PDF',
 
@@ -284,30 +284,30 @@
 
       'Inline Class': '内联类',
 
-      'Highlighted':'高亮',
-      'Transparent':'透明',
+      'Highlighted': '高亮',
+      'Transparent': '透明',
 
-      'Big Red':'大号红',
-      'Small Blue':'小号蓝',
+      'Big Red': '大号红',
+      'Small Blue': '小号蓝',
 
-      'Default':'默认',
-      'Lower Alpha':'小写字母',
-      'Lower Greek':'小写希腊',
-      'Lower Roman':'小写罗马',
-      'Upper Alpha':'大写字母',
-      'Upper Roman':'大写罗马',
+      'Default': '默认',
+      'Lower Alpha': 'a,b,c...',
+      'Lower Greek': 'α,β,γ...',
+      'Lower Roman': 'i,ii,iii...',
+      'Upper Alpha': 'A,B,C...',
+      'Upper Roman': 'Ⅰ,Ⅱ,Ⅲ...',
 
-      'Circle':'空心圆',
-      'Disc':'实心圆',
-      'Square':'实心方块',
+      'Circle': '○ 空心圆',
+      'Disc': '● 实心圆',
+      'Square': '■ 实心方块',
 
-      "Gray":"灰色",
-      "Spaced":"字母间隙",
-      "Uppercase":"大写",
+      "Gray": '灰色',
+      "Spaced": '字母间隙',
+      "Uppercase": '大写',
 
-      "Line Height":'行高',
-      'Single':'1',
-      'Double':'2',
+      "Line Height": '行高',
+      'Single': '1',
+      'Double': '2'
     },
     direction: 'ltr'
   };
