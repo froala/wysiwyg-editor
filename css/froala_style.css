@@ -221,7 +221,7 @@ img.fr-shadow,
 }
 .fr-view img.fr-dii.fr-fil {
   float: left;
-  margin: 5px 5px 5px 0;
+  margin: 5px 25px 5px 0;
   max-width: calc(100% - 5px);
 }
 .fr-view img.fr-dii.fr-fir {
@@ -257,7 +257,7 @@ img.fr-shadow,
 }
 .fr-view span.fr-img-caption.fr-dii.fr-fil {
   float: left;
-  margin: 5px 5px 5px 0;
+  margin: 5px 25px 5px 0;
   max-width: calc(100% - 5px);
 }
 .fr-view span.fr-img-caption.fr-dii.fr-fir {
@@ -402,7 +402,7 @@ img.fr-view.fr-dii {
 }
 img.fr-view.fr-dii.fr-fil {
   float: left;
-  margin: 5px 5px 5px 0;
+  margin: 5px 25px 5px 0;
   max-width: calc(100% - 5px);
 }
 img.fr-view.fr-dii.fr-fir {
@@ -438,7 +438,7 @@ span.fr-img-caption.fr-view.fr-dii {
 }
 span.fr-img-caption.fr-view.fr-dii.fr-fil {
   float: left;
-  margin: 5px 5px 5px 0;
+  margin: 5px 25px 5px 0;
   max-width: calc(100% - 5px);
 }
 span.fr-img-caption.fr-view.fr-dii.fr-fir {
