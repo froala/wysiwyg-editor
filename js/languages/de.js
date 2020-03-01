@@ -149,6 +149,7 @@
       'Cell Style': 'Zellen-Stil',
       // Files
       'Upload File': 'Datei hochladen',
+      'Insert File': 'Datei einfügen',
       'Drop file': 'Datei hineinziehen',
       // Emoticons
       'Emoticons': 'Emoticons',
