@@ -264,7 +264,8 @@
       'Clean': 'Pulisci',
       'Word Paste Detected': "\xC8 stato rilevato un incolla da Word",
       // Character Counter
-      'Characters': 'Personaggi',
+      'Characters': 'Caratteri',
+      'Words': 'Parole',
       // More Buttons
       'More Text': 'Altro testo',
       'More Paragraph': 'Altro paragrafo',
