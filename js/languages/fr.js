@@ -57,7 +57,7 @@
       // Style
       'Paragraph Style': 'Style de paragraphe',
       'Inline Style': 'Style en ligne',
-      'Gray': 'grise',
+      'Gray': 'Grise',
       'Bordered': 'Bordé',
       'Spaced': 'Espacé',
       'Uppercase': 'Majuscule',
@@ -226,7 +226,7 @@
       // Clear formatting
       'Clear Formatting': 'Effacer le formatage',
       // Save
-      'Save': 'sauvegarder',
+      'Save': 'Sauvegarder',
       // Undo, redo
       'Undo': 'Annuler',
       'Redo': "R\xE9tablir",
