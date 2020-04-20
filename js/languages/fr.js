@@ -53,6 +53,7 @@
       'Heading 3': 'Titre 3',
       'Heading 4': 'Titre 4',
       'Line Height': 'Interligne',
+      'Single': 'Simple',
       // Style
       'Paragraph Style': 'Style de paragraphe',
       'Inline Style': 'Style en ligne',
