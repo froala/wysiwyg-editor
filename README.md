@@ -146,6 +146,9 @@ import FroalaEditor from 'froala-editor'
 // Load a plugin.
 import 'froala-editor/js/plugins/align.min.js'
 
+// Adds `FroalaEditor` to global namespace (object)
+global.FroalaEditor = FroalaEditor;
+
 // Initialize editor.
 new FroalaEditor('#edit')
 ```
