@@ -279,10 +279,10 @@
       // Character Counter
       'Characters': 'символы',
       // More Buttons
-      'More Text': 'Больше текста',
-      'More Paragraph': 'Больше Параграф',
-      'More Rich': 'Больше Богатые',
-      'More Misc': 'Больше Разное'
+      'More Text': 'Редактирование текста',
+      'More Paragraph': 'Редактирование параграфа',
+      'More Rich': 'Вставка',
+      'More Misc': 'Другое'
     },
     direction: 'ltr'
   };
