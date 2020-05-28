@@ -220,7 +220,7 @@
       // Clear formatting
       'Clear Formatting': 'Formatierung löschen',
       // Save
-      'Save': 'Sparen',
+      'Save': 'Speichern',
       // Undo, redo
       'Undo': 'Rückgängig',
       'Redo': 'Wiederholen',
@@ -282,8 +282,8 @@
       'Characters': 'Zeichen',
       // More Buttons
       'More Text': 'Mehr Text',
-      'More Paragraph': 'Mehr Absatz',
-      'More Rich': 'Mehr Reich',
+      'More Paragraph': 'Mehr Absätze',
+      'More Rich': 'Mehr Formatierungen',
       'More Misc': 'Mehr Sonstiges',
       'Text Color': 'Textfarbe',
       'Background Color': 'Hintergrundfarbe'
