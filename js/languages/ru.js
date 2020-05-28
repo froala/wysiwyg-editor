@@ -64,11 +64,11 @@
       'Ordered List': "\u041D\u0443\u043C\u0435\u0440\u043E\u0432\u0430\u043D\u043D\u044B\u0439 \u0441\u043F\u0438\u0441\u043E\u043A",
       'Unordered List': "\u041C\u0430\u0440\u043A\u0438\u0440\u043E\u0432\u0430\u043D\u043D\u044B\u0439 \u0441\u043F\u0438\u0441\u043E\u043A",
       'Default': 'По умолчанию',
-      'Lower Alpha': 'Низшая альфа',
+      'Lower Alpha': 'Нижняя альфа',
       'Lower Greek': 'Нижний греческий',
-      'Lower Roman': 'Нижний римлянин',
+      'Lower Roman': 'Нижний римский',
       'Upper Alpha': 'Верхняя альфа',
-      'Upper Roman': 'Верховный римлянин',
+      'Upper Roman': 'Верхний римский',
       'Circle': 'Круг',
       'Disc': 'Диск',
       'Square': 'Площадь',
@@ -279,10 +279,10 @@
       // Character Counter
       'Characters': 'символы',
       // More Buttons
-      'More Text': 'Больше текста',
-      'More Paragraph': 'Больше Параграф',
-      'More Rich': 'Больше Богатые',
-      'More Misc': 'Больше Разное'
+      'More Text': 'Редактирование текста',
+      'More Paragraph': 'Редактирование параграфа',
+      'More Rich': 'Вставка',
+      'More Misc': 'Другое'
     },
     direction: 'ltr'
   };

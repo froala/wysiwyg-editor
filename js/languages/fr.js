@@ -53,10 +53,11 @@
       'Heading 3': 'Titre 3',
       'Heading 4': 'Titre 4',
       'Line Height': 'Interligne',
+      'Single': 'Célibataire',
       // Style
       'Paragraph Style': 'Style de paragraphe',
       'Inline Style': 'Style en ligne',
-      'Gray': 'grise',
+      'Gray': 'Grise',
       'Bordered': 'Bordé',
       'Spaced': 'Espacé',
       'Uppercase': 'Majuscule',
@@ -106,8 +107,8 @@
       'Tags': "\xC9tiquettes",
       'Are you sure? Image will be deleted.': "Etes-vous certain? L'image sera supprim\xE9e.",
       'Replace': 'Remplacer',
-      'Uploading': "En t\xE9l\xE9versement d'images",
-      'Loading image': 'En chargement d\'images',
+      'Uploading': 'Envoi en cours',
+      'Loading image': 'Chargement d\'image en cours',
       'Display': 'Afficher',
       'Inline': 'En ligne',
       'Break Text': 'Rompre le texte',
@@ -123,7 +124,7 @@
       'Embedded Code': "Code int\xE9gr\xE9",
       'Paste in a video URL': "Coller l'URL d'une vid\xE9o",
       'Drop video': 'Cliquer pour parcourir',
-      'Your browser does not support HTML5 video.': "Votre navigateur ne supporte pas les vid\xE9os en format HTML5.",
+      'Your browser does not support HTML5 video.': "Votre navigateur ne supporte pas les vid\xE9os au format HTML5.",
       'Upload Video': "T\xE9l\xE9verser une vid\xE9o",
       // Tables
       'Insert Table': "Ins\xE9rer un tableau",
@@ -225,7 +226,7 @@
       // Clear formatting
       'Clear Formatting': 'Effacer le formatage',
       // Save
-      'Save': 'sauvegarder',
+      'Save': 'Sauvegarder',
       // Undo, redo
       'Undo': 'Annuler',
       'Redo': "R\xE9tablir",

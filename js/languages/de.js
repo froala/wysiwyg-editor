@@ -17,6 +17,19 @@
    */
   FE.LANGUAGE['de'] = {
     translation: {
+      // Font Awesome
+      'Font Awesome': 'Font Awesome',
+      'Web Application Icons': 'Web Anwendungen',
+      'Accessibility Icons': 'Barrierefreiheit',
+      'Hand Icons': 'Hände',
+      'Transportation Icons': 'Transport',
+      'Gender Icons': 'Geschlechter',
+      'Form Control Icons': 'Formulare',
+      'Payment Icons': 'Zahlungsarten',
+      'Chart Icons': 'Diagramme',
+      'Currency Icons': 'Währungen',
+      'Text Editor Icons': 'Text Editor',
+      'Brand Icons': 'Marken',
       // Place holder
       'Type something': 'Hier tippen',
       // Basic formatting
@@ -149,6 +162,7 @@
       'Cell Style': 'Zellen-Stil',
       // Files
       'Upload File': 'Datei hochladen',
+      'Insert File': 'Datei einfügen',
       'Drop file': 'Datei hineinziehen',
       // Emoticons
       'Emoticons': 'Emoticons',
@@ -220,7 +234,7 @@
       // Clear formatting
       'Clear Formatting': 'Formatierung löschen',
       // Save
-      'Save': 'Sparen',
+      'Save': 'Speichern',
       // Undo, redo
       'Undo': 'Rückgängig',
       'Redo': 'Wiederholen',
@@ -250,7 +264,7 @@
       'Spell Checker': 'Rechtschreibprüfung',
       // Help
       'Help': 'Hilfe',
-      'Shortcuts': 'Verknüpfungen',
+      'Shortcuts': 'Tastaturkurzbefehle',
       'Inline Editor': 'Inline-Editor',
       'Show the editor': 'Editor anzeigen',
       'Common actions': 'Häufig verwendete Befehle',
@@ -281,10 +295,10 @@
       // Character Counter 
       'Characters': 'Zeichen',
       // More Buttons
-      'More Text': 'Mehr Text',
-      'More Paragraph': 'Mehr Absatz',
-      'More Rich': 'Mehr Reich',
-      'More Misc': 'Mehr Sonstiges',
+      'More Text': 'Weitere Textformate',
+      'More Paragraph': 'Weitere Absatzformate',
+      'More Rich': 'Weitere Reichhaltige Formate',
+      'More Misc': 'Weitere Formate',
       'Text Color': 'Textfarbe',
       'Background Color': 'Hintergrundfarbe'
     },
