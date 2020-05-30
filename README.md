@@ -225,3 +225,4 @@ If you have questions or need help integrating the editor please [contact us](ht
 ## Licensing
 
 In order to use the Froala Editor you have to purchase one of the following licenses according to your needs. You can find more about that on our website on the [pricing plan page](https://www.froala.com/wysiwyg-editor/pricing).
+[![Run on Repl.it](https://repl.it/badge/github/froala/wysiwyg-editor)](https://repl.it/github/froala/wysiwyg-editor)
