@@ -54,6 +54,10 @@
       'Heading 4': 'Kop 4',
       // Style
       'Paragraph Style': 'Paragraaf stijl',
+      'Gray': 'Grijze',
+      'Bordered': 'Begrensd',
+      'Spaced': 'Gespreid',
+      'Uppercase': 'Hoofdletters',
       'Inline Style': 'Inline stijl',
       // Alignment
       'Align': 'Uitlijnen',
@@ -282,7 +286,7 @@
       'More Text': 'Meer Tekst',
       'More Paragraph': 'Meer paragraaf',
       'More Rich': 'Meer Rijk',
-      'More Misc': 'Meer Misc'
+      'More Misc': 'Meer Diversen'
     },
     direction: 'ltr'
   };
