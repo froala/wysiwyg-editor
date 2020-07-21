@@ -2,7 +2,7 @@
 
 [![Build Status](https://api.travis-ci.com/froala-labs/froala-editor-js-2.svg?token=RmiyW7AecDyQ8ja7VMDj&branch=master)](https://travis-ci.com/froala-labs/froala-editor-js-2)
 [![npm](https://img.shields.io/npm/dm/froala-editor.svg)](https://www.npmjs.com/package/froala-editor)
-[![npm](https://img.shields.io/npm/v/froala-editor.svg)](https://www.npmjs.com/package/froala-editor) [![Join the chat at https://gitter.im/froala/wysiwyg-editor](https://badges.gitter.im/froala/wysiwyg-editor.svg)](https://gitter.im/froala/wysiwyg-editor?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![npm](https://img.shields.io/npm/v/froala-editor.svg)](https://www.npmjs.com/package/froala-editor)
 
 Froala WYSIWYG HTML Editor is one of the most powerful JavaScript rich text editors ever.
 
@@ -225,4 +225,3 @@ If you have questions or need help integrating the editor please [contact us](ht
 ## Licensing
 
 In order to use the Froala Editor you have to purchase one of the following licenses according to your needs. You can find more about that on our website on the [pricing plan page](https://www.froala.com/wysiwyg-editor/pricing).
-[![Run on Repl.it](https://repl.it/badge/github/froala/wysiwyg-editor)](https://repl.it/github/froala/wysiwyg-editor)

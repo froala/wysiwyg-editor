@@ -196,3 +196,6 @@
   right: 0;
   z-index: 2147483640;
   display: none; }
+
+.fr-autoplay-margin {
+  margin-top: 0px !important; }

@@ -357,6 +357,238 @@
       -moz-animation: loading 2s linear infinite;
       -o-animation: loading 2s linear infinite;
       animation: loading 2s linear infinite; }
+.gray-theme .fr-element img {
+  padding: 0 1px; }
+.gray-theme .fr-image-resizer {
+  border: solid 1px #0097A7;
+  user-select: none;
+  -o-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box; }
+  .gray-theme .fr-image-resizer .fr-handler {
+    background: #0097A7;
+    border: solid 1px #FFF;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+  .gray-theme .fr-image-resizer .fr-handler {
+    width: 12px;
+    height: 12px; }
+    .gray-theme .fr-image-resizer .fr-handler.fr-hnw {
+      left: -6px;
+      top: -6px; }
+    .gray-theme .fr-image-resizer .fr-handler.fr-hne {
+      right: -6px;
+      top: -6px; }
+    .gray-theme .fr-image-resizer .fr-handler.fr-hsw {
+      left: -6px;
+      bottom: -6px; }
+    .gray-theme .fr-image-resizer .fr-handler.fr-hse {
+      right: -6px;
+      bottom: -6px; }
+  @media (min-width: 1200px) {
+    .gray-theme .fr-image-resizer .fr-handler {
+      width: 10px;
+      height: 10px; }
+      .gray-theme .fr-image-resizer .fr-handler.fr-hnw {
+        left: -5px;
+        top: -5px; }
+      .gray-theme .fr-image-resizer .fr-handler.fr-hne {
+        right: -5px;
+        top: -5px; }
+      .gray-theme .fr-image-resizer .fr-handler.fr-hsw {
+        left: -5px;
+        bottom: -5px; }
+      .gray-theme .fr-image-resizer .fr-handler.fr-hse {
+        right: -5px;
+        bottom: -5px; } }
+.gray-theme.fr-image-overlay {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 2147483640; }
+.gray-theme .fr-by-url-padding {
+  padding: 11.5px 0; }
+.gray-theme.fr-popup .fr-upload-progress-layer {
+  border-radius: 0;
+  overflow-y: auto; }
+.gray-theme.fr-popup .fr-files-upload-layer {
+  border: dashed 2px #b7bdc0;
+  margin: 20px; }
+  .gray-theme.fr-popup .fr-files-upload-layer:hover {
+    background: #e8e8e8; }
+  .gray-theme.fr-popup .fr-files-upload-layer.fr-drop {
+    background: #e8e8e8;
+    border-color: #0097A7; }
+  .gray-theme.fr-popup .fr-files-upload-layer .fr-form {
+    -webkit-opacity: 0;
+    -moz-opacity: 0;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2147483640; }
+    .gray-theme.fr-popup .fr-files-upload-layer .fr-form input {
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: 0; }
+.gray-theme.fr-popup .fr-files-progress-bar-layer > h3 {
+  margin: 10px 0; }
+.gray-theme.fr-popup .fr-files-progress-bar-layer > div.fr-loader {
+  background: #b3e0e5; }
+  .gray-theme.fr-popup .fr-files-progress-bar-layer > div.fr-loader span {
+    background: #0097A7;
+    -webkit-transition: width 0.2s ease 0s;
+    -moz-transition: width 0.2s ease 0s;
+    -ms-transition: width 0.2s ease 0s;
+    -o-transition: width 0.2s ease 0s; }
+  .gray-theme.fr-popup .fr-files-progress-bar-layer > div.fr-loader.fr-indeterminate span {
+    top: 0;
+    -webkit-animation: loading 2s linear infinite;
+    -moz-animation: loading 2s linear infinite;
+    -o-animation: loading 2s linear infinite;
+    animation: loading 2s linear infinite; }
+.gray-theme .fr-progress-bar {
+  background-color: #4CAF50; }
+.gray-theme .fr-uploading {
+  -webkit-opacity: 0.4;
+  -moz-opacity: 0.4;
+  opacity: 0.4;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; }
+.gray-theme .fr-icons {
+  padding: 10px 20px 0; }
+.gray-theme .half-circle {
+  border-bottom: 0; }
+.gray-theme .checkbox-container input {
+  opacity: 0;
+  height: 0;
+  width: 0; }
+.gray-theme .checkmark {
+  top: 0;
+  left: 0; }
+.gray-theme .fr-cloud-icon {
+  margin: 0 auto; }
+.gray-theme .fr-files-checkbox {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box; }
+  .gray-theme .fr-files-checkbox svg {
+    width: 10px;
+    height: 10px; }
+  .gray-theme .fr-files-checkbox span {
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: background 0.2s ease 0s, border-color 0.2s ease 0s;
+    -moz-transition: background 0.2s ease 0s, border-color 0.2s ease 0s;
+    -ms-transition: background 0.2s ease 0s, border-color 0.2s ease 0s;
+    -o-transition: background 0.2s ease 0s, border-color 0.2s ease 0s; }
+  .gray-theme .fr-files-checkbox input {
+    -webkit-opacity: 0;
+    -moz-opacity: 0;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    height: 18px;
+    margin: 0;
+    padding: 0;
+    width: 18px; }
+    .gray-theme .fr-files-checkbox input:not(:checked) + span {
+      border: solid 2px #999999; }
+    .gray-theme .fr-files-checkbox input:not(:checked):active + span {
+      background-color: #f5f5f5; }
+    .gray-theme .fr-files-checkbox input:not(:checked):focus + span, .gray-theme .fr-files-checkbox input:not(:checked):hover + span {
+      border-color: #515151; }
+    .gray-theme .fr-files-checkbox input:checked + span {
+      background: #0097A7;
+      border: solid 2px #0097A7; }
+    .gray-theme .fr-files-checkbox input:checked:active + span {
+      background-color: #EcF5Ff; }
+    .gray-theme .fr-files-checkbox input:checked:focus + span, .gray-theme .fr-files-checkbox input:checked:hover + span {
+      -webkit-opacity: 0.8;
+      -moz-opacity: 0.8;
+      opacity: 0.8;
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; }
+.gray-theme .fr-checkbox-disabled {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box; }
+  .gray-theme .fr-checkbox-disabled span {
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: background 0.2s ease 0s, border-color 0.2s ease 0s;
+    -moz-transition: background 0.2s ease 0s, border-color 0.2s ease 0s;
+    -ms-transition: background 0.2s ease 0s, border-color 0.2s ease 0s;
+    -o-transition: background 0.2s ease 0s, border-color 0.2s ease 0s; }
+  .gray-theme .fr-checkbox-disabled input {
+    -webkit-opacity: 0;
+    -moz-opacity: 0;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    margin: 0;
+    padding: 0; }
+    .gray-theme .fr-checkbox-disabled input:not(:checked) + span {
+      border: solid 2px #999999; }
+    .gray-theme .fr-checkbox-disabled input:not(:checked):active + span {
+      background-color: #f5f5f5; }
+    .gray-theme .fr-checkbox-disabled input:checked + span {
+      background: #0097A7;
+      border: solid 2px #0097A7; }
+    .gray-theme .fr-checkbox-disabled input:checked:active + span {
+      background-color: #EcF5Ff; }
+.gray-theme .fr-files-manager-tooltip .tooltiptext {
+  font-weight: 100; }
+.gray-theme .fr-file-view-modal {
+  left: 0;
+  top: 0;
+  overflow: auto; }
+.gray-theme .fr-file-view-image {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto; }
+.gray-theme .fr-file-error {
+  font-weight: 200; }
+.gray-theme .fr-autoplay-checkbox-label {
+  margin: 0; }
+.gray-theme .checkbox-container .checkmark:after {
+  border-width: 0 3px 3px 0; }
+.gray-theme .file-item-details .file-description {
+  font-weight: 300; }
+.gray-theme #myprogressBar {
+  background-color: #4CAF50; }
+.gray-theme .progress-circle {
+  padding: 0; }
+.gray-theme .fr-hovered-over-file {
+  background-color: #F0F0F0; }
 .gray-theme.fr-box.fr-fullscreen {
   top: 0;
   left: 0;
