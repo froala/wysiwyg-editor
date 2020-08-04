@@ -20,7 +20,7 @@
   clip: rect(0, 0, 0, 0);
   border: 0; }
 
-img.fr-rounded, .fr-img-caption.fr-rounded img {
+.fr-view img.fr-rounded, .fr-view .fr-img-caption.fr-rounded img {
   border-radius: 10px;
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -28,15 +28,20 @@ img.fr-rounded, .fr-img-caption.fr-rounded img {
   -webkit-background-clip: padding-box;
   background-clip: padding-box; }
 
-img.fr-bordered, .fr-img-caption.fr-bordered img {
+.fr-view img.fr-shadow, .fr-view .fr-img-caption.fr-shadow img {
+  -webkit-box-shadow: 10px 10px 5px 0px #cccccc;
+  -moz-box-shadow: 10px 10px 5px 0px #cccccc;
+  box-shadow: 10px 10px 5px 0px #cccccc; }
+
+.fr-view img.fr-bordered, .fr-view .fr-img-caption.fr-bordered img {
   border: solid 5px #CCC; }
 
-img.fr-bordered {
+.fr-view img.fr-bordered {
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
   box-sizing: content-box; }
 
-.fr-img-caption.fr-bordered img {
+.fr-view .fr-img-caption.fr-bordered img {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
@@ -252,6 +257,8 @@ img.fr-bordered {
       margin: auto;
       text-align: center;
       width: 100%; }
+      .fr-view .fr-img-caption .fr-img-wrap a {
+        display: block; }
       .fr-view .fr-img-caption .fr-img-wrap img {
         display: block;
         margin: auto;
