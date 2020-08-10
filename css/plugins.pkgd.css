@@ -626,7 +626,7 @@ textarea.fr-code {
   /* WebKit-based browsers will ignore this. */
   width: -webkit-fill-available;
   /* Mozilla-based browsers will ignore this. */
-  width: fill-available; }
+  width: stretch; }
   .fr-popup .fr-files-progress-bar-layer > h3 {
     font-size: 16px;
     margin: 10px 0;
@@ -683,7 +683,7 @@ textarea.fr-code {
   /* WebKit-based browsers will ignore this. */
   width: -webkit-fill-available;
   /* Mozilla-based browsers will ignore this. */
-  width: fill-available; }
+  width: stretch; }
 
 .fr-uploading {
   -webkit-opacity: 0.4;
@@ -747,7 +747,7 @@ textarea.fr-code {
   /* WebKit-based browsers will ignore this. */
   width: -webkit-fill-available;
   /* Mozilla-based browsers will ignore this. */
-  width: fill-available; }
+  width: stretch; }
 
 @media screen and (max-width: 399px) {
   .fr-upload-section {
