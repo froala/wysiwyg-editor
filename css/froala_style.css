@@ -287,6 +287,8 @@
     background-clip: padding-box; }
   .fr-view button.fr-large, .fr-view input.fr-large, .fr-view textarea.fr-large {
     font-size: 24px; }
+  .fr-view ul, .fr-view ol {
+    list-style-position: inside; }
 
 /**
  * Image style.
