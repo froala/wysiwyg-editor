@@ -1275,6 +1275,12 @@ ol.decimal_type > li:before {
     content: "";
     height: 0; }
 
+.second-toolbar:empty {
+  min-height: calc(10px);
+  position: relative;
+  margin-top: calc(-1px);
+  z-index: 2; }
+
 #logo {
   float: left;
   outline: none; }
