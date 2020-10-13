@@ -41,6 +41,7 @@
       'Colors': 'Cores',
       'Background': 'Fundo',
       'Text': 'Texto',
+      'Text Color': 'Cor do texto',
       'HEX Color': 'Cor hexadecimal',
       // Paragraphs
       'Paragraph Format': 'Formatos',
