@@ -4,13 +4,13 @@
  * Copyright 2014-2020 Froala Labs
  */
 
-.clearfix::after {
+.fr-clearfix::after {
   clear: both;
   display: block;
   content: "";
   height: 0; }
 
-.hide-by-clipping {
+.fr-hide-by-clipping {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -581,9 +581,9 @@ iframe.fr-iframe {
 .fr-toolbar.fr-rtl .fr-dropdown-wrapper, .fr-popup.fr-rtl .fr-dropdown-wrapper {
   text-align: right !important; }
 
-body.prevent-scroll {
+body.fr-prevent-scroll {
   overflow: hidden; }
-  body.prevent-scroll.fr-mobile {
+  body.fr-prevent-scroll.fr-mobile {
     position: fixed;
     -webkit-overflow-scrolling: touch; }
 
@@ -1258,7 +1258,7 @@ ol.decimal_type > li:before {
   float: none;
   display: inline-block; }
 
-.second-toolbar {
+.fr-second-toolbar {
   border: 1px solid #CCCCCC;
   border-top: 0;
   background: #FFF;
@@ -1269,22 +1269,16 @@ ol.decimal_type > li:before {
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
   background-clip: padding-box; }
-  .second-toolbar::after {
+  .fr-second-toolbar::after {
     clear: both;
     display: block;
     content: "";
     height: 0; }
 
-.second-toolbar:empty {
-  min-height: calc(10px);
-  position: relative;
-  margin-top: calc(-1px);
-  z-index: 2; }
-
-#logo {
+#fr-logo {
   float: left;
   outline: none; }
-  #logo > span {
+  #fr-logo > span {
     display: inline-block;
     float: left;
     font-family: sans-serif;
@@ -1296,19 +1290,19 @@ ol.decimal_type > li:before {
     -moz-transition: color 0.3s;
     -ms-transition: color 0.3s;
     -o-transition: color 0.3s; }
-  #logo > svg {
+  #fr-logo > svg {
     height: 20px;
     width: 47px;
     margin: 7px 0;
     cursor: pointer; }
-  #logo > svg * {
+  #fr-logo > svg * {
     -webkit-transition: fill 0.3s;
     -moz-transition: fill 0.3s;
     -ms-transition: fill 0.3s;
     -o-transition: fill 0.3s; }
-  #logo:hover > span, #logo:focus > span {
+  #fr-logo:hover > span, #fr-logo:focus > span {
     color: #0098f7; }
-  #logo:hover > svg .fr-logo, #logo:focus > svg .fr-logo {
+  #fr-logo:hover > svg .fr-logo, #fr-logo:focus > svg .fr-logo {
     fill: #0098f7; }
 
 .fr-visibility-helper {

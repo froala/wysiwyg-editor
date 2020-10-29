@@ -4,13 +4,13 @@
  * Copyright 2014-2020 Froala Labs
  */
 
-.clearfix::after {
+.fr-clearfix::after {
   clear: both;
   display: block;
   content: "";
   height: 0; }
 
-.hide-by-clipping {
+.fr-hide-by-clipping {
   position: absolute;
   width: 1px;
   height: 1px;

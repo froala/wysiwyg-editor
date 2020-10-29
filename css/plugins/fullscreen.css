@@ -4,13 +4,13 @@
  * Copyright 2014-2020 Froala Labs
  */
 
-.clearfix::after {
+.fr-clearfix::after {
   clear: both;
   display: block;
   content: "";
   height: 0; }
 
-.hide-by-clipping {
+.fr-hide-by-clipping {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -60,7 +60,7 @@ body.fr-fullscreen {
       top: 0 !important; }
     .fr-box.fr-fullscreen .fr-toolbar.fr-bottom {
       bottom: 0 !important; }
-  .fr-box.fr-fullscreen .second-toolbar {
+  .fr-box.fr-fullscreen .fr-second-toolbar {
     margin-top: 0;
     border-radius: 0;
     -moz-border-radius: 0;

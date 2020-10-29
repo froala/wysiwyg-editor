@@ -4,13 +4,13 @@
  * Copyright 2014-2020 Froala Labs
  */
 
-.clearfix::after {
+.fr-clearfix::after {
   clear: both;
   display: block;
   content: "";
   height: 0; }
 
-.hide-by-clipping {
+.fr-hide-by-clipping {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -615,7 +615,7 @@
     -moz-background-clip: padding;
     -webkit-background-clip: padding-box;
     background-clip: padding-box; }
-  .gray-theme.fr-box.fr-fullscreen .second-toolbar {
+  .gray-theme.fr-box.fr-fullscreen .fr-second-toolbar {
     margin-top: 0;
     border-radius: 0;
     -moz-border-radius: 0;
@@ -1003,6 +1003,25 @@
 .gray-theme.fr-popup .fr-table-colors {
   padding: 20px;
   padding-bottom: 0; }
+.gray-theme #fr-form-container {
+  margin: auto;
+  overflow: auto; }
+.gray-theme .fr-range-value-start > span:before {
+  width: 0;
+  height: 0; }
+.gray-theme .fr-range-value-end > span:before {
+  width: 0;
+  height: 0; }
+.gray-theme .fr-range-slider > input {
+  left: 0; }
+.gray-theme .fr-range-slider > input::-moz-range-thumb {
+  z-index: 10; }
+.gray-theme .fr-range-slider > input::-moz-range-track {
+  border: 0; }
+.gray-theme .fr-range-slider > input:last-of-type::-moz-range-track {
+  border: 0; }
+.gray-theme .fr-range-slider > input[type="range"]::-moz-focus-outer {
+  border: 0; }
 .gray-theme .fr-element .fr-video {
   user-select: none;
   -o-user-select: none;
@@ -2111,7 +2130,7 @@
     width: calc(100% - (2 * 4px));
     margin: 0 4px;
     height: 1px; }
-.gray-theme .second-toolbar {
+.gray-theme .fr-second-toolbar {
   border: 1px solid #CCCCCC;
   border-top: 0;
   background: #FFF;
@@ -2121,12 +2140,12 @@
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
   background-clip: padding-box; }
-  .gray-theme .second-toolbar::after {
+  .gray-theme .fr-second-toolbar::after {
     clear: both;
     display: block;
     content: "";
     height: 0; }
-.gray-theme #logo > span {
+.gray-theme #fr-logo > span {
   padding: 11px 5px 10px 15px;
   font-size: 12px;
   font-weight: 500;
@@ -2135,16 +2154,16 @@
   -moz-transition: color 0.3s;
   -ms-transition: color 0.3s;
   -o-transition: color 0.3s; }
-.gray-theme #logo > svg {
+.gray-theme #fr-logo > svg {
   height: 20px;
   width: 47px;
   margin: 7px 0; }
-.gray-theme #logo > svg * {
+.gray-theme #fr-logo > svg * {
   -webkit-transition: fill 0.3s;
   -moz-transition: fill 0.3s;
   -ms-transition: fill 0.3s;
   -o-transition: fill 0.3s; }
-.gray-theme #logo:hover > span, .gray-theme #logo:focus > span {
+.gray-theme #fr-logo:hover > span, .gray-theme #fr-logo:focus > span {
   color: #0097A7; }
-.gray-theme #logo:hover > svg .fr-logo, .gray-theme #logo:focus > svg .fr-logo {
+.gray-theme #fr-logo:hover > svg .fr-logo, .gray-theme #fr-logo:focus > svg .fr-logo {
   fill: #0097A7; }
