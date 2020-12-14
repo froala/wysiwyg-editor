@@ -41,7 +41,8 @@
     box-sizing: border-box;
     overflow-x: auto;
     min-height: 60px;
-    text-align: left; }
+    text-align: left;
+    max-height: 500px; }
   .fr-box.fr-basic.fr-rtl .fr-element {
     text-align: right; }
 
