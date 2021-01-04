@@ -1,7 +1,7 @@
 /*!
  * froala_editor v3.2.5 (https://www.froala.com/wysiwyg-editor)
  * License https://froala.com/wysiwyg-editor/terms/
- * Copyright 2014-2020 Froala Labs
+ * Copyright 2014-2021 Froala Labs
  */
 
 .fr-clearfix::after {
@@ -41,8 +41,7 @@
     box-sizing: border-box;
     overflow-x: auto;
     min-height: 60px;
-    text-align: left;
-    max-height: 500px; }
+    text-align: left; }
   .fr-box.fr-basic.fr-rtl .fr-element {
     text-align: right; }
 
