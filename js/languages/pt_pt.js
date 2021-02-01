@@ -19,6 +19,23 @@
     translation: {
       // Place holder
       'Type something': 'Digite algo',
+      // Missing translations
+      'Text Color': 'Cor do texto',
+      'Background Color': 'Cor de fundo',
+      'Inline Class': 'Classe Inline',
+      'Default': 'Padrão',
+      'Lower Alpha': 'Alfa minúsculo',
+      'Lower Greek': 'Grego minúsculo',
+      'Lower Roman': 'Roman minúsculo',
+      'Upper Alpha': 'Alfa maiúsculo',
+      'Upper Roman': 'Roman maiúscula',
+      'Circle': 'Círculo',
+      'Disc': 'Disco',
+      'Square': 'Quadrado',
+      'Single': 'Único',
+      'Double': 'Duplo',
+      'Insert Files': 'Inserir arquivos',
+      'Download PDF': 'Baixar PDF',
       // Basic formatting
       'Bold': 'Negrito',
       'Italic': "It\xE1lico",
