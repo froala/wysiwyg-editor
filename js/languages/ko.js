@@ -12,13 +12,46 @@
 
   FE = FE && FE.hasOwnProperty('default') ? FE['default'] : FE;
 
-  /**
-   * Korean
-   */
+  function _defineProperty(obj, key, value) {
+    if (key in obj) {
+      Object.defineProperty(obj, key, {
+        value: value,
+        enumerable: true,
+        configurable: true,
+        writable: true
+      });
+    } else {
+      obj[key] = value;
+    }
+
+    return obj;
+  }
+
+  var _translation;
   FE.LANGUAGE['ko'] = {
-    translation: {
+    translation: (_translation = {
       // Place holder
       'Type something': "\uB0B4\uC6A9\uC744 \uC785\uB825\uD558\uC138\uC694",
+      // Missing translations
+      'More Text': '더 많은 텍스트',
+      'Text Color': '텍스트 색상',
+      'Background Color': '배경색',
+      'Inline Class': '인라인 클래스',
+      'Default': '기본값',
+      'Lower Alpha': '소문자 알파',
+      'Lower Greek': '그리스어 소문자',
+      'Lower Roman': '로만 소문자',
+      'Upper Alpha': '알파 대문자',
+      'Upper Roman': '로만 대문자',
+      'Circle': '서클',
+      'Disc': '디스크',
+      'Square': '정사각형',
+      'Single': '싱글',
+      'Double': '더블',
+      'More Rich': '풍부한 콘텐츠',
+      'More Misc': '더 기타',
+      'Insert Files': '파일 삽입',
+      'Download PDF': 'PDF 다운로드',
       // Basic formatting
       'Bold': "\uAD75\uAC8C",
       'Italic': "\uAE30\uC6B8\uC784\uAF34",
@@ -264,13 +297,8 @@
       'Clean': "\uC815\uB9AC",
       'Word Paste Detected': "\uC6CC\uB4DC \uBD99\uC5EC \uB123\uAE30\uAC00 \uAC80\uCD9C \uB418\uC5C8\uC2B5\uB2C8\uB2E4.",
       // Character Counter
-      'Characters': '문자',
-      // More Buttons
-      'More Text': '더 본문',
-      'More Paragraph': '더 절',
-      'More Rich': '더 풍부한',
-      'More Misc': '더 기타'
-    },
+      'Characters': '문자'
+    }, _defineProperty(_translation, "More Text", '더 본문'), _defineProperty(_translation, 'More Paragraph', '더 절'), _defineProperty(_translation, "More Rich", '더 풍부한'), _defineProperty(_translation, "More Misc", '더 기타'), _translation),
     direction: 'ltr'
   };
 
