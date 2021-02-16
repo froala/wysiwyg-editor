@@ -42,8 +42,8 @@
       'Background': 'Bakgrund',
       'Text': 'Text',
       'HEX Color': 'Hex färg',
-      'Text Color': 'Text färg',
-      'Background Color': 'Bakgrunds färg',
+      'Text Color': 'Textfärg',
+      'Background Color': 'Bakgrundsfärg',
       // Paragraphs
       'Paragraph Format': 'Format',
       'Normal': 'Normal',
