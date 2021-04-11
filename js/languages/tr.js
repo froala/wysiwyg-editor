@@ -26,13 +26,13 @@
       'Strikethrough': "\xDCst\xFC \xE7izili",
       // Main buttons
       'Insert': 'Ekle',
-      'Delete': 'Silmek',
+      'Delete': 'Sil',
       'Cancel': "\u0130ptal",
       'OK': 'Tamam',
       'Back': 'Geri',
       'Remove': "Kald\u0131r",
-      'More': 'Daha',
-      'Update': "G\xFCncelle\u015Ftirme",
+      'More': 'Daha fazla',
+      'Update': "Kaydet",
       'Style': 'Stil',
       // Font
       'Font Family': "Yaz\u0131tipi Ailesi",
@@ -52,7 +52,7 @@
       'Heading 4': "Ba\u015Fl\u0131k 4",
       // Style
       'Paragraph Style': 'Paragraf stili',
-      'Inline Style': "\xC7izgide stili",
+      'Inline Style': "Sat\u0131r stili",
       // Alignment
       'Align': 'Hizalama',
       'Align Left': 'Sola hizala',
@@ -70,45 +70,45 @@
       'Insert Link': "Ba\u011Flant\u0131 ekle",
       'Open in new tab': "Yeni sekmede a\xE7",
       'Open Link': "Linki a\xE7",
-      'Edit Link': "D\xFCzenleme ba\u011Flant\u0131s\u0131",
+      'Edit Link': "Ba\u011Flant\u0131y\u0131 d\xFCzenle",
       'Unlink': "Ba\u011Flant\u0131y\u0131 kald\u0131r",
       'Choose Link': "Ba\u011Flant\u0131y\u0131 se\xE7in",
       // Images
       'Insert Image': 'Resim ekle',
-      'Upload Image': "Y\xFCkleme g\xF6r\xFCnt\xFCs\xFC",
+      'Upload Image': "Resim y\xFCkle",
       'By URL': "URL'ye g\xF6re",
       'Browse': "G\xF6zat",
-      'Drop image': "B\u0131rak resim",
-      'or click': "ya da t\u0131klay\u0131n",
+      'Drop image': "Resmi s\xFCr\xFCkle",
+      'or click': "ya da se\xE7",
       'Manage Images': "G\xF6r\xFCnt\xFCleri y\xF6netin",
       'Loading': "Y\xFCkleniyor",
-      'Deleting': 'Silme',
+      'Deleting': 'Siliniyor',
       'Tags': 'Etiketler',
       'Are you sure? Image will be deleted.': 'Emin misin? Resim silinecektir.',
-      'Replace': "De\u011Fi\u015Ftirmek",
-      'Uploading': "Y\xFCkleme",
-      'Loading image': "Y\xFCkleme g\xF6r\xFCnt\xFCs\xFC",
-      'Display': "G\xF6stermek",
+      'Replace': "De\u011Fi\u015Ftir",
+      'Uploading': "Y\xFCkleniyor",
+      'Loading image': "G\xF6rsel y\xFCkleniyor",
+      'Display': "G\xF6sterim",
       'Inline': "\xC7izgide",
       'Break Text': "K\u0131r\u0131lma metni",
       'Alternative Text': 'Alternatif metin',
-      'Change Size': "De\u011Fi\u015Fim boyutu",
-      'Width': "Geni\u015Flik",
-      'Height': "Y\xFCkseklik",
+      'Change Size': "Boyut değiştir",
+      'Width': "Genişlik",
+      'Height': "Yükseklik",
       'Something went wrong. Please try again.': "Bir \u015Feyler yanl\u0131\u015F gitti. L\xFCtfen tekrar deneyin.",
-      'Image Caption': 'Resim yazısı',
+      'Image Caption': 'Resim altyazı',
       'Advanced Edit': 'Ileri düzey düzenleme',
       // Video
       'Insert Video': 'Video ekle',
-      'Embedded Code': "G\xF6m\xFCl\xFC kod",
-      'Paste in a video URL': 'Bir video URL\'sine yapıştırın',
-      'Drop video': 'Video bırak',
-      'Your browser does not support HTML5 video.': 'Tarayıcınız html5 videoyu desteklemez.',
+      'Embedded Code': "Gömülü kod",
+      'Paste in a video URL': 'Bir video URL\'si yapıştır',
+      'Drop video': 'Video sürükle',
+      'Your browser does not support HTML5 video.': 'Tarayıcınız HTML5 videoyu desteklemiyor.',
       'Upload Video': 'Video yükle',
       // Tables
       'Insert Table': 'Tablo ekle',
-      'Table Header': "Tablo \xFCstbilgisi",
-      'Remove Table': "Tablo kald\u0131rma",
+      'Table Header': "Tablo başlık",
+      'Remove Table': "Tabloyu kald\u0131r",
       'Table Style': 'Tablo stili',
       'Horizontal Align': 'Yatay hizalama',
       'Row': "Sat\u0131r",
@@ -134,7 +134,7 @@
       'Cell Style': "H\xFCcre stili",
       // Files
       'Upload File': "Dosya Y\xFCkle",
-      'Drop file': "B\u0131rak dosya",
+      'Drop file': "Dosyayı sürükle",
       // Emoticons
       'Emoticons': "\u0130fadeler",
       'Grinning face': "S\u0131r\u0131tan y\xFCz",
@@ -194,7 +194,7 @@
       'Face without mouth': "A\u011F\u0131z olmadan Y\xFCz",
       'Face with medical mask': "T\u0131bbi maske ile y\xFCz",
       // Line breaker
-      'Break': "K\u0131r\u0131lma",
+      'Break': "Yeni satır",
       // Math
       'Subscript': 'Alt simge',
       'Superscript': "\xDCst simge",
@@ -215,10 +215,10 @@
       'Code View': "Kod g\xF6r\xFCn\xFCm\xFC",
       // Quote
       'Quote': "Al\u0131nt\u0131",
-      'Increase': "Art\u0131rmak",
-      'Decrease': "Azal\u0131\u015F",
+      'Increase': "Artır",
+      'Decrease': "Azalt",
       // Quick Insert
-      'Quick Insert': "H\u0131zl\u0131 insert",
+      'Quick Insert': "H\u0131zl\u0131 ekleme",
       // Spcial Characters
       'Special Characters': 'Özel karakterler',
       'Latin': 'Latince',
@@ -266,10 +266,10 @@
       // Character Counter
       'Characters': 'Karakterler',
       // More Buttons
-      'More Text': 'daha fazla Metin',
-      'More Paragraph': 'daha fazla Paragraf',
-      'More Rich': 'daha fazla Zengin',
-      'More Misc': 'daha fazla Çeşitli'
+      'More Text': 'Daha fazla metin ayarı',
+      'More Paragraph': 'Daha fazla paragraf ayarı',
+      'More Rich': 'Daha fazla zengin metin ayarı',
+      'More Misc': 'Çeşitli seçenekler'
     },
     direction: 'ltr'
   };
