@@ -1,5 +1,5 @@
 /*!
- * froala_editor v3.2.6-1 (https://www.froala.com/wysiwyg-editor)
+ * froala_editor v3.2.7 (https://www.froala.com/wysiwyg-editor)
  * License https://froala.com/wysiwyg-editor/terms/
  * Copyright 2014-2021 Froala Labs
  */
@@ -287,8 +287,6 @@
     background-clip: padding-box; }
   .fr-view button.fr-large, .fr-view input.fr-large, .fr-view textarea.fr-large {
     font-size: 24px; }
-  .fr-view ul, .fr-view ol {
-    list-style-position: initial; }
 
 /**
  * Image style.

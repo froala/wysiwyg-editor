@@ -1,5 +1,5 @@
 /*!
- * froala_editor v3.2.6-1 (https://www.froala.com/wysiwyg-editor)
+ * froala_editor v3.2.7 (https://www.froala.com/wysiwyg-editor)
  * License https://froala.com/wysiwyg-editor/terms/
  * Copyright 2014-2021 Froala Labs
  */
@@ -1275,6 +1275,12 @@ ol.decimal_type > li:before {
     content: "";
     height: 0; }
 
+.fr-second-toolbar:empty {
+  min-height: calc(10px);
+  position: relative;
+  margin-top: calc(-1px);
+  z-index: 2; }
+
 #fr-logo {
   float: left;
   outline: none; }
@@ -1364,6 +1370,14 @@ span.fr-sr-only {
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   border: 0; }
+
+.fr-bottom-extended {
+  flex-wrap: wrap;
+  display: flex;
+  box-sizing: border-box; }
+
+.position-relative {
+  position: relative !important; }
 
 .fr-clearfix::after {
   clear: both;
@@ -1985,9 +1999,9 @@ textarea.fr-code {
   width: calc(100% - 40px);
   width: -moz-available;
   /* WebKit-based browsers will ignore this. */
-  width: -webkit-fill-available;
+  width: -webkit-stretch;
   /* Mozilla-based browsers will ignore this. */
-  width: fill-available; }
+  width: stretch; }
   .fr-popup .fr-files-progress-bar-layer > h3 {
     font-size: 16px;
     margin: 10px 0;
@@ -2042,9 +2056,9 @@ textarea.fr-code {
   width: 100%;
   width: -moz-available;
   /* WebKit-based browsers will ignore this. */
-  width: -webkit-fill-available;
+  width: -webkit-stretch;
   /* Mozilla-based browsers will ignore this. */
-  width: fill-available; }
+  width: stretch; }
 
 .fr-uploading {
   -webkit-opacity: 0.4;
@@ -2106,9 +2120,9 @@ textarea.fr-code {
   width: 100%;
   width: -moz-available;
   /* WebKit-based browsers will ignore this. */
-  width: -webkit-fill-available;
+  width: -webkit-stretch;
   /* Mozilla-based browsers will ignore this. */
-  width: fill-available; }
+  width: stretch; }
 
 @media screen and (max-width: 399px) {
   .fr-upload-section {
@@ -4519,8 +4533,6 @@ div.fr-modal-body {
     background-clip: padding-box; }
   .fr-view button.fr-large, .fr-view input.fr-large, .fr-view textarea.fr-large {
     font-size: 24px; }
-  .fr-view ul, .fr-view ol {
-    list-style-position: initial; }
 
 /**
  * Image style.
