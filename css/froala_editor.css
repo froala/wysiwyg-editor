@@ -1,5 +1,5 @@
 /*!
- * froala_editor v3.2.7 (https://www.froala.com/wysiwyg-editor)
+ * froala_editor v4.0.0 (https://www.froala.com/wysiwyg-editor)
  * License https://froala.com/wysiwyg-editor/terms/
  * Copyright 2014-2021 Froala Labs
  */
@@ -1114,10 +1114,8 @@ ol.decimal_type > li:before {
     -moz-transition: height 0.5s;
     -ms-transition: height 0.5s;
     -o-transition: height 0.5s; }
-  .fr-toolbar.fr-toolbar-open {
-    padding-bottom: 48px; }
-    .fr-toolbar.fr-toolbar-open .fr-newline {
-      height: 0; }
+  .fr-toolbar.fr-toolbar-open .fr-newline {
+    height: 0; }
   .fr-toolbar .fr-float-right {
     float: right; }
   .fr-toolbar .fr-float-left {
@@ -1138,7 +1136,6 @@ ol.decimal_type > li:before {
     height: 0;
     z-index: 2;
     overflow: hidden;
-    position: absolute;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -1370,6 +1367,57 @@ span.fr-sr-only {
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   border: 0; }
+
+.fr-view .fr-highlight-change, .fr-highlight-change > img, .fr-highlight-change > .fr-video > video,
+.fr-highlight-change > .fr-video > embed, .fr-highlight-change > .fr-video > iframe, .fr-highlight-change > .fr-embedly > .embedly-card > .embedly-card-hug > iframe,
+.fr-highlight-change > p, .fr-view .fr-highlight-change > span:not(.fr-tracking-deleted) {
+  background-color: #f3eec3;
+  opacity: 0.5; }
+
+.fr-highlight-change.fr-highlight-change > table td, .fr-highlight-change.fr-highlight-change > hr {
+  border-color: #f3eec3; }
+
+.fr-tracking-deleted.fr-tracking-deleted > table td, .fr-tracking-deleted.fr-tracking-deleted > hr {
+  border-color: #dc3545; }
+
+.fr-tracking-deleted img, .fr-tracking-deleted > .fr-video > video, .fr-tracking-deleted > .fr-video > iframe, .fr-tracking-deleted > .fr-embedly > .embedly-card > .embedly-card-hug > iframe {
+  opacity: 0.5;
+  background-color: #dc3545; }
+
+.fr-view .fr-tracking-deleted {
+  background-color: #dc3545;
+  text-decoration: line-through;
+  pointer-events: none;
+  user-select: none;
+  opacity: 1; }
+
+.fr-highlight-change > .fr-video > iframe, .fr-tracking-deleted > .fr-video > iframe, .fr-highlight-change > .fr-video > video, .fr-tracking-deleted > .fr-video > video, .fr-highlight-change > .fr-video > embed, .fr-highlight-change > .fr-embedly > .embedly-card > .embedly-card-hug > iframe, .fr-tracking-deleted > .fr-embedly > .embedly-card > .embedly-card-hug > iframe {
+  padding: 10px !important; }
+
+.fr-tracking-deleted img, .fr-highlight-change img {
+  border: 2px solid #f3eec3; }
+
+.fr-highlight-change #isPasted *:not(table):not(tbody):not(tr):not(td) {
+  opacity: 0.5;
+  background-color: #f3eec3; }
+
+.fr-highlight-change #isPasted > table td {
+  opacity: 0.5;
+  border-color: #f3eec3; }
+
+.fr-track-hide {
+  display: none; }
+
+.fr-track-hide-mobile {
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  position: absolute; }
+
+.fr-ios-mobile-disable-select {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none; }
 
 .fr-bottom-extended {
   flex-wrap: wrap;

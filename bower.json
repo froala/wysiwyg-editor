@@ -30,6 +30,7 @@
     "css/plugins/char_counter.min.css",
     "css/plugins/code_view.min.css",
     "css/plugins/colors.min.css",
+    "css/plugins/markdown.min.css",
     "css/plugins/draggable.min.css",
     "css/plugins/emoticons.min.css",
     "css/plugins/file.min.css",
@@ -81,7 +82,8 @@
     "js/plugins/word_paste.min.js",
     "js/third_party/embedly.min.js",
     "js/third_party/image_aviary.min.js",
-    "js/third_party/spell_checker.min.js"
+    "js/third_party/spell_checker.min.js",
+    "js/third_party/showdown.min.js"
   ],
   "ignore": [
     "html",
