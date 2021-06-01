@@ -1,4 +1,4 @@
-# [Froala Editor V3](https://www.froala.com/wysiwyg-editor)
+# [Froala Editor V4](https://www.froala.com/wysiwyg-editor)
 
 [![Build Status](https://api.travis-ci.com/froala-labs/froala-editor-js-2.svg?token=RmiyW7AecDyQ8ja7VMDj&branch=master)](https://travis-ci.com/froala-labs/froala-editor-js-2)
 [![npm](https://img.shields.io/npm/dm/froala-editor.svg)](https://www.npmjs.com/package/froala-editor)
