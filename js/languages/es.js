@@ -141,6 +141,9 @@ $.FE.LANGUAGE['es'] = {
     "Something went wrong. Please try again.": "Algo sali\u00f3 mal. Por favor, vuelva a intentarlo.",
     "Image Caption": "Captura de imagen",
     "Advanced Edit": "Edición avanzada",
+    "Rounded": "Redondeado",
+    "Bordered": "Bordeado",
+    "Shadow": "Sombra",
 
     // Video
     "Insert Video": "Insertar video",
