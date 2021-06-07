@@ -1,5 +1,5 @@
 /*!
- * froala_editor v4.0.0 (https://www.froala.com/wysiwyg-editor)
+ * froala_editor v4.0.1 (https://www.froala.com/wysiwyg-editor)
  * License https://froala.com/wysiwyg-editor/terms/
  * Copyright 2014-2021 Froala Labs
  */
@@ -59,18 +59,18 @@
   font-size: 10px;
   color: #c5c5c5; }
 
-dl {
+.fr-markdown-view > dl {
   margin-top: 0;
   margin-bottom: 1rem; }
 
-dt {
+.fr-markdown-view > dt {
   font-weight: 700; }
 
-dd {
+.fr-markdown-view > dd {
   margin-bottom: .5rem;
   margin-left: 0; }
 
-pre {
+.fr-markdown-view > pre {
   white-space: pre-wrap;
   white-space: -moz-pre-wrap;
   white-space: -pre-wrap;
@@ -82,7 +82,7 @@ pre {
   margin-bottom: 1.5em;
   padding: 0.125rem 0.3125rem 0.0625rem; }
 
-code {
+.fr-markdown-view > code {
   background-color: #f8f8f8;
   border-color: #dfdfdf;
   border-style: solid;
@@ -92,12 +92,12 @@ code {
   font-weight: normal;
   padding: 0.125rem 0.3125rem 0.0625rem; }
 
-pre code {
+.fr-markdown-view > pre code {
   background-color: transparent;
   border: 0;
   padding: 0; }
 
-sup {
+.fr-markdown-view > sup {
   top: -.5em; }
 
 .footnote-a {
@@ -105,7 +105,7 @@ sup {
   text-decoration: none;
   background-color: transparent; }
 
-hr {
+.fr-markdown-view > hr {
   margin-top: 1rem;
   margin-bottom: 1rem;
   border: 0;
@@ -117,7 +117,7 @@ hr {
   padding: 10px 20px;
   font-size: 1.25rem; }
 
-table {
+.fr-markdown-view > table {
   width: 100%;
   max-width: 100%;
   margin-bottom: 20px;
@@ -125,19 +125,23 @@ table {
   border-spacing: 0;
   border-collapse: collapse; }
 
-tbody > tr > td, tbody > tr > th, thead > tr > td, thead > tr > th {
+.fr-markdown-view > table > tbody > tr > td,
+.fr-markdown-view > table > tbody > tr > th,
+.fr-markdown-view > table > thead > tr > td,
+.fr-markdown-view > table > thead > tr > th {
   padding: 8px;
   line-height: 1.42857143;
   vertical-align: top;
   border: 1px solid #ddd; }
 
-thead > tr > td, thead > tr > th {
+.fr-markdown-view > table > thead > tr > td,
+.fr-markdown-view > table > thead > tr > th {
   border-bottom-width: 2px; }
 
-tbody > tr:nth-of-type(odd) {
+.fr-markdown-view > table > tbody > tr:nth-of-type(odd) {
   background-color: #f9f9f9; }
 
-a {
+.fr-markdown-view > a {
   color: #337ab7;
   text-decoration: none; }
 
