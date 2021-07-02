@@ -1,5 +1,5 @@
 /*!
- * froala_editor v4.0.1 (https://www.froala.com/wysiwyg-editor)
+ * froala_editor v4.0.2 (https://www.froala.com/wysiwyg-editor)
  * License https://froala.com/wysiwyg-editor/terms/
  * Copyright 2014-2021 Froala Labs
  */
@@ -1134,7 +1134,6 @@ ol.decimal_type > li:before {
     -ms-transition: height 0.5s;
     -o-transition: height 0.5s;
     height: 0;
-    z-index: 2;
     overflow: hidden;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
