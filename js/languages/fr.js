@@ -1,5 +1,5 @@
 /*!
- * froala_editor v4.0.2 (https://www.froala.com/wysiwyg-editor)
+ * froala_editor v4.0.3 (https://www.froala.com/wysiwyg-editor)
  * License https://froala.com/wysiwyg-editor/terms/
  * Copyright 2014-2021 Froala Labs
  */
@@ -153,6 +153,10 @@
       'Align Middle': 'Aligner au centre',
       'Align Bottom': 'Aligner en bas',
       'Cell Style': 'Style de cellule',
+      'Dashed Borders': 'Bordures pointillées',
+      'Alternate Rows': 'Lignes alternatives',
+      'Highlighted': 'Souligné',
+      'Thick': 'Épais',
       // Files
       'Upload File': "T\xE9l\xE9verser un fichier",
       'Drop file': 'Cliquer pour parcourir',
