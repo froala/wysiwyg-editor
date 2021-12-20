@@ -1,5 +1,5 @@
 /*!
- * froala_editor v4.0.7 (https://www.froala.com/wysiwyg-editor)
+ * froala_editor v4.0.8 (https://www.froala.com/wysiwyg-editor)
  * License https://froala.com/wysiwyg-editor/terms/
  * Copyright 2014-2021 Froala Labs
  */
@@ -818,7 +818,7 @@ ol.decimal_type > li:before {
   .fr-popup .fr-input-line {
     position: relative;
     padding: 15px 0; }
-    .fr-popup .fr-input-line input[type="text"], .fr-popup .fr-input-line textarea {
+    .fr-popup .fr-input-line input[type="text"], .fr-popup .fr-input-line input[type="number"], .fr-popup .fr-input-line textarea {
       width: 100%;
       margin-bottom: 1px;
       border-radius: 2px;
@@ -841,12 +841,12 @@ ol.decimal_type > li:before {
       -moz-transition: border 0.5s, padding 0.5s;
       -ms-transition: border 0.5s, padding 0.5s;
       -o-transition: border 0.5s, padding 0.5s; }
-      .fr-popup .fr-input-line input[type="text"]:hover, .fr-popup .fr-input-line textarea:hover {
+      .fr-popup .fr-input-line input[type="text"]:hover, .fr-popup .fr-input-line input[type="number"]:hover, .fr-popup .fr-input-line textarea:hover {
         border: solid 1px #515151; }
-      .fr-popup .fr-input-line input[type="text"]:focus, .fr-popup .fr-input-line textarea:focus {
+      .fr-popup .fr-input-line input[type="text"]:focus, .fr-popup .fr-input-line input[type="number"]:focus, .fr-popup .fr-input-line textarea:focus {
         border: solid 2px #0098f7;
         padding: 3px 11px; }
-    .fr-popup .fr-input-line input[type="text"] {
+    .fr-popup .fr-input-line input[type="text"], .fr-popup .fr-input-line input[type="number"] {
       height: 46px; }
     .fr-popup .fr-input-line input + label, .fr-popup .fr-input-line textarea + label {
       position: absolute;
@@ -3108,6 +3108,8 @@ body.fr-fullscreen {
   right: 0;
   z-index: 2147483630 !important;
   width: auto !important; }
+  .fr-box.fr-fullscreen .fr-wrapper {
+    background-color: #FFF; }
   .fr-box.fr-fullscreen.fr-basic.fr-top .fr-wrapper {
     border-radius: 0;
     -moz-border-radius: 0;
