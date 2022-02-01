@@ -1,7 +1,7 @@
 /*!
- * froala_editor v4.0.8 (https://www.froala.com/wysiwyg-editor)
+ * froala_editor v4.0.9 (https://www.froala.com/wysiwyg-editor)
  * License https://froala.com/wysiwyg-editor/terms/
- * Copyright 2014-2021 Froala Labs
+ * Copyright 2014-2022 Froala Labs
  */
 
 .fr-clearfix::after {
@@ -36,7 +36,6 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    overflow-x: auto;
     min-height: 60px;
     text-align: left; }
 .gray-theme .fr-element {
