@@ -1,14 +1,14 @@
 /*!
- * froala_editor v4.0.10 (https://www.froala.com/wysiwyg-editor)
+ * froala_editor v3.2.6-1 (https://www.froala.com/wysiwyg-editor)
  * License https://froala.com/wysiwyg-editor/terms/
- * Copyright 2014-2022 Froala Labs
+ * Copyright 2014-2021 Froala Labs
  */
 
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? factory(require('froala-editor')) :
-  typeof define === 'function' && define.amd ? define(['froala-editor'], factory) :
+  typeof require === 'function' && require.amd ? require(['froala-editor'], factory) :
   (factory(global.FroalaEditor));
-}(this, (function (FE) { 'use strict';
+}(this, (function (FE) {
 
   FE = FE && FE.hasOwnProperty('default') ? FE['default'] : FE;
 
@@ -37,6 +37,7 @@
       // Font
       'Font Family': "Yaz\u0131tipi Ailesi",
       'Font Size': "Yaz\u0131tipi B\xFCy\xFCkl\xFC\u011F\xFC",
+      'Inline Class': 'Sat\u0131r i\u00e7i S\u0131n\u0131f',
       // Colors
       'Colors': 'Renkler',
       'Background': 'Arkaplan',
@@ -52,7 +53,7 @@
       'Heading 4': "Ba\u015Fl\u0131k 4",
       // Style
       'Paragraph Style': 'Paragraf stili',
-      'Inline Style': "\xC7izgide stili",
+      'Inline Style': "Sat\u0131r i\u00e7i stili",
       // Alignment
       'Align': 'Hizalama',
       'Align Left': 'Sola hizala',
@@ -89,7 +90,7 @@
       'Uploading': "Y\xFCkleme",
       'Loading image': "Y\xFCkleme g\xF6r\xFCnt\xFCs\xFC",
       'Display': "G\xF6stermek",
-      'Inline': "\xC7izgide",
+      'Inline': "Sat\u0131r i\u00e7i",
       'Break Text': "K\u0131r\u0131lma metni",
       'Alternative Text': 'Alternatif metin',
       'Change Size': "De\u011Fi\u015Fim boyutu",
@@ -269,7 +270,30 @@
       'More Text': 'daha fazla Metin',
       'More Paragraph': 'daha fazla Paragraf',
       'More Rich': 'daha fazla Zengin',
-      'More Misc': 'daha fazla Çeşitli'
+      'More Misc': 'daha fazla Çeşitli',
+      // Sonradan eklenenler
+      'Lower Alpha': 'Küçük Alfabe',
+      'Lower Greek': 'Küçük Yunanca',
+      'Lower Roman': 'Küçük Roma Rakamlar\u0131',
+      'Upper Alpha': 'Büyük Alfabe',
+      'Upper Roman': 'Büyük Roma Rakamlar\u0131',
+      'Default': 'Varsay\u0131lan',
+      'Circle': '\u00c7ember',
+      'Disc' : 'Daire',
+      'Square': 'Kare',
+      'Highlighted': 'Vurgulu',
+      'Transparent': 'Saydam',
+      'Text Color': 'Yaz\u0131 Rengi',
+      'Background Color': 'Arkaplan Rengi',
+      'Gray': 'Gri',
+      'Bordered':'Kenarl\u0131',
+      'Spaced': 'Aral\u0131kl\u0131',
+      'Uppercase' : 'Büyük',
+      'Single': 'Tek',
+      'Double': 'Çift',
+      'Download PDF': 'PDF \u0130ndir',
+      'Insert Files' : 'Dosyalar\u0131 ekle',
+      'Line Height': 'Sat\u0131r aral\u0131\u011f\u0131'
     },
     direction: 'ltr'
   };
