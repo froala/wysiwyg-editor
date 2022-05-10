@@ -1,5 +1,5 @@
 /*!
- * froala_editor v4.0.10 (https://www.froala.com/wysiwyg-editor)
+ * froala_editor v4.0.11 (https://www.froala.com/wysiwyg-editor)
  * License https://froala.com/wysiwyg-editor/terms/
  * Copyright 2014-2022 Froala Labs
  */
@@ -3924,13 +3924,6 @@ div.fr-modal-body {
 
 .fr-element table td.fr-selected-cell, .fr-element table th.fr-selected-cell {
   border: 1px double #0098f7; }
-.fr-element table tr {
-  user-select: none;
-  -o-user-select: none;
-  -moz-user-select: none;
-  -khtml-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none; }
 .fr-element table td, .fr-element table th {
   user-select: text;
   -o-user-select: text;
@@ -4520,6 +4513,8 @@ div.fr-modal-body {
       .fr-view table td.fr-thick, .fr-view table th.fr-thick {
         border-width: 2px; }
     .fr-view table th {
+      background: #ececec; }
+    .fr-view table tfoot td {
       background: #ececec; }
   .fr-view hr {
     clear: both;
