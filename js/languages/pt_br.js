@@ -1,14 +1,15 @@
 /*!
- * froala_editor v4.0.15 (https://www.froala.com/wysiwyg-editor)
+ * froala_editor v4.0.14 (https://www.froala.com/wysiwyg-editor)
  * License https://froala.com/wysiwyg-editor/terms/
  * Copyright 2014-2022 Froala Labs
  */
 
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? factory(require('froala-editor')) :
-  typeof define === 'function' && define.amd ? define(['froala-editor'], factory) :
-  (factory(global.FroalaEditor));
-}(this, (function (FE) { 'use strict';
+    typeof define === 'function' && define.amd ? define(['froala-editor'], factory) :
+      (factory(global.FroalaEditor));
+}(this, (function (FE) {
+  'use strict';
 
   FE = FE && FE.hasOwnProperty('default') ? FE['default'] : FE;
 
@@ -19,6 +20,23 @@
     translation: {
       // Place holder
       'Type something': 'Digite algo',
+      // Basic formatting
+      'Text Color': 'Cor do texto',
+      'Background Color': 'Cor de fundo',
+      'Inline Class': 'Classe Inline',
+      'Default': 'Padrão',
+      'Lower Alpha': 'Alfa minúsculo',
+      'Lower Greek': 'Grego minúsculo',
+      'Lower Roman': 'Roman minúsculo',
+      'Upper Alpha': 'Alfa maiúsculo',
+      'Upper Roman': 'Roman maiúscula',
+      'Circle': 'Círculo',
+      'Disc': 'Disco',
+      'Square': 'Quadrado',
+      'Single': 'Único',
+      'Double': 'Duplo',
+      'Insert Files': 'Inserir arquivos',
+      'Download PDF': 'Baixar PDF',
       // Basic formatting
       'Bold': 'Negrito',
       'Italic': 'Itálito',
@@ -36,7 +54,7 @@
       'Style': 'Estilo',
       // Font
       'Font Family': 'Fonte',
-      'Font Size': 'Tamanho',
+      'Font Size': 'Tamanho da Fonte',
       // Colors
       'Colors': 'Cores',
       'Background': 'Fundo',
