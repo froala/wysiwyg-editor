@@ -1,5 +1,5 @@
 /*!
- * froala_editor v4.0.15 (https://www.froala.com/wysiwyg-editor)
+ * froala_editor v4.0.16 (https://www.froala.com/wysiwyg-editor)
  * License https://froala.com/wysiwyg-editor/terms/
  * Copyright 2014-2022 Froala Labs
  */
@@ -37,8 +37,9 @@
       // Font
       'Font Family': 'Lettertype',
       'Font Size': 'Lettergrootte',
-      'Text color': 'Tekstkleur',
-      'Background color': 'Achtergrondkleur',
+      'Text Color': 'Tekstkleur',
+      'Background Color': 'Achtergrondkleur',
+      'Line Height': 'Lijnhoogte',
       // Colors
       'Colors': 'Kleuren',
       'Background': 'Achtergrond',

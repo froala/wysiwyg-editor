@@ -1,5 +1,5 @@
 /*!
- * froala_editor v4.0.15 (https://www.froala.com/wysiwyg-editor)
+ * froala_editor v4.0.16 (https://www.froala.com/wysiwyg-editor)
  * License https://froala.com/wysiwyg-editor/terms/
  * Copyright 2014-2022 Froala Labs
  */
@@ -34,6 +34,23 @@
       'More': 'Mais',
       'Update': 'Atualizar',
       'Style': 'Estilo',
+      // Basic formatting
+      'Text Color': 'Cor do texto',
+      'Background Color': 'Cor de fundo',
+      'Inline Class': 'Classe Inline',
+      'Default': 'Padrão',
+      'Lower Alpha': 'Alfa minúsculo',
+      'Lower Greek': 'Grego minúsculo',
+      'Lower Roman': 'Roman minúsculo',
+      'Upper Alpha': 'Alfa maiúsculo',
+      'Upper Roman': 'Roman maiúscula',
+      'Circle': 'Círculo',
+      'Disc': 'Disco',
+      'Square': 'Quadrado',
+      'Single': 'Único',
+      'Double': 'Duplo',
+      'Insert Files': 'Inserir arquivos',
+      'Download PDF': 'Baixar PDF',
       // Font
       'Font Family': 'Fonte',
       'Font Size': 'Tamanho',

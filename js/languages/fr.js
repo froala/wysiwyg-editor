@@ -1,5 +1,5 @@
 /*!
- * froala_editor v4.0.15 (https://www.froala.com/wysiwyg-editor)
+ * froala_editor v4.0.16 (https://www.froala.com/wysiwyg-editor)
  * License https://froala.com/wysiwyg-editor/terms/
  * Copyright 2014-2022 Froala Labs
  */
@@ -37,8 +37,9 @@
       // Font
       'Font Family': "Polices de caract\xE8res",
       'Font Size': 'Taille de police',
-      'Text Color': 'Couleur de police',
+      'Text Color': 'Couleur du texte',
       'Background Color': 'Couleur d\'arri\xE8re plan',
+      'Line Height': 'Hauteur de la ligne',
       // Colors
       'Colors': 'Couleurs',
       'Background': "Arri\xE8re-plan",
@@ -52,7 +53,6 @@
       'Heading 2': 'Titre 2',
       'Heading 3': 'Titre 3',
       'Heading 4': 'Titre 4',
-      'Line Height': 'Interligne',
       'Single': 'Célibataire',
       // Style
       'Paragraph Style': 'Style de paragraphe',

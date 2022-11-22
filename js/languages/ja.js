@@ -1,5 +1,5 @@
 /*!
- * froala_editor v4.0.15 (https://www.froala.com/wysiwyg-editor)
+ * froala_editor v4.0.16 (https://www.froala.com/wysiwyg-editor)
  * License https://froala.com/wysiwyg-editor/terms/
  * Copyright 2014-2022 Froala Labs
  */
@@ -269,7 +269,10 @@
       'More Text': 'より多くのテキスト',
       'More Paragraph': 'もっと段落',
       'More Rich': 'もっとリッチ',
-      'More Misc': 'その他'
+      'More Misc': 'その他',
+      'Text Color': 'テキストの色',
+      'Background Color': '背景色',
+      'Line Height': '行の高さ'
     },
     direction: 'ltr'
   };

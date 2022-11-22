@@ -1,5 +1,5 @@
 /*!
- * froala_editor v4.0.15 (https://www.froala.com/wysiwyg-editor)
+ * froala_editor v4.0.16 (https://www.froala.com/wysiwyg-editor)
  * License https://froala.com/wysiwyg-editor/terms/
  * Copyright 2014-2022 Froala Labs
  */
@@ -45,6 +45,9 @@
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
+
+.fr-view li img.fr-dii.fr-fil {
+  margin-right: 20px; }
 
 .fr-view {
   word-wrap: break-word; }
@@ -291,6 +294,10 @@
     background-clip: padding-box; }
   .fr-view button.fr-large, .fr-view input.fr-large, .fr-view textarea.fr-large {
     font-size: 24px; }
+
+.fr-view span.fr-img-caption.fr-dii.fr-fil,
+.fr-view p img.fr-dii.fr-fil {
+  margin-right: 15px; }
 
 /**
  * Image style.
