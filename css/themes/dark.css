@@ -1,5 +1,5 @@
 /*!
- * froala_editor v4.0.18 (https://www.froala.com/wysiwyg-editor)
+ * froala_editor v4.0.19 (https://www.froala.com/wysiwyg-editor)
  * License https://froala.com/wysiwyg-editor/terms/
  * Copyright 2014-2023 Froala Labs
  */
@@ -475,13 +475,13 @@
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; }
 .dark-theme .fr-icons {
   padding: 10px 20px 0; }
-.dark-theme .half-circle {
+.dark-theme .fr-half-circle {
   border-bottom: 0; }
-.dark-theme .checkbox-container input {
+.dark-theme .fr-checkbox-container input {
   opacity: 0;
   height: 0;
   width: 0; }
-.dark-theme .checkmark {
+.dark-theme .fr-checkmark {
   top: 0;
   left: 0; }
 .dark-theme .fr-cloud-icon {
@@ -582,9 +582,9 @@
   font-weight: 200; }
 .dark-theme .fr-autoplay-checkbox-label {
   margin: 0; }
-.dark-theme .checkbox-container .checkmark:after {
+.dark-theme .fr-container .fr-checkmark:after {
   border-width: 0 3px 3px 0; }
-.dark-theme .file-item-details .file-description {
+.dark-theme .fr-file-item-details .file-description {
   font-weight: 300; }
 .dark-theme #myprogressBar {
   background-color: #4CAF50; }

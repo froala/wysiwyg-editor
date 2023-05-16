@@ -1,5 +1,5 @@
 /*!
- * froala_editor v4.0.18 (https://www.froala.com/wysiwyg-editor)
+ * froala_editor v4.0.19 (https://www.froala.com/wysiwyg-editor)
  * License https://froala.com/wysiwyg-editor/terms/
  * Copyright 2014-2023 Froala Labs
  */
@@ -781,7 +781,7 @@ textarea.fr-code {
   .fr-files-upload-layer {
     padding-top: 20px;
     padding-bottom: 20px; } }
-.half-circle {
+.fr-half-circle {
   width: 60px;
   height: 25px;
   background-color: white;
@@ -797,15 +797,15 @@ textarea.fr-code {
   margin-left: -25px; }
 
 /* headlines with lines */
-.decorated {
+.fr-decorated {
   overflow: hidden;
   text-align: center; }
 
-.decorated > span {
+.fr-decorated > span {
   position: relative;
   display: inline-block; }
 
-.decorated > span:before, .decorated > span:after {
+.fr-decorated > span:before, .fr-decorated > span:after {
   content: '';
   position: absolute;
   top: 50%;
@@ -814,17 +814,17 @@ textarea.fr-code {
   /* half of limiter*/
   margin: 0 20px; }
 
-.decorated > span:before {
+.fr-decorated > span:before {
   right: 100%; }
 
-.decorated > span:after {
+.fr-decorated > span:after {
   left: 100%; }
 
 .fr-align-right {
   float: right; }
 
 /* The checkbox-container */
-.checkbox-container {
+.fr-checkbox-container {
   display: inline-block;
   position: relative;
   padding-left: 20px;
@@ -865,7 +865,7 @@ button[data-cmd="insertAll"] {
     top: 3.2px !important; }
 
 /* Hide the browser's default checkbox */
-.checkbox-container input {
+.fr-checkbox-container input {
   position: absolute;
   opacity: 0;
   cursor: pointer;
@@ -873,7 +873,7 @@ button[data-cmd="insertAll"] {
   width: 0; }
 
 /* Create a custom checkbox */
-.checkmark {
+.fr-checkmark {
   position: absolute;
   top: 0;
   left: 0;
@@ -1060,10 +1060,10 @@ button[data-cmd="insertAll"] {
   right: 10%;
   z-index: 2147483642; }
 
-.file-item-thumbnail-hover {
+.fr-file-item-thumbnail-hover {
   transition: transform .2s; }
 
-.file-item-thumbnail-hover:hover {
+.fr-file-item-thumbnail-hover:hover {
   -ms-transform: scale(1.3);
   -webkit-transform: scale(1.3);
   transform: scale(1.3); }
@@ -1277,25 +1277,25 @@ button[data-cmd="insertAll"] {
   cursor: default !important; }
 
 /* On mouse-over, add a grey background color */
-.checkbox-container:hover input ~ .checkmark {
+.fr-checkbox-container:hover input ~ .fr-checkmark {
   background-color: #ccc; }
 
 /* When the checkbox is checked, add a blue background */
-.checkbox-container input:checked ~ .checkmark {
+.fr-checkbox-container input:checked ~ .fr-checkmark {
   background-color: #2196F3; }
 
 /* Create the checkmark/indicator (hidden when not checked) */
-.checkmark:after {
+.fr-checkmark:after {
   content: "";
   position: absolute;
   display: none; }
 
 /* Show the checkmark when checked */
-.checkbox-container input:checked ~ .checkmark:after {
+.fr-checkbox-container input:checked ~ .fr-checkmark:after {
   display: block; }
 
 /* Style the checkmark/indicator */
-.checkbox-container .checkmark:after {
+.fr-container .fr-checkmark:after {
   left: 5px;
   top: 2px;
   width: 3px;
@@ -1306,11 +1306,11 @@ button[data-cmd="insertAll"] {
   -ms-transform: rotate(45deg);
   transform: rotate(45deg); }
 
-.file-item-details .file-name {
+.fr-file-item-details .file-name {
   font-weight: bold;
   display: inline; }
 
-.file-item-details .file-description {
+.fr-file-item-details .file-description {
   font-weight: 300;
   font-size: 11px;
   display: inline; }
@@ -1652,7 +1652,7 @@ button[data-cmd="insertAll"] {
 .fr-hovered-over-file {
   background-color: #F0F0F0; }
 
-.thumbnail-padding {
+.fr-thumbnail-padding {
   padding-right: 4px; }
 
 .fr-clearfix::after {
