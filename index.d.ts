@@ -1,167 +1,20 @@
 declare module "froala-editor" {
-  /**
-   * Define a custom icon.
-   *
-   * @param name Label given to this icon to be used in registering commands etc...
-   * @param parameters The parameters required to inject the icon into the template library's html template
-   */
-  export function DefineIcon(
-    name: string,
-    parameters: Partial<DefineIconParameters>
-  ): object;
-
-  export interface DefineIconParameters {
-    /**
-     * Template to be used to resolve the icon. Default is font_awesome.
-     * The values passed from DefineIconParameters will be injected into this templates html via parameter expansion.
-     */
-    template: string;
-
-    /**
-     * Default parameters available. Refer to ICON_TEMPLATES for more info.
-     */
-    NAME: string;
-    SRC: string;
-    ALT: string;
-    FA5NAME: string;
-    SVG_KEY: string;
-  }
-
-  /**
-   * Set the default icon template.
-
-   * By default the editor is using the font_awesome template but that can be changed.
-   */
-  export const ICON_DEFAULT_TEMPLATE: string;
-
-  /**
-   * Default icon templates.
-   * When the editor renders an icon it is using one of the templates defined. By default the editor comes
-   * with 3 templates: FontAwesome font, text and image.
-   *
-   *  FroalaEditor.ICON_TEMPLATES = {
-   *     font_awesome: '<i class="fa fa-[NAME]" aria-hidden="true"></i>,',
-   *     font_awesome_5: '<i class="fas fa-[FA5NAME]" aria-hidden="true"></i>',
-   *     font_awesome_5s: '<i class="far fa-[FA5NAME]" aria-hidden="true"></i>',
-   *     text: '<span style="text-align: center;">[NAME]</span>',
-   *     image: '<img src=[SRC] alt=[ALT] />',
-   *     svg: '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">[PATH]</svg>'
-   *   }
-   */
-  export const ICON_TEMPLATES: GenericObject<string>;
-
-  /**
-   * Registers a button
-   *
-   * Once a command is defined it can be included in any option that is using buttons:
-   * - imageAltButtons
-   * - imageEditButtons
-   * - imageInsertButtons
-   * - imageSizeButtons
-   * - linkEditButtons
-   * - linkInsertButtons
-   * - tableColorsButtons
-   * - tableEditButtons
-   * - tableInsertButtons
-   * - toolbarButtons
-   * - toolbarButtonsMD
-   * - toolbarButtonsSM
-   * - toolbarButtonsXS
-   * - videoEditButtons
-   * - videoInsertButtons or videoSizeButtons
-   *
-   * @param name Label given to the commang to be used in registering in button options
-   * @param parameters
-   */
-  export function RegisterCommand(
-    name: string,
-    parameters: Partial<RegisterCommandParameters>
-  ): void;
-
-  export interface RegisterCommandParameters {
-    type: string;
-    // Button title.
-    title: string;
-
-    // Specify the icon for the button.
-    // If this option is not specified, the button name will be used.
-    icon: string;
-
-    // Save the button action into undo stack.
-    undo: boolean;
-
-    // Focus inside the editor before the callback.
-    focus: boolean;
-
-    // Show the button on mobile or not.
-    showOnMobile: boolean;
-
-    // Refresh the buttons state after the callback.
-    refreshAfterCallback: boolean;
-
-    // Called when the button is hit.
-    // The current context is the editor instance.
-    callback: (buttonName: string) => void;
-
-    // Called when the button state might have changed.
-    refresh: (button: any) => void;
-    plugin: string;
-  }
-
-  /**
-   *
-   * @param keyCode Key code of the key pressed
-   * @param command Command that should be triggered
-   * @param commandValue Value passed to the command
-   * @param shortcutLetter The letter to be shown in the tooltip for shortcut
-   * @param shiftKeyRequired Shortcut needs to have the SHIFT key pressed
-   * @param optionKeyRequired Shortcut needs to have the OPTION key pressed
-   */
-  export function RegisterShortcut(
-    keyCode: number,
-    command: string,
-    commandValue: any,
-    shortcutLetter?: string,
-    shiftKeyRequired?: boolean,
-    optionKeyRequired?: boolean
-  ): void;
-
-  /**
-   * Register a placeholder for injecting templates into the editor's html
-   * @param name Name of Template
-   * @param template HTML to inject
-   */
-  export function RegisterTemplate(name: string, template: string): void;
-
-  // Froala config defaults
-  export const DEFAULTS: Partial<FroalaOptions>;
-
-  export interface CustomPlugin {
-    _init(): void;
-  }
-
-  // Froala Plugins
-  export const PLUGINS: GenericObject<(editor: FroalaEditor) => CustomPlugin>;
-
-  export function RegisterQuickInsertButton(
-    name: string,
-    parameters: object
-  ): void;
-
-  export function DefineIconTemplate(name: string, template: string): void;
-
   export default class FroalaEditor {
-    constructor(element: any, options: Partial<FroalaOptions>);
+    constructor(element: any, options: Partial<FroalaOptions>, fun?: () => any);
     $oel: any;
     $el: any;
     $tb: any;
-    id: number;
-    MARKERS: string; //froala editor marker
-    ENTER_BR: number;
-    ENTER_P: number;
-    ENTER_DIV: number;
-    KEYCODE: { [key: string]: number };
-    COMMANDS: { [key:string]: object };
+    static ID: number;
+    static XS: number;
+    static SM: number;
+    static MD: number;
+    static LG: number;
+    static MARKERS: string; 
+    static ENTER_BR: ENTER_BR;
+    static ENTER_P: ENTER_P;
+    static ENTER_DIV: ENTER_DIV;
+    static KEYCODE:keycodeParameters;
+    static COMMANDS: Partial<commandsInterface>;
     destroy(): object;
     opts: FroalaOptions;
     align: Align;
@@ -222,20 +75,647 @@ declare module "froala-editor" {
     word_paste: Word_paste;
     refresh: Refresh;
     shortcuts: Shortcuts;
+    static DefineIcon: (name: string, parameters: Partial<DefineIconParameters>) => object;
+    static RegisterCommand: (name: string, parameters: Partial<RegisterCommandParameters>) => void;
+    static RegisterShortcut: (keyCode: number,
+      command: string,
+      commandValue: any,
+      shortcutLetter?: string,
+      shiftKeyRequired?: boolean,
+      optionKeyRequired?: boolean
+    ) => void;
+    static RegisterTemplate: (name: string, template: string) => void;
+    static RegisterQuickInsertButton: (name: string, parameters: object) => void;
+    static DefineIconTemplate: (name: string, template: string) => void;
+    static ICON_DEFAULT_TEMPLATE: string;
+    static ICON_TEMPLATES: Partial<iconTemplates>;
+    static DEFAULTS: Partial<FroalaOptions> | { [key: string]: any };
+    static PLUGINS: (GenericObject<(editor: FroalaEditor) => CustomPlugin>) | any;
+    static MODULES: any | { [key: string]: any | { [key: string]: any } };
+    static BLOCK_TAGS: string[];
+    static END_MARKER: string;
+    static FILEICONS: Partial<fileIcons>;
+    static HAIR_SPACE: string;
+    static HTML5Map: {B: string, I: string, STRIKE: string};
+    static ICONS: Partial<icons>;
+    static INSTANCES: FroalaEditor[];
+    static INVISIBLE_SPACE: string;
+    static LANGUAGE: object;
+    static MAIL_REGEX: RegExp;
+    static NO_DELETE_TAGS: string[];
+    static OPTS_MAPPING: object;
+    static POPUP_TEMPLATES: { [key: string]: any};
+    static POWERED_BY: string;
+    static SHARED: object;
+    static SHORTCUTS_MAP: object;
+    static SIMPLE_ENTER_TAGS: string[];
+    static START_MARKER: string;
+    static SVG: Partial<svg>;
+    static UNICODE_NBSP: string;
+    static VOID_ELEMENTS: string[];
+    static TOOLBAR_BUTTONS: Partial<ToolbarButtons>;
+    static TOOLBAR_BUTTONS_MD: any;
+    static TOOLBAR_BUTTONS_SM: Partial<ToolbarButtons>;
+    static TOOLBAR_BUTTONS_XS: Partial<ToolbarButtons>;
+    static TOOLBAR_VISIBLE_BUTTONS: number;
+    static VERSION: string;
+    static IMAGE_ALLOW_REGEX: RegExp;
+    static VIDEO_EMBED_REGEX: RegExp;
+    static IMAGE_EMBED_REGEX: RegExp;
+    static IMAGE_TYPE: string;
+    static VIDEO_PROVIDERS: object[];
+    static URLRegEx: string;
+    static LinkRegEx: string;
+    static QUICK_INSERT_BUTTONS: object;
+    LinkProtocols: string[];
+    LinkRegEx: string;
+    LinkRegExAuth: string;
+    LinkRegExCommon: string;
+    LinkRegExEnd: string;
+    LinkRegExHTTP: string;
+    LinkRegExTLD: string;
+    LinkRegExWWW: string;
     icon: Icon;
     accessibility: Accessibility;
   }
 
   export type GenericObject<T = any> = { [key: string]: T };
 
-  export interface ToolbarButtons {
-    [key: string]: {
-      buttons: string[];
-      align?: string;
-      buttonsVisible?: number;
-    };
+  export interface DefineIconParameters {
+      /**
+       * Template to be used to resolve the icon. Default is font_awesome.
+       * The values passed from DefineIconParameters will be injected into this templates html via parameter expansion.
+       */
+      template: string;
+
+      /**
+       * Default parameters available. Refer to ICON_TEMPLATES for more info.
+       */
+      NAME: string;
+      SRC: string;
+      ALT: string;
+      FA5NAME: string;
+      SVG_KEY: string;
   }
 
+  export interface RegisterCommandParameters {
+      type: string;
+      // Button title.
+      title: string;
+
+      // Specify the icon for the button.
+      // If this option is not specified, the button name will be used.
+      icon: string;
+
+      // Save the button action into undo stack.
+      undo: boolean;
+
+      // Focus inside the editor before the callback.
+      focus: boolean;
+
+      // Show the button on mobile or not.
+      showOnMobile: boolean;
+
+      // Refresh the buttons state after the callback.
+      refreshAfterCallback: boolean;
+
+      // Called when the button is hit.
+      // The current context is the editor instance.
+      callback: (buttonName: string, val?: any, params?: any) => void;
+
+      // Called when the button state might have changed.
+      refresh: (button: any) => void;
+      plugin: string;
+      popup: boolean;
+      popups: any;
+      customPlugin: any;
+      toggle: boolean;
+      [key: string]: any;
+  }
+
+  export interface iconTemplates {
+      font_awesome: string,
+      font_awesome_5: string,
+      font_awesome_5r: string,
+      font_awesome_5l: string,
+      font_awesome_5b: string,
+      text: string,
+      image: string,
+      svg: string,
+      empty: string,
+      [key: string]: string
+  }
+
+  export interface fileIcons{
+      docIcon: {
+        extension: string,
+        path: string
+      },
+      gifIcon: {
+        extension: string,
+        path: string
+      },
+      jpegIcon: {
+        extension: string,
+        path: string
+      },
+      logIcon: {
+        extension: string,
+        path: string
+      },
+      movIcon: {
+        extension: string,
+        path: string
+      },
+      ogvIcon: {
+        extension: string,
+        path: string
+      },
+      pngIcon: {
+        extension: string,
+        path: string
+      },
+      txtIcon: {
+        extension: string,
+        path: string
+      },
+      webmIcon: {
+        extension: string,
+        path: string
+      },
+      webpIcon: {
+        extension: string,
+        path: string
+      },
+      wmvIcon: {
+        extension: string,
+        path: string
+      },
+      xlsIcon: {
+        extension: string,
+        path: string
+      },
+    
+      xlsxIcon: {
+        extension: string,
+        path: string
+      },
+      zipIcon: {
+        extension: string,
+        path: string
+      },
+      docxIcon: {
+        extension: string,
+        path: string
+      },
+      jpgIcon: {
+        extension: string,
+        path: string
+      },
+      mp3Icon: {
+        extension: string,
+        path: string
+      },
+      mp4Icon: {
+        extension: string,
+        path: string
+      },
+      oggIcon: {
+        extension: string,
+        path: string
+      },
+      pdfIcon: {
+        extension: string,
+        path: string
+      },
+      defaultIcon: {
+        extension: string,
+        path: string
+      },
+      [key: string]: { extension?: string, path?: string | RegExp }
+  }
+
+  export interface icons{
+      bold: {
+        NAME: string,
+        SVG_KEY: string
+      },
+      italic: {
+        NAME: string,
+        SVG_KEY: string
+      },
+      underline: {
+        NAME: string,
+        SVG_KEY: string
+      },
+      strikeThrough: {
+        NAME: string,
+        SVG_KEY: string
+      },
+      subscript: {
+        NAME: string,
+        SVG_KEY: string
+      },
+      superscript: {
+        NAME: string,
+        SVG_KEY: string
+      },
+      cancel: {
+        NAME: string,
+        SVG_KEY: string
+      },
+      color: {
+        NAME: string,
+        SVG_KEY: string
+      },
+      outdent: {
+        NAME: string,
+        SVG_KEY: string
+      },
+      indent: {
+        NAME: string,
+        SVG_KEY: string
+      },
+      undo: {
+        NAME: string,
+        FA5NAME: string,
+        SVG_KEY: string
+      },
+      redo: {
+        NAME: string,
+        FA5NAME: string,
+        SVG_KEY: string
+      },
+    
+      insert: {
+        NAME: string,
+        SVG_KEY: string
+      },
+      insertAll: {
+        NAME: string,
+        SVG_KEY: string
+      },
+      insertHR: {
+        NAME: string,
+        SVG_KEY: string
+      },
+      clearFormatting: {
+        NAME: string,
+        SVG_KEY: string
+      },
+      selectAll: {
+        NAME: string,
+        SVG_KEY: string
+      },
+      minimize: {
+        NAME: string,
+        SVG_KEY: string
+      },
+      moreText: {
+        NAME: string,
+        SVG_KEY: string
+      },
+      moreParagraph: {
+        NAME: string,
+        SVG_KEY: string
+      },
+      moreRich: {
+        NAME: string,
+        SVG_KEY: string
+      },
+      moreMisc: {
+        NAME: string,
+        SVG_KEY: string
+      },
+      [key: string]: {  
+          NAME: string,
+          SVG_KEY: string,
+          FA5NAME?: string
+      }
+  }
+
+  export interface keycodeParameters {
+      BACKSPACE: number,
+      TAB: number,
+      ENTER: number,
+      SHIFT: number,
+      CTRL: number,
+      ALT: number,
+      ESC: number,
+      SPACE: number,
+      ARROW_LEFT: number,
+      ARROW_UP: number,
+      ARROW_RIGHT: number,
+      ARROW_DOWN: number,
+      DELETE: number,
+      ZERO: number,
+      ONE: number,
+      TWO: number,
+      THREE: number,
+      FOUR: number,
+      FIVE: number,
+      SIX: number,
+      SEVEN: number,
+      EIGHT: number,
+      NINE: number,
+      FF_SEMICOLON: number, 
+      FF_EQUALS: number, 
+      QUESTION_MARK: number, 
+      A: number,
+      B: number,
+      C: number,
+      D: number,
+      E: number,
+      F: number,
+      G: number,
+      H: number,
+      I: number,
+      J: number,
+      K: number,
+      L: number,
+      M: number,
+      N: number,
+      O: number,
+      P: number,
+      Q: number,
+      R: number,
+      S: number,
+      T: number,
+      U: number,
+      V: number,
+      W: number,
+      X: number,
+      Y: number,
+      Z: number,
+      META: number,
+      NUM_ZERO: number,
+      NUM_ONE: number,
+      NUM_TWO: number,
+      NUM_THREE: number,
+      NUM_FOUR: number,
+      NUM_FIVE: number,
+      NUM_SIX: number,
+      NUM_SEVEN: number,
+      NUM_EIGHT: number,
+      NUM_NINE: number,
+      NUM_MULTIPLY: number,
+      NUM_PLUS: number,
+      NUM_MINUS: number,
+      NUM_PERIOD: number,
+      NUM_DIVISION: number,
+      F1: number,
+      F2: number,
+      F3: number,
+      F4: number,
+      F5: number,
+      F6: number,
+      F7: number,
+      F8: number,
+      F9: number,
+      F10: number,
+      F11: number,
+      F12: number,
+      FF_HYPHEN: number, 
+      SEMICOLON: number, 
+      DASH: number, 
+      EQUALS: number, 
+      COMMA: number, 
+      HYPHEN: number, 
+      PERIOD: number, 
+      SLASH: number, 
+      APOSTROPHE: number, 
+      TILDE: number, 
+      SINGLE_QUOTE: number, 
+      OPEN_SQUARE_BRACKET: number, 
+      BACKSLASH: number, 
+      CLOSE_SQUARE_BRACKET: number, 
+      IME: number    
+  }
+
+  export interface svg {
+      add: string,
+      advancedImageEditor: string,
+      alignCenter: string,
+      alignJustify: string,
+      alignLeft: string,
+      alignRight: string,
+      anchors: string,
+      autoplay: string,
+      back: string,
+      backgroundColor: string,
+      blockquote: string,
+      bold: string,
+      cancel: string,
+      cellBackground: string,
+      cellBorderColor: string,
+      cellOptions: string,
+      cellStyle: string,
+      clearFormatting: string,
+      close: string,
+      codeView: string,
+      cogs: string,
+      columns: string,
+      edit: string,
+      exitFullscreen: string,
+      fileInsert: string,
+      fileManager: string,
+      markdown: string,
+      fontAwesome: string,
+      fontFamily: string,
+      fontSize: string,
+      fullscreen: string,
+      help: string,
+      horizontalLine: string,
+      imageAltText: string,
+      imageCaption: string,
+      imageClass: string,
+      imageDisplay: string,
+      imageManager: string,
+      imageSize: string,
+      indent: string,
+      inlineClass: string,
+      inlineStyle: string,
+      insert: string,
+      insertEmbed: string,
+      insertFile: string,
+      insertImage: string
+      insertLink: string,
+      insertMore: string,
+      insertTable: string,
+      insertVideo: string,
+      upload: string,
+      uploadFiles: string,
+      italic: string,
+      search: string,
+      lineHeight: string,
+      linkStyles: string,
+      mention: string,
+      minimize: string,
+      more: string,
+      openLink: string,
+      orderedList: string,
+      outdent: string,
+      pageBreaker: string,
+      paragraphFormat: string,
+      paragraphMore: string,
+      paragraphStyle: string,
+      pdfExport: string,
+      print: string,
+      redo: string,
+      removeTable: string,
+      insertAll: string,
+      remove: string,
+      replaceImage: string,
+      row: string,
+      selectAll: string,
+      smile: string,
+      spellcheck: string,
+      star: string,
+      strikeThrough: string,
+      subscript: string,
+      superscript: string,
+      symbols: string,
+      tags: string,
+      tableHeader: string,
+      tableFooter: string,
+      tableStyle: string,
+      textColor: string,
+      textMore: string,
+      underline: string,
+      undo: string,
+      unlink: string,
+      unorderedList: string,
+      verticalAlignBottom: string,
+      verticalAlignMiddle: string,
+      verticalAlignTop: string,
+      trackChanges: string,
+      showTrackChanges: string,
+      acceptAllChanges: string,
+      rejectAllChanges: string,
+      acceptSingleChange: string,
+      rejectSingleChange: string,
+      [key: string]: string
+  }
+  
+
+  export interface commandsInterface
+  {
+      align:Align;
+      bold: {
+      title: string,
+      toggle: boolean,
+      refresh($btn: any): void
+      },
+      italic: {
+      title: string,
+      toggle: boolean,
+      refresh($btn: any): void
+      },
+      underline: {
+      title: string,
+      toggle: boolean,
+      refresh($btn: any): void
+      },
+      strikeThrough: {
+      title: string,
+      toggle: boolean,
+      refresh($btn: any): void
+      },
+      subscript: {
+      title: string,
+      toggle: boolean,
+      refresh($btn: any): void
+      },
+      superscript: {
+      title: string,
+      toggle: boolean,
+      refresh($btn: any): void
+      },
+      outdent: {
+      title: string
+      },
+      indent: {
+      title: string
+      },
+      undo: {
+      title: string,
+      undo: boolean,
+      forcedRefresh: boolean,
+      disabled: boolean
+      },
+      redo: {
+      title: string,
+      undo: boolean,
+      forcedRefresh: boolean,
+      disabled: boolean
+      },
+      insertHR: {
+      title: string
+      },
+      clearFormatting: {
+      title: string
+      },
+      selectAll: {
+      title: string,
+      undo: boolean
+      },
+      moreText: {
+      title: string,
+      undo: boolean
+      },
+      moreParagraph: {
+      title: string,
+      undo: boolean
+      },
+      moreRich: {
+      title: string,
+      undo: boolean
+      },
+      moreMisc: {
+      title: string,
+      undo: boolean
+      }
+  }
+
+
+  export interface ToolbarButtons {
+      'moreText': {
+        'buttons': string[],
+         [key: string]: any
+      },
+      'moreParagraph': {
+        'buttons': string[],
+        [key: string]: any
+      },
+      'moreRich': {
+        'buttons': string[],
+        'buttonsVisible': number,
+        [key: string]: any
+      },
+      'moreMisc': {
+        'buttons': string[],
+        'align': string,
+        'buttonsVisible': number,
+        [key: string]: any
+      },
+      'trackChanges': {
+        'buttons': string[],
+        'buttonsVisible': number,
+        [key: string]: any
+      },
+      [key: string]: {
+        buttons: string[];
+        align?: string;
+        buttonsVisible?: number;
+        [key: string]: any
+      };
+  }
+
+  export interface CustomPlugin {
+    [key: string]: any | { [key: string]: any; };
+   
+  } 
+  
   export interface EmoticonSet {
     id: string;
     code: string;
@@ -249,9 +729,13 @@ declare module "froala-editor" {
   export type DeleteMethod = 'POST' | 'DELETE';
   export type GetMethod = 'POST' | 'GET';
 
+  export type ENTER_BR = number;
+  export type ENTER_P = number;
+  export type ENTER_DIV = number;
+
   export interface SpecialCharacterSet {
     title: string;
-    char: string;
+    char?: string;
     list: {
       char: string;
       desc: string;
@@ -305,7 +789,7 @@ declare module "froala-editor" {
 
     // Code View
     codeMirror: any;
-    codeMirrorOptions: object; //GenericObject
+    codeMirrorOptions: object; 
     codeViewKeepActiveButtons: string[];
 
     // Colors
@@ -341,7 +825,7 @@ declare module "froala-editor" {
     fileInsertButtons: string[];
     fileMaxSize: number;
     fileUpload: boolean;
-    fileUploadMethod: string; //POST,PUT
+    fileUploadMethod: string; 
     fileUploadParam: string;
     fileUploadParams: object;
     fileUploadToS3: object;
@@ -349,7 +833,7 @@ declare module "froala-editor" {
     fileUseSelectedText: boolean;
 
     // Font Family
-    fontFamily: GenericObject; //GenericObject
+    fontFamily: GenericObject; 
     fontFamilyDefaultSelection: string;
     fontFamilySelection: boolean;
 
@@ -362,7 +846,7 @@ declare module "froala-editor" {
     // Form
     formEditButtons: string[];
     formMultipleStyles: boolean;
-    formStyles: GenericObject; //GenericObject
+    formStyles: GenericObject; 
     formUpdateButtons: string[];
 
     // Licensing
@@ -372,13 +856,13 @@ declare module "froala-editor" {
     attribution: boolean;
     autoStart: boolean;
     autofocus: boolean;
-    direction: string; //'auto' | 'ltr' | 'rtl'
+    direction: string; 
     disableRightClick: boolean;
     documentReady: boolean;
     editInPopup: boolean;
     update: void;
     editorClass: string;
-    enter: number;
+    enter: ENTER_BR | ENTER_P | ENTER_DIV;
     fullPage: boolean;
     height: number;
     heightMax: number;
@@ -410,7 +894,8 @@ declare module "froala-editor" {
     pastePlain: boolean;
     placeholderText: string;
     pluginsEnabled: string[];
-    requestHeaders: GenericObject<string>; //GenericObject<string>
+    popupButtons: string[];
+    requestHeaders: GenericObject<string>; 
     requestWithCORS: boolean;
     requestWithCredentials: boolean;
     scrollableContainer: string;
@@ -422,10 +907,10 @@ declare module "froala-editor" {
     theme: string;
     toolbarBottom: boolean;
     toolbarButtons: object;
-    toolbarButtonsMD: Partial<ToolbarButtons>; //string[] //Partial<ToolbarButtons>
-    toolbarButtonsSM: Partial<ToolbarButtons>; //string[] //Partial<ToolbarButtons>
-    toolbarButtonsXS: Partial<ToolbarButtons>; //string[] //Partial<ToolbarButtons>
-    toolbarContainer: string; //string
+    toolbarButtonsMD: Partial<ToolbarButtons>; 
+    toolbarButtonsSM: Partial<ToolbarButtons>; 
+    toolbarButtonsXS: Partial<ToolbarButtons>; 
+    toolbarContainer: string; 
     toolbarInline: boolean;
     toolbarSticky: boolean;
     toolbarStickyOffset: number;
@@ -444,8 +929,8 @@ declare module "froala-editor" {
     imageAllowedTypes: string[];
     imageAltButtons: string[];
     imageCORSProxy: string;
-    imageDefaultAlign: MediaAlign; //MediaAlign
-    imageDefaultDisplay: DisplayType; //DisplayType
+    imageDefaultAlign: MediaAlign; 
+    imageDefaultDisplay: DisplayType; 
     imageDefaultMargin: number;
     imageDefaultWidth: number;
     imageEditButtons: string[];
@@ -462,11 +947,11 @@ declare module "froala-editor" {
     imageRoundPercent: boolean;
     imageSizeButtons: string[];
     imageSplitHTML: boolean;
-    imageStyles: GenericObject<string>; //GenericObject<string>
+    imageStyles: GenericObject<string>; 
     imageTUIOptions: object;
     imageTextNear: boolean;
     imageUpload: boolean;
-    imageUploadMethod: string; //POST,PUT
+    imageUploadMethod: string; 
     imageUploadParam: string;
     imageUploadParams: object;
     imageUploadRemoteUrls: boolean;
@@ -474,10 +959,10 @@ declare module "froala-editor" {
     imageUploadURL: string;
 
     // Image Manager
-    imageManagerDeleteMethod: DeleteMethod; //DeleteMethod
+    imageManagerDeleteMethod: DeleteMethod; 
     imageManagerDeleteParams: object;
     imageManagerDeleteURL: string;
-    imageManagerLoadMethod: GetMethod; //GetMethod
+    imageManagerLoadMethod: GetMethod; 
     imageManagerLoadParams: object;
     imageManagerLoadURL: string;
     imageManagerPageSize: number;
@@ -486,10 +971,10 @@ declare module "froala-editor" {
     imageManagerToggleTags: boolean;
 
     // Inline Style
-    inlineStyles: GenericObject<string>; //GenericObject<string>
+    inlineStyles: GenericObject<string>; 
 
     // Inline Class
-    inlineClasses: GenericObject<string>; //GenericObject<string>
+    inlineClasses: GenericObject<string>; 
 
     // Language
     language: string;
@@ -502,25 +987,25 @@ declare module "froala-editor" {
     // Link
     linkAlwaysBlank: boolean;
     linkAlwaysNoFollow: boolean;
-    linkAttributes: GenericObject; //GenericObject
+    linkAttributes: GenericObject; 
     linkAutoPrefix: string;
     linkConvertEmailAddress: boolean;
     linkEditButtons: string[];
     linkInsertButtons: string[];
-    linkList: GenericObject<string>[]; //GenericObject<string>[]
+    linkList: GenericObject<string>[]; 
     linkMultipleStyles: boolean;
     linkNoOpener: boolean;
     linkNoReferrer: boolean;
-    linkStyles: GenericObject<string>; //GenericObject<string>
+    linkStyles: GenericObject<string>; 
     linkText: boolean;
 
     // Paragraph Format
-    lineHeights: GenericObject<string>; //GenericObject<string>
+    lineHeights: GenericObject<string>; 
     paragraphDefaultSelection: string;
-    paragraphFormat: GenericObject<string>; //GenericObject<string>
+    paragraphFormat: GenericObject<string>;
     paragraphFormatSelection: boolean;
     paragraphMultipleStyles: boolean;
-    paragraphStyles: GenericObject<string>; //GenericObject<string>
+    paragraphStyles: GenericObject<string>;
 
     // Lists
     listAdvancedTypes: boolean;
@@ -537,7 +1022,7 @@ declare module "froala-editor" {
 
     // Special Characters
     specialCharButtons: string[];
-    specialCharactersSets: SpecialCharacterSet[]; //SpecialCharacterSet[]
+    specialCharactersSets: SpecialCharacterSet[]; 
 
     // SCAYT Spell Checker
     scaytAutoload: boolean;
@@ -546,14 +1031,14 @@ declare module "froala-editor" {
 
     // Save
     saveInterval: number;
-    saveMethod: string; //POST,PUT
+    saveMethod: string; 
     saveParam: string;
     saveParams: object;
     saveURL: string;
 
     // Table
     tableCellMultipleStyles: boolean;
-    tableCellStyles: GenericObject<string>; //GenericObject<string>
+    tableCellStyles: GenericObject<string>; 
     tableColors: string[];
     tableColorsButtons: string[];
     tableColorsStep: number;
@@ -567,13 +1052,13 @@ declare module "froala-editor" {
     tableResizer: boolean;
     tableResizerOffset: number;
     tableResizingLimit: number;
-    tableStyles: GenericObject<string>; //GenericObject<string>
+    tableStyles: GenericObject<string>; 
 
     // Video
     videoAllowedProviders: string[];
     videoAllowedTypes: string[];
-    videoDefaultAlign: string; //MediaAlign
-    videoDefaultDisplay: string; //DisplayType
+    videoDefaultAlign: string; 
+    videoDefaultDisplay: string; 
     videoDefaultWidth: number;
     videoEditButtons: string[];
     videoInsertButtons: string[];
@@ -581,14 +1066,14 @@ declare module "froala-editor" {
     videoMove: boolean;
     videoResize: boolean;
     videoResponsive: boolean;
-    videoSizeButtons: string[]; //boolean
+    videoSizeButtons: string[]; 
     videoSplitHTML: boolean;
     videoTextNear: boolean;
     videoUpload: boolean;
-    videoUploadMethod: string; //POST,PUT
+    videoUploadMethod: string; 
     videoUploadParam: string;
     videoUploadParams: object;
-    videoUploadToS3: object; //boolean
+    videoUploadToS3: object; 
     videoUploadURL: string;
 
     // Word
@@ -600,6 +1085,7 @@ declare module "froala-editor" {
 
     showChangesEnabled: boolean;
     trackChangesEnabled: boolean;
+    [key: string]: any;
   }
 
   export interface FroalaEvents {
@@ -627,9 +1113,9 @@ declare module "froala-editor" {
     //code view event
     'codeView.update': (this: FroalaEditor) => void;
     //commands event
-    'commands.after': (this: FroalaEditor, cmd: void, param1: void, param2: void) => void;
-    'commands.before': (this: FroalaEditor, cmd: void, param1: void, param2: void) => void;
-    'commands.mousedown': (this: FroalaEditor, button: void) => void;
+    'commands.after': (this: FroalaEditor, cmd: any, param1?: any, param2?: any) => void;
+    'commands.before': (this: FroalaEditor, cmd: any, param1?: any, param2?: any) => void;
+    'commands.mousedown': (this: FroalaEditor, button: any) => void;
     'commands.redo': (this: FroalaEditor) => void;
     'commands.undo': (this: FroalaEditor) => void;
     //html event
@@ -657,7 +1143,7 @@ declare module "froala-editor" {
     'imageManager.error': (this: FroalaEditor, error: object, response: any) => void;
     'imageManager.imageDeleted': (this: FroalaEditor, data: object) => void;
     'imageManager.imageLoaded': (this: FroalaEditor, img: object) => void;
-    'imageManager.imagesLoaded': (this: FroalaEditor, data: void) => void;
+    'imageManager.imagesLoaded': (this: FroalaEditor, data: any) => void;
     //link event
     'link.bad': (this: FroalaEditor, original_href: string) => void;
     'link.beforeInsert': (this: FroalaEditor, link: string, text: string, attrs: object) => boolean;
@@ -717,23 +1203,17 @@ declare module "froala-editor" {
     'embedly.beforeRemove': (this: FroalaEditor, embeded: object) => void;
     //file event
     'file.beforeUpload': (this: FroalaEditor, files: string) => boolean;
-    'file.error': (this: FroalaEditor, error: object, response: object) => boolean;
-    'file.inserted': (this: FroalaEditor, file: object, response: void) => void;
+    'file.error': (this: FroalaEditor, error: object, response: any) => boolean;
+    'file.inserted': (this: FroalaEditor, file: object, response: any) => void;
     'file.unlink': (this: FroalaEditor, link: Object) => boolean;
-    'file.uploaded': (this: FroalaEditor, response: void) => boolean;
-    'file.uploadedToS3': (this: FroalaEditor, link: void, key: void, response: void) => void;
+    'file.uploaded': (this: FroalaEditor, response: any) => boolean;
+    'file.uploadedToS3': (this: FroalaEditor, link: any, key: any, response: any) => void;
     //edit event
     'edit.on': (this: FroalaEditor) => void;
-    'edit.off': (this: FroalaEditor) => object;
+    'edit.off': (this: FroalaEditor) => void;
     //element event
     'element.dropped': (this: FroalaEditor, element: object) => void;
   }
-
-  //export interface JQuery { }
-  //export interface JQueryEventObject { }
-  //export interface JQueryInputEventObject { }
-  //export interface JQueryKeyEventObject { }
-  //export interface JQueryMouseEventObject { }
 
   export interface FilesManager {
     _init(): void;
@@ -789,7 +1269,7 @@ declare module "froala-editor" {
     applyStyle(className: string): object;
     display(displayType: DisplayType): any;
     get(): object;
-    insert(link: string, sanitize: boolean, data: { [key: string]: any }, existingImage: any, response: object): object;
+    insert(link: string, sanitize: boolean, data: { [key: string]: any }, existingImage: any, response?: object): object;
     remove(image: any): object;
     setAlt(alternateText: string): object;
     setSize(width: string, height: string): object;
@@ -826,13 +1306,19 @@ declare module "froala-editor" {
   export type AlignType = 'left' | 'right' | 'center' | 'justify';
 
   export interface Align {
-    // Set the alignment of the selected paragraphs.
-    apply(alignType: AlignType): object;
-    // Refresh the alignment of the selected paragraphs.
-    refresh(button: Element): object;
-    refreshOnShow(button: any, dropdown: any): void;
-    refreshForToolbar(button: any): void;
-  }
+      // Set the alignment of the selected paragraphs.
+      apply(alignType: AlignType): object;
+      // Refresh the alignment of the selected paragraphs.
+      refresh(button: Element): object;
+      refreshOnShow(button: any, dropdown: any): void;
+      refreshForToolbar(button: any): void;
+      options: {
+        center: string, 
+        justify: string,
+        left: string,
+        right: string
+      }
+    }
 
   export interface Button {
     _init(): void;
@@ -868,7 +1354,7 @@ declare module "froala-editor" {
     // Cleans the invisible spaces.
     invisibleSpaces(dirtyHtml: string): void;
     toHTML5(): void;
-    exec(html: string, func: any, parse_head: any) : any;
+    exec(html: string, func: any, parse_head: any): any;
   }
 
   export interface CodeView {
@@ -1018,9 +1504,9 @@ declare module "froala-editor" {
     // Focus into the editor.
     focus(): object;
     // Register an event.
-    on(name: string, callback: (event: Event) => void | boolean, first: boolean): object;
+    on(name: string, callback: (event: string, param1?: any, param2?: any) => void | boolean, first?: boolean): object;
     // Triggers an event.
-    trigger(name: string, args: any[], force: boolean): object;
+    trigger(name: string, args: any[], force?: boolean): object;
     $on($el: any, evs: string, selector: any, callback: any, shared: any): void;
     $off(): void;
   }
@@ -1147,7 +1633,7 @@ declare module "froala-editor" {
   }
 
   export interface InlineClass {
-    apply(value: string):  void;
+    apply(value: string): void;
     refreshOnShow($btn: any, $dropdown: any): void;
   }
 
@@ -1279,7 +1765,7 @@ declare module "froala-editor" {
     onRefresh(id: string, callback: () => void): object;
     refresh(id: string): object;
     setContainer(id: string, $container: any): void;
-    show( id: string, leftOffset: number, topOffset: number, height: number, applyLeftOffset: boolean): boolean;
+    show(id: string, leftOffset?: number, topOffset?: number, height?: number, applyLeftOffset?: boolean): boolean;
     onShow(id: string, callback: () => void): void;
     areVisible(new_instance: any): any;
     setFileListHeight($popup: any): any;
@@ -1393,7 +1879,7 @@ declare module "froala-editor" {
     _init(): boolean;
     enable(): void;
     disable(): void;
-    hide(e: any): boolean;
+    hide(): boolean;
     show(): boolean;
     showInline(element: Element, force: boolean): void;
     setMoreToolbarsHeight(): void;
