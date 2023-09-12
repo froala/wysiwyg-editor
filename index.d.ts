@@ -1,9 +1,16 @@
 declare module "froala-editor" {
   export default class FroalaEditor {
-    constructor(element: any, options: Partial<FroalaOptions>, fun?: () => any);
+    constructor(element: any, options: Partial<FroalaOptions>, fun?: (this: FroalaEditor) => any);
     $oel: any;
     $el: any;
     $tb: any;
+    $box: any;
+    $wp: any;
+    $doc: any;
+    $sc: any;
+    $second_tb: any;
+    $tooltip: any;
+    el: any;
     static ID: number;
     static XS: number;
     static SM: number;
@@ -13,7 +20,7 @@ declare module "froala-editor" {
     static ENTER_BR: ENTER_BR;
     static ENTER_P: ENTER_P;
     static ENTER_DIV: ENTER_DIV;
-    static KEYCODE:keycodeParameters;
+    static KEYCODE: keycodeParameters;
     static COMMANDS: Partial<commandsInterface>;
     destroy(): object;
     opts: FroalaOptions;
@@ -100,7 +107,8 @@ declare module "froala-editor" {
     static ICONS: Partial<icons>;
     static INSTANCES: FroalaEditor[];
     static INVISIBLE_SPACE: string;
-    static LANGUAGE: object;
+    static LANGUAGE: Languages;
+    static EXTERNAL_COMMANDS: any;
     static MAIL_REGEX: RegExp;
     static NO_DELETE_TAGS: string[];
     static OPTS_MAPPING: object;
@@ -137,6 +145,8 @@ declare module "froala-editor" {
     LinkRegExWWW: string;
     icon: Icon;
     accessibility: Accessibility;
+    [key: string]: any;
+    static [key: string]: any;
   }
 
   export type GenericObject<T = any> = { [key: string]: T };
@@ -156,6 +166,7 @@ declare module "froala-editor" {
       ALT: string;
       FA5NAME: string;
       SVG_KEY: string;
+      [key: string]: any;
   }
 
   export interface RegisterCommandParameters {
@@ -181,10 +192,11 @@ declare module "froala-editor" {
 
       // Called when the button is hit.
       // The current context is the editor instance.
-      callback: (buttonName: string, val?: any, params?: any) => void;
+      callback: (this: FroalaEditor, buttonName: string, val?: any, params?: any) => void;
 
       // Called when the button state might have changed.
-      refresh: (button: any) => void;
+      refresh: (this: FroalaEditor, button: any) => void;
+      refreshOnShow: (this: FroalaEditor, $btn: any, $dropdown: any) => void;
       plugin: string;
       popup: boolean;
       popups: any;
@@ -392,6 +404,370 @@ declare module "froala-editor" {
           SVG_KEY: string,
           FA5NAME?: string
       }
+  }
+
+  export interface Languages {
+    ar: languageParameters;
+    bs: languageParameters;
+    cs: languageParameters;
+    da: languageParameters;
+    de: languageParameters;
+    el: languageParameters;
+    en_ca: languageParameters;
+    en_gb: languageParameters;
+    es: languageParameters;
+    et: languageParameters;
+    fa: languageParameters;
+    fi: languageParameters;
+    fr: languageParameters;
+    he: languageParameters;
+    hr: languageParameters;
+    hu: languageParameters;
+    id: languageParameters;
+    it: languageParameters;
+    ja: languageParameters;
+    ko: languageParameters;
+    ku: languageParameters;
+    me: languageParameters;
+    nb: languageParameters;
+    nl: languageParameters;
+    pl: languageParameters;
+    pt_br: languageParameters;
+    pt_pt: languageParameters;
+    ro: languageParameters;
+    ru: languageParameters;
+    sk: languageParameters;
+    sl: languageParameters;
+    sr: languageParameters;
+    sv: languageParameters;
+    th: languageParameters;
+    tr: languageParameters;
+    uk: languageParameters;
+    vi: languageParameters;
+    zh_cn: languageParameters;
+    zh_tw: languageParameters;
+    [key: string]: any;
+  }
+
+  export interface languageParameters {
+    translation: {
+      'Type something': string,
+
+      // Basic formatting
+      'Bold': string,
+      'Italic': string,
+      'Underline': string,
+      'Strikethrough': string,
+
+      // Main buttons
+      'Insert': string,
+      'Delete': string,
+      'Cancel': string,
+      'OK': string,
+      'Back': string,
+      'Remove': string,
+      'More': string,
+      'Update': string,
+      'Style': string,
+
+      // Font
+      'Font Family': string,
+      'Font Size': string,
+
+      // Colors
+      'Colors': string,
+      'Background': string,
+      'Text': string,
+      'HEX Color': string,
+
+      // Paragraphs
+      'Paragraph Format': string,
+      'Normal': string,
+      'Code': string,
+      'Heading 1': string,
+      'Heading 2': string,
+      'Heading 3': string,
+      'Heading 4': string,
+
+      // Style
+      'Paragraph Style': string,
+      'Inline Style': string,
+
+      // Alignment
+      'Align': string,
+      'Align Left': string,
+      'Align Center': string,
+      'Align Right': string,
+      'Align Justify': string,
+      'None': string,
+
+      // Lists
+      'Ordered List': string,
+      'Unordered List': string,
+
+      // Indent
+      'Decrease Indent': string,
+      'Increase Indent': string,
+
+      // Links
+      'Insert Link': string,
+      'Open in new tab': string,
+      'Open Link': string,
+      'Edit Link': string,
+      'Unlink': string,
+      'Choose Link': string,
+
+      // Images
+      'Insert Image': string,
+      'Upload Image': string,
+      'By URL': string,
+      'Browse': string,
+      'Drop image': string,
+      'or click': string,
+      'Manage Images': string,
+      'Loading': string,
+      'Deleting': string,
+      'Tags': string,
+      'Are you sure? Image will be deleted.': string,
+      'Replace': string,
+      'Uploading': string,
+      'Loading image': string,
+      'Display': string,
+      'Inline': string,
+      'Break Text': string,
+      'Alternative Text': string,
+      'Change Size': string,
+      'Width': string,
+      'Height': string,
+      'Something went wrong. Please try again.': string,
+      'Image Caption': string,
+      'Advanced Edit': string,
+
+      // Video
+      'Insert Video': string,
+      'Embedded Code': string,
+      'Paste in a video URL': string,
+      'Drop video': string,
+      'Your browser does not support HTML5 video.': string,
+      'Upload Video': string,
+
+      // Tables
+      'Insert Table': string,
+      'Table Header': string,
+      'Remove Table': string,
+      'Table Style': string,
+      'Horizontal Align': string,
+      'Row': string,
+      'Insert row above': string,
+      'Insert row below': string,
+      'Delete row': string,
+      'Column': string,
+      'Insert column before': string,
+      'Insert column after': string,
+      'Delete column': string,
+      'Cell': string,
+      'Merge cells': string,
+      'Horizontal split': string,
+      'Vertical split': string,
+      'Cell Background': string,
+      'Vertical Align': string,
+      'Top': string,
+      'Middle': string,
+      'Bottom': string,
+      'Align Top': string,
+      'Align Middle': string,
+      'Align Bottom': string,
+      'Cell Style': string,
+
+      // Files
+      'Upload File': string,
+      'Drop file': string,
+
+      // Emoticons
+      'Emoticons': string,
+      'Grinning face': string,
+      'Grinning face with smiling eyes': string,
+      'Face with tears of joy': string,
+      'Smiling face with open mouth': string,
+      'Smiling face with open mouth and smiling eyes': string,
+      'Smiling face with open mouth and cold sweat': string,
+      'Smiling face with open mouth and tightly-closed eyes': string,
+      'Smiling face with halo': string,
+      'Smiling face with horns': string,
+      'Winking face': string,
+      'Smiling face with smiling eyes': string,
+      'Face savoring delicious food': string,
+      'Relieved face': string,
+      'Smiling face with heart-shaped eyes': string,
+      'Smiling face with sunglasses': string,
+      'Smirking face': string,
+      'Neutral face': string,
+      'Expressionless face': string,
+      'Unamused face': string,
+      'Face with cold sweat': string,
+      'Pensive face': string,
+      'Confused face': string,
+      'Confounded face': string,
+      'Kissing face': string,
+      'Face throwing a kiss': string,
+      'Kissing face with smiling eyes': string,
+      'Kissing face with closed eyes': string,
+      'Face with stuck out tongue': string,
+      'Face with stuck out tongue and winking eye': string,
+      'Face with stuck out tongue and tightly-closed eyes': string,
+      'Disappointed face': string,
+      'Worried face': string,
+      'Angry face': string,
+      'Pouting face': string,
+      'Crying face': string,
+      'Persevering face': string,
+      'Face with look of triumph': string,
+      'Disappointed but relieved face': string,
+      'Frowning face with open mouth': string,
+      'Anguished face': string,
+      'Fearful face': string,
+      'Weary face': string,
+      'Sleepy face': string,
+      'Tired face': string,
+      'Grimacing face': string,
+      'Loudly crying face': string,
+      'Face with open mouth': string,
+      'Hushed face': string,
+      'Face with open mouth and cold sweat': string,
+      'Face screaming in fear': string,
+      'Astonished face': string,
+      'Flushed face': string,
+      'Sleeping face': string,
+      'Dizzy face': string,
+      'Face without mouth': string,
+      'Face with medical mask': string,
+
+      // Line breaker
+      'Break': string,
+
+      // Math
+      'Subscript': string,
+      'Superscript': string,
+
+      // Full screen
+      'Fullscreen': string,
+
+      // Horizontal line
+      'Insert Horizontal Line': string,
+
+      // Clear formatting
+      'Clear Formatting': string,
+
+      // Save
+      'Save': string,
+
+      // Undo, redo
+      'Undo': string,
+      'Redo': string,
+
+      // Select all
+      'Select All': string,
+
+      // Code view
+      'Code View': string,
+
+      // Quote
+      'Quote': string,
+      'Increase': string,
+      'Decrease': string,
+
+      // Quick Insert
+      'Quick Insert': string,
+
+      // Spcial Characters
+      'Special Characters': string,
+      'Latin': string,
+      'Greek': string,
+      'Cyrillic': string,
+      'Punctuation': string,
+      'Currency': string,
+      'Arrows': string,
+      'Math': string,
+      'Misc': string,
+
+      // Print.
+      'Print': string,
+
+      // Spell Checker.
+      'Spell Checker': string,
+
+      // Help
+      'Help': string,
+      'Shortcuts': string,
+      'Inline Editor': string,
+      'Show the editor': string,
+      'Common actions': string,
+      'Copy': string,
+      'Cut': string,
+      'Paste': string,
+      'Basic Formatting': string,
+      'Increase quote level': string,
+      'Decrease quote level': string,
+      'Image / Video': string,
+      'Resize larger': string,
+      'Resize smaller': string,
+      'Table': string,
+      'Select table cell': string,
+      'Extend selection one cell': string,
+      'Extend selection one row': string,
+      'Navigation': string,
+      'Focus popup / toolbar': string,
+      'Return focus to previous position': string,
+
+      // Embed.ly
+      'Embed URL': string,
+      'Paste in a URL to embed': string,
+
+      // Word Paste.
+      'The pasted content is coming from a Microsoft Word document. Do you want to keep the format or clean it up?': string,
+      'Keep': string,
+      'Clean': string,
+      'Word Paste Detected': string,
+
+      // Character Counter
+      'Characters': string,
+    
+      // More Buttons
+      'More Text': string,
+      'More Paragraph': string,
+      'More Rich': string,
+      'More Misc': string,
+
+      'Rounded': string,
+      'Bordered': string,
+      'Shadow': string,
+      'Download PDF': string,
+      'Text Color': string,
+      'Background Color': string,
+      'Inline Class': string,
+      'Highlighted': string,
+      'Transparent': string,
+      'Big Red': string,
+      'Small Blue': string,
+      'Default': string,
+      'Lower Alpha': string,
+      'Lower Greek': string,
+      'Lower Roman': string,
+      'Upper Alpha': string,
+      'Upper Roman': string,
+      'Circle': string,
+      'Disc': string,
+      'Square': string,
+      'Gray': string,
+      'Spaced': string,
+      'Uppercase': string,
+      'Line Height': string,
+      'Single': string,
+      'Double': string,
+      [key: string]: string,
+      },
+      direction: string;
+      [key: string]: any
   }
 
   export interface keycodeParameters {
@@ -864,9 +1240,9 @@ declare module "froala-editor" {
     editorClass: string;
     enter: ENTER_BR | ENTER_P | ENTER_DIV;
     fullPage: boolean;
-    height: number;
-    heightMax: number;
-    heightMin: number;
+    height: number | string;
+    heightMax: number | string;
+    heightMin: number | string;
     htmlAllowComments: boolean;
     htmlAllowedAttrs: string[];
     htmlAllowedEmptyTags: string[];
@@ -1213,6 +1589,7 @@ declare module "froala-editor" {
     'edit.off': (this: FroalaEditor) => void;
     //element event
     'element.dropped': (this: FroalaEditor, element: object) => void;
+    [key: string]: (this:FroalaEditor, ...args: any[]) => any;
   }
 
   export interface FilesManager {
@@ -1257,6 +1634,7 @@ declare module "froala-editor" {
     isChildWindowOpen(): boolean;
     setChildWindowState(childWindowState: any): void;
     resetAllFilesCheckbox(): void;
+    [key: string]: (...args: any[]) => any;
   }
 
   export interface Image {
@@ -1290,6 +1668,7 @@ declare module "froala-editor" {
     hasCaption(): void;
     exitEdit(force_exit: boolean): boolean;
     edit($img: any): void;
+    [key: string]: (...args: any[]) => any;
   }
 
   export interface CharCounter {
@@ -1365,6 +1744,7 @@ declare module "froala-editor" {
     get(): string;
     // Toggle between the code and text view.
     toggle(): object;
+    [key: string]: (...args: any[]) => any;
   }
 
   export interface Colors {
@@ -1376,9 +1756,11 @@ declare module "froala-editor" {
     back(): void;
     showColorsPopup(cmd_type: any): void;
     customColor(tab: any): void;
+    [key: string]: (...args: any[]) => any;
   }
 
   export interface Commands {
+    exec(cmd: any, params?: any): any;
     // Format the selected text as bold.
     bold(): object;
     // Clean any formatting on the selected text.
@@ -1417,6 +1799,7 @@ declare module "froala-editor" {
     moreMisc(): object;
     //Show more track changes actions toolbar.
     moreTrackChanges(): object;
+    [key: string]: (...args: any[]) => any;
   }
 
   export interface Core {
@@ -1461,6 +1844,7 @@ declare module "froala-editor" {
     _init(): void;
     // Update the texts in popup.
     update(): void;
+    [key: string]: (...args: any[]) => any;
   }
 
   export interface Embedly {
@@ -1477,6 +1861,7 @@ declare module "froala-editor" {
     remove(): void;
     // Shows insert popup.
     showInsertPopup(): void;
+    [key: string]: (...args: any[]) => any;
   }
 
   export interface Emoticons {
@@ -1487,6 +1872,7 @@ declare module "froala-editor" {
     setEmoticonCategory(categoryId: string): void;
     showEmoticonsPopup(): void;
     back(): void;
+    [key: string]: (...args: any[]) => any;
   }
 
   export interface Events {
@@ -1504,7 +1890,7 @@ declare module "froala-editor" {
     // Focus into the editor.
     focus(): object;
     // Register an event.
-    on(name: string, callback: (event: string, param1?: any, param2?: any) => void | boolean, first?: boolean): object;
+    on(name: string, callback: (event: any, param1?: any, param2?: any) => void | boolean, first?: boolean): object;
     // Triggers an event.
     trigger(name: string, args: any[], force?: boolean): object;
     $on($el: any, evs: string, selector: any, callback: any, shared: any): void;
@@ -1520,18 +1906,21 @@ declare module "froala-editor" {
     showInsertPopup(): void;
     back(): void;
     hideProgressBar(dismiss: any): void;
+    [key: string]: (...args: any[]) => any;
   }
 
   export interface FontFamily {
     apply(value: string): object | void;
     refreshOnShow($btn: any, $dropdown: any): void;
     refresh($btn: any): void;
+    [key: string]: (...args: any[]) => any;
   }
 
   export interface FontSize {
     apply(value: string): object | void;
     refreshOnShow($btn: any, $dropdown: any): void;
     refresh($btn: any): void;
+    [key: string]: (...args: any[]) => any;
   }
 
   export type FormatAttributes = { [key: string]: any };
@@ -1540,17 +1929,17 @@ declare module "froala-editor" {
 
   export interface Format {
     // Apply format for the selection or at the insertion point.
-    apply(tagName: string, attributes: FormatAttributes): object;
+    apply(tagName: string, attributes?: FormatAttributes): object;
     // Apply style for the selection or at the insertion point.
-    applyStyle(cssProperty: string, cssAttributes: string | FormatAttributes): object;
+    applyStyle(cssProperty: string, cssAttributes?: string | FormatAttributes): object;
     // Check format for the selection or at the insertion point.
-    is(tagName: string, attributes: FormatAttributes): boolean;
+    is(tagName: string, attributes?: FormatAttributes): boolean;
     // Remove format for the selection or at the insertion point.
-    remove(tagName: string, attributes: FormatAttributes): object;
+    remove(tagName: string, attributes?: FormatAttributes): object;
     // Remove style for the selection or at the insertion point.
     removeStyle(cssPropertyName: string): object;
     // Toggle format for the selection or at the insertion point.
-    toggle(tagName: string, attributes: FormatAttributes): object;
+    toggle(tagName: string, attributes?: FormatAttributes): object;
   }
 
   export interface Fullscreen {
@@ -1561,6 +1950,7 @@ declare module "froala-editor" {
     toggle(): object;
     // Refresh
     refresh($btn: any): void;
+    [key: string]: (...args: any[]) => any;
   }
 
   export interface Forms {
@@ -1571,6 +1961,7 @@ declare module "froala-editor" {
     showUpdatePopup(): void;
     showEditPopup(input: any): void;
     back(): void;
+    [key: string]: (...args: any[]) => any;
   }
 
   export interface Helpers {
@@ -1630,11 +2021,13 @@ declare module "froala-editor" {
     _init(): boolean;
     hide(): object;
     show(): object;
+    [key: string]: (...args: any[]) => any;
   }
 
   export interface InlineClass {
     apply(value: string): void;
     refreshOnShow($btn: any, $dropdown: any): void;
+    [key: string]: (...args: any[]) => any;
   }
 
   export interface InlineStyle extends Apply<string> {}
@@ -1673,6 +2066,7 @@ declare module "froala-editor" {
     update(): void;
     back(): void;
     imageLink(): void;
+    [key: string]: (...args: any[]) => any;
   }
 
   export type ListType = 'OL' | 'UL';
@@ -1680,7 +2074,8 @@ declare module "froala-editor" {
   export interface Lists {
     _init(): void;
     format(listType: ListType): object;
-    refresh($btn: any, tag_name: any): void
+    refresh($btn: any, tag_name: any): void;
+    [key: string]: (...args: any[]) => any;
   }
 
   export interface Markdown {
@@ -1688,6 +2083,7 @@ declare module "froala-editor" {
     isEnabled(): boolean;
     refresh(button: Element): void;
     toggle(): void;
+    [key: string]: (...args: any[]) => any;
   }
 
   export interface Markers {
@@ -1732,18 +2128,21 @@ declare module "froala-editor" {
     openTagString(node: Element): string;
     closeTagString(node: Element): string;
     filter(callback: any): object | any;
+    [key: string]: (...args: any[]) => any;
   }
 
   export interface ParagraphFormat {
     apply(value: string): void;
     refreshOnShow($btn: any, $dropdown: any): void;
     refresh($btn: any): void;
+    [key: string]: (...args: any[]) => any;
   }
 
   export interface ParagraphStyle {
     _init: () => void;
     apply(val: string, paragraphStyles: any, paragraphMultipleStyles: any): void;
     refreshOnShow($btn: any, $dropdown: any): void;
+    [key: string]: (...args: any[]) => any;
   }
 
   export interface Placeholder {
@@ -1767,9 +2166,10 @@ declare module "froala-editor" {
     setContainer(id: string, $container: any): void;
     show(id: string, leftOffset?: number, topOffset?: number, height?: number, applyLeftOffset?: boolean): boolean;
     onShow(id: string, callback: () => void): void;
-    areVisible(new_instance: any): any;
+    areVisible(new_instance?: any): any;
     setFileListHeight($popup: any): any;
     setPopupDimensions($popup: any, isDelete: any): void;
+    [key: string]: (...args: any[]) => any;
   }
 
   export interface Position {
@@ -1802,16 +2202,17 @@ declare module "froala-editor" {
   export interface Save {
     _init(): void;
     force(): void;
-    save(html: HTML): object;
+    save(html?: HTML): object;
     reset(): void;
+    [key: string]: (...args: any[]) => any;
   }
 
   export interface FroalaSelection {
-    blocks(toggleList: any): any[];
+    blocks(toggleList?: any): any[];
     clear(): void;
     element(): HTMLElement;
     endElement(): Element;
-    get(): string;
+    get(): string | object;
     inEditor(): boolean;
     info(element: Element): object;
     isCollapsed(): boolean;
@@ -1819,13 +2220,14 @@ declare module "froala-editor" {
     ranges(index: number): Range | Range[];
     restore(): boolean;
     save(): void;
-    setAfter(node: Element, use_current_node: any): boolean;
-    setAtEnd(node: Element, deep: any): boolean;
-    setAtStart(node: Element, deep: any): boolean;
-    setBefore(node: Element, use_current_node: any): boolean;
+    setAfter(node: Element, use_current_node?: any): boolean;
+    setAtEnd(node: Element, deep?: any): boolean;
+    setAtStart(node: Element, deep?: any): boolean;
+    setBefore(node: Element, use_current_node?: any): boolean;
     text(): string;
     remove(): boolean;
     rangeElement(rangeContainer: any, offset: any) : any;
+    [key: string]: (...args: any[]) => any;
   }
 
   export interface Size {
@@ -1844,6 +2246,7 @@ declare module "froala-editor" {
     _init(): boolean;
     refresh($btn: Element): void;
     toggle(): void;
+    [key: string]: (...args: any[]) => any;
   }
 
   export interface Table {
@@ -1873,6 +2276,7 @@ declare module "froala-editor" {
     selectedCells(): void;
     customColor(): void;
     selectCells(firstCell: any, lastCell: any): void;
+    [key: string]: (...args: any[]) => any;
   }
 
   export interface Toolbar {
@@ -1883,6 +2287,7 @@ declare module "froala-editor" {
     show(): boolean;
     showInline(element: Element, force: boolean): void;
     setMoreToolbarsHeight(): void;
+    [key: string]: (...args: any[]) => any;
   }
 
   export interface Tooltip {
@@ -1895,7 +2300,7 @@ declare module "froala-editor" {
     canDo(): boolean;
     canRedo(): boolean;
     reset(): object;
-    saveStep(snapshot : any): void;
+    saveStep(snapshot?: any): void;
     _init(): void;
     run(): void;
     redo(): void;
@@ -1924,6 +2329,7 @@ declare module "froala-editor" {
     wrapLinkInTracking(item: any, changeIndex: any): void;
     pasteInEmptyEdior(clean_html: string): void;
     pasteInEdior(clean_html: string): void;
+    [key: string]: (...args: any[]) => any;
   }
 
   export interface Video {
@@ -1952,6 +2358,7 @@ declare module "froala-editor" {
     showProgressBar(no_message: any): void;
     _editVideo($video: any): void;
     setAutoplay(): void;
+    [key: string]: (...args: any[]) => any;
   }
 
   export interface Word_paste {
@@ -1969,6 +2376,7 @@ declare module "froala-editor" {
     setSpecialCharacterCategory(categoryId: any): void;
     showSpecialCharsPopup(): void;
     back(): void;
+    [key: string]: (...args: any[]) => any;
   }
 
   export interface Icon {
