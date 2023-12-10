@@ -58,11 +58,13 @@
       'Colors': 'Cores',
       'Background': 'Fundo',
       'Text': 'Texto',
+      'Text Color': 'Cor do texto',
+      'Background Color': 'Cor de fundo',
       'HEX Color': 'Cor hexadecimal',
       // Paragraphs
       'Paragraph Format': 'Formatos',
       'Normal': 'Normal',
-      'Code': "C\xF3digo",
+      'Code': "Código",
       'Heading 1': "Cabe\xE7alho 1",
       'Heading 2': "Cabe\xE7alho 2",
       'Heading 3': "Cabe\xE7alho 3",
@@ -70,6 +72,25 @@
       // Style
       'Paragraph Style': "Estilo de par\xE1grafo",
       'Inline Style': 'Estilo embutido',
+      'Inline Class': 'Classe inline',
+      'Code': 'Código',
+      'Highlighted': 'Em destaque',
+      'Transparent': 'Transparente',
+      'Default': 'Padrão',
+      'Lower Alpha': 'Alfa em minúsculas',
+      'Lower Greek': 'Greak em minúsculas',
+      'Lower Roman': 'Roman em minúsculas',
+      'Upper Alpha': 'Alfa maiúsculo',
+      'Upper Roman': 'Roman maiúsculo',
+      'Circle': 'Círculo',
+      'Disc': 'Disco',
+      'Square': 'Quadrado',
+      'Gray': 'Cinza',
+      'Bordered': 'Limitado',
+      'Spaced': 'Espaçado',
+      'Uppercase': 'Maiúsculas',
+      'Single': 'Único',
+      'Double': 'Em dobro',
       // Alignment
       'Align': 'Alinhar',
       'Align Left': "Alinhar \xE0 esquerda",
@@ -282,11 +303,12 @@
       'Word Paste Detected': 'Pasta de palavras detectada',
       // Character Counter
       'Characters': 'Caracteres',
+      'Download PDF': 'Baixar PDF',
       // More Buttons
       'More Text': 'Mais Texto',
       'More Paragraph': 'Mais Parágrafo',
       'More Rich': 'Mais Rico',
-      'More Misc': 'Mais  Misc'
+      'More Misc': 'Mais Variado'
     },
     direction: 'ltr'
   };
