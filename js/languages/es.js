@@ -62,9 +62,34 @@
       'Text': 'Texto',
       'HEX Color': 'Color hexadecimal',
       // Paragraphs
+      'More Text': 'Más texto',
+      'Text Color': 'Color de texto',
+      'Background Color': 'Color de fondo',
+      'Inline Class': 'Clase en línea',
+      'Highlighted': 'Resaltado',
+      'Transparent': 'Transparente',
+      'More Paragraph': 'Más párrafo',
+      'Default': 'Defecto',
+      'Lower Alpha': 'Alfa minúscula',
+      'Lower Greek': 'Griega minúscula',
+      'Lower Roman': 'Romana minúscula',
+      'Upper Alpha': 'Alfa mayúscula',
+      'Upper Roman': 'Romana mayúscula',
+      'Circle': 'Circulo',
+      'Disc': 'Disco',
+      'Square': 'Cuadrado',
+      'Gray': 'Gris',
+      'Bordered': 'Bordeada',
+      'Spaced': 'Espaciado',
+      'Uppercase': 'Mayúscula',
+      'Single': 'Único',
+      'Double': 'Doble',
+      'More Rich': 'Mas rico',
+      'More Misc': 'Más diverso',
+      'Download PDF': 'Descargar PDF',
       'Paragraph Format': "Formato de p\xE1rrafo",
       'Normal': 'Normal',
-      'Code': "C\xF3digo",
+      'Code': "Código",
       'Heading 1': 'Encabezado 1',
       'Heading 2': 'Encabezado 2',
       'Heading 3': 'Encabezado 3',
@@ -284,6 +309,5 @@
     },
     direction: 'ltr'
   };
-
 })));
 //# sourceMappingURL=es.js.map
