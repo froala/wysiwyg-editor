@@ -1,7 +1,7 @@
 /*!
- * froala_editor v4.1.4 (https://www.froala.com/wysiwyg-editor)
+ * froala_editor v4.2.0 (https://www.froala.com/wysiwyg-editor)
  * License https://froala.com/wysiwyg-editor/terms/
- * Copyright 2014-2023 Froala Labs
+ * Copyright 2014-2024 Froala Labs
  */
 
 .fr-clearfix::after {
@@ -1229,13 +1229,16 @@
 .gray-theme .fr-view img.fr-dii {
   margin-left: 5px;
   margin-right: 5px;
-  max-width: calc(100% - (2 * 5px)); }
+  max-width: calc(100% - (2 * 5px));
+  min-width: 10px; }
   .gray-theme .fr-view img.fr-dii.fr-fil {
     margin: 5px 5px 5px 0;
-    max-width: calc(100% - 5px); }
+    max-width: calc(100% - 5px);
+    min-width: 5px; }
   .gray-theme .fr-view img.fr-dii.fr-fir {
     margin: 5px 0 5px 5px;
-    max-width: calc(100% - 5px); }
+    max-width: calc(100% - 5px);
+    min-width: 5px; }
 .gray-theme .fr-view span.fr-img-caption.fr-dib {
   margin: 5px auto; }
   .gray-theme .fr-view span.fr-img-caption.fr-dib.fr-fil {
@@ -1245,13 +1248,16 @@
 .gray-theme .fr-view span.fr-img-caption.fr-dii {
   margin-left: 5px;
   margin-right: 5px;
-  max-width: calc(100% - (2 * 5px)); }
+  max-width: calc(100% - (2 * 5px));
+  min-width: 10px; }
   .gray-theme .fr-view span.fr-img-caption.fr-dii.fr-fil {
     margin: 5px 5px 5px 0;
-    max-width: calc(100% - 5px); }
+    max-width: calc(100% - 5px);
+    min-width: 5px; }
   .gray-theme .fr-view span.fr-img-caption.fr-dii.fr-fir {
     margin: 5px 0 5px 5px;
-    max-width: calc(100% - 5px); }
+    max-width: calc(100% - 5px);
+    min-width: 5px; }
 .gray-theme .fr-view .fr-video.fr-rv {
   height: 0; }
   .gray-theme .fr-view .fr-video.fr-rv > iframe, .gray-theme .fr-view .fr-video.fr-rv object, .gray-theme .fr-view .fr-video.fr-rv embed {
@@ -1295,13 +1301,16 @@
 .gray-theme img.fr-view.fr-dii {
   margin-left: 5px;
   margin-right: 5px;
-  max-width: calc(100% - (2 * 5px)); }
+  max-width: calc(100% - (2 * 5px));
+  min-width: 10px; }
   .gray-theme img.fr-view.fr-dii.fr-fil {
     margin: 5px 5px 5px 0;
-    max-width: calc(100% - 5px); }
+    max-width: calc(100% - 5px);
+    min-width: 5px; }
   .gray-theme img.fr-view.fr-dii.fr-fir {
     margin: 5px 0 5px 5px;
-    max-width: calc(100% - 5px); }
+    max-width: calc(100% - 5px);
+    min-width: 5px; }
 .gray-theme span.fr-img-caption.fr-view.fr-dib {
   margin: 5px auto; }
   .gray-theme span.fr-img-caption.fr-view.fr-dib.fr-fil {
@@ -1311,13 +1320,16 @@
 .gray-theme span.fr-img-caption.fr-view.fr-dii {
   margin-left: 5px;
   margin-right: 5px;
-  max-width: calc(100% - (2 * 5px)); }
+  max-width: calc(100% - (2 * 5px));
+  min-width: 10px; }
   .gray-theme span.fr-img-caption.fr-view.fr-dii.fr-fil {
     margin: 5px 5px 5px 0;
-    max-width: calc(100% - 5px); }
+    max-width: calc(100% - 5px);
+    min-width: 5px; }
   .gray-theme span.fr-img-caption.fr-view.fr-dii.fr-fir {
     margin: 5px 0 5px 5px;
-    max-width: calc(100% - 5px); }
+    max-width: calc(100% - 5px);
+    min-width: 5px; }
 .gray-theme .fr-element .fr-embedly {
   user-select: none;
   -o-user-select: none;
