@@ -6,9 +6,10 @@
 
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? factory(require('froala-editor')) :
-  typeof define === 'function' && define.amd ? define(['froala-editor'], factory) :
-  (factory(global.FroalaEditor));
-}(this, (function (FE) { 'use strict';
+    typeof define === 'function' && define.amd ? define(['froala-editor'], factory) :
+      (factory(global.FroalaEditor));
+}(this, (function (FE) {
+  'use strict';
 
   FE = FE && FE.hasOwnProperty('default') ? FE['default'] : FE;
 
@@ -26,13 +27,13 @@
       'Strikethrough': "\xDCst\xFC \xE7izili",
       // Main buttons
       'Insert': 'Ekle',
-      'Delete': 'Silmek',
+      'Delete': 'Sil',
       'Cancel': "\u0130ptal",
       'OK': 'Tamam',
       'Back': 'Geri',
       'Remove': "Kald\u0131r",
       'More': 'Daha',
-      'Update': "G\xFCncelle\u015Ftirme",
+      'Update': "G\xFCncelle",
       'Style': 'Stil',
       // Font
       'Font Family': "Yaz\u0131tipi Ailesi",
@@ -82,13 +83,13 @@
       'or click': "ya da t\u0131klay\u0131n",
       'Manage Images': "G\xF6r\xFCnt\xFCleri y\xF6netin",
       'Loading': "Y\xFCkleniyor",
-      'Deleting': 'Silme',
+      'Deleting': 'Siliniyor',
       'Tags': 'Etiketler',
       'Are you sure? Image will be deleted.': 'Emin misin? Resim silinecektir.',
       'Replace': "De\u011Fi\u015Ftirmek",
       'Uploading': "Y\xFCkleme",
-      'Loading image': "Y\xFCkleme g\xF6r\xFCnt\xFCs\xFC",
-      'Display': "G\xF6stermek",
+      'Loading image': "G\xF6r\xFCnt\xFC y\xFCkleniyor",
+      'Display': "G\xF6ster",
       'Inline': "\xC7izgide",
       'Break Text': "K\u0131r\u0131lma metni",
       'Alternative Text': 'Alternatif metin',
@@ -97,13 +98,13 @@
       'Height': "Y\xFCkseklik",
       'Something went wrong. Please try again.': "Bir \u015Feyler yanl\u0131\u015F gitti. L\xFCtfen tekrar deneyin.",
       'Image Caption': 'Resim yazısı',
-      'Advanced Edit': 'Ileri düzey düzenleme',
+      'Advanced Edit': 'Geli\u015Fmi\u015F D\xFCzenleme',
       // Video
       'Insert Video': 'Video ekle',
       'Embedded Code': "G\xF6m\xFCl\xFC kod",
       'Paste in a video URL': 'Bir video URL\'sine yapıştırın',
       'Drop video': 'Video bırak',
-      'Your browser does not support HTML5 video.': 'Tarayıcınız html5 videoyu desteklemez.',
+      'Your browser does not support HTML5 video.': 'Taray\u0131c\u0131n\u0131z html5 videoyu desteklememektedir.',
       'Upload Video': 'Video yükle',
       // Tables
       'Insert Table': 'Tablo ekle',
@@ -218,7 +219,7 @@
       'Increase': "Art\u0131rmak",
       'Decrease': "Azal\u0131\u015F",
       // Quick Insert
-      'Quick Insert': "H\u0131zl\u0131 insert",
+      'Quick Insert': "H\u0131zl\u0131 ekle",
       // Spcial Characters
       'Special Characters': 'Özel karakterler',
       'Latin': 'Latince',
@@ -230,18 +231,18 @@
       'Math': 'Matematik',
       'Misc': 'Misc',
       // Print.
-      'Print': 'Baskı',
+      'Print': 'Bask\u0131',
       // Spell Checker.
-      'Spell Checker': 'Yazım denetleyicisi',
+      'Spell Checker': 'Yaz\u0131m denetleyicisi',
       // Help
-      'Help': 'Yardım et',
-      'Shortcuts': 'Kısayollar',
-      'Inline Editor': 'Satır içi düzenleyici',
+      'Help': 'Yard\u0131m',
+      'Shortcuts': 'K\u0131sayollar',
+      'Inline Editor': 'Sat\u0131r içi düzenleyici',
       'Show the editor': 'Editörü gösterin',
       'Common actions': 'Ortak eylemler',
       'Copy': 'Kopya',
       'Cut': 'Kesim',
-      'Paste': 'Yapıştırmak',
+      'Paste': 'Yap\u0131şt\u0131r',
       'Basic Formatting': 'Temel biçimlendirme',
       'Increase quote level': 'Teklif seviyesini yükselt',
       'Decrease quote level': 'Teklif seviyesini azalt',
