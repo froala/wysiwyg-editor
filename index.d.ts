@@ -27,6 +27,7 @@ declare module "froala-editor" {
     align: Align;
     button: Button;
     charCounter: CharCounter;
+    wordCounter: WordCounter;
     clean: Clean;
     codeView: CodeView;
     colors: Colors;
@@ -1160,6 +1161,10 @@ declare module "froala-editor" {
     charCounterCount: boolean;
     charCounterMax: number;
 
+    // Word Counter
+    wordCounterCount: boolean;
+    wordCounterMax: number;
+
     // Code Beautifier
     codeBeautifierOptions: Object;
 
@@ -1263,6 +1268,7 @@ declare module "froala-editor" {
     initOnClick: boolean;
     keepFormatOnDelete: boolean;
     multiLine: boolean;
+    preserveTabSpaces: boolean;
     pasteAllowLocalImages: boolean;
     pasteAllowedStyleProps: string[];
     pasteDeniedAttrs: string[];
@@ -1486,6 +1492,9 @@ declare module "froala-editor" {
     //character count event
     'charCounter.exceeded': (this: FroalaEditor) => void;
     'charCounter.update': (this: FroalaEditor) => void;
+    //word count event
+    'wordCounter.exceeded': (this: FroalaEditor) => void;
+    'wordCounter.update': (this: FroalaEditor) => void;
     //code view event
     'codeView.update': (this: FroalaEditor) => void;
     //commands event
@@ -1675,6 +1684,13 @@ declare module "froala-editor" {
     _init(): boolean;
     // Returns the number of characters in the editor.
     count(): number;
+  }
+
+  export interface WordCounter {
+    _init(): boolean;
+    // Returns the number of words in the editor.
+    wordCount(): number;
+    [key: string]: (...args: any[]) => any;
   }
 
   interface Apply<T> {
