@@ -1468,6 +1468,9 @@ declare module "froala-editor" {
     showChangesEnabled: boolean;
     trackChangesEnabled: boolean;
     [key: string]: any;
+
+    // Filestack
+    filestackOptions: object;
   }
 
   export interface FroalaEvents {
@@ -1523,6 +1526,10 @@ declare module "froala-editor" {
     'image.resizeEnd': (this: FroalaEditor, img: object) => void;
     'image.uploaded': (this: FroalaEditor, response: any) => boolean;
     'image.uploadedToS3': (this: FroalaEditor, link: URL, key: string, response: any) => void;
+    'filestack.uploadedToFilestack': (this: FroalaEditor, response: any) => boolean;
+    'filestack.uploadFailedToFilestack': (this: FroalaEditor, response: any) => boolean;
+    'filestack.filestackPickerClosed': (this: FroalaEditor, response: any) => boolean;
+    'filestack.filestackPickerOpened': (this: FroalaEditor, response: any) => boolean;
     //imagemanager event
     'imageManager.beforeDeleteImage': (this: FroalaEditor, img: object) => void;
     'imageManager.error': (this: FroalaEditor, error: object, response: any) => void;
