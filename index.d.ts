@@ -1543,7 +1543,7 @@ declare module "froala-editor" {
     //paste event
     'paste.after': (this: FroalaEditor) => void;
     'paste.afterCleanup': (this: FroalaEditor, clipboard_html: string) => void;
-    'paste.before': (this: FroalaEditor, original_event: any) => boolean;
+    'paste.before': (this: FroalaEditor, original_event: any, clipboard_data?: any) => boolean;
     'paste.beforeCleanup': (this: FroalaEditor, clipboard_html: string) => void;
     'paste.wordPaste': (this: FroalaEditor, clipboard_html: string) => void;
     // popups events
@@ -2231,7 +2231,7 @@ declare module "froala-editor" {
   }
 
   export interface FroalaSelection {
-    blocks(toggleList?: any): any[];
+    blocks(toggleList?: any, keepLi?: any): any[];
     clear(): void;
     element(): HTMLElement;
     endElement(): Element;
