@@ -1,7 +1,7 @@
 /*!
- * froala_editor v4.3.1 (https://www.froala.com/wysiwyg-editor)
+ * froala_editor v4.4.0 (https://www.froala.com/wysiwyg-editor)
  * License https://froala.com/wysiwyg-editor/terms/
- * Copyright 2014-2024 Froala Labs
+ * Copyright 2014-2025 Froala Labs
  */
 
 .fr-clearfix::after {
@@ -80,6 +80,8 @@
       background: #ececec; }
     .fr-view table tfoot td {
       background: #ececec; }
+  .fr-view .fr-mso-hidden {
+    display: none; }
   .fr-view hr {
     clear: both;
     user-select: none;
