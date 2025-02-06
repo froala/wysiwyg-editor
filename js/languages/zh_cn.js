@@ -52,7 +52,16 @@
       'Heading 4': '标题4',
       // Style
       'Paragraph Style': '段落样式',
+      'Gray': '灰色',
+      'Bordered': '边框',
+      'Spaced': '稀疏',
+      'Uppercase': '大写',
       'Inline Style': '内联样式',
+      // Line height
+      'Line Height': '行高',
+      'Default': '默认',
+      'Single': '1',
+      'Double': '2',
       // Alignment
       'Align': '对齐方式',
       'Align Left': '左对齐',
@@ -62,7 +71,15 @@
       'None': '无',
       // Lists
       'Ordered List': '编号',
+      'Lower Alpha': 'a,b,c...',
+      'Lower Greek': 'α,β,γ...',
+      'Lower Roman': 'i,ii,iii...',
+      'Upper Alpha': 'A,B,C...',
+      'Upper Roman': 'Ⅰ,Ⅱ,Ⅲ...',
       'Unordered List': '项目符号',
+      'Circle': '小圆圈',
+      'Disc': '小黑点',
+      'Square': '小方块',
       // Indent
       'Decrease Indent': '减少缩进量',
       'Increase Indent': '增加缩进量',
