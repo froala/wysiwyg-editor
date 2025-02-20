@@ -1119,6 +1119,11 @@ declare module "froala-editor" {
     }[];
   }
 
+  export type LineHeight = {
+    label: string;
+    value: number;
+  }
+
   export interface FroalaOptions {
     // apiKey
     apiKey: string;
@@ -1276,6 +1281,7 @@ declare module "froala-editor" {
     pastePlain: boolean;
     placeholderText: string;
     pluginsEnabled: string[];
+    pluginsDisabled: string[];
     popupButtons: string[];
     requestHeaders: GenericObject<string>; 
     requestWithCORS: boolean;
@@ -1382,7 +1388,7 @@ declare module "froala-editor" {
     linkText: boolean;
 
     // Paragraph Format
-    lineHeights: GenericObject<string>; 
+    lineHeights: GenericObject<string> | LineHeight[];
     paragraphDefaultSelection: string;
     paragraphFormat: GenericObject<string>;
     paragraphFormatSelection: boolean;

@@ -1,5 +1,5 @@
 /*!
- * froala_editor v4.4.0 (https://www.froala.com/wysiwyg-editor)
+ * froala_editor v4.5.0 (https://www.froala.com/wysiwyg-editor)
  * License https://froala.com/wysiwyg-editor/terms/
  * Copyright 2014-2025 Froala Labs
  */
@@ -2570,6 +2570,46 @@ div.fr-modal-body {
   -khtml-user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none; }
+
+.fr-table-selector {
+  display: block;
+  position: absolute;
+  z-index: 9999;
+  width: 16px;
+  height: 16px;
+  padding: 3px;
+  border: transparent 2px solid;
+  border-radius: 4px 4px 0 0; }
+  .fr-table-selector a {
+    width: 16px;
+    height: 16px;
+    display: block; }
+    .fr-table-selector a > svg {
+      width: 16px;
+      height: 16px; }
+
+.fr-table-selector-active {
+  opacity: 1;
+  visibility: visible;
+  border: #fdcf00 2px solid; }
+  .fr-table-selector-active a > svg {
+    color: #fdcf00; }
+
+.fr-table-selector-active-selected {
+  border: #0d65ff 2px solid; }
+  .fr-table-selector-active-selected a > svg {
+    color: #0d65ff; }
+
+.fr-table-selector-inactive {
+  opacity: 0;
+  visibility: hidden; }
+
+.fr-view .fr-table-selection-hover {
+  outline: #fdcf00 2px solid; }
+
+.fr-view .fr-table-selected {
+  outline: #0d65ff 2px solid;
+  caret-color: transparent; }
 
 .fr-popup .fr-table-size {
   margin: 20px; }
