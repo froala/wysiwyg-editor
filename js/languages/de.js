@@ -66,6 +66,7 @@
       // Style
       'Paragraph Style': 'Absatzformatierung',
       'Inline Style': 'Inlineformatierung',
+      'Highlighted': 'Hervorgehoben',
       // Alignment
       'Align': 'Ausrichtung',
       'Align Left': 'Linksbündig ausrichten',
