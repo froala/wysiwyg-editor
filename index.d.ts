@@ -1119,7 +1119,7 @@ declare module "froala-editor" {
     }[];
   }
 
-  export type LineHeight = {
+  export type LineHeightObj = {
     label: string;
     value: number;
   }
@@ -1239,6 +1239,7 @@ declare module "froala-editor" {
     key: string;
 
     // General
+    allowStylingOnNonEditable : boolean;
     attribution: boolean;
     autoStart: boolean;
     autofocus: boolean;
@@ -1388,7 +1389,7 @@ declare module "froala-editor" {
     linkText: boolean;
 
     // Paragraph Format
-    lineHeights: GenericObject<string> | LineHeight[];
+    lineHeights: GenericObject<string> | LineHeightObj[];
     paragraphDefaultSelection: string;
     paragraphFormat: GenericObject<string>;
     paragraphFormatSelection: boolean;
