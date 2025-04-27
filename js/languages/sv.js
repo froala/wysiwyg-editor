@@ -42,6 +42,8 @@
       'Background': 'Bakgrund',
       'Text': 'Text',
       'HEX Color': 'Hex färg',
+      'Text Color': 'Textfärg',
+      'Background Color': 'Bakgrundsfärg',
       // Paragraphs
       'Paragraph Format': 'Format',
       'Normal': 'Normal',
@@ -63,6 +65,15 @@
       // Lists
       'Ordered List': 'Ordnad lista',
       'Unordered List': 'Oordnad lista',
+      'Default': 'Standard',
+      'Lower Alpha': 'Alfabetisk gemen',
+      'Lower Greek': 'Grekisk gemen',
+      'Lower Roman': 'Romersk siffra gemen',
+      'Upper Alpha': 'Alfabetisk versal',
+      'Upper Roman': 'Romersk siffra versal',
+      'Circle': 'Cirkel',
+      'Disc': 'Skiva',
+      'Square': 'Fyrkant',
       // Indent
       'Decrease Indent': 'Minska indrag',
       'Increase Indent': "\xD6ka indrag",
