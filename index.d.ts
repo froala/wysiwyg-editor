@@ -40,6 +40,7 @@ declare module "froala-editor" {
     emoticons: Emoticons;
     events: Events;
     file: File;
+    findReplace: FindReplace;
     fontFamily: FontFamily;
     fontSize: FontSize;
     format: Format;
@@ -1247,6 +1248,8 @@ declare module "froala-editor" {
     disableRightClick: boolean;
     documentReady: boolean;
     editInPopup: boolean;
+    enableMatchCase: boolean;
+    enableMatchWholeWord: boolean;
     update: void;
     editorClass: string;
     enter: ENTER_BR | ENTER_P | ENTER_DIV;
@@ -1290,6 +1293,7 @@ declare module "froala-editor" {
     scrollableContainer: string;
     shortcutsEnabled: string[];
     shortcutsHint: boolean;
+    showFindAndReplace: boolean;
     spellcheck: boolean;
     tabIndex: number;
     tabSpaces: number;
@@ -1507,6 +1511,11 @@ declare module "froala-editor" {
     'wordCounter.update': (this: FroalaEditor) => void;
     //code view event
     'codeView.update': (this: FroalaEditor) => void;
+    //find and replace event
+    'findandreplace.onReplaceAll': (this: FroalaEditor, replacements: Array<{ oldValue: string, newValue: string }>) => void;
+    'findandreplace.onReplace': (this: FroalaEditor, oldValue: string, newValue: string) => void;
+    'findandreplace.beforeClose': (this: FroalaEditor) => boolean;
+    'findandreplace.beforeOnReplace': (this: FroalaEditor) => boolean;
     //commands event
     'commands.after': (this: FroalaEditor, cmd: any, param1?: any, param2?: any) => void;
     'commands.before': (this: FroalaEditor, cmd: any, param1?: any, param2?: any) => void;
@@ -1937,6 +1946,20 @@ declare module "froala-editor" {
     back(): void;
     hideProgressBar(dismiss: any): void;
     [key: string]: (...args: any[]) => any;
+  }
+
+  export interface FindReplace {
+    findMatch(fullText: string, regex: RegExp): RegExpExecArray | null;
+    findMatches(searchText: string): void;
+    findNextMatch(index: number): void;
+    findPreviousMatch(index: number): void;
+    replaceMatch(replaceText: string): void;
+    replaceMatches(replaceText: string): void;
+    getMatchesCount(): number;
+    getCurrentMatch(): object;
+    getCurrentMatchIndex(): number;
+    showPopup(): void;
+    hidePopup(): void;
   }
 
   export interface FontFamily {

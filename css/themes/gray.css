@@ -1,5 +1,5 @@
 /*!
- * froala_editor v4.5.1 (https://www.froala.com/wysiwyg-editor)
+ * froala_editor v4.5.2 (https://www.froala.com/wysiwyg-editor)
  * License https://froala.com/wysiwyg-editor/terms/
  * Copyright 2014-2025 Froala Labs
  */
@@ -594,6 +594,52 @@
   background-color: #F0F0F0; }
 .gray-theme body.fr-fullscreen .fs-transforms-container {
   z-index: 2247483660; }
+.gray-theme .fr-find-replace-layer h3 {
+  margin: 0; }
+.gray-theme .fr-find-replace-layer .fr-body .fr-input-line input#fr-replaceText::placeholder {
+  color: #a9a9a9; }
+.gray-theme .fr-find-replace-layer .fr-body .fr-toggle-advanced-options {
+  width: auto; }
+.gray-theme .fr-find-replace-layer .fr-body .fr-separator {
+  margin: 10px 0;
+  border-top: 1px solid #e0e0e0; }
+.gray-theme .fr-find-replace-layer .fr-body input {
+  border: 1px solid #CCCCCC; }
+.gray-theme .fr-find-replace-layer .fr-body .fr-button-group button.fr-find-btn {
+  background-color: #FFF;
+  color: #0097A7;
+  border: 1px solid #0097A7; }
+.gray-theme .fr-find-replace-layer .fr-body .fr-button-group button.fr-replace-btn {
+  background-color: #FFF;
+  color: #0097A7; }
+.gray-theme .fr-find-replace-layer .fr-body .fr-button-group button.fr-replace-all-btn {
+  background-color: #FFF;
+  color: #0097A7; }
+.gray-theme .fr-find-replace-layer .fr-body #fr-findText {
+  border: 1px solid #CCCCCC; }
+.gray-theme .fr-find-replace-layer .fr-body #fr-findText:focus {
+  border: 2px solid #0097A7; }
+.gray-theme .fr-find-replace-layer .fr-body .fr-find-error {
+  color: #f70000; }
+.gray-theme .fr-find-replace-layer .fr-body #fr-findText.error {
+  border-color: #f70000; }
+.gray-theme .fr-find-replace-layer .fr-body .fr-count-indicator {
+  z-index: 10; }
+.gray-theme .fr-find-replace-layer .fr-body .fr-toggle-advanced-options .arrow {
+  font-weight: 100; }
+.gray-theme .fr-find-replace-layer .fr-body .fr-advanced-options-panel .fr-checkbox-group .fr-checkbox-item input[type="checkbox"] {
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  position: inherit; }
+.gray-theme .fr-find-replace-layer .fr-body .fr-toggle-btn {
+  background-color: #CCCCCC; }
+.gray-theme .fr-find-replace-layer .fr-body .fr-btn-active-popup {
+  background: gainsboro; }
+.gray-theme .fr-find-replace-highlight {
+  background-color: #ffff00; }
+.gray-theme .fr-find-replace-current-highlight {
+  background-color: #ffa500; }
 .gray-theme.fr-box.fr-fullscreen {
   top: 0;
   left: 0;
