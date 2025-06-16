@@ -277,7 +277,7 @@
       'Clean': 'نظيف',
       'Word Paste Detected': 'تم اكتشاف معجون الكلمات',
       // Character Counter
-      'Characters': 'الشخصيات',
+      'Characters': 'الأحرف',
       // More Buttons
       'More Text': 'المزيد من النص',
       'More Paragraph': ' المزيد من الفقرة',
