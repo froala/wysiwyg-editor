@@ -1,5 +1,5 @@
 /*!
- * froala_editor v4.5.2 (https://www.froala.com/wysiwyg-editor)
+ * froala_editor v4.6.0 (https://www.froala.com/wysiwyg-editor)
  * License https://froala.com/wysiwyg-editor/terms/
  * Copyright 2014-2025 Froala Labs
  */
@@ -20,8 +20,10 @@
   clip: rect(0, 0, 0, 0);
   border: 0; }
 
-.fr-find-replace-layer .fr-header, .fr-find-replace-layer .fr-body {
-  margin: 15px; }
+.fr-find-replace-layer .fr-header {
+  padding: 15px; }
+.fr-find-replace-layer .fr-body {
+  padding: 0 15px 15px; }
 .fr-find-replace-layer .fr-drag-handle {
   cursor: move; }
 .fr-find-replace-layer h3 {
@@ -37,6 +39,12 @@
 .fr-find-replace-layer .fr-body .fr-input-line input#fr-findText::placeholder,
 .fr-find-replace-layer .fr-body .fr-input-line input#fr-replaceText::placeholder {
   color: #a9a9a9; }
+.fr-find-replace-layer .fr-body .fr-input-line.fr-find-field {
+  width: 227px;
+  padding-bottom: 5px; }
+.fr-find-replace-layer .fr-body .fr-input-line.fr-replace-field {
+  top: -8px;
+  padding-bottom: 0px; }
 .fr-find-replace-layer .fr-body .fr-label-disabled {
   background-color: #f5f5f5; }
 .fr-find-replace-layer .fr-body .fr-close-btn {
@@ -47,9 +55,9 @@
   background: none;
   border: none;
   cursor: pointer;
-  color: #333; }
+  color: #333333; }
 .fr-find-replace-layer .fr-body .fr-close-btn:hover {
-  color: grey; }
+  color: #CCCCCC; }
 .fr-find-replace-layer .fr-body .fr-toggle-advanced-options {
   display: flex;
   align-items: center;
@@ -62,17 +70,13 @@
   transition: background-color 0.3s ease;
   width: auto;
   background: none;
-  color: #353333; }
-.fr-find-replace-layer .fr-body .fr-separator {
-  margin: 10px 0;
-  border-top: 1px solid #e0e0e0; }
+  color: #333333; }
 .fr-find-replace-layer .fr-body input {
-  width: 70%;
   padding: 8px;
-  margin-bottom: 10px;
   font-size: 14px;
   border: 1px solid #CCCCCC;
-  border-radius: 4px; }
+  border-radius: 4px;
+  margin-left: 0px; }
 .fr-find-replace-layer .fr-body .fr-input-container {
   position: relative;
   display: flex;
@@ -85,7 +89,7 @@
   gap: 5px;
   margin-left: 10px;
   /* Add margin to separate from input field */
-  margin-top: 3px;
+  margin-top: 10px;
   /* Align with input field */ }
   .fr-find-replace-layer .fr-body .fr-arrow-buttons button {
     border: none;
@@ -98,12 +102,6 @@
     pointer-events: none;
     cursor: not-allowed;
     color: #a9a9a9; }
-.fr-find-replace-layer .fr-body .fr-advanced-options {
-  margin-top: 10px;
-  font-size: 14px;
-  cursor: pointer;
-  color: #007bff;
-  text-decoration: underline; }
 .fr-find-replace-layer .fr-body .fr-button-group {
   display: flex;
   gap: 10px;
@@ -156,17 +154,18 @@
 .fr-find-replace-layer .fr-body .fr-find-error {
   color: #f70000;
   font-size: 12px;
-  padding-bottom: 5px;
-  display: none; }
+  display: none;
+  max-width: 300px;
+  overflow-wrap: break-word; }
 .fr-find-replace-layer .fr-body #fr-findText.error {
   border-color: #f70000; }
 .fr-find-replace-layer .fr-body .fr-count-indicator {
   position: absolute;
   right: 80px;
-  top: 49%;
+  top: 57%;
   /* Center vertically */
   transform: translateY(-50%);
-  color: gray;
+  color: #CCCCCC;
   font-size: 12px;
   pointer-events: none;
   visibility: hidden;
@@ -184,24 +183,16 @@
   border-radius: 4px; }
   .fr-find-replace-layer .fr-body .fr-advanced-options-panel .fr-checkbox-group {
     display: flex;
-    margin-top: 10px; }
-    .fr-find-replace-layer .fr-body .fr-advanced-options-panel .fr-checkbox-group .fr-checkbox-item {
-      position: relative;
-      display: inline-block;
-      height: 20px; }
-      .fr-find-replace-layer .fr-body .fr-advanced-options-panel .fr-checkbox-group .fr-checkbox-item input[type="checkbox"] {
-        margin-left: 0;
-        margin-right: 0;
-        margin-top: 0;
-        position: inherit;
-        left: -5px; }
-    .fr-find-replace-layer .fr-body .fr-advanced-options-panel .fr-checkbox-group .fr-checkbox-label {
-      font-size: 14px;
+    flex-direction: column;
+    gap: 8px; }
+    .fr-find-replace-layer .fr-body .fr-advanced-options-panel .fr-checkbox-group .fr-checkbox-row {
       display: flex;
-      flex-direction: column;
-      gap: 10px;
-      left: -10px;
-      position: relative; }
+      align-items: center;
+      gap: 6px;
+      font-size: 14px; }
+      .fr-find-replace-layer .fr-body .fr-advanced-options-panel .fr-checkbox-group .fr-checkbox-row input[type="checkbox"]:focus-visible {
+        outline: 2px solid #0098f7;
+        outline-offset: 2px; }
 .fr-find-replace-layer .fr-body .fr-toggle-btn {
   width: 40px;
   height: 20px;
@@ -218,6 +209,11 @@
   margin-top: 1px;
   position: absolute;
   right: 15px; }
+.fr-find-replace-layer .fr-body .fr-disabled svg.fr-arrow-button {
+  fill: #a9a9a9; }
+.fr-find-replace-layer .fr-body .fr-arrow-button {
+  width: 12px;
+  height: 12px; }
 .fr-find-replace-layer .fr-body .fr-btn-active-popup {
   background: #d6d6d6; }
 

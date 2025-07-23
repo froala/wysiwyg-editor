@@ -1446,6 +1446,14 @@ declare module "froala-editor" {
     tableResizerOffset: number;
     tableResizingLimit: number;
     tableStyles: GenericObject<string>; 
+    tableDefaultWidth: string,
+    tableDefaultAlign: string,
+    tableDefaultHeight: string,
+    tableDefaultBGColor: string,
+    tableDefaultBorderColor: string,
+    tableDefaultBorderWidth: string,
+    tableDefaultBorderStyle: string,
+    tableBorderStyle: string[],
 
     // Video
     videoAllowedProviders: string[];
@@ -2039,6 +2047,8 @@ declare module "froala-editor" {
     isURL(url: string): boolean;
     getAlignment($block: any): any;
     isInViewPort(el: any): boolean;
+    isRGBColor(val: any): void;
+    isValidHexColor(val: any): void;
   }
 
   export interface HTML {
@@ -2329,6 +2339,11 @@ declare module "froala-editor" {
     selectedCells(): void;
     customColor(): void;
     selectCells(firstCell: any, lastCell: any): void;
+    showTableProperties(): void;
+    hideTableProperties(): void;
+    updateTableAlign(val: string): void;
+    showCellPropertiesPopup(): void;
+    updateSelectedColor(val: any): void;
     [key: string]: (...args: any[]) => any;
   }
 

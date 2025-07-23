@@ -1,5 +1,5 @@
 /*!
- * froala_editor v4.5.2 (https://www.froala.com/wysiwyg-editor)
+ * froala_editor v4.6.0 (https://www.froala.com/wysiwyg-editor)
  * License https://froala.com/wysiwyg-editor/terms/
  * Copyright 2014-2025 Froala Labs
  */
@@ -20,6 +20,13 @@
   clip: rect(0, 0, 0, 0);
   border: 0; }
 
+.royal-theme .fr-license {
+  z-index: 1000;
+  padding: 20px;
+  font-size: 14px;
+  color: #222222;
+  background-color: #FFF;
+  border-radius: 10px; }
 .royal-theme.fr-box.fr-basic {
   border-radius: 10px;
   -moz-border-radius: 10px;
@@ -283,7 +290,7 @@
       bottom: 0;
       right: 0;
       left: 0; }
-    .royal-theme.fr-popup .fr-color-set > span:hover, .royal-theme.fr-popup .fr-color-set > span:focus {
+    .royal-theme.fr-popup .fr-color-set > span:not(.fr-table-cell):focus {
       outline: 1px solid #222222; }
 .royal-theme.fr-rtl .fr-popup .fr-colors-tabs .fr-colors-tab.fr-selected-tab[data-param1="text"] ~ [data-param1="background"]::after {
   -webkit-transform: translate3d(100%, 0, 0);
@@ -596,15 +603,26 @@
   z-index: 2247483660; }
 .royal-theme .fr-find-replace-layer h3 {
   margin: 0; }
+.royal-theme .fr-find-replace-layer .fr-body .fr-input-line input.fr-disabled {
+  background-color: #f5f5f5;
+  color: #a9a9a9;
+  border: 1px solid #d1d1d1; }
 .royal-theme .fr-find-replace-layer .fr-body .fr-input-line input#fr-replaceText::placeholder {
   color: #a9a9a9; }
+.royal-theme .fr-find-replace-layer .fr-body .fr-label-disabled {
+  background-color: #f5f5f5; }
+.royal-theme .fr-find-replace-layer .fr-body .fr-close-btn {
+  color: #333333; }
+.royal-theme .fr-find-replace-layer .fr-body .fr-close-btn:hover {
+  color: #CCCCCC; }
 .royal-theme .fr-find-replace-layer .fr-body .fr-toggle-advanced-options {
-  width: auto; }
-.royal-theme .fr-find-replace-layer .fr-body .fr-separator {
-  margin: 10px 0;
-  border-top: 1px solid #e0e0e0; }
+  background-color: #f5f5f5;
+  width: auto;
+  color: #333333; }
 .royal-theme .fr-find-replace-layer .fr-body input {
   border: 1px solid #CCCCCC; }
+.royal-theme .fr-find-replace-layer .fr-body .fr-arrow-buttons .fr-disabled {
+  color: #a9a9a9; }
 .royal-theme .fr-find-replace-layer .fr-body .fr-button-group button.fr-find-btn {
   background-color: #FFF;
   color: #0098f7;
@@ -612,9 +630,13 @@
 .royal-theme .fr-find-replace-layer .fr-body .fr-button-group button.fr-replace-btn {
   background-color: #FFF;
   color: #0098f7; }
+.royal-theme .fr-find-replace-layer .fr-body .fr-button-group button.fr-replace-btn.fr-disabled {
+  color: #a9a9a9; }
 .royal-theme .fr-find-replace-layer .fr-body .fr-button-group button.fr-replace-all-btn {
   background-color: #FFF;
   color: #0098f7; }
+.royal-theme .fr-find-replace-layer .fr-body .fr-button-group button.fr-replace-all-btn.fr-disabled {
+  color: #a9a9a9; }
 .royal-theme .fr-find-replace-layer .fr-body #fr-findText {
   border: 1px solid #CCCCCC; }
 .royal-theme .fr-find-replace-layer .fr-body #fr-findText:focus {
@@ -624,16 +646,16 @@
 .royal-theme .fr-find-replace-layer .fr-body #fr-findText.error {
   border-color: #f70000; }
 .royal-theme .fr-find-replace-layer .fr-body .fr-count-indicator {
+  color: #CCCCCC;
   z-index: 10; }
 .royal-theme .fr-find-replace-layer .fr-body .fr-toggle-advanced-options .arrow {
   font-weight: 100; }
-.royal-theme .fr-find-replace-layer .fr-body .fr-advanced-options-panel .fr-checkbox-group .fr-checkbox-item input[type="checkbox"] {
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-  position: inherit; }
+.royal-theme .fr-find-replace-layer .fr-body .fr-advanced-options-panel .fr-checkbox-group .fr-checkbox-row input[type="checkbox"]:focus-visible {
+  outline: 2px solid #0098f7; }
 .royal-theme .fr-find-replace-layer .fr-body .fr-toggle-btn {
   background-color: #CCCCCC; }
+.royal-theme .fr-find-replace-layer .fr-body .fr-disabled svg.fr-arrow-button {
+  fill: #a9a9a9; }
 .royal-theme .fr-find-replace-layer .fr-body .fr-btn-active-popup {
   background: #d6d6d6; }
 .royal-theme .fr-find-replace-highlight {
@@ -748,7 +770,7 @@
   border: dashed 2px #bdbdbd;
   padding: 25px 0;
   margin: 20px; }
-  .royal-theme.fr-popup .fr-image-upload-layer:hover {
+  .royal-theme.fr-popup .fr-image-upload-layer:hover, .royal-theme.fr-popup .fr-image-upload-layer:has(.fr-not-empty) {
     background: #ebebeb; }
   .royal-theme.fr-popup .fr-image-upload-layer.fr-drop {
     background: #ebebeb;
@@ -1024,9 +1046,6 @@
     width: 368px; } }
 .royal-theme .fr-element table td.fr-selected-cell, .royal-theme .fr-element table th.fr-selected-cell {
   border: 1px double #0098f7; }
-.royal-theme .fr-element table td.fr-selected-cell:after, .royal-theme .fr-element table th.fr-selected-cell:after {
-  top: 0;
-  left: 0; }
 .royal-theme .fr-element table td, .royal-theme .fr-element table th {
   user-select: text;
   -o-user-select: text;
@@ -1067,19 +1086,21 @@
       width: 16px;
       height: 16px; }
 .royal-theme .fr-table-selector-active {
-  border: #fdcf00 2px solid; }
+  border: #F6D146 2px solid;
+  background-color: #F6D146; }
   .royal-theme .fr-table-selector-active a > svg {
-    color: #fdcf00; }
+    color: #F6D146; }
 .royal-theme .fr-table-selector-active-selected {
-  border: #0d65ff 2px solid; }
+  border: #0098F7 2px solid;
+  background-color: #0098F7; }
   .royal-theme .fr-table-selector-active-selected a > svg {
-    color: #0d65ff; }
+    color: #0098F7; }
 .royal-theme .fr-table-selector-inactive {
   opacity: 0; }
 .royal-theme .fr-view .fr-table-selection-hover {
-  outline: #fdcf00 2px solid; }
+  outline: #F6D146 2px solid; }
 .royal-theme .fr-view .fr-table-selected {
-  outline: #0d65ff 2px solid; }
+  outline: #0098F7 2px solid; }
 .royal-theme.fr-popup .fr-table-size {
   margin: 20px; }
   .royal-theme.fr-popup .fr-table-size .fr-select-table-size {
@@ -1099,6 +1120,124 @@
 .royal-theme.fr-popup .fr-table-colors {
   padding: 20px;
   padding-bottom: 0; }
+.royal-theme .fr-cell-properties-form, .royal-theme .fr-table-properties-form {
+  padding: 15px;
+  width: 360px;
+  background-color: #FFF;
+  border-radius: 10px; }
+  .royal-theme .fr-cell-properties-form .fr-cell-properties-section, .royal-theme .fr-cell-properties-form .fr-table-properties-section, .royal-theme .fr-table-properties-form .fr-cell-properties-section, .royal-theme .fr-table-properties-form .fr-table-properties-section {
+    margin-bottom: 12px; }
+    .royal-theme .fr-cell-properties-form .fr-cell-properties-section label, .royal-theme .fr-cell-properties-form .fr-table-properties-section label, .royal-theme .fr-table-properties-form .fr-cell-properties-section label, .royal-theme .fr-table-properties-form .fr-table-properties-section label {
+      margin-bottom: 6px;
+      font-size: 14px; }
+  .royal-theme .fr-cell-properties-form .fr-cell-bg-container .fr-input, .royal-theme .fr-cell-properties-form .fr-table-bg-container .fr-input, .royal-theme .fr-table-properties-form .fr-cell-bg-container .fr-input, .royal-theme .fr-table-properties-form .fr-table-bg-container .fr-input {
+    height: 36px;
+    padding: 4px 12px;
+    border: 1px solid #CCCCCC;
+    border-radius: 2px 0 0 2px;
+    font-size: 14px; }
+    .royal-theme .fr-cell-properties-form .fr-cell-bg-container .fr-input:focus, .royal-theme .fr-cell-properties-form .fr-table-bg-container .fr-input:focus, .royal-theme .fr-table-properties-form .fr-cell-bg-container .fr-input:focus, .royal-theme .fr-table-properties-form .fr-table-bg-container .fr-input:focus {
+      border-color: #0098f7; }
+    .royal-theme .fr-cell-properties-form .fr-cell-bg-container .fr-input.fr-disabled, .royal-theme .fr-cell-properties-form .fr-table-bg-container .fr-input.fr-disabled, .royal-theme .fr-table-properties-form .fr-cell-bg-container .fr-input.fr-disabled, .royal-theme .fr-table-properties-form .fr-table-bg-container .fr-input.fr-disabled {
+      background-color: #f5f5f5;
+      color: #a9a9a9;
+      border: 1px solid #d1d1d1; }
+    .royal-theme .fr-cell-properties-form .fr-cell-bg-container .fr-input::placeholder, .royal-theme .fr-cell-properties-form .fr-table-bg-container .fr-input::placeholder, .royal-theme .fr-table-properties-form .fr-cell-bg-container .fr-input::placeholder, .royal-theme .fr-table-properties-form .fr-table-bg-container .fr-input::placeholder {
+      color: #AAA; }
+  .royal-theme .fr-cell-properties-form .fr-cell-bg-container .fr-btn-cell-bg-color, .royal-theme .fr-cell-properties-form .fr-cell-bg-container .fr-btn-table-bg-color, .royal-theme .fr-cell-properties-form .fr-cell-bg-container .fr-btn-table-border-bg-color, .royal-theme .fr-cell-properties-form .fr-table-bg-container .fr-btn-cell-bg-color, .royal-theme .fr-cell-properties-form .fr-table-bg-container .fr-btn-table-bg-color, .royal-theme .fr-cell-properties-form .fr-table-bg-container .fr-btn-table-border-bg-color, .royal-theme .fr-table-properties-form .fr-cell-bg-container .fr-btn-cell-bg-color, .royal-theme .fr-table-properties-form .fr-cell-bg-container .fr-btn-table-bg-color, .royal-theme .fr-table-properties-form .fr-cell-bg-container .fr-btn-table-border-bg-color, .royal-theme .fr-table-properties-form .fr-table-bg-container .fr-btn-cell-bg-color, .royal-theme .fr-table-properties-form .fr-table-bg-container .fr-btn-table-bg-color, .royal-theme .fr-table-properties-form .fr-table-bg-container .fr-btn-table-border-bg-color {
+    width: 36px;
+    height: 36px;
+    border: 1px solid #CCCCCC;
+    border-radius: 0 2px 2px 0;
+    padding: 0; }
+    .royal-theme .fr-cell-properties-form .fr-cell-bg-container .fr-btn-cell-bg-color:hover, .royal-theme .fr-cell-properties-form .fr-cell-bg-container .fr-btn-table-bg-color:hover, .royal-theme .fr-cell-properties-form .fr-cell-bg-container .fr-btn-table-border-bg-color:hover, .royal-theme .fr-cell-properties-form .fr-table-bg-container .fr-btn-cell-bg-color:hover, .royal-theme .fr-cell-properties-form .fr-table-bg-container .fr-btn-table-bg-color:hover, .royal-theme .fr-cell-properties-form .fr-table-bg-container .fr-btn-table-border-bg-color:hover, .royal-theme .fr-table-properties-form .fr-cell-bg-container .fr-btn-cell-bg-color:hover, .royal-theme .fr-table-properties-form .fr-cell-bg-container .fr-btn-table-bg-color:hover, .royal-theme .fr-table-properties-form .fr-cell-bg-container .fr-btn-table-border-bg-color:hover, .royal-theme .fr-table-properties-form .fr-table-bg-container .fr-btn-cell-bg-color:hover, .royal-theme .fr-table-properties-form .fr-table-bg-container .fr-btn-table-bg-color:hover, .royal-theme .fr-table-properties-form .fr-table-bg-container .fr-btn-table-border-bg-color:hover {
+      background-color: #ebebeb; }
+    .royal-theme .fr-cell-properties-form .fr-cell-bg-container .fr-btn-cell-bg-color .fr-color-preview, .royal-theme .fr-cell-properties-form .fr-cell-bg-container .fr-btn-cell-bg-color .fr-table-color-preview, .royal-theme .fr-cell-properties-form .fr-cell-bg-container .fr-btn-table-bg-color .fr-color-preview, .royal-theme .fr-cell-properties-form .fr-cell-bg-container .fr-btn-table-bg-color .fr-table-color-preview, .royal-theme .fr-cell-properties-form .fr-cell-bg-container .fr-btn-table-border-bg-color .fr-color-preview, .royal-theme .fr-cell-properties-form .fr-cell-bg-container .fr-btn-table-border-bg-color .fr-table-color-preview, .royal-theme .fr-cell-properties-form .fr-table-bg-container .fr-btn-cell-bg-color .fr-color-preview, .royal-theme .fr-cell-properties-form .fr-table-bg-container .fr-btn-cell-bg-color .fr-table-color-preview, .royal-theme .fr-cell-properties-form .fr-table-bg-container .fr-btn-table-bg-color .fr-color-preview, .royal-theme .fr-cell-properties-form .fr-table-bg-container .fr-btn-table-bg-color .fr-table-color-preview, .royal-theme .fr-cell-properties-form .fr-table-bg-container .fr-btn-table-border-bg-color .fr-color-preview, .royal-theme .fr-cell-properties-form .fr-table-bg-container .fr-btn-table-border-bg-color .fr-table-color-preview, .royal-theme .fr-table-properties-form .fr-cell-bg-container .fr-btn-cell-bg-color .fr-color-preview, .royal-theme .fr-table-properties-form .fr-cell-bg-container .fr-btn-cell-bg-color .fr-table-color-preview, .royal-theme .fr-table-properties-form .fr-cell-bg-container .fr-btn-table-bg-color .fr-color-preview, .royal-theme .fr-table-properties-form .fr-cell-bg-container .fr-btn-table-bg-color .fr-table-color-preview, .royal-theme .fr-table-properties-form .fr-cell-bg-container .fr-btn-table-border-bg-color .fr-color-preview, .royal-theme .fr-table-properties-form .fr-cell-bg-container .fr-btn-table-border-bg-color .fr-table-color-preview, .royal-theme .fr-table-properties-form .fr-table-bg-container .fr-btn-cell-bg-color .fr-color-preview, .royal-theme .fr-table-properties-form .fr-table-bg-container .fr-btn-cell-bg-color .fr-table-color-preview, .royal-theme .fr-table-properties-form .fr-table-bg-container .fr-btn-table-bg-color .fr-color-preview, .royal-theme .fr-table-properties-form .fr-table-bg-container .fr-btn-table-bg-color .fr-table-color-preview, .royal-theme .fr-table-properties-form .fr-table-bg-container .fr-btn-table-border-bg-color .fr-color-preview, .royal-theme .fr-table-properties-form .fr-table-bg-container .fr-btn-table-border-bg-color .fr-table-color-preview {
+      width: 20px;
+      height: 20px;
+      border: 1px solid #999999;
+      border-radius: 2px; }
+      .royal-theme .fr-cell-properties-form .fr-cell-bg-container .fr-btn-cell-bg-color .fr-color-preview .fr-color-preview-indicator, .royal-theme .fr-cell-properties-form .fr-cell-bg-container .fr-btn-cell-bg-color .fr-color-preview .fr-table-color-preview-indicator, .royal-theme .fr-cell-properties-form .fr-cell-bg-container .fr-btn-cell-bg-color .fr-table-color-preview .fr-color-preview-indicator, .royal-theme .fr-cell-properties-form .fr-cell-bg-container .fr-btn-cell-bg-color .fr-table-color-preview .fr-table-color-preview-indicator, .royal-theme .fr-cell-properties-form .fr-cell-bg-container .fr-btn-table-bg-color .fr-color-preview .fr-color-preview-indicator, .royal-theme .fr-cell-properties-form .fr-cell-bg-container .fr-btn-table-bg-color .fr-color-preview .fr-table-color-preview-indicator, .royal-theme .fr-cell-properties-form .fr-cell-bg-container .fr-btn-table-bg-color .fr-table-color-preview .fr-color-preview-indicator, .royal-theme .fr-cell-properties-form .fr-cell-bg-container .fr-btn-table-bg-color .fr-table-color-preview .fr-table-color-preview-indicator, .royal-theme .fr-cell-properties-form .fr-cell-bg-container .fr-btn-table-border-bg-color .fr-color-preview .fr-color-preview-indicator, .royal-theme .fr-cell-properties-form .fr-cell-bg-container .fr-btn-table-border-bg-color .fr-color-preview .fr-table-color-preview-indicator, .royal-theme .fr-cell-properties-form .fr-cell-bg-container .fr-btn-table-border-bg-color .fr-table-color-preview .fr-color-preview-indicator, .royal-theme .fr-cell-properties-form .fr-cell-bg-container .fr-btn-table-border-bg-color .fr-table-color-preview .fr-table-color-preview-indicator, .royal-theme .fr-cell-properties-form .fr-table-bg-container .fr-btn-cell-bg-color .fr-color-preview .fr-color-preview-indicator, .royal-theme .fr-cell-properties-form .fr-table-bg-container .fr-btn-cell-bg-color .fr-color-preview .fr-table-color-preview-indicator, .royal-theme .fr-cell-properties-form .fr-table-bg-container .fr-btn-cell-bg-color .fr-table-color-preview .fr-color-preview-indicator, .royal-theme .fr-cell-properties-form .fr-table-bg-container .fr-btn-cell-bg-color .fr-table-color-preview .fr-table-color-preview-indicator, .royal-theme .fr-cell-properties-form .fr-table-bg-container .fr-btn-table-bg-color .fr-color-preview .fr-color-preview-indicator, .royal-theme .fr-cell-properties-form .fr-table-bg-container .fr-btn-table-bg-color .fr-color-preview .fr-table-color-preview-indicator, .royal-theme .fr-cell-properties-form .fr-table-bg-container .fr-btn-table-bg-color .fr-table-color-preview .fr-color-preview-indicator, .royal-theme .fr-cell-properties-form .fr-table-bg-container .fr-btn-table-bg-color .fr-table-color-preview .fr-table-color-preview-indicator, .royal-theme .fr-cell-properties-form .fr-table-bg-container .fr-btn-table-border-bg-color .fr-color-preview .fr-color-preview-indicator, .royal-theme .fr-cell-properties-form .fr-table-bg-container .fr-btn-table-border-bg-color .fr-color-preview .fr-table-color-preview-indicator, .royal-theme .fr-cell-properties-form .fr-table-bg-container .fr-btn-table-border-bg-color .fr-table-color-preview .fr-color-preview-indicator, .royal-theme .fr-cell-properties-form .fr-table-bg-container .fr-btn-table-border-bg-color .fr-table-color-preview .fr-table-color-preview-indicator, .royal-theme .fr-table-properties-form .fr-cell-bg-container .fr-btn-cell-bg-color .fr-color-preview .fr-color-preview-indicator, .royal-theme .fr-table-properties-form .fr-cell-bg-container .fr-btn-cell-bg-color .fr-color-preview .fr-table-color-preview-indicator, .royal-theme .fr-table-properties-form .fr-cell-bg-container .fr-btn-cell-bg-color .fr-table-color-preview .fr-color-preview-indicator, .royal-theme .fr-table-properties-form .fr-cell-bg-container .fr-btn-cell-bg-color .fr-table-color-preview .fr-table-color-preview-indicator, .royal-theme .fr-table-properties-form .fr-cell-bg-container .fr-btn-table-bg-color .fr-color-preview .fr-color-preview-indicator, .royal-theme .fr-table-properties-form .fr-cell-bg-container .fr-btn-table-bg-color .fr-color-preview .fr-table-color-preview-indicator, .royal-theme .fr-table-properties-form .fr-cell-bg-container .fr-btn-table-bg-color .fr-table-color-preview .fr-color-preview-indicator, .royal-theme .fr-table-properties-form .fr-cell-bg-container .fr-btn-table-bg-color .fr-table-color-preview .fr-table-color-preview-indicator, .royal-theme .fr-table-properties-form .fr-cell-bg-container .fr-btn-table-border-bg-color .fr-color-preview .fr-color-preview-indicator, .royal-theme .fr-table-properties-form .fr-cell-bg-container .fr-btn-table-border-bg-color .fr-color-preview .fr-table-color-preview-indicator, .royal-theme .fr-table-properties-form .fr-cell-bg-container .fr-btn-table-border-bg-color .fr-table-color-preview .fr-color-preview-indicator, .royal-theme .fr-table-properties-form .fr-cell-bg-container .fr-btn-table-border-bg-color .fr-table-color-preview .fr-table-color-preview-indicator, .royal-theme .fr-table-properties-form .fr-table-bg-container .fr-btn-cell-bg-color .fr-color-preview .fr-color-preview-indicator, .royal-theme .fr-table-properties-form .fr-table-bg-container .fr-btn-cell-bg-color .fr-color-preview .fr-table-color-preview-indicator, .royal-theme .fr-table-properties-form .fr-table-bg-container .fr-btn-cell-bg-color .fr-table-color-preview .fr-color-preview-indicator, .royal-theme .fr-table-properties-form .fr-table-bg-container .fr-btn-cell-bg-color .fr-table-color-preview .fr-table-color-preview-indicator, .royal-theme .fr-table-properties-form .fr-table-bg-container .fr-btn-table-bg-color .fr-color-preview .fr-color-preview-indicator, .royal-theme .fr-table-properties-form .fr-table-bg-container .fr-btn-table-bg-color .fr-color-preview .fr-table-color-preview-indicator, .royal-theme .fr-table-properties-form .fr-table-bg-container .fr-btn-table-bg-color .fr-table-color-preview .fr-color-preview-indicator, .royal-theme .fr-table-properties-form .fr-table-bg-container .fr-btn-table-bg-color .fr-table-color-preview .fr-table-color-preview-indicator, .royal-theme .fr-table-properties-form .fr-table-bg-container .fr-btn-table-border-bg-color .fr-color-preview .fr-color-preview-indicator, .royal-theme .fr-table-properties-form .fr-table-bg-container .fr-btn-table-border-bg-color .fr-color-preview .fr-table-color-preview-indicator, .royal-theme .fr-table-properties-form .fr-table-bg-container .fr-btn-table-border-bg-color .fr-table-color-preview .fr-color-preview-indicator, .royal-theme .fr-table-properties-form .fr-table-bg-container .fr-btn-table-border-bg-color .fr-table-color-preview .fr-table-color-preview-indicator {
+        background: red; }
+  .royal-theme .fr-cell-properties-form .fr-cell-dimensions-container, .royal-theme .fr-table-properties-form .fr-cell-dimensions-container {
+    margin-bottom: 12px; }
+    .royal-theme .fr-cell-properties-form .fr-cell-dimensions-container label, .royal-theme .fr-table-properties-form .fr-cell-dimensions-container label {
+      font-size: 14px; }
+    .royal-theme .fr-cell-properties-form .fr-cell-dimensions-container .fr-cell-dimension-section .fr-dimension-inputs input, .royal-theme .fr-table-properties-form .fr-cell-dimensions-container .fr-cell-dimension-section .fr-dimension-inputs input {
+      width: 90px;
+      padding: 8px;
+      border: 1px solid #CCCCCC;
+      border-radius: 2px;
+      font-size: 14px; }
+      .royal-theme .fr-cell-properties-form .fr-cell-dimensions-container .fr-cell-dimension-section .fr-dimension-inputs input:focus, .royal-theme .fr-table-properties-form .fr-cell-dimensions-container .fr-cell-dimension-section .fr-dimension-inputs input:focus {
+        border-color: #0098f7; }
+      .royal-theme .fr-cell-properties-form .fr-cell-dimensions-container .fr-cell-dimension-section .fr-dimension-inputs input.fr-disabled, .royal-theme .fr-table-properties-form .fr-cell-dimensions-container .fr-cell-dimension-section .fr-dimension-inputs input.fr-disabled {
+        background-color: #f5f5f5;
+        color: #a9a9a9;
+        border: 1px solid #d1d1d1; }
+      .royal-theme .fr-cell-properties-form .fr-cell-dimensions-container .fr-cell-dimension-section .fr-dimension-inputs input::placeholder, .royal-theme .fr-table-properties-form .fr-cell-dimensions-container .fr-cell-dimension-section .fr-dimension-inputs input::placeholder {
+        color: #AAA; }
+    .royal-theme .fr-cell-properties-form .fr-cell-dimensions-container .fr-cell-padding-section label, .royal-theme .fr-table-properties-form .fr-cell-dimensions-container .fr-cell-padding-section label {
+      font-size: 14px; }
+    .royal-theme .fr-cell-properties-form .fr-cell-dimensions-container .fr-cell-padding-section input, .royal-theme .fr-table-properties-form .fr-cell-dimensions-container .fr-cell-padding-section input {
+      width: 90px;
+      padding: 8px;
+      border: 1px solid #CCCCCC;
+      border-radius: 2px;
+      font-size: 14px; }
+      .royal-theme .fr-cell-properties-form .fr-cell-dimensions-container .fr-cell-padding-section input:focus, .royal-theme .fr-table-properties-form .fr-cell-dimensions-container .fr-cell-padding-section input:focus {
+        border-color: #0098f7; }
+      .royal-theme .fr-cell-properties-form .fr-cell-dimensions-container .fr-cell-padding-section input.fr-disabled, .royal-theme .fr-table-properties-form .fr-cell-dimensions-container .fr-cell-padding-section input.fr-disabled {
+        background-color: #f5f5f5;
+        color: #a9a9a9;
+        border: 1px solid #d1d1d1; }
+      .royal-theme .fr-cell-properties-form .fr-cell-dimensions-container .fr-cell-padding-section input::placeholder, .royal-theme .fr-table-properties-form .fr-cell-dimensions-container .fr-cell-padding-section input::placeholder {
+        color: #AAA; }
+  .royal-theme .fr-cell-properties-form .fr-cell-properties-buttons .fr-cancel-button, .royal-theme .fr-cell-properties-form .fr-cell-properties-buttons .fr-save-button, .royal-theme .fr-cell-properties-form .fr-table-properties-buttons .fr-cancel-button, .royal-theme .fr-cell-properties-form .fr-table-properties-buttons .fr-save-button, .royal-theme .fr-table-properties-form .fr-cell-properties-buttons .fr-cancel-button, .royal-theme .fr-table-properties-form .fr-cell-properties-buttons .fr-save-button, .royal-theme .fr-table-properties-form .fr-table-properties-buttons .fr-cancel-button, .royal-theme .fr-table-properties-form .fr-table-properties-buttons .fr-save-button {
+    font-size: 14px;
+    padding: 8px 12px;
+    font-weight: 500; }
+    .royal-theme .fr-cell-properties-form .fr-cell-properties-buttons .fr-cancel-button.fr-disabled, .royal-theme .fr-cell-properties-form .fr-cell-properties-buttons .fr-save-button.fr-disabled, .royal-theme .fr-cell-properties-form .fr-table-properties-buttons .fr-cancel-button.fr-disabled, .royal-theme .fr-cell-properties-form .fr-table-properties-buttons .fr-save-button.fr-disabled, .royal-theme .fr-table-properties-form .fr-cell-properties-buttons .fr-cancel-button.fr-disabled, .royal-theme .fr-table-properties-form .fr-cell-properties-buttons .fr-save-button.fr-disabled, .royal-theme .fr-table-properties-form .fr-table-properties-buttons .fr-cancel-button.fr-disabled, .royal-theme .fr-table-properties-form .fr-table-properties-buttons .fr-save-button.fr-disabled {
+      color: #a9a9a9; }
+  .royal-theme .fr-cell-properties-form .fr-cell-properties-buttons .fr-cancel-button, .royal-theme .fr-cell-properties-form .fr-table-properties-buttons .fr-cancel-button, .royal-theme .fr-table-properties-form .fr-cell-properties-buttons .fr-cancel-button, .royal-theme .fr-table-properties-form .fr-table-properties-buttons .fr-cancel-button {
+    color: #0098f7;
+    border-radius: 2px; }
+  .royal-theme .fr-cell-properties-form .fr-cell-properties-buttons .fr-save-button, .royal-theme .fr-cell-properties-form .fr-table-properties-buttons .fr-save-button, .royal-theme .fr-table-properties-form .fr-cell-properties-buttons .fr-save-button, .royal-theme .fr-table-properties-form .fr-table-properties-buttons .fr-save-button {
+    background-color: #FFF;
+    border: 1px solid #0098f7;
+    color: #0098f7;
+    border-radius: 2px; }
+    .royal-theme .fr-cell-properties-form .fr-cell-properties-buttons .fr-save-button:hover, .royal-theme .fr-cell-properties-form .fr-table-properties-buttons .fr-save-button:hover, .royal-theme .fr-table-properties-form .fr-cell-properties-buttons .fr-save-button:hover, .royal-theme .fr-table-properties-form .fr-table-properties-buttons .fr-save-button:hover {
+      background-color: #ebebeb; }
+  .royal-theme .fr-cell-properties-form .fr-error, .royal-theme .fr-table-properties-form .fr-error {
+    color: red; }
+  .royal-theme .fr-cell-properties-form input.fr-error, .royal-theme .fr-table-properties-form input.fr-error {
+    border-color: red; }
+.royal-theme .fr-table-bg-container .fr-input-line input[type="text"], .royal-theme .fr-table-border-container .fr-input-line input[type="text"], .royal-theme .fr-table-dimentions-container .fr-input-line input[type="text"], .royal-theme .fr-table-style-container .fr-input-line input[type="text"] {
+  border-color: #CCCCCC; }
+.royal-theme .fr-table-bg-container .fr-input-line input + label, .royal-theme .fr-table-border-container .fr-input-line input + label, .royal-theme .fr-table-dimentions-container .fr-input-line input + label, .royal-theme .fr-table-style-container .fr-input-line input + label {
+  font-weight: 100; }
+.royal-theme .fr-table-bg-container .fr-input-line input.fr-not-empty + label, .royal-theme .fr-table-border-container .fr-input-line input.fr-not-empty + label, .royal-theme .fr-table-dimentions-container .fr-input-line input.fr-not-empty + label, .royal-theme .fr-table-style-container .fr-input-line input.fr-not-empty + label {
+  font-weight: 100; }
+.royal-theme .fr-table-bg-container .fr-input-line #fr-table-border-style, .royal-theme .fr-table-border-container .fr-input-line #fr-table-border-style, .royal-theme .fr-table-dimentions-container .fr-input-line #fr-table-border-style, .royal-theme .fr-table-style-container .fr-input-line #fr-table-border-style {
+  border-color: #CCCCCC; }
+.royal-theme .fr-table-bg-container .fr-input-line .fr-field-lable, .royal-theme .fr-table-border-container .fr-input-line .fr-field-lable, .royal-theme .fr-table-dimentions-container .fr-input-line .fr-field-lable, .royal-theme .fr-table-style-container .fr-input-line .fr-field-lable {
+  background: #FFF;
+  font-weight: 100;
+  color: dimgray; }
+.royal-theme .fr-table-bg-container .fr-input-line .fr-dropdown, .royal-theme .fr-table-border-container .fr-input-line .fr-dropdown, .royal-theme .fr-table-dimentions-container .fr-input-line .fr-dropdown, .royal-theme .fr-table-style-container .fr-input-line .fr-dropdown {
+  border: 1px solid #CCCCCC; }
+.royal-theme .fr-table-border-container .fr-btn-table-border-bg-color, .royal-theme .fr-table-dimentions-container .fr-btn-table-border-bg-color, .royal-theme .fr-table-dimentions-section .fr-btn-table-border-bg-color {
+  border: 1px solid #CCCCCC; }
+  .royal-theme .fr-table-border-container .fr-btn-table-border-bg-color .fr-border-color-preview, .royal-theme .fr-table-dimentions-container .fr-btn-table-border-bg-color .fr-border-color-preview, .royal-theme .fr-table-dimentions-section .fr-btn-table-border-bg-color .fr-border-color-preview {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #999999;
+    border-radius: 2px; }
+    .royal-theme .fr-table-border-container .fr-btn-table-border-bg-color .fr-border-color-preview .fr-border-color-preview-indicator, .royal-theme .fr-table-dimentions-container .fr-btn-table-border-bg-color .fr-border-color-preview .fr-border-color-preview-indicator, .royal-theme .fr-table-dimentions-section .fr-btn-table-border-bg-color .fr-border-color-preview .fr-border-color-preview-indicator {
+      background: red; }
+.royal-theme .fr-table-alignment-container {
+  border: 1px solid #CCCCCC; }
 .royal-theme #fr-form-container {
   margin: auto;
   overflow: auto; }
@@ -1741,6 +1880,8 @@
               fill: #333333; }
           .royal-theme .fr-command.fr-btn + .fr-dropdown-menu .fr-dropdown-wrapper .fr-dropdown-content ul.fr-dropdown-list li a.fr-active {
             background: #d6d6d6; }
+            .royal-theme .fr-command.fr-btn + .fr-dropdown-menu .fr-dropdown-wrapper .fr-dropdown-content ul.fr-dropdown-list li a.fr-active:focus:not(.fr-table-cell), .royal-theme .fr-command.fr-btn + .fr-dropdown-menu .fr-dropdown-wrapper .fr-dropdown-content ul.fr-dropdown-list li a.fr-active:hover:not(.fr-table-cell) {
+              outline: 1px solid #0098f7; }
           .royal-theme .fr-command.fr-btn + .fr-dropdown-menu .fr-dropdown-wrapper .fr-dropdown-content ul.fr-dropdown-list li a.fr-disabled {
             color: #bdbdbd; }
 .royal-theme .fr-command.fr-btn.fr-active + .fr-dropdown-menu {
