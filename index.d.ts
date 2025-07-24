@@ -1435,7 +1435,6 @@ declare module "froala-editor" {
     tableColors: string[];
     tableColorsButtons: string[];
     tableColorsStep: number;
-    tableDefaultWidth: string;
     tableEditButtons: string[];
     tableInsertButtons: string[];
     tableInsertHelper: boolean;
