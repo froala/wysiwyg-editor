@@ -1435,7 +1435,6 @@ declare module "froala-editor" {
     tableColors: string[];
     tableColorsButtons: string[];
     tableColorsStep: number;
-    tableDefaultWidth: string;
     tableEditButtons: string[];
     tableInsertButtons: string[];
     tableInsertHelper: boolean;
@@ -1454,6 +1453,8 @@ declare module "froala-editor" {
     tableDefaultBorderWidth: string,
     tableDefaultBorderStyle: string,
     tableBorderStyle: string[],
+    proportionalTableResize: boolean,
+    enableTableSelection: boolean,
 
     // Video
     videoAllowedProviders: string[];
@@ -1629,6 +1630,7 @@ declare module "froala-editor" {
     'edit.off': (this: FroalaEditor) => void;
     //element event
     'element.dropped': (this: FroalaEditor, element: object) => void;
+    'cell.replaced': (this: FroalaEditor, oldCell: any, newCell: any) => void;
     [key: string]: (this:FroalaEditor, ...args: any[]) => any;
   }
 

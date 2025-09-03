@@ -1,5 +1,5 @@
 /*!
- * froala_editor v4.6.0 (https://www.froala.com/wysiwyg-editor)
+ * froala_editor v4.6.1 (https://www.froala.com/wysiwyg-editor)
  * License https://froala.com/wysiwyg-editor/terms/
  * Copyright 2014-2025 Froala Labs
  */
@@ -1395,7 +1395,7 @@ span.fr-sr-only {
 
 .fr-view .fr-highlight-change, .fr-highlight-change > img, .fr-highlight-change > .fr-video > video,
 .fr-highlight-change > .fr-video > embed, .fr-highlight-change > .fr-video > iframe, .fr-highlight-change > .fr-embedly > .embedly-card > .embedly-card-hug > iframe,
-.fr-highlight-change > p, .fr-view .fr-highlight-change > span:not(.fr-tracking-deleted) {
+.fr-highlight-change > p, .fr-view .fr-highlight-change > span:not(.fr-tracking-deleted), .fr-highlight-change li, .fr-highlight-change > table td, .fr-highlight-change > table th {
   background-color: #f3eec3;
   opacity: 0.5; }
 
@@ -1425,13 +1425,16 @@ span.fr-sr-only {
 .fr-tracking-deleted img, .fr-highlight-change img {
   border: 2px solid #f3eec3; }
 
-.fr-highlight-change #isPasted *:not(table):not(tbody):not(tr):not(td) {
+.fr-highlight-change [data-pasted="true"] *:not(table):not(tbody):not(tr):not(td) {
   opacity: 0.5;
   background-color: #f3eec3; }
 
-.fr-highlight-change #isPasted > table td {
+.fr-highlight-change [data-pasted="true"] > table td {
   opacity: 0.5;
   border-color: #f3eec3; }
+
+.fr-track-visibility-hidden {
+  visibility: hidden; }
 
 .fr-track-hide {
   display: none; }

@@ -1,5 +1,5 @@
 /*!
- * froala_editor v4.6.0 (https://www.froala.com/wysiwyg-editor)
+ * froala_editor v4.6.1 (https://www.froala.com/wysiwyg-editor)
  * License https://froala.com/wysiwyg-editor/terms/
  * Copyright 2014-2025 Froala Labs
  */
@@ -1396,7 +1396,7 @@ span.fr-sr-only {
 
 .fr-view .fr-highlight-change, .fr-highlight-change > img, .fr-highlight-change > .fr-video > video,
 .fr-highlight-change > .fr-video > embed, .fr-highlight-change > .fr-video > iframe, .fr-highlight-change > .fr-embedly > .embedly-card > .embedly-card-hug > iframe,
-.fr-highlight-change > p, .fr-view .fr-highlight-change > span:not(.fr-tracking-deleted) {
+.fr-highlight-change > p, .fr-view .fr-highlight-change > span:not(.fr-tracking-deleted), .fr-highlight-change li, .fr-highlight-change > table td, .fr-highlight-change > table th {
   background-color: #f3eec3;
   opacity: 0.5; }
 
@@ -1426,13 +1426,16 @@ span.fr-sr-only {
 .fr-tracking-deleted img, .fr-highlight-change img {
   border: 2px solid #f3eec3; }
 
-.fr-highlight-change #isPasted *:not(table):not(tbody):not(tr):not(td) {
+.fr-highlight-change [data-pasted="true"] *:not(table):not(tbody):not(tr):not(td) {
   opacity: 0.5;
   background-color: #f3eec3; }
 
-.fr-highlight-change #isPasted > table td {
+.fr-highlight-change [data-pasted="true"] > table td {
   opacity: 0.5;
   border-color: #f3eec3; }
+
+.fr-track-visibility-hidden {
+  visibility: hidden; }
 
 .fr-track-hide {
   display: none; }
@@ -4227,18 +4230,27 @@ div.fr-modal-body {
   -ms-user-select: none; }
 
 .fr-table-resizer {
-  cursor: col-resize;
   position: absolute;
   z-index: 3;
   display: none; }
+  .fr-table-resizer.fr-table-col-resizer {
+    cursor: col-resize; }
+    .fr-table-resizer.fr-table-col-resizer div {
+      -webkit-opacity: 0;
+      -moz-opacity: 0;
+      opacity: 0;
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+      border-right: 1px solid #0098f7; }
+  .fr-table-resizer.fr-table-row-resizer {
+    cursor: row-resize; }
+    .fr-table-resizer.fr-table-row-resizer div {
+      -webkit-opacity: 0;
+      -moz-opacity: 0;
+      opacity: 0;
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+      border-bottom: 1px solid #0098f7; }
   .fr-table-resizer.fr-moving {
     z-index: 2; }
-  .fr-table-resizer div {
-    -webkit-opacity: 0;
-    -moz-opacity: 0;
-    opacity: 0;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-    border-right: 1px solid #0098f7; }
 
 .fr-no-selection {
   user-select: none;
@@ -4603,6 +4615,32 @@ div.fr-modal-body {
     background: transparent;
     margin: 2px;
     cursor: pointer; }
+
+.fr-table-drop-indicator {
+  position: absolute;
+  height: 0;
+  z-index: 1000;
+  pointer-events: none;
+  margin-top: -1px;
+  width: 100%;
+  left: 0;
+  display: block; }
+  .fr-table-drop-indicator .fr-table-drop-indicator-line {
+    border: 1px solid #0098F7; }
+    .fr-table-drop-indicator .fr-table-drop-indicator-line::before, .fr-table-drop-indicator .fr-table-drop-indicator-line::after {
+      content: '';
+      position: absolute;
+      top: -4px;
+      width: 8px;
+      height: 2px;
+      border-style: solid;
+      border-width: 4px; }
+    .fr-table-drop-indicator .fr-table-drop-indicator-line::before {
+      left: 0;
+      border-color: transparent transparent transparent #0098F7; }
+    .fr-table-drop-indicator .fr-table-drop-indicator-line::after {
+      right: 0;
+      border-color: transparent #0098F7 transparent transparent; }
 
 .fr-clearfix::after {
   clear: both;

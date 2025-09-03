@@ -1,5 +1,5 @@
 /*!
- * froala_editor v4.6.0 (https://www.froala.com/wysiwyg-editor)
+ * froala_editor v4.6.1 (https://www.froala.com/wysiwyg-editor)
  * License https://froala.com/wysiwyg-editor/terms/
  * Copyright 2014-2025 Froala Labs
  */
@@ -1060,12 +1060,18 @@
   -khtml-user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none; }
-.dark-theme .fr-table-resizer div {
+.dark-theme .fr-table-resizer.fr-table-col-resizer div {
   -webkit-opacity: 0;
   -moz-opacity: 0;
   opacity: 0;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   border-right: 1px solid #0098f7; }
+.dark-theme .fr-table-resizer.fr-table-row-resizer div {
+  -webkit-opacity: 0;
+  -moz-opacity: 0;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  border-bottom: 1px solid #0098f7; }
 .dark-theme .fr-no-selection {
   user-select: none;
   -o-user-select: none;
@@ -1238,6 +1244,18 @@
       background: red; }
 .dark-theme .fr-table-alignment-container {
   border: 1px solid #CCCCCC; }
+.dark-theme .fr-table-drop-indicator {
+  height: 0;
+  z-index: 1000;
+  left: 0; }
+  .dark-theme .fr-table-drop-indicator .fr-table-drop-indicator-line {
+    border: 1px solid #0098F7; }
+    .dark-theme .fr-table-drop-indicator .fr-table-drop-indicator-line::before {
+      left: 0;
+      border-color: transparent transparent transparent #0098F7; }
+    .dark-theme .fr-table-drop-indicator .fr-table-drop-indicator-line::after {
+      right: 0;
+      border-color: transparent #0098F7 transparent transparent; }
 .dark-theme #fr-form-container {
   margin: auto;
   overflow: auto; }
