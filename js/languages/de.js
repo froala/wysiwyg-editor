@@ -294,6 +294,7 @@
       'Word Paste Detected': 'Aus Word einfügen',
       // Character Counter 
       'Characters': 'Zeichen',
+      'Words': 'Wörter',
       // More Buttons
       'More Text': 'Weitere Textformate',
       'More Paragraph': 'Weitere Absatzformate',
