@@ -265,6 +265,7 @@
       'Word Paste Detected': 'Urklipp från Word upptäckt',
       // Character Counter
       'Characters': 'Tecken',
+      'Words': 'Ord',
       // More Buttons
       'More Text': 'Mer Text',
       'More Paragraph': 'Mer Paragraf',
