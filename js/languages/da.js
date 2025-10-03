@@ -262,7 +262,8 @@
       'Clean': 'Fjern',
       'Word Paste Detected': 'Indsættelse fra Word opdaget',
       // Character Counter 
-      'Characters': 'tegn',
+      'Characters': 'Tegn',
+      'Words': 'Ord',
       // More Buttons
       'More Text': 'Mere tekst',
       'More Paragraph': 'Mere afsnit',

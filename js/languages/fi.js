@@ -264,7 +264,8 @@
       'Clean': 'Puhdas',
       'Word Paste Detected': 'Sana-tahna havaittu',
       // Character Counter 
-      'Characters': 'merkit',
+      'Characters': 'Merkit',
+      'Words': 'Sanoja',
       // More Buttons
       'More Text': 'Lisää tekstiä',
       'More Paragraph': 'Lisää kohta',
