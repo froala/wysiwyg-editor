@@ -259,12 +259,12 @@
       'Embed URL': 'آدرس جاسازی',
       'Paste in a URL to embed': 'یک URL برای جاسازی کپی کنید',
       // Word Paste.
-      'The pasted content is coming from a Microsoft Word document. Do you want to keep the format or clean it up?': 'محتوای جا به جا از یک سند Word Microsoft می آید. آیا می خواهید فرمت را نگه دارید یا پاک کنید؟',
+      'The pasted content is coming from a Microsoft Word document. Do you want to keep the format or clean it up?': 'محتوای جا به جا از یک سند مایکروسافت .رد می آید. آیا می خواهید فرمت را نگه دارید یا پاک کنید؟',
       'Keep': 'نگاه داشتن',
       'Clean': 'پاک کن',
-      'Word Paste Detected': 'کلمه رب تشخیص داده شده است',
+      'Word Paste Detected': 'محتوای ورد تشخیص داده شده است',
       // Character Counter 
-      'Characters': 'شخصیت ها',
+      'Characters': 'کارکترها',
       // More Buttons
       'More Text': 'متن بیشتر',
       'More Paragraph': 'پاراگراف بیشتر',
