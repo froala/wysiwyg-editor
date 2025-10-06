@@ -19,6 +19,21 @@
     translation: {
       // Place holder
       'Type something': 'Napište něco',
+      // Missing translations
+      'Text Color': 'Barva textu',
+      'Background Color': 'Barva pozadí',
+      'Inline Class': 'Třída řádku',
+      'Default': 'Výchozí',
+      'Lower Alpha': 'Nižší alfa',
+      'Lower Greek': 'Nižší řečtina',
+      'Lower Roman': 'Nižší římský',
+      'Upper Alpha': 'Horní alfa',
+      'Upper Roman': 'Horní římský',
+      'Circle': 'Kruh',
+      'Disc': 'Disk',
+      'Square': 'Čtverec',
+      'Insert Files': 'Vložit soubory',
+      'Download PDF': 'Stáhnout PDF',
       // Basic formatting
       'Bold': 'Tučné',
       'Italic': 'Kurzíva',
@@ -62,20 +77,9 @@
       'None': 'Žádné',
       // Lists
       'Ordered List': 'Číslovaný seznam',
-      'Default': 'Výchozí',
-      'Lower Alpha': 'Nižší alfa',
-      'Lower Greek': 'Nižší řečtina',
-      'Lower Roman': 'Nižší římský',
-      'Upper Alpha': 'Horní alfa',
-      'Upper Roman': 'Horní římský',
       'Unordered List': 'Nečíslovaný seznam',
-      'Circle': 'Kruh',
-      'Disc': 'Disk',
-      'Square': 'Čtverec',
       // Line height
       'Line Height': 'Výška řádku',
-      'Single': 'Jednojitá',
-      'Double': 'Dvojitá',
       // Indent
       'Decrease Indent': 'Zmenšit odsazení',
       'Increase Indent': 'Zvětšit odsazení',
@@ -275,7 +279,14 @@
       'The pasted content is coming from a Microsoft Word document. Do you want to keep the format or clean it up?': 'Vložený obsah pochází z dokumentu Microsoft Word. Chcete formát uchovat nebo jej vyčistit?',
       'Keep': 'Uchovat',
       'Clean': 'Vyčistit',
-      'Word Paste Detected': 'Detekovaný obsah dokumentu Word'
+      'Word Paste Detected': 'Detekovaný obsah dokumentu Word',
+      // Character Counter 
+      'Characters': 'Znaky',
+      // More Buttons
+      'More Text': 'Text - další',
+      'More Paragraph': 'Odstavec - další',
+      'More Rich': 'Bohatý - další',
+      'More Misc': 'Ostatní - další',
     },
     direction: 'ltr'
   };
