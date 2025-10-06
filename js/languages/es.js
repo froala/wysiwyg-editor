@@ -280,7 +280,9 @@
       'The pasted content is coming from a Microsoft Word document. Do you want to keep the format or clean it up?': 'El contenido pegado viene de un documento de Microsoft Word. ¿Quieres mantener el formato o limpiarlo?',
       'Keep': 'Guardar',
       'Clean': 'Limpiar',
-      'Word Paste Detected': 'Palabra detectada'
+      'Word Paste Detected': 'Palabra detectada',
+      // Character Counter 
+      'Characters': 'Caracteres'
     },
     direction: 'ltr'
   };
