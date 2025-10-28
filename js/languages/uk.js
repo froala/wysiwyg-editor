@@ -1,5 +1,5 @@
 /*!
- * froala_editor v4.6.2 (https://www.froala.com/wysiwyg-editor)
+ * froala_editor v4.7.0 (https://www.froala.com/wysiwyg-editor)
  * License https://froala.com/wysiwyg-editor/terms/
  * Copyright 2014-2025 Froala Labs
  */
@@ -24,6 +24,7 @@
       'Italic': "\u041A\u0443\u0440\u0441\u0438\u0432",
       'Underline': "\u041F\u0456\u0434\u043A\u0440\u0435\u0441\u043B\u0435\u043D\u0438\u0439",
       'Strikethrough': "\u0417\u0430\u043A\u0440\u0435\u0441\u043B\u0435\u043D\u0438\u0439",
+      'Size': 'Розмір',
       // Main buttons
       'Insert': "\u0432\u0441\u0442\u0430\u0432\u0438\u0442\u0438",
       'Delete': "\u0412\u0438\u0434\u0430\u043B\u0438\u0442\u0438",
@@ -39,6 +40,7 @@
       'Font Size': "\u0420\u043E\u0437\u043C\u0456\u0440 \u0448\u0440\u0438\u0444\u0442\u0443",
       // Colors
       'Colors': "\u043A\u043E\u043B\u044C\u043E\u0440\u0438",
+      'Color': 'Колір',
       'Background': "\u0424\u043E\u043D",
       'Text': "\u0422\u0435\u043A\u0441\u0442",
       'HEX Color': 'Шістнадцятковий колір',
@@ -53,6 +55,7 @@
       // Style
       'Paragraph Style': "\u043F\u0443\u043D\u043A\u0442 \u0441\u0442\u0438\u043B\u044C",
       'Inline Style': "\u0432\u0431\u0443\u0434\u043E\u0432\u0430\u043D\u0438\u0439 \u0441\u0442\u0438\u043B\u044C",
+      'Padding': 'Внутрішній відступ',
       // Alignment
       'Align': "\u0412\u0438\u0440\u0456\u0432\u043D\u044E\u0432\u0430\u043D\u043D\u044F",
       'Align Left': "\u041F\u043E \u043B\u0456\u0432\u043E\u043C\u0443 \u043A\u0440\u0430\u044E",
@@ -60,6 +63,11 @@
       'Align Right': "\u041F\u043E \u043F\u0440\u0430\u0432\u043E\u043C\u0443 \u043A\u0440\u0430\u044E",
       'Align Justify': "\u041F\u043E \u0448\u0438\u0440\u0438\u043D\u0456",
       'None': "\u043D\u0456",
+      'Alignment': 'Вирівнювання',
+      'Next': 'Далі',
+      'Previous': 'Назад',
+      'Advanced Options': 'Додаткові параметри',
+      'Close': 'Закрити',
       // Lists
       'Ordered List': "\u041D\u0443\u043C\u0435\u0440\u043E\u0432\u0430\u043D\u0438\u0439 \u0441\u043F\u0438\u0441\u043E\u043A",
       'Unordered List': "\u041C\u0430\u0440\u043A\u043E\u0432\u0430\u043D\u0438\u0439 \u0441\u043F\u0438\u0441\u043E\u043A",
@@ -132,6 +140,22 @@
       'Align Middle': "\u0432\u0438\u0440\u0456\u0432\u043D\u044F\u0442\u0438 \u043F\u043E \u0441\u0435\u0440\u0435\u0434\u0438\u043D\u0456",
       'Align Bottom': "\u0417\u0456\u0441\u0442\u0430\u0432\u0442\u0435 \u043D\u0438\u0436\u043D\u044E",
       'Cell Style': "\u0441\u0442\u0438\u043B\u044C \u043A\u043E\u043C\u0456\u0440\u043A\u0438",
+      'Table Properties': 'Властивості таблиці',
+      'Cell Properties': 'Властивості комірки',
+      'Table Footer': 'Нижній колонтитул таблиці',
+      'Dimensions': 'Розміри',
+      'Custom background color input': 'Введення власного кольору фону',
+      'Background color picker': 'Вибір кольору фону',
+      'Custom border color input': 'Введення власного кольору межі',
+      'Border color picker': 'Вибір кольору межі',
+      'Border width': 'Ширина межі',
+      'Border style': 'Стиль межі',
+      'Border color': 'Колір межі',
+      'Table width': 'Ширина таблиці',
+      'Table height': 'Висота таблиці',
+      'Left align': 'Вирівняти ліворуч',
+      'Center align': 'Вирівняти по центру',
+      'Right align': 'Вирівняти праворуч',
       // Files
       'Upload File': "\u0417\u0430\u0432\u0430\u043D\u0442\u0430\u0436\u0438\u0442\u0438 \u0444\u0430\u0439\u043B",
       'Drop file': "\u041F\u0435\u0440\u0435\u043C\u0456\u0441\u0442\u0456\u0442\u044C \u0444\u0430\u0439\u043B \u0441\u044E\u0434\u0438",
@@ -206,6 +230,7 @@
       'Clear Formatting': "\u041E\u0447\u0438\u0441\u0442\u0438\u0442\u0438 \u0444\u043E\u0440\u043C\u0430\u0442\u0443\u0432\u0430\u043D\u043D\u044F",
       // Save
       'Save': "\u0417\u0431\u0435\u0440\u0435\u0433\u0442\u0438",
+      'Ok': 'Гаразд',
       // Undo, redo
       'Undo': "\u0421\u043A\u0430\u0441\u0443\u0432\u0430\u0442\u0438",
       'Redo': "\u041F\u043E\u0432\u0442\u043E\u0440\u0438\u0442\u0438",
@@ -265,11 +290,37 @@
       'Word Paste Detected': 'Слово паста виявлено',
       // Character Counter
       'Characters': 'Символи',
+      // Find and Replace  
+      'Find and Replace': 'Знайти та замінити',
+      'Find': 'Знайти',
+      'Replace with': 'Замінити на',
+      'Replace All': 'Замінити все',
+      'Match case': 'Враховувати регістр',
+      'Whole words only': 'Лише цілі слова',
       // More Buttons
       'More Text': 'більше тексту',
       'More Paragraph': 'більше Параграф',
       'More Rich': 'більше Багатий',
-      'More Misc': 'більше Різне'
+      'More Misc': 'більше Різне',
+      'Border': 'кордону',
+      // selector icon  
+      'Select Table': 'Вибрати таблицю',
+      'Drag Table': 'Перетягнути таблицю',
+      'Select PageBreak': 'Виберіть розрив сторінки',
+      'Drag PageBreak': 'Перетягнути розрив сторінки',
+      'Page Break': 'Розрив сторінки',
+      //Link to anchor
+      'Insert Anchor': 'Вставити якір',
+      'There are no entries matching': 'Немає записів, що відповідають',
+      'Update Anchor': 'Оновити якір',
+      'Edit Anchor': 'Редагувати якір',
+      'Anchor Name': 'Назва якоря',
+      'Anchor Link': 'Посилання на якір',
+      'Scroll to target': 'Прокрутити до цілі',
+      'Enter the anchor name without space': 'Введіть назву якоря без пробілів',
+      'Anchor name already exists.': 'Назва якоря вже існує.',
+      //export to word
+      'Export to Word': 'Експорт у Word'
     },
     direction: 'ltr'
   };

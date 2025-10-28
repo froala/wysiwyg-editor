@@ -1,5 +1,5 @@
 /*!
- * froala_editor v4.6.2 (https://www.froala.com/wysiwyg-editor)
+ * froala_editor v4.7.0 (https://www.froala.com/wysiwyg-editor)
  * License https://froala.com/wysiwyg-editor/terms/
  * Copyright 2014-2025 Froala Labs
  */
@@ -24,6 +24,7 @@
       'Italic': 'Πλάγια',
       'Underline': 'Υπογραμμισμένα',
       'Strikethrough': 'Διαγραμμένα',
+      'Size': 'μέγεθος',
       // Main buttons
       'Insert': 'Εισαγωγή',
       'Delete': 'Διαγραφή',
@@ -39,6 +40,7 @@
       'Font Size': 'Μέγεθος',
       // Colors
       'Colors': 'Χρώματα',
+      'Color': 'Χρώμα',
       'Background': 'Φόντο',
       'Text': 'Κείμενο',
       'HEX Color': 'Χρώμα HEX',
@@ -56,6 +58,7 @@
       'Spaced': 'Αραιά',
       'Uppercase': 'Κεφαλαία',
       'Inline Style': 'Ενσωματωμένος τύπος',
+      'Padding': 'Υλικό παραγεμίσματος',
       // Alignment
       'Align': 'Ευθυγράμμιση',
       'Align Left': 'Αριστερά',
@@ -63,6 +66,11 @@
       'Align Right': 'Δεξιά',
       'Align Justify': 'Γέμισμα',
       'None': 'Χωρίς ευθυγράμμιση',
+      'Alignment': 'Στοίχιση',
+      'Next': 'Επόμενο',
+      'Previous': 'Προηγούμενος',
+      'Advanced Options': 'Προηγμένες επιλογές',
+      'Close': 'Κοντά',
       // Lists
       'Ordered List': 'Διεταγμένη λίστα',
       'Unordered List': 'Αναδιάταχτη λίστα',
@@ -138,6 +146,20 @@
       'Align Middle': 'Ευθυγράμμιση μέσης',
       'Align Bottom': 'Ευθυγράμμιση βάθους',
       'Cell Style': 'Εξατομίκευση κελιού',
+      'Table Footer': 'Υποσέλιδο τραπεζιού',
+      'Dimensions': 'Διαστάσεις',
+      'Custom background color input': 'Προσαρμοσμένη εισαγωγή χρώματος φόντου',
+      'Background color picker': 'Επιλογέας χρώματος φόντου',
+      'Custom border color input': 'Προσαρμοσμένη εισαγωγή χρώματος περιγράμματος',
+      'Border color picker': 'Επιλογέας χρώματος περιγράμματος',
+      'Border width': 'Πλάτος περιγράμματος',
+      'Border style': 'Στυλ συνόρων',
+      'Border color': 'Χρώμα περιγράμματος',
+      'Table width': 'Πλάτος τραπεζιού',
+      'Table height': 'Ύψος τραπεζιού',
+      'Left align': 'Αριστερά στοίχιση',
+      'Center align': 'Στοίχιση στο κέντρο',
+      'Right align': 'Δεξιά στοίχιση',
       // Files
       'Upload File': 'Ανέβασμα αρχείου',
       'Drop file': 'Σύρετε αρχείο',
@@ -212,6 +234,7 @@
       'Clear Formatting': 'Εκαθάριση μορφοποίησης',
       // Save
       'Save': '',
+      'ok': 'Εντάξει',
       // Undo, redo
       'Undo': 'Αναίρεση',
       'Redo': 'Επανάληψη',
@@ -271,11 +294,37 @@
       'Word Paste Detected': 'Εντοπίστηκε επικόλληση από αρχείο Word',
       // Character Counter 
       'Characters': 'Χαρακτήρες',
+      //Find and Replace
+      'Find and Replace': 'Εύρεση και αντικατάσταση',
+      'Find': 'Εύρημα',
+      'Replace with': 'Αντικατάσταση με',
+      'Replace All': 'Αντικατάσταση όλων',
+      'Match case': 'Θήκη αγώνα',
+      'Whole words only': 'Ολόκληρες λέξεις μόνο',
       // More Buttons
       'More Text': 'Περισσότερα κείμενο',
       'More Paragraph': 'Περισσότερα Παράγραφος',
       'More Rich': 'Περισσότερα Πλούσιος',
-      'More Misc': 'Περισσότερα Διάφορα'
+      'More Misc': 'Περισσότερα Διάφορα',
+      'Border': 'Σύνορο',
+      //selector icon
+      'Select Table': 'Επιλέξτε Πίνακας',
+      'Drag Table': 'Σύρετε τον πίνακα',
+      'Select PageBreak': 'Επιλογή αλλαγής σελίδας',
+      'Drag PageBreak': 'Σύρετε το Διακοπή σελίδας',
+      'Page Break': 'Αλλαγή σελίδας',
+      //link to anchor
+      'Insert Anchor': 'Εισαγωγή αγκύρωσης',
+      'There are no entries matching': 'Δεν υπάρχουν καταχωρήσεις που να ταιριάζουν',
+      'Update Anchor': 'Ενημέρωση αγκύρωσης',
+      'Edit Anchor': 'Επεξεργασία αγκύρωσης',
+      'Anchor Name': 'Όνομα αγκύρωσης',
+      'Anchor Link': 'Σύνδεσμος αγκύρωσης',
+      'Scroll to target': 'Κύλιση στον στόχο',
+      'Enter the anchor name without space': 'Εισάγετε το όνομα αγκύρωσης χωρίς κενό',
+      'Anchor name already exists.': 'Το όνομα αγκύρωσης υπάρχει ήδη.',
+      // Export to Word
+      'Export to Word': 'Εξαγωγή σε Word'
     },
     direction: 'ltr'
   };

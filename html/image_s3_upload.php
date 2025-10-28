@@ -45,7 +45,7 @@
   <link rel="stylesheet" href="../css/plugins/table.css">
   <link rel="stylesheet" href="../css/plugins/char_counter.css">
   <link rel="stylesheet" href="../css/plugins/video.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/codemirror.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/codemirror.min.css">
 
   <style>
       body {
@@ -126,8 +126,8 @@
       Curabitur sem purus, sagittis quis lorem ac, iaculis laoreet lacus. Fusce eleifend congue massa a ornare. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sodales, tortor ut hendrerit lacinia, velit metus commodo libero, eu consequat est metus sit amet odio. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque eu sem vehicula, vulputate est sit amet, mattis nisi. Nullam consequat at turpis vitae pretium. Nulla risus velit, pharetra ac sollicitudin sed, volutpat nec felis.
   </div>
 
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/codemirror.min.js"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/mode/xml/xml.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/codemirror.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/mode/xml/xml.min.js"></script>
   <script type="text/javascript" src="../js/froala_editor.min.js"></script>
   <script type="text/javascript" src="../js/plugins/align.min.js"></script>
   <script type="text/javascript" src="../js/plugins/code_beautifier.min.js"></script>

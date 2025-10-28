@@ -1,5 +1,5 @@
 /*!
- * froala_editor v4.6.2 (https://www.froala.com/wysiwyg-editor)
+ * froala_editor v4.7.0 (https://www.froala.com/wysiwyg-editor)
  * License https://froala.com/wysiwyg-editor/terms/
  * Copyright 2014-2025 Froala Labs
  */
@@ -24,6 +24,7 @@
       'Italic': 'Italique',
       'Underline': "Soulign\xE9",
       'Strikethrough': "Barr\xE9",
+      'Size': 'Taille',
       // Main buttons
       'Insert': "Ins\xE9rer",
       'Delete': 'Supprimer',
@@ -42,6 +43,7 @@
       'Line Height': 'Hauteur de la ligne',
       // Colors
       'Colors': 'Couleurs',
+      'Color': 'Couleur',
       'Background': "Arri\xE8re-plan",
       'Text': 'Texte',
       'HEX Color': "Couleur hexad\xE9cimale",
@@ -61,6 +63,7 @@
       'Bordered': 'Bordé',
       'Spaced': 'Espacé',
       'Uppercase': 'Majuscule',
+      'Padding': 'Rembourrage',
       // Alignment
       'Align': 'Aligner',
       'Align Left': "Aligner \xE0 gauche",
@@ -68,6 +71,11 @@
       'Align Right': "Aligner \xE0 droite",
       'Align Justify': 'Justifier',
       'None': 'Aucun',
+      'Alignment': 'Alignement',
+      'Next': 'Suivant',
+      'Previous': 'Précédent',
+      'Advanced Options': 'Options avancées',
+      'Close': 'Fermer',
       // Download PDF
       'Download PDF': 'Télécharger le PDF',
       // Inline Class
@@ -157,6 +165,22 @@
       'Alternate Rows': 'Lignes alternatives',
       'Highlighted': 'Souligné',
       'Thick': 'Épais',
+      'Table Properties': 'Propriétés du tableau',
+      'Cell Properties': 'Propriétés de la cellule',
+      'Table Footer': 'Pied de page du tableau',
+      'Dimensions': 'Dimensions',
+      'Custom background color input': 'Entrée couleur de fond personnalisée',
+      'Background color picker': 'Sélecteur de couleur de fond',
+      'Custom border color input': 'Entrée couleur de bordure personnalisée',
+      'Border color picker': 'Sélecteur de couleur de bordure',
+      'Border width': 'Largeur de bordure',
+      'Border style': 'Style de bordure',
+      'Border color': 'Couleur de bordure',
+      'Table width': 'Largeur du tableau',
+      'Table height': 'Hauteur du tableau',
+      'Left align': 'Aligner à gauche',
+      'Center align': 'Aligner au centre',
+      'Right align': 'Aligner à droite',
       // Files
       'Upload File': "T\xE9l\xE9verser un fichier",
       'Drop file': 'Cliquer pour parcourir',
@@ -231,6 +255,7 @@
       'Clear Formatting': 'Effacer le formatage',
       // Save
       'Save': 'Sauvegarder',
+      'Ok': 'Ok',
       // Undo, redo
       'Undo': 'Annuler',
       'Redo': "R\xE9tablir",
@@ -290,11 +315,37 @@
       'Word Paste Detected': "Copiage de mots d\xE9tect\xE9",
       // Character Counter 
       'Characters': 'Caract\xE8res',
+      // Find and Replace
+      'Find and Replace': 'Rechercher et remplacer',
+      'Find': 'Trouver',
+      'Replace with': 'Remplacer par',
+      'Replace All': 'Remplacer tout',
+      'Match case': 'Étui de correspondance',
+      'Whole words only': 'Des mots entiers seulement',
       // More Buttons
       'More Text': 'Autres options de texte',
       'More Paragraph': 'Autres options de paragraphe',
       'More Rich': 'Autres options d\'enrichissement',
-      'More Misc': 'Autres fonctionnalit\xE9s diverses'
+      'More Misc': 'Autres fonctionnalit\xE9s diverses',
+      'Border': 'Frontière',
+      // selector icon
+      'Select Table': 'Sélectionner le tableau',
+      'Drag Table': 'Faire Glisser le tableau',
+      'Select PageBreak': 'Sélectionner saut de page',
+      'Drag PageBreak': 'Faire Glisser saut de page',
+      'Page Break': 'Saut de page',
+      // link to anchor
+      'Insert Anchor': 'Insérer une ancre',
+      'There are no entries matching': 'Il n\'y a pas d\'entrées correspondantes',
+      'Update Anchor': 'Mettre à jour l\'ancre',
+      'Edit Anchor': 'Modifier l\'ancre',
+      'Anchor Name': 'Nom de l\'ancre',
+      'Anchor Link': 'Lien de l\'ancre',
+      'Scroll to target': 'Faire défiler jusqu\'à la cible',
+      'Enter the anchor name without space': 'Entrez le nom de l\'ancre sans espace',
+      'Anchor name already exists.': 'Le nom de l\'ancre existe déjà.',
+      // Export to Word
+      'Export to Word': 'Exporter vers Word'
     },
     direction: 'ltr'
   };

@@ -1,5 +1,5 @@
 /*!
- * froala_editor v4.6.2 (https://www.froala.com/wysiwyg-editor)
+ * froala_editor v4.7.0 (https://www.froala.com/wysiwyg-editor)
  * License https://froala.com/wysiwyg-editor/terms/
  * Copyright 2014-2025 Froala Labs
  */
@@ -41,6 +41,7 @@
       'Italic': 'Kursywa',
       'Underline': "Podkre\u015Blenie",
       'Strikethrough': "Przekre\u015Blenie",
+      'Size': 'Rozmiar',
       // Main buttons
       'Insert': 'Wstaw',
       'Delete': "Usun\u0105\u0107",
@@ -56,6 +57,7 @@
       'Font Size': 'Rozmiar czcionki',
       // Colors
       'Colors': 'Kolory',
+      'Color': 'Kolor',
       'Background': "T\u0142o",
       'Text': 'Tekstu',
       'HEX Color': 'Sześciokąt',
@@ -70,6 +72,7 @@
       // Style
       'Paragraph Style': 'Styl akapitu',
       'Inline Style': 'Stylu zgodna',
+      'Padding': 'Wyściółka',
       // Alignment
       'Align': "Wyr\xF3wnaj",
       'Align Left': "Wyr\xF3wnaj do lewej",
@@ -77,6 +80,11 @@
       'Align Right': "Wyr\xF3wnaj do prawej",
       'Align Justify': 'Do lewej i prawej',
       'None': "\u017Baden",
+      'Alignment': 'Wyrównanie',
+      'Next': 'Następny',
+      'Previous': 'Poprzedni',
+      'Advanced Options': 'Opcje zaawansowane',
+      'Close': 'Zamknij',
       // Lists
       'Ordered List': "Uporz\u0105dkowana lista",
       'Unordered List': "Lista nieuporz\u0105dkowana",
@@ -149,6 +157,22 @@
       'Align Middle': "Wyr\xF3wnaj \u015Brodku",
       'Align Bottom': "Wyr\xF3wnaj do do\u0142u",
       'Cell Style': "Styl kom\xF3rki",
+      'Table Properties': 'Właściwości tabeli',
+      'Cell Properties': 'Właściwości komórki',
+      'Table Footer': 'Stopka tabeli',
+      'Dimensions': 'Wymiary',
+      'Custom background color input': 'Niestandardowe wprowadzenie koloru tła',
+      'Background color picker': 'Selektor koloru tła',
+      'Custom border color input': 'Niestandardowe wprowadzenie koloru obramowania',
+      'Border color picker': 'Selektor koloru obramowania',
+      'Border width': 'Szerokość obramowania',
+      'Border style': 'Styl graniczny',
+      'Border color': 'Kolor obramowania',
+      'Table width': 'Szerokość stołu',
+      'Table height': 'Wysokość stołu',
+      'Left align': 'Wyrównaj do lewej',
+      'Center align': 'Wyśrodkuj',
+      'Right align': 'Wyrównaj do prawej',
       // Files
       'Upload File': "Prze\u015Blij plik",
       'Drop file': "Upu\u015Bci\u0107 plik",
@@ -223,6 +247,7 @@
       'Clear Formatting': "Usu\u0144 formatowanie",
       // Save
       'Save': "Zapisa\u0107",
+      'Ok': 'OK',
       // Undo, redo
       'Undo': 'Cofnij',
       'Redo': "Pon\xF3w",
@@ -282,11 +307,37 @@
       'Word Paste Detected': 'Wykryto sformatowany tekst',
       // Character Counter
       'Characters': 'Znaki',
+      // Find and Replace
+      'Find and Replace': 'Znajdź i zamień',
+      'Find': 'Znajdować',
+      'Replace with': 'Zamień na',
+      'Replace All': 'Zamień wszystko',
+      'Match case': 'Sprawa dopasowania',
+      'Whole words only': 'Tylko całe słowa',
       // More Buttons
       'More Text': 'Więcej Tekst',
       'More Paragraph': 'Więcej Ustęp',
       'More Rich': 'Więcej Bogaty',
-      'More Misc': 'Więcej Misc'
+      'More Misc': 'Więcej Misc',
+      'Border': 'Granica',
+      // selector icon
+      'Select Table': 'Wybierz opcję Tabela',
+      'Drag Table': 'Przeciągnij tabelę',
+      'Select PageBreak': 'Wybierz podział strony',
+      'Drag PageBreak': 'Przeciągnij podział strony',
+      'Page Break': 'Przerwa strony',
+      //Link to anchor
+      'Insert Anchor': 'Wstaw kotwicę',
+      'There are no entries matching': 'Nie ma pasujących wpisów',
+      'Update Anchor': 'Zaktualizuj kotwicę',
+      'Edit Anchor': 'Edytuj kotwicę',
+      'Anchor Name': 'Nazwa kotwicy',
+      'Anchor Link': 'Łącze kotwicy',
+      'Scroll to target': 'Przewiń do celu',
+      'Enter the anchor name without space': 'Wprowadź nazwę kotwicy bez spacji',
+      'Anchor name already exists.': 'Nazwa kotwicy już istnieje.',
+      //Export to Word
+      'Export to Word': 'Eksport do Worda'
     },
     direction: 'ltr'
   };

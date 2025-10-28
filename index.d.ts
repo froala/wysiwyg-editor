@@ -82,6 +82,9 @@ declare module "froala-editor" {
     track_changes: Track_Changes;
     special_characters: Special_characters;
     word_paste: Word_paste;
+    exportToWord: ExportToWord;
+    pageBreak: Page_Break;
+    linkToAnchor: linkToAnchor;
     refresh: Refresh;
     shortcuts: Shortcuts;
     static DefineIcon: (name: string, parameters: Partial<DefineIconParameters>) => object;
@@ -972,6 +975,8 @@ declare module "froala-editor" {
       rejectAllChanges: string,
       acceptSingleChange: string,
       rejectSingleChange: string,
+      bookmark: string,
+      anchor: string,
       [key: string]: string
   }
   
@@ -1484,6 +1489,7 @@ declare module "froala-editor" {
     wordDeniedTags: string[];
     wordPasteKeepFormatting: boolean;
     wordPasteModal: boolean;
+    wordExportFileName: string;
 
     showChangesEnabled: boolean;
     trackChangesEnabled: boolean;
@@ -1491,6 +1497,12 @@ declare module "froala-editor" {
 
     // Filestack
     filestackOptions: object;
+
+    //page break
+    exportPageBreak: boolean;
+
+    //link to anchor
+    anchorEditButtons: string[];
   }
 
   export interface FroalaEvents {
@@ -1632,6 +1644,15 @@ declare module "froala-editor" {
     'element.dropped': (this: FroalaEditor, element: object) => void;
     'cell.replaced': (this: FroalaEditor, oldCell: any, newCell: any) => void;
     [key: string]: (this:FroalaEditor, ...args: any[]) => any;
+    //export event
+    'word.beforeExport': (this: FroalaEditor, html: string) => string;
+    'word.afterExport': (this: FroalaEditor, html: string) => void;
+    //page break
+    'pageBreak.beforeInsert': (this: FroalaEditor) => boolean;
+
+    // link to anchor
+    'anchor.beforeInsert': (this: FroalaEditor, link: string, text: string) => boolean;
+    'anchor.beforeRemove': (this: FroalaEditor, link: string) => boolean;
   }
 
   export interface FilesManager {
@@ -2126,11 +2147,13 @@ declare module "froala-editor" {
     insert(href: string, text: string, attributes?: { [key: string]: any }): object;
     remove(): object;
     showInsertPopup(): void;
-    usePredefined(val: any): void;
+    usePredefined(val: any, data: any): void;
     insertCallback(): void;
     update(): void;
     back(): void;
     imageLink(): void;
+    getAllAnchorList(): HTMLElement | void;
+    scrollToAnchor(href: HTMLElement): boolean;
     [key: string]: (...args: any[]) => any;
   }
 
@@ -2346,6 +2369,7 @@ declare module "froala-editor" {
     updateTableAlign(val: string): void;
     showCellPropertiesPopup(): void;
     updateSelectedColor(val: any): void;
+    placeCursorInFirstCell(val: any): void;
     [key: string]: (...args: any[]) => any;
   }
 
@@ -2471,5 +2495,25 @@ declare module "froala-editor" {
     exec: (e: any, $tb: any) => boolean;
     saveSelection: () => void;
     restoreSelection: () => void;
+  }
+
+  export interface ExportToWord{
+    export(): void
+  }
+
+  export interface Page_Break{
+    _init(): boolean;
+    insert(element?: HTMLElement): boolean | void;
+    remove(): void;
+  }
+
+  export interface linkToAnchor{
+    _init(): boolean;
+    insert(): void;
+    update(link: HTMLElement): void;
+    remove(link: HTMLElement): void;
+    showPopup(): void;
+    closeAnchorInsert(): void;
+    focusOnAnchor(anchor: HTMLElement): boolean | void;
   }
 }

@@ -1,5 +1,5 @@
 /*!
- * froala_editor v4.6.2 (https://www.froala.com/wysiwyg-editor)
+ * froala_editor v4.7.0 (https://www.froala.com/wysiwyg-editor)
  * License https://froala.com/wysiwyg-editor/terms/
  * Copyright 2014-2025 Froala Labs
  */
@@ -24,6 +24,7 @@
       'Italic': 'Kurziv',
       'Underline': 'Podcrtano',
       'Strikethrough': 'Precrtano',
+      'Size': 'Veličina',
       // Main buttons
       'Insert': 'Umetni',
       'Delete': "Obri\u0161i",
@@ -39,6 +40,7 @@
       'Font Size': "Veli\u010Dina fonta",
       // Colors
       'Colors': 'Boje',
+      'Color': 'Boja',
       'Background': 'Pozadina',
       'Text': 'Tekst',
       'HEX Color': 'Heksadecimalne boje',
@@ -60,6 +62,11 @@
       'Align Right': 'Poravnaj desno',
       'Align Justify': 'Obostrano poravnanje',
       'None': 'Nijedan',
+      'Alignment': 'Poravnanje',
+      'Next': 'Sljedeće',
+      'Previous': 'Prethodno',
+      'Advanced Options': 'Napredne opcije',
+      'Close': 'Zatvoriti',
       // Lists
       'Ordered List': "Ure\u0111ena lista",
       'Unordered List': "Neure\u0111ena lista",
@@ -132,6 +139,22 @@
       'Align Middle': 'Poravnaj po sredini',
       'Align Bottom': 'Poravnaj na dno',
       'Cell Style': 'Stil polja',
+      'Table Properties': 'Svojstva tablice',
+      'Cell Properties': 'Svojstva polja',
+      'Table Footer': 'Podnožje tablice',
+      'Dimensions': 'Dimenzije',
+      'Custom background color input': 'Prilagođeni unos boje pozadine',
+      'Background color picker': 'Alat za odabir pozadinske boje',
+      'Custom border color input': 'Prilagođeni unos boje obruba',
+      'Border color picker': 'Alat za odabir boja obruba',
+      'Border width': 'Širina ruba',
+      'Border style': 'Stil obruba',
+      'Border color': 'Boja obruba',
+      'Table width': 'Širina stola',
+      'Table height': 'Visina stola',
+      'Left align': 'Lijevo poravnanje',
+      'Center align': 'Poravnaj po sredini',
+      'Right align': 'Desno poravnanje',
       // Files
       'Upload File': 'Prijenos datoteke',
       'Drop file': 'Ispusti datoteku',
@@ -206,6 +229,7 @@
       'Clear Formatting': 'Ukloni oblikovanje',
       // Save
       'Save': "U\u0161tedjeti",
+      'Ok': 'U redu',
       // Undo, redo
       'Undo': 'Korak natrag',
       'Redo': 'Korak naprijed',
@@ -265,11 +289,37 @@
       'Word Paste Detected': 'Otkrivena je zastavica riječi',
       // Character Counter 
       'Characters': 'likovi',
+      // Find and Replace
+      'Find and Replace': 'Pronađi i zamijeni',
+      'Find': 'Pronađi',
+      'Replace with': 'Zamijeni s',
+      'Replace All': 'Zamijeni sve',
+      'Match case': 'slučaj šibica',
+      'Whole words only': 'Samo cijele riječi',
       // More Buttons
       'More Text': 'Više teksta',
       'More Paragraph': 'Više odlomka',
       'More Rich': 'Više bogat',
-      'More Misc': 'Više Razno'
+      'More Misc': 'Više Razno',
+      'Border': 'Granica',
+      // selector icon
+      'Select Table': 'Odaberite Tablica',
+      'Drag Table': 'Povucite tablicu',
+      'Select PageBreak': 'Odaberite prijelom stranice',
+      'Drag PageBreak': 'povucite prijelom stranice',
+      'Page Break': 'Prijelom stranice',
+      // link to anchor
+      'Insert Anchor': 'Umetni sidro',
+      'There are no entries matching': 'Nema unosa koji odgovaraju',
+      'Update Anchor': 'Ažuriraj sidro',
+      'Edit Anchor': 'Uredi sidro',
+      'Anchor Name': 'Naziv sidra',
+      'Anchor Link': 'Link sidra',
+      'Scroll to target': 'Skrolaj do cilja',
+      'Enter the anchor name without space': 'Unesite naziv sidra bez razmaka',
+      'Anchor name already exists.': 'Naziv sidra već postoji.',
+      // Export to Word
+      'Export to Word': 'Izvezi u Word'
     },
     direction: 'ltr'
   };

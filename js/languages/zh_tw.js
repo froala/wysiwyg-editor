@@ -1,5 +1,5 @@
 /*!
- * froala_editor v4.6.2 (https://www.froala.com/wysiwyg-editor)
+ * froala_editor v4.7.0 (https://www.froala.com/wysiwyg-editor)
  * License https://froala.com/wysiwyg-editor/terms/
  * Copyright 2014-2025 Froala Labs
  */
@@ -24,6 +24,7 @@
       'Italic': '斜體',
       'Underline': '下劃線',
       'Strikethrough': '刪除線',
+      'Size': '大小',
       // Main buttons
       'Insert': '插入',
       'Delete': '刪除',
@@ -39,6 +40,7 @@
       'Font Size': "\u5B57\u578B\u5927\u5C0F",
       // Colors
       'Colors': '顏色',
+      'Color': '顏色',
       'Background': '背景',
       'Text': '文字',
       'HEX Color': '十六進制顏色',
@@ -53,6 +55,7 @@
       // Style
       'Paragraph Style': '段落樣式',
       'Inline Style': '內聯樣式',
+      'Padding': '內邊距',
       // Alignment
       'Align': '对齐',
       'Align Left': '左對齊',
@@ -60,6 +63,11 @@
       'Align Right': "\u7F6E\u53F3\u5C0D\u9F4A",
       'Align Justify': '兩端對齊',
       'None': '没有',
+      'Alignment': '對齊',
+      'Next': '下一個',
+      'Previous': '上一個',
+      'Advanced Options': '進階選項',
+      'Close': '關閉',
       // Lists
       'Ordered List': '有序列表',
       'Unordered List': '无序列表',
@@ -132,6 +140,22 @@
       'Align Middle': "\u4E2D\u9593\u5C0D\u9F4A",
       'Align Bottom': '靠下對齊',
       'Cell Style': '單元格樣式',
+      'Table Properties': '表格屬性',
+      'Cell Properties': '單元格屬性',
+      'Table Footer': '表尾',
+      'Dimensions': '尺寸',
+      'Custom background color input': '自訂背景顏色輸入',
+      'Background color picker': '背景顏色選擇器',
+      'Custom border color input': '自訂邊框顏色輸入',
+      'Border color picker': '邊框顏色選擇器',
+      'Border width': '邊框寬度',
+      'Border style': '邊框樣式',
+      'Border color': '邊框顏色',
+      'Table width': '表格寬度',
+      'Table height': '表格高度',
+      'Left align': '靠左對齊',
+      'Center align': '置中對齊',
+      'Right align': '靠右對齊',
       // Files
       'Upload File': '上傳文件',
       'Drop file': '拖入文件',
@@ -206,6 +230,7 @@
       'Clear Formatting': '清除格式',
       // Save
       'Save': '保存',
+      'Ok': '確定',
       // Undo, redo
       'Undo': '撤消',
       'Redo': '重做',
@@ -265,11 +290,37 @@
       'Word Paste Detected': '檢測到貼上自 Word 的內容',
       // Character Counter
       'Characters': '人物',
+      // Find and Replace  
+      'Find and Replace': '尋找和取代',
+      'Find': '尋找',
+      'Replace with': '取代為',
+      'Replace All': '全部取代',
+      'Match case': '區分大小寫',
+      'Whole words only': '僅完整單詞',
       // More Buttons
       'More Text': '更多文字',
       'More Paragraph': '更多段落',
       'More Rich': '更多豐富',
-      'More Misc': '更多雜項'
+      'More Misc': '更多雜項',
+      'Border': '邊框',
+      // selector icon  
+      'Select Table': '選擇表格',
+      'Drag Table': '拖曳表格',
+      'Select PageBreak': '選擇分頁符號',
+      'Drag PageBreak': '拖曳分頁符號',
+      'Page Break': '分頁符號',
+      //Link to anchor
+      'Insert Anchor': '插入錨點',
+      'There are no entries matching': '沒有匹配的項目',
+      'Update Anchor': '更新錨點',
+      'Edit Anchor': '編輯錨點',
+      'Anchor Name': '錨點名稱',
+      'Anchor Link': '錨點連結',
+      'Scroll to target': '捲動至目標',
+      'Enter the anchor name without space': '請輸入不含空格的錨點名稱',
+      'Anchor name already exists.': '錨點名稱已存在。',
+      // Export to Word
+      'Export to Word': '匯出至 Word'
     },
     direction: 'ltr'
   };

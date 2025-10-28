@@ -1,0 +1,89 @@
+/*!
+ * froala_editor v4.7.0 (https://www.froala.com/wysiwyg-editor)
+ * License https://froala.com/wysiwyg-editor/terms/
+ * Copyright 2014-2025 Froala Labs
+ */
+
+.fr-link-to-anchor-layer.fr-active {
+  margin: 0 16px 16px;
+  width: 260px; }
+  .fr-link-to-anchor-layer.fr-active .fr-input-line {
+    padding: 16px 0 0; }
+    .fr-link-to-anchor-layer.fr-active .fr-input-line .fr-error-text,
+    .fr-link-to-anchor-layer.fr-active .fr-input-line .fr-error-text:focus,
+    .fr-link-to-anchor-layer.fr-active .fr-input-line .fr-error-text:hover {
+      border-color: #f70000; }
+  .fr-link-to-anchor-layer.fr-active .fr-input-text {
+    font-family: Arial;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-bottom: 16px; }
+    .fr-link-to-anchor-layer.fr-active .fr-input-text.fr-error-text {
+      color: #f70000; }
+.fr-link-to-anchor-layer .fr-action-buttons {
+  height: 32px; }
+  .fr-link-to-anchor-layer .fr-action-buttons .fr-submit {
+    padding: 8px; }
+
+.fr-link-to-anchor-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 24px;
+  margin: 16px 16px 0; }
+  .fr-link-to-anchor-header .fr-align-right .fr-btn {
+    height: 24px;
+    width: 24px;
+    margin: 0; }
+    .fr-link-to-anchor-header .fr-align-right .fr-btn .fr-svg {
+      margin: 0; }
+
+.fr-edit-anchor {
+  display: flex;
+  align-items: center; }
+  .fr-edit-anchor label {
+    color: #0098F7;
+    text-overflow: ellipsis;
+    text-align: center;
+    text-box: auto;
+    min-width: 3em;
+    max-width: 10em;
+    font-size: 14px;
+    cursor: default;
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    overflow: hidden;
+    margin-left: 7px;
+    line-height: initial; }
+
+.fr-view .fr-anchor {
+  display: inline-block;
+  height: 1.2em;
+  width: 1.2em;
+  vertical-align: sub;
+  display: inline-block;
+  /* mask instead of background */
+  -webkit-mask: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'><path d='M4.16669 17.5V4.16667C4.16669 3.70833 4.32988 3.31597 4.65627 2.98958C4.98266 2.66319 5.37502 2.5 5.83335 2.5H14.1667C14.625 2.5 15.0174 2.66319 15.3438 2.98958C15.6702 3.31597 15.8334 3.70833 15.8334 4.16667V17.5L10 15L4.16669 17.5Z'/></svg>") no-repeat center/contain;
+  mask: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'><path d='M4.16669 17.5V4.16667C4.16669 3.70833 4.32988 3.31597 4.65627 2.98958C4.98266 2.66319 5.37502 2.5 5.83335 2.5H14.1667C14.625 2.5 15.0174 2.66319 15.3438 2.98958C15.6702 3.31597 15.8334 3.70833 15.8334 4.16667V17.5L10 15L4.16669 17.5Z'/></svg>") no-repeat center/contain;
+  background-color: #333333 !important;
+  /* Hover & active states change the color */ }
+  .fr-view .fr-anchor:hover {
+    background-color: #F6D146 !important; }
+  .fr-view .fr-anchor::selection {
+    background-color: #0098F7 !important; }
+  .fr-view .fr-anchor.fr-active, .fr-view .fr-anchor.fr-anchor-selected, .fr-view .fr-anchor:active {
+    background-color: #0098F7 !important; }
+
+/* Do not show the anchor element inside the print preview window. */
+@media print {
+  .fr-view .fr-anchor {
+    display: none; } }
+/* PDF export styles */
+.pdf-export.fr-view .fr-anchor {
+  display: none; }
+
+.print.fr-view .fr-anchor {
+  display: none; }

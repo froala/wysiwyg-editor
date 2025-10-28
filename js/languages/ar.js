@@ -1,5 +1,5 @@
 /*!
- * froala_editor v4.6.2 (https://www.froala.com/wysiwyg-editor)
+ * froala_editor v4.7.0 (https://www.froala.com/wysiwyg-editor)
  * License https://froala.com/wysiwyg-editor/terms/
  * Copyright 2014-2025 Froala Labs
  */
@@ -24,6 +24,7 @@
       'Italic': "\u0645\u0627\u0626\u0644",
       'Underline': "\u062A\u0633\u0637\u064A\u0631",
       'Strikethrough': "\u064A\u062A\u0648\u0633\u0637 \u062E\u0637",
+      'Size': 'مقاس',
       // Main buttons
       'Insert': "\u0625\u062F\u0631\u0627\u062C",
       'Delete': "\u062D\u0630\u0641",
@@ -39,6 +40,7 @@
       'Font Size': "\u062D\u062C\u0645 \u0627\u0644\u062E\u0637",
       // Colors
       'Colors': "\u0627\u0644\u0623\u0644\u0648\u0627\u0646",
+      'Color': 'لون',
       'Background': "\u0627\u0644\u062E\u0644\u0641\u064A\u0629",
       'Text': "\u0627\u0644\u0646\u0635",
       'HEX Color': 'عرافة اللون',
@@ -53,6 +55,7 @@
       // Style
       'Paragraph Style': "\u0646\u0645\u0637 \u0627\u0644\u0641\u0642\u0631\u0629",
       'Inline Style': "\u0627\u0644\u0646\u0645\u0637 \u0627\u0644\u0645\u0636\u0645\u0646",
+      'Padding': 'حشوة',
       // Alignment
       'Align': "\u0645\u062D\u0627\u0630\u0627\u0629",
       'Align Left': "\u0645\u062D\u0627\u0630\u0627\u0629 \u0627\u0644\u0646\u0635 \u0644\u0644\u064A\u0633\u0627\u0631",
@@ -60,6 +63,11 @@
       'Align Right': "\u0645\u062D\u0627\u0630\u0627\u0629 \u0627\u0644\u0646\u0635 \u0644\u0644\u064A\u0645\u064A\u0646",
       'Align Justify': "\u0636\u0628\u0637",
       'None': "\u0644\u0627 \u0634\u064A\u0621",
+      'Alignment': 'تنسيق',
+      'Next': 'التالي',
+      'Previous': 'سابق',
+      'Advanced Options': 'خيارات متقدمة',
+      'Close': 'يغلق',
       // Lists
       'Ordered List': "\u0642\u0627\u0626\u0645\u0629 \u0645\u0631\u062A\u0628\u0629",
       'Default': 'الافتراضي',
@@ -145,6 +153,22 @@
       'Align Middle': "\u0645\u062D\u0627\u0630\u0627\u0629 \u0648\u0633\u0637",
       'Align Bottom': "\u0645\u062D\u0627\u0630\u0627\u0629 \u0627\u0644\u0623\u0633\u0641\u0644",
       'Cell Style': "\u0646\u0645\u0637 \u0627\u0644\u062E\u0644\u064A\u0629",
+      'Table Properties': 'خصائص الجدول',
+      'Cell Properties': 'خصائص الخلية',
+      'Table Footer': 'تذييل الجدول',
+      'Dimensions': 'أبعاد',
+      'Custom background color input': 'إدخال لون الخلفية المخصصة',
+      'Background color picker': 'منتقي لون الخلفية',
+      'Custom border color input': 'إدخال لون الحدود المخصصة',
+      'Border color picker': 'منتقي لون الحدود',
+      'Border width': 'عرض الحدود',
+      'Border style': 'نمط الحدود',
+      'Border color': 'لون الحدود',
+      'Table width': 'عرض الطاولة',
+      'Table height': 'ارتفاع الطاولة',
+      'Left align': 'محاذاة لليسار',
+      'Center align': 'محاذاة للوسط',
+      'Right align': 'محاذاة إلى اليمين',
       // Files
       'Upload File': "\u062A\u062D\u0645\u064A\u0644 \u0627\u0644\u0645\u0644\u0641",
       'Drop file': "\u0627\u0646\u062E\u0641\u0627\u0636 \u0627\u0644\u0645\u0644\u0641",
@@ -278,11 +302,37 @@
       'Word Paste Detected': 'تم اكتشاف معجون الكلمات',
       // Character Counter
       'Characters': 'الشخصيات',
+      //Find and Replace
+      'Find and Replace': 'البحث والاستبدال',
+      'Find': 'يجد',
+      'Replace with': 'استبدل ب',
+      'Replace All': 'استبدال الكل',
+      'Match case': 'حالة المباراة',
+      'Whole words only': 'كلام كامل فقط',
       // More Buttons
       'More Text': 'المزيد من النص',
       'More Paragraph': ' المزيد من الفقرة',
       'More Rich': ' أكثر ثراء',
-      'More Misc': ' أكثر متفرقات'
+      'More Misc': ' أكثر متفرقات',
+      //link to anchor
+      'Insert Anchor': 'إدراج مرجع',
+      'There are no entries matching': 'لا توجد مدخلات مطابقة',
+      'Update Anchor': 'تحديث مرجع',
+      'Edit Anchor': 'تعديل مرجع',
+      'Anchor Name': 'اسم المرجع',
+      'Anchor Link': 'رابط المرجع',
+      'Scroll to target': 'التمرير إلى الهدف',
+      'Enter the anchor name without space': 'أدخل اسم المرجع بدون مسافة',
+      'Anchor name already exists.': 'اسم المرجع موجود بالفعل.',
+      'Border': 'حدود',
+      //selector icon
+      'Select Table': 'حدد الجدول',
+      'Drag Table': 'اسحب الجدول',
+      'Select PageBreak': 'حدد فاصل الصفحة',
+      'Drag PageBreak': 'اسحب فاصل الصفحة',
+      'Page Break': 'فاصل الصفحة',
+      //Export to Word
+      'Export to Word': 'تصدير إلى كلمة'
     },
     direction: 'rtl'
   };

@@ -1,0 +1,112 @@
+/*!
+ * froala_editor v4.7.0 (https://www.froala.com/wysiwyg-editor)
+ * License https://froala.com/wysiwyg-editor/terms/
+ * Copyright 2014-2025 Froala Labs
+ */
+
+.fr-clearfix::after {
+  clear: both;
+  display: block;
+  content: "";
+  height: 0; }
+
+.fr-hide-by-clipping {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0; }
+
+.fr-view .fr-page-break {
+  align-items: center;
+  display: flex;
+  padding: 5px 0;
+  position: relative;
+  clear: both;
+  break-after: page;
+  height: 10px;
+  margin: 2px 0; }
+  .fr-view .fr-page-break:after {
+    border-bottom: 2px dashed #dddddd;
+    content: "";
+    position: absolute;
+    width: 100%; }
+  .fr-view .fr-page-break ::selection {
+    background-color: #dddddd;
+    color: #999999; }
+  .fr-view .fr-page-break ::-moz-selection {
+    background-color: #dddddd;
+    color: #999999; }
+  .fr-view .fr-page-break .fr-page-break-label {
+    margin-left: 15px;
+    display: inline-flex;
+    height: 11px;
+    padding: 4px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 2px;
+    background: #dddddd;
+    z-index: 1;
+    color: #999999;
+    font-family: Arial;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal; }
+  .fr-view .fr-page-break .fr-page-break-line {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    display: contents; }
+    .fr-view .fr-page-break .fr-page-break-line:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 6px 0 6px 10px;
+      border-color: transparent transparent transparent #dddddd; }
+    .fr-view .fr-page-break .fr-page-break-line:after {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 6px 10px 6px 0;
+      border-color: transparent #dddddd transparent transparent; }
+
+/* Do not show the page break element inside the print preview window. */
+@media print {
+  .fr-view .fr-page-break {
+    padding: 0; }
+    .fr-view .fr-page-break:after,
+    .fr-view .fr-page-break .fr-page-break-line {
+      display: none; }
+
+  /*
+	 * From time to time placing page-break directly after a block element with margin causes appending a new blank page in pagination mode.
+	 * Removing margin-bottom from the block element fixes that issue and the margin is not being moved to the next blank page.
+	 *
+	 * Keep this in sync with the pagination plugins.
+	 */
+  .fr-view *:has(+ .fr-page-break) {
+    margin-bottom: 0; } }
+/* PDF export styles */
+.pdf-export.fr-view .fr-page-break:after,
+.pdf-export.fr-view .fr-page-break .fr-page-break-line {
+  display: none; }
+
+.print.fr-view .fr-page-break-label {
+  display: none;
+  opacity: 0; }

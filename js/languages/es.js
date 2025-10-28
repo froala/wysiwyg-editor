@@ -1,5 +1,5 @@
 /*!
- * froala_editor v4.6.2 (https://www.froala.com/wysiwyg-editor)
+ * froala_editor v4.7.0 (https://www.froala.com/wysiwyg-editor)
  * License https://froala.com/wysiwyg-editor/terms/
  * Copyright 2014-2025 Froala Labs
  */
@@ -43,6 +43,7 @@
       'Italic': "It\xE1lica",
       'Underline': 'Subrayado',
       'Strikethrough': 'Tachado',
+      'Size': 'Tamaño',
       // Main buttons
       'Insert': 'Insertar',
       'Delete': 'Borrar',
@@ -58,6 +59,7 @@
       'Font Size': "Tama\xF1o de fuente",
       // Colors
       'Colors': 'Colores',
+      'Color': 'Color',
       'Background': 'Fondo',
       'Text': 'Texto',
       'HEX Color': 'Color hexadecimal',
@@ -73,6 +75,7 @@
       // Style
       'Paragraph Style': "Estilo de p\xE1rrafo",
       'Inline Style': "Estilo en l\xEDnea",
+      'Padding': 'Relleno',
       // Alignment
       'Align': 'Alinear',
       'Align Left': 'Alinear a la izquierda',
@@ -80,6 +83,11 @@
       'Align Right': 'Alinear a la derecha',
       'Align Justify': 'Justificar',
       'None': 'Ninguno',
+      'Alignment': 'Alineación',
+      'Next': 'Próximo',
+      'Previous': 'Previo',
+      'Advanced Options': 'Opciones avanzadas',
+      'Close': 'Cerrar',
       // Lists
       'Ordered List': 'Lista ordenada',
       'Unordered List': 'Lista desordenada',
@@ -152,6 +160,22 @@
       'Align Middle': 'Alinear media',
       'Align Bottom': 'Alinear abajo',
       'Cell Style': 'Estilo de celda',
+      'Table Properties': 'Propiedades de la tabla',
+      'Cell Properties': 'Propiedades de la celda',
+      'Table Footer': 'Pie de página',
+      'Dimensions': 'Dimensiones',
+      'Custom background color input': 'Entrada de color de fondo personalizada',
+      'Background color picker': 'Selector de color de fondo',
+      'Custom border color input': 'Entrada de color de borde personalizada',
+      'Border color picker': 'Selector de color de borde',
+      'Border width': 'Ancho del borde',
+      'Border style': 'Estilo del borde',
+      'Border color': 'Color del borde',
+      'Table width': 'Ancho de la mesa',
+      'Table height': 'Altura de la mesa',
+      'Left align': 'Alinear a la izquierda',
+      'Center align': 'Alinear al centro',
+      'Right align': 'Alinear a la derecha',
       // Files
       'Upload File': 'Subir archivo',
       'Drop file': 'Soltar archivo',
@@ -224,6 +248,8 @@
       'Insert Horizontal Line': "Insertar l\xEDnea horizontal",
       // Clear formatting
       'Clear Formatting': 'Quitar el formato',
+      // Save
+      'Ok': 'Ok',
       // Undo, redo
       'Undo': 'Deshacer',
       'Redo': 'Rehacer',
@@ -280,7 +306,33 @@
       'The pasted content is coming from a Microsoft Word document. Do you want to keep the format or clean it up?': 'El contenido pegado viene de un documento de Microsoft Word. ¿Quieres mantener el formato o limpiarlo?',
       'Keep': 'Guardar',
       'Clean': 'Limpiar',
-      'Word Paste Detected': 'Palabra detectada'
+      'Word Paste Detected': 'Palabra detectada',
+      //Find and Replace
+      'Find and Replace': 'Buscar y reemplazar',
+      'Find': 'Buscar',
+      'Replace with': 'Reemplazar con',
+      'Replace All': 'Reemplazar todo',
+      'Match case': 'caso de partido',
+      'Whole words only': 'Solo palabras completas',
+      'Border': 'Borde',
+      //selector icon
+      'Select Table': 'Seleccionar tabla',
+      'Drag Table': 'Arrastrar tabla',
+      'Select PageBreak': 'Seleccionar salto de página',
+      'Drag PageBreak': 'Arrastrar salto de página',
+      'Page Break': 'Salto de página',
+      // link to anchor
+      'Insert Anchor': 'Insertar ancla',
+      'There are no entries matching': 'No hay entradas coincidentes',
+      'Update Anchor': 'Actualizar ancla',
+      'Edit Anchor': 'Editar ancla',
+      'Anchor Name': 'Nombre del ancla',
+      'Anchor Link': 'Enlace del ancla',
+      'Scroll to target': 'Desplazarse al objetivo',
+      'Enter the anchor name without space': 'Ingrese el nombre del ancla sin espacio',
+      'Anchor name already exists.': 'El nombre del ancla ya existe.',
+      // Export to Word
+      'Export to Word': 'Exportar a Word'
     },
     direction: 'ltr'
   };

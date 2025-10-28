@@ -1,5 +1,5 @@
 /*!
- * froala_editor v4.6.2 (https://www.froala.com/wysiwyg-editor)
+ * froala_editor v4.7.0 (https://www.froala.com/wysiwyg-editor)
  * License https://froala.com/wysiwyg-editor/terms/
  * Copyright 2014-2025 Froala Labs
  */
@@ -24,6 +24,7 @@
       'Italic': "\u041A\u0443\u0440\u0441\u0438\u0432",
       'Underline': "\u041F\u043E\u0434\u0447\u0435\u0440\u043A\u043D\u0443\u0442\u044B\u0439",
       'Strikethrough': "\u0417\u0430\u0447\u0435\u0440\u043A\u043D\u0443\u0442\u044B\u0439",
+      'Size': 'Размер',
       // Main buttons
       'Insert': "\u0412\u0441\u0442\u0430\u0432\u0438\u0442\u044C",
       'Delete': "\u0423\u0434\u0430\u043B\u0438\u0442\u044C",
@@ -39,6 +40,7 @@
       'Font Size': "\u0420\u0430\u0437\u043C\u0435\u0440 \u0448\u0440\u0438\u0444\u0442\u0430",
       // Colors
       'Colors': "\u0426\u0432\u0435\u0442\u0430",
+      'Color': 'Цвет',
       'Background': "\u0424\u043E\u043D",
       'Text': "\u0422\u0435\u043A\u0441\u0442",
       'HEX Color': 'HEX цвет',
@@ -53,6 +55,7 @@
       // Style
       'Paragraph Style': "\u0421\u0442\u0438\u043B\u044C \u0430\u0431\u0437\u0430\u0446\u0430",
       'Inline Style': "\u0412\u0441\u0442\u0440\u043E\u0435\u043D\u043D\u044B\u0439 \u0441\u0442\u0438\u043B\u044C",
+      'Padding': 'Заполнение',
       // Alignment
       'Align': "\u0412\u044B\u0440\u043E\u0432\u043D\u044F\u0442\u044C \u043F\u043E",
       'Align Left': "\u041F\u043E \u043B\u0435\u0432\u043E\u043C\u0443 \u043A\u0440\u0430\u044E",
@@ -60,6 +63,11 @@
       'Align Right': "\u041F\u043E \u043F\u0440\u0430\u0432\u043E\u043C\u0443 \u043A\u0440\u0430\u044E",
       'Align Justify': "\u041F\u043E \u0448\u0438\u0440\u0438\u043D\u0435",
       'None': "\u041D\u0438\u043A\u0430\u043A",
+      'Alignment': 'Выравнивание',
+      'Next': 'Следующий',
+      'Previous': 'Предыдущий',
+      'Advanced Options': 'Дополнительные параметры',
+      'Close': 'Закрыть',
       // Lists
       'Ordered List': "\u041D\u0443\u043C\u0435\u0440\u043E\u0432\u0430\u043D\u043D\u044B\u0439 \u0441\u043F\u0438\u0441\u043E\u043A",
       'Unordered List': "\u041C\u0430\u0440\u043A\u0438\u0440\u043E\u0432\u0430\u043D\u043D\u044B\u0439 \u0441\u043F\u0438\u0441\u043E\u043A",
@@ -145,6 +153,22 @@
       'Align Middle': "\u0412\u044B\u0440\u043E\u0432\u043D\u044F\u0442\u044C \u043F\u043E \u0441\u0435\u0440\u0435\u0434\u0438\u043D\u0435",
       'Align Bottom': "\u0412\u044B\u0440\u043E\u0432\u043D\u044F\u0442\u044C \u043F\u043E \u043D\u0438\u0436\u043D\u0435\u043C\u0443 \u043A\u0440\u0430\u044E",
       'Cell Style': "\u0421\u0442\u0438\u043B\u044C \u044F\u0447\u0435\u0439\u043A\u0438",
+      'Table Properties': 'Свойства таблицы',
+      'Cell Properties': 'Свойства ячейки',
+      'Table Footer': 'Нижний колонтитул таблицы',
+      'Dimensions': 'Размеры',
+      'Custom background color input': 'Пользовательский ввод цвета фона',
+      'Background color picker': 'Выбор цвета фона',
+      'Custom border color input': 'Пользовательский ввод цвета границы',
+      'Border color picker': 'Выбор цвета границы',
+      'Border width': 'Ширина границы',
+      'Border style': 'Стиль границы',
+      'Border color': 'Цвет границы',
+      'Table width': 'Ширина стола',
+      'Table height': 'Высота стола',
+      'Left align': 'Выравнивание по левому краю',
+      'Center align': 'Выровнять по центру',
+      'Right align': 'Выровнять по правому краю',
       // Files
       'Upload File': "\u0417\u0430\u0433\u0440\u0443\u0437\u0438\u0442\u044C \u0444\u0430\u0439\u043B",
       'Drop file': "\u041F\u0435\u0440\u0435\u043C\u0435\u0441\u0442\u0438\u0442\u0435 \u0441\u044E\u0434\u0430 \u0444\u0430\u0439\u043B",
@@ -219,6 +243,7 @@
       'Clear Formatting': "\u0423\u0434\u0430\u043B\u0438\u0442\u044C \u0444\u043E\u0440\u043C\u0430\u0442\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435",
       // Save
       'Save': "\u0421\u043E\u0445\u0440\u0430\u043D\u0438\u0442\u044C",
+      'Ok': 'ОК',
       // Undo, redo
       'Undo': "\u041E\u0442\u043C\u0435\u043D\u0438\u0442\u044C",
       'Redo': "\u041F\u043E\u0432\u0442\u043E\u0440\u0438\u0442\u044C",
@@ -278,11 +303,37 @@
       'Word Paste Detected': 'Обнаружено копирование из Word',
       // Character Counter
       'Characters': 'символы',
+      // Find and Replace
+      'Find and Replace': 'Найти и заменить',
+      'Find': 'Находить',
+      'Replace with': 'Заменить на',
+      'Replace All': 'Заменить все',
+      'Match case': 'Спичечный случай',
+      'Whole words only': 'Только целые слова',
       // More Buttons
       'More Text': 'Редактирование текста',
       'More Paragraph': 'Редактирование параграфа',
       'More Rich': 'Вставка',
-      'More Misc': 'Другое'
+      'More Misc': 'Другое',
+      'Border': 'Граница',
+      // selector icon
+      'Select Table': 'Выбрать таблицу',
+      'Drag Table': 'Перетащить таблицу',
+      'Select PageBreak': 'Выбрать разрыв страницы',
+      'Drag PageBreak': 'Перетащить разрыв страницы',
+      'Page Break': 'Разрыв страницы',
+      //Link to anchor
+      'Insert Anchor': 'Вставить якорь',
+      'There are no entries matching': 'Нет совпадающих записей',
+      'Update Anchor': 'Обновить якорь',
+      'Edit Anchor': 'Редактировать якорь',
+      'Anchor Name': 'Имя якоря',
+      'Anchor Link': 'Ссылка на якорь',
+      'Scroll to target': 'Прокрутить до цели',
+      'Enter the anchor name without space': 'Введите имя якоря без пробелов',
+      'Anchor name already exists.': 'Имя якоря уже существует.',
+      //Export to Word
+      'Export to Word': 'Экспорт в Word'
     },
     direction: 'ltr'
   };

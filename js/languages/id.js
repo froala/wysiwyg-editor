@@ -1,5 +1,5 @@
 /*!
- * froala_editor v4.6.2 (https://www.froala.com/wysiwyg-editor)
+ * froala_editor v4.7.0 (https://www.froala.com/wysiwyg-editor)
  * License https://froala.com/wysiwyg-editor/terms/
  * Copyright 2014-2025 Froala Labs
  */
@@ -24,6 +24,7 @@
       'Italic': 'Miring',
       'Underline': 'Garis bawah',
       'Strikethrough': 'Coret',
+      'Size': 'Ukuran',
       // Main buttons
       'Insert': 'Memasukkan',
       'Delete': 'Hapus',
@@ -39,6 +40,7 @@
       'Font Size': 'Ukuran leter',
       // Colors
       'Colors': 'Warna',
+      'Color': 'Warna',
       'Background': 'Latar belakang',
       'Text': 'Teks',
       'HEX Color': 'Warna hex',
@@ -53,6 +55,7 @@
       // Style
       'Paragraph Style': 'Paragraf gaya',
       'Inline Style': 'Di barisan gaya',
+      'Padding': 'Lapisan',
       // Alignment
       'Align': 'Rate',
       'Align Left': 'Rate kiri',
@@ -60,6 +63,11 @@
       'Align Right': 'Rata kanan',
       'Align Justify': 'Justifi',
       'None': 'Tak satupun',
+      'Alignment': 'Penyelarasan',
+      'Next': 'Berikutnya',
+      'Previous': 'Sebelumnya',
+      'Advanced Options': 'Opsi lanjutan',
+      'Close': 'Menutup',
       // Lists
       'Ordered List': 'List nomor',
       'Unordered List': 'List simbol',
@@ -132,6 +140,22 @@
       'Align Middle': 'Menyelaraskan tengah',
       'Align Bottom': 'Menyelaraskan bawah',
       'Cell Style': 'Gaya sel',
+      'Table Properties': 'Properti tabel',
+      'Cell Properties': 'Properti sel',
+      'Table Footer': 'Catatan kaki tabel',
+      'Dimensions': 'Ukuran',
+      'Custom background color input': 'Masukkan warna latar belakang khusus',
+      'Background color picker': 'Pemilih warna latar belakang',
+      'Custom border color input': 'Masukan warna batas kustom',
+      'Border color picker': 'Pemilih warna perbatasan',
+      'Border width': 'Lebar perbatasan',
+      'Border style': 'Gaya perbatasan',
+      'Border color': 'Warna perbatasan',
+      'Table width': 'Lebar meja',
+      'Table height': 'Tinggi meja',
+      'Left align': 'Rata kiri',
+      'Center align': 'Rata tengah',
+      'Right align': 'Sejajarkan kanan',
       // Files
       'Upload File': 'Meng-upload berkas',
       'Drop file': 'Jatuhkan berkas',
@@ -206,6 +230,7 @@
       'Clear Formatting': 'Menghapus format',
       // Save
       'Save': 'Menyimpan',
+      'Ok': 'Oke',
       // Undo, redo
       'Undo': 'Batal',
       'Redo': 'Ulang',
@@ -265,11 +290,37 @@
       'Word Paste Detected': 'Kata paste terdeteksi',
       // Character Counter
       'Characters': 'Karakter',
+      // Find and Replace
+      'Find and Replace': 'Temukan dan ganti',
+      'Find': 'Menemukan',
+      'Replace with': 'Ganti dengan',
+      'Replace All': 'Ganti semua',
+      'Match case': 'Kasus pertandingan',
+      'Whole words only': 'Hanya seluruh kata-kata',
       // More Buttons
       'More Text': 'Lebih banyak teks',
       'More Paragraph': 'Lebih banyak paragraf',
       'More Rich': 'Lebih banyak Kaya',
-      'More Misc': 'Lebih banyak Lain-lain'
+      'More Misc': 'Lebih banyak Lain-lain',
+      'Border': 'Berbatasan',
+      // selector icon
+      'Select Table': 'Pilih tabel',
+      'Drag Table': 'Tarik Tabel',
+      'Select PageBreak': 'Pilih Hentian Halaman',
+      'Drag PageBreak': 'Seret Hentian Halaman',
+      'Page Break': 'Istirahat Halaman',
+      //Link to anchor
+      'Insert Anchor': 'Sisipkan Jangkar',
+      'There are no entries matching': 'Tidak ada entri yang cocok',
+      'Update Anchor': 'Perbarui Jangkar',
+      'Edit Anchor': 'Edit Jangkar',
+      'Anchor Name': 'Nama Jangkar',
+      'Anchor Link': 'Tautan Jangkar',
+      'Scroll to target': 'Gulir ke target',
+      'Enter the anchor name without space': 'Masukkan nama jangkar tanpa spasi',
+      'Anchor name already exists.': 'Nama jangkar sudah ada.',
+      // Export to Word
+      'Export to Word': 'Ekspor ke Word'
     },
     direction: 'ltr'
   };

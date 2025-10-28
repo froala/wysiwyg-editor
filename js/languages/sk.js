@@ -1,5 +1,5 @@
 /*!
- * froala_editor v4.6.2 (https://www.froala.com/wysiwyg-editor)
+ * froala_editor v4.7.0 (https://www.froala.com/wysiwyg-editor)
  * License https://froala.com/wysiwyg-editor/terms/
  * Copyright 2014-2025 Froala Labs
  */
@@ -24,6 +24,7 @@
       'Italic': 'Kurzíva',
       'Underline': 'Podčiarknuté',
       'Strikethrough': 'Preškrtnuté',
+      'Size': 'Veľkosť',
       // Main buttons
       'Insert': 'Vložiť',
       'Delete': 'Vymazať',
@@ -39,6 +40,7 @@
       'Font Size': 'Veľkosť písma',
       // Colors
       'Colors': 'Farby',
+      'Color': 'Farba',
       'Background': 'Pozadie',
       'Text': 'Text',
       'HEX Color': 'Hex Farby',
@@ -53,6 +55,7 @@
       // Style
       'Paragraph Style': 'Štýl odstavca',
       'Inline Style': 'Inline štýl',
+      'Padding': 'Výplň',
       // Alignment
       'Align': 'Zarovnanie',
       'Align Left': 'Zarovnať vľavo',
@@ -60,6 +63,11 @@
       'Align Right': 'Zarovnať vpravo',
       'Align Justify': 'Zarovnať do bloku',
       'None': 'Žiadne',
+      'Alignment': 'Zarovnanie',
+      'Next': 'Ďalej',
+      'Previous': 'Predchádzajúce',
+      'Advanced Options': 'Pokročilé možnosti',
+      'Close': 'Zatvoriť',
       // Lists
       'Ordered List': 'Číslovaný zoznam',
       'Default': 'Štandardné',
@@ -145,6 +153,22 @@
       'Align Middle': 'Zarovnat na stred',
       'Align Bottom': 'Zarovnat na spodok',
       'Cell Style': 'Štýl bunky',
+      'Table Properties': 'vlastnosti tabuľky',
+      'Cell Properties': 'vlastnosti buniek',
+      'Table Footer': 'Päta tabuľky',
+      'Dimensions': 'Rozmery',
+      'Custom background color input': 'Vlastný vstup farby pozadia',
+      'Background color picker': 'Výber farby pozadia',
+      'Custom border color input': 'Vlastné zadanie farby okraja',
+      'Border color picker': 'Výber farby okrajov',
+      'Border width': 'Šírka okraja',
+      'Border style': 'Štýl okrajov',
+      'Border color': 'Farba okraja',
+      'Table width': 'Šírka stola',
+      'Table height': 'Výška stola',
+      'Left align': 'Zarovnať doľava',
+      'Center align': 'Zarovnať na stred',
+      'Right align': 'Zarovnať doprava',
       // Files
       'Upload File': 'Nahrať súbor',
       'Drop file': 'Vložte súbor sem',
@@ -219,6 +243,7 @@
       'Clear Formatting': 'Vymazať formátovanie',
       // Save
       'Save': 'Uložiť',
+      'Ok': 'OK',
       // Undo, redo
       'Undo': 'Späť',
       'Redo': 'Znova',
@@ -275,7 +300,33 @@
       'The pasted content is coming from a Microsoft Word document. Do you want to keep the format or clean it up?': 'Vložený obsah vychádza z dokumentu Microsoft Word. Chcete formát zachovať alebo ho vyčistiť?',
       'Keep': 'Zachovať',
       'Clean': 'Vyčistiť',
-      'Word Paste Detected': 'Detekované vloženie z Wordu'
+      'Word Paste Detected': 'Detekované vloženie z Wordu',
+      // Find and Replace
+      'Find and Replace': 'Nájsť a nahradiť',
+      'Find': 'Nájsť',
+      'Replace with': 'Nahradiť za',
+      'Replace All': 'Nahradiť všetko',
+      'Match case': 'Prípad zápasu',
+      'Whole words only': 'Iba celé slová',
+      'Border': 'Hranica',
+      // selector icon
+      'Select Table': 'Vyberte položku Tabuľka',
+      'Drag Table': 'Pretiahnuť tabuľku',
+      'Select PageBreak': 'Vyberte Zalomenie strany',
+      'Drag PageBreak': 'Potiahnite koniec strany',
+      'Page Break': 'Zalomenie strany',
+      //Link to anchor
+      'Insert Anchor': 'Vložiť kotvu',
+      'There are no entries matching': 'Neexistujú žiadne záznamy, ktoré by zodpovedali',
+      'Update Anchor': 'Aktualizovať kotvu',
+      'Edit Anchor': 'Upraviť kotvu',
+      'Anchor Name': 'Názov kotvy',
+      'Anchor Link': 'Odkaz kotvy',
+      'Scroll to target': 'Prejsť na cieľ',
+      'Enter the anchor name without space': 'Zadajte názov kotvy bez medzier',
+      'Anchor name already exists.': 'Názov kotvy už existuje.',
+      // Export to Word
+      'Export to Word': 'Exportovať do Wordu'
     },
     direction: 'ltr'
   };

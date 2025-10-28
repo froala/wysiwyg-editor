@@ -1,5 +1,5 @@
 /*!
- * froala_editor v4.6.2 (https://www.froala.com/wysiwyg-editor)
+ * froala_editor v4.7.0 (https://www.froala.com/wysiwyg-editor)
  * License https://froala.com/wysiwyg-editor/terms/
  * Copyright 2014-2025 Froala Labs
  */
@@ -21,6 +21,7 @@
       'Italic': "Nghi\xEAng",
       'Underline': "G\u1EA1ch ch\xE2n",
       'Strikethrough': "G\u1EA1ch ngang ch\u1EEF",
+      'Size': 'Kích thước',
       // Main buttons
       'Insert': "Ch\xE8n",
       'Delete': "X\xF3a",
@@ -36,6 +37,7 @@
       'Font Size': "C\u1EE1 ch\u1EEF",
       // Colors
       'Colors': "M\xE0u s\u1EAFc",
+      'Color': 'Màu sắc',
       'Background': "N\u1EC1n",
       'Text': "Ch\u1EEF",
       'HEX Color': 'Màu hex',
@@ -50,6 +52,7 @@
       // Style
       'Paragraph Style': "Ki\u1EC3u \u0111o\u1EA1n v\u0103n b\u1EA3n",
       'Inline Style': "Ki\u1EC3u d\xF2ng",
+      'Padding': 'Đệm',
       // Alignment
       'Align': "C\u0103n ch\u1EC9nh",
       'Align Left': "C\u0103n tr\xE1i",
@@ -57,6 +60,11 @@
       'Align Right': "C\u0103n ph\u1EA3i",
       'Align Justify': "C\u0103n \u0111\u1EC1u",
       'None': "Kh\xF4ng",
+      'Alignment': 'Căn chỉnh',
+      'Next': 'Tiếp theo',
+      'Previous': 'Trước đó',
+      'Advanced Options': 'Tùy chọn nâng cao',
+      'Close': 'Đóng',
       // Lists
       'Ordered List': "Danh s\xE1ch theo th\u1EE9 t\u1EF1",
       'Unordered List': "Danh s\xE1ch li\u1EC7t k\xEA",
@@ -129,6 +137,22 @@
       'Align Middle': "C\u0103n gi\u1EEFa",
       'Align Bottom': "C\u0103n d\u01B0\u1EDBi",
       'Cell Style': "Ki\u1EC3u \xF4",
+      'Table Properties': 'Thuộc tính bảng',
+      'Cell Properties': 'Thuộc tính ô',
+      'Table Footer': 'Chân bảng',
+      'Dimensions': 'Kích thước',
+      'Custom background color input': 'Nhập màu nền tùy chỉnh',
+      'Background color picker': 'Bộ chọn màu nền',
+      'Custom border color input': 'Nhập màu viền tùy chỉnh',
+      'Border color picker': 'Bộ chọn màu viền',
+      'Border width': 'Độ rộng viền',
+      'Border style': 'Kiểu viền',
+      'Border color': 'Màu viền',
+      'Table width': 'Chiều rộng bảng',
+      'Table height': 'Chiều cao bảng',
+      'Left align': 'Căn trái',
+      'Center align': 'Căn giữa',
+      'Right align': 'Căn phải',
       // Files
       'Upload File': "T\u1EA3i file l\xEAn",
       'Drop file': "K\xE9o th\u1EA3 file",
@@ -147,6 +171,7 @@
       'Clear Formatting': "X\xF3a \u0111\u1ECBnh d\u1EA1ng",
       // Save
       'Save': 'Save',
+      'Ok': 'Ok',
       // Undo, redo
       'Undo': 'Undo',
       'Redo': 'Redo',
@@ -206,11 +231,37 @@
       'Word Paste Detected': 'Dán từ được phát hiện',
       // Character Counter
       'Characters': 'Nhân vật',
+      // Find and Replace  
+      'Find and Replace': 'Tìm và thay thế',
+      'Find': 'Tìm',
+      'Replace with': 'Thay thế bằng',
+      'Replace All': 'Thay thế tất cả',
+      'Match case': 'Phân biệt chữ hoa/thường',
+      'Whole words only': 'Chỉ từ nguyên vẹn',
       // More Buttons
       'More Text': 'Thêm văn bản',
       'More Paragraph': 'Đoạn khác',
       'More Rich': 'Giàu hơn',
-      'More Misc': 'Thêm linh tinh'
+      'More Misc': 'Thêm linh tinh',
+      'Border': 'ranh giới',
+      // selector icon  
+      'Select Table': 'Chọn bảng',
+      'Drag Table': 'Kéo bảng',
+      'Select PageBreak': 'Chọn ngắt trang',
+      'Drag PageBreak': 'Kéo ngắt trang',
+      'Page Break': 'Ngắt trang',
+      //Link To anchor
+      'Insert Anchor': 'Chèn neo',
+      'There are no entries matching': 'Không có mục nào phù hợp',
+      'Update Anchor': 'Cập nhật neo',
+      'Edit Anchor': 'Chỉnh sửa neo',
+      'Anchor Name': 'Tên neo',
+      'Anchor Link': 'Liên kết neo',
+      'Scroll to target': 'Cuộn đến mục tiêu',
+      'Enter the anchor name without space': 'Nhập tên neo không có dấu cách',
+      'Anchor name already exists.': 'Tên neo đã tồn tại.',
+      // Export to Word
+      'Export to Word': 'Xuất ra Word'
     },
     direction: 'ltr'
   };

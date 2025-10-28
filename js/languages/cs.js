@@ -1,5 +1,5 @@
 /*!
- * froala_editor v4.6.2 (https://www.froala.com/wysiwyg-editor)
+ * froala_editor v4.7.0 (https://www.froala.com/wysiwyg-editor)
  * License https://froala.com/wysiwyg-editor/terms/
  * Copyright 2014-2025 Froala Labs
  */
@@ -24,11 +24,11 @@
       'Italic': 'Kurzíva',
       'Underline': 'Podtržené',
       'Strikethrough': 'Přeškrtnuté',
+      'Size': 'Velikost',
       // Main buttons
       'Insert': 'Vložit',
       'Delete': 'Vymazat',
       'Cancel': 'Zrušit',
-      'OK': 'OK',
       'Back': 'Zpět',
       'Remove': 'Odstranit',
       'More': 'Více',
@@ -39,6 +39,7 @@
       'Font Size': 'Velikost písma',
       // Colors
       'Colors': 'Barvy',
+      'Color': 'Barva',
       'Background': 'Pozadí',
       'Text': 'Písmo',
       'HEX Color': 'Hex Barvy',
@@ -53,6 +54,7 @@
       // Style
       'Paragraph Style': 'Styl odstavce',
       'Inline Style': 'Styl řádku',
+      'Padding': 'Vycpávka',
       // Alignment
       'Align': 'Zarovnání',
       'Align Left': 'Zarovnat vlevo',
@@ -60,6 +62,11 @@
       'Align Right': 'Zarovnat vpravo',
       'Align Justify': 'Zarovnat do bloku',
       'None': 'Žádné',
+      'Alignment': 'Zarovnání',
+      'Next': 'Další',
+      'Previous': 'Předchozí',
+      'Advanced Options': 'Pokročilé možnosti',
+      'Close': 'Blízko',
       // Lists
       'Ordered List': 'Číslovaný seznam',
       'Default': 'Výchozí',
@@ -145,6 +152,22 @@
       'Align Middle': 'Zarovnat nastřed',
       'Align Bottom': 'Zarovnat naspodek',
       'Cell Style': 'Styl buňky',
+      'Table Properties': 'Vlastnosti tabulky',
+      'Cell Properties': 'Vlastnosti buňky',
+      'Table Footer': 'Zápatí tabulky',
+      'Dimensions': 'Rozměry',
+      'Custom background color input': 'Vlastní zadání barvy pozadí',
+      'Background color picker': 'Výběr barvy pozadí',
+      'Custom border color input': 'Vlastní zadání barvy okraje',
+      'Border color picker': 'Výběr barvy okraje',
+      'Border width': 'Šířka okraje',
+      'Border style': 'Styl ohraničení',
+      'Border color': 'Barva ohraničení',
+      'Table width': 'Šířka stolu',
+      'Table height': 'Výška stolu',
+      'Left align': 'Zarovnat doleva',
+      'Center align': 'Zarovnat na střed',
+      'Right align': 'Zarovnat vpravo',
       // Files
       'Upload File': 'Nahrát soubor',
       'Drop file': 'Přetáhněte sem soubor',
@@ -219,6 +242,7 @@
       'Clear Formatting': 'Vymazat formátování',
       // Save
       'Save': 'Uložit',
+      'OK': 'dobře',
       // Undo, redo
       'Undo': 'Zpět',
       'Redo': 'Znovu',
@@ -275,7 +299,33 @@
       'The pasted content is coming from a Microsoft Word document. Do you want to keep the format or clean it up?': 'Vložený obsah pochází z dokumentu Microsoft Word. Chcete formát uchovat nebo jej vyčistit?',
       'Keep': 'Uchovat',
       'Clean': 'Vyčistit',
-      'Word Paste Detected': 'Detekovaný obsah dokumentu Word'
+      'Word Paste Detected': 'Detekovaný obsah dokumentu Word',
+      //link to anchor
+      'Insert Anchor': 'Vložit kotvu',
+      'There are no entries matching': 'Neexistují žádné odpovídající položky',
+      'Update Anchor': 'Aktualizovat kotvu',
+      'Edit Anchor': 'Upravit kotvu',
+      'Anchor Name': 'Název kotvy',
+      'Anchor Link': 'Odkaz kotvy',
+      'Scroll to target': 'Přejít na cíl',
+      'Enter the anchor name without space': 'Zadejte název kotvy bez mezery',
+      'Anchor name already exists.': 'Název kotvy již existuje.',
+      //Find and Replace
+      'Find and Replace': 'Najít a nahradit',
+      'Find': 'Nalézt',
+      'Replace with': 'Nahradit za',
+      'Replace All': 'Nahradit vše',
+      'Match case': 'Případ zápasu',
+      'Whole words only': 'Pouze celá slova',
+      'Border': 'Pohraniční',
+      //selector icon
+      'Select Table': 'Vybrat tabulku',
+      'Drag Table': 'Přetáhnout tabulku',
+      'Select PageBreak': 'Vyberte zalomení stránky',
+      'Drag PageBreak': 'Přetáhnout zalomení stránky',
+      'Page Break': 'Konec stránky',
+      //Export to Word
+      'Export to Word': 'Exportovat do Wordu'
     },
     direction: 'ltr'
   };

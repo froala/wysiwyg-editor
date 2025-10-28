@@ -1,5 +1,5 @@
 /*!
- * froala_editor v4.6.2 (https://www.froala.com/wysiwyg-editor)
+ * froala_editor v4.7.0 (https://www.froala.com/wysiwyg-editor)
  * License https://froala.com/wysiwyg-editor/terms/
  * Copyright 2014-2025 Froala Labs
  */
@@ -1458,6 +1458,101 @@ span.fr-sr-only {
 
 .position-relative {
   position: relative !important; }
+
+.fr-selection-handle {
+  display: block;
+  position: absolute;
+  z-index: 3;
+  width: 16px;
+  height: 16px;
+  padding: 3px;
+  border: transparent 2px solid;
+  border-radius: 4px 4px 0 0; }
+  .fr-selection-handle a {
+    width: 16px;
+    height: 16px;
+    display: block; }
+    .fr-selection-handle a > svg {
+      width: 16px;
+      height: 16px; }
+
+.fr-selection-handle-active {
+  border: #F6D146 2px solid;
+  background-color: #F6D146; }
+  .fr-selection-handle-active a > svg {
+    color: #F6D146; }
+
+.fr-selection-handle-active-selected {
+  border: #0098F7 2px solid;
+  background-color: #0098F7; }
+  .fr-selection-handle-active-selected a > svg {
+    color: #0098F7; }
+
+.fr-selection-handle-inactive {
+  display: none; }
+
+.fr-view .fr-selection-handle-hover {
+  outline: #F6D146 2px solid; }
+
+.fr-view .fr-selection-handle-selected {
+  outline: #0098F7 2px solid;
+  caret-color: transparent; }
+
+.fr-view .fr-selection-handle-selected *::selection {
+  background: transparent; }
+
+.fr-view .fr-selection-handle-selected *::-moz-selection {
+  background: transparent; }
+
+.fr-selection-drop-indicator {
+  position: absolute;
+  height: 0;
+  z-index: 1000;
+  pointer-events: none;
+  margin-top: -1px;
+  width: 100%;
+  left: 0;
+  display: block; }
+  .fr-selection-drop-indicator .fr-selection-drop-indicator-line {
+    border: 1px solid #0098F7; }
+    .fr-selection-drop-indicator .fr-selection-drop-indicator-line::before, .fr-selection-drop-indicator .fr-selection-drop-indicator-line::after {
+      content: '';
+      position: absolute;
+      top: -4px;
+      width: 8px;
+      height: 2px;
+      border-style: solid;
+      border-width: 4px; }
+    .fr-selection-drop-indicator .fr-selection-drop-indicator-line::before {
+      left: 0;
+      border-color: transparent transparent transparent #0098F7; }
+    .fr-selection-drop-indicator .fr-selection-drop-indicator-line::after {
+      right: 0;
+      border-color: transparent #0098F7 transparent transparent; }
+
+.fr-link-input-layer {
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: space-between; }
+  .fr-link-input-layer .fr-input-line {
+    width: 100%; }
+  .fr-link-input-layer .fr-buttons:not(.fr-tabs) {
+    padding: 0; }
+  .fr-link-input-layer .fr-buttons .fr-command.fr-btn.fr-dropdown {
+    width: 30px;
+    z-index: 4;
+    right: 0;
+    height: 46px;
+    margin: 0 0 0 2px; }
+    .fr-link-input-layer .fr-buttons .fr-command.fr-btn.fr-dropdown.fr-active {
+      background-color: #ebebeb; }
+    .fr-link-input-layer .fr-buttons .fr-command.fr-btn.fr-dropdown:after {
+      scale: 1.5;
+      left: 11px;
+      top: 20px; }
+  .fr-link-input-layer .fr-dropdown-wrapper {
+    width: 100%; }
 
 .fr-clearfix::after {
   clear: both;
@@ -3951,6 +4046,90 @@ div.fr-modal-body {
       height: 24px;
       width: 24px; }
 
+.fr-link-to-anchor-layer.fr-active {
+  margin: 0 16px 16px;
+  width: 260px; }
+  .fr-link-to-anchor-layer.fr-active .fr-input-line {
+    padding: 16px 0 0; }
+    .fr-link-to-anchor-layer.fr-active .fr-input-line .fr-error-text,
+    .fr-link-to-anchor-layer.fr-active .fr-input-line .fr-error-text:focus,
+    .fr-link-to-anchor-layer.fr-active .fr-input-line .fr-error-text:hover {
+      border-color: #f70000; }
+  .fr-link-to-anchor-layer.fr-active .fr-input-text {
+    font-family: Arial;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-bottom: 16px; }
+    .fr-link-to-anchor-layer.fr-active .fr-input-text.fr-error-text {
+      color: #f70000; }
+.fr-link-to-anchor-layer .fr-action-buttons {
+  height: 32px; }
+  .fr-link-to-anchor-layer .fr-action-buttons .fr-submit {
+    padding: 8px; }
+
+.fr-link-to-anchor-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 24px;
+  margin: 16px 16px 0; }
+  .fr-link-to-anchor-header .fr-align-right .fr-btn {
+    height: 24px;
+    width: 24px;
+    margin: 0; }
+    .fr-link-to-anchor-header .fr-align-right .fr-btn .fr-svg {
+      margin: 0; }
+
+.fr-edit-anchor {
+  display: flex;
+  align-items: center; }
+  .fr-edit-anchor label {
+    color: #0098F7;
+    text-overflow: ellipsis;
+    text-align: center;
+    text-box: auto;
+    min-width: 3em;
+    max-width: 10em;
+    font-size: 14px;
+    cursor: default;
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    overflow: hidden;
+    margin-left: 7px;
+    line-height: initial; }
+
+.fr-view .fr-anchor {
+  display: inline-block;
+  height: 1.2em;
+  width: 1.2em;
+  vertical-align: sub;
+  display: inline-block;
+  /* mask instead of background */
+  -webkit-mask: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'><path d='M4.16669 17.5V4.16667C4.16669 3.70833 4.32988 3.31597 4.65627 2.98958C4.98266 2.66319 5.37502 2.5 5.83335 2.5H14.1667C14.625 2.5 15.0174 2.66319 15.3438 2.98958C15.6702 3.31597 15.8334 3.70833 15.8334 4.16667V17.5L10 15L4.16669 17.5Z'/></svg>") no-repeat center/contain;
+  mask: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'><path d='M4.16669 17.5V4.16667C4.16669 3.70833 4.32988 3.31597 4.65627 2.98958C4.98266 2.66319 5.37502 2.5 5.83335 2.5H14.1667C14.625 2.5 15.0174 2.66319 15.3438 2.98958C15.6702 3.31597 15.8334 3.70833 15.8334 4.16667V17.5L10 15L4.16669 17.5Z'/></svg>") no-repeat center/contain;
+  background-color: #333333 !important;
+  /* Hover & active states change the color */ }
+  .fr-view .fr-anchor:hover {
+    background-color: #F6D146 !important; }
+  .fr-view .fr-anchor::selection {
+    background-color: #0098F7 !important; }
+  .fr-view .fr-anchor.fr-active, .fr-view .fr-anchor.fr-anchor-selected, .fr-view .fr-anchor:active {
+    background-color: #0098F7 !important; }
+
+/* Do not show the anchor element inside the print preview window. */
+@media print {
+  .fr-view .fr-anchor {
+    display: none; } }
+/* PDF export styles */
+.pdf-export.fr-view .fr-anchor {
+  display: none; }
+
+.print.fr-view .fr-anchor {
+  display: none; }
+
 .fr-clearfix::after {
   clear: both;
   display: block;
@@ -4094,6 +4273,113 @@ div.fr-modal-body {
 
 .fr-markdown-view > h2 {
   font-size: 1.5em !important; }
+
+.fr-clearfix::after {
+  clear: both;
+  display: block;
+  content: "";
+  height: 0; }
+
+.fr-hide-by-clipping {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0; }
+
+.fr-view .fr-page-break {
+  align-items: center;
+  display: flex;
+  padding: 5px 0;
+  position: relative;
+  clear: both;
+  break-after: page;
+  height: 10px;
+  margin: 2px 0; }
+  .fr-view .fr-page-break:after {
+    border-bottom: 2px dashed #dddddd;
+    content: "";
+    position: absolute;
+    width: 100%; }
+  .fr-view .fr-page-break ::selection {
+    background-color: #dddddd;
+    color: #999999; }
+  .fr-view .fr-page-break ::-moz-selection {
+    background-color: #dddddd;
+    color: #999999; }
+  .fr-view .fr-page-break .fr-page-break-label {
+    margin-left: 15px;
+    display: inline-flex;
+    height: 11px;
+    padding: 4px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 2px;
+    background: #dddddd;
+    z-index: 1;
+    color: #999999;
+    font-family: Arial;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal; }
+  .fr-view .fr-page-break .fr-page-break-line {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    display: contents; }
+    .fr-view .fr-page-break .fr-page-break-line:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 6px 0 6px 10px;
+      border-color: transparent transparent transparent #dddddd; }
+    .fr-view .fr-page-break .fr-page-break-line:after {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 6px 10px 6px 0;
+      border-color: transparent #dddddd transparent transparent; }
+
+/* Do not show the page break element inside the print preview window. */
+@media print {
+  .fr-view .fr-page-break {
+    padding: 0; }
+    .fr-view .fr-page-break:after,
+    .fr-view .fr-page-break .fr-page-break-line {
+      display: none; }
+
+  /*
+	 * From time to time placing page-break directly after a block element with margin causes appending a new blank page in pagination mode.
+	 * Removing margin-bottom from the block element fixes that issue and the margin is not being moved to the next blank page.
+	 *
+	 * Keep this in sync with the pagination plugins.
+	 */
+  .fr-view *:has(+ .fr-page-break) {
+    margin-bottom: 0; } }
+/* PDF export styles */
+.pdf-export.fr-view .fr-page-break:after,
+.pdf-export.fr-view .fr-page-break .fr-page-break-line {
+  display: none; }
+
+.print.fr-view .fr-page-break-label {
+  display: none;
+  opacity: 0; }
 
 .fr-clearfix::after {
   clear: both;
@@ -4260,48 +4546,6 @@ div.fr-modal-body {
   -webkit-user-select: none;
   -ms-user-select: none; }
 
-.fr-table-selector {
-  display: block;
-  position: absolute;
-  z-index: 3;
-  width: 16px;
-  height: 16px;
-  padding: 3px;
-  border: transparent 2px solid;
-  border-radius: 4px 4px 0 0; }
-  .fr-table-selector a {
-    width: 16px;
-    height: 16px;
-    display: block; }
-    .fr-table-selector a > svg {
-      width: 16px;
-      height: 16px; }
-
-.fr-table-selector-active {
-  opacity: 1;
-  visibility: visible;
-  border: #F6D146 2px solid;
-  background-color: #F6D146; }
-  .fr-table-selector-active a > svg {
-    color: #F6D146; }
-
-.fr-table-selector-active-selected {
-  border: #0098F7 2px solid;
-  background-color: #0098F7; }
-  .fr-table-selector-active-selected a > svg {
-    color: #0098F7; }
-
-.fr-table-selector-inactive {
-  opacity: 0;
-  visibility: hidden; }
-
-.fr-view .fr-table-selection-hover {
-  outline: #F6D146 2px solid; }
-
-.fr-view .fr-table-selected {
-  outline: #0098F7 2px solid;
-  caret-color: transparent; }
-
 .fr-popup .fr-table-size {
   margin: 20px; }
   .fr-popup .fr-table-size .fr-table-size-info {
@@ -4345,12 +4589,6 @@ div.fr-modal-body {
   position: absolute;
   z-index: 9999;
   white-space: nowrap; }
-
-.fr-view .fr-table-selected *::selection {
-  background: transparent; }
-
-.fr-view .fr-table-selected *::-moz-selection {
-  background: transparent; }
 
 .fr-cell-properties-form, .fr-table-properties-form {
   padding: 15px;
@@ -4519,24 +4757,24 @@ div.fr-modal-body {
 .fr-table-properties-section .fr-command.fr-btn + .fr-dropdown-menu .fr-dropdown-wrapper .fr-dropdown-content ul.fr-dropdown-list li a {
   line-height: 170%; }
 
-.fr-table-bg-container .fr-input-line, .fr-table-border-container .fr-input-line, .fr-table-dimentions-container .fr-input-line, .fr-table-style-container .fr-input-line {
+.fr-table-bg-container .fr-input-line, .fr-table-border-container .fr-input-line, .fr-table-dimensions-container .fr-input-line, .fr-table-style-container .fr-input-line {
   padding: 0px;
   width: 100%; }
-  .fr-table-bg-container .fr-input-line input[type="text"], .fr-table-border-container .fr-input-line input[type="text"], .fr-table-dimentions-container .fr-input-line input[type="text"], .fr-table-style-container .fr-input-line input[type="text"] {
+  .fr-table-bg-container .fr-input-line input[type="text"], .fr-table-border-container .fr-input-line input[type="text"], .fr-table-dimensions-container .fr-input-line input[type="text"], .fr-table-style-container .fr-input-line input[type="text"] {
     height: 36px;
     border-color: #CCCCCC; }
-  .fr-table-bg-container .fr-input-line input + label, .fr-table-border-container .fr-input-line input + label, .fr-table-dimentions-container .fr-input-line input + label, .fr-table-style-container .fr-input-line input + label {
+  .fr-table-bg-container .fr-input-line input + label, .fr-table-border-container .fr-input-line input + label, .fr-table-dimensions-container .fr-input-line input + label, .fr-table-style-container .fr-input-line input + label {
     top: -5px;
     font-weight: 100; }
-  .fr-table-bg-container .fr-input-line input.fr-not-empty + label, .fr-table-border-container .fr-input-line input.fr-not-empty + label, .fr-table-dimentions-container .fr-input-line input.fr-not-empty + label, .fr-table-style-container .fr-input-line input.fr-not-empty + label {
+  .fr-table-bg-container .fr-input-line input.fr-not-empty + label, .fr-table-border-container .fr-input-line input.fr-not-empty + label, .fr-table-dimensions-container .fr-input-line input.fr-not-empty + label, .fr-table-style-container .fr-input-line input.fr-not-empty + label {
     top: -20px;
     font-weight: 100; }
-  .fr-table-bg-container .fr-input-line #fr-table-border-style, .fr-table-border-container .fr-input-line #fr-table-border-style, .fr-table-dimentions-container .fr-input-line #fr-table-border-style, .fr-table-style-container .fr-input-line #fr-table-border-style {
+  .fr-table-bg-container .fr-input-line #fr-table-border-style, .fr-table-border-container .fr-input-line #fr-table-border-style, .fr-table-dimensions-container .fr-input-line #fr-table-border-style, .fr-table-style-container .fr-input-line #fr-table-border-style {
     width: 90%;
     height: 36px;
     border-color: #CCCCCC;
     border-radius: 2px; }
-  .fr-table-bg-container .fr-input-line .fr-field-lable, .fr-table-border-container .fr-input-line .fr-field-lable, .fr-table-dimentions-container .fr-input-line .fr-field-lable, .fr-table-style-container .fr-input-line .fr-field-lable {
+  .fr-table-bg-container .fr-input-line .fr-field-lable, .fr-table-border-container .fr-input-line .fr-field-lable, .fr-table-dimensions-container .fr-input-line .fr-field-lable, .fr-table-style-container .fr-input-line .fr-field-lable {
     position: absolute;
     font-size: 11px;
     padding: 0px 3px;
@@ -4545,13 +4783,13 @@ div.fr-modal-body {
     font-weight: 100;
     color: dimgray;
     z-index: 3; }
-  .fr-table-bg-container .fr-input-line .fr-buttons, .fr-table-border-container .fr-input-line .fr-buttons, .fr-table-dimentions-container .fr-input-line .fr-buttons, .fr-table-style-container .fr-input-line .fr-buttons {
+  .fr-table-bg-container .fr-input-line .fr-buttons, .fr-table-border-container .fr-input-line .fr-buttons, .fr-table-dimensions-container .fr-input-line .fr-buttons, .fr-table-style-container .fr-input-line .fr-buttons {
     padding: 0px; }
-  .fr-table-bg-container .fr-input-line .fr-command.fr-btn.fr-dropdown:after, .fr-table-border-container .fr-input-line .fr-command.fr-btn.fr-dropdown:after, .fr-table-dimentions-container .fr-input-line .fr-command.fr-btn.fr-dropdown:after, .fr-table-style-container .fr-input-line .fr-command.fr-btn.fr-dropdown:after {
+  .fr-table-bg-container .fr-input-line .fr-command.fr-btn.fr-dropdown:after, .fr-table-border-container .fr-input-line .fr-command.fr-btn.fr-dropdown:after, .fr-table-dimensions-container .fr-input-line .fr-command.fr-btn.fr-dropdown:after, .fr-table-style-container .fr-input-line .fr-command.fr-btn.fr-dropdown:after {
     right: 10px; }
-  .fr-table-bg-container .fr-input-line .fr-command.fr-btn.fr-dropdown.fr-active, .fr-table-border-container .fr-input-line .fr-command.fr-btn.fr-dropdown.fr-active, .fr-table-dimentions-container .fr-input-line .fr-command.fr-btn.fr-dropdown.fr-active, .fr-table-style-container .fr-input-line .fr-command.fr-btn.fr-dropdown.fr-active {
+  .fr-table-bg-container .fr-input-line .fr-command.fr-btn.fr-dropdown.fr-active, .fr-table-border-container .fr-input-line .fr-command.fr-btn.fr-dropdown.fr-active, .fr-table-dimensions-container .fr-input-line .fr-command.fr-btn.fr-dropdown.fr-active, .fr-table-style-container .fr-input-line .fr-command.fr-btn.fr-dropdown.fr-active {
     background: transparent; }
-  .fr-table-bg-container .fr-input-line .fr-dropdown, .fr-table-border-container .fr-input-line .fr-dropdown, .fr-table-dimentions-container .fr-input-line .fr-dropdown, .fr-table-style-container .fr-input-line .fr-dropdown {
+  .fr-table-bg-container .fr-input-line .fr-dropdown, .fr-table-border-container .fr-input-line .fr-dropdown, .fr-table-dimensions-container .fr-input-line .fr-dropdown, .fr-table-style-container .fr-input-line .fr-dropdown {
     margin: 0px;
     background: transparent;
     border: 1px solid #CCCCCC;
@@ -4565,12 +4803,12 @@ div.fr-modal-body {
 .fr-table-alignment-section {
   margin-left: 10px; }
 
-.fr-table-border-container, .fr-table-dimentions-container, .fr-table-dimentions-section {
+.fr-table-border-container, .fr-table-dimensions-container, .fr-table-dimensions-section {
   display: flex;
   margin-top: 10px; }
-  .fr-table-border-container .fr-dimension-separator, .fr-table-dimentions-container .fr-dimension-separator, .fr-table-dimentions-section .fr-dimension-separator {
+  .fr-table-border-container .fr-dimension-separator, .fr-table-dimensions-container .fr-dimension-separator, .fr-table-dimensions-section .fr-dimension-separator {
     margin: 10px 5px; }
-  .fr-table-border-container .fr-btn-table-border-bg-color, .fr-table-dimentions-container .fr-btn-table-border-bg-color, .fr-table-dimentions-section .fr-btn-table-border-bg-color {
+  .fr-table-border-container .fr-btn-table-border-bg-color, .fr-table-dimensions-container .fr-btn-table-border-bg-color, .fr-table-dimensions-section .fr-btn-table-border-bg-color {
     margin-right: 10px;
     background: transparent;
     border: 1px solid #CCCCCC;
@@ -4578,14 +4816,14 @@ div.fr-modal-body {
     border-left: 0px;
     height: 36px;
     margin-left: -1px; }
-    .fr-table-border-container .fr-btn-table-border-bg-color .fr-border-color-preview, .fr-table-dimentions-container .fr-btn-table-border-bg-color .fr-border-color-preview, .fr-table-dimentions-section .fr-btn-table-border-bg-color .fr-border-color-preview {
+    .fr-table-border-container .fr-btn-table-border-bg-color .fr-border-color-preview, .fr-table-dimensions-container .fr-btn-table-border-bg-color .fr-border-color-preview, .fr-table-dimensions-section .fr-btn-table-border-bg-color .fr-border-color-preview {
       width: 20px;
       height: 20px;
       border: 1px solid #999999;
       border-radius: 2px;
       position: relative;
       overflow: hidden; }
-      .fr-table-border-container .fr-btn-table-border-bg-color .fr-border-color-preview .fr-border-color-preview-indicator, .fr-table-dimentions-container .fr-btn-table-border-bg-color .fr-border-color-preview .fr-border-color-preview-indicator, .fr-table-dimentions-section .fr-btn-table-border-bg-color .fr-border-color-preview .fr-border-color-preview-indicator {
+      .fr-table-border-container .fr-btn-table-border-bg-color .fr-border-color-preview .fr-border-color-preview-indicator, .fr-table-dimensions-container .fr-btn-table-border-bg-color .fr-border-color-preview .fr-border-color-preview-indicator, .fr-table-dimensions-section .fr-btn-table-border-bg-color .fr-border-color-preview .fr-border-color-preview-indicator {
         position: absolute;
         background: red;
         width: 28px;
@@ -4615,32 +4853,6 @@ div.fr-modal-body {
     background: transparent;
     margin: 2px;
     cursor: pointer; }
-
-.fr-table-drop-indicator {
-  position: absolute;
-  height: 0;
-  z-index: 1000;
-  pointer-events: none;
-  margin-top: -1px;
-  width: 100%;
-  left: 0;
-  display: block; }
-  .fr-table-drop-indicator .fr-table-drop-indicator-line {
-    border: 1px solid #0098F7; }
-    .fr-table-drop-indicator .fr-table-drop-indicator-line::before, .fr-table-drop-indicator .fr-table-drop-indicator-line::after {
-      content: '';
-      position: absolute;
-      top: -4px;
-      width: 8px;
-      height: 2px;
-      border-style: solid;
-      border-width: 4px; }
-    .fr-table-drop-indicator .fr-table-drop-indicator-line::before {
-      left: 0;
-      border-color: transparent transparent transparent #0098F7; }
-    .fr-table-drop-indicator .fr-table-drop-indicator-line::after {
-      right: 0;
-      border-color: transparent #0098F7 transparent transparent; }
 
 .fr-clearfix::after {
   clear: both;

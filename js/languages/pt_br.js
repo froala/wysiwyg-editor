@@ -1,5 +1,5 @@
 /*!
- * froala_editor v4.6.2 (https://www.froala.com/wysiwyg-editor)
+ * froala_editor v4.7.0 (https://www.froala.com/wysiwyg-editor)
  * License https://froala.com/wysiwyg-editor/terms/
  * Copyright 2014-2025 Froala Labs
  */
@@ -24,6 +24,7 @@
       'Italic': 'Itálito',
       'Underline': 'Sublinhar',
       'Strikethrough': 'Tachado',
+      'Size': 'Tamanho',
       // Main buttons
       'Insert': 'Inserir',
       'Delete': 'Apagar',
@@ -56,6 +57,7 @@
       'Font Size': 'Tamanho',
       // Colors
       'Colors': 'Cores',
+      'Color': 'Cor',
       'Background': 'Fundo',
       'Text': 'Texto',
       'HEX Color': 'Cor hexadecimal',
@@ -70,6 +72,7 @@
       // Style
       'Paragraph Style': 'Estilo de parágrafo',
       'Inline Style': 'Estilo embutido',
+      'Padding': 'Preenchimento',
       // Alignment
       'Align': 'Alinhar',
       'Align Left': 'Alinhar à esquerda',
@@ -77,6 +80,11 @@
       'Align Right': 'Alinhar à direita',
       'Align Justify': 'Justificar',
       'None': 'Nenhum',
+      'Alignment': 'Alinhamento',
+      'Next': 'Próximo',
+      'Previous': 'Anterior',
+      'Advanced Options': 'Opções avançadas',
+      'Close': 'Fechar',
       // Lists
       'Ordered List': 'Lista ordenada',
       'Unordered List': 'Lista não ordenada',
@@ -149,6 +157,22 @@
       'Align Middle': 'Alinhar meio',
       'Align Bottom': 'Alinhar fundo',
       'Cell Style': 'Estilo de célula',
+      'Table Properties': 'Propriedades da tabela',
+      'Cell Properties': 'Propriedades da célula',
+      'Table Footer': 'Rodapé da tabela',
+      'Dimensions': 'Dimensões',
+      'Custom background color input': 'Entrada de cor de fundo personalizada',
+      'Background color picker': 'Seletor de cor de fundo',
+      'Custom border color input': 'Entrada de cor da borda personalizada',
+      'Border color picker': 'Seletor de cor da borda',
+      'Border width': 'Largura da borda',
+      'Border style': 'Estilo da borda',
+      'Border color': 'Cor da borda',
+      'Table width': 'Largura da tabela',
+      'Table height': 'Altura da tabela',
+      'Left align': 'Alinhar à esquerda',
+      'Center align': 'Centralizar',
+      'Right align': 'Alinhar à direita',
       // Files
       'Upload File': 'Carregar arquivo',
       'Drop file': 'Arraste seu arquivo aqui',
@@ -223,6 +247,7 @@
       'Clear Formatting': 'Remover formatação',
       // Save
       'Save': "Salve",
+      'Ok': 'OK',
       // Undo, redo
       'Undo': 'Desfazer',
       'Redo': 'Refazer',
@@ -282,11 +307,37 @@
       'Word Paste Detected': 'Texto do Word detectado',
       // Character Counter
       'Characters': 'Caracteres',
+      // Find and Replace
+      'Find and Replace': 'Localizar e substituir',
+      'Find': 'Localizar',
+      'Replace with': 'Substituir por',
+      'Replace All': 'Substituir tudo',
+      'Match case': 'Diferenciar maiúsculas de minúsculas',
+      'Whole words only': 'Apenas palavras inteiras',
       // More Buttons
       'More Text': 'Mais Texto',
       'More Paragraph': 'Mais Parágrafo',
       'More Rich': 'Mais Rico',
-      'More Misc': 'Mais  Misc'
+      'More Misc': 'Mais  Misc',
+      'Border': 'Borda',
+      // selector icon
+      'Select Table': 'Selecionar tabela',
+      'Drag Table': 'Arrastar tabela',
+      'Select PageBreak': 'Selecionar quebra de página',
+      'Drag PageBreak': 'Arrastar quebra de página',
+      'Page Break': 'Quebra de página',
+      //Link to acnhor
+      'Insert Anchor': 'Inserir Âncora',
+      'There are no entries matching': 'Não há entradas correspondentes',
+      'Update Anchor': 'Atualizar Âncora',
+      'Edit Anchor': 'Editar Âncora',
+      'Anchor Name': 'Nome da Âncora',
+      'Anchor Link': 'Link da Âncora',
+      'Scroll to target': 'Rolar para o destino',
+      'Enter the anchor name without space': 'Digite o nome da âncora sem espaços',
+      'Anchor name already exists.': 'O nome da âncora já existe.',
+      // Export to Word
+      'Export to Word': 'Exportar para o Word'
     },
     direction: 'ltr'
   };

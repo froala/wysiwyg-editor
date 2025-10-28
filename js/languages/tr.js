@@ -1,5 +1,5 @@
 /*!
- * froala_editor v4.6.2 (https://www.froala.com/wysiwyg-editor)
+ * froala_editor v4.7.0 (https://www.froala.com/wysiwyg-editor)
  * License https://froala.com/wysiwyg-editor/terms/
  * Copyright 2014-2025 Froala Labs
  */
@@ -24,6 +24,7 @@
       'Italic': "\u0130talik",
       'Underline': "Alt\u0131 \xE7izili",
       'Strikethrough': "\xDCst\xFC \xE7izili",
+      'Size': 'Boyut',
       // Main buttons
       'Insert': 'Ekle',
       'Delete': 'Silmek',
@@ -39,6 +40,7 @@
       'Font Size': "Yaz\u0131tipi B\xFCy\xFCkl\xFC\u011F\xFC",
       // Colors
       'Colors': 'Renkler',
+      'Color': 'Renk',
       'Background': 'Arkaplan',
       'Text': 'Metin',
       'HEX Color': 'Altı renkli',
@@ -53,6 +55,7 @@
       // Style
       'Paragraph Style': 'Paragraf stili',
       'Inline Style': "\xC7izgide stili",
+      'Padding': 'Dolgu',
       // Alignment
       'Align': 'Hizalama',
       'Align Left': 'Sola hizala',
@@ -60,6 +63,11 @@
       'Align Right': "Sa\u011Fa hizala",
       'Align Justify': "\u0130ki yana yasla",
       'None': "Hi\xE7biri",
+      'Alignment': 'Hizalama',
+      'Next': 'Sonraki',
+      'Previous': 'Öncesi',
+      'Advanced Options': 'Gelişmiş Seçenekler',
+      'Close': 'Kapat',
       // Lists
       'Ordered List': "S\u0131ral\u0131 liste",
       'Unordered List': "S\u0131ras\u0131z liste",
@@ -132,6 +140,22 @@
       'Align Middle': 'Orta hizalama',
       'Align Bottom': 'Dibe hizalama',
       'Cell Style': "H\xFCcre stili",
+      'Table Properties': 'Tablo özellikleri',
+      'Cell Properties': 'hücre özellikleri',
+      'Table Footer': 'Tablo Altbilgisi',
+      'Dimensions': 'Boyutlar',
+      'Custom background color input': 'Özel arka plan rengi girişi',
+      'Background color picker': 'Arka plan rengi seçici',
+      'Custom border color input': 'Özel kenarlık rengi girişi',
+      'Border color picker': 'Kenarlık rengi seçici',
+      'Border width': 'Kenarlık genişliği',
+      'Border style': 'Kenarlık stili',
+      'Border color': 'Kenarlık rengi',
+      'Table width': 'Tablo genişliği',
+      'Table height': 'Tablo yüksekliği',
+      'Left align': 'Sola hizala',
+      'Center align': 'Ortala',
+      'Right align': 'Sağa hizala',
       // Files
       'Upload File': "Dosya Y\xFCkle",
       'Drop file': "B\u0131rak dosya",
@@ -206,6 +230,7 @@
       'Clear Formatting': "Bi\xE7imlendirme kald\u0131r",
       // Save
       'Save': 'Kayıt etmek',
+      'Ok': 'Tamam',
       // Undo, redo
       'Undo': 'Geri Al',
       'Redo': 'Yinele',
@@ -265,11 +290,37 @@
       'Word Paste Detected': 'Kelime yapıştırması algılandı',
       // Character Counter
       'Characters': 'Karakterler',
+      // Find and Replace  
+      'Find and Replace': 'Bul ve Değiştir',
+      'Find': 'Bul',
+      'Replace with': 'Şununla değiştir',
+      'Replace All': 'Tümünü değiştir',
+      'Match case': 'Büyük/küçük harfe duyarlı',
+      'Whole words only': 'Yalnızca tam kelimeler',
       // More Buttons
       'More Text': 'daha fazla Metin',
       'More Paragraph': 'daha fazla Paragraf',
       'More Rich': 'daha fazla Zengin',
-      'More Misc': 'daha fazla Çeşitli'
+      'More Misc': 'daha fazla Çeşitli',
+      'Border': 'Kenarlık',
+      // selector icon  
+      'Select Table': 'Tabloyu seç',
+      'Drag Table': 'Tabloyu sürükle',
+      'Select PageBreak': 'Sayfa sonu seç',
+      'Drag PageBreak': 'Sayfa sonunu sürükle',
+      'Page Break': 'Sayfa sonu',
+      //Link to anchor
+      'Insert Anchor': 'Çapa Ekle',
+      'There are no entries matching': 'Eşleşen giriş yok',
+      'Update Anchor': 'Çapayı Güncelle',
+      'Edit Anchor': 'Çapayı Düzenle',
+      'Anchor Name': 'Çapa Adı',
+      'Anchor Link': 'Çapa Bağlantısı',
+      'Scroll to target': 'Hedefe kaydır',
+      'Enter the anchor name without space': 'Çapa adını boşluksuz girin',
+      'Anchor name already exists.': 'Çapa adı zaten mevcut.',
+      // Export to Word
+      'Export to Word': 'Word\'e Aktar'
     },
     direction: 'ltr'
   };

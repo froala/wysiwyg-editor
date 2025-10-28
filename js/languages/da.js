@@ -1,5 +1,5 @@
 /*!
- * froala_editor v4.6.2 (https://www.froala.com/wysiwyg-editor)
+ * froala_editor v4.7.0 (https://www.froala.com/wysiwyg-editor)
  * License https://froala.com/wysiwyg-editor/terms/
  * Copyright 2014-2025 Froala Labs
  */
@@ -24,6 +24,7 @@
       'Italic': 'Kursiv',
       'Underline': 'Understreget',
       'Strikethrough': 'Gennemstreget',
+      'Size': 'Størrelse',
       // Main buttons
       'Insert': 'Indsæt',
       'Delete': 'Slet',
@@ -39,6 +40,7 @@
       'Font Size': 'Skriftstørrelse',
       // Colors
       'Colors': 'Farver',
+      'Color': 'Farve',
       'Background': 'Baggrund',
       'Text': 'Tekst',
       'HEX Color': 'Hex farve',
@@ -53,6 +55,7 @@
       // Style
       'Paragraph Style': 'Afsnit',
       'Inline Style': 'På linje',
+      'Padding': 'Polstring',
       // Alignment
       'Align': 'Tilpasning',
       'Align Left': 'Venstrejusteret',
@@ -60,6 +63,11 @@
       'Align Right': 'Højrejusteret',
       'Align Justify': 'Justeret',
       'None': 'Ingen',
+      'Alignment': 'Justering',
+      'Next': 'Næste',
+      'Previous': 'Tidligere',
+      'Advanced Options': 'Avancerede indstillinger',
+      'Close': 'Tæt',
       // Lists
       'Ordered List': 'Punktopstilling',
       'Unordered List': 'Punktopstilling med tal',
@@ -132,6 +140,22 @@
       'Align Middle': 'Tilpas i midte',
       'Align Bottom': 'Tilpas i bund',
       'Cell Style': 'Celleudseende',
+      'Table Properties': 'Tabel egenskaber',
+      'Cell Properties': 'Celle egenskaber',
+      'Table Footer': 'Bordfod',
+      'Dimensions': 'Dimensioner',
+      'Custom background color input': 'Brugerdefineret baggrundsfarveinput',
+      'Background color picker': 'Baggrundsfarvevælger',
+      'Custom border color input': 'Brugerdefineret kantfarveinput',
+      'Border color picker': 'Kantfarvevælger',
+      'Border width': 'Kantbredde',
+      'Border style': 'Border stil',
+      'Border color': 'Kantfarve',
+      'Table width': 'Bordbredde',
+      'Table height': 'Bordhøjde',
+      'Left align': 'Venstrejusteret',
+      'Center align': 'Centerjuster',
+      'Right align': 'Højrejuster',
       // Files
       'Upload File': 'Upload fil',
       'Drop file': 'Træk filen herind',
@@ -263,11 +287,37 @@
       'Word Paste Detected': 'Indsættelse fra Word opdaget',
       // Character Counter 
       'Characters': 'tegn',
+      //Find and Replace
+      'Find and Replace': 'Find og erstat',
+      'Find': 'Finde',
+      'Replace with': 'Udskift med',
+      'Replace All': 'Erstat alle',
+      'Match case': 'Matchetui',
+      'Whole words only': 'Kun hele ord',
       // More Buttons
       'More Text': 'Mere tekst',
       'More Paragraph': 'Mere afsnit',
       'More Rich': 'Mere rig',
-      'More Misc': 'Mere Diverse'
+      'More Misc': 'Mere Diverse',
+      'Border': 'Grænse',
+      //link to anchor
+      'Insert Anchor': 'Indsæt anker',
+      'There are no entries matching': 'Der er ingen poster, der matcher',
+      'Update Anchor': 'Opdater anker',
+      'Edit Anchor': 'Rediger anker',
+      'Anchor Name': 'Ankernavn',
+      'Anchor Link': 'Ankerlink',
+      'Scroll to target': 'Rul til mål',
+      'Enter the anchor name without space': 'Indtast ankernavnet uden mellemrum',
+      'Anchor name already exists.': 'Ankernavnet findes allerede.',
+      //selector icon
+      'Select Table': 'Vælg tabel',
+      'Drag Table': 'Træk tabel',
+      'Select PageBreak': 'Vælg sideskift',
+      'Drag PageBreak': 'Træk sideskift',
+      'Page Break': 'Sideskift',
+      //Export to Word
+      'Export to Word': 'Eksporter til Word'
     },
     direction: 'ltr'
   };

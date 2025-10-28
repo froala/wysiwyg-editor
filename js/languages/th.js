@@ -1,5 +1,5 @@
 /*!
- * froala_editor v4.6.2 (https://www.froala.com/wysiwyg-editor)
+ * froala_editor v4.7.0 (https://www.froala.com/wysiwyg-editor)
  * License https://froala.com/wysiwyg-editor/terms/
  * Copyright 2014-2025 Froala Labs
  */
@@ -24,6 +24,7 @@
       'Italic': "\u0E15\u0E31\u0E27\u0E40\u0E2D\u0E35\u0E22\u0E07",
       'Underline': "\u0E02\u0E35\u0E14\u0E40\u0E2A\u0E49\u0E19\u0E43\u0E15\u0E49",
       'Strikethrough': "\u0E02\u0E35\u0E14\u0E17\u0E31\u0E1A",
+      'Size': 'ขนาด',
       // Main buttons
       'Insert': "\u0E41\u0E17\u0E23\u0E01",
       'Delete': "\u0E25\u0E1A",
@@ -39,6 +40,7 @@
       'Font Size': "\u0E02\u0E19\u0E32\u0E14\u0E41\u0E1A\u0E1A\u0E2D\u0E31\u0E01\u0E29\u0E23",
       // Colors
       'Colors': "\u0E2A\u0E35",
+      'Color': 'สี',
       'Background': "\u0E1E\u0E37\u0E49\u0E19\u0E2B\u0E25\u0E31\u0E07",
       'Text': "\u0E02\u0E49\u0E2D\u0E04\u0E27\u0E32\u0E21",
       'HEX Color': 'สีฐานสิบหก',
@@ -53,6 +55,7 @@
       // Style
       'Paragraph Style': "\u0E25\u0E31\u0E01\u0E29\u0E13\u0E30\u0E22\u0E48\u0E2D\u0E2B\u0E19\u0E49\u0E32",
       'Inline Style': "\u0E23\u0E39\u0E1B\u0E41\u0E1A\u0E1A\u0E2D\u0E34\u0E19\u0E44\u0E25\u0E19\u0E4C",
+      'Padding': 'ระยะขอบด้านใน',
       // Alignment
       'Align': "\u0E01\u0E32\u0E23\u0E08\u0E31\u0E14\u0E41\u0E19\u0E27",
       'Align Left': "\u0E08\u0E31\u0E14\u0E0A\u0E34\u0E14\u0E0B\u0E49\u0E32\u0E22",
@@ -60,6 +63,11 @@
       'Align Right': "\u0E08\u0E31\u0E14\u0E0A\u0E34\u0E14\u0E02\u0E27\u0E32",
       'Align Justify': "\u0E40\u0E15\u0E47\u0E21\u0E41\u0E19\u0E27",
       'None': "\u0E44\u0E21\u0E48",
+      'Alignment': 'การจัดตำแหน่ง',
+      'Next': 'ถัดไป',
+      'Previous': 'ก่อนหน้า',
+      'Advanced Options': 'ตัวเลือกขั้นสูง',
+      'Close': 'ปิด',
       // Lists
       'Ordered List': "\u0E23\u0E32\u0E22\u0E01\u0E32\u0E23\u0E25\u0E33\u0E14\u0E31\u0E1A\u0E40\u0E25\u0E02",
       'Unordered List': "\u0E23\u0E32\u0E22\u0E01\u0E32\u0E23\u0E2A\u0E31\u0E0D\u0E25\u0E31\u0E01\u0E29\u0E13\u0E4C\u0E2B\u0E31\u0E27\u0E02\u0E49\u0E2D\u0E22\u0E48\u0E2D\u0E22",
@@ -132,6 +140,22 @@
       'Align Middle': "\u0E15\u0E4D\u0E32\u0E41\u0E2B\u0E19\u0E48\u0E07\u0E01\u0E25\u0E32\u0E07",
       'Align Bottom': "\u0E15\u0E4D\u0E32\u0E41\u0E2B\u0E19\u0E48\u0E07\u0E14\u0E49\u0E32\u0E19\u0E25\u0E48\u0E32\u0E07",
       'Cell Style': "\u0E23\u0E39\u0E1B\u0E41\u0E1A\u0E1A\u0E02\u0E2D\u0E07\u0E40\u0E0B\u0E25\u0E25\u0E4C",
+      'Table Properties': 'คุณสมบัติตาราง',
+      'Cell Properties': 'คุณสมบัติของเซลล์',
+      'Table Footer': 'ส่วนท้ายตาราง',
+      'Dimensions': 'ขนาด',
+      'Custom background color input': 'การป้อนสีพื้นหลังที่กำหนดเอง',
+      'Background color picker': 'ตัวเลือกสีพื้นหลัง',
+      'Custom border color input': 'การป้อนสีเส้นขอบที่กำหนดเอง',
+      'Border color picker': 'ตัวเลือกสีเส้นขอบ',
+      'Border width': 'ความกว้างเส้นขอบ',
+      'Border style': 'สไตล์เส้นขอบ',
+      'Border color': 'สีเส้นขอบ',
+      'Table width': 'ความกว้างตาราง',
+      'Table height': 'ความสูงตาราง',
+      'Left align': 'จัดชิดซ้าย',
+      'Center align': 'จัดกึ่งกลาง',
+      'Right align': 'จัดชิดขวา',
       // Files
       'Upload File': "\u0E2D\u0E31\u0E1B\u0E42\u0E2B\u0E25\u0E14\u0E44\u0E1F\u0E25\u0E4C",
       'Drop file': "\u0E27\u0E32\u0E07\u0E44\u0E1F\u0E25\u0E4C",
@@ -206,6 +230,7 @@
       'Clear Formatting': "\u0E19\u0E33\u0E01\u0E32\u0E23\u0E08\u0E31\u0E14\u0E23\u0E39\u0E1B\u0E41\u0E1A\u0E1A",
       // Save
       'Save': "\u0E1A\u0E31\u0E19\u0E17\u0E36\u0E01",
+      'Ok': 'ตกลง',
       // Undo, redo
       'Undo': "\u0E40\u0E25\u0E34\u0E01\u0E17\u0E33",
       'Redo': "\u0E17\u0E4D\u0E32\u0E0B\u0E49\u0E33",
@@ -265,11 +290,37 @@
       'Word Paste Detected': 'ตรวจพบการวางคำ',
       // Character Counter
       'Characters': 'ตัวละคร',
+      // Find and Replace  
+      'Find and Replace': 'ค้นหาและแทนที่',
+      'Find': 'ค้นหา',
+      'Replace with': 'แทนที่ด้วย',
+      'Replace All': 'แทนที่ทั้งหมด',
+      'Match case': 'ตรงตามตัวพิมพ์ใหญ่เล็ก',
+      'Whole words only': 'เฉพาะคำทั้งหมด',
       // More Buttons
       'More Text': 'ข้อความเพิ่มเติม',
       'More Paragraph': 'ย่อหน้าเพิ่มเติม',
       'More Rich': 'รวยมากขึ้น',
-      'More Misc': 'อื่น ๆ'
+      'More Misc': 'อื่น ๆ',
+      'Border': 'เส้นขอบ',
+      // selector icon  
+      'Select Table': 'เลือกตาราง',
+      'Drag Table': 'ลากตาราง',
+      'Select PageBreak': 'เลือกตัวแบ่งหน้า',
+      'Drag PageBreak': 'ลากตัวแบ่งหน้า',
+      'Page Break': 'ตัวแบ่งหน้า',
+      //Link to anchor
+      'Insert Anchor': 'แทรกจุดเชื่อมโยง',
+      'There are no entries matching': 'ไม่มีรายการที่ตรงกัน',
+      'Update Anchor': 'อัปเดตจุดเชื่อมโยง',
+      'Edit Anchor': 'แก้ไขจุดเชื่อมโยง',
+      'Anchor Name': 'ชื่อจุดเชื่อมโยง',
+      'Anchor Link': 'ลิงก์จุดเชื่อมโยง',
+      'Scroll to target': 'เลื่อนไปยังเป้าหมาย',
+      'Enter the anchor name without space': 'ป้อนชื่อจุดเชื่อมโยงโดยไม่มีช่องว่าง',
+      'Anchor name already exists.': 'ชื่อจุดเชื่อมโยงมีอยู่แล้ว',
+      //Export to Word
+      'Export to Word': 'ส่งออกเป็น Word'
     },
     direction: 'ltr'
   };

@@ -3,3 +3,19 @@ Froala WYSIWYG Editor
 
 In order to use Froala Editor you have to purchase a license from: https://www.froala.com/wysiwyg-editor/pricing.
 For more informations regarding the license please read https://www.froala.com/wysiwyg-editor/terms.
+
+
+Third Party Content
+------------------------------------------------------------------------------------------
+The following third party software is used with Froala Editor and is provided under other licenses and/or has source available from other locations.
+
+html-docx-js-version-updated (MIT)
+Version: 0.4.0
+Site: https://github.com/evidenceprime/html-docx-js#readme
+License: https://github.com/evidenceprime/html-docx-js?tab=MIT-1-ov-file#readme
+
+file-saver (MIT)
+Version: 2.0.5
+Site: https://github.com/eligrey/FileSaver.js#readme
+License: https://github.com/eligrey/FileSaver.js?tab=License-1-ov-file#readme
+

@@ -1,5 +1,5 @@
 /*!
- * froala_editor v4.6.2 (https://www.froala.com/wysiwyg-editor)
+ * froala_editor v4.7.0 (https://www.froala.com/wysiwyg-editor)
  * License https://froala.com/wysiwyg-editor/terms/
  * Copyright 2014-2025 Froala Labs
  */
@@ -24,6 +24,7 @@
       'Italic': 'خط کج',
       'Underline': 'خط زیر',
       'Strikethrough': "\u062E\u0637 \u062E\u0648\u0631\u062F\u0647",
+      'Size': 'اندازه',
       // Main buttons
       'Insert': "\u0627\u0636\u0627\u0641\u0647 \u06A9\u0631\u062F\u0646",
       'Delete': "\u062D\u0630\u0641 \u06A9\u0631\u062F\u0646",
@@ -39,6 +40,7 @@
       'Font Size': "\u0627\u0646\u062F\u0627\u0632\u0647 \u0642\u0644\u0645",
       // Colors
       'Colors': "\u0631\u0646\u06AF",
+      'Color': 'رنگ',
       'Background': "\u0632\u0645\u06CC\u0646\u0647 \u0645\u062A\u0646",
       'Text': "\u0645\u062A\u0646",
       'HEX Color': 'کد رنگ',
@@ -53,6 +55,7 @@
       // Style
       'Paragraph Style': "\u067E\u0627\u0631\u0627\u06AF\u0631\u0627\u0641 \u0633\u0628\u06A9",
       'Inline Style': "\u062E\u0637\u06CC \u0633\u0628\u06A9",
+      'Padding': 'بالشتک',
       // Alignment
       'Align': "\u0631\u062F\u06CC\u0641 \u0628\u0646\u062F\u06CC \u0646\u0648\u0634\u062A\u0647",
       'Align Left': "\u0686\u067E \u0686\u06CC\u0646",
@@ -60,6 +63,11 @@
       'Align Right': "\u0631\u0627\u0633\u062A \u0686\u06CC\u0646",
       'Align Justify': "\u0645\u0633\u0627\u0648\u06CC \u0627\u0632 \u0637\u0631\u0641\u06CC\u0646",
       'None': "\u0647\u06CC\u0686",
+      'Alignment': 'ترازبندی',
+      'Next': 'بعدی',
+      'Previous': 'قبلی',
+      'Advanced Options': 'تنظیمات پیشرفته',
+      'Close': 'بستن',
       // Lists
       'Ordered List': "\u0644\u06CC\u0633\u062A \u0634\u0645\u0627\u0631\u0647 \u0627\u06CC",
       'Unordered List': "\u0644\u06CC\u0633\u062A \u062F\u0627\u06CC\u0631\u0647 \u0627\u06CC",
@@ -132,6 +140,22 @@
       'Align Middle': "\u062A\u0631\u0627\u0632 \u0648\u0633\u0637",
       'Align Bottom': "\u062A\u0631\u0627\u0632 \u067E\u0627\u06CC\u06CC\u0646",
       'Cell Style': "\u0633\u0628\u06A9 \u0647\u0627\u06CC \u0647\u0645\u0631\u0627\u0647",
+      'Table Properties': 'ویژگی‌های جدول',
+      'Cell Properties': 'ویژگی‌های سلول',
+      'Table Footer': 'پاورقی جدول',
+      'Dimensions': 'ابعاد',
+      'Custom background color input': 'ورودی رنگ پس‌زمینه سفارشی',
+      'Background color picker': 'انتخاب‌کننده رنگ پس‌زمینه',
+      'Custom border color input': 'ورودی رنگ حاشیه سفارشی',
+      'Border color picker': 'انتخاب‌کننده رنگ حاشیه',
+      'Border width': 'عرض حاشیه',
+      'Border style': 'سبک حاشیه',
+      'Border color': 'رنگ حاشیه',
+      'Table width': 'عرض جدول',
+      'Table height': 'ارتفاع جدول',
+      'Left align': 'تراز به چپ',
+      'Center align': 'تراز به مرکز',
+      'Right align': 'تراز به راست',
       // Files
       'Upload File': "\u0622\u067E\u0644\u0648\u062F \u0641\u0627\u06CC\u0644",
       'Drop file': "\u0627\u0641\u062A \u0641\u0627\u06CC\u0644",
@@ -206,6 +230,7 @@
       'Clear Formatting': "\u062D\u0630\u0641 \u0642\u0627\u0644\u0628 \u0628\u0646\u062F\u06CC",
       // Save
       'Save': "\u0635\u0631\u0641\u0647 \u062C\u0648\u06CC\u06CC",
+      'Ok': 'تأیید',
       // Undo, redo
       'Undo': "\u0628\u0627\u0637\u0644 \u06A9\u0631\u062F\u0646",
       'Redo': "\u0627\u0646\u062C\u0627\u0645 \u062F\u0648\u0628\u0627\u0631\u0647",
@@ -265,11 +290,37 @@
       'Word Paste Detected': 'کلمه رب تشخیص داده شده است',
       // Character Counter 
       'Characters': 'شخصیت ها',
+      // Find and Replace
+      'Find and Replace': 'یافتن و جایگزینی',
+      'Find': 'یافتن',
+      'Replace with': 'جایگزین با',
+      'Replace All': 'جایگزینی همه',
+      'Match case': 'تطبیق حروف بزرگ و کوچک',
+      'Whole words only': 'فقط کلمات کامل',
       // More Buttons
       'More Text': 'متن بیشتر',
       'More Paragraph': 'پاراگراف بیشتر',
       'More Rich': 'بیشتر ثروتمند',
-      'More Misc': 'بیشتر متفرقه'
+      'More Misc': 'بیشتر متفرقه',
+      'Border': 'حاشیه',
+      // selector icon
+      'Select Table': 'انتخاب جدول',
+      'Drag Table': 'کشیدن جدول',
+      'Select PageBreak': 'انتخاب شکست صفحه',
+      'Drag PageBreak': 'کشیدن شکست صفحه',
+      'Page Break': 'شکست صفحه',
+      // link to anchor
+      'Insert Anchor': 'درج لنگر',
+      'There are no entries matching': 'هیچ ورودی مطابقت ندارد',
+      'Update Anchor': 'به‌روزرسانی لنگر',
+      'Edit Anchor': 'ویرایش لنگر',
+      'Anchor Name': 'نام لنگر',
+      'Anchor Link': 'لینک لنگر',
+      'Scroll to target': 'اسکرول به هدف',
+      'Enter the anchor name without space': 'نام لنگر را بدون فاصله وارد کنید',
+      'Anchor name already exists.': 'نام لنگر از قبل موجود است.',
+      // export to word
+      'Export to Word': 'خروجی به Word'
     },
     direction: 'rtl'
   };

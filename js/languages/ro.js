@@ -1,5 +1,5 @@
 /*!
- * froala_editor v4.6.2 (https://www.froala.com/wysiwyg-editor)
+ * froala_editor v4.7.0 (https://www.froala.com/wysiwyg-editor)
  * License https://froala.com/wysiwyg-editor/terms/
  * Copyright 2014-2025 Froala Labs
  */
@@ -24,6 +24,7 @@
       'Italic': 'Cursiv',
       'Underline': 'Subliniat',
       'Strikethrough': "T\u0103iat",
+      'Size': 'Dimensiune',
       // Main buttons
       'Insert': "Insereaz\u0103",
       'Delete': "\u015Eterge",
@@ -39,6 +40,7 @@
       'Font Size': 'Dimensiune font',
       // Colors
       'Colors': 'Culoare',
+      'Color': 'Culoare',
       'Background': 'Fundal',
       'Text': 'Text',
       'HEX Color': 'Culoare Hexa',
@@ -53,6 +55,7 @@
       // Style
       'Paragraph Style': 'Stil paragraf',
       'Inline Style': "Stil \xEEn linie",
+      'Padding': 'Captuseala',
       // Alignment
       'Align': 'Aliniere',
       'Align Left': "Aliniere la st\xE2nga",
@@ -60,6 +63,11 @@
       'Align Right': 'Aliniere la dreapta',
       'Align Justify': "Aliniere pe toat\u0103 l\u0103\u021Bimea",
       'None': 'Niciunul',
+      'Alignment': 'Aliniere',
+      'Next': 'Următorul',
+      'Previous': 'Anterior',
+      'Advanced Options': 'Opțiuni avansate',
+      'Close': 'Închide',
       // Lists
       'Ordered List': "List\u0103 ordonat\u0103",
       'Unordered List': "List\u0103 neordonat\u0103",
@@ -132,6 +140,22 @@
       'Align Middle': 'Aliniere la mijloc',
       'Align Bottom': 'Aliniere jos',
       'Cell Style': "Stil celul\u0103",
+      'Table Properties': 'Proprietăți tabel',
+      'Cell Properties': 'Proprietăți celulă',
+      'Table Footer': 'Subsol tabel',
+      'Dimensions': 'Dimensiuni',
+      'Custom background color input': 'Introducere personalizată a culorii de fundal',
+      'Background color picker': 'Selector de culoare de fundal',
+      'Custom border color input': 'Introducere personalizată a culorii chenarului',
+      'Border color picker': 'Selector de culoare a marginilor',
+      'Border width': 'Lățimea chenarului',
+      'Border style': 'Stil de chenar',
+      'Border color': 'Culoarea chenarului',
+      'Table width': 'Lățimea mesei',
+      'Table height': 'Înălțimea mesei',
+      'Left align': 'Aliniați la stânga',
+      'Center align': 'Aliniați la centru',
+      'Right align': 'Aliniați la dreapta',
       // Files
       'Upload File': "\xCEnc\u0103rca\u021Bi fi\u0219ier",
       'Drop file': "Trage fi\u0219ier",
@@ -206,6 +230,7 @@
       'Clear Formatting': "Elimina\u021Bi formatarea",
       // Save
       'Save': "Salva\u021Bi",
+      'Ok': 'OK',
       // Undo, redo
       'Undo': "Reexecut\u0103",
       'Redo': "Dezexecut\u0103",
@@ -265,11 +290,35 @@
       'Word Paste Detected': 'A fost detectată lipire din Word',
       // Character Counter
       'Characters': 'Caracterele',
+      // Find and Replace
+      'Find and Replace': 'Găsiți și înlocuiți',
+      'Find': 'Găsi',
+      'Replace with': 'Înlocuiește cu',
+      'Replace All': 'Înlocuiește toate',
+      'Match case': 'Cazul meciului',
+      'Whole words only': 'Numai cuvinte întregi',
       // More Buttons
       'More Text': 'Mai Mult Text',
       'More Paragraph': 'Mai Mult Paragraf',
       'More Rich': 'Mai Mult Bogat',
-      'More Misc': 'Mai Mult Diverse'
+      'More Misc': 'Mai Mult Diverse',
+      'Border': 'Frontieră',
+      // selector icon
+      'Select Table': 'Selectați Tabel',
+      'Drag Table': 'Trage tabelul',
+      'Select PageBreak': 'selectați Pauza de pagină',
+      'Drag PageBreak': 'Trageți Pauza de pagină',
+      'Page Break': 'Pauza de pagină',
+      //Link to anchor
+      'Insert Anchor': 'Inserează ancoră',
+      'There are no entries matching': 'Nu există intrări care să se potrivească',
+      'Update Anchor': 'Actualizează ancora',
+      'Edit Anchor': 'Editează ancora',
+      'Anchor Name': 'Nume ancoră',
+      'Anchor Link': 'Link ancoră',
+      'Scroll to target': 'Derulează la țintă',
+      'Enter the anchor name without space': 'Introduceți numele ancorei fără spații',
+      'Anchor name already exists.': 'Numele ancorei există deja.'
     },
     direction: 'ltr'
   };

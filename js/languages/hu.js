@@ -1,5 +1,5 @@
 /*!
- * froala_editor v4.6.2 (https://www.froala.com/wysiwyg-editor)
+ * froala_editor v4.7.0 (https://www.froala.com/wysiwyg-editor)
  * License https://froala.com/wysiwyg-editor/terms/
  * Copyright 2014-2025 Froala Labs
  */
@@ -24,6 +24,7 @@
       'Italic': 'Dőlt',
       'Underline': 'Aláhúzott',
       'Strikethrough': 'Áthúzott',
+      'Size': 'Méret',
       // Main buttons
       'Insert': 'Beillesztés',
       'Delete': 'Törlés',
@@ -39,6 +40,7 @@
       'Font Size': 'Betűméret',
       // Colors
       'Colors': 'Színek',
+      'Color': 'Szín',
       'Background': 'Háttér',
       'Text': 'Szöveg',
       'HEX Color': 'HEX színkód',
@@ -53,6 +55,7 @@
       // Style
       'Paragraph Style': 'Bekezdés stílusa',
       'Inline Style': ' Helyi stílus',
+      'Padding': 'Párnázás',
       // Alignment
       'Align': 'Igazítás',
       'Align Left': 'Balra igazít',
@@ -60,6 +63,11 @@
       'Align Right': 'Jobbra igazít',
       'Align Justify': 'Sorkizárás',
       'None': 'Egyik sem',
+      'Alignment': 'Igazítás',
+      'Next': 'Következő',
+      'Previous': 'Előző',
+      'Advanced Options': 'Speciális beállítások',
+      'Close': 'Közeli',
       // Lists
       'Ordered List': 'Számozás',
       'Default': 'Alapértelmezett',
@@ -145,6 +153,22 @@
       'Align Middle': 'Igazítsa középre',
       'Align Bottom': 'Igazítsa alúlra',
       'Cell Style': 'Cella stílusa',
+      'Table Properties': 'Táblázat tulajdonságai',
+      'Cell Properties': 'Cella tulajdonságai',
+      'Table Footer': 'Táblázat lábléce',
+      'Dimensions': 'Méretek',
+      'Custom background color input': 'Egyedi háttérszín bevitel',
+      'Background color picker': 'Háttérszín választó',
+      'Custom border color input': 'Egyedi szegélyszín bevitel',
+      'Border color picker': 'Szegély színválasztó',
+      'Border width': 'Szegély szélessége',
+      'Border style': 'Szegély stílus',
+      'Border color': 'Szegély színe',
+      'Table width': 'Asztal szélessége',
+      'Table height': 'Asztal magassága',
+      'Left align': 'Balra igazítás',
+      'Center align': 'Középre igazítás',
+      'Right align': 'Jobbra igazítás',
       // Files
       'Upload File': 'Fájl feltöltése',
       'Drop file': 'Húzza ide a fájlt',
@@ -219,6 +243,7 @@
       'Clear Formatting': 'Formázás eltávolítása',
       // Save
       'Save': 'Mentés',
+      'Ok': 'Rendben',
       // Undo, redo
       'Undo': 'Visszavonás',
       'Redo': 'Ismét',
@@ -275,7 +300,33 @@
       'The pasted content is coming from a Microsoft Word document. Do you want to keep the format or clean it up?': 'A beillesztett tartalom egy Microsoft Word dokumentumból származik. Szeretné megtartani a formázását vagy sem?',
       'Keep': 'Megtartás',
       'Clean': 'Tisztítás',
-      'Word Paste Detected': 'Word beillesztés észlelhető'
+      'Word Paste Detected': 'Word beillesztés észlelhető',
+      // Find and Replace
+      'Find and Replace': 'Keresés és csere',
+      'Find': 'Lelet',
+      'Replace with': 'Cserélje ki',
+      'Replace All': 'Cserélje ki az összeset',
+      'Match case': 'Match tok',
+      'Whole words only': 'Csak teljes szavak',
+      'Border': 'Határ',
+      // selector icon
+      'Select Table': 'Válassza a Táblázatot',
+      'Drag Table': 'Táblázat húzása',
+      'Select PageBreak': 'Válassza az Oldaltörés lehetőséget',
+      'Drag PageBreak': 'húzza az Oldaltörés',
+      'Page Break': 'Oldaltörés',
+      // link to anchor
+      'Insert Anchor': 'Horgony beszúrása',
+      'There are no entries matching': 'Nincs bejegyzés, amely megfelel',
+      'Update Anchor': 'Horgony frissítése',
+      'Edit Anchor': 'Horgony szerkesztése',
+      'Anchor Name': 'Horgony neve',
+      'Anchor Link': 'Horgony linkje',
+      'Scroll to target': 'Görgetés a célhoz',
+      'Enter the anchor name without space': 'Adja meg a horgony nevét szóköz nélkül',
+      'Anchor name already exists.': 'A horgony neve már létezik.',
+      // Export to Word
+      'Export to Word': 'Exportálás Word-be'
     },
     direction: 'ltr'
   };

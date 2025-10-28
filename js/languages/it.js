@@ -1,5 +1,5 @@
 /*!
- * froala_editor v4.6.2 (https://www.froala.com/wysiwyg-editor)
+ * froala_editor v4.7.0 (https://www.froala.com/wysiwyg-editor)
  * License https://froala.com/wysiwyg-editor/terms/
  * Copyright 2014-2025 Froala Labs
  */
@@ -39,6 +39,7 @@
       'Italic': 'Corsivo',
       'Underline': 'Sottolineato',
       'Strikethrough': 'Barrato',
+      'Size': 'Misurare',
       // Main buttons
       'Insert': 'Inserisci',
       'Delete': 'Cancella',
@@ -54,6 +55,7 @@
       'Font Size': 'Dimensione Carattere',
       // Colors
       'Colors': 'Colori',
+      'Color': 'Colore',
       'Background': 'Sfondo',
       'Text': 'Testo',
       'HEX Color': 'Colore Esadecimale',
@@ -68,6 +70,7 @@
       // Style
       'Paragraph Style': 'Stile Paragrafo',
       'Inline Style': 'Stile in Linea',
+      'Padding': 'Imbottitura',
       // Alignment
       'Align': 'Allinea',
       'Align Left': 'Allinea a Sinistra',
@@ -75,6 +78,11 @@
       'Align Right': 'Allinea a Destra',
       'Align Justify': 'Giustifica',
       'None': 'Nessuno',
+      'Alignment': 'Allineamento',
+      'Next': 'Avanti',
+      'Previous': 'Precedente',
+      'Advanced Options': 'Opzioni avanzate',
+      'Close': 'Chiudi',
       // Lists
       'Ordered List': 'Elenchi Numerati',
       'Unordered List': 'Elenchi Puntati',
@@ -147,6 +155,22 @@
       'Align Middle': 'Allinea al Centro',
       'Align Bottom': 'Allinea in Basso',
       'Cell Style': 'Stile Cella',
+      'Table Properties': 'Proprietà Tabella',
+      'Cell Properties': 'Proprietà Cella',
+      'Table Footer': 'Piè di pagina della tabella',
+      'Dimensions': 'Dimensioni',
+      'Custom background color input': 'Inserimento colore di sfondo personalizzato',
+      'Background color picker': 'Selettore colore di sfondo',
+      'Custom border color input': 'Inserimento colore del bordo personalizzato',
+      'Border color picker': 'Selettore colore del bordo',
+      'Border width': 'Larghezza del bordo',
+      'Border style': 'Stile del bordo',
+      'Border color': 'Colore del bordo',
+      'Table width': 'Larghezza del tabella',
+      'Table height': 'Altezza del tabella',
+      'Left align': 'Allinea a sinistra',
+      'Center align': 'Allinea al centro',
+      'Right align': 'Allinea a destra',
       // Files
       'Upload File': 'Carica File',
       'Drop file': 'Rilascia file',
@@ -221,6 +245,7 @@
       'Clear Formatting': 'Cancella Formattazione',
       // Save
       'Save': 'Salvare',
+      'Ok': 'Ok',
       // Undo, redo
       'Undo': 'Annulla',
       'Redo': 'Ripeti',
@@ -281,11 +306,37 @@
       // Character Counter
       'Characters': 'Caratteri',
       'Words': 'Parole',
+      // Find and Replace
+      'Find and Replace': 'Trova e sostituisci',
+      'Find': 'Trovare',
+      'Replace with': 'Sostituisci con',
+      'Replace All': 'Sostituisci tutto',
+      'Match case': 'Caso di corrispondenza',
+      'Whole words only': 'Solo parole intere',
       // More Buttons
       'More Text': 'Altro Testo',
       'More Paragraph': 'Altro Paragrafo',
       'More Rich': 'Altro Ricco',
-      'More Misc': 'Altro Varie'
+      'More Misc': 'Altro Varie',
+      'Border': 'Confine',
+      // selector icon
+      'Select Table': 'Seleziona tabella',
+      'Drag Table': 'Trascina tabella',
+      'Select PageBreak': 'Seleziona interruzione di pagina',
+      'Drag PageBreak': 'Trascina interruzione di pagina',
+      'Page Break': 'Interruzione di pagina',
+      //Link to anchor
+      'Insert Anchor': 'Inserisci ancoraggio',
+      'There are no entries matching': 'Non ci sono voci corrispondenti',
+      'Update Anchor': 'Aggiorna ancoraggio',
+      'Edit Anchor': 'Modifica ancoraggio',
+      'Anchor Name': 'Nome ancoraggio',
+      'Anchor Link': 'Link ancoraggio',
+      'Scroll to target': 'Scorri fino all\'obiettivo',
+      'Enter the anchor name without space': 'Inserisci il nome dell\'ancoraggio senza spazi',
+      'Anchor name already exists.': 'Il nome dell\'ancoraggio esiste già.',
+      // Export to Word
+      'Export to Word': 'Esporta in Word'
     },
     direction: 'ltr'
   };

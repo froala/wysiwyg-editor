@@ -1,5 +1,5 @@
 /*!
- * froala_editor v4.6.2 (https://www.froala.com/wysiwyg-editor)
+ * froala_editor v4.7.0 (https://www.froala.com/wysiwyg-editor)
  * License https://froala.com/wysiwyg-editor/terms/
  * Copyright 2014-2025 Froala Labs
  */
@@ -37,6 +37,7 @@
       'Italic': 'Kursiv',
       'Underline': 'Unterstrichen',
       'Strikethrough': 'Durchgestrichen',
+      'Size': 'Größe',
       // Main buttons
       'Insert': 'Einfügen',
       'Delete': 'Löschen',
@@ -52,6 +53,7 @@
       'Font Size': 'Schriftgröße',
       // Colors
       'Colors': 'Farben',
+      'Color': 'Farben',
       'Background': 'Hintergrund',
       'Text': 'Text',
       'HEX Color': 'Hexadezimaler Farbwert',
@@ -66,6 +68,7 @@
       // Style
       'Paragraph Style': 'Absatzformatierung',
       'Inline Style': 'Inlineformatierung',
+      'Padding': 'Abstand',
       // Alignment
       'Align': 'Ausrichtung',
       'Align Left': 'Linksbündig ausrichten',
@@ -73,6 +76,11 @@
       'Align Right': 'Rechtsbündig ausrichten',
       'Align Justify': 'Blocksatz',
       'None': 'Keine',
+      'Alignment': 'Ausrichtung',
+      'Next': 'Nächste',
+      'Previous': 'Vorherige',
+      'Advanced Options': 'Erweiterte Optionen',
+      'Close': 'schließen',
       // Lists
       'Default': 'Standard',
       // Ordered lists
@@ -160,6 +168,22 @@
       'Align Middle': 'Zentriert ausrichten',
       'Align Bottom': 'Unten ausrichten',
       'Cell Style': 'Zellen-Stil',
+      'Table Properties': 'Tabelleneigenschaften',
+      'Cell Properties': 'Zelleigenschaften',
+      'Table Footer': 'Tabellenfußzeile',
+      'Dimensions': 'Abmessungen',
+      'Custom background color input': 'Benutzerdefinierte Hintergrundfarbe eingeben',
+      'Background color picker': 'Hintergrundfarbwähler',
+      'Custom border color input': 'Benutzerdefinierte Rahmenfarbe eingeben',
+      'Border color picker': 'Rahmenfarbwähler',
+      'Border width': 'Rahmenbreite',
+      'Border style': 'Rahmenstil',
+      'Border color': 'Rahmenfarbe',
+      'Table width': 'Tabellenbreite',
+      'Table height': 'Tabellenhöhe',
+      'Left align': 'Linksbündig ausrichten',
+      'Center align': 'Zentriert ausrichten',
+      'Right align': 'Rechtsbündig ausrichten',
       // Files
       'Upload File': 'Datei hochladen',
       'Insert File': 'Datei einfügen',
@@ -294,13 +318,39 @@
       'Word Paste Detected': 'Aus Word einfügen',
       // Character Counter 
       'Characters': 'Zeichen',
+      //Find and Replace
+      'Find and Replace': 'Suchen und ersetzen',
+      'Find': 'Suchen',
+      'Replace with': 'Ersetzen durch',
+      'Replace All': 'Alle ersetzen',
+      'Match case': 'Streichholzetui',
+      'Whole words only': 'Nur ganze Wörter',
       // More Buttons
       'More Text': 'Weitere Textformate',
       'More Paragraph': 'Weitere Absatzformate',
       'More Rich': 'Weitere Reichhaltige Formate',
       'More Misc': 'Weitere Formate',
       'Text Color': 'Textfarbe',
-      'Background Color': 'Hintergrundfarbe'
+      'Background Color': 'Hintergrundfarbe',
+      'Border': 'Rahmen',
+      //selector icon
+      'Select Table': 'Tabelle auswählen',
+      'Drag Table': 'Tabelle ziehen',
+      'Select PageBreak': 'Seitenumbruch auswählen',
+      'Drag PageBreak': 'Seitenumbruch ziehen',
+      'Page Break': 'Seitenumbruch',
+      // link to anchor
+      'Insert Anchor': 'Anker einfügen',
+      'There are no entries matching': 'Es gibt keine passenden Einträge',
+      'Update Anchor': 'Anker aktualisieren',
+      'Edit Anchor': 'Anker bearbeiten',
+      'Anchor Name': 'Ankername',
+      'Anchor Link': 'Anker-Link',
+      'Scroll to target': 'Zum Ziel scrollen',
+      'Enter the anchor name without space': 'Geben Sie den Ankamen ohne Leertaste ein',
+      'Anchor name already exists.': 'Der Ankername ist bereits vorhanden.',
+      // Export to Word
+      'Export to Word': 'In Word exportieren'
     },
     direction: 'ltr'
   };
