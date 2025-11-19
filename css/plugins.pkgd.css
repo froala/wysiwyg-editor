@@ -1,5 +1,5 @@
 /*!
- * froala_editor v4.7.0 (https://www.froala.com/wysiwyg-editor)
+ * froala_editor v4.7.1 (https://www.froala.com/wysiwyg-editor)
  * License https://froala.com/wysiwyg-editor/terms/
  * Copyright 2014-2025 Froala Labs
  */
@@ -1724,8 +1724,8 @@ body.fr-fullscreen .fs-transforms-container {
   color: #a9a9a9;
   border: 1px solid #d1d1d1;
   cursor: not-allowed; }
-.fr-find-replace-layer .fr-body .fr-input-line input#fr-findText::placeholder,
-.fr-find-replace-layer .fr-body .fr-input-line input#fr-replaceText::placeholder {
+.fr-find-replace-layer .fr-body .fr-input-line input.fr-findText::placeholder,
+.fr-find-replace-layer .fr-body .fr-input-line input.fr-replaceText::placeholder {
   color: #a9a9a9; }
 .fr-find-replace-layer .fr-body .fr-input-line.fr-find-field {
   width: 227px;
@@ -1747,7 +1747,7 @@ body.fr-fullscreen .fs-transforms-container {
 .fr-find-replace-layer .fr-body .fr-close-btn:hover {
   color: #CCCCCC; }
 .fr-find-replace-layer .fr-body .fr-toggle-advanced-options {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: space-between;
   padding: 10px 0px;
@@ -1756,7 +1756,7 @@ body.fr-fullscreen .fs-transforms-container {
   cursor: pointer;
   font-weight: bold;
   transition: background-color 0.3s ease;
-  width: auto;
+  width: 100%;
   background: none;
   color: #333333; }
 .fr-find-replace-layer .fr-body input {
@@ -1828,16 +1828,16 @@ body.fr-fullscreen .fs-transforms-container {
   position: relative;
   display: flex;
   align-items: center; }
-.fr-find-replace-layer .fr-body #fr-replaceText {
+.fr-find-replace-layer .fr-body .fr-replaceText {
   width: 77%; }
-.fr-find-replace-layer .fr-body #fr-findText {
+.fr-find-replace-layer .fr-body .fr-findText {
   position: relative;
   padding-right: 40px;
   /* Create space for the count indicator */
   font-size: 14px;
   border: 1px solid #CCCCCC;
   border-radius: 4px; }
-.fr-find-replace-layer .fr-body #fr-findText:focus {
+.fr-find-replace-layer .fr-body .fr-findText:focus {
   border: 2px solid #0098f7; }
 .fr-find-replace-layer .fr-body .fr-find-error {
   color: #f70000;
@@ -1845,7 +1845,7 @@ body.fr-fullscreen .fs-transforms-container {
   display: none;
   max-width: 300px;
   overflow-wrap: break-word; }
-.fr-find-replace-layer .fr-body #fr-findText.error {
+.fr-find-replace-layer .fr-body .fr-findText.error {
   border-color: #f70000; }
 .fr-find-replace-layer .fr-body .fr-count-indicator {
   position: absolute;

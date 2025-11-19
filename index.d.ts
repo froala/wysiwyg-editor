@@ -1318,6 +1318,8 @@ declare module "froala-editor" {
     useClasses: boolean;
     width: string;
     zIndex: number;
+    clearFormatOnEnterNewLine: boolean;
+    cleanReduntantStyleOnGet: boolean;
 
     // Help
     helpSets: object[];

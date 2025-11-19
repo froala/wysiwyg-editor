@@ -1,5 +1,5 @@
 /*!
- * froala_editor v4.7.0 (https://www.froala.com/wysiwyg-editor)
+ * froala_editor v4.7.1 (https://www.froala.com/wysiwyg-editor)
  * License https://froala.com/wysiwyg-editor/terms/
  * Copyright 2014-2025 Froala Labs
  */
@@ -200,6 +200,10 @@
   outline: #F6D146 2px solid; }
 .dark-theme .fr-view .fr-selection-handle-selected {
   outline: #0098F7 2px solid; }
+.dark-theme .fr-custom-selection-highlight {
+  background-color: rgba(181, 214, 253, 0.8);
+  /* light blue */
+  color: #000; }
 .dark-theme .fr-selection-drop-indicator {
   height: 0;
   z-index: 1000;
@@ -651,7 +655,7 @@
   background-color: #353535;
   color: #a9a9a9;
   border: 1px solid #d1d1d1; }
-.dark-theme .fr-find-replace-layer .fr-body .fr-input-line input#fr-replaceText::placeholder {
+.dark-theme .fr-find-replace-layer .fr-body .fr-input-line input.fr-replaceText::placeholder {
   color: #a9a9a9; }
 .dark-theme .fr-find-replace-layer .fr-body .fr-label-disabled {
   background-color: #353535; }
@@ -661,7 +665,6 @@
   color: #AAA; }
 .dark-theme .fr-find-replace-layer .fr-body .fr-toggle-advanced-options {
   background-color: #353535;
-  width: auto;
   color: #333333; }
 .dark-theme .fr-find-replace-layer .fr-body input {
   border: 1px solid #AAA; }
@@ -681,13 +684,13 @@
   color: #0098f7; }
 .dark-theme .fr-find-replace-layer .fr-body .fr-button-group button.fr-replace-all-btn.fr-disabled {
   color: #a9a9a9; }
-.dark-theme .fr-find-replace-layer .fr-body #fr-findText {
+.dark-theme .fr-find-replace-layer .fr-body .fr-findText {
   border: 1px solid #AAA; }
-.dark-theme .fr-find-replace-layer .fr-body #fr-findText:focus {
+.dark-theme .fr-find-replace-layer .fr-body .fr-findText:focus {
   border: 2px solid #0098f7; }
 .dark-theme .fr-find-replace-layer .fr-body .fr-find-error {
   color: #f70000; }
-.dark-theme .fr-find-replace-layer .fr-body #fr-findText.error {
+.dark-theme .fr-find-replace-layer .fr-body .fr-findText.error {
   border-color: #f70000; }
 .dark-theme .fr-find-replace-layer .fr-body .fr-count-indicator {
   color: #AAA;

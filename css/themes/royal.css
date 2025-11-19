@@ -1,5 +1,5 @@
 /*!
- * froala_editor v4.7.0 (https://www.froala.com/wysiwyg-editor)
+ * froala_editor v4.7.1 (https://www.froala.com/wysiwyg-editor)
  * License https://froala.com/wysiwyg-editor/terms/
  * Copyright 2014-2025 Froala Labs
  */
@@ -200,6 +200,10 @@
   outline: #F6D146 2px solid; }
 .royal-theme .fr-view .fr-selection-handle-selected {
   outline: #0098F7 2px solid; }
+.royal-theme .fr-custom-selection-highlight {
+  background-color: rgba(181, 214, 253, 0.8);
+  /* light blue */
+  color: #000; }
 .royal-theme .fr-selection-drop-indicator {
   height: 0;
   z-index: 1000;
@@ -651,7 +655,7 @@
   background-color: #f5f5f5;
   color: #a9a9a9;
   border: 1px solid #d1d1d1; }
-.royal-theme .fr-find-replace-layer .fr-body .fr-input-line input#fr-replaceText::placeholder {
+.royal-theme .fr-find-replace-layer .fr-body .fr-input-line input.fr-replaceText::placeholder {
   color: #a9a9a9; }
 .royal-theme .fr-find-replace-layer .fr-body .fr-label-disabled {
   background-color: #f5f5f5; }
@@ -661,7 +665,6 @@
   color: #CCCCCC; }
 .royal-theme .fr-find-replace-layer .fr-body .fr-toggle-advanced-options {
   background-color: #f5f5f5;
-  width: auto;
   color: #333333; }
 .royal-theme .fr-find-replace-layer .fr-body input {
   border: 1px solid #CCCCCC; }
@@ -681,13 +684,13 @@
   color: #0098f7; }
 .royal-theme .fr-find-replace-layer .fr-body .fr-button-group button.fr-replace-all-btn.fr-disabled {
   color: #a9a9a9; }
-.royal-theme .fr-find-replace-layer .fr-body #fr-findText {
+.royal-theme .fr-find-replace-layer .fr-body .fr-findText {
   border: 1px solid #CCCCCC; }
-.royal-theme .fr-find-replace-layer .fr-body #fr-findText:focus {
+.royal-theme .fr-find-replace-layer .fr-body .fr-findText:focus {
   border: 2px solid #0098f7; }
 .royal-theme .fr-find-replace-layer .fr-body .fr-find-error {
   color: #f70000; }
-.royal-theme .fr-find-replace-layer .fr-body #fr-findText.error {
+.royal-theme .fr-find-replace-layer .fr-body .fr-findText.error {
   border-color: #f70000; }
 .royal-theme .fr-find-replace-layer .fr-body .fr-count-indicator {
   color: #CCCCCC;

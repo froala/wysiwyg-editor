@@ -218,13 +218,13 @@ We use GitHub Issues as the official bug tracker for the Froala WYSIWYG HTML Edi
 
 ## Technical Support or Questions
 
-If you have questions or need help integrating the editor please [contact us](https://www.froala.com/wysiwyg-editor/contact) instead of opening an issue.
+If you have questions or need help integrating the editor please [contact us](https://froala.com/contact/) instead of opening an issue.
 
 
 
 ## Licensing
 
-All plugins would be restricted for an unlicensed version. To try out the full functionality, you’ll need to register for a trial license [here](https://froala.com/wysiwyg_editor-download), which is valid for a limited time.
+All plugins would be restricted for an unlicensed version. To try out the full functionality, you’ll need to register for a trial license [here](https://froala.com/get-trial-key/), which is valid for a limited time.
 
 To continue using the Froala Editor beyond the trial period, you’ll need to purchase a commercial license that suits your use case.
 For more details, visit our [pricing plan page](https://www.froala.com/wysiwyg-editor/pricing).
