@@ -1,0 +1,107 @@
+name: Release & Dispatch to Child Repos
+
+on:
+  release:
+    types: [published]
+
+permissions:
+  contents: read
+
+jobs:
+  dispatch:
+    runs-on: ubuntu-latest
+
+    steps:
+      # --------------------------------------------
+      # Extract, normalize & validate version
+      # --------------------------------------------
+      - name: Extract version & release notes
+        run: |
+          VERSION="${{ github.event.release.tag_name }}"
+          VERSION="${VERSION#v}"
+          VERSION="${VERSION//,/\.}"
+
+          if ! [[ "$VERSION" =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
+            echo "Invalid version format: $VERSION"
+            exit 1
+          fi
+
+          echo "VERSION=$VERSION" >> $GITHUB_ENV
+          echo "${{ github.event.release.body || '' }}" > release_notes.txt
+
+          echo "Dispatching version: $VERSION"
+
+      # --------------------------------------------
+      # Dispatch to Child-A (Rails)
+      # --------------------------------------------
+      - name: Dispatch to wysiwyg-rails-child-A
+        uses: peter-evans/repository-dispatch@v3
+        with:
+          token: ${{ secrets.PAT }}
+          repository: srkdev404-cyber/wysiwyg-rails
+          event-type: version_update
+          client-payload: |
+            {
+              "version": "${{ env.VERSION }}",
+              "release_notes": ${{ toJson(github.event.release.body) }}
+            }
+
+      # --------------------------------------------
+      # Dispatch to Child-B (Ruby SDK)
+      # --------------------------------------------
+      - name: Dispatch to wysiwyg-editor-ruby-sdk-child-B
+        uses: peter-evans/repository-dispatch@v3
+        with:
+          token: ${{ secrets.PAT }}
+          repository: srkdev404-cyber/wysiwyg-editor-ruby-sdk-child-B
+          event-type: version_update
+          client-payload: |
+            {
+              "version": "${{ env.VERSION }}",
+              "release_notes": ${{ toJson(github.event.release.body) }}
+            }
+
+      # --------------------------------------------
+      # Dispatch to Child-C (WordPress)
+      # --------------------------------------------
+      - name: Dispatch to wordpress-froala-wysiwyg-child-C
+        uses: peter-evans/repository-dispatch@v3
+        with:
+          token: ${{ secrets.PAT }}
+          repository: srkdev404-cyber/wordpress-froala-wysiwyg-child-C
+          event-type: version_update
+          client-payload: |
+            {
+              "version": "${{ env.VERSION }}",
+              "release_notes": ${{ toJson(github.event.release.body) }}
+            }
+
+      # --------------------------------------------
+      # Dispatch to Child-D (Yii2)
+      # --------------------------------------------
+      - name: Dispatch to yii2-froala-editor-child-D
+        uses: peter-evans/repository-dispatch@v3
+        with:
+          token: ${{ secrets.PAT }}
+          repository: srkdev404-cyber/yii2-froala-editor-child-D
+          event-type: version_update
+          client-payload: |
+            {
+              "version": "${{ env.VERSION }}",
+              "release_notes": ${{ toJson(github.event.release.body) }}
+            }
+
+      # --------------------------------------------
+      # Dispatch to Child-E (Vue)
+      # --------------------------------------------
+      - name: Dispatch to vue-froala-wysiwyg-child-E
+        uses: peter-evans/repository-dispatch@v3
+        with:
+          token: ${{ secrets.PAT }}
+          repository: srkdev404-cyber/vue-froala-wysiwyg-child-E
+          event-type: version_update
+          client-payload: |
+            {
+              "version": "${{ env.VERSION }}",
+              "release_notes": ${{ toJson(github.event.release.body) }}
+            }
