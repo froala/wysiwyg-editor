@@ -1,20 +1,19 @@
 /*!
- * froala_editor v4.7.1 (https://www.froala.com/wysiwyg-editor)
+ * froala_editor v5.0.0 (https://www.froala.com/wysiwyg-editor)
  * License https://froala.com/wysiwyg-editor/terms/
- * Copyright 2014-2025 Froala Labs
+ * Copyright 2014-2026 Froala Labs
  */
 
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? factory(require('froala-editor')) :
   typeof define === 'function' && define.amd ? define(['froala-editor'], factory) :
-  (factory(global.FroalaEditor));
-}(this, (function (FE) { 'use strict';
-
-  FE = FE && FE.hasOwnProperty('default') ? FE['default'] : FE;
+  (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global.FroalaEditor));
+})(this, (function (FE) { 'use strict';
 
   /**
    * Norwegian
    */
+
   FE.LANGUAGE['nb'] = {
     translation: {
       // Place holder
@@ -156,6 +155,14 @@
       'Left align': 'Venstrejustert',
       'Center align': 'Midtjuster',
       'Right align': 'Høyrejuster',
+      'solid': 'Heltrukket linje',
+      'dashed': 'Stiplet linje',
+      'dotted': 'Prikket linje',
+      'double': 'Dobbel linje',
+      'groove': 'Frest linje',
+      'ridge': 'Hevet linje',
+      'inset': 'Innvendig linje',
+      'outset': 'Utvendig linje',
       // Files
       'Upload File': 'Opplastingsfil',
       'Drop file': 'Slippe fil',
@@ -318,10 +325,19 @@
       'Anchor Link': 'Ankerlenke',
       'Scroll to target': 'Rull til mål',
       'Enter the anchor name without space': 'Skriv ankernavnet uten mellomrom',
-      'Anchor name already exists.': 'Ankernavnet finnes allerede.'
+      'Anchor name already exists.': 'Ankernavnet finnes allerede.',
+      'Ensure that all required dependent libraries are available for the plugin to work.': 'Sørg for at alle nødvendige avhengige biblioteker er tilgjengelige for at programtillegget skal fungere.',
+      // Import_from_word
+      'Import from Word': 'Importer fra Word',
+      'Please upload a valid file': 'Last opp en gyldig fil.',
+      'File size must be less than': 'Filstørrelsen må være mindre enn',
+      //Code Snippet
+      'Code Snippet': 'Kodebit',
+      'Insert Code Snippet': 'Sett inn kodebit',
+      'Edit Code Snippet': 'Rediger kodebit'
     },
     direction: 'ltr'
   };
 
-})));
+}));
 //# sourceMappingURL=nb.js.map

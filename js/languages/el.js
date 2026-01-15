@@ -1,20 +1,19 @@
 /*!
- * froala_editor v4.7.1 (https://www.froala.com/wysiwyg-editor)
+ * froala_editor v5.0.0 (https://www.froala.com/wysiwyg-editor)
  * License https://froala.com/wysiwyg-editor/terms/
- * Copyright 2014-2025 Froala Labs
+ * Copyright 2014-2026 Froala Labs
  */
 
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? factory(require('froala-editor')) :
   typeof define === 'function' && define.amd ? define(['froala-editor'], factory) :
-  (factory(global.FroalaEditor));
-}(this, (function (FE) { 'use strict';
-
-  FE = FE && FE.hasOwnProperty('default') ? FE['default'] : FE;
+  (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global.FroalaEditor));
+})(this, (function (FE) { 'use strict';
 
   /**
    * Greek
    */
+
   FE.LANGUAGE['el'] = {
     translation: {
       // Place holder
@@ -160,6 +159,14 @@
       'Left align': 'Αριστερά στοίχιση',
       'Center align': 'Στοίχιση στο κέντρο',
       'Right align': 'Δεξιά στοίχιση',
+      'solid': 'Συνεχής γραμμή',
+      'dashed': 'Διακεκομμένη γραμμή',
+      'dotted': 'Μπομπέ γραμμή',
+      'double': 'Διπλή γραμμή',
+      'groove': 'Εγκοπή γραμμή',
+      'ridge': 'Ανάγλυφη γραμμή',
+      'inset': 'Εσωτερική γραμμή',
+      'outset': 'Εξωτερική γραμμή',
       // Files
       'Upload File': 'Ανέβασμα αρχείου',
       'Drop file': 'Σύρετε αρχείο',
@@ -324,10 +331,19 @@
       'Enter the anchor name without space': 'Εισάγετε το όνομα αγκύρωσης χωρίς κενό',
       'Anchor name already exists.': 'Το όνομα αγκύρωσης υπάρχει ήδη.',
       // Export to Word
-      'Export to Word': 'Εξαγωγή σε Word'
+      'Export to Word': 'Εξαγωγή σε Word',
+      'Ensure that all required dependent libraries are available for the plugin to work.': 'Βεβαιωθείτε ότι όλες οι απαιτούμενες εξαρτώμενες βιβλιοθήκες είναι διαθέσιμες για να λειτουργήσει το πρόσθετο.',
+      // Import_from_word
+      'Import from Word': 'Εισαγωγή από το Word',
+      'Please upload a valid file': 'Παρακαλούμε ανεβάστε ένα έγκυρο αρχείο.',
+      'File size must be less than': 'Το μέγεθος του αρχείου πρέπει να είναι μικρότερο από',
+      //Code Snippet
+      'Code Snippet': 'Απόσπασμα Κώδικα',
+      'Insert Code Snippet': 'Εισαγωγή Αποσπάσματος Κώδικα',
+      'Edit Code Snippet': 'Επεξεργασία Αποσπάσματος Κώδικα'
     },
     direction: 'ltr'
   };
 
-})));
+}));
 //# sourceMappingURL=el.js.map

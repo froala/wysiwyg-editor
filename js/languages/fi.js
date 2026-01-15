@@ -1,20 +1,19 @@
 /*!
- * froala_editor v4.7.1 (https://www.froala.com/wysiwyg-editor)
+ * froala_editor v5.0.0 (https://www.froala.com/wysiwyg-editor)
  * License https://froala.com/wysiwyg-editor/terms/
- * Copyright 2014-2025 Froala Labs
+ * Copyright 2014-2026 Froala Labs
  */
 
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? factory(require('froala-editor')) :
   typeof define === 'function' && define.amd ? define(['froala-editor'], factory) :
-  (factory(global.FroalaEditor));
-}(this, (function (FE) { 'use strict';
-
-  FE = FE && FE.hasOwnProperty('default') ? FE['default'] : FE;
+  (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global.FroalaEditor));
+})(this, (function (FE) { 'use strict';
 
   /**
    * Finnish
    */
+
   FE.LANGUAGE['fi'] = {
     translation: {
       // Place holder
@@ -156,6 +155,14 @@
       'Left align': 'Tasaa vasemmalle',
       'Center align': 'Keskitä',
       'Right align': 'Oikea tasaus',
+      'solid': 'Yhtenäinen viiva',
+      'dashed': 'Katkoviiva',
+      'dotted': 'Pisteviiva',
+      'double': 'Kaksoisviiva',
+      'groove': 'Urvallinen viiva',
+      'ridge': 'Kohoviiva',
+      'inset': 'Sisäviiva',
+      'outset': 'Ulkoviiiva',
       // Files
       'Upload File': 'Lataa tiedosto',
       'Drop file': 'Pudota tiedosto',
@@ -320,10 +327,19 @@
       'Enter the anchor name without space': 'Syötä ankkurin nimi ilman välilyöntejä',
       'Anchor name already exists.': 'Ankkurin nimi on jo olemassa.',
       // Export to Word
-      'Export to Word': 'Vie Wordiin'
+      'Export to Word': 'Vie Wordiin',
+      'Ensure that all required dependent libraries are available for the plugin to work.': 'Varmista, että kaikki tarvittavat riippuvaiset kirjastot ovat käytettävissä liitännäisen toimimiseksi.',
+      // Import_from_word
+      'Import from Word': 'Tuo Wordista',
+      'Please upload a valid file': 'Lataa kelvollinen tiedosto.',
+      'File size must be less than': 'Tiedostokoon täytyy olla alle',
+      //Code Snippet
+      'Code Snippet': 'Koodikatkelma',
+      'Insert Code Snippet': 'Lisää koodikatkelma',
+      'Edit Code Snippet': 'Muokkaa koodikatkelmaa'
     },
     direction: 'ltr'
   };
 
-})));
+}));
 //# sourceMappingURL=fi.js.map

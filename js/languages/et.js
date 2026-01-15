@@ -1,20 +1,19 @@
 /*!
- * froala_editor v4.7.1 (https://www.froala.com/wysiwyg-editor)
+ * froala_editor v5.0.0 (https://www.froala.com/wysiwyg-editor)
  * License https://froala.com/wysiwyg-editor/terms/
- * Copyright 2014-2025 Froala Labs
+ * Copyright 2014-2026 Froala Labs
  */
 
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? factory(require('froala-editor')) :
   typeof define === 'function' && define.amd ? define(['froala-editor'], factory) :
-  (factory(global.FroalaEditor));
-}(this, (function (FE) { 'use strict';
-
-  FE = FE && FE.hasOwnProperty('default') ? FE['default'] : FE;
+  (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global.FroalaEditor));
+})(this, (function (FE) { 'use strict';
 
   /**
    * Estonian
    */
+
   FE.LANGUAGE['et'] = {
     translation: {
       // Place holder
@@ -156,6 +155,14 @@
       'Left align': 'Vasak joondus',
       'Center align': 'Joonda keskele',
       'Right align': 'Joonda paremale',
+      'solid': 'Línea sólida',
+      'dashed': 'Línea discontinua',
+      'dotted': 'Línea punteada',
+      'double': 'Línea doble',
+      'groove': 'Línea ranurada',
+      'ridge': 'Línea en relieve',
+      'inset': 'Línea interior',
+      'outset': 'Línea exterior',
       // Files
       'Upload File': "Lae fail \xFCles",
       'Drop file': 'Aseta fail',
@@ -320,10 +327,19 @@
       'Enter the anchor name without space': 'Sisestage ankrunimi ilma tühikuteta',
       'Anchor name already exists.': 'Ankrunimi on juba olemas.',
       // Export to Word
-      'Export to Word': 'Ekspordi sõnasse'
+      'Export to Word': 'Ekspordi sõnasse',
+      'Ensure that all required dependent libraries are available for the plugin to work.': 'Veenduge, et kõik vajalikud sõltuvad teegid oleksid pistikprogrammi töötamiseks saadaval.',
+      // Import_from_word
+      'Import from Word': 'Impordi Wordist',
+      'Please upload a valid file': 'Palun laadi üles kehtiv fail.',
+      'File size must be less than': 'Faili suurus peab olema väiksem kui',
+      //Code Snippet
+      'Code Snippet': 'Koodilõik',
+      'Insert Code Snippet': 'Sisesta koodilõik',
+      'Edit Code Snippet': 'Muuda koodilõiku'
     },
     direction: 'ltr'
   };
 
-})));
+}));
 //# sourceMappingURL=et.js.map

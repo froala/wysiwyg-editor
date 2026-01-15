@@ -1,20 +1,19 @@
 /*!
- * froala_editor v4.7.1 (https://www.froala.com/wysiwyg-editor)
+ * froala_editor v5.0.0 (https://www.froala.com/wysiwyg-editor)
  * License https://froala.com/wysiwyg-editor/terms/
- * Copyright 2014-2025 Froala Labs
+ * Copyright 2014-2026 Froala Labs
  */
 
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? factory(require('froala-editor')) :
   typeof define === 'function' && define.amd ? define(['froala-editor'], factory) :
-  (factory(global.FroalaEditor));
-}(this, (function (FE) { 'use strict';
-
-  FE = FE && FE.hasOwnProperty('default') ? FE['default'] : FE;
+  (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global.FroalaEditor));
+})(this, (function (FE) { 'use strict';
 
   /**
    * Arabic
    */
+
   FE.LANGUAGE['ar'] = {
     translation: {
       // Place holder
@@ -169,6 +168,14 @@
       'Left align': 'محاذاة لليسار',
       'Center align': 'محاذاة للوسط',
       'Right align': 'محاذاة إلى اليمين',
+      'solid': 'صلب',
+      'dashed': 'متقطع',
+      'dotted': 'منقط',
+      'double': 'مزدوج',
+      'groove': 'محفور',
+      'ridge': 'بارز',
+      'inset': 'داخلي',
+      'outset': 'خارجي',
       // Files
       'Upload File': "\u062A\u062D\u0645\u064A\u0644 \u0627\u0644\u0645\u0644\u0641",
       'Drop file': "\u0627\u0646\u062E\u0641\u0627\u0636 \u0627\u0644\u0645\u0644\u0641",
@@ -332,10 +339,19 @@
       'Drag PageBreak': 'اسحب فاصل الصفحة',
       'Page Break': 'فاصل الصفحة',
       //Export to Word
-      'Export to Word': 'تصدير إلى كلمة'
+      'Export to Word': 'تصدير إلى كلمة',
+      'Ensure that all required dependent libraries are available for the plugin to work.': 'تأكد من توفر جميع المكتبات التابعة المطلوبة لعمل المكون الإضافي.',
+      // import from Word
+      'Import from Word': 'الاستيراد من وورد',
+      'Please upload a valid file': 'الرجاء تحميل ملف صالح.',
+      'File size must be less than': 'يجب أن يكون حجم الملف أقل من',
+      //Code Snippet
+      'Code Snippet': 'قصاصة برمجية',
+      'Insert Code Snippet': 'إدراج قصاصة برمجية',
+      'Edit Code Snippet': 'تعديل قصاصة برمجية'
     },
     direction: 'rtl'
   };
 
-})));
+}));
 //# sourceMappingURL=ar.js.map

@@ -1,7 +1,7 @@
 /*!
- * froala_editor v4.7.1 (https://www.froala.com/wysiwyg-editor)
+ * froala_editor v5.0.0 (https://www.froala.com/wysiwyg-editor)
  * License https://froala.com/wysiwyg-editor/terms/
- * Copyright 2014-2025 Froala Labs
+ * Copyright 2014-2026 Froala Labs
  */
 
 .fr-clearfix::after {
@@ -247,6 +247,30 @@
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
   background-clip: padding-box; }
+.dark-theme .fr-code-snippet-layer .fr-code-snippet-header .fr-align-right .fr-btn {
+  margin: 0; }
+  .dark-theme .fr-code-snippet-layer .fr-code-snippet-header .fr-align-right .fr-btn .fr-svg {
+    margin: 0; }
+.dark-theme .fr-code-snippet-layer .fr-active.fr-layer .fr-code-snippet-lang.fr-toolbar button.fr-command.fr-btn {
+  outline: solid 1px #999999;
+  color: #333333; }
+.dark-theme .fr-code-snippet-layer .fr-active.fr-layer pre {
+  margin: 16px 0; }
+.dark-theme .fr-code-snippet-layer .fr-active.fr-layer .fr-float-right .fr-enable-accessibility.submit {
+  border: 1px solid #0098F7; }
+.dark-theme .fr-view .fr-code-snippet {
+  margin: 1em 0;
+  font-size: 0; }
+  .dark-theme .fr-view .fr-code-snippet .fr-code-header {
+    background: #ECECEC;
+    color: #000; }
+    .dark-theme .fr-view .fr-code-snippet .fr-code-header .fr-code-actions button:hover {
+      background: #cecdcd; }
+    .dark-theme .fr-view .fr-code-snippet .fr-code-header .fr-code-actions button:active {
+      background: #b8b6b6; }
+  .dark-theme .fr-view .fr-code-snippet pre {
+    margin: 0;
+    overflow-x: auto; }
 .dark-theme textarea.fr-code {
   resize: none;
   -moz-resize: none;
@@ -1311,6 +1335,8 @@
   color: dimgray; }
 .dark-theme .fr-table-bg-container .fr-input-line .fr-dropdown, .dark-theme .fr-table-border-container .fr-input-line .fr-dropdown, .dark-theme .fr-table-dimensions-container .fr-input-line .fr-dropdown, .dark-theme .fr-table-style-container .fr-input-line .fr-dropdown {
   border: 1px solid #CCCCCC; }
+.dark-theme .fr-table-border-container .fr-dropdown-wrapper {
+  width: auto; }
 .dark-theme .fr-table-border-container .fr-btn-table-border-bg-color, .dark-theme .fr-table-dimensions-container .fr-btn-table-border-bg-color, .dark-theme .fr-table-dimensions-section .fr-btn-table-border-bg-color {
   border: 1px solid #CCCCCC; }
   .dark-theme .fr-table-border-container .fr-btn-table-border-bg-color .fr-border-color-preview, .dark-theme .fr-table-dimensions-container .fr-btn-table-border-bg-color .fr-border-color-preview, .dark-theme .fr-table-dimensions-section .fr-btn-table-border-bg-color .fr-border-color-preview {

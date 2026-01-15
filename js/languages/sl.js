@@ -1,16 +1,14 @@
 /*!
- * froala_editor v4.7.1 (https://www.froala.com/wysiwyg-editor)
+ * froala_editor v5.0.0 (https://www.froala.com/wysiwyg-editor)
  * License https://froala.com/wysiwyg-editor/terms/
- * Copyright 2014-2025 Froala Labs
+ * Copyright 2014-2026 Froala Labs
  */
 
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? factory(require('froala-editor')) :
   typeof define === 'function' && define.amd ? define(['froala-editor'], factory) :
-  (factory(global.FroalaEditor));
-}(this, (function (FE) { 'use strict';
-
-  FE = FE && FE.hasOwnProperty('default') ? FE['default'] : FE;
+  (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global.FroalaEditor));
+})(this, (function (FE) { 'use strict';
 
   /**
    * Slovenian
@@ -153,6 +151,14 @@
       'Left align': 'Poravnaj levo',
       'Center align': 'Poravnaj sredino',
       'Right align': 'desno Poravnaj ',
+      'solid': 'Polna črta',
+      'dashed': 'Črtkana črta',
+      'dotted': 'Pikčasta črta',
+      'double': 'Dvojna črta',
+      'groove': 'Zarezana črta',
+      'ridge': 'Dvignjena črta',
+      'inset': 'Notranja črta',
+      'outset': 'Zunanja črta',
       // Files
       'Upload File': 'Naloži datoteko',
       'Drop file': 'Spustite datoteko sem',
@@ -262,10 +268,19 @@
       'Enter the anchor name without space': 'Vnesite ime sidra brez presledkov',
       'Anchor name already exists.': 'Ime sidra že obstaja.',
       // Export to Word
-      'Export to Word': 'Izvozi v Word'
+      'Export to Word': 'Izvozi v Word',
+      'Ensure that all required dependent libraries are available for the plugin to work.': 'Zagotovite, da so vse zahtevane odvisne knjižnice na voljo za delovanje vtičnika.',
+      // Import_from_word
+      'Import from Word': 'Uvoz iz Worda',
+      'Please upload a valid file': 'Prosimo, naložite veljavno datoteko.',
+      'File size must be less than': 'Velikost datoteke mora biti manjša od',
+      //Code Snippet
+      'Code Snippet': 'Odlomek Kode',
+      'Insert Code Snippet': 'Vstavi odlomek kode',
+      'Edit Code Snippet': 'Uredi odlomek kode'
     },
     direction: 'ltr'
   };
 
-})));
+}));
 //# sourceMappingURL=sl.js.map

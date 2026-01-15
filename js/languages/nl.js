@@ -1,20 +1,19 @@
 /*!
- * froala_editor v4.7.1 (https://www.froala.com/wysiwyg-editor)
+ * froala_editor v5.0.0 (https://www.froala.com/wysiwyg-editor)
  * License https://froala.com/wysiwyg-editor/terms/
- * Copyright 2014-2025 Froala Labs
+ * Copyright 2014-2026 Froala Labs
  */
 
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? factory(require('froala-editor')) :
   typeof define === 'function' && define.amd ? define(['froala-editor'], factory) :
-  (factory(global.FroalaEditor));
-}(this, (function (FE) { 'use strict';
-
-  FE = FE && FE.hasOwnProperty('default') ? FE['default'] : FE;
+  (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global.FroalaEditor));
+})(this, (function (FE) { 'use strict';
 
   /**
    * Dutch
    */
+
   FE.LANGUAGE['nl'] = {
     translation: {
       // Place holder
@@ -170,6 +169,14 @@
       'Left align': 'Links uitlijnen',
       'Center align': 'Midden uitlijnen',
       'Right align': 'Rechts uitlijnen',
+      'solid': 'Doorgetrokken lijn',
+      'dashed': 'Gestreepte lijn',
+      'dotted': 'Gestippelde lijn',
+      'double': 'Dubbele lijn',
+      'groove': 'Ingegroefde lijn',
+      'ridge': 'Verhoogde lijn',
+      'inset': 'Binnenste lijn',
+      'outset': 'Buitenste lijn',
       // Files
       'Upload File': 'Bestand uploaden',
       'Drop file': 'Sleep bestand',
@@ -334,10 +341,19 @@
       'Enter the anchor name without space': 'Voer de ankernaam in zonder spatie',
       'Anchor name already exists.': 'Ankernaam bestaat al.',
       // Export to Word
-      'Export to Word': 'Exporteren naar Word'
+      'Export to Word': 'Exporteren naar Word',
+      'Ensure that all required dependent libraries are available for the plugin to work.': 'Zorg ervoor dat alle vereiste afhankelijke bibliotheken beschikbaar zijn voor het functioneren van de plug-in.',
+      // Import_from_word
+      'Import from Word': 'Importeren uit Word',
+      'Please upload a valid file': 'Upload een geldig bestand.',
+      'File size must be less than': 'Bestandsgrootte moet kleiner zijn dan',
+      //Code Snippet
+      'Code Snippet': 'Codefragment',
+      'Insert Code Snippet': 'Codefragment invoegen',
+      'Edit Code Snippet': 'Codefragment bewerken'
     },
     direction: 'ltr'
   };
 
-})));
+}));
 //# sourceMappingURL=nl.js.map

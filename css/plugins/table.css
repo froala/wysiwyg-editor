@@ -1,7 +1,7 @@
 /*!
- * froala_editor v4.7.1 (https://www.froala.com/wysiwyg-editor)
+ * froala_editor v5.0.0 (https://www.froala.com/wysiwyg-editor)
  * License https://froala.com/wysiwyg-editor/terms/
- * Copyright 2014-2025 Froala Labs
+ * Copyright 2014-2026 Froala Labs
  */
 
 @charset "UTF-8";
@@ -327,7 +327,8 @@
     border-radius: 2px; }
 
 .fr-table-border-container .fr-dropdown-wrapper {
-  width: 120px; }
+  width: auto;
+  min-width: 120px; }
 
 .fr-table-alignment-section {
   margin-left: 10px; }

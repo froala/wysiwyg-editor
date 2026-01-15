@@ -1,20 +1,19 @@
 /*!
- * froala_editor v4.7.1 (https://www.froala.com/wysiwyg-editor)
+ * froala_editor v5.0.0 (https://www.froala.com/wysiwyg-editor)
  * License https://froala.com/wysiwyg-editor/terms/
- * Copyright 2014-2025 Froala Labs
+ * Copyright 2014-2026 Froala Labs
  */
 
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? factory(require('froala-editor')) :
   typeof define === 'function' && define.amd ? define(['froala-editor'], factory) :
-  (factory(global.FroalaEditor));
-}(this, (function (FE) { 'use strict';
-
-  FE = FE && FE.hasOwnProperty('default') ? FE['default'] : FE;
+  (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global.FroalaEditor));
+})(this, (function (FE) { 'use strict';
 
   /**
    * Romanian
    */
+
   FE.LANGUAGE['ro'] = {
     translation: {
       // Place holder
@@ -156,6 +155,14 @@
       'Left align': 'Aliniați la stânga',
       'Center align': 'Aliniați la centru',
       'Right align': 'Aliniați la dreapta',
+      'solid': 'Linie continuă',
+      'dashed': 'Linie întreruptă',
+      'dotted': 'Linie punctată',
+      'double': 'Linie dublă',
+      'groove': 'Linie sculptată',
+      'ridge': 'Linie reliefată',
+      'inset': 'Linie interioară',
+      'outset': 'Linie exterioară',
       // Files
       'Upload File': "\xCEnc\u0103rca\u021Bi fi\u0219ier",
       'Drop file': "Trage fi\u0219ier",
@@ -318,10 +325,19 @@
       'Anchor Link': 'Link ancoră',
       'Scroll to target': 'Derulează la țintă',
       'Enter the anchor name without space': 'Introduceți numele ancorei fără spații',
-      'Anchor name already exists.': 'Numele ancorei există deja.'
+      'Anchor name already exists.': 'Numele ancorei există deja.',
+      'Ensure that all required dependent libraries are available for the plugin to work.': 'Asigurați-vă că toate bibliotecile dependente necesare sunt disponibile pentru ca pluginul să funcționeze.',
+      // Import_from_word
+      'Import from Word': 'Import din Word',
+      'Please upload a valid file': 'Vă rugăm să încărcați un fișier valid.',
+      'File size must be less than': 'Dimensiunea fișierului trebuie să fie mai mică de',
+      //Code Snippet
+      'Code Snippet': 'Fragment de Cod',
+      'Insert Code Snippet': 'Inserează Fragment de Cod',
+      'Edit Code Snippet': 'Editează Fragment de Cod'
     },
     direction: 'ltr'
   };
 
-})));
+}));
 //# sourceMappingURL=ro.js.map

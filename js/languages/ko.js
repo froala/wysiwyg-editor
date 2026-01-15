@@ -1,20 +1,19 @@
 /*!
- * froala_editor v4.7.1 (https://www.froala.com/wysiwyg-editor)
+ * froala_editor v5.0.0 (https://www.froala.com/wysiwyg-editor)
  * License https://froala.com/wysiwyg-editor/terms/
- * Copyright 2014-2025 Froala Labs
+ * Copyright 2014-2026 Froala Labs
  */
 
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? factory(require('froala-editor')) :
   typeof define === 'function' && define.amd ? define(['froala-editor'], factory) :
-  (factory(global.FroalaEditor));
-}(this, (function (FE) { 'use strict';
-
-  FE = FE && FE.hasOwnProperty('default') ? FE['default'] : FE;
+  (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global.FroalaEditor));
+})(this, (function (FE) { 'use strict';
 
   /**
    * Korean
    */
+
   FE.LANGUAGE['ko'] = {
     translation: {
       // Place holder
@@ -176,6 +175,14 @@
       'Left align': '왼쪽 정렬',
       'Center align': '가운데 정렬',
       'Right align': '오른쪽 정렬',
+      'solid': '실선',
+      'dashed': '파선',
+      'dotted': '점선',
+      'double': '더블',
+      'groove': '홈이 있는 선',
+      'ridge': '돌출된 선',
+      'inset': '내부 선',
+      'outset': '외부 선',
       // Files
       'Upload File': "\uD30C\uC77C \uCCA8\uBD80",
       'Drop file': "\uD30C\uC77C\uC744 \uB4DC\uB798\uADF8&\uB4DC\uB86D",
@@ -337,10 +344,19 @@
       'Enter the anchor name without space': '공백 없이 앵커 이름을 입력하세요',
       'Anchor name already exists.': '앵커 이름이 이미 존재합니다.',
       //Export to Word
-      'Export to Word': '워드로 내보내기'
+      'Export to Word': '워드로 내보내기',
+      'Ensure that all required dependent libraries are available for the plugin to work.': '플러그인이 작동하려면 필요한 모든 종속 라이브러리가 사용 가능한지 확인하십시오.',
+      // Import_from_word
+      'Import from Word': 'Word에서 가져오기',
+      'Please upload a valid file': '유효한 파일을 업로드하십시오.',
+      'File size must be less than': '파일 크기는 다음 미만이어야 합니다.',
+      //Code Snippet
+      'Code Snippet': '코드 조각',
+      'Insert Code Snippet': '코드 조각 삽입',
+      'Edit Code Snippet': '코드 조각 편집'
     },
     direction: 'ltr'
   };
 
-})));
+}));
 //# sourceMappingURL=ko.js.map

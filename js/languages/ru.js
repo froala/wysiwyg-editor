@@ -1,20 +1,19 @@
 /*!
- * froala_editor v4.7.1 (https://www.froala.com/wysiwyg-editor)
+ * froala_editor v5.0.0 (https://www.froala.com/wysiwyg-editor)
  * License https://froala.com/wysiwyg-editor/terms/
- * Copyright 2014-2025 Froala Labs
+ * Copyright 2014-2026 Froala Labs
  */
 
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? factory(require('froala-editor')) :
   typeof define === 'function' && define.amd ? define(['froala-editor'], factory) :
-  (factory(global.FroalaEditor));
-}(this, (function (FE) { 'use strict';
-
-  FE = FE && FE.hasOwnProperty('default') ? FE['default'] : FE;
+  (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global.FroalaEditor));
+})(this, (function (FE) { 'use strict';
 
   /**
    * Russian
    */
+
   FE.LANGUAGE['ru'] = {
     translation: {
       // Place holder
@@ -169,6 +168,14 @@
       'Left align': 'Выравнивание по левому краю',
       'Center align': 'Выровнять по центру',
       'Right align': 'Выровнять по правому краю',
+      'solid': 'Сплошная линия',
+      'dashed': 'Пунктирная линия',
+      'dotted': 'Точечная линия',
+      'double': 'Двойной',
+      'groove': 'Вырезанная линия',
+      'ridge': 'Рельефная линия',
+      'inset': 'Внутренняя линия',
+      'outset': 'Внешняя линия',
       // Files
       'Upload File': "\u0417\u0430\u0433\u0440\u0443\u0437\u0438\u0442\u044C \u0444\u0430\u0439\u043B",
       'Drop file': "\u041F\u0435\u0440\u0435\u043C\u0435\u0441\u0442\u0438\u0442\u0435 \u0441\u044E\u0434\u0430 \u0444\u0430\u0439\u043B",
@@ -333,10 +340,19 @@
       'Enter the anchor name without space': 'Введите имя якоря без пробелов',
       'Anchor name already exists.': 'Имя якоря уже существует.',
       //Export to Word
-      'Export to Word': 'Экспорт в Word'
+      'Export to Word': 'Экспорт в Word',
+      'Ensure that all required dependent libraries are available for the plugin to work.': 'Убедитесь, что все необходимые зависимые библиотеки доступны для работы плагина.',
+      // Import_from_word
+      'Import from Word': 'Импорт из Word',
+      'Please upload a valid file': 'Пожалуйста, загрузите действительный файл.',
+      'File size must be less than': 'Размер файла не должен превышать',
+      //Code Snippet
+      'Code Snippet': 'Фрагмент кода',
+      'Insert Code Snippet': 'Вставить фрагмент кода',
+      'Edit Code Snippet': 'Редактировать фрагмент кода'
     },
     direction: 'ltr'
   };
 
-})));
+}));
 //# sourceMappingURL=ru.js.map

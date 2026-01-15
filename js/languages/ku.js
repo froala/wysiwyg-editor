@@ -1,20 +1,19 @@
 /*!
- * froala_editor v4.7.1 (https://www.froala.com/wysiwyg-editor)
+ * froala_editor v5.0.0 (https://www.froala.com/wysiwyg-editor)
  * License https://froala.com/wysiwyg-editor/terms/
- * Copyright 2014-2025 Froala Labs
+ * Copyright 2014-2026 Froala Labs
  */
 
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? factory(require('froala-editor')) :
   typeof define === 'function' && define.amd ? define(['froala-editor'], factory) :
-  (factory(global.FroalaEditor));
-}(this, (function (FE) { 'use strict';
-
-  FE = FE && FE.hasOwnProperty('default') ? FE['default'] : FE;
+  (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global.FroalaEditor));
+})(this, (function (FE) { 'use strict';
 
   /**
    * Arabic
    */
+
   FE.LANGUAGE['ku'] = {
     translation: {
       // Place holder
@@ -149,6 +148,14 @@
       'Left align': 'محاذاة لليسار',
       'Center align': 'محاذاة للوسط',
       'Right align': 'محاذاة إلى اليمين',
+      'solid': 'خط صلب',
+      'dashed': 'خط متقطع',
+      'dotted': 'خط منقط',
+      'double': 'خط مزدوج',
+      'groove': 'خط محفور',
+      'ridge': 'خط بارز',
+      'inset': 'خط داخلي',
+      'outset': 'خط خارجي',
       // Files
       'Upload File': 'بەرزکردنەوەی پەڕگە',
       'Drop file': 'ڕاکێشانی پەڕگە',
@@ -312,10 +319,19 @@
       'Enter the anchor name without space': 'أدخل اسم المرجع بدون مسافات',
       'Anchor name already exists.': 'اسم المرجع موجود بالفعل.',
       // Export to Word
-      'Export to Word': 'تصدير إلى وورد'
+      'Export to Word': 'تصدير إلى وورد',
+      'Ensure that all required dependent libraries are available for the plugin to work.': 'دڵنیابە لە بەردەستبوونی هەموو کتێبخانە پێویستە وابەستەکان بۆ کارکردنی پڵاگینەکە.',
+      // import from Word
+      'Import from Word': 'هاوردە کردن لە وۆرد',
+      'Please upload a valid file': 'تکایە فایلێکی دروست باربکە.',
+      'File size must be less than': 'پێویستە قەبارەی فایلەکە لە خوار',
+      //Code Snippet
+      'Code Snippet': 'پارچە کۆد',
+      'Insert Code Snippet': 'دانانی پارچە کۆد',
+      'Edit Code Snippet': 'دەستکاریکردنی پارچە کۆد'
     },
     direction: 'rtl'
   };
 
-})));
+}));
 //# sourceMappingURL=ku.js.map

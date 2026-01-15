@@ -1,20 +1,19 @@
 /*!
- * froala_editor v4.7.1 (https://www.froala.com/wysiwyg-editor)
+ * froala_editor v5.0.0 (https://www.froala.com/wysiwyg-editor)
  * License https://froala.com/wysiwyg-editor/terms/
- * Copyright 2014-2025 Froala Labs
+ * Copyright 2014-2026 Froala Labs
  */
 
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? factory(require('froala-editor')) :
   typeof define === 'function' && define.amd ? define(['froala-editor'], factory) :
-  (factory(global.FroalaEditor));
-}(this, (function (FE) { 'use strict';
-
-  FE = FE && FE.hasOwnProperty('default') ? FE['default'] : FE;
+  (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global.FroalaEditor));
+})(this, (function (FE) { 'use strict';
 
   /**
    * Persian
    */
+
   FE.LANGUAGE['fa'] = {
     translation: {
       // Place holder
@@ -156,6 +155,14 @@
       'Left align': 'تراز به چپ',
       'Center align': 'تراز به مرکز',
       'Right align': 'تراز به راست',
+      'solid': 'خط پیوسته',
+      'dashed': 'خط خط‌چین',
+      'dotted': 'خط نقطه‌چین',
+      'double': 'خط دوبل',
+      'groove': 'خط شیار‌دار',
+      'ridge': 'خط برجسته',
+      'inset': 'خط داخلی',
+      'outset': 'خط خارجی',
       // Files
       'Upload File': "\u0622\u067E\u0644\u0648\u062F \u0641\u0627\u06CC\u0644",
       'Drop file': "\u0627\u0641\u062A \u0641\u0627\u06CC\u0644",
@@ -320,10 +327,19 @@
       'Enter the anchor name without space': 'نام لنگر را بدون فاصله وارد کنید',
       'Anchor name already exists.': 'نام لنگر از قبل موجود است.',
       // export to word
-      'Export to Word': 'خروجی به Word'
+      'Export to Word': 'خروجی به Word',
+      'Ensure that all required dependent libraries are available for the plugin to work.': 'اطمینان حاصل کنید که تمام کتابخانه‌های وابسته مورد نیاز برای کارکرد افزونه در دسترس باشند.',
+      // Import_from_word
+      'Import from Word': 'وارد کردن از ورد',
+      'Please upload a valid file': 'لطفا یک فایل معتبر بارگذاری کنید.',
+      'File size must be less than': 'حجم فایل باید کمتر از',
+      //Code Snippet
+      'Code Snippet': 'قطعه کد',
+      'Insert Code Snippet': 'درج قطعه کد',
+      'Edit Code Snippet': 'ویرایش قطعه کد'
     },
     direction: 'rtl'
   };
 
-})));
+}));
 //# sourceMappingURL=fa.js.map

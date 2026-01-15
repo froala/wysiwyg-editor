@@ -1,20 +1,19 @@
 /*!
- * froala_editor v4.7.1 (https://www.froala.com/wysiwyg-editor)
+ * froala_editor v5.0.0 (https://www.froala.com/wysiwyg-editor)
  * License https://froala.com/wysiwyg-editor/terms/
- * Copyright 2014-2025 Froala Labs
+ * Copyright 2014-2026 Froala Labs
  */
 
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? factory(require('froala-editor')) :
   typeof define === 'function' && define.amd ? define(['froala-editor'], factory) :
-  (factory(global.FroalaEditor));
-}(this, (function (FE) { 'use strict';
-
-  FE = FE && FE.hasOwnProperty('default') ? FE['default'] : FE;
+  (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global.FroalaEditor));
+})(this, (function (FE) { 'use strict';
 
   /**
    * Indonesian
    */
+
   FE.LANGUAGE['id'] = {
     translation: {
       // Place holder
@@ -156,6 +155,14 @@
       'Left align': 'Rata kiri',
       'Center align': 'Rata tengah',
       'Right align': 'Sejajarkan kanan',
+      'solid': 'Garis penuh',
+      'dashed': 'Garis putus-putus',
+      'dotted': 'Garis titik-titik',
+      'double': 'Garis ganda',
+      'groove': 'Garis beralur',
+      'ridge': 'Garis timbul',
+      'inset': 'Garis bagian dalam',
+      'outset': 'Garis bagian luar',
       // Files
       'Upload File': 'Meng-upload berkas',
       'Drop file': 'Jatuhkan berkas',
@@ -320,10 +327,19 @@
       'Enter the anchor name without space': 'Masukkan nama jangkar tanpa spasi',
       'Anchor name already exists.': 'Nama jangkar sudah ada.',
       // Export to Word
-      'Export to Word': 'Ekspor ke Word'
+      'Export to Word': 'Ekspor ke Word',
+      'Ensure that all required dependent libraries are available for the plugin to work.': 'Pastikan semua pustaka dependen yang diperlukan tersedia agar plugin dapat berfungsi.',
+      // Import_from_word
+      'Import from Word': 'Impor dari Word',
+      'Please upload a valid file': 'Harap unggah berkas yang valid.',
+      'File size must be less than': 'Ukuran berkas harus kurang dari',
+      //Code Snippet
+      'Code Snippet': 'Kutipan Kode',
+      'Insert Code Snippet': 'Sisipkan Kutipan Kode',
+      'Edit Code Snippet': 'Edit Kutipan Kode'
     },
     direction: 'ltr'
   };
 
-})));
+}));
 //# sourceMappingURL=id.js.map

@@ -83,10 +83,12 @@ declare module "froala-editor" {
     special_characters: Special_characters;
     word_paste: Word_paste;
     exportToWord: ExportToWord;
+    importfromWord: ImportfromWord;
     pageBreak: Page_Break;
     linkToAnchor: linkToAnchor;
     refresh: Refresh;
     shortcuts: Shortcuts;
+    codeSnippet: CodeSnippet;
     static DefineIcon: (name: string, parameters: Partial<DefineIconParameters>) => object;
     static RegisterCommand: (name: string, parameters: Partial<RegisterCommandParameters>) => void;
     static RegisterShortcut: (keyCode: number,
@@ -1492,6 +1494,7 @@ declare module "froala-editor" {
     wordPasteKeepFormatting: boolean;
     wordPasteModal: boolean;
     wordExportFileName: string;
+    retainLineBreaksInCellsOnWrap: boolean;
 
     showChangesEnabled: boolean;
     trackChangesEnabled: boolean;
@@ -1505,6 +1508,16 @@ declare module "froala-editor" {
 
     //link to anchor
     anchorEditButtons: string[];
+
+    // import from word
+    importFromWordMaxFileSize: number;
+    importFromWordFileTypesAllowed: string[];
+    importFromWordUrlToUpload: string;
+    importFromWordEnableImportOnDrop: boolean;
+
+    // Code Snippet
+    codeSnippetLanguage: { [key: string]: string };
+    codeSnippetDefaultLanguage: string;
   }
 
   export interface FroalaEvents {
@@ -1594,6 +1607,9 @@ declare module "froala-editor" {
     'save.after': (this: FroalaEditor, data: any) => void;
     'save.before': (this: FroalaEditor, html: string) => boolean;
     'save.error': (this: FroalaEditor, error: string, response: object) => void;
+    // Code Snippet events
+    'codeSnippet.beforeInsert': (this: FroalaEditor, code: string) => string | boolean;
+    'codeSnippet.afterInsert': (this: FroalaEditor, html: string) => void;
     //snapshot event
     'snapshot.after': (this: FroalaEditor) => void;
     'snapshot.before': (this: FroalaEditor) => void;
@@ -1655,6 +1671,10 @@ declare module "froala-editor" {
     // link to anchor
     'anchor.beforeInsert': (this: FroalaEditor, link: string, text: string) => boolean;
     'anchor.beforeRemove': (this: FroalaEditor, link: string) => boolean;
+
+    // import from word
+    'word.beforeImport': (this: FroalaEditor, file: object) => string;
+    'word.afterImport': (this: FroalaEditor, html: string) => void;
   }
 
   export interface FilesManager {
@@ -2074,6 +2094,9 @@ declare module "froala-editor" {
     isInViewPort(el: any): boolean;
     isRGBColor(val: any): void;
     isValidHexColor(val: any): void;
+    getSafariVersion(): number | null;
+    getImagePopupPosition($el: any): { top: number; left: number };
+    selectionBlocks(excludeSelectors?: string[], selectionBlocks?: any[]): any[];
   }
 
   export interface HTML {
@@ -2518,4 +2541,17 @@ declare module "froala-editor" {
     closeAnchorInsert(): void;
     focusOnAnchor(anchor: HTMLElement): boolean | void;
   }
+
+  export interface ImportfromWord {
+    _init(): void;
+    import(file: object): void;
+  }
+
+  export interface CodeSnippet {
+    _init(): void;
+    insert(code: string, language: string, replaceEl?: HTMLElement): void;
+    update($codeBlock: any, code: string, language: string): void;
+    show(isEdit?: boolean): void;
+  }
+
 }

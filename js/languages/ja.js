@@ -1,20 +1,19 @@
 /*!
- * froala_editor v4.7.1 (https://www.froala.com/wysiwyg-editor)
+ * froala_editor v5.0.0 (https://www.froala.com/wysiwyg-editor)
  * License https://froala.com/wysiwyg-editor/terms/
- * Copyright 2014-2025 Froala Labs
+ * Copyright 2014-2026 Froala Labs
  */
 
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? factory(require('froala-editor')) :
   typeof define === 'function' && define.amd ? define(['froala-editor'], factory) :
-  (factory(global.FroalaEditor));
-}(this, (function (FE) { 'use strict';
-
-  FE = FE && FE.hasOwnProperty('default') ? FE['default'] : FE;
+  (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global.FroalaEditor));
+})(this, (function (FE) { 'use strict';
 
   /**
    * Japanese
    */
+
   FE.LANGUAGE['ja'] = {
     translation: {
       // Place holder
@@ -156,6 +155,14 @@
       'Left align': '左揃え',
       'Center align': '中央揃え',
       'Right align': '右揃え',
+      'solid': '実線',
+      'dashed': '破線',
+      'dotted': '点線',
+      'double': '二重線',
+      'groove': '溝線',
+      'ridge': '隆起線',
+      'inset': '内側の線',
+      'outset': '外側の線',
       // Files
       'Upload File': "\u30D5\u30A1\u30A4\u30EB\u306E\u30A2\u30C3\u30D7\u30ED\u30FC\u30C9",
       'Drop file': "\u30D5\u30A1\u30A4\u30EB\u3092\u30C9\u30E9\u30C3\u30B0&\u30C9\u30ED\u30C3\u30D7",
@@ -324,10 +331,19 @@
       'Enter the anchor name without space': 'スペースを入れずにアンカー名を入力してください',
       'Anchor name already exists.': 'アンカー名はすでに存在します。',
       //export to word
-      'Export to Word': 'Wordにエクスポート'
+      'Export to Word': 'Wordにエクスポート',
+      'Ensure that all required dependent libraries are available for the plugin to work.': 'プラグインが機能するために必要なすべての依存ライブラリが利用可能であることを確認してください。',
+      // Import_from_word
+      'Import from Word': 'Wordからインポート',
+      'Please upload a valid file': '有効なファイルをアップロードしてください。',
+      'File size must be less than': 'ファイルサイズは以下である必要があります',
+      //Code Snippet
+      'Code Snippet': 'コードスニペット',
+      'Insert Code Snippet': 'コードスニペットを挿入',
+      'Edit Code Snippet': 'コードスニペットを編集'
     },
     direction: 'ltr'
   };
 
-})));
+}));
 //# sourceMappingURL=ja.js.map

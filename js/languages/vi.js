@@ -1,16 +1,14 @@
 /*!
- * froala_editor v4.7.1 (https://www.froala.com/wysiwyg-editor)
+ * froala_editor v5.0.0 (https://www.froala.com/wysiwyg-editor)
  * License https://froala.com/wysiwyg-editor/terms/
- * Copyright 2014-2025 Froala Labs
+ * Copyright 2014-2026 Froala Labs
  */
 
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? factory(require('froala-editor')) :
   typeof define === 'function' && define.amd ? define(['froala-editor'], factory) :
-  (factory(global.FroalaEditor));
-}(this, (function (FE) { 'use strict';
-
-  FE = FE && FE.hasOwnProperty('default') ? FE['default'] : FE;
+  (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global.FroalaEditor));
+})(this, (function (FE) { 'use strict';
 
   FE.LANGUAGE['vi'] = {
     translation: {
@@ -153,6 +151,14 @@
       'Left align': 'Căn trái',
       'Center align': 'Căn giữa',
       'Right align': 'Căn phải',
+      'solid': 'Đường liền',
+      'dashed': 'Đường gạch ngang',
+      'dotted': 'Đường chấm',
+      'double': 'Đường đôi',
+      'groove': 'Đường rãnh',
+      'ridge': 'Đường gờ nổi',
+      'inset': 'Đường bên trong',
+      'outset': 'Đường bên ngoài',
       // Files
       'Upload File': "T\u1EA3i file l\xEAn",
       'Drop file': "K\xE9o th\u1EA3 file",
@@ -261,10 +267,19 @@
       'Enter the anchor name without space': 'Nhập tên neo không có dấu cách',
       'Anchor name already exists.': 'Tên neo đã tồn tại.',
       // Export to Word
-      'Export to Word': 'Xuất ra Word'
+      'Export to Word': 'Xuất ra Word',
+      'Ensure that all required dependent libraries are available for the plugin to work.': 'Đảm bảo rằng tất cả các thư viện phụ thuộc cần thiết đều có sẵn để plugin hoạt động.',
+      // Import_from_word
+      'Import from Word': 'Nhập từ Word',
+      'Please upload a valid file': 'Vui lòng tải lên một tập tin hợp lệ.',
+      'File size must be less than': 'Kích thước tập tin phải nhỏ hơn',
+      //Code Snippet
+      'Code Snippet': 'Đoạn Mã',
+      'Insert Code Snippet': 'Chèn Đoạn Mã',
+      'Edit Code Snippet': 'Chỉnh Sửa Đoạn Mã'
     },
     direction: 'ltr'
   };
 
-})));
+}));
 //# sourceMappingURL=vi.js.map

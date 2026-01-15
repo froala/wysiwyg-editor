@@ -1,20 +1,19 @@
 /*!
- * froala_editor v4.7.1 (https://www.froala.com/wysiwyg-editor)
+ * froala_editor v5.0.0 (https://www.froala.com/wysiwyg-editor)
  * License https://froala.com/wysiwyg-editor/terms/
- * Copyright 2014-2025 Froala Labs
+ * Copyright 2014-2026 Froala Labs
  */
 
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? factory(require('froala-editor')) :
   typeof define === 'function' && define.amd ? define(['froala-editor'], factory) :
-  (factory(global.FroalaEditor));
-}(this, (function (FE) { 'use strict';
-
-  FE = FE && FE.hasOwnProperty('default') ? FE['default'] : FE;
+  (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global.FroalaEditor));
+})(this, (function (FE) { 'use strict';
 
   /**
    * Traditional Chinese spoken in Taiwan.
    */
+
   FE.LANGUAGE['zh_tw'] = {
     translation: {
       // Place holder
@@ -156,6 +155,14 @@
       'Left align': '靠左對齊',
       'Center align': '置中對齊',
       'Right align': '靠右對齊',
+      'solid': '實線',
+      'dashed': '虛線',
+      'dotted': '點線',
+      'double': '雙線',
+      'groove': '凹槽線',
+      'ridge': '凸起線',
+      'inset': '內邊線',
+      'outset': '外邊線',
       // Files
       'Upload File': '上傳文件',
       'Drop file': '拖入文件',
@@ -320,10 +327,19 @@
       'Enter the anchor name without space': '請輸入不含空格的錨點名稱',
       'Anchor name already exists.': '錨點名稱已存在。',
       // Export to Word
-      'Export to Word': '匯出至 Word'
+      'Export to Word': '匯出至 Word',
+      'Ensure that all required dependent libraries are available for the plugin to work.': '確保所有必需的相依函式庫都可用，以使外掛程式能夠正常運作。',
+      // Import_from_word
+      'Import from Word': '從 Word 匯入',
+      'Please upload a valid file': '請上傳有效檔案。',
+      'File size must be less than': '檔案大小必須小於',
+      //Code Snippet
+      'Code Snippet': '程式碼片段',
+      'Insert Code Snippet': '插入程式碼片段',
+      'Edit Code Snippet': '編輯程式碼片段'
     },
     direction: 'ltr'
   };
 
-})));
+}));
 //# sourceMappingURL=zh_tw.js.map

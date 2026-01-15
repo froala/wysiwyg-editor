@@ -1,20 +1,19 @@
 /*!
- * froala_editor v4.7.1 (https://www.froala.com/wysiwyg-editor)
+ * froala_editor v5.0.0 (https://www.froala.com/wysiwyg-editor)
  * License https://froala.com/wysiwyg-editor/terms/
- * Copyright 2014-2025 Froala Labs
+ * Copyright 2014-2026 Froala Labs
  */
 
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? factory(require('froala-editor')) :
   typeof define === 'function' && define.amd ? define(['froala-editor'], factory) :
-  (factory(global.FroalaEditor));
-}(this, (function (FE) { 'use strict';
-
-  FE = FE && FE.hasOwnProperty('default') ? FE['default'] : FE;
+  (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global.FroalaEditor));
+})(this, (function (FE) { 'use strict';
 
   /**
    * Ukrainian
    */
+
   FE.LANGUAGE['uk'] = {
     translation: {
       // Place holder
@@ -156,6 +155,14 @@
       'Left align': 'Вирівняти ліворуч',
       'Center align': 'Вирівняти по центру',
       'Right align': 'Вирівняти праворуч',
+      'solid': 'Суцільна лінія',
+      'dashed': 'Пунктирна лінія',
+      'dotted': 'Крапкова лінія',
+      'double': 'Подвійна лінія',
+      'groove': 'Вирізана лінія',
+      'ridge': 'Рельєфна лінія',
+      'inset': 'Внутрішня лінія',
+      'outset': 'Зовнішня лінія',
       // Files
       'Upload File': "\u0417\u0430\u0432\u0430\u043D\u0442\u0430\u0436\u0438\u0442\u0438 \u0444\u0430\u0439\u043B",
       'Drop file': "\u041F\u0435\u0440\u0435\u043C\u0456\u0441\u0442\u0456\u0442\u044C \u0444\u0430\u0439\u043B \u0441\u044E\u0434\u0438",
@@ -320,10 +327,19 @@
       'Enter the anchor name without space': 'Введіть назву якоря без пробілів',
       'Anchor name already exists.': 'Назва якоря вже існує.',
       //export to word
-      'Export to Word': 'Експорт у Word'
+      'Export to Word': 'Експорт у Word',
+      'Ensure that all required dependent libraries are available for the plugin to work.': 'Переконайтеся, що всі необхідні залежні бібліотеки доступні для роботи плагіна.',
+      // Import_from_word
+      'Import from Word': 'Імпорт із Word',
+      'Please upload a valid file': 'Будь ласка, завантажте дійсний файл.',
+      'File size must be less than': 'Розмір файлу має бути менше',
+      //Code Snippet
+      'Code Snippet': 'Фрагмент Коду',
+      'Insert Code Snippet': 'Вставити фрагмент коду',
+      'Edit Code Snippet': 'Редагувати фрагмент коду'
     },
     direction: 'ltr'
   };
 
-})));
+}));
 //# sourceMappingURL=uk.js.map

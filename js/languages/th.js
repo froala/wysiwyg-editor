@@ -1,20 +1,19 @@
 /*!
- * froala_editor v4.7.1 (https://www.froala.com/wysiwyg-editor)
+ * froala_editor v5.0.0 (https://www.froala.com/wysiwyg-editor)
  * License https://froala.com/wysiwyg-editor/terms/
- * Copyright 2014-2025 Froala Labs
+ * Copyright 2014-2026 Froala Labs
  */
 
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? factory(require('froala-editor')) :
   typeof define === 'function' && define.amd ? define(['froala-editor'], factory) :
-  (factory(global.FroalaEditor));
-}(this, (function (FE) { 'use strict';
-
-  FE = FE && FE.hasOwnProperty('default') ? FE['default'] : FE;
+  (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global.FroalaEditor));
+})(this, (function (FE) { 'use strict';
 
   /**
    * Thai
    */
+
   FE.LANGUAGE['th'] = {
     translation: {
       // Place holder
@@ -156,6 +155,14 @@
       'Left align': 'จัดชิดซ้าย',
       'Center align': 'จัดกึ่งกลาง',
       'Right align': 'จัดชิดขวา',
+      'solid': 'เส้นทึบ',
+      'dashed': 'เส้นประ',
+      'dotted': 'เส้นจุด',
+      'double': 'เส้นคู่',
+      'groove': 'เส้นร่อง',
+      'ridge': 'เส้นนูน',
+      'inset': 'เส้นด้านใน',
+      'outset': 'เส้นด้านนอก',
       // Files
       'Upload File': "\u0E2D\u0E31\u0E1B\u0E42\u0E2B\u0E25\u0E14\u0E44\u0E1F\u0E25\u0E4C",
       'Drop file': "\u0E27\u0E32\u0E07\u0E44\u0E1F\u0E25\u0E4C",
@@ -320,10 +327,19 @@
       'Enter the anchor name without space': 'ป้อนชื่อจุดเชื่อมโยงโดยไม่มีช่องว่าง',
       'Anchor name already exists.': 'ชื่อจุดเชื่อมโยงมีอยู่แล้ว',
       //Export to Word
-      'Export to Word': 'ส่งออกเป็น Word'
+      'Export to Word': 'ส่งออกเป็น Word',
+      'Ensure that all required dependent libraries are available for the plugin to work.': 'ตรวจสอบให้แน่ใจว่ามีไลบรารีที่ต้องพึ่งพาทั้งหมดที่จำเป็นสำหรับการทำงานของปลั๊กอิน',
+      // Import_from_word
+      'Import from Word': 'นำเข้าจาก Word',
+      'Please upload a valid file': 'โปรดอัปโหลดไฟล์ที่ถูกต้อง',
+      'File size must be less than': 'ขนาดไฟล์ต้องน้อยกว่า',
+      //Code Snippet
+      'Code Snippet': 'ส่วนของโค้ด',
+      'Insert Code Snippet': 'แทรกส่วนของโค้ด',
+      'Edit Code Snippet': 'แก้ไขส่วนของโค้ด'
     },
     direction: 'ltr'
   };
 
-})));
+}));
 //# sourceMappingURL=th.js.map
