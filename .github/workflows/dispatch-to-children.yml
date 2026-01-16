@@ -37,5 +37,3 @@ jobs:
               "version": "${{ env.VERSION }}",
               "release_notes": ${{ toJson(github.event.release.body) }}
             }
-    .body) }}
-            }
