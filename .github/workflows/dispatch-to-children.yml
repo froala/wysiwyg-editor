@@ -30,21 +30,12 @@ jobs:
         uses: peter-evans/repository-dispatch@v3
         with:
           token: ${{ secrets.PAT }}
-          repository: srkdev404-cyber/wysiwyg-rails
+          repository: froala/wysiwyg-rails
           event-type: version_update
           client-payload: |
             {
               "version": "${{ env.VERSION }}",
               "release_notes": ${{ toJson(github.event.release.body) }}
             }
-      - name: Dispatch to Ruby child repo
-        uses: peter-evans/repository-dispatch@v3
-        with:
-          token: ${{ secrets.PAT }}
-          repository: srkdev404-cyber/wysiwyg-editor-ruby-sdk
-          event-type: version_update
-          client-payload: |
-            {
-              "version": "${{ env.VERSION }}",
-              "release_notes": ${{ toJson(github.event.release.body) }}
+    .body) }}
             }
