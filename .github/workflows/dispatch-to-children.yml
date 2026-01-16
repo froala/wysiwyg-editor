@@ -12,38 +12,39 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # --------------------------------------------
-      # Extract, normalize & validate version
-      # --------------------------------------------
-      - name: Extract version & release notes
+      - name: Extract & validate version
         run: |
-          VERSION="${{ github.event.release.tag_name }}"
-          VERSION="${VERSION#v}"
+          RAW_TAG="${{ github.event.release.tag_name }}"
+          VERSION="${RAW_TAG#v}"
           VERSION="${VERSION//,/\.}"
 
-          if ! [[ "$VERSION" =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
-            echo "Invalid version format: $VERSION"
+          if ! [[ "$VERSION" =~ ^[0-9]+\.[0-9]+\.[0-9]+(-[0-9A-Za-z.-]+)?$ ]]; then
+            echo "Invalid version: $RAW_TAG"
             exit 1
           fi
 
           echo "VERSION=$VERSION" >> $GITHUB_ENV
-          echo "${{ github.event.release.body || '' }}" > release_notes.txt
+          echo "Dispatching version $VERSION"
 
-          echo "Dispatching version: $VERSION"
-
-      # --------------------------------------------
-      # Dispatch to Child-A (Rails)
-      # --------------------------------------------
-      - name: Dispatch to wysiwyg-rails
+      - name: Dispatch to Rails child repo
         uses: peter-evans/repository-dispatch@v3
         with:
           token: ${{ secrets.PAT }}
-          repository: froala/wysiwyg-rails
+          repository: srkdev404-cyber/wysiwyg-rails
           event-type: version_update
           client-payload: |
             {
               "version": "${{ env.VERSION }}",
               "release_notes": ${{ toJson(github.event.release.body) }}
             }
-
-    
+      - name: Dispatch to Ruby child repo
+        uses: peter-evans/repository-dispatch@v3
+        with:
+          token: ${{ secrets.PAT }}
+          repository: srkdev404-cyber/wysiwyg-editor-ruby-sdk
+          event-type: version_update
+          client-payload: |
+            {
+              "version": "${{ env.VERSION }}",
+              "release_notes": ${{ toJson(github.event.release.body) }}
+            }
