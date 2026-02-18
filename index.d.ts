@@ -1307,6 +1307,7 @@ declare module "froala-editor" {
     theme: string;
     toolbarBottom: boolean;
     toolbarButtons: object;
+    toolbarButtonsEnabledOnEditorOff: string[];
     toolbarButtonsMD: Partial<ToolbarButtons>; 
     toolbarButtonsSM: Partial<ToolbarButtons>; 
     toolbarButtonsXS: Partial<ToolbarButtons>; 
@@ -1451,6 +1452,8 @@ declare module "froala-editor" {
     tableInsertMaxSize: number;
     tableMultipleStyles: boolean;
     tableResizer: boolean;
+    tableHorizontalResizer: boolean,
+    tableVerticalResizer: boolean,
     tableResizerOffset: number;
     tableResizingLimit: number;
     tableStyles: GenericObject<string>; 
