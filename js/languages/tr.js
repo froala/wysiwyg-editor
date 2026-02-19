@@ -164,6 +164,7 @@
       'inset': 'İç çizgi',
       'outset': 'Dış çizgi',
       // Files
+      'Insert Files': "Dosyalar\u0131 Se\u00e7",
       'Upload File': "Dosya Y\xFCkle",
       'Drop file': "B\u0131rak dosya",
       // Emoticons
