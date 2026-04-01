@@ -1,5 +1,5 @@
 /*!
- * froala_editor v5.0.1 (https://www.froala.com/wysiwyg-editor)
+ * froala_editor v5.1.0 (https://www.froala.com/wysiwyg-editor)
  * License https://froala.com/wysiwyg-editor/terms/
  * Copyright 2014-2026 Froala Labs
  */
@@ -169,6 +169,8 @@
       'Left align': 'Links uitlijnen',
       'Center align': 'Midden uitlijnen',
       'Right align': 'Rechts uitlijnen',
+      'Left align without wrap': 'Links uitlijnen zonder tekstomloop',
+      'Right align without wrap': 'Rechts uitlijnen zonder tekstomloop',
       'solid': 'Doorgetrokken lijn',
       'dashed': 'Gestreepte lijn',
       'dotted': 'Gestippelde lijn',
@@ -251,7 +253,6 @@
       'Clear Formatting': 'Verwijder opmaak',
       // Save
       'Save': 'Opslaan',
-      'Ok': 'OK',
       // Undo, redo
       'Undo': 'Ongedaan maken',
       'Redo': 'Opnieuw',
@@ -350,7 +351,65 @@
       //Code Snippet
       'Code Snippet': 'Codefragment',
       'Insert Code Snippet': 'Codefragment invoegen',
-      'Edit Code Snippet': 'Codefragment bewerken'
+      'Edit Code Snippet': 'Codefragment bewerken',
+      'Font Awesome': 'Font Awesome',
+      'Web Application Icons': 'Webapplicatie-iconen',
+      'Accessibility Icons': 'Toegankelijkheidsiconen',
+      'Hand Icons': 'Handiconen',
+      'Transportation Icons': 'Transporticonen',
+      'Gender Icons': 'Gendericonen',
+      'Form Control Icons': 'Formulierbesturing-iconen',
+      'Payment Icons': 'Betalingsiconen',
+      'Chart Icons': 'Grafiekiconen',
+      'Currency Icons': 'Valuta-iconen',
+      'Text Editor Icons': 'Teksteditor-iconen',
+      'Brand Icons': 'Merkiconen',
+      'Single': 'Enkel',
+      'Double': 'Dubbel',
+      'Insert File': 'Bestand invoegen',
+      'Gray': 'Grijs',
+      'Spaced': 'Met tussenruimte',
+      'Uppercase': 'Hoofdletters',
+      'Rounded': 'Afgerond',
+      'Bordered': 'Met rand',
+      'Shadow': 'Schaduw',
+      'Custom background colour input': 'Aangepaste achtergrondkleur invoer',
+      'Background colour picker': 'Achtergrondkleur kiezer',
+      'Custom border colour input': 'Aangepaste randkleur invoer',
+      'Border colour picker': 'Randkleur kiezer',
+      'Border colour': 'Randkleur',
+      'Inline Class': 'Inline klasse',
+      'Download PDF': 'PDF downloaden',
+      'Dashed Borders': 'Gestreepte randen',
+      'Alternate Rows': 'Afwisselende rijen',
+      'Highlighted': 'Gemarkeerd',
+      'Thick': 'Dik',
+      'Words': 'Woorden',
+      'Insert Files': 'Bestanden invoegen',
+      'Alternate Text': 'Alternatieve tekst',
+      'Your browser does not support HTML5 vídeo.': 'Uw browser ondersteunt geen HTML5-video.',
+      'Transparent': 'Transparant',
+      'Big Red': 'Groot rood',
+      'Small Blue': 'Klein blauw',
+      // AI Assist
+      'AI Shortcuts': 'AI-snelkoppelingen',
+      'Ask AI to generate or refine text, adjusting its tone and language.': 'Vraag AI om tekst te genereren of te verfijnen, waarbij de toon en taal worden aangepast.',
+      'Ask AI to generate': 'Vraag AI om te genereren',
+      'AI responses can be inaccurate.': 'AI-antwoorden kunnen onnauwkeurig zijn.',
+      'Select a text layer to edit': 'Selecteer een tekstlaag om te bewerken',
+      'Change Tone': 'Toon Wijzigen',
+      'Translate To': 'Vertalen Naar',
+      'Generating Response': 'Antwoord Genereren',
+      'Submit': 'Indienen',
+      'Stop': 'Stoppen',
+      'Try again': 'Probeer opnieuw',
+      // AI Terms Consent
+      'To use AI features in Froala, you need to accept the AI Supplemental Terms.': 'Om AI-functies in Froala te gebruiken, moet u de aanvullende AI-voorwaarden accepteren.',
+      'Please set': 'Stel in',
+      'to': 'op',
+      'in your configuration to provide consent.': 'in uw configuratie om toestemming te verlenen.',
+      'You can review the terms here:': 'U kunt de voorwaarden hier bekijken:',
+      'View AI Supplemental Terms': 'Aanvullende AI-voorwaarden bekijken'
     },
     direction: 'ltr'
   };

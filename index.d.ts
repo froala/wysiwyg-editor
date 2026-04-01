@@ -89,6 +89,7 @@ declare module "froala-editor" {
     refresh: Refresh;
     shortcuts: Shortcuts;
     codeSnippet: CodeSnippet;
+    aiAssist: AiAssist;
     static DefineIcon: (name: string, parameters: Partial<DefineIconParameters>) => object;
     static RegisterCommand: (name: string, parameters: Partial<RegisterCommandParameters>) => void;
     static RegisterShortcut: (keyCode: number,
@@ -1518,6 +1519,18 @@ declare module "froala-editor" {
     importFromWordUrlToUpload: string;
     importFromWordEnableImportOnDrop: boolean;
 
+    // AI Assist
+    aiAssistEndpoint: string;
+    aiAssistHeaders: GenericObject<string>;
+    aiAssistRequest: ((data: { prompt: string; context: string; question: string; session_id: string; question_order_number: number; }, signal: AbortSignal) => Promise<string>) | null;
+    aiAssistDataKeys: GenericObject<string> | null;
+    aiAssistAdditionalData: GenericObject<any> | null;
+    aiAssistResponseParserPath: string | null;
+    aiAssistToneOptions: AiAssistOption[];
+    aiAssistTranslateOptions: AiAssistOption[];
+    aiAssistPromptTemplate: string;
+    aiSupplementalTermsAccepted: boolean;
+
     // Code Snippet
     codeSnippetLanguage: { [key: string]: string };
     codeSnippetDefaultLanguage: string;
@@ -1610,6 +1623,9 @@ declare module "froala-editor" {
     'save.after': (this: FroalaEditor, data: any) => void;
     'save.before': (this: FroalaEditor, html: string) => boolean;
     'save.error': (this: FroalaEditor, error: string, response: object) => void;
+    // AI Assist events
+    'aiAssist.beforeInsert': (this: FroalaEditor, responseContent: string) => boolean;
+    'aiAssist.afterInsert': (this: FroalaEditor) => void;
     // Code Snippet events
     'codeSnippet.beforeInsert': (this: FroalaEditor, code: string) => string | boolean;
     'codeSnippet.afterInsert': (this: FroalaEditor, html: string) => void;
@@ -2555,6 +2571,16 @@ declare module "froala-editor" {
     insert(code: string, language: string, replaceEl?: HTMLElement): void;
     update($codeBlock: any, code: string, language: string): void;
     show(isEdit?: boolean): void;
+  }
+
+  export interface AiAssist {
+    _init(): void;
+    showPromptPopup(): void;
+  }
+
+  type AiAssistOption = {
+    title: string;
+    prompt: string;
   }
 
 }

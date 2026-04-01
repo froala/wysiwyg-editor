@@ -1,5 +1,5 @@
 /*!
- * froala_editor v5.0.1 (https://www.froala.com/wysiwyg-editor)
+ * froala_editor v5.1.0 (https://www.froala.com/wysiwyg-editor)
  * License https://froala.com/wysiwyg-editor/terms/
  * Copyright 2014-2026 Froala Labs
  */
@@ -168,6 +168,8 @@
       'Left align': 'Выравнивание по левому краю',
       'Center align': 'Выровнять по центру',
       'Right align': 'Выровнять по правому краю',
+      'Left align without wrap': 'Выровнять по левому краю без обтекания',
+      'Right align without wrap': 'Выровнять по правому краю без обтекания',
       'solid': 'Сплошная линия',
       'dashed': 'Пунктирная линия',
       'dotted': 'Точечная линия',
@@ -250,7 +252,6 @@
       'Clear Formatting': "\u0423\u0434\u0430\u043B\u0438\u0442\u044C \u0444\u043E\u0440\u043C\u0430\u0442\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435",
       // Save
       'Save': "\u0421\u043E\u0445\u0440\u0430\u043D\u0438\u0442\u044C",
-      'Ok': 'ОК',
       // Undo, redo
       'Undo': "\u041E\u0442\u043C\u0435\u043D\u0438\u0442\u044C",
       'Redo': "\u041F\u043E\u0432\u0442\u043E\u0440\u0438\u0442\u044C",
@@ -349,7 +350,67 @@
       //Code Snippet
       'Code Snippet': 'Фрагмент кода',
       'Insert Code Snippet': 'Вставить фрагмент кода',
-      'Edit Code Snippet': 'Редактировать фрагмент кода'
+      'Edit Code Snippet': 'Редактировать фрагмент кода',
+      'Font Awesome': 'Font Awesome',
+      'Web Application Icons': 'Иконки веб-приложений',
+      'Accessibility Icons': 'Иконки доступности',
+      'Hand Icons': 'Иконки рук',
+      'Transportation Icons': 'Иконки транспорта',
+      'Gender Icons': 'Иконки пола',
+      'Form Control Icons': 'Иконки элементов формы',
+      'Payment Icons': 'Иконки оплаты',
+      'Chart Icons': 'Иконки диаграмм',
+      'Currency Icons': 'Иконки валют',
+      'Text Editor Icons': 'Иконки текстового редактора',
+      'Brand Icons': 'Иконки брендов',
+      'Insert File': 'Вставить файл',
+      'Text Color': 'Цвет текста',
+      'Background Color': 'Цвет фона',
+      'Gray': 'Серый',
+      'Spaced': 'С увеличенным интервалом',
+      'Uppercase': 'Верхний регистр',
+      'Rounded': 'Скруглённый',
+      'Bordered': 'С рамкой',
+      'Shadow': 'Тень',
+      'Custom background colour input': 'Пользовательский ввод цвета фона',
+      'Background colour picker': 'Выбор цвета фона',
+      'Custom border colour input': 'Пользовательский ввод цвета границы',
+      'Border colour picker': 'Выбор цвета границы',
+      'Border colour': 'Цвет границы',
+      'Inline Class': 'Встроенный класс',
+      'Download PDF': 'Скачать PDF',
+      'Dashed Borders': 'Пунктирные границы',
+      'Alternate Rows': 'Чередующиеся строки',
+      'Highlighted': 'Выделено',
+      'Thick': 'Толстый',
+      'Words': 'Слова',
+      'Insert Files': 'Вставить файлы',
+      'Image file type is invalid.': 'Недопустимый тип файла изображения.',
+      'File is too large.': 'Файл слишком большой.',
+      'Alternate Text': 'Альтернативный текст',
+      'Your browser does not support HTML5 vídeo.': 'Ваш браузер не поддерживает HTML5 видео.',
+      'Transparent': 'Прозрачный',
+      'Big Red': 'Большой красный',
+      'Small Blue': 'Маленький синий',
+      // AI Assist
+      'AI Shortcuts': 'ИИ Ярлыки',
+      'Ask AI to generate or refine text, adjusting its tone and language.': 'Попросите ИИ сгенерировать или улучшить текст, настроив его тон и язык.',
+      'Ask AI to generate': 'Попросить ИИ сгенерировать',
+      'AI responses can be inaccurate.': 'Ответы ИИ могут быть неточными.',
+      'Select a text layer to edit': 'Выберите текстовый слой для редактирования',
+      'Change Tone': 'Изменить Тон',
+      'Translate To': 'Перевести На',
+      'Generating Response': 'Генерация Ответа',
+      'Submit': 'Отправить',
+      'Stop': 'Остановить',
+      'Try again': 'Попробовать снова',
+      // AI Terms Consent
+      'To use AI features in Froala, you need to accept the AI Supplemental Terms.': 'Для использования функций ИИ в Froala необходимо принять Дополнительные условия использования ИИ.',
+      'Please set': 'Пожалуйста, установите',
+      'to': 'в значение',
+      'in your configuration to provide consent.': 'в вашей конфигурации для предоставления согласия.',
+      'You can review the terms here:': 'Вы можете ознакомиться с условиями здесь:',
+      'View AI Supplemental Terms': 'Просмотреть Дополнительные условия использования ИИ'
     },
     direction: 'ltr'
   };

@@ -1,5 +1,5 @@
 /*!
- * froala_editor v5.0.1 (https://www.froala.com/wysiwyg-editor)
+ * froala_editor v5.1.0 (https://www.froala.com/wysiwyg-editor)
  * License https://froala.com/wysiwyg-editor/terms/
  * Copyright 2014-2026 Froala Labs
  */
@@ -172,6 +172,8 @@
       'Left align': 'Alinhar à esquerda',
       'Center align': 'Centralizar',
       'Right align': 'Alinhar à direita',
+      'Left align without wrap': 'Alinhar à esquerda sem quebra de linha',
+      'Right align without wrap': 'Alinhar à direita sem quebra de linha',
       'solid': 'Linha contínua',
       'dashed': 'Linha tracejada',
       'dotted': 'Linha pontilhada',
@@ -254,7 +256,6 @@
       'Clear Formatting': 'Remover formatação',
       // Save
       'Save': "Salve",
-      'Ok': 'OK',
       // Undo, redo
       'Undo': 'Desfazer',
       'Redo': 'Refazer',
@@ -353,7 +354,63 @@
       //Code Snippet
       'Code Snippet': 'Trecho de Código',
       'Insert Code Snippet': 'Inserir Trecho de Código',
-      'Edit Code Snippet': 'Editar Trecho de Código'
+      'Edit Code Snippet': 'Editar Trecho de Código',
+      'Font Awesome': 'Font Awesome',
+      'Web Application Icons': 'Ícones de aplicações web',
+      'Accessibility Icons': 'Ícones de acessibilidade',
+      'Hand Icons': 'Ícones de mãos',
+      'Transportation Icons': 'Ícones de transporte',
+      'Gender Icons': 'Ícones de gênero',
+      'Form Control Icons': 'Ícones de controles de formulário',
+      'Payment Icons': 'Ícones de pagamento',
+      'Chart Icons': 'Ícones de gráficos',
+      'Currency Icons': 'Ícones de moeda',
+      'Text Editor Icons': 'Ícones do editor de texto',
+      'Brand Icons': 'Ícones de marcas',
+      'Line Height': 'Altura da linha',
+      'Alternative Text': 'Texto alternativo',
+      'Your browser does not support HTML5 video.': 'Seu navegador não suporta vídeo HTML5.',
+      'Insert File': 'Inserir arquivo',
+      'Gray': 'Cinza',
+      'Spaced': 'Espaçado',
+      'Uppercase': 'Maiúsculas',
+      'Rounded': 'Arredondado',
+      'Bordered': 'Com borda',
+      'Shadow': 'Sombra',
+      'Custom background colour input': 'Entrada de cor de fundo personalizada',
+      'Background colour picker': 'Seletor de cor de fundo',
+      'Custom border colour input': 'Entrada de cor de borda personalizada',
+      'Border colour picker': 'Seletor de cor de borda',
+      'Border colour': 'Cor da borda',
+      'Dashed Borders': 'Bordas tracejadas',
+      'Alternate Rows': 'Linhas alternadas',
+      'Highlighted': 'Destacado',
+      'Thick': 'Espesso',
+      'Words': 'Palavras',
+      'Image file type is invalid.': 'O tipo de arquivo de imagem é inválido.',
+      'File is too large.': 'O arquivo é muito grande.',
+      'Transparent': 'Transparente',
+      'Big Red': 'Vermelho grande',
+      'Small Blue': 'Azul pequeno',
+      // AI Assist
+      'AI Shortcuts': 'Atalhos de IA',
+      'Ask AI to generate or refine text, adjusting its tone and language.': 'Peça à IA para gerar ou refinar texto, ajustando seu tom e idioma.',
+      'Ask AI to generate': 'Pedir à IA para gerar',
+      'AI responses can be inaccurate.': 'As respostas da IA podem ser imprecisas.',
+      'Select a text layer to edit': 'Selecione uma camada de texto para editar',
+      'Change Tone': 'Mudar Tom',
+      'Translate To': 'Traduzir Para',
+      'Generating Response': 'Gerando Resposta',
+      'Submit': 'Enviar',
+      'Stop': 'Parar',
+      'Try again': 'Tentar novamente',
+      // AI Terms Consent
+      'To use AI features in Froala, you need to accept the AI Supplemental Terms.': 'Para usar os recursos de IA no Froala, você precisa aceitar os Termos Suplementares de IA.',
+      'Please set': 'Defina',
+      'to': 'como',
+      'in your configuration to provide consent.': 'em sua configuração para fornecer consentimento.',
+      'You can review the terms here:': 'Você pode revisar os termos aqui:',
+      'View AI Supplemental Terms': 'Ver Termos Suplementares de IA'
     },
     direction: 'ltr'
   };

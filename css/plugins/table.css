@@ -1,5 +1,5 @@
 /*!
- * froala_editor v5.0.1 (https://www.froala.com/wysiwyg-editor)
+ * froala_editor v5.1.0 (https://www.froala.com/wysiwyg-editor)
  * License https://froala.com/wysiwyg-editor/terms/
  * Copyright 2014-2026 Froala Labs
  */
@@ -144,10 +144,13 @@
       border: 1px solid #CCCCCC;
       border-radius: 2px 0 0 2px;
       box-sizing: border-box;
-      font-size: 14px; }
+      font-size: 14px;
+      background-color: #FFF;
+      color: inherit; }
       .fr-cell-properties-form .fr-cell-bg-container .fr-input:focus, .fr-cell-properties-form .fr-table-bg-container .fr-input:focus, .fr-table-properties-form .fr-cell-bg-container .fr-input:focus, .fr-table-properties-form .fr-table-bg-container .fr-input:focus {
         outline: none;
-        border-color: #0098f7; }
+        border-color: #0098f7;
+        border-width: 2px; }
       .fr-cell-properties-form .fr-cell-bg-container .fr-input.fr-disabled, .fr-cell-properties-form .fr-table-bg-container .fr-input.fr-disabled, .fr-table-properties-form .fr-cell-bg-container .fr-input.fr-disabled, .fr-table-properties-form .fr-table-bg-container .fr-input.fr-disabled {
         background-color: #f5f5f5;
         color: #a9a9a9;
@@ -206,10 +209,13 @@
           padding: 8px;
           border: 1px solid #CCCCCC;
           border-radius: 2px;
-          font-size: 14px; }
+          font-size: 14px;
+          background-color: #FFF;
+          color: inherit; }
           .fr-cell-properties-form .fr-cell-dimensions-container .fr-cell-dimension-section .fr-dimension-inputs input:focus, .fr-table-properties-form .fr-cell-dimensions-container .fr-cell-dimension-section .fr-dimension-inputs input:focus {
             outline: none;
-            border-color: #0098f7; }
+            border-color: #0098f7;
+            border-width: 2px; }
           .fr-cell-properties-form .fr-cell-dimensions-container .fr-cell-dimension-section .fr-dimension-inputs input.fr-disabled, .fr-table-properties-form .fr-cell-dimensions-container .fr-cell-dimension-section .fr-dimension-inputs input.fr-disabled {
             background-color: #f5f5f5;
             color: #a9a9a9;
@@ -230,10 +236,13 @@
         padding: 8px;
         border: 1px solid #CCCCCC;
         border-radius: 2px;
-        font-size: 14px; }
+        font-size: 14px;
+        background-color: #FFF;
+        color: inherit; }
         .fr-cell-properties-form .fr-cell-dimensions-container .fr-cell-padding-section input:focus, .fr-table-properties-form .fr-cell-dimensions-container .fr-cell-padding-section input:focus {
           outline: none;
-          border-color: #0098f7; }
+          border-color: #0098f7;
+          border-width: 2px; }
         .fr-cell-properties-form .fr-cell-dimensions-container .fr-cell-padding-section input.fr-disabled, .fr-table-properties-form .fr-cell-dimensions-container .fr-cell-padding-section input.fr-disabled {
           background-color: #f5f5f5;
           color: #a9a9a9;
@@ -288,57 +297,134 @@
 
 .fr-table-bg-container .fr-input-line, .fr-table-border-container .fr-input-line, .fr-table-dimensions-container .fr-input-line, .fr-table-style-container .fr-input-line {
   padding: 0px;
-  width: 100%; }
-  .fr-table-bg-container .fr-input-line input[type="text"], .fr-table-border-container .fr-input-line input[type="text"], .fr-table-dimensions-container .fr-input-line input[type="text"], .fr-table-style-container .fr-input-line input[type="text"] {
+  flex: 1;
+  position: relative; }
+
+.fr-popup .fr-table-properties-form .fr-table-bg-container .fr-input-line, .fr-popup .fr-table-properties-form .fr-table-border-container .fr-input-line, .fr-popup .fr-table-properties-form .fr-table-dimensions-container .fr-input-line, .fr-popup .fr-table-properties-form .fr-table-style-container .fr-input-line {
+  padding: 0px; }
+  .fr-popup .fr-table-properties-form .fr-table-bg-container .fr-input-line input[type="text"], .fr-popup .fr-table-properties-form .fr-table-border-container .fr-input-line input[type="text"], .fr-popup .fr-table-properties-form .fr-table-dimensions-container .fr-input-line input[type="text"], .fr-popup .fr-table-properties-form .fr-table-style-container .fr-input-line input[type="text"] {
     height: 36px;
-    border-color: #CCCCCC; }
-  .fr-table-bg-container .fr-input-line input + label, .fr-table-border-container .fr-input-line input + label, .fr-table-dimensions-container .fr-input-line input + label, .fr-table-style-container .fr-input-line input + label {
+    border-color: #CCCCCC;
+    background-color: #FFF;
+    color: inherit; }
+    .fr-popup .fr-table-properties-form .fr-table-bg-container .fr-input-line input[type="text"]:focus, .fr-popup .fr-table-properties-form .fr-table-border-container .fr-input-line input[type="text"]:focus, .fr-popup .fr-table-properties-form .fr-table-dimensions-container .fr-input-line input[type="text"]:focus, .fr-popup .fr-table-properties-form .fr-table-style-container .fr-input-line input[type="text"]:focus {
+      outline: none;
+      border-color: #0098f7;
+      border-width: 2px; }
+  .fr-popup .fr-table-properties-form .fr-table-bg-container .fr-input-line .fr-input, .fr-popup .fr-table-properties-form .fr-table-border-container .fr-input-line .fr-input, .fr-popup .fr-table-properties-form .fr-table-dimensions-container .fr-input-line .fr-input, .fr-popup .fr-table-properties-form .fr-table-style-container .fr-input-line .fr-input {
+    height: 36px;
+    background-color: #FFF;
+    color: inherit; }
+  .fr-popup .fr-table-properties-form .fr-table-bg-container .fr-input-line input + label, .fr-popup .fr-table-properties-form .fr-table-border-container .fr-input-line input + label, .fr-popup .fr-table-properties-form .fr-table-dimensions-container .fr-input-line input + label, .fr-popup .fr-table-properties-form .fr-table-style-container .fr-input-line input + label {
     top: -5px;
+    background: #FFF;
+    color: inherit;
     font-weight: 100; }
-  .fr-table-bg-container .fr-input-line input.fr-not-empty + label, .fr-table-border-container .fr-input-line input.fr-not-empty + label, .fr-table-dimensions-container .fr-input-line input.fr-not-empty + label, .fr-table-style-container .fr-input-line input.fr-not-empty + label {
+  .fr-popup .fr-table-properties-form .fr-table-bg-container .fr-input-line input:focus + label,
+  .fr-popup .fr-table-properties-form .fr-table-bg-container .fr-input-line input.fr-not-empty + label, .fr-popup .fr-table-properties-form .fr-table-border-container .fr-input-line input:focus + label,
+  .fr-popup .fr-table-properties-form .fr-table-border-container .fr-input-line input.fr-not-empty + label, .fr-popup .fr-table-properties-form .fr-table-dimensions-container .fr-input-line input:focus + label,
+  .fr-popup .fr-table-properties-form .fr-table-dimensions-container .fr-input-line input.fr-not-empty + label, .fr-popup .fr-table-properties-form .fr-table-style-container .fr-input-line input:focus + label,
+  .fr-popup .fr-table-properties-form .fr-table-style-container .fr-input-line input.fr-not-empty + label {
     top: -20px;
-    font-weight: 100; }
-  .fr-table-bg-container .fr-input-line #fr-table-border-style, .fr-table-border-container .fr-input-line #fr-table-border-style, .fr-table-dimensions-container .fr-input-line #fr-table-border-style, .fr-table-style-container .fr-input-line #fr-table-border-style {
+    left: 8px;
+    font-size: 11px;
+    background: #FFF;
+    color: inherit;
+    padding: 0 3px; }
+  .fr-popup .fr-table-properties-form .fr-table-bg-container .fr-input-line #fr-table-border-style, .fr-popup .fr-table-properties-form .fr-table-border-container .fr-input-line #fr-table-border-style, .fr-popup .fr-table-properties-form .fr-table-dimensions-container .fr-input-line #fr-table-border-style, .fr-popup .fr-table-properties-form .fr-table-style-container .fr-input-line #fr-table-border-style {
     width: 90%;
     height: 36px;
     border-color: #CCCCCC;
-    border-radius: 2px; }
-  .fr-table-bg-container .fr-input-line .fr-field-lable, .fr-table-border-container .fr-input-line .fr-field-lable, .fr-table-dimensions-container .fr-input-line .fr-field-lable, .fr-table-style-container .fr-input-line .fr-field-lable {
+    border-radius: 2px;
+    background-color: #FFF;
+    color: inherit; }
+  .fr-popup .fr-table-properties-form .fr-table-bg-container .fr-input-line .fr-field-lable, .fr-popup .fr-table-properties-form .fr-table-border-container .fr-input-line .fr-field-lable, .fr-popup .fr-table-properties-form .fr-table-dimensions-container .fr-input-line .fr-field-lable, .fr-popup .fr-table-properties-form .fr-table-style-container .fr-input-line .fr-field-lable {
     position: absolute;
     font-size: 11px;
     padding: 0px 3px;
-    margin: -6px 5px;
+    top: 0;
+    left: 5px;
+    transform: translateY(-50%);
     background: #FFF;
     font-weight: 100;
-    color: dimgray;
+    color: inherit;
     z-index: 3; }
-  .fr-table-bg-container .fr-input-line .fr-buttons, .fr-table-border-container .fr-input-line .fr-buttons, .fr-table-dimensions-container .fr-input-line .fr-buttons, .fr-table-style-container .fr-input-line .fr-buttons {
-    padding: 0px; }
-  .fr-table-bg-container .fr-input-line .fr-command.fr-btn.fr-dropdown:after, .fr-table-border-container .fr-input-line .fr-command.fr-btn.fr-dropdown:after, .fr-table-dimensions-container .fr-input-line .fr-command.fr-btn.fr-dropdown:after, .fr-table-style-container .fr-input-line .fr-command.fr-btn.fr-dropdown:after {
+  .fr-popup .fr-table-properties-form .fr-table-bg-container .fr-input-line .fr-buttons, .fr-popup .fr-table-properties-form .fr-table-border-container .fr-input-line .fr-buttons, .fr-popup .fr-table-properties-form .fr-table-dimensions-container .fr-input-line .fr-buttons, .fr-popup .fr-table-properties-form .fr-table-style-container .fr-input-line .fr-buttons {
+    padding: 0px;
+    border-radius: 2px;
+    height: 36px;
+    width: 100%; }
+  .fr-popup .fr-table-properties-form .fr-table-bg-container .fr-input-line .fr-command.fr-btn.fr-dropdown:after, .fr-popup .fr-table-properties-form .fr-table-border-container .fr-input-line .fr-command.fr-btn.fr-dropdown:after, .fr-popup .fr-table-properties-form .fr-table-dimensions-container .fr-input-line .fr-command.fr-btn.fr-dropdown:after, .fr-popup .fr-table-properties-form .fr-table-style-container .fr-input-line .fr-command.fr-btn.fr-dropdown:after {
     right: 10px; }
-  .fr-table-bg-container .fr-input-line .fr-command.fr-btn.fr-dropdown.fr-active, .fr-table-border-container .fr-input-line .fr-command.fr-btn.fr-dropdown.fr-active, .fr-table-dimensions-container .fr-input-line .fr-command.fr-btn.fr-dropdown.fr-active, .fr-table-style-container .fr-input-line .fr-command.fr-btn.fr-dropdown.fr-active {
+  .fr-popup .fr-table-properties-form .fr-table-bg-container .fr-input-line .fr-command.fr-btn.fr-dropdown.fr-active, .fr-popup .fr-table-properties-form .fr-table-border-container .fr-input-line .fr-command.fr-btn.fr-dropdown.fr-active, .fr-popup .fr-table-properties-form .fr-table-dimensions-container .fr-input-line .fr-command.fr-btn.fr-dropdown.fr-active, .fr-popup .fr-table-properties-form .fr-table-style-container .fr-input-line .fr-command.fr-btn.fr-dropdown.fr-active {
     background: transparent; }
-  .fr-table-bg-container .fr-input-line .fr-dropdown, .fr-table-border-container .fr-input-line .fr-dropdown, .fr-table-dimensions-container .fr-input-line .fr-dropdown, .fr-table-style-container .fr-input-line .fr-dropdown {
+  .fr-popup .fr-table-properties-form .fr-table-bg-container .fr-input-line .fr-dropdown, .fr-popup .fr-table-properties-form .fr-table-border-container .fr-input-line .fr-dropdown, .fr-popup .fr-table-properties-form .fr-table-dimensions-container .fr-input-line .fr-dropdown, .fr-popup .fr-table-properties-form .fr-table-style-container .fr-input-line .fr-dropdown {
     margin: 0px;
     background: transparent;
     border: 1px solid #CCCCCC;
     margin-right: 10px;
     height: 36px;
     border-radius: 2px; }
+    .fr-popup .fr-table-properties-form .fr-table-bg-container .fr-input-line .fr-dropdown:hover, .fr-popup .fr-table-properties-form .fr-table-bg-container .fr-input-line .fr-dropdown:focus, .fr-popup .fr-table-properties-form .fr-table-border-container .fr-input-line .fr-dropdown:hover, .fr-popup .fr-table-properties-form .fr-table-border-container .fr-input-line .fr-dropdown:focus, .fr-popup .fr-table-properties-form .fr-table-dimensions-container .fr-input-line .fr-dropdown:hover, .fr-popup .fr-table-properties-form .fr-table-dimensions-container .fr-input-line .fr-dropdown:focus, .fr-popup .fr-table-properties-form .fr-table-style-container .fr-input-line .fr-dropdown:hover, .fr-popup .fr-table-properties-form .fr-table-style-container .fr-input-line .fr-dropdown:focus {
+      background: #ebebeb; }
 
 .fr-table-border-container .fr-dropdown-wrapper {
   width: auto;
   min-width: 120px; }
 
-.fr-table-alignment-section {
-  margin-left: 10px; }
-
-.fr-table-border-container, .fr-table-dimensions-container, .fr-table-dimensions-section {
+.fr-table-style-alignment-section {
   display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-top: 15px; }
+
+.fr-table-style-wrapper {
+  flex: 1 1 0;
+  min-width: 0; }
+
+.fr-table-alignment-section {
+  flex: 0 0 auto; }
+
+.fr-table-border-container .fr-btn-table-border-bg-color, .fr-table-dimensions-container .fr-btn-table-border-bg-color {
+  flex-shrink: 0;
+  margin-right: 10px;
+  background: transparent;
+  border: 1px solid #CCCCCC;
+  border-radius: 2px;
+  border-left: 0px;
+  height: 36px;
+  margin-left: -1px; }
+  .fr-table-border-container .fr-btn-table-border-bg-color .fr-border-color-preview, .fr-table-dimensions-container .fr-btn-table-border-bg-color .fr-border-color-preview {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #999999;
+    border-radius: 2px;
+    position: relative;
+    overflow: hidden; }
+    .fr-table-border-container .fr-btn-table-border-bg-color .fr-border-color-preview .fr-border-color-preview-indicator, .fr-table-dimensions-container .fr-btn-table-border-bg-color .fr-border-color-preview .fr-border-color-preview-indicator {
+      position: absolute;
+      background: red;
+      width: 28px;
+      height: 1px;
+      top: 9px;
+      left: -4px;
+      transform: rotate(-45deg);
+      transform-origin: center; }
+
+.fr-table-border-container {
+  display: flex;
+  align-items: center;
   margin-top: 10px; }
-  .fr-table-border-container .fr-dimension-separator, .fr-table-dimensions-container .fr-dimension-separator, .fr-table-dimensions-section .fr-dimension-separator {
-    margin: 10px 5px; }
-  .fr-table-border-container .fr-btn-table-border-bg-color, .fr-table-dimensions-container .fr-btn-table-border-bg-color, .fr-table-dimensions-section .fr-btn-table-border-bg-color {
+  .fr-table-border-container > .fr-input-line:first-child {
+    margin-right: 8px; }
+
+.fr-table-dimensions-container {
+  display: flex;
+  align-items: center;
+  margin-top: 10px; }
+  .fr-table-dimensions-container .fr-dimension-separator {
+    margin: 5px; }
+  .fr-table-dimensions-container .fr-btn-table-border-bg-color {
     margin-right: 10px;
     background: transparent;
     border: 1px solid #CCCCCC;
@@ -346,14 +432,14 @@
     border-left: 0px;
     height: 36px;
     margin-left: -1px; }
-    .fr-table-border-container .fr-btn-table-border-bg-color .fr-border-color-preview, .fr-table-dimensions-container .fr-btn-table-border-bg-color .fr-border-color-preview, .fr-table-dimensions-section .fr-btn-table-border-bg-color .fr-border-color-preview {
+    .fr-table-dimensions-container .fr-btn-table-border-bg-color .fr-border-color-preview {
       width: 20px;
       height: 20px;
       border: 1px solid #999999;
       border-radius: 2px;
       position: relative;
       overflow: hidden; }
-      .fr-table-border-container .fr-btn-table-border-bg-color .fr-border-color-preview .fr-border-color-preview-indicator, .fr-table-dimensions-container .fr-btn-table-border-bg-color .fr-border-color-preview .fr-border-color-preview-indicator, .fr-table-dimensions-section .fr-btn-table-border-bg-color .fr-border-color-preview .fr-border-color-preview-indicator {
+      .fr-table-dimensions-container .fr-btn-table-border-bg-color .fr-border-color-preview .fr-border-color-preview-indicator {
         position: absolute;
         background: red;
         width: 28px;
@@ -363,18 +449,42 @@
         transform: rotate(-45deg);
         transform-origin: center; }
 
+.fr-table-dimensions-section {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin-top: 15px; }
+
 .fr-table-style > button {
   width: 100%; }
 
 .fr-table-style .fr-dropdown-wrapper {
-  width: 200px; }
+  width: auto; }
+
+.fr-table-left-align {
+  float: left; }
+
+.fr-table-right-align {
+  float: right; }
+
+.fr-table-left-no-wrap {
+  float: none;
+  width: fit-content;
+  margin: auto auto auto 0; }
+
+.fr-table-right-no-wrap {
+  float: none;
+  width: fit-content;
+  margin: auto 0 auto auto; }
 
 .fr-table-alignment-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
   height: 33px;
   border: 1px solid #CCCCCC;
-  margin-top: 10px;
   border-radius: 2px;
-  min-width: 130px; }
+  width: fit-content; }
   .fr-table-alignment-container button {
     height: 30px;
     width: 36px;
@@ -382,4 +492,5 @@
     border: none;
     background: transparent;
     margin: 2px;
-    cursor: pointer; }
+    cursor: pointer;
+    flex-shrink: 0; }

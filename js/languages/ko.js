@@ -1,5 +1,5 @@
 /*!
- * froala_editor v5.0.1 (https://www.froala.com/wysiwyg-editor)
+ * froala_editor v5.1.0 (https://www.froala.com/wysiwyg-editor)
  * License https://froala.com/wysiwyg-editor/terms/
  * Copyright 2014-2026 Froala Labs
  */
@@ -175,6 +175,8 @@
       'Left align': '왼쪽 정렬',
       'Center align': '가운데 정렬',
       'Right align': '오른쪽 정렬',
+      'Left align without wrap': '줄바꿈 없이 왼쪽 정렬',
+      'Right align without wrap': '줄바꿈 없이 오른쪽 정렬',
       'solid': '실선',
       'dashed': '파선',
       'dotted': '점선',
@@ -257,7 +259,6 @@
       'Clear Formatting': "\uC11C\uC2DD \uC81C\uAC70",
       // Save
       'Save': "\uAD6C\uD558\uB2E4",
-      'Ok': '확인',
       // Undo, redo
       'Undo': "\uC2E4\uD589 \uCDE8\uC18C",
       'Redo': "\uB418\uB3CC\uB9AC\uAE30",
@@ -353,7 +354,63 @@
       //Code Snippet
       'Code Snippet': '코드 조각',
       'Insert Code Snippet': '코드 조각 삽입',
-      'Edit Code Snippet': '코드 조각 편집'
+      'Edit Code Snippet': '코드 조각 편집',
+      'Font Awesome': 'Font Awesome',
+      'Web Application Icons': '웹 애플리케이션 아이콘',
+      'Accessibility Icons': '접근성 아이콘',
+      'Hand Icons': '손 아이콘',
+      'Transportation Icons': '교통 아이콘',
+      'Gender Icons': '성별 아이콘',
+      'Form Control Icons': '양식 컨트롤 아이콘',
+      'Payment Icons': '결제 아이콘',
+      'Chart Icons': '차트 아이콘',
+      'Currency Icons': '통화 아이콘',
+      'Text Editor Icons': '텍스트 편집기 아이콘',
+      'Brand Icons': '브랜드 아이콘',
+      'Line Height': '줄 간격',
+      'Insert File': '파일 삽입',
+      'Gray': '회색',
+      'Spaced': '간격 있음',
+      'Uppercase': '대문자',
+      'Rounded': '둥근 모서리',
+      'Bordered': '테두리 있음',
+      'Shadow': '그림자',
+      'Custom background colour input': '사용자 지정 배경색 입력',
+      'Background colour picker': '배경색 선택기',
+      'Custom border colour input': '사용자 지정 테두리색 입력',
+      'Border colour picker': '테두리색 선택기',
+      'Border colour': '테두리색',
+      'Dashed Borders': '점선 테두리',
+      'Alternate Rows': '교차 행',
+      'Highlighted': '강조됨',
+      'Thick': '두꺼움',
+      'Words': '단어',
+      'Image file type is invalid.': '이미지 파일 형식이 올바르지 않습니다.',
+      'File is too large.': '파일이 너무 큽니다.',
+      'Alternate Text': '대체 텍스트',
+      'Your browser does not support HTML5 vídeo.': '브라우저가 HTML5 비디오를 지원하지 않습니다.',
+      'Transparent': '투명',
+      'Big Red': '큰 빨강',
+      'Small Blue': '작은 파랑',
+      // AI Assist
+      'AI Shortcuts': 'AI 단축키',
+      'Ask AI to generate or refine text, adjusting its tone and language.': 'AI에게 텍스트를 생성하거나 다듬고 톤과 언어를 조정하도록 요청하세요.',
+      'Ask AI to generate': 'AI에게 생성 요청',
+      'AI responses can be inaccurate.': 'AI 응답은 부정확할 수 있습니다.',
+      'Select a text layer to edit': '편집할 텍스트 레이어 선택',
+      'Change Tone': '톤 변경',
+      'Translate To': '번역 대상',
+      'Generating Response': '응답 생성 중',
+      'Submit': '제출',
+      'Stop': '중지',
+      'Try again': '다시 시도',
+      // AI Terms Consent
+      'To use AI features in Froala, you need to accept the AI Supplemental Terms.': 'Froala에서 AI 기능을 사용하려면 AI 보충 약관에 동의해야 합니다.',
+      'Please set': '설정에서',
+      'to': '으로',
+      'in your configuration to provide consent.': '를 설정하여 동의를 제공하세요.',
+      'You can review the terms here:': '여기서 약관을 검토할 수 있습니다:',
+      'View AI Supplemental Terms': 'AI 보충 약관 보기'
     },
     direction: 'ltr'
   };

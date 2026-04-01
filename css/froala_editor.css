@@ -1,5 +1,5 @@
 /*!
- * froala_editor v5.0.1 (https://www.froala.com/wysiwyg-editor)
+ * froala_editor v5.1.0 (https://www.froala.com/wysiwyg-editor)
  * License https://froala.com/wysiwyg-editor/terms/
  * Copyright 2014-2026 Froala Labs
  */
@@ -1035,9 +1035,7 @@ ol.decimal_type > li:before {
       height: 18px;
       margin: 0;
       padding: 0;
-      width: 18px;
-      top: 7px;
-      left: 7px; }
+      width: 18px; }
       .fr-popup .fr-checkbox input:not(:checked) + span {
         border: solid 2px #999999; }
       .fr-popup .fr-checkbox input:not(:checked):active + span {

@@ -1,5 +1,5 @@
 /*!
- * froala_editor v5.0.1 (https://www.froala.com/wysiwyg-editor)
+ * froala_editor v5.1.0 (https://www.froala.com/wysiwyg-editor)
  * License https://froala.com/wysiwyg-editor/terms/
  * Copyright 2014-2026 Froala Labs
  */
@@ -170,6 +170,8 @@
       'Left align': 'Allinea a sinistra',
       'Center align': 'Allinea al centro',
       'Right align': 'Allinea a destra',
+      'Left align without wrap': 'Allinea a sinistra senza testo a capo',
+      'Right align without wrap': 'Allinea a destra senza testo a capo',
       'solid': 'Linea continua',
       'dashed': 'Linea tratteggiata',
       'dotted': 'Linea puntinata',
@@ -252,7 +254,6 @@
       'Clear Formatting': 'Cancella Formattazione',
       // Save
       'Save': 'Salvare',
-      'Ok': 'Ok',
       // Undo, redo
       'Undo': 'Annulla',
       'Redo': 'Ripeti',
@@ -352,7 +353,64 @@
       //Code Snippet
       'Code Snippet': 'Frammento di Codice',
       'Insert Code Snippet': 'Inserisci frammento di codice',
-      'Edit Code Snippet': 'Modifica frammento di codice'
+      'Edit Code Snippet': 'Modifica frammento di codice',
+      'Font Awesome': 'Font Awesome',
+      'Web Application Icons': 'Icone applicazioni web',
+      'Accessibility Icons': 'Icone di accessibilità',
+      'Hand Icons': 'Icone delle mani',
+      'Transportation Icons': 'Icone di trasporto',
+      'Gender Icons': 'Icone di genere',
+      'Form Control Icons': 'Icone controlli modulo',
+      'Payment Icons': 'Icone di pagamento',
+      'Chart Icons': 'Icone grafici',
+      'Currency Icons': 'Icone valuta',
+      'Text Editor Icons': 'Icone editor di testo',
+      'Brand Icons': 'Icone marchi',
+      'Line Height': 'Altezza riga',
+      'Single': 'Singola',
+      'Insert File': 'Inserisci file',
+      'Gray': 'Grigio',
+      'Spaced': 'Spaziato',
+      'Uppercase': 'Maiuscolo',
+      'Rounded': 'Arrotondato',
+      'Bordered': 'Con bordo',
+      'Shadow': 'Ombra',
+      'Custom background colour input': 'Inserimento colore di sfondo personalizzato',
+      'Background colour picker': 'Selettore colore di sfondo',
+      'Custom border colour input': 'Inserimento colore bordo personalizzato',
+      'Border colour picker': 'Selettore colore bordo',
+      'Border colour': 'Colore bordo',
+      'Dashed Borders': 'Bordi tratteggiati',
+      'Alternate Rows': 'Righe alternate',
+      'Highlighted': 'Evidenziato',
+      'Thick': 'Spesso',
+      'Insert Files': 'Inserisci file',
+      'Image file type is invalid.': 'Il tipo di file immagine non è valido.',
+      'File is too large.': 'Il file è troppo grande.',
+      'Alternate Text': 'Testo alternativo',
+      'Your browser does not support HTML5 vídeo.': 'Il tuo browser non supporta i video HTML5.',
+      'Transparent': 'Trasparente',
+      'Big Red': 'Rosso grande',
+      'Small Blue': 'Blu piccolo',
+      // AI Assist
+      'AI Shortcuts': 'Scorciatoie AI',
+      'Ask AI to generate or refine text, adjusting its tone and language.': 'Chiedi all\'IA di generare o perfezionare il testo, regolando il tono e la lingua.',
+      'Ask AI to generate': 'Chiedi all\'IA di generare',
+      'AI responses can be inaccurate.': 'Le risposte dell\'IA possono essere imprecise.',
+      'Select a text layer to edit': 'Seleziona un livello di testo da modificare',
+      'Change Tone': 'Cambia Tono',
+      'Translate To': 'Traduci In',
+      'Generating Response': 'Generazione Risposta',
+      'Submit': 'Invia',
+      'Stop': 'Ferma',
+      'Try again': 'Riprova',
+      // AI Terms Consent
+      'To use AI features in Froala, you need to accept the AI Supplemental Terms.': 'Per utilizzare le funzionalità AI in Froala, devi accettare le Condizioni Supplementari AI.',
+      'Please set': 'Imposta',
+      'to': 'su',
+      'in your configuration to provide consent.': 'nella tua configurazione per fornire il consenso.',
+      'You can review the terms here:': 'Puoi rivedere i termini qui:',
+      'View AI Supplemental Terms': 'Visualizza le Condizioni Supplementari AI'
     },
     direction: 'ltr'
   };
