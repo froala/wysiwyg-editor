@@ -25,6 +25,7 @@ jobs:
 
           echo "VERSION=$VERSION" >> $GITHUB_ENV
           echo "Dispatching version $VERSION"
+ 
 
       - name: Dispatch to Rails child repo
         uses: peter-evans/repository-dispatch@v3
@@ -37,3 +38,211 @@ jobs:
               "version": "${{ env.VERSION }}",
               "release_notes": ${{ toJson(github.event.release.body) }}
             }
+
+
+      - name: Dispatch to Ruby child repo
+        uses: peter-evans/repository-dispatch@v3
+        with:
+          token: ${{ secrets.PAT }}
+          repository: froala/wysiwyg-editor-ruby-sdk 
+          event-type: version_update
+          client-payload: |
+            {
+              "version": "${{ env.VERSION }}",
+              "release_notes": ${{ toJson(github.event.release.body) }}
+            }
+
+            
+      - name: Dispatch to WordPress child repo
+        uses: peter-evans/repository-dispatch@v3
+        with:
+          token: ${{ secrets.PAT }}
+          repository: froala/wordpress-froala-wysiwyg 
+          event-type: version_update
+          client-payload: |
+            {
+              "version": "${{ env.VERSION }}",
+              "release_notes": ${{ toJson(github.event.release.body) }}
+            }
+
+
+      - name: Dispatch to PHP child repo
+        uses: peter-evans/repository-dispatch@v3
+        with:
+          token: ${{ secrets.PAT }}
+          repository: froala/wysiwyg-editor-php-sdk 
+          event-type: version_update
+          client-payload: |
+            {
+              "version": "${{ env.VERSION }}",
+              "release_notes": ${{ toJson(github.event.release.body) }}
+            }
+
+
+      - name: Dispatch to Python child repo
+        uses: peter-evans/repository-dispatch@v3
+        with:
+          token: ${{ secrets.PAT }}
+          repository: froala/wysiwyg-editor-python-sdk 
+          event-type: version_update
+          client-payload: |
+            {
+              "version": "${{ env.VERSION }}",
+              "release_notes": ${{ toJson(github.event.release.body) }}
+            }
+
+
+      - name: Dispatch to Node child repo
+        uses: peter-evans/repository-dispatch@v3
+        with:
+          token: ${{ secrets.PAT }}
+          repository: froala/wysiwyg-editor-node-sdk
+          event-type: version_update
+          client-payload: |
+            {
+              "version": "${{ env.VERSION }}",
+              "release_notes": ${{ toJson(github.event.release.body) }}
+            }
+
+
+      - name: Dispatch to Java child repo
+        uses: peter-evans/repository-dispatch@v3
+        with:
+          token: ${{ secrets.PAT }}
+          repository: froala/wysiwyg-editor-java-sdk
+          event-type: version_update
+          client-payload: |
+            {
+              "version": "${{ env.VERSION }}",
+              "release_notes": ${{ toJson(github.event.release.body) }}
+            }
+
+
+      - name: Dispatch to React child repo
+        uses: peter-evans/repository-dispatch@v3
+        with:
+          token: ${{ secrets.PAT }}
+          repository: froala/react-froala-wysiwyg
+          event-type: version_update
+          client-payload: |
+            {
+              "version": "${{ env.VERSION }}",
+              "release_notes": ${{ toJson(github.event.release.body) }}
+            }
+
+
+      - name: Dispatch to DotNet child repo
+        uses: peter-evans/repository-dispatch@v3
+        with:
+          token: ${{ secrets.PAT }}
+          repository: froala/wysiwyg-editor-dotnet-sdk
+          event-type: version_update
+          client-payload: |
+            {
+              "version": "${{ env.VERSION }}",
+              "release_notes": ${{ toJson(github.event.release.body) }}
+            }
+
+
+      - name: Dispatch to Aurelia child repo
+        uses: peter-evans/repository-dispatch@v3
+        with:
+          token: ${{ secrets.PAT }}
+          repository: froala/aurelia-froala-editor
+          event-type: version_update
+          client-payload: |
+            {
+              "version": "${{ env.VERSION }}",
+              "release_notes": ${{ toJson(github.event.release.body) }}
+            }
+
+
+      - name: Dispatch to Vue child repo
+        uses: peter-evans/repository-dispatch@v3
+        with:
+          token: ${{ secrets.PAT }}
+          repository: froala/vue-froala-wysiwyg
+          event-type: version_update
+          client-payload: |
+            {
+              "version": "${{ env.VERSION }}",
+              "release_notes": ${{ toJson(github.event.release.body) }}
+            }
+
+
+      - name: Dispatch to Meteor child repo
+        uses: peter-evans/repository-dispatch@v3
+        with:
+          token: ${{ secrets.PAT }}
+          repository: froala/meteor-froala
+          event-type: version_update
+          client-payload: |
+            {
+              "version": "${{ env.VERSION }}",
+              "release_notes": ${{ toJson(github.event.release.body) }}
+            }
+
+
+      - name: Dispatch to Angular-froala-wysiwyg child repo
+        uses: peter-evans/repository-dispatch@v3
+        with:
+          token: ${{ secrets.PAT }}
+          repository: froala/angular-froala-wysiwyg
+          event-type: version_update
+          client-payload: |
+            {
+              "version": "${{ env.VERSION }}",
+              "release_notes": ${{ toJson(github.event.release.body) }}
+            }
+
+
+      - name: Dispatch to Knockout child repo
+        uses: peter-evans/repository-dispatch@v3
+        with:
+          token: ${{ secrets.PAT }}
+          repository: froala/knockout-froala
+          event-type: version_update
+          client-payload: |
+            {
+              "version": "${{ env.VERSION }}",
+              "release_notes": ${{ toJson(github.event.release.body) }}
+            }
+
+
+      - name: Dispatch to Cake2 child repo
+        uses: peter-evans/repository-dispatch@v3
+        with:
+          token: ${{ secrets.PAT }}
+          repository: froala/wysiwyg-cake2
+          event-type: version_update
+          client-payload: |
+            {
+              "version": "${{ env.VERSION }}",
+              "release_notes": ${{ toJson(github.event.release.body) }}
+            }
+
+
+      - name: Dispatch to django child repo
+        uses: peter-evans/repository-dispatch@v3
+        with:
+          token: ${{ secrets.PAT }}
+          repository: froala/django-froala-editor
+          event-type: version_update
+          client-payload: |
+            {
+              "version": "${{ env.VERSION }}",
+              "release_notes": ${{ toJson(github.event.release.body) }}
+            }  
+
+
+      - name: Dispatch to Nuget child repo
+        uses: peter-evans/repository-dispatch@v3
+        with:
+          token: ${{ secrets.PAT }}
+          repository: froala/froala-editor-nuget
+          event-type: version_update
+          client-payload: |
+            {
+              "version": "${{ env.VERSION }}",
+              "release_notes": ${{ toJson(github.event.release.body) }}
+            } 
