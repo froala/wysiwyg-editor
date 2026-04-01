@@ -196,51 +196,11 @@ jobs:
             }
 
 
-      - name: Dispatch to Angular-froala child repo
-        uses: peter-evans/repository-dispatch@v3
-        with:
-          token: ${{ secrets.PAT }}
-          repository: froala/angular-froala
-          event-type: version_update
-          client-payload: |
-            {
-              "version": "${{ env.VERSION }}",
-              "release_notes": ${{ toJson(github.event.release.body) }}
-            }
-
-
       - name: Dispatch to Knockout child repo
         uses: peter-evans/repository-dispatch@v3
         with:
           token: ${{ secrets.PAT }}
           repository: froala/knockout-froala
-          event-type: version_update
-          client-payload: |
-            {
-              "version": "${{ env.VERSION }}",
-              "release_notes": ${{ toJson(github.event.release.body) }}
-            }
-
-
-      - name: Dispatch to Craft child repo
-        uses: peter-evans/repository-dispatch@v3
-        with:
-          token: ${{ secrets.PAT }}
-          repository: froala/Craft-3-Froala-WYSIWYG
-          event-type: version_update
-          client-payload: |
-            {
-              "version": "${{ env.VERSION }}",
-              "release_notes": ${{ toJson(github.event.release.body) }}
-            }
-
-
-
-      - name: Dispatch to Cake child repo
-        uses: peter-evans/repository-dispatch@v3
-        with:
-          token: ${{ secrets.PAT }}
-          repository: froala/wysiwyg-cake
           event-type: version_update
           client-payload: |
             {
