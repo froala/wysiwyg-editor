@@ -16,6 +16,7 @@
 
   FE.LANGUAGE['fr'] = {
     translation: {
+      'Words': 'Mots',
       // Place holder
       'Type something': 'Tapez quelque chose',
       // Basic formatting
