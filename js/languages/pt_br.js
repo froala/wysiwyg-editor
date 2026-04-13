@@ -20,7 +20,7 @@
       'Type something': 'Digite algo',
       // Basic formatting
       'Bold': 'Negrito',
-      'Italic': 'Itálito',
+      'Italic': 'Itálico',
       'Underline': 'Sublinhar',
       'Strikethrough': 'Tachado',
       'Size': 'Tamanho',
