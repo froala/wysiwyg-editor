@@ -1,5 +1,5 @@
 /*!
- * froala_editor v5.3.1 (https://www.froala.com/wysiwyg-editor)
+ * froala_editor v5.4.0 (https://www.froala.com/wysiwyg-editor)
  * License https://froala.com/wysiwyg-editor/terms/
  * Copyright 2014-2026 Froala Labs
  */
@@ -55,8 +55,10 @@
     color: inherit; }
   .fr-view strong {
     font-weight: 700; }
-  .fr-view table[border='0'] td:not([class]), .fr-view table[border='0'] th:not([class]), .fr-view table[border='0'] td[class=""], .fr-view table[border='0'] th[class=""] {
+  .fr-view :where(table[border='0'] > * > tr) > td:not([class]), .fr-view :where(table[border='0'] > * > tr) > th:not([class]), .fr-view :where(table[border='0'] > * > tr) > td[class=""], .fr-view :where(table[border='0'] > * > tr) > th[class=""] {
     border-width: 0px; }
+  .fr-view :where(table:not([border='0']) > * > tr) > td, .fr-view :where(table:not([border='0']) > * > tr) > th {
+    border: 1px solid #DDD; }
   .fr-view table {
     border: none;
     border-collapse: collapse;
@@ -68,18 +70,28 @@
       border-style: dashed; }
     .fr-view table.fr-alternate-rows tbody tr:nth-child(2n) {
       background: whitesmoke; }
-    .fr-view table td, .fr-view table th {
-      border: 1px solid #DDD; }
-      .fr-view table td:empty, .fr-view table th:empty {
-        height: 20px; }
-      .fr-view table td.fr-highlighted, .fr-view table th.fr-highlighted {
-        border: 1px double red; }
-      .fr-view table td.fr-thick, .fr-view table th.fr-thick {
-        border-width: 2px; }
+    .fr-view table td:empty, .fr-view table th:empty {
+      height: 20px; }
+    .fr-view table td.fr-highlighted, .fr-view table th.fr-highlighted {
+      border: 1px double red; }
+    .fr-view table td.fr-thick, .fr-view table th.fr-thick {
+      border-width: 2px; }
     .fr-view table th {
       background: #ececec; }
     .fr-view table tfoot td {
       background: #ececec; }
+  .fr-view .fr-table-left-align {
+    float: left; }
+  .fr-view .fr-table-right-align {
+    float: right; }
+  .fr-view .fr-table-left-no-wrap {
+    float: none;
+    width: fit-content;
+    margin: auto auto auto 0; }
+  .fr-view .fr-table-right-no-wrap {
+    float: none;
+    width: fit-content;
+    margin: auto 0 auto auto; }
   .fr-view .fr-mso-hidden {
     display: none; }
   .fr-view hr {

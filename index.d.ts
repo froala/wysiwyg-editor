@@ -91,7 +91,10 @@ declare module "froala-editor" {
     shortcuts: Shortcuts;
     codeSnippet: CodeSnippet;
     aiAssist: AiAssist;
+    aiImproveWriting: AiImproveWriting;
+    aiChatAssistant?: AiChatAssistant;
     collaborative: Collaborative;
+    dockPanel: DockPanel;
     static DefineIcon: (name: string, parameters: Partial<DefineIconParameters>) => object;
     static RegisterCommand: (name: string, parameters: Partial<RegisterCommandParameters>) => void;
     static RegisterShortcut: (keyCode: number,
@@ -1529,14 +1532,71 @@ declare module "froala-editor" {
     // AI Assist
     aiAssistEndpoint: string;
     aiAssistHeaders: GenericObject<string>;
-    aiAssistRequest: ((data: { prompt: string; context: string; question: string; session_id: string; question_order_number: number; }, signal: AbortSignal) => Promise<string>) | null;
+    aiAssistRequest: ((data: {
+      prompt?: string;
+      context?: string;
+      question?: string;
+      session_id?: string;
+      question_order_number?: number;
+      autoComplete?: boolean;
+      // AI Chat additive fields — only present when actually set/truthy by the caller.
+      webSearchEnabled?: boolean;
+      model?: string;
+      reasoningEnabled?: boolean;
+      files?: AiChatFile[];
+      referenceUrls?: string[];
+      // Speech-to-text dictation fields — only present when speechToText is true.
+      speechToText?: boolean;
+      audio?: Blob;
+      audioType?: string;
+      lang?: string;
+    }, signal: AbortSignal, onChunk?: (chunk: string) => void) => Promise<string | { answer: string; session_id?: string; webSearchUsed?: boolean }>) | null;
     aiAssistDataKeys: GenericObject<string> | null;
     aiAssistAdditionalData: GenericObject<any> | null;
     aiAssistResponseParserPath: string | null;
     aiAssistToneOptions: AiAssistOption[];
     aiAssistTranslateOptions: AiAssistOption[];
     aiAssistPromptTemplate: string;
+    aiSpeechToText: boolean;
+    aiSpeechToTextWaveform: boolean;
+    aiSpeechToTextListeningText: string;
+    aiSpeechToTextMaxDuration: number;
     aiSupplementalTermsAccepted: boolean;
+    // Editor-content ghost-text autocomplete ("Smart Compose"-style continuation suggestions, FROALA-854)
+    inlineSuggestions: boolean;
+    inlineSuggestionsDelay: number;
+    inlineSuggestionsPromptTemplate: string;
+
+    // AI Chat
+    /** Initial state of the AI Chat web-search toggle. */
+    aiChatWebSearchEnabled: boolean;
+    /** Selectable model catalogue for the composer's Model picker. Empty (default) hides the model dropdown entirely. */
+    aiChatModels: AiChatModel[];
+    /** modelName (not displayName) selected when the panel opens; null or an unrecognized name falls back to the first entry of aiChatModels. */
+    aiChatDefaultModel: string | null;
+    /** Initial state of the AI Chat reasoning toggle. */
+    aiChatReasoningEnabled: boolean;
+    /** Whether AI Chat requests responses via requestAnswerStream (true) or requestAnswer (false). */
+    aiChatStreamResponse: boolean;
+    /** Upload File extensions accepted by the AI Chat context menu. */
+    aiChatSupportedFileTypes: string[];
+    /** Client-side max upload size (MB) guard for the AI Chat "Upload File" context source. */
+    aiChatMaxFileSizeMB: number;
+    /** Whether ready "Reference URL" sources are also folded into the outgoing context/prompt text, in addition to always being sent as their own referenceUrls field. */
+    aiChatIncludeReferenceUrlsInContext: boolean;
+    /** Initial AI Chat panel width in px; null uses the CSS default. Not persisted by the library — see the aiAssist.chatPanelResized event. */
+    aiChatPanelWidth: number | null;
+    /** Max width in px the AI Chat panel can be resized to; null uses the built-in default (640px). */
+    aiChatPanelMaxWidth: number | null;
+    /** Custom intro text for the AI Chat empty-state welcome body; null uses the built-in default intro. Always HTML-escaped, never translated or rendered as markup. */
+    aiChatWelcomeMessage: string | null;
+
+    // AI Improve Writing
+    aiImproveWritingPrompt: string;
+
+    // Selection-triggered popup — shared by collabAddComment
+    // and aiImproveWriting; see drag_select_controls.js.
+    selectionActionButtons: string[];
 
     // Code Snippet
     codeSnippetLanguage: { [key: string]: string };
@@ -1594,6 +1654,12 @@ declare module "froala-editor" {
     'html.processGet': (this: FroalaEditor, el: Element) => void;
     'html.get': (this: FroalaEditor, html: HTMLElement) => void;
     'html.set': (this: FroalaEditor) => void;
+    'html.beforeSet': (this: FroalaEditor, html: string) => boolean | void;
+    //markdown events
+    'markdown.beforeGet': (this: FroalaEditor) => boolean | void;
+    'markdown.afterGet': (this: FroalaEditor, markdown: string) => void;
+    'markdown.beforeSet': (this: FroalaEditor, markdown: string) => boolean | void;
+    'markdown.set': (this: FroalaEditor) => void;
     //image events
     'image.beforePasteUpload': (this: FroalaEditor, img: Image) => boolean;
     'image.beforeRemove': (this: FroalaEditor, img: any) => boolean;
@@ -1640,9 +1706,32 @@ declare module "froala-editor" {
     // AI Assist events
     'aiAssist.beforeInsert': (this: FroalaEditor, responseContent: string) => boolean;
     'aiAssist.afterInsert': (this: FroalaEditor) => void;
+    // AI Improve Writing events
+    'aiAssist.improveWritingStarted': (this: FroalaEditor) => void;
+    'aiAssist.improveWritingResponse': (this: FroalaEditor, answer: string) => void;
+    'aiAssist.reviewStarted': (this: FroalaEditor, sessionId: string) => void;
+    'aiAssist.hunkResolved': (this: FroalaEditor, payload: { changeId: string; action: 'accept' | 'reject' }) => void;
+    'aiAssist.reviewEnded': (this: FroalaEditor, sessionId: string) => void;
+    // Fired once per AI-proposed hunk when collaboration is active and the
+    // user confirms the collaboration review popup in Suggesting mode — the
+    // collaborative plugin listens for this to create one tracked suggestion
+    // per hunk. Not fired outside collaboration/Suggesting mode.
+    'aiAssist.beforeHunkInsert': (this: FroalaEditor, payload: { range: Range; hunk: { type: 'del' | 'ins' | 'replace'; originalText?: string; insertedText?: string; insertedHtml?: string } }) => void;
+    // AI Chat events
+    /** Fired on AI Chat panel drag-resize. The library does not persist width itself — listen here and pass it back via aiChatPanelWidth on next init. */
+    'aiAssist.chatPanelResized': (this: FroalaEditor, payload: { width: number }) => void;
+    /** Fired before an AI Chat response's content is applied to the document. Returning false cancels the insert, same as aiAssist.beforeInsert. */
+    'aiAssist.chatBeforeApply': (this: FroalaEditor, content: string) => boolean | void;
+    /** Fired after an AI Chat response's content has been applied to the document. */
+    'aiAssist.chatAfterApply': (this: FroalaEditor) => void;
+    /** Fired by editor.dockPanel/editor.collaborative when a right-docked panel opens, so any other registered/coexisting panel hides itself. Internal coordination — not typically handled directly. */
+    'dockPanel.opening': (this: FroalaEditor, id: string) => void;
     // Code Snippet events
     'codeSnippet.beforeInsert': (this: FroalaEditor, code: string) => string | boolean;
     'codeSnippet.afterInsert': (this: FroalaEditor, html: string) => void;
+    'codeSnippet.beforeUpdate': (this: FroalaEditor, $codeBlock: any) => boolean | void;
+    'codeSnippet.afterUpdate': (this: FroalaEditor, $codeBlock: any) => void;
+    'codeSnippet.beforeRemove': (this: FroalaEditor, el: Element) => boolean | void;
     //snapshot event
     'snapshot.after': (this: FroalaEditor) => void;
     'snapshot.before': (this: FroalaEditor) => void;
@@ -2255,6 +2344,8 @@ declare module "froala-editor" {
     isEnabled(): boolean;
     refresh(button: Element): void;
     toggle(): void;
+    getMarkdown(): string | false;
+    setMarkdown(markdown: string): true | null | false;
     [key: string]: (...args: any[]) => any;
   }
 
@@ -2275,6 +2366,34 @@ declare module "froala-editor" {
     show(id: string): void;
     hide(id: string, restoreSelection: boolean): void;
     resize(id: string): void;
+  }
+
+  /**
+   * Shared "only one right-docked panel at a time" coordination module — a panel either fully
+   * hands its element + visible-class over via register()/unregister(), or, if it manages its
+   * own visibility (like the collaborative comment panel), participates via
+   * registerCoexistence()/unregisterCoexistence() instead. Present on every editor instance
+   * regardless of which plugins are enabled. See src/js/modules/ui/dock_panel.js.
+   */
+  export interface DockPanel {
+    /** Registers a panel element under `id`; `visibleClass` is the class this module toggles to show/hide it. */
+    register(id: string, el: Element, visibleClass: string): void;
+    /** Unregisters a previously register()'d panel, hiding it first if still open. */
+    unregister(id: string): void;
+    /** Registers a panel that manages its own element/visibility but still wants coexistence coordination. */
+    registerCoexistence(id: string, handlers: { isOpen: () => boolean; hide: () => void }): void;
+    /** Unregisters a previously registerCoexistence()'d panel. */
+    unregisterCoexistence(id: string): void;
+    /** Shows a register()'d panel by id, hiding every other registered/coexisting panel first (fires the 'dockPanel.opening' event). */
+    show(id: string): void;
+    /** Hides a register()'d panel by id. */
+    hide(id: string): void;
+    /** Shows the panel if hidden, hides it if shown. */
+    toggle(id: string): void;
+    /** Whether a register()'d panel is currently visible. */
+    isOpen(id: string): boolean;
+    /** Mirrors the editor's height/heightMin/heightMax options onto a panel element as inline styles. */
+    applyEditorHeight(panelEl: Element | null): void;
   }
 
   export interface Node {
@@ -2382,7 +2501,7 @@ declare module "froala-editor" {
   export interface FroalaSelection {
     blocks(toggleList?: any, keepLi?: any): any[];
     clear(): void;
-    element(): HTMLElement;
+    element(skipCaptionNormalization?: boolean): HTMLElement;
     endElement(): Element;
     get(): string | object;
     inEditor(): boolean;
@@ -2616,6 +2735,65 @@ declare module "froala-editor" {
   export interface AiAssist {
     _init(): void;
     showPromptPopup(): void;
+    /**
+     * Sends a prompt (and optional context) to the configured AI backend — either the custom
+     * aiAssistRequest handler or the aiAssistEndpoint fetch — and resolves the full answer.
+     * Shared by the prompt popup and other AI features (AIImproveWriting, AI Chat) so
+     * request/response mechanics live in one place.
+     */
+    requestAnswer(params: {
+      prompt: string;
+      question?: string;
+      context?: string;
+      sessionId?: string;
+      questionOrderNumber?: number;
+      autoComplete?: boolean;
+      webSearchEnabled?: boolean;
+      model?: string;
+      reasoningEnabled?: boolean;
+      files?: AiChatFile[];
+      referenceUrls?: string[];
+    }, signal: AbortSignal): Promise<{ answer: string; session_id?: string; webSearchUsed?: boolean }>;
+    /**
+     * Streaming counterpart of requestAnswer — forwards incremental text chunks to `onChunk` as
+     * they arrive. Additive sibling; does not change requestAnswer's own signature or behavior.
+     */
+    requestAnswerStream(params: {
+      prompt: string;
+      question?: string;
+      context?: string;
+      sessionId?: string;
+      questionOrderNumber?: number;
+      webSearchEnabled?: boolean;
+      model?: string;
+      reasoningEnabled?: boolean;
+      files?: AiChatFile[];
+      referenceUrls?: string[];
+    }, onChunk: (chunk: string) => void, signal: AbortSignal): Promise<{ answer: string }>;
+  }
+
+  export interface AiImproveWriting {
+    /** True while a standalone (non-collaborative) review session is open. */
+    hasActiveSession(): boolean;
+    /** True while an AI request for Improve Writing is in flight. */
+    isInFlight(): boolean;
+    /** True while the collaboration-aware review popup (aiAssist.collabReview) is open. */
+    hasActiveCollabReview(): boolean;
+    /** Entry point: sends the current selection to the AI and opens the appropriate review UI. */
+    start(): void;
+    /** Accepts every pending hunk in the active standalone review session. */
+    acceptAllSession(): void;
+    /** Rejects every pending hunk in the active standalone review session. */
+    rejectAllSession(): void;
+    /**
+     * Applies an externally-sourced rewrite (e.g. from AI Chat's "Apply to document") using the
+     * same word-diff/review flow as Improve Writing itself, for a caller whose own UI already
+     * served as the confirmation step. Applies immediately when collaborating instead of opening
+     * the collab-safe review popup (no effect on the non-collaborating branch). Returns false
+     * (no-op) when busy (an active session/collab review/in-flight request) or when `range`'s
+     * text no longer matches `originalText`.
+     */
+    applyExternalRewriteDirect(range: Range, originalText: string, answer: string): boolean;
   }
 
   export interface FilerobotOptions {
@@ -2646,6 +2824,86 @@ declare module "froala-editor" {
   type AiAssistOption = {
     title: string;
     prompt: string;
+  }
+
+  // AI Chat
+
+  export type AiChatModel = {
+    /** Identifier matched against aiChatDefaultModel and sent as the `model` request param. */
+    modelName: string;
+    /** Human-readable label shown in the dropdown/button; falls back to modelName when omitted. */
+    displayName?: string;
+    description?: string;
+    webSearch?: boolean;
+    reasoning?: boolean;
+  }
+
+  /** A "files" entry accepted by requestAnswer/requestAnswerStream and the aiAssistRequest/aiAssistEndpoint payload. PDF/image entries carry base64; TXT/MD/DOCX entries carry textContent instead. */
+  export type AiChatFile =
+    | { name: string; mimeType: string; base64: string }
+    | { name: string; mimeType: string; textContent: string };
+
+  /** Input accepted by AiChatAssistant.addContextSource(). 'selection' is never manually added — it appears automatically whenever the editor has an active selection. */
+  export type AiChatContextSourceInput = {
+    type: 'document' | 'file' | 'url';
+    /** Required when type is 'file'. */
+    file?: File;
+    /** Required when type is 'url'. */
+    url?: string;
+  }
+
+  /** A context source chip descriptor, as returned by addContextSource() / read via getActiveSources() internally. */
+  export type AiChatContextSource = {
+    id: string;
+    type: 'document' | 'selection' | 'file' | 'url';
+    label: string;
+    status: 'ready' | 'pending' | 'rejected' | 'unsupported-pending';
+    removable: boolean;
+    extension?: string;
+    fileType?: string;
+    mimeType?: string;
+    base64?: string;
+    textContent?: string;
+    url?: string;
+    file?: File;
+    errorMessage?: string | null;
+  }
+
+  /** A single conversation turn as returned by AiChatAssistant.getChatHistory(), oldest first. */
+  export type AiChatHistoryRecord = {
+    id: string;
+    role: 'user' | 'assistant';
+    text: string;
+    createdAt: number | null;
+    contextText: string;
+    contextKind: 'document' | 'selection' | null;
+    webSearchUsed: boolean;
+    applied: boolean;
+    error: boolean;
+    streaming: boolean;
+  }
+
+  export interface AiChatAssistant {
+    /**
+     * Opens the AI Chat panel if closed, closes it if open — the only public panel control.
+     * Hides the collaborative comment panel (or vice versa); only one right-docked panel is
+     * ever visible at a time. Silently no-ops when aiSupplementalTermsAccepted is false.
+     */
+    togglePanel(): void;
+    /** Whether the AI Chat panel is currently open. */
+    isPanelOpen(): boolean;
+    /** Whether the conversation transcript has at least one message. */
+    hasActiveConversation(): boolean;
+    /** Sends a free-form prompt using the currently active context sources and web-search/model/reasoning toggle state. */
+    sendMessage(text: string): void;
+    /** Adds a context source. 'file' resolves asynchronously (FileReader); 'document' and 'url' resolve synchronously. */
+    addContextSource(source: AiChatContextSourceInput): AiChatContextSource | Promise<AiChatContextSource>;
+    /** Removes a previously-added context source by id. Removing 'document' turns the "Current Document" toggle off; 'selection' is a no-op (automatic, not user-removable). */
+    removeContextSource(id: string): void;
+    /** Applies the given chat message's response text back into the document, reusing AiImproveWriting's diff/apply flow. */
+    applyToEditor(messageId: string): void;
+    /** The full conversation so far, oldest turn first, as plain serializable records. */
+    getChatHistory(): AiChatHistoryRecord[];
   }
 
   export interface CollabVersionRecord {
@@ -2721,6 +2979,10 @@ declare module "froala-editor" {
     autoSaveReset(): void;
     /** Force-refresh the version list from the backend. */
     checkForUpdates(): Promise<CollabVersionRecord[]>;
+    /** Whether the collaborative side panel is currently visible — used by editor.dockPanel to keep only one right-docked panel (this one or the AI Chat panel) visible at a time. */
+    isPanelOpen(): boolean;
+    /** Hides the collaborative side panel so another right-docked panel (the AI Chat panel) can take its place. */
+    hidePanelForCoexistence(): void;
   }
 
 }

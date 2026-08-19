@@ -1,5 +1,5 @@
 /*!
- * froala_editor v5.3.1 (https://www.froala.com/wysiwyg-editor)
+ * froala_editor v5.4.0 (https://www.froala.com/wysiwyg-editor)
  * License https://froala.com/wysiwyg-editor/terms/
  * Copyright 2014-2026 Froala Labs
  */
@@ -423,6 +423,8 @@ iframe.fr-iframe {
     height: 24px; }
 .fr-toolbar .fr-btn-grp .fr-command.fr-btn.fr-active:not(.fr-dropdown) svg path, .fr-toolbar .fr-more-toolbar .fr-command.fr-btn.fr-active:not(.fr-dropdown) svg path, .fr-toolbar .fr-buttons:not(.fr-tabs) .fr-command.fr-btn.fr-active:not(.fr-dropdown) svg path, .fr-popup .fr-btn-grp .fr-command.fr-btn.fr-active:not(.fr-dropdown) svg path, .fr-popup .fr-more-toolbar .fr-command.fr-btn.fr-active:not(.fr-dropdown) svg path, .fr-popup .fr-buttons:not(.fr-tabs) .fr-command.fr-btn.fr-active:not(.fr-dropdown) svg path, .fr-modal .fr-btn-grp .fr-command.fr-btn.fr-active:not(.fr-dropdown) svg path, .fr-modal .fr-more-toolbar .fr-command.fr-btn.fr-active:not(.fr-dropdown) svg path, .fr-modal .fr-buttons:not(.fr-tabs) .fr-command.fr-btn.fr-active:not(.fr-dropdown) svg path {
   fill: #0098f7; }
+.fr-toolbar.fr-disabled.fr-pointer-events-none, .fr-popup.fr-disabled.fr-pointer-events-none, .fr-modal.fr-disabled.fr-pointer-events-none {
+  pointer-events: none; }
 .fr-toolbar.fr-disabled .fr-btn, .fr-toolbar.fr-disabled .fr-btn.fr-active, .fr-popup.fr-disabled .fr-btn, .fr-popup.fr-disabled .fr-btn.fr-active, .fr-modal.fr-disabled .fr-btn, .fr-modal.fr-disabled .fr-btn.fr-active {
   color: #bdbdbd;
   -webkit-opacity: 0.5;
@@ -482,6 +484,43 @@ iframe.fr-iframe {
 
 .fr-popup.fr-mobile .fr-command:focus-visible {
   outline: none; }
+
+.fr-box.fr-collab-panel-open,
+.fr-box.fr-ai-chat-panel-open {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: auto auto auto; }
+  .fr-box.fr-collab-panel-open > .fr-toolbar,
+  .fr-box.fr-collab-panel-open > .fr-second-toolbar,
+  .fr-box.fr-ai-chat-panel-open > .fr-toolbar,
+  .fr-box.fr-ai-chat-panel-open > .fr-second-toolbar {
+    grid-column: 1 / -1; }
+  .fr-box.fr-collab-panel-open > .fr-wrapper,
+  .fr-box.fr-ai-chat-panel-open > .fr-wrapper {
+    grid-column: 1;
+    grid-row: 2;
+    min-width: 0; }
+  .fr-box.fr-collab-panel-open > .fr-collab-panel,
+  .fr-box.fr-collab-panel-open > .fr-ai-chat-panel,
+  .fr-box.fr-ai-chat-panel-open > .fr-collab-panel,
+  .fr-box.fr-ai-chat-panel-open > .fr-ai-chat-panel {
+    grid-column: 2;
+    grid-row: 2;
+    align-self: stretch; }
+  .fr-box.fr-collab-panel-open > .fr-popup,
+  .fr-box.fr-ai-chat-panel-open > .fr-popup {
+    grid-column: 1 / -1;
+    grid-row: 1 / -1; }
+
+.fr-box.fr-bottom.fr-collab-panel-open > .fr-toolbar, .fr-box.fr-bottom.fr-ai-chat-panel-open > .fr-toolbar {
+  grid-row: 3; }
+.fr-box.fr-bottom.fr-collab-panel-open > .fr-wrapper, .fr-box.fr-bottom.fr-ai-chat-panel-open > .fr-wrapper {
+  border-top-right-radius: 0; }
+.fr-box.fr-bottom.fr-collab-panel-open > .fr-collab-panel,
+.fr-box.fr-bottom.fr-collab-panel-open > .fr-ai-chat-panel, .fr-box.fr-bottom.fr-ai-chat-panel-open > .fr-collab-panel,
+.fr-box.fr-bottom.fr-ai-chat-panel-open > .fr-ai-chat-panel {
+  border-top: 1px solid #CCCCCC;
+  border-top-right-radius: 10px; }
 
 .fr-command.fr-btn.fr-options {
   width: 16px;
@@ -1056,7 +1095,7 @@ ol.decimal_type > li:before {
         -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; }
   .fr-popup .fr-checkbox-line {
     font-size: 14px;
-    line-height: 1.4px;
+    line-height: 1.4;
     margin-top: 10px; }
     .fr-popup .fr-checkbox-line label {
       cursor: pointer;
@@ -1747,3 +1786,70 @@ span.fr-sr-only {
 .fr-marker {
   display: none;
   line-height: 0; }
+
+.fr-ai-collab-review-content .fr-ai-ins,
+.fr-ai-collab-review-content .fr-ai-del,
+.fr-ai-chat-diff-content .fr-ai-ins,
+.fr-ai-chat-diff-content .fr-ai-del {
+  border-radius: 2px;
+  padding: 0 2px;
+  text-decoration: none; }
+.fr-ai-collab-review-content .fr-ai-ins,
+.fr-ai-chat-diff-content .fr-ai-ins {
+  background: #DFF3E0;
+  border-bottom: 2px solid #2E7D32;
+  color: inherit; }
+  .fr-ai-collab-review-content .fr-ai-ins:hover,
+  .fr-ai-chat-diff-content .fr-ai-ins:hover {
+    background: #BCE5C0; }
+  .fr-ai-collab-review-content .fr-ai-ins:focus,
+  .fr-ai-chat-diff-content .fr-ai-ins:focus {
+    background: #BCE5C0;
+    outline: none; }
+.fr-ai-collab-review-content .fr-ai-del,
+.fr-ai-chat-diff-content .fr-ai-del {
+  background: #F8D7D7;
+  border-bottom: 2px solid #C62828;
+  color: inherit;
+  text-decoration: line-through; }
+  .fr-ai-collab-review-content .fr-ai-del:hover,
+  .fr-ai-chat-diff-content .fr-ai-del:hover {
+    background: #F2A7A7; }
+  .fr-ai-collab-review-content .fr-ai-del:focus,
+  .fr-ai-chat-diff-content .fr-ai-del:focus {
+    background: #F2A7A7;
+    outline: none; }
+.fr-ai-collab-review-content .fr-ai-ins.fr-ai-change-block,
+.fr-ai-chat-diff-content .fr-ai-ins.fr-ai-change-block {
+  display: block;
+  border-bottom: none;
+  border-radius: 0;
+  border-left: 3px solid #2E7D32;
+  padding: 4px 8px;
+  margin: 2px 0;
+  text-decoration: none; }
+  .fr-ai-collab-review-content .fr-ai-ins.fr-ai-change-block > :first-child,
+  .fr-ai-chat-diff-content .fr-ai-ins.fr-ai-change-block > :first-child {
+    margin-top: 0; }
+  .fr-ai-collab-review-content .fr-ai-ins.fr-ai-change-block > :last-child,
+  .fr-ai-chat-diff-content .fr-ai-ins.fr-ai-change-block > :last-child {
+    margin-bottom: 0; }
+.fr-ai-collab-review-content .fr-ai-del.fr-ai-change-block,
+.fr-ai-chat-diff-content .fr-ai-del.fr-ai-change-block {
+  display: block;
+  border-bottom: none;
+  border-radius: 0;
+  border-left: 3px solid #C62828;
+  padding: 4px 8px;
+  margin: 2px 0;
+  text-decoration: none;
+  -webkit-opacity: 0.7;
+  -moz-opacity: 0.7;
+  opacity: 0.7;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; }
+  .fr-ai-collab-review-content .fr-ai-del.fr-ai-change-block > :first-child,
+  .fr-ai-chat-diff-content .fr-ai-del.fr-ai-change-block > :first-child {
+    margin-top: 0; }
+  .fr-ai-collab-review-content .fr-ai-del.fr-ai-change-block > :last-child,
+  .fr-ai-chat-diff-content .fr-ai-del.fr-ai-change-block > :last-child {
+    margin-bottom: 0; }
