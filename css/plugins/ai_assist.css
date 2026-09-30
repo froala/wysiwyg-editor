@@ -1,5 +1,5 @@
 /*!
- * froala_editor v5.4.0 (https://www.froala.com/wysiwyg-editor)
+ * froala_editor v5.5.0 (https://www.froala.com/wysiwyg-editor)
  * License https://froala.com/wysiwyg-editor/terms/
  * Copyright 2014-2026 Froala Labs
  */
@@ -873,10 +873,6 @@
           .fr-popup .fr-layer.fr-active.fr-ai-collab-review .fr-ai-collab-review-footer .fr-ai-collab-review-actions .fr-ai-collab-review-btn.fr-ai-collab-review-btn-primary:hover, .fr-popup .fr-layer.fr-active.fr-ai-collab-review .fr-ai-collab-review-footer .fr-ai-collab-review-actions .fr-ai-collab-review-btn.fr-ai-collab-review-btn-primary:focus {
             background: #007acc; }
 
-::highlight(ai-chat-selection) {
-  background-color: rgba(181, 214, 253, 0.8);
-  color: #000; }
-
 .fr-ai-chat-panel__resize-shield {
   position: fixed;
   top: 0;
@@ -1517,6 +1513,14 @@
     padding: 4px 6px; }
     .fr-ai-chat-conversation .fr-ai-chat-message-error-state .fr-ai-chat-retry-btn:hover {
       background: darkena(#f8d7da, 10%); }
+  .fr-ai-chat-conversation .fr-ai-chat-capability-notice {
+    margin-top: 6px;
+    padding: 6px 8px;
+    border-radius: 6px;
+    font-size: 12px;
+    line-height: 1.4;
+    color: #333333;
+    background: #ebebeb; }
   .fr-ai-chat-conversation .fr-ai-chat-btn {
     display: inline-flex;
     align-items: center;
@@ -1548,6 +1552,13 @@
     color: #0098f7; }
     .fr-ai-chat-conversation .fr-ai-chat-toggle-btn.fr-active:hover {
       background: #c2e6fd; }
+  .fr-ai-chat-conversation .fr-ai-chat-toggle-btn.fr-disabled {
+    opacity: 0.45;
+    cursor: not-allowed; }
+    .fr-ai-chat-conversation .fr-ai-chat-toggle-btn.fr-disabled:hover {
+      background: transparent; }
+    .fr-ai-chat-conversation .fr-ai-chat-toggle-btn.fr-disabled svg {
+      background-image: linear-gradient(to bottom right, transparent calc(50% - 0.6px), currentColor calc(50% - 0.6px), currentColor calc(50% + 0.6px), transparent calc(50% + 0.6px)); }
   .fr-ai-chat-conversation .fr-ai-chat-add-context-btn[aria-expanded="true"] {
     background: #e0f3fe;
     color: #0098f7; }

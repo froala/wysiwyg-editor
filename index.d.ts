@@ -127,6 +127,11 @@ declare module "froala-editor" {
     static OPTS_MAPPING: object;
     static POPUP_TEMPLATES: { [key: string]: any};
     static POWERED_BY: string;
+    /**
+     * Highlight name the editor's own popup selection highlight is registered under
+     * (see FroalaSelection.addHighlight). Read this rather than hardcoding the string.
+     */
+    static SELECTION_HIGHLIGHT: string;
     static SHARED: object;
     static SHORTCUTS_MAP: object;
     static SIMPLE_ENTER_TAGS: string[];
@@ -1270,6 +1275,7 @@ declare module "froala-editor" {
     editorClass: string;
     enter: ENTER_BR | ENTER_P | ENTER_DIV;
     fullPage: boolean;
+    headless: boolean;
     height: number | string;
     heightMax: number | string;
     heightMin: number | string;
@@ -1422,6 +1428,7 @@ declare module "froala-editor" {
     // Lists
     listAdvancedTypes: boolean;
     preserveListLineOnBackspace: boolean;
+    preserveListMarkerStyle: boolean;
 
     // Quick Insert
     quickInsertButtons: string[];
@@ -1539,7 +1546,11 @@ declare module "froala-editor" {
       session_id?: string;
       question_order_number?: number;
       autoComplete?: boolean;
+      /** Present only on a "Try again" replay, so the handler can force a fresh answer for an identical prompt. */
+      regenerate?: boolean;
       // AI Chat additive fields — only present when actually set/truthy by the caller.
+      // webSearchEnabled/reasoningEnabled arrive already normalized: a capability the
+      // model named in `model` declares false in `aiChatModels` never reaches this handler.
       webSearchEnabled?: boolean;
       model?: string;
       reasoningEnabled?: boolean;
@@ -1568,13 +1579,13 @@ declare module "froala-editor" {
     inlineSuggestionsPromptTemplate: string;
 
     // AI Chat
-    /** Initial state of the AI Chat web-search toggle. */
+    /** Initial state of the AI Chat web-search toggle. Only a request: it is forced off when the selected model in aiChatModels declares `webSearch: false`. */
     aiChatWebSearchEnabled: boolean;
     /** Selectable model catalogue for the composer's Model picker. Empty (default) hides the model dropdown entirely. */
     aiChatModels: AiChatModel[];
     /** modelName (not displayName) selected when the panel opens; null or an unrecognized name falls back to the first entry of aiChatModels. */
     aiChatDefaultModel: string | null;
-    /** Initial state of the AI Chat reasoning toggle. */
+    /** Initial state of the AI Chat reasoning toggle. Only a request: it is forced off when the selected model in aiChatModels declares `reasoning: false`. */
     aiChatReasoningEnabled: boolean;
     /** Whether AI Chat requests responses via requestAnswerStream (true) or requestAnswer (false). */
     aiChatStreamResponse: boolean;
@@ -1669,8 +1680,9 @@ declare module "froala-editor" {
     'image.inserted': (this: FroalaEditor, img: object, response: any) => void;
     'image.loaded': (this: FroalaEditor, img: object) => void;
     'image.removed': (this: FroalaEditor, img: object) => void;
-    'image.replaced': (this: FroalaEditor, img: object, response: any) => void;
+    'image.replaced': (this: FroalaEditor, img: object, response: any, old_src: string) => void;
     'image.resize': (this: FroalaEditor, img: object) => void;
+    'image.resizeStart': (this: FroalaEditor, img: object) => void;
     'image.resizeEnd': (this: FroalaEditor, img: object) => void;
     'image.uploaded': (this: FroalaEditor, response: any) => boolean;
     'image.uploadedToS3': (this: FroalaEditor, link: URL, key: string, response: any) => void;
@@ -1746,7 +1758,7 @@ declare module "froala-editor" {
     //video event
     'video.codeError': (this: FroalaEditor, code: string) => void;
     'video.inserted': (this: FroalaEditor, $video: any) => void;
-    'video.replaced': (this: FroalaEditor, $video: any) => void;
+    'video.replaced': (this: FroalaEditor, $video: any, response?: any, old_src?: string) => void;
     'video.linkError': (this: FroalaEditor, link: string) => void;
     'video.removed': (this: FroalaEditor, $video: any) => void;
     'video.loaded': (this: FroalaEditor, $video: any) => void;
@@ -1755,6 +1767,8 @@ declare module "froala-editor" {
     'video.beforeUpload': (this: FroalaEditor, $video: any) => boolean;
     'video.beforeRemove': (this: FroalaEditor, $video: any) => boolean;
     'video.hideResizer': (this: FroalaEditor) => boolean;
+    'video.resizeStart': (this: FroalaEditor, $video: any) => void;
+    'video.resizeEnd': (this: FroalaEditor, $video: any) => void;
     //quick insert event
     'quickInsert.commands.after': (this: FroalaEditor, cmd: any) => void;
     'quickInsert.commands.before': (this: FroalaEditor, cmd: any) => boolean;
@@ -1809,6 +1823,7 @@ declare module "froala-editor" {
     'collab.connectionStatus': (this: FroalaEditor, status: 'connecting' | 'connected' | 'disconnected') => void;
     'collab.synced': (this: FroalaEditor) => void;
     'collab.remoteContentChanged': (this: FroalaEditor) => void;
+    'collab.panelStateChanged': (this: FroalaEditor, state: CollabPanelState, previousState: CollabPanelState, origin: 'user' | 'coexistence') => void;
     'version:create': (this: FroalaEditor, record: CollabVersionRecord) => void;
     'version:autosave': (this: FroalaEditor, record: CollabVersionRecord) => void;
     'version:restore': (this: FroalaEditor, record: CollabVersionRecord) => void;
@@ -2245,6 +2260,11 @@ declare module "froala-editor" {
     getSafariVersion(): number | null;
     getImagePopupPosition($el: any): { top: number; left: number };
     selectionBlocks(excludeSelectors?: string[], selectionBlocks?: any[]): any[];
+    isHeadless(): boolean;
+    isUserOpt(key: string): boolean;
+    headlessDefault(key: string, value: any): void;
+    guardHeadlessUI(pluginApi: any, methodNames: string[]): boolean;
+    ensureHeadlessFocus(): void;
   }
 
   export interface HTML {
@@ -2499,16 +2519,48 @@ declare module "froala-editor" {
   }
 
   export interface FroalaSelection {
+    /**
+     * Paints `range` as highlighted text using the CSS Custom Highlight API, without
+     * modifying the DOM. The range is drawn by a matching `::highlight(name)` CSS rule.
+     *
+     * Calling it again with the same name replaces this editor's previous range for that
+     * name. Multiple editor instances on one page share a single registration per name and
+     * each contributes its own range, so one instance can never clear another's. Anything
+     * still registered when the editor is destroyed is cleared automatically.
+     *
+     * Requires Chrome/Edge 105+, Safari 17.2+ or Firefox 140+ (same versions on mobile);
+     * returns false and paints nothing on anything older.
+     *
+     * @param name Highlight name, matching a `::highlight(name)` rule in the loaded
+     *   stylesheet. The names Froala ships are `FroalaEditor.SELECTION_HIGHLIGHT`
+     *   ('fr-selection-highlight') and 'ai-chat-selection'.
+     * @param range A live range inside this editor.
+     * @returns Whether the range was registered.
+     */
+    addHighlight(name: string, range: Range): boolean;
     blocks(toggleList?: any, keepLi?: any): any[];
     clear(): void;
     element(skipCaptionNormalization?: boolean): HTMLElement;
     endElement(): Element;
     get(): string | object;
+    /**
+     * The range this editor currently has registered under `name`, or null. For callers
+     * that need the highlighted region itself rather than the live Selection — which has
+     * usually moved into a popup input by the time a highlight is showing.
+     */
+    highlightedRange(name: string): Range | null;
     inEditor(): boolean;
     info(element: Element): object;
     isCollapsed(): boolean;
     isFull(): boolean;
     ranges(index: number): Range | Range[];
+    /**
+     * Removes only this editor's own range from the `name` highlight, leaving other
+     * instances' ranges intact. Safe to call when nothing is registered.
+     *
+     * @returns Whether a range was removed.
+     */
+    removeHighlight(name: string): boolean;
     restore(): boolean;
     save(): void;
     setAfter(node: Element, use_current_node?: any): boolean;
@@ -2748,8 +2800,12 @@ declare module "froala-editor" {
       sessionId?: string;
       questionOrderNumber?: number;
       autoComplete?: boolean;
+      /** Flags a "Try again" replay of a prior question/context so a caching backend returns a fresh answer. */
+      regenerate?: boolean;
+      /** Requested web-search grounding. Stripped before the request is sent when `model` names an `aiChatModels` entry declaring `webSearch: false`. */
       webSearchEnabled?: boolean;
       model?: string;
+      /** Requested extended reasoning. Stripped before the request is sent when `model` names an `aiChatModels` entry declaring `reasoning: false`. */
       reasoningEnabled?: boolean;
       files?: AiChatFile[];
       referenceUrls?: string[];
@@ -2764,8 +2820,10 @@ declare module "froala-editor" {
       context?: string;
       sessionId?: string;
       questionOrderNumber?: number;
+      /** Requested web-search grounding. Stripped before the request is sent when `model` names an `aiChatModels` entry declaring `webSearch: false`. */
       webSearchEnabled?: boolean;
       model?: string;
+      /** Requested extended reasoning. Stripped before the request is sent when `model` names an `aiChatModels` entry declaring `reasoning: false`. */
       reasoningEnabled?: boolean;
       files?: AiChatFile[];
       referenceUrls?: string[];
@@ -2834,7 +2892,18 @@ declare module "froala-editor" {
     /** Human-readable label shown in the dropdown/button; falls back to modelName when omitted. */
     displayName?: string;
     description?: string;
+    /**
+     * Whether this model can ground answers with a web search.
+     *
+     * Tri-state, and the distinction matters: `false` gates the composer's web
+     * search toggle (it renders disabled, cannot be activated, is forced off
+     * when this model is selected, and `webSearchEnabled` is stripped from its
+     * requests), while *omitting* the property leaves the toggle exactly as it
+     * behaves today. Only an explicit `false` gates anything, so catalogues
+     * written before these flags existed are unaffected.
+     */
     webSearch?: boolean;
+    /** Whether this model supports extended reasoning. Tri-state with the same meaning as `webSearch` — only an explicit `false` gates the reasoning toggle. */
     reasoning?: boolean;
   }
 
@@ -2940,6 +3009,11 @@ declare module "froala-editor" {
       /** Milliseconds before reconnect attempt after a disconnect. Default: 2000. */
       reconnectDelay: number;
     };
+    /** Side panel (suggestions/comments) configuration. */
+    panel: {
+      /** State the panel starts in, applied before its first paint so there is no flash or layout shift. Default: 'expanded'. */
+      defaultState: CollabPanelState;
+    };
     /** Version control (snapshot) configuration. */
     versionControl: {
       /** When true, automatically saves a snapshot on the configured interval. */
@@ -2951,6 +3025,9 @@ declare module "froala-editor" {
     };
   }
 
+  /** The collaborative side panel's state: the full panel, the author strip, or not shown at all. */
+  export type CollabPanelState = 'expanded' | 'collapsed' | 'hidden';
+
   export interface Collaborative {
     _init(): void;
     /** Switch collaboration mode: 'editing' | 'suggesting' | 'viewing'. */
@@ -2961,6 +3038,10 @@ declare module "froala-editor" {
     addComment(text: string): void;
     /** Expand (true) or collapse (false) the suggestions/comments side panel. Omit to toggle. */
     updatePanelState(expand?: boolean): void;
+    /** The side panel's current state. */
+    getPanelState(): CollabPanelState;
+    /** Put the side panel into one of its three states. Treated as a local user action, so the state survives peer updates, syncs and mode changes. */
+    setPanelState(state: CollabPanelState): void;
     /** Toggle the side panel between Open and Resolved views. */
     switchPanelType(): void;
     /** Re-fetch comments and suggestions from the backend and write them into the Yjs maps. */

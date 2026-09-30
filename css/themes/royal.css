@@ -1,5 +1,5 @@
 /*!
- * froala_editor v5.4.0 (https://www.froala.com/wysiwyg-editor)
+ * froala_editor v5.5.0 (https://www.froala.com/wysiwyg-editor)
  * License https://froala.com/wysiwyg-editor/terms/
  * Copyright 2014-2026 Froala Labs
  */
@@ -46,6 +46,13 @@
     overflow-x: auto;
     min-height: 60px;
     text-align: left; }
+.royal-theme.fr-box.fr-headless {
+  border-radius: unset;
+  -moz-border-radius: unset;
+  -webkit-border-radius: unset;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box; }
 .royal-theme .fr-element {
   -webkit-user-select: auto; }
   .royal-theme .fr-element a {
@@ -205,7 +212,7 @@
   background: transparent; }
 .royal-theme .fr-view .fr-selection-handle-selected *::-moz-selection {
   background: transparent; }
-.royal-theme .fr-custom-selection-highlight {
+.royal-theme ::highlight(ai-chat-selection) {
   background-color: rgba(181, 214, 253, 0.8);
   /* light blue */
   color: #000; }
@@ -638,9 +645,6 @@
           color: #FFF; }
           .royal-theme.fr-popup .fr-layer.fr-active.fr-ai-collab-review .fr-ai-collab-review-footer .fr-ai-collab-review-actions .fr-ai-collab-review-btn.fr-ai-collab-review-btn-primary:focus {
             background: #007acc; }
-.royal-theme ::highlight(ai-chat-selection) {
-  background-color: rgba(181, 214, 253, 0.8);
-  color: #000; }
 .royal-theme .fr-ai-chat-panel__resize-shield {
   top: 0;
   right: 0;
@@ -965,6 +969,9 @@
     background: white; }
     .royal-theme .fr-ai-chat-conversation .fr-ai-chat-message-error-state .fr-ai-chat-retry-btn:hover {
       background: darkena(#f8d7da, 10%); }
+  .royal-theme .fr-ai-chat-conversation .fr-ai-chat-capability-notice {
+    color: #333333;
+    background: #ebebeb; }
   .royal-theme .fr-ai-chat-conversation .fr-ai-chat-btn {
     color: #333333;
     font-family: inherit;
@@ -1397,8 +1404,12 @@
     color: inherit; }
   .royal-theme .fr-wrapper .fr-view .fr-suggestion-insert img {
     border: 2px solid #2E7D32; }
-  .royal-theme .fr-wrapper .fr-view .fr-suggestion-insert .fr-embedly iframe {
+  .royal-theme .fr-wrapper .fr-view .fr-suggestion-insert .fr-video > audio {
     border: 2px solid #2E7D32; }
+  .royal-theme .fr-wrapper .fr-view .fr-suggestion-insert[data-tc-suggestion-type="replace"] .fr-video > audio {
+    border-color: #F9A825; }
+  .royal-theme .fr-wrapper .fr-view .fr-suggestion-insert:has(.fr-video) {
+    padding: 0; }
   .royal-theme .fr-wrapper .fr-view .fr-suggestion-insert .fr-code-snippet {
     background: #DFF3E0;
     border-bottom: 2px solid #2E7D32;
@@ -1492,6 +1503,12 @@
     .royal-theme .fr-wrapper .fr-view .fr-suggestion-delete hr.fr-suggestion-active {
       background: #F2A7A7;
       outline: none; }
+  .royal-theme .fr-wrapper .fr-view .fr-suggestion-delete img {
+    border: 2px solid #C62828; }
+  .royal-theme .fr-wrapper .fr-view .fr-suggestion-delete .fr-video > audio {
+    border: 2px solid #C62828; }
+  .royal-theme .fr-wrapper .fr-view .fr-suggestion-delete:has(.fr-video) {
+    padding: 0; }
 .royal-theme .fr-wrapper .fr-view .fr-suggestion-replace-ins {
   background: #FFF3CD;
   border-bottom: 2px solid #F9A825;
@@ -1593,12 +1610,34 @@
 .royal-theme .fr-wrapper th.fr-tc-delete.fr-suggestion-focused {
   background-color: #F2A7A7;
   box-shadow: inset 0 0 0 2px #C62828; }
-.royal-theme .fr-wrapper th.fr-tc-format {
+.royal-theme .fr-wrapper .fr-tc-format {
   background-color: #F3EEFC;
   box-shadow: inset 0 0 0 1px #5E35B1; }
+.royal-theme .fr-wrapper .fr-embedly iframe.fr-tc-format {
+  border: 2px solid #5E35B1; }
+.royal-theme .fr-wrapper span.fr-video.fr-tc-format > audio {
+  border: 2px solid #5E35B1; }
+.royal-theme .fr-wrapper .fr-img-caption .fr-inner.fr-tc-format[data-tc-caption-op="insert"] {
+  background-color: #DFF3E0;
+  box-shadow: inset 0 0 0 1px #2E7D32; }
+.royal-theme .fr-wrapper .fr-img-caption .fr-inner.fr-tc-format[data-tc-caption-op="remove"] {
+  background-color: #F8D7D7;
+  box-shadow: inset 0 0 0 1px #C62828; }
+.royal-theme .fr-wrapper .fr-tc-format[data-tc-m-linkhref] {
+  background-color: #FFF3CD;
+  box-shadow: inset 0 0 0 1px #F9A825; }
+.royal-theme .fr-wrapper .fr-tc-format[data-tc-m-linkhref].fr-suggestion-focused {
+  background-color: #FFE08A;
+  box-shadow: inset 0 0 0 2px #F9A825; }
 .royal-theme .fr-wrapper th.fr-tc-format.fr-suggestion-focused {
   background-color: #C7B6EA;
   box-shadow: inset 0 0 0 2px #5E35B1; }
+.royal-theme .fr-wrapper .fr-tc-format[data-tc-m-videosrc] {
+  background-color: #FFF3CD;
+  box-shadow: inset 0 0 0 1px #F9A825; }
+.royal-theme .fr-wrapper .fr-tc-format[data-tc-m-videosrc].fr-suggestion-focused {
+  background-color: #FFE08A;
+  box-shadow: inset 0 0 0 2px #F9A825; }
 .royal-theme.fr-box .fr-collab-avatar-tooltip {
   background: #E1F7F3;
   color: #333333;

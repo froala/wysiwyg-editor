@@ -1,5 +1,5 @@
 /*!
- * froala_editor v5.4.0 (https://www.froala.com/wysiwyg-editor)
+ * froala_editor v5.5.0 (https://www.froala.com/wysiwyg-editor)
  * License https://froala.com/wysiwyg-editor/terms/
  * Copyright 2014-2026 Froala Labs
  */
@@ -465,6 +465,8 @@
       'Add context': 'Çarçoveyê lê zêde bike',
       'Web search': 'Lêgerîna Webê',
       'Reasoning': 'Hizirandin',
+      'not supported by this model': 'لایەن ئەم مۆدیلەوە پشتگیری ناکرێت',
+      'turned off — not supported by this model': 'کوژاوە — لایەن ئەم مۆدیلەوە پشتگیری ناکرێت',
       'Model': 'Model',
       'Send': 'Bişîne',
       'AI can make mistakes. Always review output for accuracy.': 'AI dikare xeletiyan bike. Her gav rastiya encamê kontrol bikin.',
@@ -507,7 +509,8 @@
       'Resize panel': 'Mezinahiya panelê biguherîne',
       'Collapse AI Chat': 'Chata AI biçûk bike',
       'Expand AI Chat': 'Chata AI fireh bike',
-      'Open the AI Chat Assistant panel': 'Panela Alîkarê Chata AI veke'
+      'Open the AI Chat Assistant panel': 'Panela Alîkarê Chata AI veke',
+      'Open': 'Vekirî'
     },
     direction: 'rtl'
   };

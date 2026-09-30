@@ -1,5 +1,5 @@
 /*!
- * froala_editor v5.4.0 (https://www.froala.com/wysiwyg-editor)
+ * froala_editor v5.5.0 (https://www.froala.com/wysiwyg-editor)
  * License https://froala.com/wysiwyg-editor/terms/
  * Copyright 2014-2026 Froala Labs
  */
@@ -28,7 +28,8 @@
   clear: both;
   break-after: always;
   height: 10px;
-  margin: 2px 0; }
+  margin: 2px 0;
+  box-sizing: content-box; }
   .fr-view .fr-page-break:after {
     border-bottom: 2px dashed #dddddd;
     content: "";
@@ -53,6 +54,7 @@
     background: #dddddd;
     z-index: 1;
     color: #999999;
+    box-sizing: content-box;
     font-family: Arial;
     font-size: 10px;
     font-style: normal;
