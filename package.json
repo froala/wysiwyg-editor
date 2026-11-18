@@ -1,6 +1,6 @@
 {
   "name": "froala-editor",
-  "version": "5.5.0",
+  "version": "5.6.0",
   "types":"index.d.ts",
   "description": "The next generation Javascript WYSIWYG HTML rich text editor made by devs for devs. High performance and modern design make it easy to use for developers and loved by users.",
   "keywords": [
@@ -22,7 +22,10 @@
   "license": "https://www.froala.com/wysiwyg-editor/pricing",
   "repository": {
     "type": "git",
-    "url": "git://github.com/froala/wysiwyg-editor-release.git"
+    "url": "git+https://github.com/froala/wysiwyg-editor.git"
+  },
+  "bugs": {
+    "url": "https://github.com/froala/wysiwyg-editor/issues"
   },
   "maintainers": [
     {

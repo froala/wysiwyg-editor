@@ -61,6 +61,7 @@ declare module "froala-editor" {
     markdown: Markdown;
     modals: Modals;
     node: Node;
+    paintFormat: PaintFormat;
     paragraphFormat: ParagraphFormat;
     paragraphStyle: ParagraphStyle;
     placeholder: Placeholder;
@@ -91,6 +92,7 @@ declare module "froala-editor" {
     shortcuts: Shortcuts;
     codeSnippet: CodeSnippet;
     aiAssist: AiAssist;
+    accessibilityChecker: AccessibilityChecker;
     aiImproveWriting: AiImproveWriting;
     aiChatAssistant?: AiChatAssistant;
     collaborative: Collaborative;
@@ -105,6 +107,20 @@ declare module "froala-editor" {
       optionKeyRequired?: boolean
     ) => void;
     static RegisterTemplate: (name: string, template: string) => void;
+    /** Registers an accessibility rule for every editor on the page. An existing id is replaced, which is how a built-in rule is replaced. Throws when the rule is not complete. */
+    static RegisterA11yRule: (rule: A11yRule) => A11yRule;
+    /** Removes a globally registered accessibility rule. Returns whether one was removed. */
+    static UnregisterA11yRule: (id: string) => boolean;
+    /** Every globally registered accessibility rule. */
+    static A11yRules: () => A11yRule[];
+    /** Whether an alt text is a file name or a camera default rather than a description. */
+    static A11yAltLooksLikeFilename: (text: any) => boolean;
+    /** Conformance levels, lowest to highest. */
+    static A11Y_LEVELS: A11yLevel[];
+    /** Rule ids that resolve onto the rule that covers them (for example D5A to D5). */
+    static A11Y_RULE_ALIASES: GenericObject<string>;
+    /** The patterns that make alt text read like a file name, used by rule I3 and its repair. */
+    static A11Y_ALT_PATTERNS: RegExp[];
     static RegisterQuickInsertButton: (name: string, parameters: object) => void;
     static DefineIconTemplate: (name: string, template: string) => void;
     static ICON_DEFAULT_TEMPLATE: string;
@@ -117,6 +133,8 @@ declare module "froala-editor" {
     static FILEICONS: Partial<fileIcons>;
     static HAIR_SPACE: string;
     static HTML5Map: {B: string, I: string, STRIKE: string};
+    static CORE_ALLOWED_ATTRS: string[];
+    static PLUGIN_ATTRIBUTES: {[plugin: string]: string[]};
     static ICONS: Partial<icons>;
     static INSTANCES: FroalaEditor[];
     static INVISIBLE_SPACE: string;
@@ -1262,6 +1280,7 @@ declare module "froala-editor" {
 
     // General
     allowStylingOnNonEditable : boolean;
+    /** The "Powered by Froala" watermark. It can only be turned off with a valid license key. */
     attribution: boolean;
     autoStart: boolean;
     autofocus: boolean;
@@ -1309,6 +1328,11 @@ declare module "froala-editor" {
     pluginsEnabled: string[];
     pluginsDisabled: string[];
     popupButtons: string[];
+    /**
+     * Lets users drag popups by a handle along their top edge and place them anywhere in the visible window.
+     * The handle can take focus and the arrow keys move the popup. Default: false.
+     */
+    popupDraggable: boolean;
     requestHeaders: GenericObject<string>; 
     requestWithCORS: boolean;
     requestWithCredentials: boolean;
@@ -1416,6 +1440,10 @@ declare module "froala-editor" {
     linkNoReferrer: boolean;
     linkStyles: GenericObject<string>; 
     linkText: boolean;
+    linkPhonePattern: RegExp | string;
+    linkPhoneExample: string;
+    linkPhoneErrorMessage: string;
+    linkEmailDomains: string[];
 
     // Paragraph Format
     lineHeights: GenericObject<string> | LineHeightObj[];
@@ -1424,6 +1452,10 @@ declare module "froala-editor" {
     paragraphFormatSelection: boolean;
     paragraphMultipleStyles: boolean;
     paragraphStyles: GenericObject<string>;
+
+    // Paint Format
+    /** Keeps paint mode on after the formatting is applied, until it's turned off or Escape is pressed. Default `false`. */
+    paintFormatContinuous: boolean;
 
     // Lists
     listAdvancedTypes: boolean;
@@ -1573,6 +1605,24 @@ declare module "froala-editor" {
     aiSpeechToTextListeningText: string;
     aiSpeechToTextMaxDuration: number;
     aiSupplementalTermsAccepted: boolean;
+
+    // Accessibility checker
+    /** The conformance level checked: rules above it do not run. Default 'AA'. */
+    accessibilityCheckerLevel: A11yLevel;
+    /** Changes to the rules: an entry with a known id patches that rule (for example to switch it off or change its options), and an entry with a new id and a whole rule adds one. Default []. */
+    accessibilityCheckerRules: A11yRuleEntry[];
+    /** Whether the image alt text dialog offers "Mark as decorative", and the checker offers it as a repair. Default true. */
+    accessibilityCheckerAllowDecorativeImages: boolean;
+    /** Returns the "Learn more" link for a finding, replacing the rule's own. A non-string return, or a throw, falls back to the rule's link. Default null. */
+    accessibilityCheckerHelpUrl: ((this: FroalaEditor, issue: A11yIssue) => string | null | undefined | void) | null;
+    /** Whether the content is scanned again shortly after it changes. Default false. */
+    accessibilityCheckerAutoCheck: boolean;
+    /** The most findings one scan reports; the list is marked as capped when there are more. Default 500. */
+    accessibilityCheckerMaxIssues: number;
+    /** A document with more elements than this shows the checker's busy state before scanning. Default 2000. */
+    accessibilityCheckerBusyThreshold: number;
+    /** A window this narrow (in px) or narrower docks the checker popup to the bottom of the screen. Default 480. */
+    accessibilityCheckerDockWidth: number;
     // Editor-content ghost-text autocomplete ("Smart Compose"-style continuation suggestions, FROALA-854)
     inlineSuggestions: boolean;
     inlineSuggestionsDelay: number;
@@ -1700,6 +1750,13 @@ declare module "froala-editor" {
     'link.bad': (this: FroalaEditor, original_href: string) => void;
     'link.beforeInsert': (this: FroalaEditor, link: string, text: string, attrs: object) => boolean;
     'link.beforeRemove': (this: FroalaEditor, link: string, text: string, attrs: object) => boolean;
+    //paint format event
+    /** Paint formatting was applied to the selection. */
+    'paintFormat.applied': (this: FroalaEditor, format: PaintFormatData) => void;
+    /** Paint mode ended. */
+    'paintFormat.end': (this: FroalaEditor) => void;
+    /** Paint mode started, with the formatting that was copied. */
+    'paintFormat.start': (this: FroalaEditor, format: PaintFormatData) => void;
     //paste event
     'paste.after': (this: FroalaEditor) => void;
     'paste.afterCleanup': (this: FroalaEditor, clipboard_html: string) => void;
@@ -1738,6 +1795,27 @@ declare module "froala-editor" {
     'aiAssist.chatAfterApply': (this: FroalaEditor) => void;
     /** Fired by editor.dockPanel/editor.collaborative when a right-docked panel opens, so any other registered/coexisting panel hides itself. Internal coordination — not typically handled directly. */
     'dockPanel.opening': (this: FroalaEditor, id: string) => void;
+    // Accessibility checker events
+    /** Fired before a scan. Returning false cancels it and the scan reports no findings. */
+    'accessibilityChecker.beforeCheck': (this: FroalaEditor) => boolean | void;
+    /** Fired after a scan with its findings. Returning an array replaces them, which is how a host drops findings it knows are not worth showing. */
+    'accessibilityChecker.checked': (this: FroalaEditor, issues: A11yIssue[]) => A11yIssue[] | void;
+    /** Fired when a rule throws, or a configured rule is not a whole rule, or a repair throws. The other rules still run. */
+    'accessibilityChecker.ruleError': (this: FroalaEditor, ruleId: string, error: Error) => void;
+    /** Fired when the checker popup opens. */
+    'accessibilityChecker.shown': (this: FroalaEditor) => void;
+    /** Fired when the checker popup closes. */
+    'accessibilityChecker.hidden': (this: FroalaEditor) => void;
+    /** Fired when a finding becomes the one the popup shows: opening, stepping, ignoring or repairing. */
+    'accessibilityChecker.issueFocused': (this: FroalaEditor, issue: A11yIssue) => void;
+    /** Fired when a finding is ignored for the session. */
+    'accessibilityChecker.ignored': (this: FroalaEditor, issue: A11yIssue) => void;
+    /** Fired before a repair is applied, with the value entered. Returning false cancels it, and no other event follows. */
+    'accessibilityChecker.beforeRepair': (this: FroalaEditor, issue: A11yIssue, value: any) => boolean | void;
+    /** Fired after a repair changed the content and the content was scanned again. */
+    'accessibilityChecker.repaired': (this: FroalaEditor, issue: A11yIssue) => void;
+    /** Fired when a repair refused the value, with the reason shown to the user. The content is unchanged. */
+    'accessibilityChecker.repairRejected': (this: FroalaEditor, issue: A11yIssue, reason: string) => void;
     // Code Snippet events
     'codeSnippet.beforeInsert': (this: FroalaEditor, code: string) => string | boolean;
     'codeSnippet.afterInsert': (this: FroalaEditor, html: string) => void;
@@ -2337,9 +2415,12 @@ declare module "froala-editor" {
     allSelected(): Element[];
     applyStyle(className: string): object;
     get(): Element;
-    insert(href: string, text: string, attributes?: { [key: string]: any }): object;
+    insert(href: string, text: string, attributes?: { [key: string]: any }, defaultText?: string): object;
     remove(): object;
     showInsertPopup(): void;
+    showLayer(type: 'url' | 'email' | 'phone'): boolean;
+    refreshTab($btn: any, type: 'url' | 'email' | 'phone'): void;
+    refreshChooseLink($btn: any): void;
     usePredefined(val: any, data: any): void;
     insertCallback(): void;
     update(): void;
@@ -2439,6 +2520,35 @@ declare module "froala-editor" {
     openTagString(node: Element): string;
     closeTagString(node: Element): string;
     filter(callback: any): object | any;
+    [key: string]: (...args: any[]) => any;
+  }
+
+  export interface PaintFormatData {
+    /** Inline tags, normalised to `strong`, `em`, `u`, `s`, `sub` and `sup`. */
+    tags: string[];
+    /** Inline style properties and their values, e.g. `{ 'font-size': '18px' }`. */
+    styles: GenericObject<string>;
+    /** Classes from the `inlineClasses` option. */
+    classes: string[];
+  }
+
+  export interface PaintFormat {
+    /** Replaces the selection's inline formatting with the copied one, as one undo step. A collapsed selection paints the word around the caret. Returns `false` when nothing was painted. */
+    apply(): boolean;
+    /** Copies the inline formatting at the caret (or the start of the selection) and returns it. */
+    copy(): PaintFormatData;
+    /** The formatting stored by the last `copy()`, or `null`. */
+    getCopied(): PaintFormatData | null;
+    /** Whether paint mode is on. */
+    isActive(): boolean;
+    /** Copies the formatting at the caret and turns paint mode on; the next click or drag in the content paints it. */
+    start(): void;
+    /** Turns paint mode off. The copied formatting is kept. */
+    stop(): void;
+    /** Whether continuous painting is on. */
+    isContinuous(): boolean;
+    /** Turns continuous painting on or off and updates the toolbar switch. */
+    setContinuous(on: boolean): void;
     [key: string]: (...args: any[]) => any;
   }
 
@@ -3064,6 +3174,176 @@ declare module "froala-editor" {
     isPanelOpen(): boolean;
     /** Hides the collaborative side panel so another right-docked panel (the AI Chat panel) can take its place. */
     hidePanelForCoexistence(): void;
+  }
+
+
+  // ---- Accessibility checker ----
+
+  /** WCAG conformance level. */
+  export type A11yLevel = 'A' | 'AA' | 'AAA';
+
+  export type A11ySeverity = 'error' | 'warning';
+
+  /** What a rule's test, check and repair are given. */
+  export interface A11yContext {
+    /** The editable element being checked. */
+    root: HTMLElement;
+    /** The rule's options: its own defaults with the accessibilityCheckerRules entry on top. */
+    options: GenericObject<any>;
+    /** The conformance level in force. */
+    level: A11yLevel;
+    /** The window the content lives in: an iframe editor's content window, otherwise the page's. Read styles through it. */
+    win: Window;
+    /** The editor's language lookup, with {name} placeholders in the text filled from values. Use it for the text of a finding or a repair. */
+    translate: (text: string, values?: GenericObject<string | number>) => string;
+    editor: FroalaEditor;
+  }
+
+  /** What a whole-document rule's check returns for each element it reports. */
+  export interface A11yFinding {
+    element: Element;
+    /** Replaces the rule's message for this finding. */
+    message?: string;
+    /** True when the result cannot be settled automatically and a person has to look. */
+    needsReview?: boolean;
+  }
+
+  /** One finding from a scan. */
+  export interface A11yIssue {
+    /** Unique within a scan, for example 'I2:3'. */
+    id: string;
+    /** The rule's id. */
+    rule: string;
+    level: A11yLevel;
+    severity: A11ySeverity;
+    title: string;
+    message: string;
+    /** The element the finding is about. */
+    element: Element;
+    /** The element's HTML, for hosts that log findings on a server. */
+    contentID: string;
+    /** The "Learn more" link, from accessibilityCheckerHelpUrl or the rule. */
+    help: string | undefined;
+    /** True when a person has to check the result: shown as "Needs review", not as an error or warning. */
+    needsReview: boolean;
+    /** Whether the rule has a repair the popup can apply. */
+    repairable: boolean;
+  }
+
+  export interface A11yRepairChoice {
+    value: string | number;
+    text: string;
+  }
+
+  /** How a rule's finding can be fixed from the popup. */
+  export interface A11yRepair {
+    /** The control the popup shows: a text field, a select, a checkbox, or nothing but a sentence and a button. */
+    control: 'text' | 'select' | 'checkbox' | 'none';
+    /** The control's visible label. */
+    label?: string | ((element: Element, context: A11yContext) => string);
+    /** For 'none': the sentence shown instead of a control. */
+    note?: string | ((element: Element, context: A11yContext) => string);
+    /** Help shown under a text field. A function is called again as the person types, with the text so far. */
+    hint?: string | ((element: Element, context: A11yContext, typed?: string) => string);
+    /** The label of the Fix button. Default 'Fix'. */
+    button?: string;
+    /** For 'text': adds a "Mark as decorative" checkbox, and apply is given true when it is ticked. Left out when accessibilityCheckerAllowDecorativeImages is false. */
+    decorative?: boolean;
+    /** For 'select': the options. */
+    choices?: A11yRepairChoice[] | ((element: Element, context: A11yContext) => A11yRepairChoice[]);
+    /** The control's starting value. */
+    initial?: (element: Element, context: A11yContext) => string | number | boolean | null | undefined;
+    /**
+     * Changes the element. The value is the text entered, the choice's own value, a boolean for a checkbox or the
+     * decorative tick, or undefined for 'none'. Return false to reject the value: the content must then be unchanged.
+     * Undo steps before and after and the new scan are done for you.
+     */
+    apply: (element: Element, value: any, context: A11yContext) => false | void | any;
+    /** The reason shown when apply rejects a value. */
+    invalid?: string | ((element: Element, value: any, context: A11yContext) => string);
+  }
+
+  /**
+   * An accessibility rule. It is either per element (selector and test) or whole-document (check).
+   */
+  export interface A11yRule {
+    /** Unique. Prefix your own. */
+    id: string;
+    /** The plain-language explanation shown in the popup. */
+    message: string;
+    /** Shown instead of the message when accessibilityCheckerAllowDecorativeImages is false. A message given for the rule in accessibilityCheckerRules replaces both. */
+    messageWithoutDecorative?: string;
+    /** Default 'A'. A rule runs when its level is at or below accessibilityCheckerLevel. */
+    level?: A11yLevel;
+    /** Default 'error'. Needs-review is a result of a rule, not a severity. */
+    severity?: A11ySeverity;
+    /** The popup heading. Default: the id. */
+    title?: string;
+    /** A link to the technique. */
+    help?: string;
+    tags?: string[];
+    /** Default true. */
+    enabled?: boolean;
+    /** The rule's defaults for context.options. */
+    options?: GenericObject<any>;
+    /** With test: the elements to test. */
+    selector?: string;
+    /** Returns true when the element passes, false when it fails, or 'review' when a person has to look. */
+    test?: (element: Element, context: A11yContext) => boolean | 'review';
+    /** Instead of selector and test: returns every element that fails. */
+    check?: (context: A11yContext) => A11yFinding[];
+    /** How the finding can be fixed from the popup. Without it the popup says there is no automatic fix. */
+    repair?: A11yRepair;
+  }
+
+  /** An accessibilityCheckerRules entry: a whole rule, or the keys to change on a rule that exists. */
+  export type A11yRuleEntry = Partial<A11yRule> & { id: string };
+
+  /** A rule as listed by editor.accessibilityChecker.rules(). */
+  export interface A11yRuleInfo {
+    id: string;
+    level: A11yLevel;
+    severity: A11ySeverity;
+    title: string;
+    tags: string[];
+    /** False when the rule is switched off or above the conformance level. */
+    enabled: boolean;
+    repairable: boolean;
+  }
+
+  export interface AccessibilityChecker {
+    _init(): void;
+    /** Scans the content and returns the findings, without opening anything. */
+    check(): A11yIssue[];
+    /** The findings of the last scan, without those ignored. */
+    getIssues(): A11yIssue[];
+    /** The rules in force for this editor. */
+    rules(): A11yRuleInfo[];
+    /** Adds a rule to this editor, replacing one with the same id. Returns false when the rule is not complete. */
+    addRule(rule: A11yRule): boolean;
+    /** Removes a rule from this editor. Returns whether one was removed. */
+    removeRule(id: string): boolean;
+    /** Whether the last scan stopped at accessibilityCheckerMaxIssues, so the list is not complete. */
+    isCapped(): boolean;
+    /** Whether the content has changed since the last scan. */
+    isStale(): boolean;
+    /** Opens the popup and scans. */
+    showPopup(): void;
+    hidePopup(): void;
+    /** Scans again and refreshes the popup. Returns the findings. */
+    rescan(): A11yIssue[];
+    next(): void;
+    previous(): void;
+    /** Shows the finding at an index of getIssues(). Returns false when the popup is closed or the index is out of range. */
+    goTo(index: number): boolean;
+    /** Ignores the finding shown, for this session. Returns false when there is none. */
+    ignore(): boolean;
+    /**
+     * Applies the repair of the finding shown. Without a value it uses what is entered in the popup. Returns true when
+     * the content was fixed, and false when the popup is closed, the finding has no repair, a handler cancelled it, or
+     * the value was rejected.
+     */
+    repair(value?: any): boolean;
   }
 
 }

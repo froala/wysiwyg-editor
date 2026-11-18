@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.0.2/css/material-design-iconic-font.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../../css/froala_editor.css">
+  <link rel="stylesheet" href="../../css/froala_style.css">
+  <link rel="stylesheet" href="../../css/plugins/accessibility_checker.css">
+
+  <style>
+    body {
+      text-align: center;
+    }
+
+    section {
+      width: 81%;
+      margin: auto;
+      text-align: left;
+    }
+  </style>
+</head>
+
+<body>
+  <section id="editor">
+    <h1>Accessibility Checker</h1>
+
+    <p>The <code>accessibility_checker.min.js</code> plugin checks the content against WCAG while you write. Click the
+      accessibility button at the end of the toolbar, step through what it found, and use <b>Fix</b> where the rule offers one. One Undo reverts a fix. Each example in the editor is meant to be reported by the rule named above it. The first
+      heading is in capital letters on purpose: it is what the custom <code>DEMO1</code> rule in the script below reports.</p>
+
+    <div id='edit' style="margin-top: 30px;">
+      <h1>ACCESSIBILITY CHECKER</h1>
+      <p><em>Open the accessibility button in the toolbar. Each example below is meant to be reported by the rule named above it.</em></p>
+      <p><em>D1, looks like a heading: a short bold line that is not a heading.</em></p>
+      <p><strong>Next steps</strong></p>
+      <p><em>D2, heading level skipped: a Heading 4 straight after a Heading 2.</em></p>
+      <h2>A section</h2>
+      <h4>Skipped a level</h4>
+      <p><em>D3, adjacent links to the same place: two links next to each other with the same address.</em></p>
+      <p><a href="https://www.froala.com">Froala</a><a href="https://www.froala.com">Froala editor</a> are one link split in two.</p>
+      <p><em>D4, list typed by hand: lines that start with numbers instead of a real list.</em></p>
+      <p>1. First item</p>
+      <p>2. Second item</p>
+      <p>3. Third item</p>
+      <p><em>D5, text contrast too low: light grey text on white. The next two cannot be measured and are marked Needs review.</em></p>
+      <p style="color: #aaaaaa; background: #ffffff;">This sentence is hard to read.</p>
+      <p style="color: #ffffff; background-image: linear-gradient(#000000, #ffffff);">White text over a gradient.</p>
+      <p style="color: #ffffff; background-image: url(data:image/gif;base64,R0lGODlhAQABAAAAACw=); background-color: #333333;">White text over a background image.</p>
+      <p><em>H93, duplicate id: two elements with the same id.</em></p>
+      <p id="demo-duplicate">First element with this id.</p>
+      <p id="demo-duplicate">Second element with this id.</p>
+      <p><em>I1, image accessibility info conflicts: alt text and marked decorative; and an empty alt with a label.</em></p>
+      <p><img style="width: 120px; height: 80px; background: #9bd;" src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Our team" role="presentation"> <img style="width: 120px; height: 80px; background: #bd9;" src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="" aria-label="Company logo"></p>
+      <p><em>I2, image has no alt text.</em></p>
+      <p><img style="width: 120px; height: 80px; background: #db9;" src="data:image/gif;base64,R0lGODlhAQABAAAAACw="></p>
+      <p><em>I3, alt text is a file name.</em></p>
+      <p><img style="width: 120px; height: 80px; background: #b9d;" src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="IMG_0042.jpg"></p>
+      <p><em>I4, alt text is too long: over 125 characters.</em></p>
+      <p><img style="width: 120px; height: 80px; background: #9db;" src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="A very detailed description of a photograph taken at the company offsite that keeps going A very detailed description of a photograph taken at the company offsite that keeps going"></p>
+      <p><em>T1, table has no caption.</em></p>
+      <table style="width: 60%;"><thead><tr><th scope="col">Region</th><th scope="col">Total</th></tr></thead><tbody><tr><td>North</td><td>5</td></tr></tbody></table>
+      <p><em>T4A, table has no data cells: only header cells.</em></p>
+      <table style="width: 60%;"><caption>No data cells</caption><thead><tr><th scope="col">Only</th><th scope="col">headers</th></tr></thead></table>
+      <p><em>T4B, table has no header cells: the first row can be made the header row.</em></p>
+      <table style="width: 60%;"><caption>No header cells</caption><tbody><tr><td>Region</td><td>Total</td></tr><tr><td>North</td><td>5</td></tr></tbody></table>
+      <p><em>T4C, header cell has no scope: does it head its row or its column?</em></p>
+      <table style="width: 60%;"><caption>Headers without scope</caption><thead><tr><th>Region</th><th>Total</th></tr></thead><tbody><tr><td>North</td><td>5</td></tr></tbody></table>
+    </div>
+  </section>
+
+  <script type="text/javascript" src="../../js/froala_editor.min.js"></script>
+  <script type="text/javascript" src="../../js/plugins/accessibility_checker.min.js"></script>
+
+  <script>
+    (function () {
+      // A rule of your own. Per-element rules give a selector and a test; the repair is optional.
+      FroalaEditor.RegisterA11yRule({
+        id: 'DEMO1',
+        title: 'No shouting',
+        message: 'Headings in capital letters are hard to read. Use sentence case.',
+        level: 'AA',
+        severity: 'warning',
+        selector: 'h1, h2, h3',
+        test: function (heading) {
+          const text = heading.textContent.trim();
+          return !(text.length > 3 && text === text.toUpperCase());
+        },
+        repair: {
+          control: 'text',
+          label: 'Heading text',
+          initial: function (heading) {
+            return heading.textContent.trim().toLowerCase();
+          },
+          apply: function (heading, value) {
+            if (!value || value.trim() === '') {
+              return false;
+            }
+
+            heading.textContent = value.trim();
+          },
+          invalid: 'Enter the heading text.'
+        }
+      });
+
+      new FroalaEditor("#edit", {
+        // The conformance level to check: 'A', 'AA' or 'AAA'.
+        accessibilityCheckerLevel: 'AA',
+        // Rescan shortly after the content changes.
+        accessibilityCheckerAutoCheck: true,
+        // Show the checker button where you want it.
+        toolbarButtons: [['bold', 'italic', 'underline', 'insertImage', 'insertTable', 'accessibilityChecker']]
+      })
+    })()
+  </script>
+</body>
+
+</html>
